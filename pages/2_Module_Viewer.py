@@ -1,5 +1,5 @@
 """Module Viewer — PDF + key takeaways + progress tracking."""
-import base64
+import io
 import os
 import streamlit as st
 from lms_data.courses import COURSES, get_course, get_module
@@ -7,6 +7,49 @@ from lms_data.progress import init_progress, is_module_complete, mark_module_com
 
 st.set_page_config(page_title="Module Viewer — Laser Safety LMS", page_icon="📖", layout="wide")
 init_progress()
+
+
+def render_pdf(pdf_path: str):
+    """Render PDF pages as images — works in all browsers including Brave."""
+    try:
+        import fitz  # PyMuPDF
+    except ImportError:
+        st.error("PyMuPDF not installed. Run: pip install pymupdf")
+        return
+
+    page_key = f"pdf_page_{pdf_path}"
+    if page_key not in st.session_state:
+        st.session_state[page_key] = 0
+
+    doc = fitz.open(pdf_path)
+    total_pages = len(doc)
+    current_page = st.session_state[page_key]
+
+    # Page navigation controls
+    nav_l, nav_info, nav_r, nav_dl = st.columns([1, 2, 1, 1])
+    with nav_l:
+        if st.button("◀ Prev", disabled=current_page == 0, use_container_width=True, key=f"prev_{pdf_path}"):
+            st.session_state[page_key] -= 1
+            st.rerun()
+    with nav_info:
+        st.markdown(f"<p style='text-align:center; padding-top:8px;'>Page {current_page + 1} of {total_pages}</p>",
+                    unsafe_allow_html=True)
+    with nav_r:
+        if st.button("Next ▶", disabled=current_page >= total_pages - 1, use_container_width=True, key=f"next_{pdf_path}"):
+            st.session_state[page_key] += 1
+            st.rerun()
+    with nav_dl:
+        with open(pdf_path, "rb") as f:
+            st.download_button("⬇ PDF", f.read(), file_name=os.path.basename(pdf_path),
+                               mime="application/pdf", use_container_width=True, key=f"dl_{pdf_path}")
+
+    # Render current page as image
+    page = doc[current_page]
+    mat = fitz.Matrix(2.0, 2.0)  # 2x zoom for crisp rendering
+    pix = page.get_pixmap(matrix=mat)
+    img_bytes = pix.tobytes("png")
+    st.image(img_bytes, use_container_width=True)
+    doc.close()
 
 with st.sidebar:
     st.markdown("## 🔴 Laser Safety LMS")
@@ -86,13 +129,7 @@ pdf_col, side_col = st.columns([3, 1])
 with pdf_col:
     pdf_path = module.get("pdf_path", "")
     if pdf_path and os.path.exists(pdf_path):
-        with open(pdf_path, "rb") as f:
-            b64 = base64.b64encode(f.read()).decode("utf-8")
-        st.markdown(
-            f'<iframe src="data:application/pdf;base64,{b64}" width="100%" height="700px" '
-            f'style="border:1px solid #333; border-radius:8px;"></iframe>',
-            unsafe_allow_html=True,
-        )
+        render_pdf(pdf_path)
     else:
         st.warning(f"📄 PDF not found at: `{pdf_path}`")
         st.info("Add PDFs to the docs folder by running `bash laser-safety-lms/scripts/copy-docs.sh`")
