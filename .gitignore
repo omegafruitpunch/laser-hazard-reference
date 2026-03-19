@@ -4,3 +4,6 @@ __pycache__/
 *.egg-info/
 .venv/
 venv/
+.claude/
+laser-safety-lms/node_modules/
+laser-safety-lms/.next/
