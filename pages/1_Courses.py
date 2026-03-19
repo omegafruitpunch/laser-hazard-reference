@@ -8,12 +8,6 @@ init_progress()
 
 with st.sidebar:
     st.markdown("## 🔴 Laser Safety LMS")
-    st.page_link("laser_lms_app.py",          label="🏠 Dashboard")
-    st.page_link("pages/1_Courses.py",         label="📚 Courses")
-    st.page_link("pages/2_Module_Viewer.py",   label="📖 Module Viewer")
-    st.page_link("pages/3_Quiz.py",            label="🎯 Quiz")
-    st.page_link("pages/4_Certificate.py",     label="🏆 Certificates")
-    st.page_link("pages/5_Presentation.py",    label="🎭 Presentation")
 
 st.title("📚 Course Catalog")
 total_modules = sum(len(c["modules"]) for c in COURSES)

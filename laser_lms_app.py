@@ -15,19 +15,9 @@ st.set_page_config(
 
 init_progress()
 
-# ──────────────────────────────────────────────────────────────────────────────
-# SIDEBAR NAV
-# ──────────────────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("## 🔴 Laser Safety LMS")
     st.caption("Professional Laser Safety Training")
-    st.divider()
-    st.page_link("laser_lms_app.py",          label="🏠 Dashboard")
-    st.page_link("pages/1_Courses.py",         label="📚 Courses")
-    st.page_link("pages/2_Module_Viewer.py",   label="📖 Module Viewer")
-    st.page_link("pages/3_Quiz.py",            label="🎯 Quiz")
-    st.page_link("pages/4_Certificate.py",     label="🏆 Certificates")
-    st.page_link("pages/5_Presentation.py",    label="🎭 Presentation")
     st.divider()
     stats = get_overall_stats()
     st.metric("Overall Progress", f"{stats['overall_pct']}%")
