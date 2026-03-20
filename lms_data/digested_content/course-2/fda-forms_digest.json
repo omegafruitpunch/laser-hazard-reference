@@ -1,0 +1,189 @@
+{
+  "document_title": "FORM FDA 3632 - Guide for Preparing Product Reports for Lasers",
+  "document_type": "FDA Regulatory Form & Guidance",
+  "filename": "fda-forms.pdf",
+  "total_pages": 37,
+  "omb_control": "0910-0025",
+  "expiration_date": "February 28, 2026",
+  "regulatory_authority": "FDA Center for Devices and Radiological Health (CDRH)",
+  
+  "executive_summary": {
+    "purpose": "Guide for manufacturers to prepare Product Reports for lasers and products containing lasers",
+    "legal_basis": "21 CFR Parts 1002 and 1003 - Reporting and Notification requirements",
+    "reporting_burden": "24 hours per response estimated average",
+    "key_message": "CDRH does NOT approve reports or products - manufacturers are responsible for certification based on testing programs in accordance with good manufacturing practices"
+  },
+  
+  "report_types": {
+    "product_report": {
+      "cfr_reference": "21 CFR 1002.10",
+      "purpose": "Initial report describing product, compliance details, and quality control program",
+      "scope": "Can be used for families of products as well as individual products",
+      "timing": "Prior to introduction of products into commerce (including imports)"
+    },
+    "supplemental_report": {
+      "cfr_reference": "21 CFR 1002.11",
+      "purpose": "Supplementary information to previously submitted Product Report",
+      "triggers": [
+        "New model in previously reported model family",
+        "Modification of previously reported model",
+        "Changes affecting actual or potential emission",
+        "Changes decreasing degree of compliance with performance standard",
+        "Changes resulting in decreased probability of detecting noncompliance"
+      ],
+      "requirement": "Must clearly reference CDRH accession number of original Product Report"
+    },
+    "annual_report": {
+      "cfr_reference": "21 CFR 1002.13",
+      "due_date": "September 1 for 12 months ending June 30",
+      "purpose": "Summarizes required records; identifies new models not requiring Supplemental Reports"
+    }
+  },
+  
+  "report_sections": {
+    "part_1": {
+      "title": "Manufacturer and Report Identification",
+      "requirements": [
+        "Manufacturing firm name and address",
+        "Corresponding official with signature",
+        "Prime contact or responsible person",
+        "Importing agent information (if applicable, per 21 CFR 1005.25)",
+        "Report type (Product Report or Supplement to specific accession number)"
+      ]
+    },
+    "part_2": {
+      "title": "Product and Model Identification",
+      "requirements": [
+        "All names, brand names, model numbers, and model family designations",
+        "Identification of other companies selling under different brand names",
+        "Documentation of modifications to certified products from other manufacturers",
+        "Documentation of incorporated laser products (certified or non-certified)",
+        "Removable laser system identification",
+        "Recommended laser specifications"
+      ]
+    },
+    "part_3": {
+      "title": "Compliance with Labeling Requirements",
+      "required_labels": [
+        {"label": "Certification label", "cfr": "1010.2", "applies_to": "All laser products"},
+        {"label": "Identification label", "cfr": "1010.3", "applies_to": "All laser products"},
+        {"label": "Warning logotype", "cfr": "1040.10(g)(1-4,8-10)", "applies_to": "Class II, III, IV"},
+        {"label": "Warning label", "cfr": "1040.10(g)(1)(i)", "applies_to": "Class IIa"},
+        {"label": "Aperture label(s)", "cfr": "1040.10(g)(5,8-10)", "applies_to": "Class II, III, IV"},
+        {"label": "Noninterlocked housing labels", "cfr": "1040.10(g)(6,8-10)", "applies_to": "Applicable products"},
+        {"label": "Defeatable interlock labels", "cfr": "1040.10(g)(7-10)", "applies_to": "Applicable products"},
+        {"label": "Optional interlock labels", "cfr": "Laser Notice #17", "applies_to": "Applicable products"}
+      ]
+    },
+    "part_4": {
+      "title": "Compliance with Informational Requirements",
+      "requirements": [
+        "User and servicing information (operator and service manuals)",
+        "Catalogs, specification sheets, descriptive brochures for Class IIa, II, III, IV",
+        "Warning logotype reproduction in all promotional materials"
+      ],
+      "cfr_reference": "1040.10(h) and 1040.11(a)(2) for medical lasers"
+    },
+    "part_5": {
+      "title": "Description of the Product",
+      "requirements": [
+        "Product description and function",
+        "External and internal laser radiation fields and paths",
+        "Operational procedures with accessible radiation identification",
+        "Maintenance procedures with accessible radiation identification",
+        "Service procedures with accessible radiation identification"
+      ]
+    },
+    "part_6": {
+      "title": "Levels of Accessible Laser Radiation and Classification",
+      "requirements": [
+        "Specifications of all accessible laser radiation fields during operation",
+        "Product classification (Class I, IIa, II, IIIa, IIIb, or IV)",
+        "Specifications for maintenance and service access",
+        "Collateral radiation description",
+        "Measurement parameters per 1040.10(e)"
+      ]
+    },
+    "part_7": {
+      "title": "Compliance with Performance Requirements",
+      "subsections": [
+        {"section": "7.1", "requirement": "Protective housing", "cfr": "1040.10(f)(1)", "applies_to": "All laser products"},
+        {"section": "7.2", "requirement": "Safety interlocks", "cfr": "1040.10(f)(2)(i)", "applies_to": "All laser products"},
+        {"section": "7.3", "requirement": "Defeatable safety interlocks", "cfr": "1040.10(f)(2)(ii-iii)", "applies_to": "All laser products"},
+        {"section": "7.4", "requirement": "Safety interlock failure (fail-safe)", "cfr": "1040.10(f)(2)(iii)", "applies_to": "Interlocks preventing Class IIIb/IV access"},
+        {"section": "7.5", "requirement": "Remote interlock connector", "cfr": "1040.10(f)(3)", "applies_to": "Class IIIb or IV laser systems"},
+        {"section": "7.6", "requirement": "Key control", "cfr": "1040.10(f)(4)", "applies_to": "Class IIIb or IV laser systems"},
+        {"section": "7.7", "requirement": "Laser radiation emission indicator", "cfr": "1040.10(f)(5)", "applies_to": "Class II, IIIa, IIIb, IV laser systems"},
+        {"section": "7.8", "requirement": "Protective eyewear visibility", "cfr": "1040.10(f)(5)(iv)", "applies_to": "Class II, IIIa, IIIb, IV laser systems"},
+        {"section": "7.9", "requirement": "Beam attenuator", "cfr": "1040.10(f)(6)", "applies_to": "Class II, IIIa, IIIb, IV laser systems"},
+        {"section": "7.10", "requirement": "Location of controls", "cfr": "1040.10(f)(7)", "applies_to": "Class II, IIIa, IIIb, IV laser products"},
+        {"section": "7.11", "requirement": "Viewing optics safeguards", "cfr": "1040.10(f)(8)", "applies_to": "All laser products"},
+        {"section": "7.12", "requirement": "Scanning safeguard", "cfr": "1040.10(f)(9)", "applies_to": "Products with scanned laser radiation"},
+        {"section": "7.13", "requirement": "Manual reset", "cfr": "1040.10(f)(10)", "applies_to": "Class IV laser systems after Aug 20, 1986"},
+        {"section": "7.14", "requirement": "Medical laser product requirements", "cfr": "1040.11(a)", "applies_to": "Class III/IV medical lasers"},
+        {"section": "7.15", "requirement": "Surveying/leveling/alignment products", "cfr": "1040.11(b)", "applies_to": "Applicable products"},
+        {"section": "7.16", "requirement": "Demonstration laser products", "cfr": "1040.11(c)", "applies_to": "Demonstration products"}
+      ]
+    },
+    "part_8": {
+      "title": "Quality Control Tests and Testing Procedures",
+      "requirements": [
+        "Specification controls for critical components",
+        "Manufacturing and assembly control procedures",
+        "Inspection and test control procedures",
+        "Assembly and test traveler forms",
+        "Inspection and test reports and checklists"
+      ],
+      "legal_note": "Section 1010.2(c) requires certification based on testing in accordance with standard or program in accordance with good manufacturing practices"
+    },
+    "part_9": {
+      "title": "Life and Endurance Testing",
+      "requirements": [
+        "Dimensional stability and rigidity of mechanical parts",
+        "Design and ratings of electrical/electronic components",
+        "Environmental stability of components (filters, coatings, adhesives)",
+        "Design and testing of features for compliance",
+        "Other factors affecting radiation safety"
+      ]
+    },
+    "part_10": {
+      "title": "Instrumentation and Calibration",
+      "requirements": [
+        "List of instruments used for compliance determination",
+        "Description of measurement system",
+        "Measurement error analysis and uncertainty statement",
+        "Instrument calibration schedules and procedures",
+        "Traceability to NIST (National Institute of Standards and Technology)"
+      ]
+    }
+  },
+  
+  "submission_information": {
+    "mailing_address": "Center for Devices and Radiological Health, Document Mail Center - WO66-G609, Attn: Electronic Product Reports, 10903 New Hampshire Avenue, Silver Spring, MD 20993-0002",
+    "contact_phone": "1-800-638-2041",
+    "contact_email": "dsmica@fda.hhs.gov",
+    "accession_number": "Unique identifier assigned upon receipt for future reference"
+  },
+  
+  "key_regulatory_citations": [
+    "21 CFR 1002.7 - Reporting guides requirement",
+    "21 CFR 1002.10 - Product reports",
+    "21 CFR 1002.11 - Supplemental reports",
+    "21 CFR 1002.13 - Annual reports",
+    "21 CFR 1005 - Importation requirements",
+    "21 CFR 1010.2 - Certification",
+    "21 CFR 1010.3 - Identification",
+    "21 CFR 1010.4 - Variances",
+    "21 CFR 1040.10 - Laser products",
+    "21 CFR 1040.11 - Specific purpose laser products",
+    "21 CFR 1040.10(i) - Modification of certified products"
+  ],
+  
+  "enforcement_notes": [
+    "CDRH may reject incomplete or inadequate reports",
+    "Rejected reports do not receive accession numbers",
+    "CDRH may disapprove firm's quality control and testing program",
+    "CDRH may determine product contains radiation defect or fails to comply",
+    "CDRH may require cessation of introduction into commerce"
+  ]
+}

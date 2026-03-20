@@ -1,0 +1,30 @@
+{
+  "id": "course-7",
+  "title": "Event Safety & Operations",
+  "description": "Comprehensive event safety management including crowd dynamics, weather protocols, venue assessment, and emergency procedures. Essential for laser operators working at live events and festivals.",
+  "duration": 90,
+  "difficulty": "intermediate",
+  "category": "Operations",
+  "modules": [
+    "module-7-1",
+    "module-7-2",
+    "module-7-3",
+    "module-7-4",
+    "module-7-5",
+    "module-7-6"
+  ],
+  "prerequisites": ["course-1", "course-6"],
+  "certifications": ["CLSO", "Event Safety Specialist"],
+  "learningObjectives": [
+    "Develop comprehensive event safety plans",
+    "Understand crowd dynamics and density limits",
+    "Implement weather monitoring and response protocols",
+    "Conduct systematic venue assessments",
+    "Execute emergency response procedures for laser incidents"
+  ],
+  "thumbnail": "/images/courses/course-7.jpg",
+  "icon": "🎪",
+  "coverColor": "from-amber-600 to-yellow-500",
+  "createdAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-01-01T00:00:00Z"
+}

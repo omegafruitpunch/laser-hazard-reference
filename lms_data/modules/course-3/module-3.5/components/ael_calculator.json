@@ -1,0 +1,372 @@
+{
+  "component_id": "ael_calculator",
+  "name": "AEL Calculator",
+  "version": "1.0.0",
+  "type": "calculation_tool",
+  "description": "Step-by-step Accessible Emission Limit calculator for laser classification",
+  "pedagogical_approach": {
+    "concept_first": true,
+    "step_by_step_calculation": true,
+    "classification_guidance": true,
+    "immediate_feedback": true
+  },
+  "input_sections": {
+    "laser_specifications": {
+      "title": "Step 1: Enter Laser Specifications",
+      "description": "Provide the laser parameters to determine classification",
+      "fields": [
+        {
+          "id": "wavelength",
+          "label": "Wavelength",
+          "type": "slider_with_number",
+          "unit": "nm",
+          "min": 180,
+          "max": 10000,
+          "default": 650,
+          "visual": "spectrum_bar",
+          "help_text": "Peak wavelength of laser emission"
+        },
+        {
+          "id": "laser_type",
+          "label": "Laser Type",
+          "type": "radio_button",
+          "options": [
+            {"id": "cw", "label": "Continuous Wave (CW)", "description": "Constant output power"},
+            {"id": "pulsed", "label": "Pulsed", "description": "Discrete pulses of energy"}
+          ],
+          "default": "cw"
+        },
+        {
+          "id": "output_power",
+          "label": "Output Power (CW)",
+          "type": "number_with_unit",
+          "unit": "mW",
+          "default": 5,
+          "min": 0.001,
+          "max": 100000,
+          "conditional_display": "laser_type == 'cw'",
+          "help_text": "Total output power in milliwatts"
+        },
+        {
+          "id": "pulse_energy",
+          "label": "Pulse Energy",
+          "type": "number_with_unit",
+          "unit": "mJ",
+          "default": 10,
+          "min": 0.001,
+          "max": 10000,
+          "conditional_display": "laser_type == 'pulsed'",
+          "help_text": "Energy per pulse in millijoules"
+        },
+        {
+          "id": "pulse_duration",
+          "label": "Pulse Duration",
+          "type": "number_with_dropdown",
+          "unit": "seconds",
+          "default": 1e-9,
+          "options": [
+            {"value": 1e-15, "label": "1 fs"},
+            {"value": 1e-12, "label": "1 ps"},
+            {"value": 1e-9, "label": "1 ns"},
+            {"value": 1e-6, "label": "1 μs"},
+            {"value": 1e-3, "label": "1 ms"}
+          ],
+          "conditional_display": "laser_type == 'pulsed'",
+          "help_text": "Duration of each pulse"
+        },
+        {
+          "id": "beam_divergence",
+          "label": "Beam Divergence (half-angle)",
+          "type": "number_with_unit",
+          "unit": "mrad",
+          "default": 1.0,
+          "min": 0.01,
+          "max": 180,
+          "help_text": "Used to determine if M-classification applies"
+        }
+      ]
+    },
+    "measurement_conditions": {
+      "title": "Step 2: Measurement Conditions",
+      "description": "Specify how the laser is accessed",
+      "fields": [
+        {
+          "id": "enclosed",
+          "label": "Fully Enclosed",
+          "type": "toggle",
+          "default": false,
+          "help_text": "Toggle ON if laser is fully enclosed with interlocks"
+        },
+        {
+          "id": "optical_instruments_possible",
+          "label": "Optical Instruments Possible",
+          "type": "toggle",
+          "default": false,
+          "help_text": "Can telescopes, binoculars, or microscopes be used?"
+        }
+      ]
+    }
+  },
+  "classification_logic": {
+    "decision_tree": {
+      "step_1_enclosure": {
+        "condition": "enclosed == true",
+        "true_result": {
+          "classification": "Class 1",
+          "reason": "Fully enclosed laser with interlocks prevents accessible emission"
+        },
+        "false_next": "step_2_wavelength"
+      },
+      "step_2_wavelength": {
+        "determine": "wavelength_region",
+        "regions": {
+          "uv": {"next": "step_3_uv_limits"},
+          "visible": {"next": "step_3_visible_limits"},
+          "near_ir": {"next": "step_3_near_ir_limits"},
+          "mid_far_ir": {"next": "step_3_ir_limits"}
+        }
+      },
+      "step_3_visible_limits": {
+        "applies_to": "400-700 nm",
+        "cw_power_limits": {
+          "class_1": 0.39,
+          "class_2": 1.0,
+          "class_3r": 5.0,
+          "class_3b": 500.0,
+          "class_4": null
+        },
+        "determine_class": {
+          "if_power_less_than": 0.39,
+          "class": "Class 1",
+          "else_if_less_than": 1.0,
+          "class": "Class 2",
+          "else_if_less_than": 5.0,
+          "class": "Class 3R",
+          "else_if_less_than": 500.0,
+          "class": "Class 3B",
+          "else": "Class 4"
+        }
+      },
+      "step_3_near_ir_limits": {
+        "applies_to": "700-1400 nm",
+        "correction": "ca",
+        "base_limits": "step_3_visible_limits",
+        "note": "All limits multiplied by CA factor"
+      },
+      "step_4_m_suffix": {
+        "condition": "beam_divergence > 1.5 AND optical_instruments_possible",
+        "true_action": "add_m_suffix",
+        "explanation": "M indicates optical instrument hazard"
+      }
+    }
+  },
+  "ael_tables": {
+    "visible_cw": {
+      "wavelength_range": "400-700 nm",
+      "exposure_type": "CW",
+      "class_boundaries": [
+        {
+          "class": "Class 1",
+          "ael_power_mw": 0.39,
+          "ael_irradiance": "1.0 mW/cm²",
+          "description": "Safe under all conditions"
+        },
+        {
+          "class": "Class 2",
+          "ael_power_mw": 1.0,
+          "ael_irradiance": "1.0 mW/cm²",
+          "description": "Safe due to blink reflex (0.25s)"
+        },
+        {
+          "class": "Class 3R",
+          "ael_power_mw": 5.0,
+          "ael_irradiance": "5.0 mW/cm²",
+          "description": "Low risk, avoid direct viewing"
+        },
+        {
+          "class": "Class 3B",
+          "ael_power_mw": 500.0,
+          "ael_irradiance": "Varies",
+          "description": "Direct viewing hazardous"
+        },
+        {
+          "class": "Class 4",
+          "ael_power_mw": null,
+          "ael_irradiance": "Varies",
+          "description": "All exposure hazardous"
+        }
+      ]
+    },
+    "near_ir_cw": {
+      "wavelength_range": "700-1400 nm",
+      "exposure_type": "CW",
+      "note": "All limits adjusted by CA factor",
+      "ca_values": {
+        "700": 1.0,
+        "800": 1.58,
+        "900": 2.51,
+        "1064": 5.0,
+        "1400": 5.0
+      },
+      "example_calculations": [
+        {
+          "wavelength": 800,
+          "ca": 1.58,
+          "class_1_limit": 0.62,
+          "class_3r_limit": 7.9
+        },
+        {
+          "wavelength": 1064,
+          "ca": 5.0,
+          "class_1_limit": 1.95,
+          "class_3r_limit": 25.0
+        }
+      ]
+    }
+  },
+  "output_display": {
+    "classification_result": {
+      "title": "Laser Classification",
+      "display_type": "prominent_badge",
+      "color_coding": {
+        "Class 1": "#22c55e",
+        "Class 2": "#3b82f6",
+        "Class 3R": "#f59e0b",
+        "Class 3B": "#f97316",
+        "Class 4": "#dc2626"
+      },
+      "show_suffix": true
+    },
+    "classification_explanation": {
+      "title": "Classification Explanation",
+      "sections": [
+        "wavelength_analysis",
+        "power_comparison",
+        "boundary_determination",
+        "suffix_explanation"
+      ]
+    },
+    "comparison_visualization": {
+      "type": "class_scale",
+      "show_position": true,
+      "show_boundaries": true,
+      "safety_margin_indicator": true
+    },
+    "ael_boundary_table": {
+      "title": "AEL Boundaries for Your Wavelength",
+      "show_relevant_wavelength_only": true,
+      "highlight_applicable_row": true
+    }
+  },
+  "worked_examples": [
+    {
+      "title": "Classifying a 5mW Red Laser Pointer",
+      "inputs": {
+        "wavelength": 650,
+        "laser_type": "cw",
+        "output_power": 5,
+        "beam_divergence": 1,
+        "enclosed": false
+      },
+      "steps": [
+        {
+          "description": "Check enclosure",
+          "result": "Not enclosed - classification based on accessible emission"
+        },
+        {
+          "description": "Determine wavelength region",
+          "result": "650 nm = Visible (red)"
+        },
+        {
+          "description": "Compare to Class 2 limit",
+          "calculation": "5 mW > 1 mW",
+          "result": "Exceeds Class 2"
+        },
+        {
+          "description": "Compare to Class 3R limit",
+          "calculation": "5 mW ≤ 5 mW",
+          "result": "At Class 3R boundary"
+        }
+      ],
+      "final_classification": "Class 3R",
+      "explanation": "A 5 mW visible laser is at the upper limit of Class 3R."
+    },
+    {
+      "title": "Classifying an Enclosed 100W Fiber Laser",
+      "inputs": {
+        "wavelength": 1070,
+        "laser_type": "cw",
+        "output_power": 100000,
+        "enclosed": true
+      },
+      "steps": [
+        {
+          "description": "Check enclosure",
+          "result": "Fully enclosed with interlocks"
+        },
+        {
+          "description": "Apply enclosure rule",
+          "result": "Enclosed lasers are Class 1 regardless of internal power"
+        }
+      ],
+      "final_classification": "Class 1",
+      "explanation": "Proper enclosure with interlocks makes even high-power lasers Class 1 during normal operation."
+    },
+    {
+      "title": "Near-IR Laser with M-Suffix",
+      "inputs": {
+        "wavelength": 980,
+        "laser_type": "cw",
+        "output_power": 50,
+        "beam_divergence": 5,
+        "optical_instruments_possible": true
+      },
+      "steps": [
+        {
+          "description": "Determine wavelength region",
+          "result": "980 nm = Near-IR"
+        },
+        {
+          "description": "Calculate CA factor",
+          "calculation": "CA = 10^[0.002(980-700)] = 3.98",
+          "result": "CA ≈ 4.0"
+        },
+        {
+          "description": "Calculate Class 3R limit",
+          "calculation": "5 mW × 4.0 = 20 mW",
+          "result": "Class 3R limit = 20 mW"
+        },
+        {
+          "description": "Compare power",
+          "calculation": "50 mW > 20 mW",
+          "result": "Exceeds Class 3R, Class 3B"
+        },
+        {
+          "description": "Check M-suffix criteria",
+          "calculation": "Divergence = 5 mrad > 1.5 mrad",
+          "result": "Qualifies for M-suffix"
+        }
+      ],
+      "final_classification": "Class 3B (possibly 1M/3B depending on conditions)",
+      "explanation": "High divergence with optical instrument access suggests M-classification consideration."
+    }
+  ],
+  "validation": {
+    "input_validation": {
+      "wavelength": {
+        "min": 180,
+        "max": 1000000,
+        "error": "Wavelength must be between 180 nm and 1 mm"
+      },
+      "power": {
+        "min": 0,
+        "max": 10000000,
+        "error": "Power must be positive and reasonable"
+      }
+    },
+    "classification_validation": {
+      "check_results": true,
+      "provide_explanation": true
+    }
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "document": "lso-role.pdf",
+  "title": "Safety of Display Lasers",
+  "entities": [
+    {
+      "id": "haz_eye",
+      "type": "Hazard",
+      "name": "Permanent Eye Damage",
+      "severity": "Critical"
+    },
+    {
+      "id": "haz_skin",
+      "type": "Hazard",
+      "name": "Skin Burns",
+      "severity": "High"
+    },
+    {
+      "id": "haz_fire",
+      "type": "Hazard",
+      "name": "Fire/Ignition",
+      "severity": "High"
+    },
+    {
+      "id": "haz_distraction",
+      "type": "Hazard",
+      "name": "Distraction/Dazzle/Glare",
+      "severity": "Medium"
+    },
+    {
+      "id": "class_1",
+      "type": "LaserClass",
+      "name": "Class 1",
+      "ael_cw": "Safe (enclosed)",
+      "hazard": "Safe under normal use"
+    },
+    {
+      "id": "class_2",
+      "type": "LaserClass",
+      "name": "Class 2",
+      "ael_cw": "1mW",
+      "hazard": "Blink reflex protection"
+    },
+    {
+      "id": "class_3r",
+      "type": "LaserClass",
+      "name": "Class 3R",
+      "ael_cw": "5x Class 1/2",
+      "hazard": "Low/Medium risk"
+    },
+    {
+      "id": "class_3b",
+      "type": "LaserClass",
+      "name": "Class 3B",
+      "ael_cw": "500mW",
+      "hazard": "Direct viewing hazardous"
+    },
+    {
+      "id": "class_4",
+      "type": "LaserClass",
+      "name": "Class 4",
+      "ael_cw": ">500mW",
+      "hazard": "Eye, skin, fire hazard"
+    },
+    {
+      "id": "role_lso",
+      "type": "Role",
+      "name": "Laser Safety Officer",
+      "authority": "Executive"
+    },
+    {
+      "id": "role_lsa",
+      "type": "Role",
+      "name": "Laser Safety Adviser",
+      "authority": "Advisory only"
+    },
+    {
+      "id": "role_operator",
+      "type": "Role",
+      "name": "Operator/Programmer",
+      "authority": "Operation control"
+    },
+    {
+      "id": "role_client",
+      "type": "Role",
+      "name": "Client",
+      "authority": "Competency verification"
+    },
+    {
+      "id": "role_venue",
+      "type": "Role",
+      "name": "Venue",
+      "authority": "Premises safety"
+    },
+    {
+      "id": "term_mpe",
+      "type": "TechnicalTerm",
+      "name": "MPE",
+      "definition": "Maximum Permissible Exposure"
+    },
+    {
+      "id": "term_nohd",
+      "type": "TechnicalTerm",
+      "name": "NOHD",
+      "definition": "Nominal Ocular Hazard Distance"
+    },
+    {
+      "id": "term_ael",
+      "type": "TechnicalTerm",
+      "name": "AEL",
+      "definition": "Accessible Emission Limit"
+    },
+    {
+      "id": "term_estop",
+      "type": "TechnicalTerm",
+      "name": "E-stop",
+      "definition": "Emergency Stop"
+    },
+    {
+      "id": "term_scanner",
+      "type": "TechnicalTerm",
+      "name": "Scanner",
+      "definition": "Galvanometer with oscillating mirror"
+    },
+    {
+      "id": "reg_caa",
+      "type": "Regulation",
+      "name": "CAA CAP 736",
+      "scope": "Outdoor laser operations"
+    },
+    {
+      "id": "reg_hse",
+      "type": "Regulation",
+      "name": "HS(G)95",
+      "scope": "Radiation safety (withdrawn)"
+    },
+    {
+      "id": "reg_optical",
+      "type": "Regulation",
+      "name": "Control of Artificial Optical Radiation 2010",
+      "scope": "Worker protection"
+    },
+    {
+      "id": "org_hse",
+      "type": "Organization",
+      "name": "HSE",
+      "full_name": "Health and Safety Executive"
+    },
+    {
+      "id": "org_caa",
+      "type": "Organization",
+      "name": "CAA",
+      "full_name": "Civil Aviation Authority"
+    },
+    {
+      "id": "org_plasa",
+      "type": "Organization",
+      "name": "PLASA",
+      "full_name": "Professional Lighting and Sound Association"
+    },
+    {
+      "id": "org_bsi",
+      "type": "Organization",
+      "name": "BSI",
+      "full_name": "British Standards Institute"
+    },
+    {
+      "id": "type_opsl",
+      "type": "LaserType",
+      "name": "OPSL",
+      "power": "1W-12W",
+      "wavelength": "460-639nm"
+    },
+    {
+      "id": "type_dpss",
+      "type": "LaserType",
+      "name": "DPSS",
+      "power": "200mW-10W",
+      "wavelength": "532nm"
+    },
+    {
+      "id": "type_diode",
+      "type": "LaserType",
+      "name": "Diode",
+      "power": "1mW-2W each",
+      "arrays": "Up to 30W+"
+    },
+    {
+      "id": "type_gas",
+      "type": "LaserType",
+      "name": "Gas Laser",
+      "cooling": "Water-cooled",
+      "status": "Less common"
+    },
+    {
+      "id": "sys_scanfail",
+      "type": "SafetySystem",
+      "name": "Scan-failure Detection",
+      "response": "Automatic shutdown"
+    },
+    {
+      "id": "sys_blank",
+      "type": "SafetySystem",
+      "name": "Blanking Plates",
+      "purpose": "Masking beams"
+    },
+    {
+      "id": "sys_srcs",
+      "type": "SafetySystem",
+      "name": "SRCS",
+      "full_name": "Safety Related Control Systems"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "class_3b",
+      "relation": "causes",
+      "target": "haz_eye",
+      "condition": "Direct viewing"
+    },
+    {
+      "source": "class_4",
+      "relation": "causes",
+      "target": "haz_eye",
+      "condition": "Direct or reflected"
+    },
+    {
+      "source": "class_4",
+      "relation": "causes",
+      "target": "haz_skin",
+      "condition": "High power"
+    },
+    {
+      "source": "class_4",
+      "relation": "causes",
+      "target": "haz_fire",
+      "condition": ">500mW"
+    },
+    {
+      "source": "role_lso",
+      "relation": "manages",
+      "target": "haz_eye"
+    },
+    {
+      "source": "role_lso",
+      "relation": "evaluates",
+      "target": "term_mpe"
+    },
+    {
+      "source": "role_lso",
+      "relation": "enforces",
+      "target": "reg_optical"
+    },
+    {
+      "source": "role_lsa",
+      "relation": "advises",
+      "target": "role_lso"
+    },
+    {
+      "source": "term_mpe",
+      "relation": "measured_in",
+      "target": "unit_mwcm2",
+      "value": "mW/cm2"
+    },
+    {
+      "source": "sys_scanfail",
+      "relation": "protects_against",
+      "target": "haz_eye"
+    },
+    {
+      "source": "sys_estop",
+      "relation": "terminates",
+      "target": "class_4"
+    },
+    {
+      "source": "org_caa",
+      "relation": "regulates",
+      "target": "reg_caa"
+    },
+    {
+      "source": "reg_caa",
+      "relation": "applies_to",
+      "target": "haz_distraction",
+      "context": "Outdoor displays"
+    },
+    {
+      "source": "type_opsl",
+      "relation": "classified_as",
+      "target": "class_3b",
+      "condition": "Depending on power"
+    },
+    {
+      "source": "type_opsl",
+      "relation": "classified_as",
+      "target": "class_4",
+      "condition": "High power arrays"
+    }
+  ],
+  "safety_thresholds": {
+    "mpe_visible_simplified": {
+      "value": 10,
+      "unit": "W/m2",
+      "equivalent": "1 mW/cm2"
+    },
+    "mpe_skin": {
+      "value": 200,
+      "unit": "mW/cm2"
+    },
+    "separation_supervised": {
+      "vertical": "3m",
+      "lateral": "2.5m"
+    },
+    "separation_unsupervised": {
+      "vertical": "6m",
+      "lateral": "2.5m"
+    },
+    "aversion_response": {
+      "value": 0.25,
+      "unit": "seconds"
+    },
+    "audience_exposure_time": {
+      "value": 10,
+      "unit": "seconds",
+      "note": "Minimum for deliberate exposure"
+    }
+  }
+}

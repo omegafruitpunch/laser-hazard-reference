@@ -1,0 +1,91 @@
+{
+  "component_id": "mpe_table_guide",
+  "name": "MPE Table Interactive Guide",
+  "type": "interactive_table",
+  "description": "Guided navigation of ANSI Z136.1 Tables 5a/5b for Maximum Permissible Exposure",
+  "tables": {
+    "table_5a": {
+      "title": "Table 5a - MPE for Direct Ocular Exposures",
+      "description": "Maximum Permissible Exposure for direct viewing of laser beams",
+      "wavelength_regions": [
+        {
+          "region": "UV-C (180-280nm)",
+          "formula": "3 × 10⁻³ J/cm²",
+          "notes": "Photochemical damage risk"
+        },
+        {
+          "region": "UV-B (280-315nm)",
+          "formula": "Time-dependent, see table",
+          "notes": "Transition region"
+        },
+        {
+          "region": "UV-A (315-400nm)",
+          "formula": "1.0 J/cm² for t < 1000s",
+          "notes": "Cataract risk"
+        },
+        {
+          "region": "Visible (400-700nm)",
+          "formula": "1.8 × t⁰·⁷⁵ mW/cm² (18μs < t < 10s)",
+          "notes": "Retinal hazard, blink reflex protects for Class 2"
+        },
+        {
+          "region": "Near-IR (700-1400nm)",
+          "formula": "1.8 × t⁰·⁷⁵ mW/cm² (18μs < t < 10s)",
+          "notes": "Retinal hazard, invisible - no blink reflex"
+        },
+        {
+          "region": "Far-IR (>1400nm)",
+          "formula": "0.1 W/cm²",
+          "notes": "Corneal hazard only"
+        }
+      ]
+    },
+    "table_5b": {
+      "title": "Table 5b - MPE for Skin Exposure",
+      "description": "Maximum Permissible Exposure for skin (generally less restrictive than eye)",
+      "note": "Skin MPEs are typically less restrictive than ocular MPEs. Refer to Z136.1 for specific values."
+    }
+  },
+  "interactive_calculator": {
+    "enabled": true,
+    "steps": [
+      {
+        "step": 1,
+        "title": "Select Wavelength",
+        "input": "wavelength_slider",
+        "range": [180, 1500],
+        "display_regions": true
+      },
+      {
+        "step": 2,
+        "title": "Select Exposure Duration",
+        "input": "duration_selector",
+        "options": [
+          {"value": 0.000001, "label": "1 μs", "applicable": "pulsed"},
+          {"value": 0.001, "label": "1 ms", "applicable": "pulsed"},
+          {"value": 0.25, "label": "0.25 s (blink)", "applicable": "visible_CW"},
+          {"value": 1, "label": "1 second", "applicable": "all"},
+          {"value": 10, "label": "10 seconds", "applicable": "all"},
+          {"value": 100, "label": ">100 seconds", "applicable": "CW"}
+        ]
+      },
+      {
+        "step": 3,
+        "title": "View Applicable Formula",
+        "output": "formula_display",
+        "show_derivation": true
+      },
+      {
+        "step": 4,
+        "title": "Calculate MPE",
+        "output": "calculated_value",
+        "units": "mW/cm² or J/cm²"
+      }
+    ]
+  },
+  "visual_aids": {
+    "wavelength_spectrum": true,
+    "eye_absorption_chart": true,
+    "formula_reference_cards": true
+  }
+}

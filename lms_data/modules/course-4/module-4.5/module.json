@@ -1,0 +1,28 @@
+{
+  "module_id": "4.5",
+  "course_id": "course-4",
+  "title": "Module 4.5: Interstate Operations & Compliance Matrix",
+  "subtitle": "Multi-State Navigation & Touring Guide",
+  "description": "Master the complexities of multi-state laser operations with interactive compliance tools, the 'I'm Touring - What Do I Need?' guide, comprehensive state matrix, and automated checklist generation.",
+  "learning_objectives": [
+    "Navigate multi-state regulatory differences effectively",
+    "Use the 'I'm Touring' interactive guide for quick compliance assessment",
+    "Generate state-specific compliance checklists",
+    "Calculate notification deadlines across multiple jurisdictions",
+    "Compare penalty structures and enforcement mechanisms",
+    "Apply interstate operations best practices"
+  ],
+  "duration_minutes": 60,
+  "difficulty": "advanced",
+  "states_covered": ["all_course_4_states"],
+  "special_features": [
+    "touring_guide",
+    "compliance_matrix",
+    "notification_calculator",
+    "penalty_comparison",
+    "checklist_generator"
+  ],
+  "prerequisites": ["module-4.3", "module-4.4"],
+  "version": "1.0.0",
+  "last_updated": "2026-03-19"
+}

@@ -1,0 +1,39 @@
+{
+  "module_id": "course-1-module-1.4",
+  "course_id": "course-1",
+  "title": "Module 1.4: The Laser Safety Officer Role",
+  "subtitle": "Responsibilities, Authority, and Daily Operations",
+  "description": "Understand the critical role of the Laser Safety Officer (LSO) including responsibilities per ANSI Z136.1, authority levels, competency requirements, and daily operational duties. Features interactive responsibility matrix and scenario-based learning.",
+  "duration_minutes": 10,
+  "difficulty": "intermediate",
+  "learning_objectives": [
+    "Describe the LSO's authority and responsibilities per ANSI Z136.1",
+    "Differentiate between LSO (executive) and LSA (advisory) roles",
+    "Identify required competencies and qualifications for LSOs",
+    "Execute daily LSO operational duties and checks",
+    "Respond appropriately to laser incidents and emergencies"
+  ],
+  "prerequisites": [
+    "course-1-module-1.1",
+    "course-1-module-1.2",
+    "course-1-module-1.3"
+  ],
+  "completion_criteria": {
+    "quiz_pass_score": 80,
+    "interactive_exercises_completed": ["responsibility_matrix", "scenario_responses"],
+    "minimum_time_minutes": 8
+  },
+  "badge": {
+    "id": "lso_foundation",
+    "name": "LSO Foundation",
+    "icon": "👷",
+    "description": "Understanding of LSO roles and responsibilities"
+  },
+  "keywords": ["LSO", "Laser Safety Officer", "responsibilities", "authority", "ANSI Z136.1", "competency", "incident response"],
+  "standards_reference": ["ANSI Z136.1 Section 4.2", "ANSI Z136.10 Section 5"],
+  "research_alignment": {
+    "adult_learning": "Scenario-based learning with real-world applications",
+    "brilliant_patterns": ["Case study warm-up", "Interactive checklists", "Progressive scenario complexity"],
+    "retention_strategy": "Role-play and decision-tree exercises"
+  }
+}

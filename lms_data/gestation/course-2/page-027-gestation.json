@@ -1,0 +1,54 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 27,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Scanning safeguard requirements",
+      "Audience scanning definition",
+      "Reaction time specifications",
+      "Variance violation consequences"
+    ],
+    "key_terms": [
+      {
+        "term": "Audience Scanning",
+        "definition": "Effects potentially exposing audience to scanned radiation"
+      },
+      {
+        "term": "Scanning Safeguard",
+        "definition": "Device preventing injury if scanning stops/slows"
+      },
+      {
+        "term": "Reaction Time",
+        "definition": "Maximum time to prevent exposure exceeding limits"
+      },
+      {
+        "term": "5 mW Peak Power",
+        "definition": "Threshold for acute risk requiring scanning safeguard"
+      },
+      {
+        "term": "Variance Revocation",
+        "definition": "Grounds include repeated reporting failures"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.10(f)(9) - Scanning safeguard requirement",
+      "Variance scanning safeguard conditions"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Identify audience scanning effects",
+      "Design adequate scanning safeguards",
+      "Calculate reaction times",
+      "Avoid variance violations"
+    ],
+    "prerequisites": [
+      "Pages 23-26 content",
+      "Understanding of scanning technology"
+    ],
+    "estimated_study_time_minutes": 30,
+    "content_type": "specialized_guidance",
+    "has_tables": false
+  }
+}

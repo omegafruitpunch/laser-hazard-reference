@@ -1,0 +1,249 @@
+{
+  "project": "Laser Safety LMS - Knowledge Extraction & Module Generation",
+  "orchestration_version": "1.0.0",
+  "timestamp": "2026-03-19T15:46:00Z",
+  "status": "INITIALIZING",
+  
+  "courses": {
+    "course-1-fundamentals": {
+      "name": "Laser Safety Fundamentals",
+      "pdfs": [
+        "beam-hazard-calculations.pdf",
+        "intro-laser-hazards.pdf",
+        "laser-classification.pdf",
+        "lso-role.pdf",
+        "safety-controls.pdf"
+      ],
+      "agents_assigned": ["PDF_Elite_Processor_Agent_2"],
+      "batch_completed": {
+        "agent": "PDF Elite Processor Agent #2",
+        "timestamp": "2026-03-19T15:46:17-07:00",
+        "processed_pdfs": ["beam-hazard-calculations.pdf", "lso-role.pdf"],
+        "note": "beam-hazard-calculations.pdf is actually a professional CV/profile document, not technical calculations",
+        "outputs": {
+          "extractions": "lms_data/extracted_content/course-1/*_extracted.json",
+          "digested": "lms_data/digested_content/course-1/*_digest.json",
+          "quiz_items": "lms_data/quiz_banks/course-1/*_quiz.json",
+          "knowledge_graph": "lms_data/knowledge_graphs/course-1/*_kg.json"
+        },
+        "stats": {
+          "total_pages": 39,
+          "quiz_items_generated": 36,
+          "knowledge_graph_entities": 42,
+          "coverage": "beam-hazard-calculations (4 pages), lso-role (35 pages - comprehensive safety guide)"
+        }
+      },
+      "status": "partially_completed",
+      "pending_pdfs": ["intro-laser-hazards.pdf", "laser-classification.pdf", "safety-controls.pdf"],
+      "knowledge_graph": "lms_data/knowledge_graphs/course-1/",
+      "quiz_bank": "lms_data/quiz_banks/course-1/"
+    },
+    "course-2-fda-compliance": {
+      "name": "FDA Compliance",
+      "pdfs": [
+        "fda-forms.pdf",
+        "fda-regulatory-framework.pdf",
+        "incident-reporting.pdf",
+        "laser-notice-50.pdf",
+        "state-federal-jurisdiction.pdf",
+        "variance-applications.pdf"
+      ],
+      "agents_assigned": [],
+      "status": "pending",
+      "knowledge_graph": null,
+      "quiz_bank": []
+    },
+    "course-3-bio-hazards": {
+      "name": "Biological Hazards",
+      "pdfs": [
+        "iec-60825-1.pdf",
+        "mpe-tables.pdf",
+        "ocular-hazards.pdf",
+        "protective-eyewear.pdf",
+        "skin-hazards.pdf"
+      ],
+      "agents_assigned": [],
+      "status": "pending",
+      "knowledge_graph": null,
+      "quiz_bank": []
+    },
+    "course-4-state-regs": {
+      "name": "State Regulations",
+      "pdfs": [
+        "california.pdf", "colorado.pdf", "florida.pdf", "georgia.pdf",
+        "illinois.pdf", "massachusetts.pdf", "nevada.pdf", "new-york.pdf",
+        "texas.pdf", "washington.pdf"
+      ],
+      "agents_assigned": ["PDF_Elite_Processor_Agent_12"],
+      "batch_c_completed": {
+        "agent": "PDF Elite Processor Agent #12",
+        "timestamp": "2026-03-19T15:46:00-07:00",
+        "processed_pdfs": ["nevada.pdf", "new-york.pdf", "texas.pdf", "washington.pdf"],
+        "outputs": {
+          "extractions": "lms_data/course-4/state-regs/*_extracted.json",
+          "gestation": "lms_data/gestation/course-4/batch_c_gestation.json",
+          "quiz_items": "lms_data/quiz_items/course-4/batch_c_quizzes.json",
+          "knowledge_graph": "lms_data/knowledge_graphs/course-4/batch_c_knowledge_graph.json"
+        },
+        "stats": {
+          "total_pages": 48,
+          "quiz_items_generated": 16,
+          "knowledge_graph_nodes": 21,
+          "knowledge_graph_edges": 20
+        }
+      },
+      "status": "batch_c_completed",
+      "knowledge_graph": "lms_data/knowledge_graphs/course-4/batch_c_knowledge_graph.json",
+      "quiz_bank": "lms_data/quiz_items/course-4/batch_c_quizzes.json"
+    },
+    "course-5-international": {
+      "name": "International Regulations",
+      "pdfs": [
+        "australia-nz.pdf", "canada-regulations.pdf", "eu-directives.pdf",
+        "iec-iso-harmonization.pdf", "international-show-docs.pdf", "uk-regulations.pdf"
+      ],
+      "agents_assigned": [],
+      "status": "pending",
+      "knowledge_graph": null,
+      "quiz_bank": []
+    },
+    "course-6-outdoor-airspace": {
+      "name": "Outdoor & Airspace Safety",
+      "pdfs": [
+        "faa-regulations.pdf", "international-outdoor-standards.pdf",
+        "notam-procedures.pdf", "outdoor-hazard-calculations.pdf", "securing-outdoor-shows.pdf"
+      ],
+      "agents_assigned": ["PDF_Elite_Processor_Agent_16"],
+      "batch_completed": {
+        "agent": "PDF Elite Processor Agent #16",
+        "timestamp": "2026-03-19T15:46:00-07:00",
+        "processed_pdfs": ["international-outdoor-standards.pdf", "securing-outdoor-shows.pdf", "outdoor-hazard-calculations.pdf", "notam-procedures.pdf"],
+        "outputs": {
+          "extractions": "lms_data/extracted_content/course-6/*_extracted.json",
+          "gestation": "lms_data/gestation/course-6/*_gestation.json",
+          "quiz_items": "lms_data/quiz_items/course-6/outdoor_airspace_quiz.json",
+          "knowledge_graph": "lms_data/knowledge_graphs/course-6/outdoor_airspace_kg.json"
+        },
+        "stats": {
+          "total_pages": 72,
+          "quiz_items_generated": 12,
+          "knowledge_graph_nodes": 20,
+          "knowledge_graph_edges": 20
+        }
+      },
+      "status": "completed",
+      "knowledge_graph": "lms_data/knowledge_graphs/course-6/outdoor_airspace_kg.json",
+      "quiz_bank": "lms_data/quiz_items/course-6/outdoor_airspace_quiz.json"
+    },
+    "course-7-event-safety": {
+      "name": "Event Safety",
+      "pdfs": [
+        "crowd-safety.pdf", "emergency-response.pdf", "event-safety-planning.pdf",
+        "insurance-liability.pdf", "venue-assessment.pdf", "weather-protocols.pdf"
+      ],
+      "agents_assigned": [],
+      "status": "pending",
+      "knowledge_graph": null,
+      "quiz_bank": []
+    },
+    "course-8-standards": {
+      "name": "Industry Standards",
+      "pdfs": [
+        "ansi-e146.pdf", "ansi-z136.pdf", "compliance-documentation.pdf",
+        "electrical-safety-standards.pdf", "esta-standards.pdf"
+      ],
+      "agents_assigned": ["PDF_Elite_Processor_Agent_19"],
+      "batch_completed": {
+        "agent": "PDF Elite Processor Agent #19",
+        "timestamp": "2026-03-19T15:46:00-07:00",
+        "processed_pdfs": ["ansi-z136.pdf", "ansi-e146.pdf", "esta-standards.pdf"],
+        "outputs": {
+          "extractions": "lms_data/extracted_content/course-8/*_extracted.json",
+          "digested": "lms_data/digested_content/course-8/*",
+          "gestation": "lms_data/gestation/course-8/*",
+          "quiz_items": "lms_data/quiz_items/course-8/quiz_items.json",
+          "quiz_bank": "lms_data/quiz_banks/course-8/quiz_bank.json",
+          "knowledge_graph": "lms_data/knowledge_graphs/course-8/knowledge_graph.json"
+        },
+        "stats": {
+          "total_pages": 79,
+          "quiz_items_generated": 15,
+          "knowledge_graph_nodes": 35,
+          "knowledge_graph_edges": 11,
+          "standards_covered": ["ANSI Z136 series", "FDA 21 CFR 1040", "ESTA E1.30-11"]
+        }
+      },
+      "status": "batch_completed",
+      "pending_pdfs": ["compliance-documentation.pdf", "electrical-safety-standards.pdf"],
+      "knowledge_graph": "lms_data/knowledge_graphs/course-8/knowledge_graph.json",
+      "quiz_bank": "lms_data/quiz_banks/course-8/quiz_bank.json"
+    }
+  },
+
+  "agent_teams": {
+    "research_team": {
+      "count": 5,
+      "agents": [],
+      "focus_areas": [
+        "adult_learning_theory",
+        "technical_training_methodologies",
+        "interactive_educational_design",
+        "brilliant_org_patterns",
+        "laser_safety_pedagogy"
+      ],
+      "output_location": "lms_data/research_findings/"
+    },
+    "pdf_elite_processors": {
+      "count": 20,
+      "agents": [],
+      "assignment_strategy": "distributed_round_robin",
+      "output_location": "lms_data/extracted_content/"
+    },
+    "gestation_analysts": {
+      "count": 20,
+      "agents": [],
+      "role": "digest_and_summarize_pages",
+      "output_location": "lms_data/digested_content/"
+    },
+    "quiz_architects": {
+      "count": 20,
+      "agents": [],
+      "role": "create_assessment_items",
+      "output_location": "lms_data/quiz_banks/"
+    },
+    "module_builders": {
+      "count": 16,
+      "agents": [],
+      "assignment": "2_per_course",
+      "role": "build_interactive_modules",
+      "output_location": "lms_data/modules/"
+    }
+  },
+
+  "processing_protocols": {
+    "pdf_extraction": {
+      "preserve_text": true,
+      "capture_images": true,
+      "fallback_to_ocr": true,
+      "image_format": "png",
+      "min_dpi": 150
+    },
+    "knowledge_graph": {
+      "format": "jsonld",
+      "entities": ["concepts", "regulations", "procedures", "hazards", "safety_measures"],
+      "relationships": ["requires", "relates_to", "implements", "prohibits", "mandates"]
+    },
+    "quiz_generation": {
+      "types": ["multiple_choice", "scenario_based", "calculation", "true_false"],
+      "difficulty_levels": ["beginner", "intermediate", "advanced"],
+      "alignment_required": true
+    }
+  },
+
+  "reference_standards": {
+    "educational_design": "brilliant_org",
+    "interactivity_level": "high",
+    "diagram_requirements": true,
+    "exercise_types": ["interactive_simulations", "guided_practice", "knowledge_checks"]
+  }
+}

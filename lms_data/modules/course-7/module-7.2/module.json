@@ -1,0 +1,253 @@
+{
+  "module_id": "module-7.2",
+  "course_id": "course-7",
+  "course_name": "Event Safety",
+  "title": "Venue Assessment & Fire Safety",
+  "subtitle": "Comprehensive Venue Evaluation and Fire Safety Management",
+  "description": "Master venue assessment techniques and fire safety requirements for live events. Learn to evaluate means of egress, conduct fire safety inspections, select appropriate fire extinguishers, and implement comprehensive fire safety plans.",
+  "version": "2.0",
+  "last_updated": "2026-03-19",
+  "polished_by": "UI/UX Agent - Event Safety Edition",
+  "duration_minutes": 28,
+  "difficulty": "intermediate",
+  "prerequisites": ["module-7.1"],
+  "next_module": "module-7.3",
+  "ui_theme": {
+    "industry": "event_production",
+    "color_palette": {
+      "primary": "#FF6B00",
+      "primary_dark": "#CC5500",
+      "secondary": "#1A1A2E",
+      "accent": "#FFD700",
+      "fire": "#DC2626",
+      "fire_warning": "#F97316",
+      "fire_safe": "#16A34A",
+      "egress": "#3B82F6",
+      "electrical": "#FACC15",
+      "structural": "#A855F7",
+      "crowd": "#22C55E",
+      "background": "#0F0F1A",
+      "surface": "#1E1E2E",
+      "text": "#FFFFFF",
+      "text_secondary": "#A1A1AA"
+    },
+    "category_colors": {
+      "egress": { "main": "#3B82F6", "icon": "🚪", "label": "Means of Egress" },
+      "fire_protection": { "main": "#DC2626", "icon": "🔥", "label": "Fire Protection" },
+      "electrical": { "main": "#FACC15", "icon": "⚡", "label": "Electrical Safety" },
+      "structural": { "main": "#A855F7", "icon": "🏗️", "label": "Structural Elements" },
+      "crowd": { "main": "#22C55E", "icon": "👥", "label": "Crowd Management" }
+    },
+    "fire_safety_indicators": {
+      "extinguisher_a": { "color": "#22C55E", "symbol": "Green Triangle", "label": "Class A" },
+      "extinguisher_b": { "color": "#DC2626", "symbol": "Red Square", "label": "Class B" },
+      "extinguisher_c": { "color": "#3B82F6", "symbol": "Blue Circle", "label": "Class C" },
+      "extinguisher_d": { "color": "#FACC15", "symbol": "Yellow Star", "label": "Class D" },
+      "extinguisher_k": { "color": "#374151", "symbol": "Black Hexagon", "label": "Class K" }
+    },
+    "status_indicators": {
+      "compliant": { "color": "#16A34A", "icon": "check-circle", "label": "COMPLIANT" },
+      "minor_issue": { "color": "#FACC15", "icon": "alert-triangle", "label": "MINOR ISSUE" },
+      "major_issue": { "color": "#F97316", "icon": "alert-octagon", "label": "MAJOR ISSUE" },
+      "critical": { "color": "#DC2626", "icon": "x-octagon", "label": "CRITICAL" }
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "lo-7.2-1",
+      "text": "Conduct comprehensive venue safety assessments",
+      "icon": "building-search",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.2-2",
+      "text": "Evaluate means of egress for compliance",
+      "icon": "door-open",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.2-3",
+      "text": "Identify and classify fire hazards",
+      "icon": "flame",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.2-4",
+      "text": "Select appropriate fire extinguishers",
+      "icon": "fire-extinguisher",
+      "priority": "high"
+    },
+    {
+      "id": "lo-7.2-5",
+      "text": "Implement fire watch procedures",
+      "icon": "eye",
+      "priority": "high"
+    }
+  ],
+  "content_structure": {
+    "warmup": {
+      "title": "Egress Essentials",
+      "duration": 5,
+      "icon": "door-open",
+      "activities": [
+        "The Station Nightclub case study",
+        "Means of Egress components",
+        "Critical measurements review"
+      ]
+    },
+    "core": {
+      "title": "Venue Assessment Tool",
+      "duration": 14,
+      "icon": "clipboard-check",
+      "activities": [
+        "Interactive venue assessment",
+        "Fire safety inspector walkthrough",
+        "Extinguisher selection tool"
+      ]
+    },
+    "practice": {
+      "title": "Fire Response Planning",
+      "duration": 7,
+      "icon": "flame",
+      "activities": [
+        "PASS method training",
+        "Fire response scenarios",
+        "Fire watch procedures"
+      ]
+    },
+    "challenge": {
+      "title": "Fire Safety Certified",
+      "duration": 2,
+      "icon": "badge-check",
+      "activities": [
+        "Knowledge verification",
+        "Competency badge award"
+      ]
+    }
+  },
+  "emergency_elements": {
+    "quick_access_checklists": [
+      {
+        "id": "egress-checklist",
+        "title": "EGRESS VERIFICATION",
+        "icon": "door-open",
+        "priority": "critical",
+        "color": "egress",
+        "items": [
+          { "task": "Number of exits adequate for occupant load", "priority": "CRITICAL", "verify": "Min 2 exits remote from each other" },
+          { "task": "Exit doors swing in direction of egress", "priority": "CRITICAL", "failure": "Crowd crush hazard" },
+          { "task": "Exit pathways clear of obstructions (36in min)", "priority": "CRITICAL" },
+          { "task": "Exit signs visible and illuminated", "priority": "HIGH" },
+          { "task": "Panic hardware installed and functional", "priority": "HIGH" },
+          { "task": "Emergency lighting operational", "priority": "HIGH" }
+        ]
+      },
+      {
+        "id": "fire-protection-checklist",
+        "title": "FIRE PROTECTION CHECK",
+        "icon": "fire-extinguisher",
+        "priority": "critical",
+        "color": "fire",
+        "items": [
+          { "task": "Fire extinguishers properly located (max 50ft travel)", "priority": "CRITICAL" },
+          { "task": "Correct extinguisher types for hazards", "priority": "CRITICAL" },
+          { "task": "Extinguishers inspected and charged", "priority": "HIGH" },
+          { "task": "Fire alarm system operational", "priority": "HIGH" },
+          { "task": "Sprinkler systems unobstructed (18in clearance)", "priority": "HIGH" }
+        ]
+      }
+    ],
+    "emergency_buttons": [
+      {
+        "id": "fire-emergency",
+        "label": "FIRE EMERGENCY",
+        "color": "fire",
+        "icon": "flame",
+        "action": "fire_emergency_protocol",
+        "confirmation_required": true,
+        "style": "pulsing_alert"
+      },
+      {
+        "id": "evacuate",
+        "label": "INITIATE EVACUATION",
+        "color": "danger",
+        "icon": "running",
+        "action": "initiate_evacuation",
+        "confirmation_required": true
+      }
+    ]
+  },
+  "interactive_features": [
+    {
+      "id": "venue-assessment-tool",
+      "type": "interactive_assessment",
+      "title": "Comprehensive Venue Assessment Tool",
+      "description": "Systematic evaluation of venue safety features",
+      "categories": ["egress", "fire_protection", "electrical", "structural", "crowd"],
+      "scoring": {
+        "compliant": { "points": 10, "color": "#16A34A" },
+        "minor_issue": { "points": 5, "color": "#FACC15" },
+        "major_issue": { "points": 2, "color": "#F97316" },
+        "critical": { "points": 0, "color": "#DC2626" }
+      },
+      "mobile_optimized": true
+    },
+    {
+      "id": "fire-inspector",
+      "type": "interactive_simulation",
+      "title": "Virtual Fire Safety Inspection",
+      "description": "Identify code violations before they become hazards",
+      "areas": ["main_hall", "backstage", "lobby"],
+      "mobile_optimized": true
+    },
+    {
+      "id": "extinguisher-selector",
+      "type": "selection_tool",
+      "title": "Fire Extinguisher Selection Tool",
+      "description": "Select appropriate extinguisher for each hazard",
+      "classes": ["A", "B", "C", "D", "K"],
+      "mobile_optimized": true
+    }
+  ],
+  "mobile_optimizations": {
+    "touch_targets": {
+      "min_size": "48px",
+      "checklist_items": "56px"
+    },
+    "quick_actions": [
+      { "icon": "fire-extinguisher", "label": "Fire Safety", "action": "fire_menu" },
+      { "icon": "door-open", "label": "Egress", "action": "egress_check" },
+      { "icon": "alert-triangle", "label": "Emergency", "action": "emergency_menu" }
+    ]
+  },
+  "fire_safety_reference": {
+    "extinguisher_types": [
+      { "class": "A", "symbol": "🟢", "fuels": "Paper, wood, fabrics", "agents": "Water, foam, dry chemical" },
+      { "class": "B", "symbol": "🔴", "fuels": "Flammable liquids, gases", "agents": "Dry chemical, CO2, foam" },
+      { "class": "C", "symbol": "🔵", "fuels": "Energized electrical", "agents": "CO2, dry chemical" },
+      { "class": "D", "symbol": "🟡", "fuels": "Combustible metals", "agents": "Dry powder only" },
+      { "class": "K", "symbol": "⚫", "fuels": "Cooking oils, fats", "agents": "Wet chemical" }
+    ],
+    "pass_method": [
+      { "letter": "P", "word": "Pull", "action": "Pull the pin to unlock" },
+      { "letter": "A", "word": "Aim", "action": "Aim at base of fire" },
+      { "letter": "S", "word": "Squeeze", "action": "Squeeze handle to release" },
+      { "letter": "S", "word": "Sweep", "action": "Sweep side to side" }
+    ]
+  },
+  "badge": {
+    "id": "fire_safety_specialist",
+    "name": "Venue & Fire Safety Specialist",
+    "icon": "flame",
+    "emoji": "🔥",
+    "color": "#DC2626",
+    "description": "Mastered venue assessment and fire safety management"
+  },
+  "completion_criteria": {
+    "quiz_pass_score": 80,
+    "minimum_time_minutes": 22,
+    "required_exercises": ["venue_assessment_tool", "fire_safety_inspector", "extinguisher_selector"]
+  },
+  "standards_reference": ["NFPA 1", "NFPA 101", "NFPA 10", "NFPA 701", "IFC"],
+  "source_files": ["module_metadata.json", "lessons.json"]
+}

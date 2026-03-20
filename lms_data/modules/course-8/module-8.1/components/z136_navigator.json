@@ -1,0 +1,143 @@
+{
+  "component_id": "z136_navigator",
+  "name": "ANSI Z136.1 Navigator",
+  "type": "interactive_document",
+  "description": "Progressive disclosure exploration of ANSI Z136.1 key sections with searchable content",
+  "structure": {
+    "sections": [
+      {
+        "id": "sec1",
+        "section_number": "1-2",
+        "title": "Scope and Definitions",
+        "expanded": false,
+        "subsections": [
+          {
+            "id": "1.1",
+            "title": "Purpose and Application",
+            "key_content": "Establishes the foundation for laser safety programs"
+          },
+          {
+            "id": "1.2",
+            "title": "Key Definitions",
+            "key_terms": ["MPE", "NOHD", "Accessible Emission", "AEL"]
+          }
+        ]
+      },
+      {
+        "id": "sec3",
+        "section_number": "3",
+        "title": "LSO Responsibilities",
+        "expanded": false,
+        "subsections": [
+          {
+            "id": "3.1",
+            "title": "Authority and Duties",
+            "key_content": "Executive responsibility for laser safety, not advisory only"
+          },
+          {
+            "id": "3.2",
+            "title": "Competency Requirements",
+            "key_content": "Knowledge, training, and experience requirements"
+          },
+          {
+            "id": "3.3",
+            "title": "Specific Responsibilities",
+            "key_content": ["Hazard evaluation", "Control measures", "Training", "Incident investigation"]
+          }
+        ]
+      },
+      {
+        "id": "sec4",
+        "section_number": "4",
+        "title": "Hazard Evaluation",
+        "expanded": false,
+        "subsections": [
+          {
+            "id": "4.1",
+            "title": "Classification",
+            "key_content": "Laser class determination and labeling"
+          },
+          {
+            "id": "4.2",
+            "title": "Bioeffects",
+            "key_content": "Ocular and skin effects by wavelength"
+          },
+          {
+            "id": "4.3",
+            "title": "MPE Tables",
+            "key_content": "Tables 5a/5b - Maximum Permissible Exposure values"
+          },
+          {
+            "id": "4.4",
+            "title": "Hazard Analysis",
+            "key_content": "NOHD, NHZ, and controlled area calculations"
+          }
+        ]
+      },
+      {
+        "id": "sec5",
+        "section_number": "5",
+        "title": "Control Measures",
+        "expanded": false,
+        "subsections": [
+          {
+            "id": "5.1",
+            "title": "Engineering Controls",
+            "key_content": ["Protective housings", "Interlocks", "Remote interlock connector", "Beam attenuators"]
+          },
+          {
+            "id": "5.2",
+            "title": "Administrative Controls",
+            "key_content": ["SOPs", "Training", "Alignment procedures", "Authorized personnel"]
+          },
+          {
+            "id": "5.3",
+            "title": "PPE Requirements",
+            "key_content": "Protective eyewear selection and specifications"
+          }
+        ]
+      },
+      {
+        "id": "sec6",
+        "section_number": "6",
+        "title": "Medical Surveillance",
+        "expanded": false,
+        "subsections": [
+          {
+            "id": "6.1",
+            "title": "Pre-Placement Exams",
+            "key_content": "Baseline eye examination requirements"
+          },
+          {
+            "id": "6.2",
+            "title": "Post-Exposure Evaluation",
+            "key_content": "Follow-up procedures for suspected exposure"
+          }
+        ]
+      }
+    ]
+  },
+  "features": {
+    "search": {
+      "enabled": true,
+      "search_fields": ["title", "content", "key_terms"]
+    },
+    "progressive_disclosure": {
+      "default_expanded": ["sec3", "sec4"],
+      "expand_all_option": true
+    },
+    "quick_reference": {
+      "enabled": true,
+      "cards": [
+        {
+          "title": "MPE Quick Reference",
+          "content": "Visible: 1.8×t^0.75 mW/cm² | UV: 3×10⁻³ J/cm² | IR: Varies by band"
+        },
+        {
+          "title": "NOHD Formula",
+          "content": "NOHD = (1/θ) × √(1.27 × P / MPE)"
+        }
+      ]
+    }
+  }
+}

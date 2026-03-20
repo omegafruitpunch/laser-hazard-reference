@@ -1,0 +1,29 @@
+{
+  "id": "course-6",
+  "title": "Outdoor Laser Safety & Airspace",
+  "description": "FAA regulations, aviation laser safety, outdoor hazard assessment, and atmospheric considerations for outdoor laser shows. Critical knowledge for any outdoor laser operations.",
+  "duration": 75,
+  "difficulty": "intermediate",
+  "category": "Operations",
+  "modules": [
+    "module-6-1",
+    "module-6-2",
+    "module-6-3",
+    "module-6-4",
+    "module-6-5"
+  ],
+  "prerequisites": ["course-1"],
+  "certifications": ["CLSO", "Outdoor Operations Specialist"],
+  "learningObjectives": [
+    "Understand FAA Order 7400.2 and 18 USC 39A requirements",
+    "File NOTAMs for outdoor laser operations",
+    "Calculate outdoor hazard distances with atmospheric effects",
+    "Implement site assessment and perimeter security",
+    "Apply IEC 60825-3 for laser displays"
+  ],
+  "thumbnail": "/images/courses/course-6.jpg",
+  "icon": "✈️",
+  "coverColor": "from-sky-600 to-blue-400",
+  "createdAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-01-01T00:00:00Z"
+}

@@ -1,0 +1,133 @@
+{
+  "quiz_id": "course-7-quiz-2",
+  "title": "Weather Protocols Assessment",
+  "module": "Weather Protocols and Decision Triggers",
+  "passing_score": 80,
+  "time_limit_minutes": 20,
+  "questions": [
+    {
+      "question_id": "wp-q1",
+      "type": "multiple_choice",
+      "question": "What alert signal indicates immediate evacuation due to winds exceeding 50 MPH or tornado activity?",
+      "options": [
+        "1 long air horn blast",
+        "2 long air horn blasts + radio communication",
+        "Radio alert only",
+        "3 short air horn blasts"
+      ],
+      "correct_answer": 1,
+      "explanation": "2 long air horn blasts plus radio communication signals the most severe weather condition requiring immediate evacuation."
+    },
+    {
+      "question_id": "wp-q2",
+      "type": "multiple_choice",
+      "question": "At what wind speed should audio truss be flattened to the roof?",
+      "options": [
+        "20 MPH",
+        "30 MPH nearing",
+        "40 MPH or greater",
+        "50 MPH"
+      ],
+      "correct_answer": 2,
+      "explanation": "Winds of 40 MPH or greater require audio truss to be flattened to the roof with evacuation."
+    },
+    {
+      "question_id": "wp-q3",
+      "type": "true_false",
+      "question": "Lightning within 8 miles requires all production areas to power off and take shelter.",
+      "correct_answer": true,
+      "explanation": "True. Lightning within 8 miles triggers show delays and requires all production areas to power off and take shelter."
+    },
+    {
+      "question_id": "wp-q4",
+      "type": "multiple_select",
+      "question": "Which production areas should evacuate when winds exceed 50 MPH? (Select all that apply)",
+      "options": [
+        "Stage",
+        "LED Screens",
+        "Audio",
+        "Lights",
+        "FOH (Front of House)",
+        "Back Line"
+      ],
+      "correct_answers": [0, 1, 2, 3, 4, 5],
+      "explanation": "All production areas should evacuate when winds exceed 50 MPH or during tornado activity."
+    },
+    {
+      "question_id": "wp-q5",
+      "type": "multiple_choice",
+      "question": "What is the appropriate response for LED screens when winds are nearing 30 MPH?",
+      "options": [
+        "Immediate evacuation",
+        "Land PA and delays",
+        "Power off completely",
+        "Continue normal operation"
+      ],
+      "correct_answer": 1,
+      "explanation": "When winds are nearing 30 MPH, LED screens should land PA and implement delays."
+    },
+    {
+      "question_id": "wp-q6",
+      "type": "multiple_choice",
+      "question": "When a storm is tracking towards the site within 20 miles, what should the lighting department do?",
+      "options": [
+        "Power off immediately",
+        "Monitor rig swing",
+        "Have motor controllers at ready",
+        "Evacuate to shelter"
+      ],
+      "correct_answer": 2,
+      "explanation": "When storms are tracking within 20 miles, lighting should have motor controllers at ready for quick response."
+    },
+    {
+      "question_id": "wp-q7",
+      "type": "matching",
+      "question": "Match the weather condition with the appropriate response:",
+      "pairs": [
+        {"term": "50+ MPH winds", "definition": "Immediate retreat to shelter"},
+        {"term": "40+ MPH winds", "definition": "Show delayed, audience advised to seek shelter"},
+        {"term": "Lightning within 8 miles", "definition": "Power off, take shelter"},
+        {"term": "All Clear signal", "definition": "Resume normal activities"}
+      ],
+      "explanation": "Each weather threshold has a specific alert method and response protocol."
+    },
+    {
+      "question_id": "wp-q8",
+      "type": "multiple_choice",
+      "question": "What should FOH (Front of House) do when winds are greater than 20 MPH?",
+      "options": [
+        "Evacuate immediately",
+        "Secure gear and monitor conditions",
+        "Power off all equipment",
+        "Continue mixing without changes"
+      ],
+      "correct_answer": 1,
+      "explanation": "At 20+ MPH winds, FOH should secure gear and monitor conditions rather than immediately evacuating."
+    },
+    {
+      "question_id": "wp-q9",
+      "type": "multiple_select",
+      "question": "Which conditions trigger the 'All Clear' signal? (Select all that apply)",
+      "options": [
+        "Weather is all clear",
+        "Winds drop below 20 MPH",
+        "Lightning has passed 8-mile radius",
+        "All areas can resume normal activities"
+      ],
+      "correct_answers": [0, 3],
+      "explanation": "The All Clear is signaled when weather is all clear and all areas can resume normal activities."
+    },
+    {
+      "question_id": "wp-q10",
+      "type": "scenario",
+      "question": "Scenario: You are the production manager at an outdoor festival. Weather radar shows a storm with 45 MPH winds and lightning approaching within 10 miles. Walk through your decision-making process and actions for each production area.",
+      "model_answer": "1) Issue radio alert to all departments. 2) Winds 40+ MPH: 1 long air horn blast - delay show, advise audience to seek shelter. 3) Stage: land anchor, message system. 4) LED: land PA and delays. 5) Audio: flatten truss to roof. 6) Lights: secure, power off, evacuate. 7) Spots/FOH/Video/Back Line: power off, evacuate. 8) Continue monitoring for lightning entering 8-mile radius which would trigger full shelter protocol.",
+      "key_points": ["Radio alert", "Air horn signal", "Stage protocols", "Equipment securing", "Audience safety"]
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "processing_agent": "PDF Elite Processor Agent #18",
+    "created_date": "2026-03-19"
+  }
+}

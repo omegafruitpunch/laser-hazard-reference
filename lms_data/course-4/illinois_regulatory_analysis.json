@@ -1,0 +1,171 @@
+{
+  "state": "Illinois",
+  "regulatory_authority": "Illinois Emergency Management Agency",
+  "document_type": "Administrative Code - Title 32 Chapter II",
+  "part": "315",
+  "title": "Standards for Protection Against Laser Radiation",
+  "legal_authority": "Laser System Act of 1997 [420 ILCS 56]",
+  "effective_date": "May 17, 2001",
+  "extracted_date": "2026-03-19",
+  "key_sections": {
+    "315.10": {
+      "title": "Purpose",
+      "description": "Establishes standards for protection against laser radiation"
+    },
+    "315.20": {
+      "title": "Scope",
+      "applies_to": "Any location/facility where laser systems are produced, stored, disposed of, or used",
+      "exemptions": "Medical/dental procedures under licensed practitioners"
+    },
+    "315.30": {
+      "title": "Incorporations by Reference",
+      "standards": [
+        "21 CFR 1040, 2000 edition",
+        "ANSI Z136.1-2000 (Safe Use of Lasers)",
+        "ANSI Z136.2 (Optical Fiber Communication Systems)",
+        "ANSI Z136.3 (Safe Use of Lasers in Health Care Facilities)"
+      ]
+    }
+  },
+  "registration_requirements": {
+    "installation_registration": {
+      "requirement": "Register before placing installation in operation",
+      "required_info": [
+        "Operator's name",
+        "Location of laser installation",
+        "Classification number and room location of laser systems",
+        "Name of designated laser safety officer"
+      ],
+      "frequency": "One-time at installation startup"
+    },
+    "laser_system_registration": {
+      "requirement": "Register systems annually",
+      "required_info": [
+        "Manufacturer",
+        "Model",
+        "Serial number",
+        "Output power",
+        "Wavelength",
+        "Class of each laser system"
+      ]
+    },
+    "out_of_state_facilities": {
+      "10_day_notice": "Written notice at least 10 working days before use",
+      "requirements": [
+        "Register installation and laser systems",
+        "Include nature, duration, scope of use",
+        "Include exact locations",
+        "Comply with all applicable requirements"
+      ],
+      "inspection": "Pre-operational inspection may be required within 24 hours"
+    }
+  },
+  "laser_safety_officer": {
+    "qualifications": {
+      "training_areas": [
+        "Fundamentals of laser operation",
+        "Familiarity with equipment type utilized",
+        "Biological effects on eye and skin",
+        "Laser and laser system classification",
+        "Control measures",
+        "Nonradiation hazards",
+        "Medical surveillance practices (if applicable)",
+        "Laser terminology",
+        "Maximum Permissible Exposure (MPE) levels"
+      ]
+    },
+    "duties": [
+      "Establish and implement laser radiation safety program",
+      "Ensure hazard instructions provided to exposed individuals",
+      "Permit operation only by trained individuals with SOP access",
+      "Ensure laser systems meet requirements and control measures in effect",
+      "Periodically audit functionality of control measures"
+    ]
+  },
+  "exemptions": [
+    "Certified Class 1, Class 2, Class 2a and Class 3a lasers",
+    "Embedded Class 3b or Class 4 lasers with lower classification",
+    "Laser systems in transit per transportation agency rules",
+    "Inoperable laser systems (disconnected = still operable)"
+  ],
+  "operator_requirements": {
+    "training": {
+      "frequency": "Initial and annual in-service",
+      "topics": [
+        "Operating and emergency procedures",
+        "Use of laser protective devices and eyewear",
+        "Warnings to avoid MPE exceedance",
+        "Safe operation requirements"
+      ]
+    },
+    "protective_eyewear": {
+      "requirements": [
+        "Comfortable and appropriate fit",
+        "Proper condition with required optical density",
+        "Suitable for specific wavelength",
+        "OD and wavelengths permanently labeled",
+        "Examined every 6 months by LSO or designee"
+      ]
+    },
+    "engineering_controls": [
+      "Protective housing",
+      "Safety interlocks",
+      "Viewing optics and windows",
+      "Warning systems",
+      "Controlled area access restrictions"
+    ]
+  },
+  "entertainment_laser_light_show": {
+    "advance_notice": "10 working days in writing or facsimile",
+    "required_info": [
+      "Name, address, phone of registrant",
+      "Name, address, phone of LSO",
+      "Name, address, phone of person in charge",
+      "Location, time, date of show",
+      "Documentation of FDA variance (21 CFR 1040.11)",
+      "FAA notification for outdoor performances",
+      "Manufacturer, class, wavelength, output power",
+      "Sketches of location, beam paths, reflective surfaces"
+    ],
+    "safe_operation_requirements": [
+      "Emissions outside 400-700nm shall not exceed Class 1 limits",
+      "Audience area shall not exceed Class 1 limits",
+      "Operators/performers not intended to view: shall not exceed Class 2",
+      "Areas above Class 2: posted with warning signs and barriers",
+      "Scanning lasers: no audience exposure above Class 1 during failures",
+      "Mirror ball: meet conditions when stationary or during failure",
+      "Direct supervision required except for low power or height/side separations"
+    ],
+    "height_requirements": {
+      "unattended": "6 meters above audience OR 2.5m lateral separation",
+      "with_operator": "3 meters above audience (for Class 2+ areas)"
+    }
+  },
+  "incident_reporting": {
+    "immediate_notification": {
+      "trigger": [
+        "Exposure > 100 times MPE",
+        "Partial or total loss of sight",
+        "Skin perforation or serious injury"
+      ]
+    },
+    "24_hour_notification": {
+      "trigger": [
+        "Exposure > 5 times MPE",
+        "Second or third degree burns"
+      ]
+    },
+    "written_report": "Within 30 days for any incident requiring notification"
+  },
+  "record_retention": "5 years for",
+  "records_required": [
+    "Authorized laser operators listing",
+    "Protective eyewear inspection results",
+    "Instrument calibration results",
+    "Incident reports"
+  ],
+  "caution_signs": {
+    "class_3b": "LASER RADIATION - AVOID DIRECT EXPOSURE TO BEAM",
+    "class_4": "LASER RADIATION - AVOID EYE OR SKIN EXPOSURE TO DIRECT OR SCATTERED RADIATION"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 5,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Manufacturer definition and obligations",
+      "Product compliance lifecycle",
+      "OEM laser products requirements",
+      "Export-only product provisions"
+    ],
+    "key_terms": [
+      {
+        "term": "Manufacturer",
+        "definition": "Person or organization making, assembling, importing, or modifying laser products"
+      },
+      {
+        "term": "OEM Laser Products",
+        "definition": "Laser components for sale to other manufacturers"
+      },
+      {
+        "term": "Certification",
+        "definition": "Manufacturer's declaration that product complies with standards"
+      },
+      {
+        "term": "Accidental Radiation Occurrence",
+        "definition": "Possible, suspected, or known radiation exposure events"
+      },
+      {
+        "term": "Radiation Defect",
+        "definition": "Product failure to comply with performance standards"
+      },
+      {
+        "term": "1010.20",
+        "definition": "Export-only product requirements"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1000.3(f) - Manufacturer definition",
+      "21 CFR 1040.10(a) - Standard applicability date (August 2, 1976)",
+      "21 CFR 1040.10(a)(1) - Component exemption",
+      "21 CFR 1040.10(a)(2) - Repair/replacement exemption",
+      "21 CFR 1010.20 - Export-only products",
+      "21 CFR 1040.10(a)(3) - OEM reporting requirements"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Define who qualifies as a manufacturer under FDA regulations",
+      "List the eight key manufacturer responsibilities",
+      "Understand OEM product requirements",
+      "Know exemptions for repair/replacement components"
+    ],
+    "prerequisites": [
+      "Understanding of basic manufacturing concepts"
+    ],
+    "estimated_study_time_minutes": 25,
+    "content_type": "regulatory_requirements",
+    "has_tables": false
+  }
+}

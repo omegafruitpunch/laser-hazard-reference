@@ -1,0 +1,33 @@
+{
+  "course": "course-2",
+  "page_number": 10,
+  "quiz_items": [
+    {
+      "id": "C2-P10-Q1",
+      "type": "scenario",
+      "difficulty": "advanced",
+      "question": "A Class IIIb laser workstation has a protective housing that can be opened during operation for loading workpieces. What interlock requirements apply?",
+      "options": [
+        "No interlock needed since housing must open during operation",
+        "Interlock required, and interior radiation level determines classification",
+        "Only warning label required",
+        "Simple snap-action switch sufficient"
+      ],
+      "correct_answer": 1,
+      "explanation": "If housing opens during operation and interior access is necessary, the interior radiation level determines classification. A redundant or fail-safe interlock is required for Class IIIb.",
+      "learning_objective": "Apply protective housing requirements",
+      "regulatory_reference": "21 CFR 1040.10(f)(2), Laser Notice #37"
+    },
+    {
+      "id": "C2-P10-Q2",
+      "type": "true_false",
+      "difficulty": "intermediate",
+      "question": "A protective housing with gaps or cooling vents is acceptable as long as the radiation level is below Class I at the opening.",
+      "options": ["True", "False"],
+      "correct_answer": 1,
+      "explanation": "False. The protective housing must be contiguous. Common difficulties have been human access through cooling vents or poor fit between housing sections. The housing must prevent access to Class I+ radiation where not necessary for product function.",
+      "learning_objective": "Understand protective housing design",
+      "regulatory_reference": "21 CFR 1040.10(f)(1)"
+    }
+  ]
+}

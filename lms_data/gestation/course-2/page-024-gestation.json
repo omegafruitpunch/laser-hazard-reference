@@ -1,0 +1,49 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 24,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Variance amendment requirements",
+      "Substantial changes requiring amendments",
+      "Reporting guide usage",
+      "Notification letter requirements"
+    ],
+    "key_terms": [
+      {
+        "term": "Variance Amendment",
+        "definition": "Required when product changes affect safety conditions"
+      },
+      {
+        "term": "Substantial Change",
+        "definition": "Change requiring modification of variance conditions"
+      },
+      {
+        "term": "Reporting Guide",
+        "definition": "Format for describing projector/show compliance"
+      },
+      {
+        "term": "Notification Letter",
+        "definition": "Schedule and location notification for shows"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1010.4(b)(2) - Variance amendments",
+      "Reporting Guide for Laser Light Shows and Displays (1980)"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Determine when variance amendments needed",
+      "Use appropriate reporting guides",
+      "Submit proper notifications",
+      "Distinguish projector from show reporting"
+    ],
+    "prerequisites": [
+      "Page 23 content"
+    ],
+    "estimated_study_time_minutes": 25,
+    "content_type": "specialized_guidance",
+    "has_tables": false
+  }
+}

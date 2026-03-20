@@ -1,0 +1,26 @@
+{
+  "processed_at": "2026-03-19T17:25:40.703992",
+  "agent": "PDF Elite Processor Agent #2",
+  "course": "Course 1: Laser Safety Fundamentals",
+  "pdfs_processed": [
+    {
+      "filename": "beam-hazard-calculations.pdf",
+      "pages": 4,
+      "type": "Professional Profile/CV",
+      "note": "Not actually beam calculations - CV of Roberta McHatton"
+    },
+    {
+      "filename": "lso-role.pdf",
+      "pages": 35,
+      "type": "Comprehensive Safety Guide",
+      "title": "Safety of Display Lasers",
+      "chapters": 7
+    }
+  ],
+  "outputs_generated": {
+    "digested_summaries": 2,
+    "quiz_banks": 2,
+    "total_quiz_questions": 36,
+    "knowledge_graphs": 2
+  }
+}

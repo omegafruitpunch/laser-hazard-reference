@@ -1,0 +1,251 @@
+PDF: securing-outdoor-shows.pdf
+Total Pages: 4
+================================================================================
+
+--- Page 1 ---
+Words: 363, Images: 0
+
+ 
+1 
+ 
+U.S. Department 
+of Transportation 
+Federal Aviation  
+Administration 
+ 
+Advisory 
+Circular 
+ 
+ 
+Subject:  Reporting of Laser Illumination of 
+Aircraft 
+Date: February 8, 2013 
+Initiated by:  AJR-2 
+AC No:  70-2A 
+Change: 
+1. PURPOSE 
+a. This Advisory Circular (AC) provides information to the aviation community, particularly 
+aircrews operating within the National Airspace System (NAS) on measures taken by the Federal 
+Aviation Administration (FAA) to address incidents of unauthorized illumination of aircraft by lasers.  
+The FAA Modernization and Reform Act of 2012, passed into public law on February 14, 2012, 
+established a prohibition against aiming a laser pointer at an aircraft.  
+b. In addition, this AC provides guidance to aircrews and reflects current guidance for air traffic 
+control (ATC) on the formal reporting of laser illumination incidents. Reporting laser incidents assists 
+law enforcement and provides support for recommended mitigation actions to be taken to ensure 
+continued safe and orderly flight operations.   
+c. This AC is issued in serious response to the significant increase of unauthorized laser 
+illumination of aircraft incidents, as well as the proliferation and increased sophistication of laser 
+devices available to the general public and other parties.  FAA and other governmental studies show the 
+exposure of aircrews to laser illumination may cause hazardous effects (e.g., distraction, glare, 
+afterimage, flash blindness, and, in extreme circumstances, persistent or permanent visual impairment), 
+which could compromise safety by adversely interfering with the ability of aircrews to carry out their 
+responsibilities.  ATC regards a laser illumination incident as an in-flight emergency, and will treat them 
+as such, until the aircrew states otherwise. 
+d. The FAA, in coordination with local law enforcement, the Federal Bureau of Investigation, and 
+other governmental agencies, such as the Department of Homeland Security, Transportation Security 
+Administration (TSA), is taking immediate action to safeguard flights against these unauthorized 
+illuminations and expeditiously locate the source of unauthorized laser transmissions.   
+2. CANCELLATION 
+Advisory Circular 70-2, dated January 11, 2005, is canceled. 
+3. EXPLANATION OF CHANGES 
+ 
+a. AC 70-2 has been revised to update changes and highlight FAA actions that have been taken to 
+improve the formal reporting of unauthorized laser illumination of aircraft incidents.  The dramatic 
+increase of unauthorized laser illumination incidents since the original AC 70-2 was published in 
+
+
+================================================================================
+
+--- Page 2 ---
+Words: 467, Images: 0
+
+ 
+2 
+2005 (283 events), compared to 2011 (3,591 events), has resulted in a recently passed public law, the 
+FAA Modernization and Reform Act of 2012, that prohibits aiming a laser pointer at an aircraft. 
+ 
+b. Potential debilitating injuries caused by laser exposure could compromise safety and interfere 
+with aircrew duties leading ATC to regard a laser illumination of aircraft incident as an in-flight 
+emergency. 
+ 
+c. Paragraphs have been changed to provide clarity, combine and condense verbiage, place 
+procedures in their proper order, and remove obsolete references.   
+ 
+d. The ATC report is updated to include the state where the laser illumination occurred and name 
+and telephone number of the law enforcement entity contacted.   
+ 
+e. New means of laser reporting are added to this AC. 
+f. The “Aircrew Information Resources” section includes references to the FAA’s laser Web site 
+and the Aeronautical Information Manual (AIM). 
+ 
+g. The “Related Documents” section has been expanded. 
+4. AUTHORITY 
+a. The FAA has the authority to regulate the safe and efficient use of navigable airspace 
+(title 49, United States Code (U.S.C.), Section 40103, Sovereignty and use of airspace). 
+b. The FAA also has the authority to protect the flight of aircraft in air commerce (title 49, U.S.C., 
+section 44701(a)(5)). 
+5. FAA NOTIFICATIONS AND REPORTING 
+a. FAA ATC facilities that are routinely connected to the Domestic Events network (DEN) will 
+immediately report unauthorized laser illumination incidents directly to the DEN.  All other FAA 
+ATC facilities will immediately report unauthorized laser illumination incidents through the 
+Washington Operations Center Complex (WOCC) to the DEN.  The DEN shares real time security-
+related information that affects NAS air traffic operations among the FAA, the TSA, and other 
+governmental stakeholders, including law enforcement agencies.  This information will be used to 
+support appropriate action taken by these governmental entities to safeguard the safety and security 
+of aviation operations in the NAS. 
+b. The ATC report will include event date and time in universal coordinated time (UTC), 
+operator, flight number, type of aircraft, nearest major city, state, altitude, location of event 
+(e.g., latitude/longitude and/or fixed radial distance (FRD)), a brief description of the event, name 
+and telephone number of the law enforcement entity contacted, and any other information needed to 
+support the action. 
+c. If the laser event occurs in the vicinity of an FAA ATC terminal facility, ATC will broadcast on 
+appropriate control frequencies a general caution about reported incidents of unauthorized laser 
+illumination of aircraft.  These cautions will be broadcast every 5 minutes for 20 minutes 
+(four times) after each reported event.  Cautionary broadcasts will include the following: 
+ 
+ 
+- Phrase “UNAUTHORIZED LASER ILLUMINATION EVENT.” 
+ 
+ 
+- General positional information (e.g., location and altitude). 
+d. ATC facilities will also notify flights operating in the immediate area of reported incidents of 
+unauthorized laser illumination of aircraft using automatic terminal information service systems 
+
+
+================================================================================
+
+--- Page 3 ---
+Words: 442, Images: 0
+
+ 
+3 
+(ATIS) for at least 1 hour following the report of the event.  These ATIS broadcasts will include the 
+following: 
+ 
+ 
+- Phrase “UNAUTHORIZED LASER ILLUMINATION EVENT.” 
+ 
+ 
+- Event time in UTC, general positional information (e.g., location and altitude). 
+ 
+ 
+- General description of event (e.g., color, intensity, and direction of beam). 
+ 
+e. In addition, the FAA will issue information on laser incidents to operators through established 
+communication mechanisms (e.g., the FAA Air Traffic Control System Command Center (ATCSCC), 
+coordination with aircraft operators, including representatives of the Airlines for America (A4A), the 
+National Business Aviation Association (NBAA), etc.).  Representatives at the ATCSCC will further 
+disseminate this information as appropriate. 
+6. AIRCREW REPORTING PROCEDURES   
+ 
+a. All aircrews are requested to immediately report incidents of unauthorized laser illumination by 
+radio to the appropriate ATC controlling facility.  Reports should include event position (e.g., 
+latitude/longitude and/or FRD), altitude, color of laser beam(s), originating direction, and any other 
+information believed necessary for ATC, law enforcement, and other governmental action taken to 
+safeguard the safety and efficiency of aviation operations in the NAS. 
+ 
+b. Aircrews flying in uncontrolled airspace are requested to immediately broadcast a general laser 
+illumination caution on the appropriate UNICOM frequency.  This general caution should include the 
+following: 
+ 
+ 
+- Phrase “UNAUTHORIZED LASER ILLUMINATION EVENT.” 
+ 
+ 
+- Event time in UTC, general positional information (e.g., location and altitude). 
+ 
+ 
+- General description of event (e.g., color, intensity, and direction of beam). 
+ 
+c. On arrival at destination, all aircrews that have been affected by an unauthorized laser 
+illumination are requested to complete the Laser Beam Exposure Questionnaire.  The questionnaire 
+is located on the FAA’s Laser Safety Initiative Web site at http://www.faa.gov/about/initiatives/lasers/ 
+and can be electronically submitted.  The questionnaire may also be printed and faxed to the WOCC at 
+(202) 267-5289, ATTN:  DEN, or emailed to laserreports@faa.gov. 
+7. AIRCREW MITIGATION PROCEDURES 
+ 
+a. Although unauthorized laser illumination is difficult to predict there are certain practical actions 
+aircrews should consider before, during, and after encountering laser activity.    
+ 
+ 
+- Pilots should avoid flight within areas of reported ongoing unauthorized laser activity to the 
+extent practicable. 
+ 
+ 
+- In the event a cautionary broadcast (by ATC or another pilot) regarding unauthorized laser 
+illumination is made within the previous 20 minutes for a particular area, pilots should avoid the area, if 
+practicable. 
+ 
+ 
+- In the event laser activity is encountered or reported in the vicinity of flight, pilots operating in 
+accordance with instrument flight rules (IFR) should obtain ATC authorization prior to deviating from 
+their assigned clearance.  
+ 
+ 
+- In the event aircrews are unexpectedly exposed to laser illumination, direct eye contact with 
+the beam should be avoided, and eyes should be shielded to the maximum extent possible consistent 
+
+
+================================================================================
+
+--- Page 4 ---
+Words: 307, Images: 1
+
+ 
+4 
+with aircraft contract and safety.  ATC understands that, under these circumstances, aircrews may regard 
+the event as an in-flight emergency and may take evasive action to avoid further exposure to the laser 
+illumination.  
+ 
+ 
+- As soon as possible, following an incident, pilots should report it to the appropriate ATC 
+facility in accordance with the guidance provided by this AC.  Forward as much information as 
+available.  Expeditious reporting will assist law enforcement in locating the source of the laser 
+transmission. 
+ 
+ 
+- Pilots are encouraged to complete the FAA Laser Beam Exposure Questionnaire located online 
+at http://www.faa.gov/about/initiatives/lasers/, and submit electronically as soon as possible after 
+landing.  The questionnaire may also be printed and faxed to WOCC, (202) 267-5289, ATTN:  DEN, or 
+emailed to laserreports@faa.gov. 
+ 
+b. Research is underway by Government and private industry focusing on technological solutions 
+for enhancing aircrew safety during laser incidents.  Additional mitigation procedures will be issued as 
+they become available. 
+8. AIRCREW INFORMATION RESOURCES 
+ 
+a. The FAA recommends that aircraft operators, particularly aircrews, regularly check for updates 
+on this issue in the appropriate Notices to Airmen, with FAA flight service stations, and with their local 
+ATC facilities. 
+ 
+b. Additional information may be available at the following Web sites: 
+ 
+ 
+- FAA Laser Safety Initiative Web site at http://www.faa.gov/about/initiatives/lasers/ 
+ 
+ 
+- AIM at http://www.faa.gov/air_traffic/publications/atpubs/aim 
+9. RELATED DOCUMENTS  
+ 
+a. Title 49, U.S.C., section 40103, Sovereignty and use of airspace 
+ 
+b. Title 49, U.S.C., section 44701(a)(5), General requirements 
+ 
+c. Title 18, U.S.C., Part 1, Chapter 2, Section 39A, Aiming a laser pointer at an aircraft 
+ 
+d. Public Law 112-95, FAA Modernization and Reform Act of 2012, Section 311 
+ 
+e. FAA Order JO 7110.65, Air Traffic Control, Unauthorized Laser Illumination of Aircraft 
+ 
+f. FAA Order JO 7110.10, Flight Services, Unauthorized Laser Illumination Events 
+ 
+g. FAA Order JO 7210.3, Facility Operation and Administration, Reporting Unauthorized Laser 
+Illumination of Aircraft 
+ Frank Hatfield
+ 
+ 
+ 
+
+
+================================================================================
+

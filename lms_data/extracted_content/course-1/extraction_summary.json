@@ -1,0 +1,8 @@
+{
+  "processed_pdfs": [
+    "beam-hazard-calculations.pdf",
+    "lso-role.pdf"
+  ],
+  "total_pdfs": 2,
+  "output_directory": "lms_data\\extracted_content\\course-1"
+}

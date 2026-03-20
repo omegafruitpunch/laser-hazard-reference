@@ -1,0 +1,54 @@
+{
+  "course": "course-2",
+  "page_number": 8,
+  "quiz_items": [
+    {
+      "id": "C2-P8-Q1",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "When measuring laser classification parameters, what aperture diameter must be used?",
+      "options": [
+        "3.5 mm",
+        "7 mm",
+        "10 mm",
+        "Variable based on beam diameter"
+      ],
+      "correct_answer": 1,
+      "explanation": "Measurements for classification must be made through a 7 mm diameter circular aperture (representing a dilated pupil), divided by 0.385 cm², the area of the aperture.",
+      "learning_objective": "Know measurement specifications",
+      "regulatory_reference": "21 CFR 1040.10(e)(3)"
+    },
+    {
+      "id": "C2-P8-Q2",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "What is the maximum optical power allowed for collimating optics when measuring diverging laser sources?",
+      "options": [
+        "2.5 diopters",
+        "5 diopters",
+        "10 diopters",
+        "No limit"
+      ],
+      "correct_answer": 1,
+      "explanation": "Collimating optics of 5 diopters or less (20 cm or longer focal length) must be used when appropriate to maximize detection for diverging sources.",
+      "learning_objective": "Apply measurement procedures",
+      "regulatory_reference": "21 CFR 1040.10(e)(3)"
+    },
+    {
+      "id": "C2-P8-Q3",
+      "type": "scenario",
+      "difficulty": "advanced",
+      "question": "A manufacturer is classifying a laser product. For measurement purposes, how should controls be adjusted?",
+      "options": [
+        "Set to typical operating settings",
+        "Adjusted to achieve maximum emission",
+        "Set to minimum emission",
+        "Adjusted randomly to test variability"
+      ],
+      "correct_answer": 1,
+      "explanation": "Measurements must be made with all controls adjusted to achieve maximum emission, with the instrument positioned for maximum detection. This worst-case analysis ensures the highest classification is correctly assigned.",
+      "learning_objective": "Apply worst-case measurement principles",
+      "regulatory_reference": "21 CFR 1040.10(e)(2)"
+    }
+  ]
+}

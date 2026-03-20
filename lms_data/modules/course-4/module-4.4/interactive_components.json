@@ -1,0 +1,343 @@
+{
+  "components": [
+    {
+      "id": "four_state_matrix",
+      "type": "interactive_state_matrix",
+      "title": "Four-State Regulatory Matrix",
+      "description": "Comprehensive interactive comparison of Nevada, New York, Texas, and Washington regulations",
+      "states": ["nevada", "new-york", "texas", "washington"],
+      "comparison_categories": [
+        {
+          "category": "regulatory_authority",
+          "label": "Regulatory Authority",
+          "nevada": "Radiation Control Program, Division of Public and Behavioral Health",
+          "new-york": "NYS Dept. of Labor, Radiological Health Unit",
+          "texas": "DSHS Radiation Safety Licensing Branch",
+          "washington": "DOH X-Ray Control / Radiation Protection"
+        },
+        {
+          "category": "regulatory_tier",
+          "label": "Regulatory Tier",
+          "nevada": "Notification Only",
+          "new-york": "Comprehensive",
+          "texas": "Comprehensive",
+          "washington": "Notification Only"
+        },
+        {
+          "category": "inspections",
+          "label": "Routine Inspections",
+          "nevada": "No",
+          "new-york": "Yes",
+          "texas": "Yes",
+          "washington": "No"
+        },
+        {
+          "category": "training_required",
+          "label": "Training Required",
+          "nevada": "No",
+          "new-york": "Yes (Class A/Class B)",
+          "texas": "No",
+          "washington": "No"
+        },
+        {
+          "category": "special_features",
+          "label": "Special Features",
+          "nevada": "Simple notification model",
+          "new-york": "Operator certification system",
+          "texas": "ILDA engagement, hair removal provisions",
+          "washington": "Light show specific notification"
+        }
+      ],
+      "features": [
+        "sortable_columns",
+        "filter_by_tier",
+        "state_detail_modal",
+        "export_comparison"
+      ]
+    },
+    {
+      "id": "ny_training_selector",
+      "type": "training_path_selector",
+      "title": "New York Training Certificate Selector",
+      "description": "Interactive tool to determine which New York laser operator certificate you need",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What type of lasers will you be operating?",
+          "options": [
+            {
+              "label": "Only low intensity (Class 1, 2, 3R)",
+              "result": "Class A Certificate",
+              "explanation": "Low intensity lasers require Class A certification."
+            },
+            {
+              "label": "High intensity (Class 3B or 4)",
+              "next_question": "q2"
+            },
+            {
+              "label": "Both low and high intensity",
+              "result": "Class B Certificate",
+              "explanation": "Operating both low and high intensity lasers requires Class B certification."
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "question": "Will you only operate high intensity lasers, or might you also operate low intensity?",
+          "options": [
+            {
+              "label": "Only high intensity",
+              "result": "Class B Certificate",
+              "explanation": "Class B covers low and high intensity lasers. Even if you only operate high intensity now, Class B provides full coverage."
+            },
+            {
+              "label": "I might operate both",
+              "result": "Class B Certificate",
+              "explanation": "Class B is required for any high intensity laser operation, and covers both categories."
+            }
+          ]
+        }
+      ],
+      "training_providers_map": {
+        "class_a": [
+          {
+            "name": "Tri-Cities Laborers' Training Program",
+            "location": "Glenmont, NY",
+            "phone": "(518) 426-0290"
+          },
+          {
+            "name": "Institute of Design & Construction",
+            "location": "Brooklyn, NY",
+            "phone": "(718) 855-3661"
+          },
+          {
+            "name": "NY District Council of Carpenters",
+            "location": "New York, NY",
+            "phone": "(212) 727-2224"
+          }
+        ],
+        "class_b": [
+          {
+            "name": "Rarefied Media Inc.",
+            "location": "New York, NY",
+            "phone": "(212) 874-1431"
+          },
+          {
+            "name": "Hudson Valley Community College",
+            "location": "Troy, NY",
+            "phone": "(518) 283-1100"
+          },
+          {
+            "name": "LIA Laser Institute",
+            "website": "lia.org",
+            "phone": "(407) 380-1553"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ilda_timeline",
+      "type": "timeline_viewer",
+      "title": "ILDA-Texas Regulatory Engagement Timeline",
+      "description": "Interactive timeline of ILDA's engagement with Texas DSHS on laser regulations",
+      "events": [
+        {
+          "date": "2012",
+          "title": "ILDA Conference in Texas",
+          "description": "ILDA held Annual Conference in San Antonio, establishing Texas presence",
+          "type": "milestone"
+        },
+        {
+          "date": "2023 (June-July)",
+          "title": "Texas DSHS Proposed Rule Comments",
+          "description": "ILDA submitted extensive comments on 25 TAC 289.301 draft rules",
+          "key_points": [
+            "Requested comment period extension",
+            "Proposed CW laser exemptions",
+            "Suggested 50-watt threshold for enhanced regulation",
+            "Recommended FDA variance alignment"
+          ],
+          "type": "engagement"
+        },
+        {
+          "date": "Ongoing",
+          "title": "Industry Collaboration",
+          "description": "Continued dialogue between ILDA and Texas on light show regulations",
+          "type": "ongoing"
+        }
+      ]
+    },
+    {
+      "id": "notification_requirements_tool",
+      "type": "requirement_checker",
+      "title": "Multi-State Notification Requirements Tool",
+      "description": "Check notification requirements for your specific operation type across all four states",
+      "operation_types": [
+        {
+          "type": "permanent_installation",
+          "label": "Permanent Installation"
+        },
+        {
+          "type": "touring_show",
+          "label": "Touring Laser Show"
+        },
+        {
+          "type": "one_time_event",
+          "label": "One-Time Event"
+        },
+        {
+          "type": "mobile_service",
+          "label": "Mobile Service"
+        }
+      ],
+      "requirements_matrix": {
+        "permanent_installation": {
+          "nevada": "Contact Radiation Control Program before installation",
+          "new-york": "Registration + Class A/B certification for operators",
+          "texas": "Registration with DSHS (25 TAC 289.301)",
+          "washington": "Contact Radiation Protection office"
+        },
+        "touring_show": {
+          "nevada": "Advance notification before each location",
+          "new-york": "Registration + inspection + operator certification",
+          "texas": "Registration + consideration of ILDA recommendations",
+          "washington": "Advance written notification (light show specific)"
+        },
+        "one_time_event": {
+          "nevada": "Advance notification required",
+          "new-york": "Full registration process",
+          "texas": "Registration may be required",
+          "washington": "Advance written notification"
+        },
+        "mobile_service": {
+          "nevada": "Contact Radiation Control Program",
+          "new-york": "Registration + operator certification",
+          "texas": "Registration per 25 TAC 289.301",
+          "washington": "Notification to Radiation Protection"
+        }
+      }
+    },
+    {
+      "id": "contact_directory",
+      "type": "interactive_contact_directory",
+      "title": "Four-State Regulatory Contact Directory",
+      "description": "Quick access to regulatory contacts for Nevada, New York, Texas, and Washington",
+      "contacts": [
+        {
+          "state": "Nevada",
+          "agency": "Radiation Control Program",
+          "primary_contact": {
+            "name": "Karen Beckley",
+            "title": "Manager, Radiation Control Program",
+            "phone": "(775) 687-7550",
+            "email": "kbeckley@health.nv.gov"
+          },
+          "generic_email": "radiationcontrolprogram@health.nv.gov",
+          "address": "675 Fairview Drive, Suite 218, Carson City, NV 89701",
+          "website": "http://www.health.nv.gov/BHPS/RHS"
+        },
+        {
+          "state": "New York",
+          "agency": "NYS Dept. of Labor, Radiological Health Unit",
+          "primary_contact": {
+            "name": "Kirk Fisher",
+            "title": "Radiophysicist",
+            "phone": "(518) 457-1202"
+          },
+          "address": "State Campus Building 12 Room 169, Albany, NY 12240",
+          "website": "https://labor.ny.gov/workerprotection/safetyhealth/DOSHRHU.shtm"
+        },
+        {
+          "state": "Texas",
+          "agency": "DSHS Radiation Safety Licensing Branch",
+          "primary_contact": {
+            "name": "Shannon Dove-Edson",
+            "title": "Program Manager, Laser Registration Program",
+            "phone": "(512) 834-6688",
+            "email": "shannon.dove-edson@dshs.state.tx.us"
+          },
+          "address": "1100 W. 49th Street, Mail Code 2835, Austin, TX 78756-3189",
+          "website": "https://www.dshs.texas.gov/radiation/lasers/registration.aspx"
+        },
+        {
+          "state": "Washington",
+          "agency": "DOH X-Ray Control / Radiation Protection",
+          "primary_contact": {
+            "name": "David B. Jansen",
+            "title": "Director",
+            "phone": "(360) 236-3210",
+            "email": "radioiationinfo@doh.wa.gov"
+          },
+          "address": "P.O. Box 47827, Olympia, WA 98504-7827",
+          "website": "http://www.doh.wa.gov/ehp/rp"
+        }
+      ],
+      "features": [
+        "search_by_state",
+        "quick_dial_phone",
+        "email_composition",
+        "export_vcard"
+      ]
+    },
+    {
+      "id": "tour_planning_simulator",
+      "type": "tour_simulator",
+      "title": "Four-State Tour Planning Simulator",
+      "description": "Plan a multi-state tour and see compliance requirements for each stop",
+      "tour_stops": [
+        {
+          "state": "nevada",
+          "city": "Las Vegas",
+          "venue_type": "theater",
+          "requirements": ["Advance notification to Radiation Control Program"]
+        },
+        {
+          "state": "washington",
+          "city": "Seattle",
+          "venue_type": "arena",
+          "requirements": ["Advance written notification (light show specific)"]
+        },
+        {
+          "state": "new-york",
+          "city": "New York City",
+          "venue_type": "theater",
+          "requirements": [
+            "Registration with Radiological Health Unit",
+            "Class A or Class B operator certification",
+            "Routine inspection"
+          ]
+        },
+        {
+          "state": "texas",
+          "city": "Austin",
+          "venue_type": "outdoor",
+          "requirements": [
+            "Registration with DSHS (25 TAC 289.301)",
+            "FDA variance documentation",
+            "Routine inspection"
+          ]
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "West Coast Swing",
+          "stops": ["nevada", "washington"],
+          "complexity": "low",
+          "notes": "Both states are notification-only; simpler compliance requirements"
+        },
+        {
+          "name": "Full Four-State Tour",
+          "stops": ["nevada", "washington", "new-york", "texas"],
+          "complexity": "high",
+          "notes": "Mix of notification and comprehensive states; plan for NY training requirements"
+        },
+        {
+          "name": "Comprehensive States Only",
+          "stops": ["new-york", "texas"],
+          "complexity": "medium",
+          "notes": "Both states require registration and conduct inspections"
+        }
+      ]
+    }
+  ]
+}

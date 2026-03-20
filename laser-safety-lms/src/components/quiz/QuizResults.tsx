@@ -39,7 +39,7 @@ export default function QuizResults({
         <h2 className={`text-3xl font-bold mb-2 ${passed ? 'text-green-400' : 'text-red-400'}`}>
           {passed ? 'Congratulations!' : 'Keep Practicing'}
         </h2>
-        <p className="text-gray-400 text-sm">
+        <p className="text-muted-foreground text-sm">
           {passed
             ? `You passed the ${courseTitle} quiz!`
             : `You need 70% to pass the ${courseTitle} quiz.`}
@@ -53,7 +53,7 @@ export default function QuizResults({
         <span className={`text-4xl font-bold ${passed ? 'text-green-400' : 'text-red-400'}`}>
           {percent}%
         </span>
-        <span className="text-gray-500 text-xs mt-1">{score}/{total} correct</span>
+        <span className="text-muted-foreground text-xs mt-1">{score}/{total} correct</span>
       </div>
 
       {/* Actions */}
@@ -70,7 +70,7 @@ export default function QuizResults({
 
         <button
           onClick={onRetry}
-          className="flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-white py-3 px-6 rounded-xl transition-colors"
+          className="flex items-center justify-center gap-2 bg-muted hover:bg-muted/80 text-foreground py-3 px-6 rounded-xl transition-colors"
         >
           <RotateCcw size={16} />
           {passed ? 'Retake Quiz' : 'Try Again'}
@@ -78,7 +78,7 @@ export default function QuizResults({
 
         <Link
           href={`/courses/${courseId}`}
-          className="flex items-center justify-center gap-2 text-gray-400 hover:text-white text-sm py-2 transition-colors"
+          className="flex items-center justify-center gap-2 text-muted-foreground hover:text-foreground text-sm py-2 transition-colors"
         >
           Back to Course
           <ChevronRight size={14} />

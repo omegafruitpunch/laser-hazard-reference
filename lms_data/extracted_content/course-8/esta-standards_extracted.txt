@@ -1,0 +1,570 @@
+PDF: esta-standards.pdf
+Total Pages: 10
+================================================================================
+
+--- Page 1 ---
+Words: 45, Images: 1
+
+ANSI E1.30-11 – 2019,
+EPI 33. ACN Root Layer Protocol Operation on TCP
+(E1.17 Profile for Interoperability)
+Approved by the ANSI Board of Standards Review on 21 May 2019
+CP/2014-1002a
+Revision 28 January 2014
+© 2019 Entertainment Services and Technology Association (ESTA)
+All rights reserved.
+
+
+================================================================================
+
+--- Page 2 ---
+Words: 606, Images: 1
+
+ANSI E1.30-11 - 2019
+ EPI 33. ACN Root Layer Protocol Operation on TCP
+NOTICE and DISCLAIMER
+ESTA does not approve, inspect, or certify any installations, procedures, equipment or materials for compliance 
+with codes, recommended practices or standards. Compliance with a ESTA standard or an American National 
+Standard developed by ESTA is the sole and exclusive responsibility of the manufacturer or provider and is 
+entirely within their control and discretion. Any markings, identification or other claims of compliance do not 
+constitute certification or approval of any type or nature whatsoever by ESTA.
+ESTA neither guarantees nor warrants the accuracy or completeness of any information published herein and 
+disclaims liability for any personal injury, property or other damage or injury of any nature whatsoever, whether 
+special, indirect, consequential or compensatory, directly or indirectly resulting from the publication, use of, or 
+reliance on this document. In issuing and distributing this document.
+In issuing this document, ESTA does not either (a) undertake to render professional or other services for or on 
+behalf of any person or entity, or (b) undertake any duty to any person or entity with respect to this document or 
+its contents. Anyone using this document should rely on his or her own independent judgment or, as appropriate,
+seek the advice of a competent professional in determining the exercise of reasonable care in any given 
+circumstance. 
+Published by:
+Entertainment Services and Technology Association (ESTA)
+630 Ninth Avenue, Suite 609
+New York, NY   10036
+USA
+Phone: 1-212-244-1505
+Fax: 1-212-244-1502
+standards@esta.org
+The ESTA Technical Standards Program
+The ESTA Technical Standards Program was created to serve the ESTA membership and the entertainment 
+industry in technical standards related matters. The goal of the Program is to take a leading role regarding 
+technology within the entertainment industry by creating recommended practices and standards, monitoring 
+standards issues around the world on behalf of our members, and improving communications and safety within 
+the industry. ESTA works closely with the technical standards efforts of other organizations within our industry, 
+including USITT and VPLT, as well as representing the interests of ESTA members to ANSI, UL, and the NFPA. 
+The Technical Standards Program is accredited by the American National Standards Institute.
+The Technical Standards Council (TSC) was established to oversee and coordinate the Technical Standards 
+Program. Made up of individuals experienced in standards-making work from throughout our industry, the 
+Council approves all projects undertaken and assigns them to the appropriate working group. The Technical 
+Standards Council employs a Technical Standards Manager to coordinate the work of the Council and its 
+working groups as well as maintain a “Standards Watch” on behalf of members. Working groups include: Control
+Protocols, Electrical Power, Event Safety, Floors, Fog and Smoke, Followspot Position, Photometrics, Rigging, 
+and Stage Machinery.
+ESTA encourages active participation in the Technical Standards Program. There are several ways to 
+become involved. If you would like to become a member of an existing working group, as have over four hundred
+people, you must complete an application which is available from the ESTA office. Your application is subject to 
+approval by the working group and you will be required to actively participate in the work of the group. This 
+includes responding to letter ballots and attending meetings. Membership in ESTA is not a requirement. You can
+also become involved by requesting that the TSC develop a standard or a recommended practice in an area of 
+concern to you.
+The Control Protocols Working Group, steward for this standard, consists of a cross section of entertainment 
+industry professionals representing a diversity of interests. ESTA is committed to developing consensus-based 
+standards and recommended practices in an open setting.
+© 2019 ESTA
+i
+CP/2014-1002a
+
+
+================================================================================
+
+--- Page 3 ---
+Words: 253, Images: 1
+
+ANSI E1.30-11 - 2019
+ EPI 33. ACN Root Layer Protocol Operation on TCP
+Investors in Innovation, supporters of ESTA's Technical Standards Program
+VISIONARY LEADERS ($50,000 & up)
+ETC
+PLASA
+ProSight Specialty Insurance
+VISIONARY ($10,000 & up; >100 
+employees/members)
+Chauvet Professional
+Cisco 
+Columbus McKinnon Entertainment Technology
+Robe
+Walt Disney Parks and Resorts
+VISIONARY ($5,000 & up; 20–100 
+employees/members)
+Altman Lighting, Inc.
+German Light Products
+JR Clancy
+McLaren Engineering Group
+Rose Brand
+Stage Rigging
+TMB
+Tyler Truss Systems, Inc.
+VISIONARY ($500 & up; <20 employees/members)
+About the Stage
+B-Hive Industries, Inc.
+Scott Blair
+Boston Illumination Group
+Louis Bradfield
+Candela Controls Inc.
+Clark Reder Engineering
+Tracey Cosgrove & Mark McKinney
+Doug Fleenor Design
+EGI Event Production Services
+Entertainment Project Services
+Neil Huff
+Hughston Engineering Inc.
+Interactive Technologies
+Lankey & Limey Ltd.
+Jules Lauve
+Brian Lawlor
+Michael Lay
+Limelight Productions, Inc.
+Link
+John T. McGraw
+Mike Garl Consulting
+Mike Wood Consulting
+Power Gems
+Reed Rigging
+Reliable Design Services
+Alan Rowe
+Sapsis Rigging Inc.
+Stageworks
+Dana Taylor
+Steve Terry
+Theatre Projects
+Theatre Safety Programs
+Vertigo
+Steve A. Walker & Associates
+Westview Productions
+WNP Services
+INVESTOR ($3,000–$9,999; >100 
+employees/members)
+Actors' Equity Association
+Barbizon Lighting Company
+Golden Sea Professional Lighting Provider
+IATSE Local 728
+IATSE Local 891
+Lex
+NAMM
+Rosco Laboratories
+Texas Scenic Company
+INVESTOR ($1,500–$4,999; 20–100 
+employees/members)
+American Society of Theatre Consultants
+Area Four Industries
+BMI Supply
+City Theatrical Inc.
+H&H Specialties, Inc.
+InterAmerica Stage, Inc. 
+Lycian Stage Lighting
+Morpheus Lights
+Niscon Inc.
+Syracuse Scenery and Stage Lighting
+Tomcat
+XSF Xtreme Structures and Fabrication
+© 2019 ESTA
+ii
+CP/2014-1002a
+
+
+================================================================================
+
+--- Page 4 ---
+Words: 227, Images: 1
+
+ANSI E1.30-11 - 2019
+ EPI 33. ACN Root Layer Protocol Operation on TCP
+INVESTOR ($200–$499; <20 employees/members)
+Benjamin Cohen
+Bright Ideas Custom Electronics Inc.
+Bruce Darden
+Guangzhou Ming Jing Lighting Equipment Co.
+Indianapolis Stage Sales & Rentals, Inc.
+K5600, Inc.
+Nanyi Audio & Lighting Enterprise Co., Ltd.
+Qdot Lighting Ltd.
+Robert Scales
+Stephen Vanciel
+Suga Koubou Co., Ltd. 
+VU-Industry Vision Technology
+Xpro Light
+SUPPORTER (<$3,000; >100 employees/members)
+Ian Foulds, IATSE Local 873
+Harlequin Floors
+Thern Stage Equipment
+USAI Lighting 
+SUPPORTER (<$1,500; 20–100 
+employees/members)
+ARM Automation, Inc.
+Blizzard Lighting, LLC
+Geiger Engineers
+Guangzhou YaFeng Optoelectronic Equipment Co.
+High Output 
+InCord
+Intella Systems Co., Ltd.
+iWeiss
+LA ProPoint, Inc.
+Nanshi Lighting
+Oasis Stage Werks
+Stage Equipment & Lighting
+Stagemaker
+Taurus Light Co. Ltd.
+Thermotex Industries, Inc.
+Vincent Lighting Systems
+Zhuhai Shengchang Electronics Co. 
+SUPPORTER (<$200; <20 employees/members)
+Roy Bickel 
+DMX Pro Sales
+Tony Giovannetti
+Pat Grenfell
+Mitch Hefter
+John Huntington
+Beverly and Tom Inglesby
+Eddie Kramer
+Jason Kyle
+LuxBalance Lighting
+Tyrone Mellon, Jr.
+Lizz Pittsley
+Showman Systems
+Michael Skinner
+Skjonberg Controls Inc. 
+Stage Labor of the Ozarks
+Tracy Underhill
+Charlie Weiner
+Planned Giving donor: Ken Vannice
+All donations to the Technical Standards Program support the TSP in general, and are not directed to, or for, the 
+benefit of any particular technical standard project, or any Working Group working on any particular standard or 
+project. 
+© 2019 ESTA
+iii
+CP/2014-1002a
+
+
+================================================================================
+
+--- Page 5 ---
+Words: 105, Images: 1
+
+ANSI E1.30-11 - 2019
+ EPI 33. ACN Root Layer Protocol Operation on TCP
+Contact Information
+Technical Standards Manager
+Karl G. Ruling
+ESTA
+630 Ninth Avenue, Suite 609
+New York, NY 10036 
+Phone: 1-212-244-1505
+FAX: 1-212-244-1502
+standards@ESTA.org
+Assistant Technical Standards Manager
+Richard J. Nix
+ESTA
+630 Ninth Ave., Suite 609
+New York, NY  10036
+Phone: 1-212-244-1505
+FAX: 1-212-244-1502
+standards@ESTA.org
+Technical Standards Council Co-Chairs
+Mike Garl
+Mike Garl Consulting LLC
+Phone: 1-432-694-7070
+mike@mikegarlconsulting.com 
+Mike Wood
+Mike Wood Consulting LLC
+Phone: 1-512-288-4916
+mike@mikewoodconsulting.com 
+Control Protocols Working Group Chairpersons
+Milton Davis
+Doug Fleenor Design, Inc
+Phone: 1-805-481-9599
+milton@dfd.com
+Michael Lay
+Signify
+Phone: 1-352-433-2479
+michael.lay@signify.com 
+© 2019 ESTA
+iv
+CP/2014-1002a
+
+
+================================================================================
+
+--- Page 6 ---
+Words: 342, Images: 1
+
+ANSI E1.30-11 - 2019
+ EPI 33. ACN Root Layer Protocol Operation on TCP
+Acknowledgments
+The Control Protocol Working Group members, when this document was approved by the working group on 11 
+March 2019, are shown below. 
+Voting members:
+Matthew Ardine; I.A.T.S.E. Local 728; U
+Paul Beasley; Walt Disney Company; U
+Robert Bell; Acuity Brands Inc.; MP
+Andrew Berry; X-Laser; MP
+Scott M. Blair; Megapixel; CP
+Eric Bloom; Westview Productions; DR
+Brent Boulnois; Candela Controls, Inc.; DE
+Ian Campbell; Doug Fleenor Design, Inc.; MP
+Milton Davis; Doug Fleenor Design, Inc.; MP
+Bill Ellis; Candela Controls, Inc.; DE
+Andrew Frazer; Stellascapes.com; MPyu7
+Robert Goddard; Goddard Design Co.; MP
+Robert Haycock; UC Berkeley; U
+Mitch Hefter; USITT; U
+Julian Hoare; Tait Towers Manufacturing LLC; MP
+Jon Hole; Eaton; MP
+Maurits van der Hoorncuity Brands Inc.; MP
+Wayne David Howell; Artistic Licence Holdings; DE
+John Huntington; I.A.T.S.E. Local 1; U
+Leroy “Tripp” Oliver, III; Mainstage Theatrical Supply, Inc.; DR
+John Valus_Jr.; Lex TM3; CP
+David Kane; I.A.T.S.E. Local 728; U
+Sam Kearney; Electronic Theatre Controls, Inc.; MP
+Paul Kleissler; City Theatrical, Inc.; MP
+Edwin S. Kramer; I.A.T.S.E. Local 1; U
+Christian Krueger; Blizzard Lighting LLC; MP
+Ulrich Kunkel; E3 Engineering & Education for Entertainment GmbH; U
+Roger Lattin; I.A.T.S.E. Local 728; U
+Michael Lay; Signify; MP
+Kevin Loewen; Acuity Brands Inc.; MP
+Jim Love; Tait Towers Manufacturing LLC; MP
+Bill McIntyre; Show Distribution Group, Inc.; CP
+Daniel Murfin; Royal National Theatre; U
+Simon Newton; Open Lighting Project; G
+Maya Nigrosh; Sonos; MP
+Jim Ohrberg; Candela Controls, Inc.; DE
+Jason Potterf; Cisco; MP
+Mark Primrose; Kino Flo, Inc.; CP
+Eric Rasmussen; Electronic Theatre Controls, Inc.; MP
+Alan M. Rowe; I.A.T.S.E. Local 728; U
+Larry Schoeneman; DesignLab Chicago, Inc.; DR
+Steve Terry; Electronic Theatre Controls, Inc.; MP
+Peter Willis; Howard Eaton Lighting Ltd.; CP
+Non-voting members:
+Christian Allabauer; Christian Allabauer; G
+Tim Bachman; Altman Stage Lighting; MP
+Nick Ballhorn-Wagner; Electronic Theatre Controls, Inc.; MP
+Robert Barbagallo; Solotech Inc.; U
+Marcus Bengtsson; disguise; MP
+Javid Butler; Integrated Theatre, Inc.; CP
+Justyn Butler; JBOTS; CP
+© 2019 ESTA
+v
+CP/2014-1002a
+
+
+================================================================================
+
+--- Page 7 ---
+Words: 352, Images: 1
+
+ANSI E1.30-11 - 2019
+ EPI 33. ACN Root Layer Protocol Operation on TCP
+Jean-Francois Canuel; A.C. Lighting Ltd.; CP
+Steve Carlson; High Speed Design, Inc.; MP
+Yongzhi Chen; Guangzhou Haoyang Electronic Co., Ltd.; CP
+Anthony Chiappone; Chauvet Lighting; MP
+Martin Chisnall; Martin Chisnall; U
+Jon Chuchla; Audio Visual Systems, Inc.; G
+Edward R. Condit; Edward R. Condit; G
+Gareth Conner; Creative Conners, Inc.; MP
+Fraser Connolly; Obsidian Controls; DE
+Jeremy Day; Lumenpulse Lighting Inc.; MP
+Larry Dew; W.A. Benjamin Electric Co.; DE
+Rich Dionne; Purdue University; DE
+Hamish Dumbreck; James Embedded Systems Engineering; MP
+James Eade; ABTT; G
+Paul K. Ericson; Stantec; DE
+Trevor Forrest; Helvar Lighting Control; MP
+David Gooch; Chauvet Lighting; MP
+Jerry Gorrell; Theatre Safety Programs; G
+Sean Harding; Port Lighting Systems; G
+Nick Harper; Nick Harper; G
+Bill Hewlett; ImageCue LLC; MP
+Jim Holladay; Luxence; G
+Eric Johnson; Eric Johnson; G
+Rob Johnston; Interactive Technologies, Inc.; MP
+Michael Karlsson; LumenRadio AB; MP
+Jonathan Kemble; Electronic Theatre Controls, Inc. ; MP
+Christopher Kennedy; Chauvet Lighting; MP
+Lucas Korytkowski; Insight Lighting; MP
+Jason Kyle; JPK Systems Ltd.; MP
+Hans Leiter; Electronic Theatre Controls, Inc.; MP
+Jon Lenard; Applied Electronics; MP
+Rob Love; Insight Lighting; MP
+John Mehltretter; Lehigh Electric Products Co.; MP
+John Musarra; John Musarra; U
+Mit Patel; disguise; MP
+Jaxon Patterson; Insight Lighting; MP
+Soren Sterdorff Peglau; Brother, Brother and Sons; MP
+Gary Pritchard; LSC Lighting Systems PTY Ltd; MP
+Charles Reese; Production Resource Group; DR
+Yngve Sandboe; Sand Network Systems, Inc.; MP
+Nicolai Gubi Schmidt; Nicolai Gubi Schmidt; U
+Ford Sellers; Chauvet Lighting; MP
+Christopher B. Tilton; About the Stage, LLC; DE
+Robert Timmerman; Signify; MP
+James Tomlinson; Team Tomlinson; G
+Tracy Underhill; Triple C Lighting & Controls; G
+Carlo Venturati; Clay Paky S.P.A.; MP
+Will Wagner; Carallon Ltd.; MP
+Colin Waters; TMB; DR
+Ralph Weber; ENDL Texas; G
+Loren Wilton; Showman Systems; CP
+David Yellin; Sumolight GmbH; MP
+Jeong Sik Yoo; Ghost LX; DE
+Interest category codes:
+CP = Custom-market producer
+DE = Designer/engineer
+DR = Dealer or rental company
+G = General interest
+MP = Mass-market producer
+U = User
+© 2019 ESTA
+vi
+CP/2014-1002a
+
+
+================================================================================
+
+--- Page 8 ---
+Words: 436, Images: 1
+
+ANSI E1.30-11 - 2019
+EPI 33. ACN Root Layer Protocol Operation on TCP
+Contents
+1. Applicability......................................................................................................................................................... 1
+2. Introduction......................................................................................................................................................... 1
+2.1 Streams......................................................................................................................................................... 1
+2.2 Synchronization............................................................................................................................................. 1
+2.3 Connections.................................................................................................................................................. 2
+3. Frame Preamble Format.....................................................................................................................................2
+3.1 Packet Identifier............................................................................................................................................ 2
+3.2 PDU Block Size............................................................................................................................................. 2
+4. Root Layer Protocol Operation...........................................................................................................................2
+4.1. Transmission................................................................................................................................................ 2
+4.2. Reception..................................................................................................................................................... 2
+Normative References............................................................................................................................................ 3
+ACN EPIs
+E1.17 is the “ESTA Architecture for Control Networks” standard [ACN]. It specifies an architecture – including a 
+suite of protocols and languages that may be configured and combined with other standard protocols in a 
+number of ways to form flexible networked control systems.
+E1.17 Profiles for Interoperability (EPIs) are standards documents that specify how conforming implementations 
+are to operate in a particular environment or situation in order to guarantee interoperability. They may specify a 
+single technique, set of parameters or requirement for the various ACN components. They may also specify how
+other standards (including other EPIs) either defined within ACN or externally are to be used to ensure 
+interoperability. 
+1. Applicability
+This interoperability profile specifies the operation and formats for the ACN Root Layer Protocol [Arch] operating 
+on [TCP].
+2. Introduction
+The nature of TCP as a stream and connection oriented protocol and the fact that it provides reliability lacking in 
+[UDP] means that the root layer requirements are different from UDP or other datagram oriented transports.
+2.1 Streams
+TCP data is essentially a stream of octets and the fact that the underlying transport (IP) is packet based is not 
+relevant. The reliability mechanisms of TCP operate at the single octet level and TCP stacks may divide the 
+stream into packets at any boundaries they choose. In the case of retransmission of missing or corrupted 
+segments of the stream, the division into packets may also differ from the original. At the receiving end, TCP 
+guarantees reconstruction of the original stream but makes no guarantee about which sized chunks the stream 
+arrives in.
+A primary purpose of the ACN root layer on TCP is therefore to divide the stream up into identifiable blocks. In 
+this document these blocks are called frames.
+2.2 Synchronization
+One relevant guarantee that TCP does make is that the start of a newly connected stream is clearly defined. 
+This combined with the reliable delivery means that there is no need for a rigorous synchronization method to 
+identify the start of a frame as there might be for an unreliable protocol or one where the stream was joined in 
+mid flow. Assuming each message is correctly constructed before transmission and correctly parsed on 
+reception, the two will remain in lock-step indefinitely.
+© 2019 ESTA
+ 1
+CP/2014-1002a
+
+
+================================================================================
+
+--- Page 9 ---
+Words: 557, Images: 1
+
+ANSI E1.30-11 - 2019
+ EPI 33. ACN Root Layer Protocol Operation on TCP
+However, the assumption of correct construction and parsing may not always be met, so there is benefit in some
+data predictability at the start of each frame to ensure a good probability that a loss of synchronization due to 
+implementation bugs is detected quickly. This is a much looser requirement than for guaranteed synchronization.
+2.3 Connections
+Each TCP stream forms a connection that is uniquely identified by both the IP address and port at each end. All 
+four values must match for the stack to associate an IP packet with a stream. This is how many hosts can each 
+establish multiple connections (using ephemeral ports) with the same server without interfering with each other. 
+Once a TCP connection is established, the identity of the endpoint cannot change (excepting elaborate 
+spoofing). The maintenance of this connection is a fundamental job of any TCP stack and typical APIs provide 
+means to maintain multiple simultaneous connections (up to tens of thousands if resources permit) efficiently.
+3. Frame Preamble Format
+Each block of Root Layer PDUs shall use the following preamble:
++--------------------------------------+
+|   ACN Packet Identifier (12 octets)  |
++--------------------------------------+
+|        PDU Block Size  (4 octets)    |
++--------------------------------------+
+3.1 Packet Identifier
+The ACN Packet Identifier shall be the text string “ASC-E1.17\0\0\0” encoded in [ASCII]. In hexadecimal this is 
+the octet sequence:
+       41 53 43 2d 45 31 2e 31 37 00 00 00
+3.2 PDU Block Size
+PDU block size shall be the size of the entire block of Root Layer PDUs and shall be transmitted in network byte 
+order.
+A Block Size of 4 octets allows a PDU Block up to 4 GBytes. This standard does not require that the entire block 
+must be received before commencing processing, however see the note below. A block size of 4 294 967 295 
+(0xffffffff) shall be treated as a block of indefinite length and must be processed PDU by PDU until the 
+connection is closed.
+Note: Individual client protocols (as specified in the Vector field of the PDUs within the block) may place 
+additional restrictions on their use of this format including on the maximum permissible length of the PDU Block, 
+on the number of PDUs within the block or on the mixing of PDUs of differing protocols within the
+block.
+4. Root Layer Protocol Operation
+4.1. Transmission 
+Implementations shall send the correct preamble sequence before each block of Root PDUs according to the 
+rules of [Arch]. No postamble shall be added. This standard places no restriction on the number of Root PDUs 
+that may be sent in a block.
+4.2. Reception 
+Upon accepting a connection and receiving data, implementations shall check the ACN Packet Identifier. If the 
+ACN Packet Identifier is not correct the receiver shall close the connection.
+Having received a preamble, implementations shall compute the size of the Root Layer PDU block from the size 
+provided. Implementations shall then proceed to process the PDU block as specified in [Arch].
+It is an error for any other octets other than the ACN packet identifier to be present in the data stream 
+immediately following a PDU Block. If a PDU Block is not followed by another TCP Root Layer Protocol 
+preamble with a matching ACN Packet Identifier, the receiver shall close the connection.
+© 2019 ESTA
+2
+CP/2014-1002a
+
+
+================================================================================
+
+--- Page 10 ---
+Words: 110, Images: 1
+
+ANSI E1.30-11 - 2019
+EPI 33. ACN Root Layer Protocol Operation on TCP
+Normative References
+[ACN] ESTA [ http://tsp.esta.org ]. ANSI E1.17 - 2010. Entertainment Technology - Architecture for Control 
+Networks.
+[ASCII] International Electrotechnical Commission (IEC) [ http://www.iec.ch/ ]. ISO/IEC 646 Ed.3. Information 
+technology - ISO 7-bit coded character set for information interchange. 1991.
+[Arch] ESTA [ http://tsp.esta.org ]. ANSI E1.17 – 2010. Entertainment Technology – Architecture for Control 
+Networks. E1.17 “ACN” Architecture. 
+[TCP] Internet Engineering Task Force (IETF) [ http://ietf.org/ ]. RFC 793 [http://www.ietf.org/rfc/rfc793.txt]. 
+Transmission Control Protocol. 1981.
+[UDP] Internet Engineering Task Force (IETF) [ http://ietf.org/ ]. RFC 768 [http://www.ietf.org/rfc/rfc768.txt]. User 
+Datagram Protocol. 1980.
+© 2019 ESTA
+ 3
+CP/2014-1002a
+
+
+================================================================================
+

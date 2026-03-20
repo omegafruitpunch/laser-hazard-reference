@@ -1,0 +1,54 @@
+{
+  "id": "jurisdictional-boundaries",
+  "title": "Jurisdictional Boundaries: OSHA, FDA, and ANSI",
+  "source": "state-federal-jurisdiction.pdf",
+  "content": "OSHA Jurisdiction:\n\nFederal OSHA has no specific requirement for Laser 'Interlocks', but requires companies under its jurisdiction to follow industry standard 'best practices' for laser safety. Enforcement is through the 'General Duty Clause' of 29 CFR 1910.\n\nReference Document for Enforcement:\n- ANSI Z136.1-2014 and related ANSI Z136 sub-chapters\n- If problems are found, OSHA refers to FDA enforcement codes under 21 CFR 1040\n\nFDA Jurisdiction:\n\nThe U.S. Food & Drug Administration's Center for Devices and Radiological Health (CDRH) mandates are released as federal code in Title 21 of the Code of Federal Regulations (21 CFR).\n\nKey 21 CFR Chapters:\n- 21 CFR 1000-1005: Broad scope devices, records/reports, import/export requirements\n- 21 CFR 1010: General performance standards, certifications and variances\n- 21 CFR 1040.10: Performance standards for manufacture of laser products (interlocks, labeling, power classification)\n- 21 CFR 1040.11: Performance standards for specific use laser products (medical, survey, leveling, alignment, demonstration)\n\nANSI Role:\n\nANSI Z136.1 provides the 'best practices' that OSHA references for enforcement. State OSHA may or may not specifically address Laser Interlocks depending on the state.",
+  "plain_language_summary": "Think of FDA as the 'car manufacturer regulator' (makes sure cars are built safely) and OSHA as the 'traffic cop' (makes sure cars are driven safely). ANSI provides the 'rules of the road' that both follow.",
+  "who_regulates_what": {
+    "FDA_CDRH": {
+      "regulates": "MANUFACTURERS of laser products",
+      "legal_basis": "21 CFR 1040 (FLPPS)",
+      "key_requirements": ["Product design standards", "Labeling", "Interlocks", "Variance applications"],
+      "enforcement": "Product cannot be sold without compliance",
+      "examples": ["Laser projector manufacturers", "Laser light show equipment makers"]
+    },
+    "Federal_OSHA": {
+      "regulates": "EMPLOYERS using lasers in workplace",
+      "legal_basis": "General Duty Clause (29 CFR 1910)",
+      "key_requirements": ["Safe workplace", "Follow industry standards"],
+      "enforcement": "Citations and fines for unsafe conditions",
+      "examples": ["Factories using lasers", "Entertainment venues with laser shows", "Medical clinics"]
+    },
+    "State_OSHA": {
+      "regulates": "EMPLOYERS (state-specific programs)",
+      "legal_basis": "State-specific regulations",
+      "key_requirements": ["May have specific laser requirements", "May follow Federal OSHA"],
+      "enforcement": "Varies by state",
+      "note": "Some states have stricter requirements than federal"
+    },
+    "ANSI": {
+      "regulates": "Industry best practices (voluntary standards)",
+      "legal_basis": "Consensus standards",
+      "key_requirements": ["Z136.1 (general laser safety)", "Z136.x (specific applications)"],
+      "enforcement": "Referenced by OSHA - becomes effectively mandatory",
+      "role": "Provides the 'best practices' that OSHA enforces"
+    }
+  },
+  "jurisdiction_overlap_examples": {
+    "laser_manufacturer": {
+      "scenario": "Company that builds laser projectors",
+      "fda_role": "Ensures product is designed safely before sale",
+      "osha_role": "Ensures factory workers are safe while building lasers",
+      "result": "Must comply with BOTH sets of regulations"
+    },
+    "nightclub": {
+      "scenario": "Nightclub using laser light show",
+      "fda_role": "Minimal - just checks product was properly manufactured",
+      "osha_role": "Ensures employees and patrons are safe",
+      "result": "Follows OSHA requirements, references ANSI standards"
+    }
+  },
+  "key_concepts": ["OSHA General Duty Clause", "29 CFR 1910", "FDA CDRH", "21 CFR 1040", "ANSI Z136.1", "Federal vs State OSHA"],
+  "authority_level": "federal",
+  "difficulty": "intermediate"
+}

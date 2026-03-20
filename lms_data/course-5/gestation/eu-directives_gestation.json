@@ -1,0 +1,205 @@
+{
+  "pdf_name": "eu-directives.pdf",
+  "module_id": "c5-m1",
+  "module_title": "EU Laser Safety Directives",
+  "total_pages": 7,
+  "processing_timestamp": "2026-03-19T15:46:00Z",
+  "agent": "PDF Elite Processor Agent #13",
+  "regional_requirements": {
+    "description": "EU member state requirements for audience scanning laser displays",
+    "classification_by_status": {
+      "Status_A": {
+        "description": "Audience scanning requires permit or explicit permission in advance",
+        "countries": ["Austria", "Finland", "Germany", "Scotland", "Sweden", "Switzerland", "United Kingdom", "United States"],
+        "key_requirements": [
+          "Advance permit from radiation authorities",
+          "Risk assessment submission",
+          "On-site inspection by authorities",
+          "MPE compliance documentation"
+        ]
+      },
+      "Status_C": {
+        "description": "Permit required but often not followed or enforced",
+        "countries": ["Japan", "Luxembourg"],
+        "notes": "Law requires permits but enforcement varies"
+      },
+      "Status_D": {
+        "description": "Audience scanning allowed without permit",
+        "countries": ["Belgium", "Canada", "Czech Republic", "France (outdoors)", "Greece", "Indonesia", "Republic of Ireland", "Italy", "Mexico", "Netherlands", "Portugal", "South Korea", "Spain", "Thailand", "Turkey"],
+        "notes": "No specific laws or regulations, general safety principles apply"
+      },
+      "Status_E": {
+        "description": "Not allowed under almost all circumstances",
+        "countries": ["France (indoors)"],
+        "notes": "Strict prohibition on indoor audience scanning"
+      },
+      "Status_F": {
+        "description": "Situation unclear",
+        "countries": ["China", "Egypt", "India", "Iran", "Nigeria", "Poland", "Qatar", "Russia", "Saudi Arabia", "United Arab Emirates"],
+        "notes": "Usually no permission required but authorities may deny case-by-case"
+      }
+    }
+  },
+  "directive_mapping": {
+    "EU_2006_25_EC": {
+      "name": "EU Directive 2006/25/EC",
+      "title": "Minimum health and safety requirements regarding worker exposure to artificial optical radiation",
+      "applicability": "Worker exposure to optical radiation in EU member states",
+      "key_provisions": [
+        "Employers must assess and manage risks from artificial optical radiation",
+        "Exposure limit values (ELVs) must not be exceeded",
+        "Risk assessment required for all laser work environments",
+        "Worker information and training mandatory"
+      ]
+    },
+    "EN_60825": {
+      "name": "EN 60825",
+      "title": "European adoption of IEC 60825",
+      "scope": "Laser product safety standard across EU",
+      "relationship": "European harmonized standard implementing IEC 60825-1"
+    },
+    "CE_Marking": {
+      "requirement": "CE marking required for laser products sold in EU",
+      "compliance": "Must comply with applicable EU directives including 2006/25/EC",
+      "notes": "Member states may implement additional national requirements"
+    }
+  },
+  "compliance_procedures": {
+    "austria": {
+      "standard": "OENORM S1105:2014",
+      "status": "Status A - Permit required",
+      "harmonized": true
+    },
+    "finland": {
+      "authority": "Finnish Radiation Authorities (STUK)",
+      "permit_required": true,
+      "mpe_level": "1mW/cm² maximum",
+      "scanning_restrictions": "Only grating effects typically allowed, no scanned effects without special permit",
+      "inspection_required": "All shows inspected by STUK"
+    },
+    "sweden": {
+      "authority": "Swedish Radiation Authorities",
+      "permit_required": true,
+      "documentation": ["Risk Assessment", "Method Statement"],
+      "measurements": "On-site MPE verification required",
+      "scan_fail_devices": "PASS or equivalent required for scanned effects"
+    },
+    "switzerland": {
+      "regulatory_body": "Swiss Federal Office of Public Health (FOPH)",
+      "effective_date": "June 1, 2019",
+      "enforcement_date": "December 1, 2020",
+      "notification_requirement": "14 days advance notice via online portal",
+      "competence_certificates": {
+        "level_1": "Events with no laser light in audience area (3m above floor or 2.5m lateral separation)",
+        "level_2": "Events with laser light in audience area - requires MPE calculation knowledge"
+      },
+      "training_topics": [
+        "Laser technology and safety",
+        "Health implications",
+        "Event requirements",
+        "Registration and legal requirements",
+        "MPE calculation principles",
+        "Show programming fundamentals"
+      ]
+    },
+    "scotland": {
+      "local_authority_role": "Environmental Health Officers review all submissions",
+      "typical_requirements": [
+        "Risk assessment and method statements",
+        "MPE calculations",
+        "Graphic representation of scan area",
+        "Statement of no audience scanning (often requested)"
+      ],
+      "notes": "Glasgow Council particularly strict - no exposure to diffuse reflections permitted"
+    },
+    "luxembourg": {
+      "status": "Status A/C hybrid",
+      "mpe_requirement": "No radiation above MPE may touch living things including humans"
+    }
+  },
+  "page_analyses": [
+    {
+      "page": 1,
+      "title": "Worldwide Audience Scanning Laws Overview",
+      "key_topics": ["ILDA safety affirmations", "Country classification system", "Status A countries"],
+      "critical_points": [
+        "ILDA members must affirm safety regardless of local laws",
+        "Pulsed lasers should never be used for audience scanning",
+        "No audience scanning without proper equipment and procedures"
+      ]
+    },
+    {
+      "page": 2,
+      "title": "Country Classifications Continued",
+      "key_topics": ["Status categories B-G", "Contributors and information sources"],
+      "critical_points": ["Information compiled mid-2014 - may be outdated"]
+    },
+    {
+      "page": 3,
+      "title": "Selected Country Details - Part 1",
+      "key_topics": ["Austria regulations", "Canada regulations", "Finland restrictions", "France regional variations"],
+      "critical_points": [
+        "Finland: No audience scanning allowed in standard regulations",
+        "France: Some regions prohibit all Class 4 laser devices"
+      ]
+    },
+    {
+      "page": 4,
+      "title": "Selected Country Details - Part 2",
+      "key_topics": ["Ireland SHWW regulations", "Luxembourg requirements", "Netherlands ARBO standards", "Poland uncertainty", "Scotland local authority practices"],
+      "critical_points": [
+        "Scotland: Local authorities typically veto audience scanning",
+        "Netherlands: German TUV standards followed as rule of thumb"
+      ]
+    },
+    {
+      "page": 5,
+      "title": "Selected Country Details - Part 3",
+      "key_topics": ["Scotland conflicting reports", "Sweden requirements", "Switzerland new regulations"],
+      "critical_points": [
+        "Sweden: All shows inspected by authorities",
+        "Switzerland: New competence certificates introduced 2019-2020"
+      ]
+    },
+    {
+      "page": 6,
+      "title": "Switzerland Competence Requirements and UK Overview",
+      "key_topics": ["Swiss FOPH training requirements", "United Kingdom practices"],
+      "critical_points": [
+        "Swiss Level 2 requires MPE calculation knowledge and programming skills",
+        "UK: No prior written permission required if paperwork standards met"
+      ]
+    },
+    {
+      "page": 7,
+      "title": "UK Practices Continued",
+      "key_topics": ["UK documentation requirements", "HSE guidance updates", "Technology requirements"],
+      "critical_points": [
+        "UK operators supply risk assessments, method statements, insurance copies",
+        "HSG guidance being updated with PLASA distribution",
+        "PASS and SafetyScan systems increasingly expected"
+      ]
+    }
+  ],
+  "extracted_entities": {
+    "regulatory_bodies": [
+      {"name": "ILDA", "role": "Industry association with safety standards"},
+      {"name": "STUK (Finland)", "role": "Radiation authority"},
+      {"name": "FOPH (Switzerland)", "role": "Federal Office of Public Health"},
+      {"name": "HSE (UK)", "role": "Health and Safety Executive"},
+      {"name": "PLASA", "role": "Professional body developing guidance"}
+    ],
+    "standards_referenced": [
+      "OENORM S1105:2014",
+      "IEC 60825-3:1995",
+      "NEN 6025x",
+      "TUV standards (Germany)",
+      "HS(G)95 (superseded)"
+    ],
+    "safety_systems": [
+      "PASS (Professional Audience Safety System)",
+      "SafetyScan",
+      "Scan-fail devices"
+    ]
+  }
+}

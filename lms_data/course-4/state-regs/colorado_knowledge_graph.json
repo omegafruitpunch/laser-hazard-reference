@@ -1,0 +1,52 @@
+{
+  "state": "Colorado",
+  "nodes": [
+    {
+      "id": "Colorado_State",
+      "type": "jurisdiction",
+      "label": "Colorado"
+    },
+    {
+      "id": "Colorado_Regulations",
+      "type": "regulation_set",
+      "label": "Colorado Laser Regulations"
+    },
+    {
+      "id": "Colorado_Licensing",
+      "type": "requirement",
+      "label": "Licensing Requirements"
+    },
+    {
+      "id": "Colorado_Compliance",
+      "type": "obligation",
+      "label": "Compliance Obligations"
+    },
+    {
+      "id": "Colorado_Penalties",
+      "type": "enforcement",
+      "label": "Penalties & Enforcement"
+    }
+  ],
+  "edges": [
+    {
+      "source": "Colorado_State",
+      "target": "Colorado_Regulations",
+      "relationship": "governs"
+    },
+    {
+      "source": "Colorado_Regulations",
+      "target": "Colorado_Licensing",
+      "relationship": "includes"
+    },
+    {
+      "source": "Colorado_Regulations",
+      "target": "Colorado_Compliance",
+      "relationship": "requires"
+    },
+    {
+      "source": "Colorado_Regulations",
+      "target": "Colorado_Penalties",
+      "relationship": "enforces"
+    }
+  ]
+}

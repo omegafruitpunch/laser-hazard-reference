@@ -1,0 +1,33 @@
+{
+  "course": "course-2",
+  "page_number": 22,
+  "quiz_items": [
+    {
+      "id": "C2-P22-Q1",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "According to Footnote 8, what special requirement applies to Class IIIb/IV medical lasers?",
+      "options": [
+        "Must be battery-powered only",
+        "Requires means to measure level of radiation intended to irradiate body",
+        "Cannot be used in outpatient settings",
+        "Requires two operators present"
+      ],
+      "correct_answer": 1,
+      "explanation": "Footnote 8 states Class IIIb/IV medical laser products require means to measure level of laser radiation intended to irradiate the body, accurate within ±20%.",
+      "learning_objective": "Apply footnotes to requirements",
+      "regulatory_reference": "Appendix A, Footnote 8, 21 CFR 1040.11(a)"
+    },
+    {
+      "id": "C2-P22-Q2",
+      "type": "true_false",
+      "difficulty": "intermediate",
+      "question": "According to Footnote 13, the reset requirement for Class IV laser products became effective on August 20, 1986.",
+      "options": ["True", "False"],
+      "correct_answer": 0,
+      "explanation": "True. Footnote 13 states 'Required after August 20, 1986' referring to the reset control (1040.10(f)(10)) for Class IV products.",
+      "learning_objective": "Know effective dates",
+      "regulatory_reference": "Appendix A, Footnote 13"
+    }
+  ]
+}

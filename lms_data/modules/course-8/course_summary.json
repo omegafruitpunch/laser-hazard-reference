@@ -1,0 +1,86 @@
+{
+  "course_id": "8",
+  "title": "Course 8: Industry Standards",
+  "description": "Comprehensive coverage of ANSI Z136 series, ANSI E1.46 entertainment laser safety, and ESTA standards with interactive navigation tools",
+  "modules": [
+    {
+      "id": "8.1",
+      "title": "Module 8.1: ANSI Z136 Series Overview",
+      "key_components": [
+        "Standards Hierarchy Visualizer",
+        "Z136.1 Navigator",
+        "Standard Selection Challenge",
+        "MPE Table Guide"
+      ],
+      "duration_minutes": 45,
+      "learning_outcomes": [
+        "Navigate ANSI Z136 series structure",
+        "Select appropriate standard for any application",
+        "Locate key sections in Z136.1",
+        "Understand regulatory relationships"
+      ]
+    },
+    {
+      "id": "8.2",
+      "title": "Module 8.2: ANSI E1.46 - Entertainment Laser Safety",
+      "key_components": [
+        "E146 Compliance Checker",
+        "Scan Failure Calculator",
+        "MPE Relaxation Tool",
+        "Installation Classifier",
+        "Pre-Show Simulator"
+      ],
+      "duration_minutes": 50,
+      "learning_outcomes": [
+        "Apply E1.46 requirements for audience exposure",
+        "Design scan failure safety systems",
+        "Calculate MPE relaxation factors",
+        "Execute pre-show verification"
+      ]
+    },
+    {
+      "id": "8.3",
+      "title": "Module 8.3: ESTA Standards & ACN Protocol",
+      "key_components": [
+        "ACN Architecture Explorer",
+        "Control Measure Prioritizer",
+        "Documentation Template Gallery",
+        "Hand-Over Document Builder",
+        "ESTA Standards Matrix"
+      ],
+      "duration_minutes": 40,
+      "learning_outcomes": [
+        "Understand ESTA's role in standards development",
+        "Navigate ACN protocol architecture",
+        "Apply hierarchy of controls",
+        "Create comprehensive safety documentation"
+      ]
+    }
+  ],
+  "total_duration_minutes": 135,
+  "prerequisites": [
+    "Course 1: Laser Safety Fundamentals",
+    "Course 5: Event Safety & Operations (recommended)"
+  ],
+  "certification_alignment": {
+    "CLSO": ["Area 8: Laser Safety Standards and Regulations"],
+    "CMLSO": ["Area 8: Standards and Regulations"]
+  },
+  "interactive_summary": {
+    "total_interactive_components": 14,
+    "simulation_tools": 3,
+    "calculators": 3,
+    "visualization_tools": 4,
+    "documentation_tools": 4
+  },
+  "standards_covered": [
+    "ANSI Z136.1-2022 (Safe Use of Lasers)",
+    "ANSI Z136.3-2018 (Health Care)",
+    "ANSI Z136.8-2022 (Research)",
+    "ANSI Z136.10-2022 (Entertainment)",
+    "ANSI E1.46-2023 (Entertainment Laser Safety)",
+    "ANSI E1.17-2010 (ACN)",
+    "ANSI E1.30-11-2019 (ACN on TCP)",
+    "21 CFR 1040 (FDA Laser Products)"
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "module_id": "course-2-module-2.4",
+  "course": "Course 2: FDA Compliance",
+  "course_part": 2,
+  "module_number": "2.4",
+  "title": "Reporting Requirements (Product, Annual, Supplemental)",
+  "description": "Comprehensive coverage of FDA reporting requirements for laser products including Product Reports (21 CFR 1002.10), Supplemental Reports (21 CFR 1002.11), and Annual Reports (21 CFR 1002.13).",
+  "version": "1.0.0",
+  "last_updated": "2026-03-19",
+  
+  "learning_objectives": [
+    "Understand when a Product Report is required and what information must be included",
+    "Identify situations requiring Supplemental Reports for modified products",
+    "Know Annual Report deadlines and content requirements",
+    "Navigate the decision tree for selecting appropriate report types",
+    "Calculate reporting deadlines based on product introduction timelines"
+  ],
+  
+  "cfr_references": [
+    "21 CFR 1002.10 - Product reports",
+    "21 CFR 1002.11 - Supplemental reports",
+    "21 CFR 1002.13 - Annual reports",
+    "21 CFR 1002.7 - Reporting guides",
+    "FORM FDA 3632 - Guide for Preparing Product Reports"
+  ],
+  
+  "estimated_duration_minutes": 45,
+  "difficulty_level": "intermediate",
+  
+  "prerequisites": [
+    "course-2-module-2.1",
+    "course-2-module-2.2",
+    "course-2-module-2.3"
+  ],
+  
+  "interactive_components": [
+    {
+      "id": "report_type_selector",
+      "name": "Report Type Decision Tree",
+      "type": "decision_tree",
+      "description": "Interactive decision tree to determine which report type is required for different situations"
+    },
+    {
+      "id": "timeline_calculator",
+      "name": "Reporting Deadline Calculator",
+      "type": "calculator",
+      "description": "Tool for calculating report deadlines based on product introduction dates"
+    },
+    {
+      "id": "compliance_scenarios",
+      "name": "Scenario-Based Compliance Exercise",
+      "type": "scenario",
+      "description": "Multi-step scenarios testing understanding of reporting requirements"
+    },
+    {
+      "id": "report_checklist",
+      "name": "Report Elements Checklist",
+      "type": "checklist",
+      "description": "Interactive checklist of required elements for each report type"
+    }
+  ],
+  
+  "content_sections": [
+    {
+      "id": "overview",
+      "title": "Module Overview",
+      "duration_minutes": 5,
+      "type": "introduction"
+    },
+    {
+      "id": "selector",
+      "title": "Report Type Selector",
+      "duration_minutes": 15,
+      "type": "interactive"
+    },
+    {
+      "id": "timeline",
+      "title": "Timeline Calculator",
+      "duration_minutes": 10,
+      "type": "interactive"
+    },
+    {
+      "id": "scenarios",
+      "title": "Compliance Scenarios",
+      "duration_minutes": 10,
+      "type": "assessment"
+    },
+    {
+      "id": "checklist",
+      "title": "Report Checklist",
+      "duration_minutes": 5,
+      "type": "reference"
+    }
+  ],
+  
+  "assessment": {
+    "quiz_id": "course-2-module-2.4-quiz",
+    "total_questions": 10,
+    "passing_score": 80,
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "When must a Product Report be submitted to CDRH?",
+        "options": [
+          "Within 30 days after introduction into commerce",
+          "Within 60 days of manufacturing",
+          "Prior to introduction of products into commerce",
+          "Annually by September 1"
+        ],
+        "correct_answer": 2,
+        "cfr_reference": "21 CFR 1002.10"
+      },
+      {
+        "id": "q2",
+        "type": "multiple_choice",
+        "question": "Which type of report is used for a new model in a previously reported model family?",
+        "options": [
+          "Initial Product Report",
+          "Supplemental Report",
+          "Annual Report",
+          "Abbreviated Report"
+        ],
+        "correct_answer": 1,
+        "cfr_reference": "21 CFR 1002.11"
+      },
+      {
+        "id": "q3",
+        "type": "multiple_select",
+        "question": "Which changes require a Supplemental Report? (Select all that apply)",
+        "options": [
+          "Changes affecting actual or potential emission",
+          "Changes decreasing degree of compliance",
+          "Changes resulting in decreased probability of detecting noncompliance",
+          "Changes to product color only"
+        ],
+        "correct_answers": [0, 1, 2],
+        "cfr_reference": "21 CFR 1002.11"
+      },
+      {
+        "id": "q4",
+        "type": "multiple_choice",
+        "question": "When are Annual Reports due?",
+        "options": [
+          "January 1 for the previous calendar year",
+          "March 31 for the fiscal year",
+          "September 1 for the 12 months ending June 30",
+          "December 31 for the current calendar year"
+        ],
+        "correct_answer": 2,
+        "cfr_reference": "21 CFR 1002.13"
+      },
+      {
+        "id": "q5",
+        "type": "fill_in_blank",
+        "question": "What is the estimated average reporting burden for completing FORM FDA 3632?",
+        "correct_answer": "24 hours",
+        "acceptable_variants": ["24", "twenty-four", "24 hours"],
+        "cfr_reference": "FORM FDA 3632 header"
+      }
+    ]
+  },
+  
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "FORM FDA 3632",
+      "description": "Guide for Preparing Product Reports",
+      "filename": "fda-forms.pdf"
+    },
+    {
+      "type": "link",
+      "title": "CDRH Electronic Product Reports",
+      "url": "http://www.fda.gov/Radiation-EmittingProducts/"
+    },
+    {
+      "type": "contact",
+      "title": "DSMA Hotline",
+      "value": "1-800-638-2041"
+    }
+  ],
+  
+  "completion_criteria": {
+    "view_all_sections": true,
+    "complete_scenarios": true,
+    "pass_quiz": true,
+    "minimum_time_minutes": 30
+  },
+  
+  "tags": [
+    "FDA",
+    "CDRH",
+    "reporting",
+    "product-report",
+    "supplemental-report",
+    "annual-report",
+    "compliance",
+    "21-CFR-1002"
+  ]
+}

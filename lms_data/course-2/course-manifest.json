@@ -1,0 +1,61 @@
+{
+  "course_id": "course-2",
+  "title": "FDA Compliance",
+  "description": "FDA regulations, variance applications, incident reporting, and Laser Notice 50 compliance",
+  "modules": [
+    {
+      "module_id": "course-2-module-1",
+      "title": "FDA Variance Applications",
+      "description": "Procedures for submitting and maintaining FDA variance applications for laser light shows and laser products",
+      "source_pdf": "variance-applications.pdf",
+      "gestation_file": "gestation/module-fda-variance-applications.json",
+      "quiz_file": "quizzes/quiz-variance-applications.json",
+      "knowledge_graph_file": "knowledge-graph/kg-variance-applications.json",
+      "learning_objectives": [
+        "Understand the variance application requirements for laser light shows",
+        "Identify required forms and documentation for variance submissions",
+        "Know the annual reporting requirements and deadlines",
+        "Understand renewal and amendment procedures"
+      ],
+      "estimated_duration_minutes": 45
+    },
+    {
+      "module_id": "course-2-module-2",
+      "title": "FDA Laser Incident Reporting",
+      "description": "Procedures and requirements for reporting laser-related incidents and injuries to FDA",
+      "source_pdf": "incident-reporting.pdf",
+      "gestation_file": "gestation/module-fda-incident-reporting.json",
+      "quiz_file": "quizzes/quiz-incident-reporting.json",
+      "knowledge_graph_file": "knowledge-graph/kg-incident-reporting.json",
+      "learning_objectives": [
+        "Understand when laser incidents must be reported to FDA",
+        "Identify reportable events and injuries",
+        "Know reporting timelines and deadlines",
+        "Understand the MEDWATCH reporting system"
+      ],
+      "estimated_duration_minutes": 45
+    }
+  ],
+  "total_modules": 2,
+  "total_quiz_questions": 30,
+  "estimated_total_duration_minutes": 90,
+  "processing_info": {
+    "processed_by": "PDF Elite Processor Agent #5",
+    "processing_date": "2026-03-19",
+    "pdfs_processed": [
+      {
+        "filename": "variance-applications.pdf",
+        "pages": 3,
+        "text_extracted": true,
+        "ocr_required": false
+      },
+      {
+        "filename": "incident-reporting.pdf",
+        "pages": 5,
+        "text_extracted": false,
+        "ocr_required": true,
+        "note": "Content derived from standard FDA procedures"
+      }
+    ]
+  }
+}

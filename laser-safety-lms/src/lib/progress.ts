@@ -5,13 +5,42 @@ import { UserProgress, CourseProgress } from '@/types';
 const PROGRESS_KEY = 'laser-lms-progress';
 const USER_NAME_KEY = 'laser-lms-username';
 
+function createDefaultUserProgress(): UserProgress {
+  return {
+    userId: '',
+    courses: {},
+    modules: {},
+    totalTimeSpent: 0,
+    streakDays: 0,
+    lastActivityAt: new Date().toISOString(),
+  };
+}
+
+function createDefaultCourseProgress(courseId: string): CourseProgress {
+  return {
+    courseId,
+    status: 'available',
+    progress: 0,
+    completedModules: [],
+    quizAttempts: 0,
+  };
+}
+
 export function getProgress(): UserProgress {
-  if (typeof window === 'undefined') return {};
+  if (typeof window === 'undefined') return createDefaultUserProgress();
   try {
     const raw = localStorage.getItem(PROGRESS_KEY);
-    return raw ? JSON.parse(raw) : {};
+    if (!raw) return createDefaultUserProgress();
+    const parsed = JSON.parse(raw);
+    // Ensure all required fields exist (handle corrupted/partial data)
+    return {
+      ...createDefaultUserProgress(),
+      ...parsed,
+      courses: parsed.courses || {},
+      modules: parsed.modules || {},
+    };
   } catch {
-    return {};
+    return createDefaultUserProgress();
   }
 }
 
@@ -22,7 +51,7 @@ function saveProgress(progress: UserProgress): void {
 
 export function getCourseProgress(courseId: string): CourseProgress {
   const progress = getProgress();
-  return progress[courseId] ?? { completedModules: [] };
+  return progress.courses[courseId] ?? createDefaultCourseProgress(courseId);
 }
 
 export function isModuleComplete(courseId: string, moduleId: string): boolean {
@@ -31,23 +60,25 @@ export function isModuleComplete(courseId: string, moduleId: string): boolean {
 
 export function markModuleComplete(courseId: string, moduleId: string): void {
   const progress = getProgress();
-  const course = progress[courseId] ?? { completedModules: [] };
+  const course = progress.courses[courseId] ?? createDefaultCourseProgress(courseId);
   if (!course.completedModules.includes(moduleId)) {
     course.completedModules = [...course.completedModules, moduleId];
   }
-  progress[courseId] = course;
+  progress.courses[courseId] = course;
+  progress.lastActivityAt = new Date().toISOString();
   saveProgress(progress);
 }
 
 export function saveQuizResult(courseId: string, score: number, passed: boolean): void {
   const progress = getProgress();
-  const course = progress[courseId] ?? { completedModules: [] };
+  const course = progress.courses[courseId] ?? createDefaultCourseProgress(courseId);
   course.quizScore = score;
   course.quizPassed = passed;
   if (passed) {
     course.completedAt = new Date().toISOString();
   }
-  progress[courseId] = course;
+  progress.courses[courseId] = course;
+  progress.lastActivityAt = new Date().toISOString();
   saveProgress(progress);
 }
 
@@ -56,7 +87,7 @@ export function getOverallStats(totalModules: number, totalCourses: number) {
   let completedModules = 0;
   let coursesFinished = 0;
 
-  for (const courseProgress of Object.values(progress)) {
+  for (const courseProgress of Object.values(progress.courses || {})) {
     completedModules += courseProgress.completedModules.length;
     if (courseProgress.quizPassed) coursesFinished++;
   }

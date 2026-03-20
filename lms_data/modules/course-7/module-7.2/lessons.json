@@ -1,0 +1,629 @@
+{
+  "module_id": "course-7-module-7.2",
+  "lessons": [
+    {
+      "lesson_id": "7.2.1",
+      "title": "Understanding Means of Egress",
+      "type": "concept_introduction",
+      "duration_minutes": 5,
+      "content": {
+        "opening_hook": {
+          "type": "scenario",
+          "title": "The Station Nightclub Fire",
+          "text": "February 20, 2003. A fire started by pyrotechnics during a Great White concert at The Station nightclub in West Warwick, Rhode Island. While the fire itself was deadly, the primary cause of the 100 fatalities was inadequate means of egress. Panicked patrons rushed toward the main entrance—the way they came in—ignoring other exits. Many exits were poorly marked, some were locked, and the exit doors opened inward, trapping people against them as the crowd pushed forward.",
+          "key_lessons": [
+            "All exits must be clearly marked and visible",
+            "Exit doors must open in the direction of egress",
+            "Patrons must be informed about available exits",
+            "Multiple exit options are essential for crowd safety"
+          ]
+        },
+        "core_concept": {
+          "title": "Means of Egress: The Life Safety Path",
+          "definition": "A continuous and unobstructed path of vertical and horizontal egress travel from any occupied portion of a building or structure to a public way.",
+          "three_components": [
+            {
+              "component": "Exit Access",
+              "description": "The portion of the egress system that leads from any occupied portion of a building or structure to an exit",
+              "requirements": ["Minimum 36in width", "Clear of obstructions", "Clearly marked"]
+            },
+            {
+              "component": "Exit",
+              "description": "The portion of the egress system separated from other interior spaces by fire-resistance-rated construction",
+              "requirements": ["Protected path of travel", "Fire-resistant construction", "Self-closing doors"]
+            },
+            {
+              "component": "Exit Discharge",
+              "description": "The portion of the egress system between the termination of an exit and a public way",
+              "requirements": ["Leads to public way", "Minimum 10ft width", "No re-entry hazards"]
+            }
+          ],
+          "visual_diagram": {
+            "type": "interactive_egress_path",
+            "show_components": true,
+            "measurement_labels": true,
+            "code_references": true
+          }
+        },
+        "key_measurements": {
+          "title": "Critical Egress Measurements",
+          "standards": [
+            {
+              "element": "Minimum Corridor Width",
+              "requirement": "36 inches (0.914m)",
+              "reference": "NFPA 101"
+            },
+            {
+              "element": "Minimum Stair Width",
+              "requirement": "36 inches (0.914m)",
+              "reference": "Section 4.3.3.8"
+            },
+            {
+              "element": "Minimum Headroom",
+              "requirement": "80 inches (2.032m)",
+              "reference": "Section 4.3.3.8"
+            },
+            {
+              "element": "Maximum Ramp Slope (Egress)",
+              "requirement": "1:12 (8%)",
+              "reference": "Section 4.3.3.10"
+            },
+            {
+              "element": "Minimum Landing Size",
+              "requirement": "60in x ramp width",
+              "reference": "Section 4.3.3.10"
+            },
+            {
+              "element": "Exit Sign Height (100ft+ viewing)",
+              "requirement": "8 inches (0.203m)",
+              "reference": "Section 4.3.4.4"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "7.2.2",
+      "title": "Interactive Venue Assessment Tool",
+      "type": "interactive_assessment",
+      "duration_minutes": 8,
+      "content": {
+        "title": "Comprehensive Venue Assessment Tool",
+        "description": "Conduct a systematic assessment of venue safety features using this interactive evaluation form.",
+        "assessment_categories": [
+          {
+            "category_id": "egress",
+            "name": "Means of Egress Assessment",
+            "icon": "🚪",
+            "color": "#2196F3",
+            "checklist_items": [
+              {
+                "id": "egress-1",
+                "item": "Number of exits adequate for occupant load",
+                "verification": "Count exits and verify against code requirements",
+                "pass_criteria": "Minimum 2 exits remote from each other"
+              },
+              {
+                "id": "egress-2",
+                "item": "Exit doors swing in direction of egress",
+                "verification": "Physically check each exit door",
+                "critical": true,
+                "failure_consequence": "Crowd crush hazard—doors cannot open against pressure"
+              },
+              {
+                "id": "egress-3",
+                "item": "Exit pathways clear of obstructions",
+                "verification": "Walk each egress path completely",
+                "minimum_width": "36 inches",
+                "common_violations": ["Equipment storage", "Cables across path", "Decorations", "Vehicles"]
+              },
+              {
+                "id": "egress-4",
+                "item": "Exit signs visible and illuminated",
+                "verification": "Check visibility from all areas of venue",
+                "requirements": ["Illuminated when occupied", "Visible in smoke", "Backup power"]
+              },
+              {
+                "id": "egress-5",
+                "item": "Panic hardware installed and functional",
+                "verification": "Test each panic bar or push pad",
+                "requirement": "Single motion release, no keys or tools needed"
+              },
+              {
+                "id": "egress-6",
+                "item": "Emergency lighting operational",
+                "verification": "Test with power interruption simulation",
+                "minimum_illumination": "1 foot-candle at floor level"
+              }
+            ]
+          },
+          {
+            "category_id": "fire_protection",
+            "name": "Fire Protection Systems",
+            "icon": "🔥",
+            "color": "#F44336",
+            "checklist_items": [
+              {
+                "id": "fire-1",
+                "item": "Fire extinguishers properly located and accessible",
+                "verification": "Check placement and travel distances",
+                "max_travel_distance": "50 feet (15.24m)"
+              },
+              {
+                "id": "fire-2",
+                "item": "Correct extinguisher types for hazards present",
+                "verification": "Match extinguisher types to fire classes in each area"
+              },
+              {
+                "id": "fire-3",
+                "item": "Extinguishers inspected and charged",
+                "verification": "Check inspection tags and pressure gauges"
+              },
+              {
+                "id": "fire-4",
+                "item": "Fire alarm system operational",
+                "verification": "Test alarms and verify monitoring connection"
+              },
+              {
+                "id": "fire-5",
+                "item": "Sprinkler systems unobstructed",
+                "verification": "Check 18in clearance below sprinklers"
+              }
+            ]
+          },
+          {
+            "category_id": "electrical",
+            "name": "Electrical Safety",
+            "icon": "⚡",
+            "color": "#FF9800",
+            "checklist_items": [
+              {
+                "id": "elec-1",
+                "item": "Electrical panels accessible and labeled",
+                "verification": "Verify 36in clearance in front of panels"
+              },
+              {
+                "id": "elec-2",
+                "item": "Temporary wiring properly installed",
+                "verification": "Check for licensed electrician certification"
+              },
+              {
+                "id": "elec-3",
+                "item": "GFCI protection where required",
+                "verification": "Test outdoor and wet location circuits"
+              },
+              {
+                "id": "elec-4",
+                "item": "Cables protected from damage and trip hazards",
+                "verification": "Check cable ramps, overhead runs, secure taping"
+              }
+            ]
+          },
+          {
+            "category_id": "structural",
+            "name": "Structural & Temporary Elements",
+            "icon": "🏗️",
+            "color": "#9C27B0",
+            "checklist_items": [
+              {
+                "id": "struct-1",
+                "item": "Stage and structures engineered and permitted",
+                "verification": "Review stamped drawings and permits"
+              },
+              {
+                "id": "struct-2",
+                "item": "Temporary structures meet NFPA 701 flame propagation",
+                "verification": "Check certification for tents and fabrics"
+              },
+              {
+                "id": "struct-3",
+                "item": "Barriers and guardrails secure and adequate",
+                "verification": "Test stability and check heights"
+              },
+              {
+                "id": "struct-4",
+                "item": "Overhead rigging properly installed",
+                "verification": "Verify certified rigger involvement"
+              }
+            ]
+          },
+          {
+            "category_id": "crowd",
+            "name": "Crowd Management Infrastructure",
+            "icon": "👥",
+            "color": "#4CAF50",
+            "checklist_items": [
+              {
+                "id": "crowd-1",
+                "item": "Queue and crowd flow systems adequate",
+                "verification": "Walk entry and exit flows at peak capacity"
+              },
+              {
+                "id": "crowd-2",
+                "item": "Viewing areas and seating properly configured",
+                "verification": "Check sight lines and density calculations"
+              },
+              {
+                "id": "crowd-3",
+                "item": "Steward and security positions strategically placed",
+                "verification": "Verify visibility and communication coverage"
+              }
+            ]
+          }
+        ],
+        "scoring_system": {
+          "categories": {
+            "COMPLIANT": { "color": "#4CAF50", "points": 10, "description": "Meets or exceeds requirements" },
+            "MINOR_ISSUE": { "color": "#FFC107", "points": 5, "description": "Minor deficiencies, should be addressed" },
+            "MAJOR_ISSUE": { "color": "#FF9800", "points": 2, "description": "Significant deficiency, must be corrected" },
+            "CRITICAL": { "color": "#F44336", "points": 0, "description": "Critical safety issue, event cannot proceed" }
+          },
+          "pass_threshold": 85,
+          "critical_items_must_pass": true
+        },
+        "report_generation": {
+          "auto_generate": true,
+          "include_photos": true,
+          "include_recommendations": true,
+          "export_formats": ["PDF", "Excel", "Shareable Link"]
+        }
+      }
+    },
+    {
+      "lesson_id": "7.2.3",
+      "title": "Fire Safety Inspector Walkthrough",
+      "type": "interactive_simulation",
+      "duration_minutes": 7,
+      "content": {
+        "title": "Virtual Fire Safety Inspection",
+        "description": "Walk through a virtual venue as a fire safety inspector and identify code violations before they become hazards.",
+        "inspector_scenario": {
+          "title": "Pre-Event Fire Inspection",
+          "context": "You're conducting a final fire safety inspection 24 hours before a 3,000-person indoor concert. The fire marshal will arrive in 2 hours. Identify and correct any violations.",
+          "venue_type": "Convention Center Ballroom",
+          "occupant_load": 3000
+        },
+        "inspection_areas": [
+          {
+            "area_id": "main_hall",
+            "name": "Main Hall / Performance Area",
+            "visual_type": "floor_plan",
+            "violations": [
+              {
+                "violation_id": "v1",
+                "type": "egress_obstruction",
+                "description": "Equipment cases blocking secondary exit",
+                "severity": "CRITICAL",
+                "code_reference": "NFPA 101: Means of egress must remain unobstructed",
+                "correction": "Remove equipment immediately, establish clear 36in path",
+                "points": 15
+              },
+              {
+                "violation_id": "v2",
+                "type": "extinguisher_access",
+                "description": "Fire extinguisher behind stack of chairs",
+                "severity": "HIGH",
+                "code_reference": "NFPA 10: Extinguishers must be readily accessible",
+                "correction": "Clear access to extinguisher, mark location clearly",
+                "points": 10
+              },
+              {
+                "violation_id": "v3",
+                "type": "exit_sign",
+                "description": "Exit sign above rear door not illuminated",
+                "severity": "HIGH",
+                "code_reference": "Exit signs must be illuminated when building is occupied",
+                "correction": "Replace bulb or battery, test emergency power",
+                "points": 10
+              }
+            ]
+          },
+          {
+            "area_id": "backstage",
+            "name": "Backstage Area",
+            "visual_type": "floor_plan",
+            "violations": [
+              {
+                "violation_id": "v4",
+                "type": "electrical",
+                "description": "Overloaded power strip with multiple high-draw devices",
+                "severity": "HIGH",
+                "code_reference": "NEC: Power strips cannot be daisy-chained or overloaded",
+                "correction": "Redistribute load to multiple circuits, use proper power distro",
+                "points": 10
+              },
+              {
+                "violation_id": "v5",
+                "type": "storage",
+                "description": "Flammable materials stored near electrical panels",
+                "severity": "MEDIUM",
+                "code_reference": "NFPA 1: 36in clearance required in front of panels",
+                "correction": "Relocate materials, establish and mark clearance zone",
+                "points": 5
+              }
+            ]
+          },
+          {
+            "area_id": "lobby",
+            "name": "Lobby / Entry Area",
+            "visual_type": "floor_plan",
+            "violations": [
+              {
+                "violation_id": "v6",
+                "type": "door_hardware",
+                "description": "Exit door equipped with keyed lock instead of panic hardware",
+                "severity": "CRITICAL",
+                "code_reference": "Panic hardware required on exit doors in assembly occupancies",
+                "correction": "Install approved panic hardware immediately",
+                "points": 15
+              }
+            ]
+          }
+        ],
+        "fire_classes_review": {
+          "title": "Fire Classification Reference",
+          "classes": [
+            {
+              "class": "A",
+              "symbol": "Green Triangle",
+              "fuels": "Ordinary combustibles: paper, wood, fabrics, rubber",
+              "extinguishers": "Water, foam, dry chemical, clean agent",
+              "icon": "🟢"
+            },
+            {
+              "class": "B",
+              "symbol": "Red Square",
+              "fuels": "Flammable liquids and gases: gasoline, oil, grease, propane",
+              "extinguishers": "Dry chemical, CO2, foam (NOT water stream)",
+              "icon": "🔴"
+            },
+            {
+              "class": "C",
+              "symbol": "Blue Circle",
+              "fuels": "Energized electrical equipment",
+              "extinguishers": "CO2, dry chemical (non-conductive agents only)",
+              "icon": "🔵"
+            },
+            {
+              "class": "D",
+              "symbol": "Yellow Star",
+              "fuels": "Combustible metals: magnesium, titanium, sodium",
+              "extinguishers": "Dry powder only (specialized agents)",
+              "icon": "🟡"
+            },
+            {
+              "class": "K",
+              "symbol": "Black Hexagon",
+              "fuels": "Cooking oils and fats",
+              "extinguishers": "Wet chemical (specialized kitchen extinguishers)",
+              "icon": "⚫"
+            }
+          ]
+        },
+        "extinguisher_selector_tool": {
+          "title": "Fire Extinguisher Selection Tool",
+          "description": "Select the appropriate extinguisher type for each hazard scenario",
+          "scenarios": [
+            {
+              "scenario_id": "ex1",
+              "location": "Merchandise area with paper products and cardboard boxes",
+              "hazard_class": "A",
+              "correct_selection": ["Water", "Foam", "Dry Chemical (ABC)", "Clean Agent"],
+              "incorrect_selection_warning": "CO2 and Class B agents may not be effective on deep-seated Class A fires"
+            },
+            {
+              "scenario_id": "ex2",
+              "location": "Generator area with diesel fuel present",
+              "hazard_class": "B",
+              "correct_selection": ["Dry Chemical", "CO2", "Foam"],
+              "incorrect_selection_warning": "Water will spread flammable liquid fires!"
+            },
+            {
+              "scenario_id": "ex3",
+              "location": "Audio equipment rack with energized amplifiers",
+              "hazard_class": "C",
+              "correct_selection": ["CO2", "Clean Agent", "Dry Chemical"],
+              "incorrect_selection_warning": "Water and foam conduct electricity—electrocution hazard!"
+            }
+          ]
+        },
+        "scoring": {
+          "points_per_violation_found": 10,
+          "bonus_for_correcting": 5,
+          "time_bonus": "Up to 10 points for completing under time limit",
+          "pass_threshold": 70
+        }
+      }
+    },
+    {
+      "lesson_id": "7.2.4",
+      "title": "Fire Safety Planning & Response",
+      "type": "interactive_scenario",
+      "duration_minutes": 6,
+      "content": {
+        "title": "Fire Emergency Response Planning",
+        "description": "Develop fire safety plans and respond to fire emergency scenarios.",
+        "fire_safety_plan_elements": {
+          "title": "Required Fire Safety Plan Components",
+          "elements": [
+            {
+              "element": "Prevention Measures",
+              "components": [
+                "No smoking policies",
+                "Hot work permits",
+                "Electrical safety inspections",
+                "Flammable materials storage procedures"
+              ]
+            },
+            {
+              "element": "Detection and Alarm",
+              "components": [
+                "Smoke detection systems",
+                "Manual pull stations",
+                "Public address system",
+                "Emergency notification procedures"
+              ]
+            },
+            {
+              "element": "Suppression",
+              "components": [
+                "Portable extinguishers",
+                "Sprinkler systems",
+                "Standpipe systems",
+                "Fire department connections"
+              ]
+            },
+            {
+              "element": "Evacuation",
+              "components": [
+                "Evacuation routes",
+                "Assembly points",
+                "Assistance for people with disabilities",
+                "Accountability procedures"
+              ]
+            },
+            {
+              "element": "Fire Watch",
+              "components": [
+                "Continuous surveillance",
+                "Qualified fire watch personnel",
+                "Communication with command post",
+                "Documentation of rounds"
+              ]
+            }
+          ]
+        },
+        "fire_response_scenario": {
+          "title": "Fire Emergency Response",
+          "scenario": "During the event, smoke is reported in the backstage area near the electrical distribution. A small fire is visible near an overloaded power strip.",
+          "decision_tree": {
+            "stage": "initial_response",
+            "prompt": "You receive a radio call: 'Smoke backstage near distro, possible fire.' What is your FIRST action?",
+            "options": [
+              {
+                "text": "Immediately order full venue evacuation",
+                "outcome": "OVERREACTION",
+                "feedback": "A full evacuation may be premature. First confirm the fire and attempt to extinguish if safe. Premature evacuation can cause panic and injuries."
+              },
+              {
+                "text": "Go to the location, assess the fire, and call for appropriate extinguisher",
+                "outcome": "CORRECT",
+                "feedback": "Correct! First assess the situation to determine appropriate response. A small fire can often be safely extinguished."
+              },
+              {
+                "text": "Call 911 immediately and wait for fire department",
+                "outcome": "DELAYED_RESPONSE",
+                "feedback": "While calling 911 is important, immediate action may prevent a small fire from becoming a major incident. Assess and act if safe to do so."
+              }
+            ]
+          },
+          "fire_extinguisher_use": {
+            "title": "Using a Fire Extinguisher: PASS Method",
+            "steps": [
+              {
+                "letter": "P",
+                "word": "Pull",
+                "action": "Pull the pin to unlock the operating handle"
+              },
+              {
+                "letter": "A",
+                "word": "Aim",
+                "action": "Aim low, pointing the nozzle at the base of the fire"
+              },
+              {
+                "letter": "S",
+                "word": "Squeeze",
+                "action": "Squeeze the handle to release the extinguishing agent"
+              },
+              {
+                "letter": "S",
+                "word": "Sweep",
+                "action": "Sweep from side to side at the base until the fire appears out"
+              }
+            ],
+            "important_notes": [
+              "Ensure you have a clear escape route before fighting the fire",
+              "If the fire doesn't immediately respond to the extinguisher, evacuate immediately",
+              "Never turn your back on a fire, even if it appears extinguished",
+              "Ensure the fire department is called even if you extinguish the fire"
+            ]
+          }
+        },
+        "fire_watch_procedures": {
+          "title": "Fire Watch Requirements",
+          "when_required": [
+            "Hot work operations (welding, cutting, grinding)",
+            "Fire protection systems out of service",
+            "Events with pyrotechnics or open flames",
+            "High-fire-risk conditions (dry weather, high wind)",
+            "Construction activities in occupied buildings"
+          ],
+          "duties": [
+            "Continuous surveillance of assigned area",
+            "Regular patrols on defined schedule",
+            "Communication capability with command post",
+            "Knowledge of alarm activation procedures",
+            "Authority to stop unsafe activities",
+            "Documentation of all rounds and observations"
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "7.2.5",
+      "title": "Knowledge Check",
+      "type": "quiz",
+      "duration_minutes": 2,
+      "content": {
+        "questions": [
+          {
+            "id": "7.2.5-q1",
+            "type": "multiple_choice",
+            "question": "What is the maximum travel distance to a portable fire extinguisher?",
+            "options": [
+              "25 feet",
+              "50 feet",
+              "75 feet",
+              "100 feet"
+            ],
+            "correct_answer": 1,
+            "rationale": "Section 4.6.8 states that generally, the maximum travel distance to an extinguisher should be 50 feet (15.24 m)."
+          },
+          {
+            "id": "7.2.5-q2",
+            "type": "multiple_choice",
+            "question": "What does an extinguisher rating of '1-A:10-B:C' mean?",
+            "options": [
+              "1 pound of chemical for class A, 10 pounds for class B and C",
+              "1.25 gallons water equivalent on Class A, 10 sq ft Class B capability",
+              "1 minute discharge time for Class A, 10 minutes for B and C",
+              "1 meter range for Class A, 10 meter range for B and C"
+            ],
+            "correct_answer": 1,
+            "rationale": "Section 4.6.5 explains: number before A × 1.25 = gallons of water equivalent. Number before B = square feet of Class B fire capability."
+          },
+          {
+            "id": "7.2.5-q3",
+            "type": "multiple_choice",
+            "question": "What is the minimum stairway width required for means of egress?",
+            "options": [
+              "24 inches",
+              "30 inches",
+              "36 inches",
+              "48 inches"
+            ],
+            "correct_answer": 2,
+            "rationale": "Section 4.3.3.8 states stairways must have a width of not less than 36 inches (0.914 m)."
+          },
+          {
+            "id": "7.2.5-q4",
+            "type": "true_false",
+            "question": "Fire doors protecting exits may be propped open during events if monitored by staff.",
+            "correct_answer": false,
+            "rationale": "Section 4.3.3.12 states fire doors protecting exits should not be propped or blocked open as they are specially constructed fire-resistant doors."
+          }
+        ]
+      }
+    }
+  ]
+}

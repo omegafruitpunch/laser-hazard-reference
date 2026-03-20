@@ -1,0 +1,213 @@
+{
+  "state": "Illinois",
+  "quiz_title": "Illinois Laser Safety Regulations Assessment",
+  "total_questions": 15,
+  "passing_score": 80,
+  "questions": [
+    {
+      "id": "IL-Q1",
+      "type": "multiple_choice",
+      "difficulty": "basic",
+      "question": "Which agency administers laser safety regulations in Illinois?",
+      "options": [
+        "Illinois Department of Labor",
+        "Illinois Emergency Management Agency",
+        "Illinois Department of Public Health",
+        "Illinois Environmental Protection Agency"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Illinois Emergency Management Agency administers laser safety regulations under Title 32 Chapter II Part 315."
+    },
+    {
+      "id": "IL-Q2",
+      "type": "multiple_choice",
+      "difficulty": "basic",
+      "question": "What is the legal authority for Illinois laser regulations?",
+      "options": [
+        "Laser Safety Act of 2000",
+        "Laser System Act of 1997 [420 ILCS 56]",
+        "Illinois Radiation Control Act",
+        "Industrial Safety Code Chapter 12"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Laser System Act of 1997 [420 ILCS 56] provides the legal authority for Illinois laser safety regulations."
+    },
+    {
+      "id": "IL-Q3",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "How often must laser systems be registered in Illinois?",
+      "options": [
+        "Monthly",
+        "Quarterly",
+        "Annually",
+        "Every 5 years"
+      ],
+      "correct_answer": 2,
+      "explanation": "Laser systems must be registered annually in Illinois, per Section 315.60(b). Installation registration is one-time only."
+    },
+    {
+      "id": "IL-Q4",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the advance notice requirement for out-of-state lasers being brought into Illinois?",
+      "options": [
+        "5 working days",
+        "10 working days",
+        "15 working days",
+        "30 working days"
+      ],
+      "correct_answer": 1,
+      "explanation": "Section 315.80 requires 10 working days advance written notice before bringing Class 3b or Class 4 laser systems into Illinois."
+    },
+    {
+      "id": "IL-Q5",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "How many areas of qualification are required for a Laser Safety Officer in Illinois?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "12"
+      ],
+      "correct_answer": 2,
+      "explanation": "Section 315.90 requires LSOs to be qualified in 9 areas including laser fundamentals, biological effects, classification, control measures, and MPE levels."
+    },
+    {
+      "id": "IL-Q6",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "How long must records be maintained under Illinois laser regulations?",
+      "options": [
+        "1 year",
+        "3 years",
+        "5 years",
+        "10 years"
+      ],
+      "correct_answer": 2,
+      "explanation": "Section 315.170 requires records to be maintained for 5 years, including authorized operators, eyewear inspections, calibrations, and incident reports."
+    },
+    {
+      "id": "IL-Q7",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "How often must protective eyewear be examined by the LSO?",
+      "options": [
+        "Monthly",
+        "Every 3 months",
+        "Every 6 months",
+        "Annually"
+      ],
+      "correct_answer": 2,
+      "explanation": "Section 315.100(b)(5)(E) requires protective eyewear to be examined at intervals not to exceed 6 months."
+    },
+    {
+      "id": "IL-Q8",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "What is the minimum height requirement for unattended laser beams above audience level?",
+      "options": [
+        "2.5 meters",
+        "3 meters",
+        "4 meters",
+        "6 meters"
+      ],
+      "correct_answer": 3,
+      "explanation": "Section 315.140(c)(7) requires unattended lasers with output <5mW to have beam path at least 6 meters above audience surface OR 2.5m lateral separation."
+    },
+    {
+      "id": "IL-Q9",
+      "type": "true_false",
+      "difficulty": "intermediate",
+      "question": "In Illinois, Class 1, Class 2, Class 2a, and Class 3a lasers are exempt from registration requirements.",
+      "options": ["True", "False"],
+      "correct_answer": 0,
+      "explanation": "True. Section 315.50(a) exempts certified Class 1, 2, 2a, and 3a lasers from the requirements of Part 315, provided they maintain their certification."
+    },
+    {
+      "id": "IL-Q10",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "What exposure level triggers IMMEDIATE notification to the Department?",
+      "options": [
+        "> 2 times MPE",
+        "> 5 times MPE",
+        "> 50 times MPE",
+        "> 100 times MPE"
+      ],
+      "correct_answer": 3,
+      "explanation": "Section 315.160(a) requires immediate notification for exposure > 100 times MPE, partial/total loss of sight, or skin perforation."
+    },
+    {
+      "id": "IL-Q11",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "How many days does an operator have to notify the Department after discontinuing use of a laser system?",
+      "options": [
+        "7 days",
+        "15 days",
+        "30 days",
+        "60 days"
+      ],
+      "correct_answer": 2,
+      "explanation": "Section 315.70(b) requires notification within 30 days after discontinuance, including date, recipient info, and disposition."
+    },
+    {
+      "id": "IL-Q12",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What must precede the word 'laser' on labels for wavelengths outside 400-710nm?",
+      "options": [
+        "'Dangerous'",
+        "'Invisible'",
+        "'Caution'",
+        "'Warning'"
+      ],
+      "correct_answer": 1,
+      "explanation": "Section 315.150(c)(6) requires the word 'invisible' to precede 'laser' on labels for wavelengths outside 400-710nm range."
+    },
+    {
+      "id": "IL-Q13",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "What is the maximum permissible variance from manufacturer's calibration for medical lasers?",
+      "options": [
+        "± 5%",
+        "± 10%",
+        "± 15%",
+        "± 20%"
+      ],
+      "correct_answer": 3,
+      "explanation": "Section 315.130(b) requires medical lasers to have measurement error no greater than ± 20% when calibrated per manufacturer's procedure."
+    },
+    {
+      "id": "IL-Q14",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "For entertainment laser shows, what advance notice is required to the Department?",
+      "options": [
+        "5 working days",
+        "10 working days",
+        "15 working days",
+        "30 working days"
+      ],
+      "correct_answer": 1,
+      "explanation": "Section 315.140(a) requires 10 working days advance written notice for entertainment laser light shows."
+    },
+    {
+      "id": "IL-Q15",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which ANSI standards are incorporated by reference in Illinois regulations?",
+      "options": [
+        "Only ANSI Z136.1",
+        "ANSI Z136.1 and Z136.2 only",
+        "ANSI Z136.1, Z136.2, and Z136.3",
+        "All ANSI Z136 series standards"
+      ],
+      "correct_answer": 2,
+      "explanation": "Section 315.30 incorporates ANSI Z136.1-2000, Z136.2, and Z136.3 by reference for safe laser use, optical fiber systems, and health care facilities respectively."
+    }
+  ]
+}

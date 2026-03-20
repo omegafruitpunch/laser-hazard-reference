@@ -1,0 +1,70 @@
+{
+  "component_id": "mpe_relaxation_tool",
+  "name": "MPE Relaxation Factor Calculator",
+  "type": "interactive_calculation",
+  "description": "Calculate MPE relaxation factors for scanned beams and diffraction effects",
+  "relaxation_types": [
+    {
+      "type": "scanned_beam",
+      "name": "Scanned Beam Relaxation",
+      "description": "Time-averaged exposure from moving beams",
+      "applicable_when": "Beam is scanned across the eye at sufficient speed",
+      "formula": {
+        "description": "MPE for scanned beam considers dwell time",
+        "variables": [
+          {"name": "scan_speed", "label": "Scan Speed", "unit": "points/sec or Hz"},
+          {"name": "beam_diameter", "label": "Beam Diameter at Eye", "unit": "mm"},
+          {"name": "viewing_distance", "label": "Viewing Distance", "unit": "m"}
+        ]
+      },
+      "calculator": {
+        "inputs": ["base_mpe", "scan_speed", "beam_divergence", "distance"],
+        "outputs": ["dwell_time", "relaxed_mpe", "applicable"]
+      }
+    },
+    {
+      "type": "diffraction",
+      "name": "Diffraction Effect Relaxation",
+      "description": "Power distributed across multiple beams from gratings or mirror balls",
+      "applicable_when": "Beam is split into multiple lower-power beams",
+      "formula": {
+        "description": "Power per beam = Total Power / Number of beams",
+        "variables": [
+          {"name": "total_power", "label": "Total Beam Power", "unit": "mW"},
+          {"name": "num_beams", "label": "Number of Resulting Beams", "unit": "count"},
+          {"name": "zero_order", "label": "Zero-order beam present", "type": "boolean"}
+        ]
+      },
+      "calculator": {
+        "inputs": ["total_power", "num_facets", "zero_order_percentage"],
+        "outputs": ["power_per_beam", "zero_order_power", "compliant"]
+      }
+    }
+  ],
+  "safety_warnings": [
+    "Relaxation factors require careful verification measurements",
+    "Scan failure must be detected within milliseconds",
+    "Zero-order beam from diffraction gratings may retain full power",
+    "Always include safety margin in calculations"
+  ],
+  "examples": [
+    {
+      "name": "Mirror Ball Safety Check",
+      "params": {
+        "input_power": "5000 mW",
+        "facets": 100,
+        "zero_order": "5%"
+      },
+      "calculation": "Power per facet = 50 mW (safe), Zero order = 250 mW (requires assessment)"
+    },
+    {
+      "name": "Scanned Beam Assessment",
+      "params": {
+        "base_mpe": "2.54 mW/cm²",
+        "scan_speed": "30,000 points/sec",
+        "dwell_factor": "0.1"
+      },
+      "calculation": "Effective exposure reduced by scan speed factor"
+    }
+  ]
+}

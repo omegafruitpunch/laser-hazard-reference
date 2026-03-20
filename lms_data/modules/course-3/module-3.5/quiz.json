@@ -1,0 +1,161 @@
+{
+  "quiz_id": "module_3.5_quiz",
+  "module_id": "3.5",
+  "title": "MPE Tables & AEL Calculations Assessment",
+  "description": "Test your ability to calculate MPE values, apply correction factors, and determine AEL boundaries",
+  "version": "1.0.0",
+  "config": {
+    "randomize_questions": true,
+    "randomize_options": true,
+    "show_feedback_immediately": true,
+    "passing_score": 80,
+    "time_limit_minutes": 45,
+    "attempts_allowed": 3,
+    "calculator_allowed": true
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "calculation",
+      "difficulty": "easy",
+      "blooms_level": "Application",
+      "question": "Calculate the eye MPE for a 0.25-second exposure to visible laser radiation (point source).",
+      "formula": "MPE = 1.8 × t^0.75 × 10^-3 J/cm²",
+      "correct_answer": 0.637,
+      "tolerance": 0.05,
+      "unit": "mJ/cm²",
+      "correct_feedback": "Correct! MPE = 1.8 × 0.25^0.75 × 10^-3 = 0.637 mJ/cm²",
+      "incorrect_feedback": "Use the formula MPE = 1.8 × t^0.75 × 10^-3. Remember that 0.25^0.75 = 0.354.",
+      "steps": [
+        "Identify formula: MPE = 1.8 × t^0.75 × 10^-3",
+        "Calculate t^0.75: 0.25^0.75 = 0.354",
+        "Multiply: 1.8 × 0.354 × 10^-3 = 0.637 mJ/cm²"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "calculation",
+      "difficulty": "medium",
+      "blooms_level": "Application",
+      "question": "Calculate CA for a wavelength of 800 nm.",
+      "formula": "CA = 10^[0.002(λ - 700)]",
+      "correct_answer": 1.58,
+      "tolerance": 0.1,
+      "unit": "dimensionless",
+      "correct_feedback": "Correct! CA = 10^[0.002(800-700)] = 10^0.2 = 1.58",
+      "incorrect_feedback": "Use CA = 10^[0.002(800-700)] = 10^0.2. Remember: 10^0.2 ≈ 1.58"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "question": "Why is the CA correction factor needed when calculating MPE for near-IR wavelengths (700-1400 nm)?",
+      "options": [
+        {"id": "a", "text": "Near-IR lasers are more powerful than visible lasers", "correct": false},
+        {"id": "b", "text": "The retina is less sensitive to longer wavelengths in this range", "correct": true},
+        {"id": "c", "text": "Near-IR does not focus on the retina", "correct": false},
+        {"id": "d", "text": "CA corrects for atmospheric absorption", "correct": false}
+      ],
+      "correct_feedback": "Correct! CA accounts for reduced retinal sensitivity at longer wavelengths, allowing proportionally higher MPE values.",
+      "incorrect_feedback": "Incorrect. CA corrects for the fact that the retina is less sensitive to longer near-IR wavelengths, even though they still focus on the retina."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "difficulty": "medium",
+      "blooms_level": "Application",
+      "question": "Calculate the eye MPE for a 1-second exposure to an 800 nm laser (point source).",
+      "hint": "First calculate the base visible MPE, then multiply by CA for 800 nm (CA = 1.58).",
+      "correct_answer": 2.84,
+      "tolerance": 0.2,
+      "unit": "mJ/cm²",
+      "correct_feedback": "Correct! Base MPE = 1.8 mJ/cm² × 1.58 = 2.84 mJ/cm²",
+      "incorrect_feedback": "Calculate base visible MPE first: 1.8 × 1^0.75 × 10^-3 = 1.8 mJ/cm². Then multiply by CA = 1.58."
+    },
+    {
+      "id": "q5",
+      "type": "calculation",
+      "difficulty": "medium",
+      "blooms_level": "Application",
+      "question": "A laser emits 10,000 pulses. What is the CE correction factor?",
+      "formula": "CE = n^-0.25",
+      "correct_answer": 0.1,
+      "tolerance": 0.01,
+      "unit": "dimensionless",
+      "correct_feedback": "Correct! CE = 10,000^-0.25 = 0.1. Each pulse must be below 10% of single-pulse MPE.",
+      "incorrect_feedback": "Use CE = n^-0.25 where n = 10,000. Calculate 10,000^-0.25 = (10^4)^-0.25 = 10^-1 = 0.1"
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Analysis",
+      "question": "What is the approximate Class 3R AEL for a CW 900 nm laser?",
+      "options": [
+        {"id": "a", "text": "5 mW", "correct": false},
+        {"id": "b", "text": "12.5 mW", "correct": true},
+        {"id": "c", "text": "25 mW", "correct": false},
+        {"id": "d", "text": "1 mW", "correct": false}
+      ],
+      "correct_feedback": "Correct! At 900 nm, CA ≈ 2.5. Class 3R = 5 × Class 1 = 5 × (0.39 × 2.5) ≈ 12.5 mW.",
+      "incorrect_feedback": "Calculate: CA at 900 nm = 2.5. Class 1 AEL = 0.39 × 2.5 = 0.98 mW. Class 3R = 5 × 0.98 ≈ 12.5 mW."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "question": "When should the CB correction factor be applied?",
+      "options": [
+        {"id": "a", "text": "For all wavelengths above 700 nm", "correct": false},
+        {"id": "b", "text": "For extended sources with angular size > 1.5 mrad", "correct": true},
+        {"id": "c", "text": "For pulsed lasers only", "correct": false},
+        {"id": "d", "text": "For UV wavelengths only", "correct": false}
+      ],
+      "correct_feedback": "Correct! CB applies to extended sources where the apparent angular size exceeds 1.5 mrad, allowing higher total MPE.",
+      "incorrect_feedback": "Incorrect. CB applies to extended sources (like diffuse reflections) when the apparent angular size α > 1.5 mrad."
+    },
+    {
+      "id": "q8",
+      "type": "calculation",
+      "difficulty": "hard",
+      "blooms_level": "Application",
+      "question": "Calculate CB for a diffuse reflection with an angular size of 15 mrad.",
+      "formula": "CB = α / 1.5 for α ≤ 100 mrad",
+      "correct_answer": 10,
+      "tolerance": 0.5,
+      "unit": "dimensionless",
+      "correct_feedback": "Correct! CB = 15 / 1.5 = 10. The extended source allows 10× higher MPE.",
+      "incorrect_feedback": "Use CB = α / α_min where α_min = 1.5 mrad. So CB = 15 / 1.5 = 10."
+    },
+    {
+      "id": "q9",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Synthesis",
+      "question": "A researcher is exposed to 10 mJ/cm² of 532 nm laser radiation for 1 second. How does this compare to the eye MPE?",
+      "options": [
+        {"id": "a", "text": "Well below MPE (safe)", "correct": false},
+        {"id": "b", "text": "Slightly above MPE (5.5×)", "correct": true},
+        {"id": "c", "text": "Exactly at MPE", "correct": false},
+        {"id": "d", "text": "Cannot determine without more information", "correct": false}
+      ],
+      "correct_feedback": "Correct! MPE at 1s, 532 nm = 1.8 mJ/cm². 10/1.8 = 5.5× MPE. This is hazardous.",
+      "incorrect_feedback": "Calculate MPE = 1.8 × 1^0.75 × 10^-3 = 1.8 mJ/cm². Compare: 10/1.8 = 5.5. This exceeds MPE by factor of 5.5."
+    },
+    {
+      "id": "q10",
+      "type": "calculation",
+      "difficulty": "hard",
+      "blooms_level": "Analysis",
+      "question": "A 1064 nm laser pointer has an output of 20 mW. What is its IEC classification?",
+      "hint": "Calculate Class 1 and Class 3R AELs using CA = 5.0 for 1064 nm.",
+      "correct_answer": "Class 3B",
+      "type": "text_match",
+      "acceptable_answers": ["Class 3B", "class 3B", "Class 3b", "3B", "3b", "Class IIIb"],
+      "correct_feedback": "Correct! Class 1 AEL = 5 × 0.39 = 1.95 mW. Class 3R = 5 × 1.95 = 9.75 mW. 20 mW exceeds Class 3R limit, so it's Class 3B.",
+      "incorrect_feedback": "Calculate: CA = 5.0. Class 1 = 5×0.39 = 1.95 mW. Class 3R = 5×1.95 = 9.75 mW. 20 mW > 9.75 mW, so Class 3B."
+    }
+  ]
+}

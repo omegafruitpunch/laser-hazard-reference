@@ -1,0 +1,424 @@
+{
+  "components": [
+    {
+      "id": "touring_guide_wizard",
+      "type": "decision_tree_wizard",
+      "title": "I'm Touring - What Do I Need?",
+      "description": "Interactive guide to determine your compliance requirements for multi-state laser operations",
+      "entry_point": "operation_type",
+      "steps": [
+        {
+          "id": "operation_type",
+          "question": "What type of laser operation are you planning?",
+          "type": "single_select",
+          "options": [
+            {
+              "value": "multi_state_tour",
+              "label": "Multi-state tour (3+ states)",
+              "icon": "tour_bus",
+              "description": "Touring show visiting multiple states"
+            },
+            {
+              "value": "single_event",
+              "label": "Single event out-of-state",
+              "icon": "single_location",
+              "description": "One-time show in a different state"
+            },
+            {
+              "value": "regional_series",
+              "label": "Regional show series (2-3 states)",
+              "icon": "regional_map",
+              "description": "Limited regional tour"
+            },
+            {
+              "value": "permanent_relocation",
+              "label": "Permanent installation in new state",
+              "icon": "building",
+              "description": "Setting up permanent facility"
+            }
+          ]
+        },
+        {
+          "id": "state_selection",
+          "question": "Which states will you operate in?",
+          "type": "multi_select",
+          "depends_on": "operation_type",
+          "options": [
+            { "value": "illinois", "label": "Illinois", "region": "midwest" },
+            { "value": "massachusetts", "label": "Massachusetts", "region": "northeast" },
+            { "value": "nevada", "label": "Nevada", "region": "west" },
+            { "value": "new-york", "label": "New York", "region": "northeast" },
+            { "value": "texas", "label": "Texas", "region": "south" },
+            { "value": "washington", "label": "Washington", "region": "west" }
+          ],
+          "validation": {
+            "min_selections": 1,
+            "max_selections": 6
+          }
+        },
+        {
+          "id": "laser_equipment",
+          "question": "What class of laser equipment will you use?",
+          "type": "multi_select",
+          "options": [
+            { "value": "class_1_2", "label": "Class 1 or 2 (low power)", "impact": "minimal" },
+            { "value": "class_3r", "label": "Class 3R (low risk)", "impact": "minimal" },
+            { "value": "class_3b", "label": "Class 3B (moderate power)", "impact": "significant" },
+            { "value": "class_4", "label": "Class 4 (high power)", "impact": "significant" }
+          ]
+        },
+        {
+          "id": "show_characteristics",
+          "question": "Which of these apply to your shows?",
+          "type": "multi_select",
+          "options": [
+            { "value": "audience_scanning", "label": "Audience scanning (intentional audience exposure)", "requires": "fda_variance" },
+            { "value": "outdoor_airspace", "label": "Outdoor shows with beams entering airspace", "requires": "faa_determination" },
+            { "value": "high_power", "label": "Individual beams > 50W average power", "special": "tx_consideration" },
+            { "value": "pulsed_lasers", "label": "Pulsed lasers (not CW)", "special": "high_regulation" }
+          ]
+        },
+        {
+          "id": "timeline",
+          "question": "When is your first show date?",
+          "type": "date_picker",
+          "validation": {
+            "min_days_ahead": 14,
+            "warning_days": 30
+          }
+        }
+      ],
+      "results_generator": {
+        "title": "Your Compliance Requirements",
+        "sections": [
+          {
+            "id": "critical_actions",
+            "title": "Critical Actions (Do First)",
+            "priority": 1,
+            "dynamic_content": true
+          },
+          {
+            "id": "state_requirements",
+            "title": "State-Specific Requirements",
+            "priority": 2,
+            "dynamic_content": true
+          },
+          {
+            "id": "documentation",
+            "title": "Required Documentation",
+            "priority": 3,
+            "dynamic_content": true
+          },
+          {
+            "id": "timeline",
+            "title": "Your Compliance Timeline",
+            "priority": 4,
+            "dynamic_content": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "comprehensive_state_matrix",
+      "type": "interactive_data_grid",
+      "title": "Six-State Compliance Matrix",
+      "description": "Comprehensive comparison of all six states with filtering and sorting",
+      "data_source": "content.json/sections/0",
+      "features": {
+        "sorting": true,
+        "filtering": true,
+        "column_visibility": true,
+        "export": ["csv", "pdf", "excel"],
+        "compare_mode": true
+      },
+      "columns": [
+        { "field": "state", "header": "State", "sortable": true, "filterable": true },
+        { "field": "regulatory_tier", "header": "Tier", "sortable": true, "filterable": true },
+        { "field": "inspections", "header": "Inspections", "sortable": true, "type": "boolean" },
+        { "field": "training_required", "header": "Training", "sortable": true, "type": "boolean" },
+        { "field": "advance_notice", "header": "Advance Notice", "sortable": true },
+        { "field": "max_penalty", "header": "Max Penalty", "sortable": true },
+        { "field": "special_features", "header": "Special Features", "sortable": false }
+      ],
+      "quick_filters": [
+        { "label": "Inspection States", "filter": { "inspections": true } },
+        { "label": "Notification Only", "filter": { "regulatory_tier": "notification_only" } },
+        { "label": "Training Required", "filter": { "training_required": true } },
+        { "label": "Northeast", "filter": { "region": "northeast" } },
+        { "label": "West Coast", "filter": { "region": "west" } }
+      ]
+    },
+    {
+      "id": "notification_deadline_calculator",
+      "type": "date_calculator_advanced",
+      "title": "Notification Deadline Calculator",
+      "description": "Calculate exact notification deadlines accounting for working days, holidays, and state-specific rules",
+      "features": [
+        "multi_state_calculation",
+        "working_day_exclusion",
+        "federal_holiday_calendar",
+        "state_holiday_calendar",
+        "buffer_recommendation",
+        "timeline_export"
+      ],
+      "state_rules": {
+        "illinois": {
+          "advance_days": 10,
+          "unit": "working_days",
+          "excludes_weekends": true,
+          "excludes_holidays": true,
+          "buffer_recommendation": 3
+        },
+        "massachusetts": {
+          "advance_days": 10,
+          "unit": "working_days",
+          "excludes_weekends": true,
+          "excludes_holidays": true,
+          "state_holidays": ["Patriots Day", "Evacuation Day", "Bunker Hill Day"],
+          "buffer_recommendation": 3
+        },
+        "nevada": {
+          "advance_days": null,
+          "unit": "contact_program",
+          "note": "Contact Radiation Control Program for specific requirements",
+          "buffer_recommendation": 14
+        },
+        "new-york": {
+          "advance_days": null,
+          "unit": "registration_process",
+          "note": "Registration timeline varies by workload",
+          "buffer_recommendation": 30
+        },
+        "texas": {
+          "advance_days": null,
+          "unit": "registration_process",
+          "note": "Registration required before operation",
+          "buffer_recommendation": 30
+        },
+        "washington": {
+          "advance_days": null,
+          "unit": "written_notification",
+          "note": "Advance written notification required",
+          "buffer_recommendation": 14
+        }
+      },
+      "calculator_modes": [
+        {
+          "mode": "single_event",
+          "label": "Single Event",
+          "description": "Calculate deadline for one show"
+        },
+        {
+          "mode": "multi_state_tour",
+          "label": "Multi-State Tour",
+          "description": "Calculate deadlines for multiple tour stops"
+        },
+        {
+          "mode": "registration_timeline",
+          "label": "Registration Timeline",
+          "description": "Plan state registration process"
+        }
+      ]
+    },
+    {
+      "id": "penalty_comparison_visualizer",
+      "type": "comparison_chart",
+      "title": "Penalty Structure Comparison",
+      "description": "Visual comparison of civil penalties and enforcement across states",
+      "chart_types": ["bar", "radar", "table"],
+      "data": {
+        "massachusetts": {
+          "max_civil_penalty": 500,
+          "penalty_per": "violation",
+          "willful_multiplier": 1,
+          "defined_factors": 8,
+          "grounds_for_revocation": 13
+        },
+        "other_states": {
+          "illinois": { "defined_penalty": false, "note": "Case-by-case basis" },
+          "nevada": { "defined_penalty": false, "note": "Minimal enforcement" },
+          "new-york": { "defined_penalty": false, "note": "Inspection-based enforcement" },
+          "texas": { "defined_penalty": false, "note": "Registration-based enforcement" },
+          "washington": { "defined_penalty": false, "note": "Notification-based" }
+        }
+      },
+      "visualization_options": {
+        "absolute_comparison": "Show actual penalty amounts where defined",
+        "enforcement_strictness": "Relative scale of enforcement rigor",
+        "risk_assessment": "Combined penalty and enforcement likelihood"
+      }
+    },
+    {
+      "id": "checklist_generator_tool",
+      "type": "dynamic_checklist_generator",
+      "title": "Compliance Checklist Generator",
+      "description": "Generate customized checklists based on your specific operation",
+      "input_form": {
+        "fields": [
+          {
+            "id": "states",
+            "label": "States of Operation",
+            "type": "multi_select",
+            "options": ["illinois", "massachusetts", "nevada", "new-york", "texas", "washington"],
+            "required": true
+          },
+          {
+            "id": "operation_type",
+            "label": "Operation Type",
+            "type": "select",
+            "options": ["touring_show", "single_event", "permanent_installation", "mobile_service"],
+            "required": true
+          },
+          {
+            "id": "laser_classes",
+            "label": "Laser Classes",
+            "type": "multi_select",
+            "options": ["class_1_2", "class_3r", "class_3b", "class_4"],
+            "required": true
+          },
+          {
+            "id": "special_features",
+            "label": "Special Features",
+            "type": "multi_select",
+            "options": [
+              "audience_scanning",
+              "outdoor_airspace",
+              "high_power_beams",
+              "pulsed_lasers"
+            ]
+          },
+          {
+            "id": "timeline_weeks",
+            "label": "Weeks Until First Operation",
+            "type": "number",
+            "min": 1,
+            "max": 52
+          }
+        ]
+      },
+      "output_sections": [
+        {
+          "id": "immediate_actions",
+          "title": "Immediate Actions (This Week)",
+          "condition": "timeline_weeks <= 2"
+        },
+        {
+          "id": "federal_requirements",
+          "title": "Federal Requirements (All States)",
+          "items": [
+            { "text": "Verify FDA variance is current", "critical": true },
+            { "text": "Ensure annual reports are up to date", "critical": true },
+            { "text": "Prepare product reports for equipment", "critical": false },
+            { "text": "Obtain FAA determination letter if outdoor airspace", "condition": "outdoor_airspace", "critical": true }
+          ]
+        },
+        {
+          "id": "universal_requirements",
+          "title": "Universal State Requirements",
+          "items": [
+            { "text": "Designate qualified LSO", "critical": true },
+            { "text": "Document safety procedures", "critical": true },
+            { "text": "Inspect protective eyewear", "critical": true },
+            { "text": "Prepare warning signage", "critical": false },
+            { "text": "Establish emergency procedures", "critical": true }
+          ]
+        },
+        {
+          "id": "state_specific",
+          "title": "State-Specific Requirements",
+          "dynamic": true,
+          "states": ["illinois", "massachusetts", "nevada", "new-york", "texas", "washington"]
+        }
+      ],
+      "export_options": ["pdf", "excel", "print", "email"]
+    },
+    {
+      "id": "multi_state_tour_planner",
+      "type": "tour_planner",
+      "title": "Multi-State Tour Planner",
+      "description": "Plan your tour route with compliance checkpoints",
+      "features": [
+        "route_optimization",
+        "compliance_checkpoint_alerts",
+        "notification_deadline_tracking",
+        "document_checklist_by_stop",
+        "contact_directory_integration"
+      ],
+      "sample_routes": [
+        {
+          "name": "West Coast Swing",
+          "states": ["washington", "nevada"],
+          "complexity": "Low",
+          "notes": "Both notification-only states"
+        },
+        {
+          "name": "East Coast Comprehensive",
+          "states": ["massachusetts", "new-york"],
+          "complexity": "High",
+          "notes": "Both comprehensive + inspections"
+        },
+        {
+          "name": "Full Six-State Challenge",
+          "states": ["washington", "nevada", "texas", "illinois", "massachusetts", "new-york"],
+          "complexity": "Very High",
+          "notes": "Full spectrum of regulatory tiers"
+        }
+      ]
+    },
+    {
+      "id": "emergency_compliance_guide",
+      "type": "emergency_guide",
+      "title": "Emergency Compliance Guide",
+      "description": "Quick reference for urgent compliance situations",
+      "scenarios": [
+        {
+          "scenario": "Show in 5 days, no state notification submitted",
+          "states": ["massachusetts", "illinois"],
+          "action": "Contact state agency immediately, request emergency consideration",
+          "references": ["MA 105 CMR 121.011 waiver", "IL Section 315.140"]
+        },
+        {
+          "scenario": "Equipment failure, need replacement from out-of-state",
+          "states": ["all"],
+          "action": "Document emergency, contact state agency, bring documentation",
+          "references": ["Vendor notification requirements"]
+        },
+        {
+          "scenario": "Inspector arrives at show, missing documentation",
+          "states": ["new-york", "texas", "illinois", "massachusetts"],
+          "action": "Provide what you have, document the gap, contact LSO immediately",
+          "references": ["Inspection rights sections"]
+        }
+      ]
+    },
+    {
+      "id": "document_vault",
+      "type": "document_manager",
+      "title": "Tour Document Vault",
+      "description": "Central repository for all compliance documents",
+      "categories": [
+        {
+          "id": "federal",
+          "label": "Federal Documents",
+          "items": ["FDA Variance", "Annual Reports", "Product Reports", "FAA Determination"]
+        },
+        {
+          "id": "state_registrations",
+          "label": "State Registrations",
+          "states": ["illinois", "massachusetts", "nevada", "new-york", "texas", "washington"]
+        },
+        {
+          "id": "training",
+          "label": "Training & Certification",
+          "items": ["LSO Qualifications", "NY Class A/B Certificates", "Training Records"]
+        },
+        {
+          "id": "equipment",
+          "label": "Equipment Documentation",
+          "items": ["Inventory List", "Serial Numbers", "Calibration Records", "Maintenance Logs"]
+        }
+      ],
+      "features": ["cloud_sync", "offline_access", "expiry_alerts", "share_with_team"]
+    }
+  ]
+}

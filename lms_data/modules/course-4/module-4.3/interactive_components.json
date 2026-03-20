@@ -1,0 +1,318 @@
+{
+  "components": [
+    {
+      "id": "il_ma_comparison_matrix",
+      "type": "interactive_comparison_matrix",
+      "title": "Illinois vs. Massachusetts: Side-by-Side Comparison",
+      "description": "Interactive matrix comparing key regulatory elements between Illinois and Massachusetts",
+      "data_source": "content.json/sections/2,3",
+      "features": [
+        "sortable_columns",
+        "filter_by_category",
+        "expandable_details",
+        "export_comparison"
+      ],
+      "categories": [
+        "administrative",
+        "registration",
+        "operational",
+        "enforcement"
+      ]
+    },
+    {
+      "id": "height_requirement_visualizer",
+      "type": "measurement_visualizer",
+      "title": "Entertainment Laser Height Requirements Visualizer",
+      "description": "Visual comparison of height requirements for unattended laser operations",
+      "visualization_type": "vertical_scale",
+      "states": {
+        "illinois": {
+          "unattended_meters": 6,
+          "unattended_feet": 19.7,
+          "with_operator_meters": 3,
+          "with_operator_feet": 9.8,
+          "lateral_meters": 2.5,
+          "lateral_feet": 8.2
+        },
+        "massachusetts": {
+          "unattended_feet": 20,
+          "unattended_meters": 6.1,
+          "attended_feet": 10,
+          "attended_meters": 3.05,
+          "lateral_feet": 8,
+          "lateral_meters": 2.44
+        }
+      },
+      "audience_representation": {
+        "average_adult_height": 1.7,
+        "standing_reach": 2.3,
+        "raised_hands": 2.5
+      }
+    },
+    {
+      "id": "notification_calculator",
+      "type": "date_calculator",
+      "title": "Advance Notification Date Calculator",
+      "description": "Calculate notification deadlines for Illinois and Massachusetts",
+      "states": [
+        {
+          "id": "illinois",
+          "name": "Illinois",
+          "advance_notice_days": 10,
+          "working_days_only": true,
+          "reference": "Section 315.140(a)"
+        },
+        {
+          "id": "massachusetts",
+          "name": "Massachusetts",
+          "advance_notice_days": 10,
+          "working_days_only": true,
+          "reference": "105 CMR 121.023"
+        }
+      ],
+      "features": [
+        "calendar_picker",
+        "working_day_calculator",
+        "multi_state_tour_planner",
+        "deadline_reminders"
+      ]
+    },
+    {
+      "id": "lso_qualification_tracker",
+      "type": "checklist_tracker",
+      "title": "LSO Qualification Checklist",
+      "description": "Track your LSO qualifications against Illinois and Massachusetts requirements",
+      "illinois_requirements": [
+        {
+          "area": "Fundamentals of laser operation",
+          "category": "technical",
+          "required": true
+        },
+        {
+          "area": "Familiarity with equipment type utilized",
+          "category": "technical",
+          "required": true
+        },
+        {
+          "area": "Biological effects on eye and skin",
+          "category": "safety",
+          "required": true
+        },
+        {
+          "area": "Laser and laser system classification",
+          "category": "technical",
+          "required": true
+        },
+        {
+          "area": "Control measures",
+          "category": "operational",
+          "required": true
+        },
+        {
+          "area": "Nonradiation hazards",
+          "category": "safety",
+          "required": true
+        },
+        {
+          "area": "Medical surveillance practices (if applicable)",
+          "category": "administrative",
+          "required": false
+        },
+        {
+          "area": "Laser terminology",
+          "category": "technical",
+          "required": true
+        },
+        {
+          "area": "Maximum Permissible Exposure (MPE) levels",
+          "category": "technical",
+          "required": true
+        }
+      ],
+      "massachusetts_requirements": [
+        {
+          "area": "Knowledge of ANSI Z136.1",
+          "category": "technical",
+          "required": true
+        },
+        {
+          "area": "Authority to apply laser safety rules",
+          "category": "administrative",
+          "required": true
+        },
+        {
+          "area": "Responsibility for laser safety program",
+          "category": "administrative",
+          "required": true
+        }
+      ],
+      "features": [
+        "progress_tracking",
+        "gap_analysis",
+        "training_recommendations",
+        "multi_state_compliance_view"
+      ]
+    },
+    {
+      "id": "penalty_comparison_chart",
+      "type": "interactive_chart",
+      "title": "Enforcement and Penalty Comparison",
+      "description": "Compare civil penalties and enforcement mechanisms",
+      "chart_type": "bar_comparison",
+      "data": {
+        "massachusetts": {
+          "max_civil_penalty": 500,
+          "currency": "USD",
+          "per": "violation",
+          "willful_violation_multiplier": 1,
+          "factors_considered": 8
+        },
+        "illinois": {
+          "max_civil_penalty": "not_specified",
+          "note": "Penalties determined by regulatory authority on case-by-case basis"
+        }
+      },
+      "visualization_options": [
+        "absolute_comparison",
+        "relative_scale",
+        "factor_breakdown"
+      ]
+    },
+    {
+      "id": "tour_planning_worksheet",
+      "type": "worksheet_generator",
+      "title": "Multi-State Tour Compliance Worksheet",
+      "description": "Generate a customized compliance checklist for touring between Illinois and Massachusetts",
+      "states_included": ["illinois", "massachusetts"],
+      "worksheet_sections": [
+        {
+          "section": "Pre-Tour Preparation",
+          "items": [
+            "Verify FDA variance is current",
+            "Confirm LSO designation documentation",
+            "Prepare equipment inventory with serial numbers",
+            "Check registration status in each state"
+          ]
+        },
+        {
+          "section": "Illinois Requirements",
+          "items": [
+            "Submit 10-day advance notice (Section 315.140)",
+            "Prepare LSO qualification documentation (9 areas)",
+            "Verify 5-year record retention system",
+            "Ensure eyewear examination within 6 months"
+          ]
+        },
+        {
+          "section": "Massachusetts Requirements",
+          "items": [
+            "Submit 10-day advance notice (105 CMR 121.023)",
+            "Post certificate of registration conspicuously",
+            "Prepare vendor notification if applicable",
+            "Document ANSI Z136.1 compliance"
+          ]
+        },
+        {
+          "section": "Height Requirements Check",
+          "items": [
+            "IL: Verify 6m height OR 2.5m lateral for unattended",
+            "MA: Verify 20ft height OR 8ft lateral for unattended",
+            "IL: Verify 3m height for attended Class 2+",
+            "MA: Verify 10ft height for attended Class 2+"
+          ]
+        },
+        {
+          "section": "Documentation Checklist",
+          "items": [
+            "FDA variance with accession number",
+            "FAA determination letter (outdoor shows)",
+            "LSO contact information",
+            "Operator contact information (MA)",
+            "Show sketches/layouts",
+            "Equipment specifications (mfg, model, class, power, wavelength)"
+          ]
+        }
+      ],
+      "export_formats": ["pdf", "excel", "print"]
+    },
+    {
+      "id": "scenario_branching",
+      "type": "branching_scenario",
+      "title": "Touring Show Compliance Challenge",
+      "description": "Navigate a multi-state tour compliance scenario with real-world decision points",
+      "scenario_tree": {
+        "start": {
+          "context": "You're planning a 3-show tour: Chicago (IL), Springfield (IL), and Boston (MA). Show dates are 3 weeks away.",
+          "decision": "What's your first action?",
+          "options": [
+            {
+              "text": "Submit advance notices for all three shows immediately",
+              "next": "notice_timing",
+              "feedback": "Good instinct, but let's verify the timing requirements."
+            },
+            {
+              "text": "Check current registration status in each state",
+              "next": "registration_check",
+              "feedback": "Smart first step - registration status affects notification requirements."
+            },
+            {
+              "text": "Review equipment specifications for compliance",
+              "next": "equipment_check",
+              "feedback": "Equipment compliance is important, but administrative requirements come first."
+            }
+          ]
+        },
+        "notice_timing": {
+          "context": "Both Illinois and Massachusetts require 10 working days advance notice. Your shows are 15, 18, and 21 days away.",
+          "decision": "When should you submit each notice?",
+          "options": [
+            {
+              "text": "Submit all notices today to be safe",
+              "next": "success_all_submitted",
+              "feedback": "Excellent! Early submission ensures compliance and allows buffer time.",
+              "correct": true
+            },
+            {
+              "text": "Submit IL notices now, wait for MA until 10 days before",
+              "next": "risk_delayed",
+              "feedback": "Risky! Delays could result in late submission if issues arise."
+            }
+          ]
+        },
+        "registration_check": {
+          "context": "You discover your Massachusetts registration expires in 2 weeks.",
+          "decision": "What should you do?",
+          "options": [
+            {
+              "text": "Submit renewal immediately with 30+ days buffer",
+              "next": "renewal_submitted",
+              "feedback": "Good! MA allows grace period with early renewal.",
+              "correct": true
+            },
+            {
+              "text": "Wait until after the Boston show to renew",
+              "next": "risk_expired",
+              "feedback": "Dangerous! Operating with expired registration violates regulations."
+            }
+          ]
+        },
+        "success_all_submitted": {
+          "outcome": "success",
+          "message": "You've successfully navigated the compliance requirements for your multi-state tour! Both Illinois shows and the Massachusetts show have proper advance notice, and your early submission provides a safety buffer."
+        },
+        "risk_delayed": {
+          "outcome": "partial_risk",
+          "message": "While you may meet deadlines, delaying submissions increases compliance risk. Best practice is to submit all notices as early as possible."
+        },
+        "renewal_submitted": {
+          "outcome": "success",
+          "message": "Excellent decision! By submitting your MA renewal 30+ days early, you ensure continuous registration coverage for your Boston show."
+        },
+        "risk_expired": {
+          "outcome": "failure",
+          "message": "This approach creates significant compliance risk. Massachusetts 105 CMR 121.027 lists 'operated after certificate expiration' as grounds for denial/revocation."
+        }
+      }
+    }
+  ]
+}

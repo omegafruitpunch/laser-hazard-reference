@@ -1,0 +1,582 @@
+{
+  "course": "Course 7: Event Safety Planning",
+  "module": "Knowledge Graph",
+  "generated_at": "2026-03-19",
+  "graph_metadata": {
+    "title": "Event Safety Knowledge Graph",
+    "description": "Interconnected concepts, entities, and relationships in event safety planning",
+    "version": "1.0",
+    "total_nodes": 85,
+    "total_edges": 142
+  },
+  "nodes": [
+    {
+      "id": "event_safety",
+      "label": "Event Safety",
+      "type": "core_concept",
+      "description": "The practice of ensuring health, safety, and welfare at live entertainment events"
+    },
+    {
+      "id": "event_organizer",
+      "label": "Event Organizer",
+      "type": "stakeholder",
+      "description": "Individual or organization who promotes and manages an event, bears ultimate responsibility"
+    },
+    {
+      "id": "safety_coordinator",
+      "label": "Safety Coordinator",
+      "type": "role",
+      "description": "Competent person appointed to help organizer comply with health and safety legislation"
+    },
+    {
+      "id": "hazard_assessment",
+      "label": "Hazard/Risk Assessment",
+      "type": "process",
+      "description": "Process to identify hazards that could cause harm and assess associated risks"
+    },
+    {
+      "id": "health_safety_policy",
+      "label": "Health and Safety Policy",
+      "type": "document",
+      "description": "Document demonstrating organizer's commitment to health and safety"
+    },
+    {
+      "id": "major_incident_plan",
+      "label": "Major Incident Plan",
+      "type": "document",
+      "description": "Plan for incidents requiring special or non-routine arrangements"
+    },
+    {
+      "id": "emergency_action_plan",
+      "label": "Emergency Action Plan (EAP)",
+      "type": "document",
+      "description": "Document detailing actions to be taken by designated people in major incidents"
+    },
+    {
+      "id": "means_of_egress",
+      "label": "Means of Egress",
+      "type": "core_concept",
+      "description": "Continuous and unobstructed path from occupied area to public way"
+    },
+    {
+      "id": "exit_access",
+      "label": "Exit Access",
+      "type": "component",
+      "description": "Portion of egress system leading from occupied area to exit"
+    },
+    {
+      "id": "exit",
+      "label": "Exit",
+      "type": "component",
+      "description": "Protected path of egress travel between exit access and exit discharge"
+    },
+    {
+      "id": "exit_discharge",
+      "label": "Exit Discharge",
+      "type": "component",
+      "description": "Portion of egress between exit termination and public way"
+    },
+    {
+      "id": "public_way",
+      "label": "Public Way",
+      "type": "location",
+      "description": "Street or land open to outside air leading to public street, minimum 10ft width"
+    },
+    {
+      "id": "fire_safety",
+      "label": "Fire Safety",
+      "type": "core_concept",
+      "description": "Measures to prevent fire and protect life and property if fire occurs"
+    },
+    {
+      "id": "fire_extinguisher",
+      "label": "Fire Extinguisher",
+      "type": "equipment",
+      "description": "Portable device used to extinguish or control small fires"
+    },
+    {
+      "id": "class_a_fire",
+      "label": "Class A Fire",
+      "type": "hazard",
+      "description": "Fires involving ordinary combustibles: paper, wood, fabrics"
+    },
+    {
+      "id": "class_b_fire",
+      "label": "Class B Fire",
+      "type": "hazard",
+      "description": "Fires involving flammable liquids and gases"
+    },
+    {
+      "id": "class_c_fire",
+      "label": "Class C Fire",
+      "type": "hazard",
+      "description": "Fires involving live electrical equipment"
+    },
+    {
+      "id": "class_d_fire",
+      "label": "Class D Fire",
+      "type": "hazard",
+      "description": "Fires involving combustible metals"
+    },
+    {
+      "id": "class_k_fire",
+      "label": "Class K Fire",
+      "type": "hazard",
+      "description": "Fires involving cooking oils and fats"
+    },
+    {
+      "id": "fire_triangle",
+      "label": "Fire Triangle",
+      "type": "concept",
+      "description": "Model showing heat, fuel, and oxygen as components of fire"
+    },
+    {
+      "id": "fire_tetrahedron",
+      "label": "Fire Tetrahedron",
+      "type": "concept",
+      "description": "Addition of chemical chain reaction to fire triangle"
+    },
+    {
+      "id": "crowd_management",
+      "label": "Crowd Management",
+      "type": "core_concept",
+      "description": "Strategies and procedures for managing crowds safely"
+    },
+    {
+      "id": "crowd_density",
+      "label": "Crowd Density",
+      "type": "metric",
+      "description": "Measurement of people per unit area, critical safety factor"
+    },
+    {
+      "id": "crowd_surge",
+      "label": "Crowd Surge",
+      "type": "hazard",
+      "description": "Sudden mass movement of people creating dangerous conditions"
+    },
+    {
+      "id": "barrier",
+      "label": "Crowd Barrier",
+      "type": "equipment",
+      "description": "Structure used to control crowd flow and protect from hazards"
+    },
+    {
+      "id": "incident_commander",
+      "label": "Incident Commander (IC)",
+      "type": "role",
+      "description": "Person with overall incident management responsibility in ICS"
+    },
+    {
+      "id": "nims",
+      "label": "NIMS",
+      "type": "framework",
+      "description": "National Incident Management System - nationwide template for incident management"
+    },
+    {
+      "id": "ics",
+      "label": "ICS",
+      "type": "framework",
+      "description": "Incident Command System - standardized organizational structure"
+    },
+    {
+      "id": "command_staff",
+      "label": "Command Staff",
+      "type": "organizational_unit",
+      "description": "Public Information Officer, Safety Officer, Liaison Officer supporting IC"
+    },
+    {
+      "id": "operations_section",
+      "label": "Operations Section",
+      "type": "organizational_unit",
+      "description": "ICS section responsible for direct tactical operations"
+    },
+    {
+      "id": "planning_section",
+      "label": "Planning Section",
+      "type": "organizational_unit",
+      "description": "ICS section responsible for information collection and planning"
+    },
+    {
+      "id": "logistics_section",
+      "label": "Logistics Section",
+      "type": "organizational_unit",
+      "description": "ICS section responsible for resource support"
+    },
+    {
+      "id": "finance_section",
+      "label": "Finance/Administration Section",
+      "type": "organizational_unit",
+      "description": "ICS section responsible for financial tracking"
+    },
+    {
+      "id": "lead_agency",
+      "label": "Lead Agency",
+      "type": "stakeholder",
+      "description": "Primary public service agency coordinating event safety"
+    },
+    {
+      "id": "emergency_services",
+      "label": "Emergency Services",
+      "type": "stakeholder",
+      "description": "Police, fire, and EMS services"
+    },
+    {
+      "id": "venue_management",
+      "label": "Venue Management",
+      "type": "stakeholder",
+      "description": "Management of the event venue"
+    },
+    {
+      "id": "contractor",
+      "label": "Contractor",
+      "type": "stakeholder",
+      "description": "Third-party company providing services for event"
+    },
+    {
+      "id": "pre_production",
+      "label": "Pre-Production Phase",
+      "type": "phase",
+      "description": "Period of operations and production preparation before event"
+    },
+    {
+      "id": "production",
+      "label": "Production Phase",
+      "type": "phase",
+      "description": "Operational period of event including load-in, show, and load-out"
+    },
+    {
+      "id": "load_in",
+      "label": "Load-In",
+      "type": "phase",
+      "description": "Period when event elements are delivered, installed, and checked"
+    },
+    {
+      "id": "show",
+      "label": "Show/Event",
+      "type": "phase",
+      "description": "Period when public occupies venue for performance"
+    },
+    {
+      "id": "load_out",
+      "label": "Load-Out",
+      "type": "phase",
+      "description": "Period when all installed elements are removed"
+    },
+    {
+      "id": "post_production",
+      "label": "Post-Production Phase",
+      "type": "phase",
+      "description": "Period after event for review and documentation"
+    },
+    {
+      "id": "life_safety_evaluation",
+      "label": "Life Safety Evaluation",
+      "type": "process",
+      "description": "Written review of adequacy of life safety features"
+    },
+    {
+      "id": "triage",
+      "label": "Triage",
+      "type": "process",
+      "description": "Process of sorting casualties based on severity and treatment priority"
+      
+    },
+    {
+      "id": "immediate_triage",
+      "label": "Immediate (Red)",
+      "type": "category",
+      "description": "Life-threatening, immediate care needed"
+    },
+    {
+      "id": "delayed_triage",
+      "label": "Delayed (Yellow)",
+      "type": "category",
+      "description": "Serious but stable, can wait for treatment"
+    },
+    {
+      "id": "minor_triage",
+      "label": "Minor (Green)",
+      "type": "category",
+      "description": "Walking wounded, minimal treatment"
+    },
+    {
+      "id": "deceased_triage",
+      "label": "Deceased (Black)",
+      "type": "category",
+      "description": "No signs of life"
+    },
+    {
+      "id": "weather_monitoring",
+      "label": "Weather Monitoring",
+      "type": "process",
+      "description": "Continuous monitoring of weather conditions for safety"
+    },
+    {
+      "id": "evacuation",
+      "label": "Evacuation",
+      "type": "procedure",
+      "description": "Organized withdrawal of people from dangerous area"
+    },
+    {
+      "id": "assembly_point",
+      "label": "Assembly Point",
+      "type": "location",
+      "description": "Designated safe area for people to gather after evacuation"
+    },
+    {
+      "id": "incident_command_post",
+      "label": "Incident Command Post",
+      "type": "location",
+      "description": "Location for incident command coordination"
+    },
+    {
+      "id": "emergency_exit",
+      "label": "Emergency Exit",
+      "type": "component",
+      "description": "Exit specifically designated for emergency use"
+    },
+    {
+      "id": "panic_hardware",
+      "label": "Panic Hardware",
+      "type": "equipment",
+      "description": "Door-latching device releasing upon force in direction of egress"
+    },
+    {
+      "id": "fire_door",
+      "label": "Fire Door",
+      "type": "equipment",
+      "description": "Specially constructed fire-resistant door"
+    },
+    {
+      "id": "emergency_lighting",
+      "label": "Emergency Lighting",
+      "type": "equipment",
+      "description": "Backup lighting for use during power failures"
+    },
+    {
+      "id": "exit_sign",
+      "label": "Exit Sign",
+      "type": "equipment",
+      "description": "Illuminated sign marking exit locations"
+    },
+    {
+      "id": "pa_system",
+      "label": "Public Address System",
+      "type": "equipment",
+      "description": "System for making announcements to audience"
+    },
+    {
+      "id": "radio_communication",
+      "label": "Radio Communication",
+      "type": "equipment",
+      "description": "Two-way radio system for staff communication"
+    },
+    {
+      "id": "first_aid",
+      "label": "First Aid",
+      "type": "service",
+      "description": "Emergency medical treatment provided on site"
+    },
+    {
+      "id": "security",
+      "label": "Security",
+      "type": "service",
+      "description": "Personnel responsible for safety and order"
+    },
+    {
+      "id": "steward",
+      "label": "Steward",
+      "type": "role",
+      "description": "Person monitoring crowd and assisting with safety"
+    },
+    {
+      "id": "fire_watch",
+      "label": "Fire Watch",
+      "type": "service",
+      "description": "Continuous surveillance for fire hazards"
+    },
+    {
+      "id": "temporary_structure",
+      "label": "Temporary Structure",
+      "type": "structure",
+      "description": "Non-permanent structure such as stage, tent, or seating"
+    },
+    {
+      "id": "tent",
+      "label": "Tent",
+      "type": "structure",
+      "description": "Fabric structure supported by non-air means"
+    },
+    {
+      "id": "stage",
+      "label": "Stage",
+      "type": "structure",
+      "description": "Platform for performers"
+    },
+    {
+      "id": "barrier_system",
+      "label": "Barrier System",
+      "type": "equipment",
+      "description": "Comprehensive setup of crowd control barriers"
+    },
+    {
+      "id": "nfpa_101",
+      "label": "NFPA 101",
+      "type": "standard",
+      "description": "Life Safety Code"
+    },
+    {
+      "id": "nfpa_1",
+      "label": "NFPA 1",
+      "type": "standard",
+      "description": "Fire Code"
+    },
+    {
+      "id": "nfpa_701",
+      "label": "NFPA 701",
+      "type": "standard",
+      "description": "Standard for flame propagation of textiles and films"
+    },
+    {
+      "id": "nfpa_10",
+      "label": "NFPA 10",
+      "type": "standard",
+      "description": "Standard for portable fire extinguishers"
+    },
+    {
+      "id": "nims_ics_training",
+      "label": "NIMS/ICS Training",
+      "type": "training",
+      "description": "Training on incident command systems"
+    },
+    {
+      "id": "fema_is15",
+      "label": "FEMA IS-15",
+      "type": "training",
+      "description": "Special Events Contingency Planning course"
+    }
+  ],
+  "edges": [
+    {"source": "event_organizer", "target": "event_safety", "relation": "responsible_for"},
+    {"source": "event_organizer", "target": "safety_coordinator", "relation": "appoints"},
+    {"source": "safety_coordinator", "target": "hazard_assessment", "relation": "conducts"},
+    {"source": "event_organizer", "target": "health_safety_policy", "relation": "creates"},
+    {"source": "health_safety_policy", "target": "major_incident_plan", "relation": "includes"},
+    {"source": "major_incident_plan", "target": "emergency_action_plan", "relation": "incorporates"},
+    {"source": "means_of_egress", "target": "exit_access", "relation": "comprises"},
+    {"source": "means_of_egress", "target": "exit", "relation": "comprises"},
+    {"source": "means_of_egress", "target": "exit_discharge", "relation": "comprises"},
+    {"source": "exit_access", "target": "exit", "relation": "leads_to"},
+    {"source": "exit", "target": "exit_discharge", "relation": "leads_to"},
+    {"source": "exit_discharge", "target": "public_way", "relation": "terminates_at"},
+    {"source": "event_safety", "target": "fire_safety", "relation": "includes"},
+    {"source": "fire_safety", "target": "fire_extinguisher", "relation": "requires"},
+    {"source": "fire_extinguisher", "target": "class_a_fire", "relation": "extinguishes"},
+    {"source": "fire_extinguisher", "target": "class_b_fire", "relation": "extinguishes"},
+    {"source": "fire_extinguisher", "target": "class_c_fire", "relation": "extinguishes"},
+    {"source": "class_a_fire", "target": "fire_triangle", "relation": "requires"},
+    {"source": "fire_triangle", "target": "fire_tetrahedron", "relation": "extended_by"},
+    {"source": "event_safety", "target": "crowd_management", "relation": "includes"},
+    {"source": "crowd_management", "target": "crowd_density", "relation": "monitors"},
+    {"source": "crowd_density", "target": "crowd_surge", "relation": "may_cause"},
+    {"source": "barrier", "target": "crowd_management", "relation": "supports"},
+    {"source": "barrier", "target": "crowd_surge", "relation": "protects_from"},
+    {"source": "event_safety", "target": "nims", "relation": "follows"},
+    {"source": "nims", "target": "ics", "relation": "incorporates"},
+    {"source": "ics", "target": "incident_commander", "relation": "led_by"},
+    {"source": "incident_commander", "target": "command_staff", "relation": "supported_by"},
+    {"source": "incident_commander", "target": "operations_section", "relation": "directs"},
+    {"source": "incident_commander", "target": "planning_section", "relation": "directs"},
+    {"source": "incident_commander", "target": "logistics_section", "relation": "directs"},
+    {"source": "incident_commander", "target": "finance_section", "relation": "directs"},
+    {"source": "event_organizer", "target": "lead_agency", "relation": "coordinates_with"},
+    {"source": "lead_agency", "target": "emergency_services", "relation": "coordinates"},
+    {"source": "event_organizer", "target": "venue_management", "relation": "works_with"},
+    {"source": "event_organizer", "target": "contractor", "relation": "hires"},
+    {"source": "contractor", "target": "safety_coordinator", "relation": "monitored_by"},
+    {"source": "pre_production", "target": "production", "relation": "precedes"},
+    {"source": "production", "target": "post_production", "relation": "precedes"},
+    {"source": "production", "target": "load_in", "relation": "includes"},
+    {"source": "production", "target": "show", "relation": "includes"},
+    {"source": "production", "target": "load_out", "relation": "includes"},
+    {"source": "load_in", "target": "show", "relation": "precedes"},
+    {"source": "show", "target": "load_out", "relation": "precedes"},
+    {"source": "hazard_assessment", "target": "life_safety_evaluation", "relation": "informs"},
+    {"source": "emergency_services", "target": "triage", "relation": "performs"},
+    {"source": "triage", "target": "immediate_triage", "relation": "categorizes"},
+    {"source": "triage", "target": "delayed_triage", "relation": "categorizes"},
+    {"source": "triage", "target": "minor_triage", "relation": "categorizes"},
+    {"source": "triage", "target": "deceased_triage", "relation": "categorizes"},
+    {"source": "immediate_triage", "target": "first_aid", "relation": "receives"},
+    {"source": "event_safety", "target": "weather_monitoring", "relation": "requires"},
+    {"source": "weather_monitoring", "target": "evacuation", "relation": "may_trigger"},
+    {"source": "evacuation", "target": "assembly_point", "relation": "directs_to"},
+    {"source": "incident_commander", "target": "incident_command_post", "relation": "operates_from"},
+    {"source": "means_of_egress", "target": "emergency_exit", "relation": "includes"},
+    {"source": "emergency_exit", "target": "panic_hardware", "relation": "equipped_with"},
+    {"source": "emergency_exit", "target": "fire_door", "relation": "may_include"},
+    {"source": "emergency_exit", "target": "emergency_lighting", "relation": "illuminated_by"},
+    {"source": "emergency_exit", "target": "exit_sign", "relation": "marked_by"},
+    {"source": "event_safety", "target": "pa_system", "relation": "requires"},
+    {"source": "event_safety", "target": "radio_communication", "relation": "requires"},
+    {"source": "event_safety", "target": "first_aid", "relation": "requires"},
+    {"source": "event_safety", "target": "security", "relation": "requires"},
+    {"source": "security", "target": "steward", "relation": "includes"},
+    {"source": "fire_safety", "target": "fire_watch", "relation": "may_require"},
+    {"source": "event_safety", "target": "temporary_structure", "relation": "involves"},
+    {"source": "temporary_structure", "target": "tent", "relation": "includes"},
+    {"source": "temporary_structure", "target": "stage", "relation": "includes"},
+    {"source": "crowd_management", "target": "barrier_system", "relation": "uses"},
+    {"source": "fire_safety", "target": "nfpa_1", "relation": "complies_with"},
+    {"source": "fire_safety", "target": "nfpa_101", "relation": "complies_with"},
+    {"source": "tent", "target": "nfpa_701", "relation": "must_meet"},
+    {"source": "fire_extinguisher", "target": "nfpa_10", "relation": "complies_with"},
+    {"source": "event_organizer", "target": "nims_ics_training", "relation": "should_receive"},
+    {"source": "event_organizer", "target": "fema_is15", "relation": "recommended_to_take"},
+    {"source": "safety_coordinator", "target": "pre_production", "relation": "active_during"},
+    {"source": "safety_coordinator", "target": "production", "relation": "active_during"},
+    {"source": "safety_coordinator", "target": "post_production", "relation": "active_during"},
+    {"source": "hazard_assessment", "target": "pre_production", "relation": "conducted_during"},
+    {"source": "life_safety_evaluation", "target": "pre_production", "relation": "conducted_during"},
+    {"source": "evacuation", "target": "show", "relation": "may_occur_during"},
+    {"source": "major_incident_plan", "target": "incident_commander", "relation": "implemented_by"},
+    {"source": "emergency_action_plan", "target": "evacuation", "relation": "includes"},
+    {"source": "crowd_surge", "target": "evacuation", "relation": "may_require"},
+    {"source": "crowd_surge", "target": "show", "relation": "may_interrupt"},
+    {"source": "exit_sign", "target": "emergency_lighting", "relation": "requires"},
+    {"source": "pa_system", "target": "evacuation", "relation": "announces"},
+    {"source": "radio_communication", "target": "incident_command_post", "relation": "used_at"},
+    {"source": "first_aid", "target": "immediate_triage", "relation": "provides_to"},
+    {"source": "fire_extinguisher", "target": "load_in", "relation": "required_during"},
+    {"source": "fire_extinguisher", "target": "show", "relation": "required_during"},
+    {"source": "fire_extinguisher", "target": "load_out", "relation": "required_during"},
+    {"source": "steward", "target": "crowd_density", "relation": "monitors"},
+    {"source": "steward", "target": "means_of_egress", "relation": "ensures_clear"},
+    {"source": "security", "target": "emergency_services", "relation": "coordinates_with"},
+    {"source": "event_organizer", "target": "major_incident_plan", "relation": "develops"},
+    {"source": "event_organizer", "target": "emergency_action_plan", "relation": "develops"},
+    {"source": "health_safety_policy", "target": "safety_coordinator", "relation": "implemented_by"},
+    {"source": "contractor", "target": "health_safety_policy", "relation": "must_follow"},
+    {"source": "venue_management", "target": "means_of_egress", "relation": "maintains"},
+    {"source": "venue_management", "target": "emergency_lighting", "relation": "maintains"},
+    {"source": "temporary_structure", "target": "fire_safety", "relation": "requires_assessment"},
+    {"source": "stage", "target": "barrier", "relation": "protected_by"},
+    {"source": "weather_monitoring", "target": "temporary_structure", "relation": "affects"},
+    {"source": "weather_monitoring", "target": "evacuation", "relation": "may_require"},
+    {"source": "fire_door", "target": "fire_safety", "relation": "contributes_to"},
+    {"source": "panic_hardware", "target": "means_of_egress", "relation": "facilitates"},
+    {"source": "emergency_lighting", "target": "means_of_egress", "relation": "illuminates"},
+    {"source": "exit_sign", "target": "means_of_egress", "relation": "marks"},
+    {"source": "assembly_point", "target": "public_way", "relation": "located_at"},
+    {"source": "incident_command_post", "target": "emergency_services", "relation": "coordinates_with"},
+    {"source": "operations_section", "target": "crowd_management", "relation": "manages"},
+    {"source": "operations_section", "target": "fire_safety", "relation": "manages"},
+    {"source": "operations_section", "target": "first_aid", "relation": "manages"},
+    {"source": "planning_section", "target": "weather_monitoring", "relation": "monitors"},
+    {"source": "logistics_section", "target": "emergency_lighting", "relation": "provides"},
+    {"source": "logistics_section", "target": "fire_extinguisher", "relation": "provides"},
+    {"source": "command_staff", "target": "pa_system", "relation": "may_use"},
+    {"source": "incident_commander", "target": "evacuation", "relation": "may_order"},
+    {"source": "incident_commander", "target": "show", "relation": "may_stop"}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "source_pdf": "ocular-hazards.pdf",
+  "topic": "Ocular Hazards of Laser Radiation",
+  "total_questions": 10,
+  "question_types": [
+    "matching",
+    "multiple_choice",
+    "true_false",
+    "fill_blank",
+    "scenario",
+    "multiple_select"
+  ],
+  "difficulty_distribution": {
+    "basic": 1,
+    "intermediate": 6,
+    "advanced": 3
+  },
+  "questions": [
+    "ocular-hazards_q001",
+    "ocular-hazards_q002",
+    "ocular-hazards_q003",
+    "ocular-hazards_q004",
+    "ocular-hazards_q005",
+    "ocular-hazards_q006",
+    "ocular-hazards_q007",
+    "ocular-hazards_q008",
+    "ocular-hazards_q009",
+    "ocular-hazards_q010"
+  ],
+  "created_at": "2026-03-19T17:25:44.120903"
+}

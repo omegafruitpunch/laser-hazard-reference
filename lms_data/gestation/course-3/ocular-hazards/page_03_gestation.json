@@ -1,0 +1,30 @@
+{
+  "page_num": 3,
+  "source_pdf": "ocular-hazards.pdf",
+  "digestion": {
+    "summary": "NEAR-INFRARED HAZARDS (700-1400 nm)\n\nNear-infrared (NIR) presents special dangers because:\n1. Invisible - no blink reflex protection\n2. Focuses on retina like visible light\n3. Victim may not realize e...",
+    "key_concepts": [
+      "near-infrared",
+      "UV hazards",
+      "CO2 laser",
+      "photokeratitis"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "NEAR-INFRARED HAZARDS (700-1400 nm)\n\nNear-infrared (NIR) presents special dangers because:\n1. Invisible - no blink reflex protection\n2. Focuses on retina like visible light\n3. Victim may not realize exposure occurred until damage is discovered\n\nCommon NIR laser wavelengths:\n- 755 nm: Alexandrite lasers\n- 800-980 nm: Diode lasers\n- 1064 nm: Nd:YAG lasers\n\nNIR injuries often affect peripheral vision first, going unnoticed until \ncentral vision is compromised or until clinical examination reveals damage.\n\nCORNEAL AND LENS HAZARDS (UV and Far-IR)\n\nUltraviolet (UV):\n- UV-C (100-280 nm): Absorbed by cornea, causes photokeratitis (\"welder's flash\")\n- UV-B (280-315 nm): Primarily corneal absorption\n- UV-A (315-400 nm): Partially transmits to lens, contributes to cataracts\n\nFar-Infrared:\n- CO2 lasers (10,600 nm): Absorbed in cornea within 0.1 mm depth\n- Can cause immediate corneal burns\n- Thermal damage mechanism\n",
+    "analogies": [
+      "The eye's focusing capability is like a magnifying glass concentrating sunlight - it amplifies laser power by 100,000x at the retina.",
+      "Laser skin burns are similar to thermal burns but can be more precisely localized."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Always wear appropriate laser eyewear when working with Class 3B or Class 4 lasers.",
+      "Use protective gloves and long sleeves when operating high-power lasers.",
+      "UV laser exposure has cumulative effects similar to sun damage - use full coverage PPE."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.118547"
+}

@@ -1,0 +1,68 @@
+{
+  "module_id": "course-7-module-1",
+  "title": "Emergency Response Procedures",
+  "course": "Course 7: Event Safety",
+  "source_pdf": "emergency-response.pdf",
+  "learning_objectives": [
+    "Understand the National Incident Management System (NIMS) and Incident Command System (ICS)",
+    "Identify key components of major incident planning",
+    "Demonstrate knowledge of emergency service coordination",
+    "Apply evacuation and cordon procedures"
+  ],
+  "content": {
+    "introduction": {
+      "title": "Major Incident (Emergency) Planning",
+      "text": "Planning any event can be complicated. Planning for the potential risks and hazards associated with an event is essential to the event's success. By making decisions, agreeing on actions and gathering and documenting useful information before an incident occurs, emergency planning helps ensure that event organizers and emergency personnel are able to respond quickly and effectively."
+    },
+    "sections": [
+      {
+        "section_id": "emergency-1",
+        "title": "NIMS and ICS Overview",
+        "content": "On Feb. 28, 2003, the President issued Homeland Security Presidential Directive (HSPD)-5, which directs the Secretary of Homeland Security to develop and administer a National Incident Management System (NIMS). This system provides a consistent nationwide template to enable federal, state, local and tribal governments and private-sector and non-governmental organizations to work together effectively and efficiently to prepare for, prevent, respond to and recover from domestic incidents, regardless of cause, size, or complexity, including acts of catastrophic terrorism. NIMS provides standardized organizational structures such as the Incident Command System (ICS), multi-agency coordination systems, and public information requirements."
+      },
+      {
+        "section_id": "emergency-2",
+        "title": "Major Incident Definition",
+        "content": "NIMS defines an incident as an occurrence or event, natural or human-caused, that requires an emergency response to protect life or property. Incidents can include major disasters, emergencies, terrorist attacks, wildland and urban fires, floods, hazardous materials spills, nuclear accidents, aircraft accidents, earthquakes, hurricanes, tornadoes, and public health emergencies. A major incident refers to an incident that does or is likely to require the implementation of special or non-routine arrangements and resources from one or more emergency services."
+      },
+      {
+        "section_id": "emergency-3",
+        "title": "Incident Command System Structure",
+        "content": "ICS offers a simple management structure with four sections: Command, Operations, Planning, Logistics and Finance/Administration. Command comprises the Incident Commander (IC) and Command Staff including Public Information Officer, Safety Officer, and Liaison Officer. The General Staff includes Operations Section Chief, Planning Section Chief, Logistics Section Chief, and Finance/Administration Section Chief. Key ICS characteristics include: Common Terminology, Modular Organization, Management by Objectives, Reliance on an Incident Action Plan, Manageable Span of Control, Comprehensive Resource Management, Integrated Communications, Chain of Command and Unity of Command, and Accountability of Resources and Personnel."
+      },
+      {
+        "section_id": "emergency-4",
+        "title": "Major Incident Plan Preparation",
+        "content": "Major incident plans should include: Identification of key decision-making workers; Command post location; Conditions and procedure for stopping the event; Emergency routes and access; People with special needs; Holding areas for performers, workers and audience; Coded messages to alert security and stewards; Public warning mechanisms; Evacuation and containment procedures; PA announcement scripts; Rendezvous points for emergency services; Ambulance loading points and triage areas; Hospital locations and secured traffic routes; Emergency equipment locations; and Emergency reporting forms."
+      },
+      {
+        "section_id": "emergency-5",
+        "title": "Emergency Service Responsibilities",
+        "content": "Once a major incident has been declared, the police will coordinate and facilitate the on-site and off-site response. However, in the case of a fire, the fire department should be responsible for dealing with an on-site response. The agency responsible for emergency medical services will initiate coordination of the overall medical response at the scene, nominating and alerting receiving hospitals, distributing casualties, providing emergency transportation, communications and liaison with other agencies. Local authorities can provide reception centers, temporary emergency accommodation, feeding and access to special equipment."
+      },
+      {
+        "section_id": "emergency-6",
+        "title": "Cordons and Site Control",
+        "content": "In the event of a major incident, cordons may be needed. Discuss with police, fire department and emergency medical services how this would be carried out on site. Place cordons according to the circumstances - they may need to be moved during the incident. An appropriate on-site facility should be set aside as a designated incident command post (ICP)."
+      }
+    ],
+    "key_takeaways": [
+      "NIMS provides a consistent nationwide template for incident management",
+      "ICS offers a simple management structure for coordinating responding agencies",
+      "Major incident planning should begin in the earliest stages of event planning",
+      "Clear demarcation of duties must be agreed upon and understood by all parties",
+      "Communication exercises are recommended before the event"
+    ],
+    "fema_courses": [
+      "IS-15.b: Special Events Contingency Planning",
+      "IS-100: Introduction to ICS",
+      "IS-200: ICS for Single Resources and Initial Action"
+    ]
+  },
+  "metadata": {
+    "version": "1.0",
+    "extracted_from": "Event Safety Guide v1.1 - Chapter 3",
+    "processing_agent": "PDF Elite Processor Agent #18",
+    "extraction_date": "2026-03-19"
+  }
+}

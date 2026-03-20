@@ -1,0 +1,20 @@
+{
+  "id": "skin-hazards_q006",
+  "type": "matching",
+  "question": "Match the UV band with its skin penetration depth:",
+  "pairs": [
+    {
+      "item": "UV-C (100-280 nm)",
+      "match": "Absorbed by stratum corneum"
+    },
+    {
+      "item": "UV-B (280-315 nm)",
+      "match": "Absorbed in epidermis"
+    },
+    {
+      "item": "UV-A (315-400 nm)",
+      "match": "Penetrates to dermis"
+    }
+  ],
+  "explanation": "UV-C is absorbed most superficially. UV-B reaches the epidermis. UV-A penetrates deepest into the dermis, contributing to photoaging."
+}

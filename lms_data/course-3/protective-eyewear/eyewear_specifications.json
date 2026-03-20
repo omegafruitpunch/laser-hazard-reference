@@ -1,0 +1,168 @@
+{
+  "specification_id": "laser-eyewear-specs",
+  "title": "Laser Protective Eyewear Technical Specifications",
+  "version": "1.0",
+  "specifications": {
+    "optical_density": {
+      "description": "Optical Density (OD) quantifies the attenuation provided by protective eyewear on a logarithmic scale",
+      "calculation": {
+        "formula": "OD = log10(H0/MPE)",
+        "variables": {
+          "H0": "Anticipated worst-case exposure in W/cm² or J/cm²",
+          "MPE": "Maximum Permissible Exposure in same units"
+        },
+        "example": {
+          "laser": "Argon CW 5W at 0.514 μm",
+          "H0": "12.99 W/cm²",
+          "MPE_600sec": "16.7 × 10⁻⁶ W/cm²",
+          "result": "OD = 5.9",
+          "conservative": "OD = 7.1 (for 8-hour exposure)"
+        }
+      },
+      "ranges": {
+        "OD_1_to_2": "Low power lasers, minimal attenuation",
+        "OD_3_to_4": "Moderate power lasers",
+        "OD_5_to_6": "High power lasers, most industrial applications",
+        "OD_7_plus": "Maximum protection, worst-case scenarios"
+      },
+      "wavelength_dependence": "OD values are ALWAYS wavelength-specific"
+    },
+    "wavelength_coverage": {
+      "description": "Eyewear must be matched to specific laser wavelengths",
+      "spectral_regions": {
+        "UV_C": {
+          "range": "0.200 - 0.280 μm",
+          "hazards": ["Photokeratitis", "Erythema", "Skin cancer"],
+          "common_lasers": ["Excimer (ArF 0.193 μm)", "Excimer (KrF 0.248 μm)"]
+        },
+        "UV_B": {
+          "range": "0.280 - 0.315 μm",
+          "hazards": ["Photokeratitis", "Accelerated skin aging"],
+          "common_lasers": ["Excimer (XeCl 0.308 μm)"]
+        },
+        "UV_A": {
+          "range": "0.315 - 0.400 μm",
+          "hazards": ["Photochemical UV cataract", "Pigment darkening"],
+          "common_lasers": ["Nitrogen laser", "HeCd (UV)"]
+        },
+        "visible": {
+          "range": "0.400 - 0.780 μm",
+          "hazards": ["Photochemical and thermal retinal injury"],
+          "common_lasers": ["Argon (0.488, 0.514 μm)", "HeNe (0.633 μm)", "Krypton", "Dye lasers"]
+        },
+        "NIR_A": {
+          "range": "0.780 - 1.400 μm",
+          "hazards": ["Cataract", "Retinal burns"],
+          "common_lasers": ["Nd:YAG (1.064 μm)", "GaAs diode", "HeNe (NIR)"]
+        },
+        "NIR_B": {
+          "range": "1.400 - 3.00 μm",
+          "hazards": ["Corneal burn", "Aqueous flare", "IR cataract"],
+          "common_lasers": ["Erbium lasers", "HF lasers"]
+        },
+        "FIR": {
+          "range": "3.00 - 1000 μm",
+          "hazards": ["Corneal burn only"],
+          "common_lasers": ["CO2 (10.6 μm)", "CO (5.3 μm)"]
+        }
+      }
+    },
+    "limiting_apertures": {
+      "description": "Standardized pupil sizes for exposure calculations",
+      "visible_NIR": {
+        "aperture": "7 mm",
+        "basis": "Fully dilated pupil (worst-case scenario)",
+        "area": "0.385 cm²"
+      },
+      "UV_FIR": {
+        "aperture": "1 mm",
+        "basis": "Worst-case scenario for non-visible wavelengths",
+        "note": "Presents more conservative (higher) OD requirements"
+      }
+    },
+    "exposure_time_criteria": {
+      "description": "Time bases for OD calculations per ANSI Z 136.1",
+      "criteria": [
+        {
+          "time": "0.25 seconds",
+          "basis": "Human aversion time (blink reflex)",
+          "application": "Class II laser concept, unexpected exposure"
+        },
+        {
+          "time": "10 seconds",
+          "basis": "Worst-case for infrared sources",
+          "application": "Natural eye motions dominate after 10 seconds"
+        },
+        {
+          "time": "600 seconds",
+          "basis": "Typical alignment viewing time",
+          "application": "Diffuse reflection viewing during tasks"
+        },
+        {
+          "time": "30,000 seconds (8 hours)",
+          "basis": "Full occupational exposure",
+          "application": "Most conservative approach"
+        }
+      ]
+    },
+    "common_laser_od_requirements": {
+      "note": "Values are for intrabeam viewing (worst case) per ANSI Z 136.1 (1993)",
+      "lasers": [
+        {
+          "type": "CO2 (CW)",
+          "wavelength": "10.6 μm",
+          "OD_10sec": "5.0",
+          "OD_8hr": "5.0",
+          "note": "MPE nearly identical for different times"
+        },
+        {
+          "type": "Nd:YAG (CW)",
+          "wavelength": "1.064 μm",
+          "OD_10sec": "5.1",
+          "OD_8hr": "6.2",
+          "note": "Based on 1.6 × 10⁻³ W/cm²"
+        },
+        {
+          "type": "Nd:YAG (Q-switched)",
+          "wavelength": "1.064 μm",
+          "OD_10sec": "5.2 (17.0 × 10⁻⁶)",
+          "OD_8hr": "6.6 (2.3 × 10⁻⁶)",
+          "note": "Higher OD for pulsed operation"
+        },
+        {
+          "type": "HeNe (CW)",
+          "wavelength": "0.633 μm",
+          "OD_0.25sec": "2.5",
+          "OD_10sec": "5.5",
+          "OD_8hr": "6.8",
+          "note": "Includes CB correction factor of 17.5"
+        },
+        {
+          "type": "Argon (CW)",
+          "wavelength": "0.514 μm",
+          "OD_0.25sec": "2.5",
+          "OD_600sec": "5.9",
+          "OD_8hr": "7.1",
+          "note": "Common industrial laser"
+        }
+      ]
+    },
+    "physical_specifications": {
+      "frame_requirements": {
+        "coverage": "Adequate side protection (lateral coverage)",
+        "fit": "Secure fit without gaps",
+        "adjustability": "Adjustable for different face shapes",
+        "ventilation": "Anti-fog ventilation design"
+      },
+      "lens_requirements": {
+        "material": "Impact-resistant polycarbonate or glass",
+        "coating": "Scratch-resistant coating",
+        "filter_integrity": "No degradation of filter properties over time"
+      },
+      "prescription_compatibility": {
+        "options": ["Over-glasses style", "Prescription inserts", "Direct prescription lenses"],
+        "considerations": ["Filter must cover prescription lens area", "Additional OD verification required"]
+      }
+    }
+  }
+}

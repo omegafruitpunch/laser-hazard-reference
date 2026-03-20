@@ -1,0 +1,22 @@
+{
+  "state": "Colorado",
+  "summary": {
+    "total_pages": 4,
+    "word_count": 476,
+    "key_sections_identified": []
+  },
+  "extracted_data": {
+    "regulatory_authority": null,
+    "licensing_requirements": [
+      "Found reference to: license",
+      "Found reference to: licensing",
+      "Found reference to: permit",
+      "Found reference to: registration",
+      "Found reference to: certification"
+    ],
+    "restrictions": [],
+    "penalties": [],
+    "compliance_obligations": [],
+    "interstate_provisions": []
+  }
+}

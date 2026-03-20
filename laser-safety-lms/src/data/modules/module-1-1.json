@@ -1,0 +1,56 @@
+{
+  "id": "module-1-1",
+  "courseId": "course-1",
+  "title": "Introduction to Laser Hazards",
+  "description": "Overview of laser technology and the fundamental hazards associated with laser use in entertainment and industrial settings.",
+  "order": 1,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "What Do You Already Know?",
+      "content": "Before diving into laser hazards, consider your current experience. Have you ever attended a laser light show? Worked with laser pointers? Been in an industrial setting with laser equipment? Your prior experience forms the foundation for understanding laser safety principles.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "Understanding Laser Fundamentals",
+      "content": "Lasers emit coherent, monochromatic light that can cause severe eye and skin injuries. Unlike ordinary light, laser beams are highly directional and can maintain their intensity over long distances.\n\n## Key Properties of Laser Light:\n\n1. **Coherence**: Waves are in phase both spatially and temporally\n2. **Monochromaticity**: Single wavelength or very narrow bandwidth\n3. **Directionality**: Beam divergence is minimal\n4. **High Intensity**: Energy concentrated in a small area\n\n## Primary Laser Hazards:\n\n- **Ocular Damage**: Retinal burns can be permanent and painless\n- **Skin Burns**: Thermal injury from high-power exposure\n- **Fire/Ignition**: Class 4 lasers can ignite materials\n- **Non-Beam Hazards**: Electrical, chemical, and secondary risks",
+      "component": "WavelengthExplorer",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "Hazard Identification Exercise",
+      "content": "Review the following scenarios and identify all laser hazards present:\n\n**Scenario 1**: A Class 4 laser is being used for an outdoor show. The beam path extends over the audience area.\n\n**Scenario 2**: A laboratory technician is aligning a Class 3B laser without wearing protective eyewear.\n\n**Scenario 3**: A laser projector is positioned near reflective surfaces in a venue.",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-1-1",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "Laser Hazards Reference Guide",
+      "path": "/docs/course-1-fundamentals/intro-laser-hazards.pdf"
+    },
+    {
+      "type": "interactive",
+      "title": "Wavelength Explorer",
+      "component": "WavelengthExplorer"
+    }
+  ],
+  "keyTakeaways": [
+    "Lasers emit coherent, monochromatic light that can cause severe eye and skin injuries",
+    "The primary hazard is ocular damage — retinal burns can be permanent",
+    "Non-beam hazards include electrical, chemical, and fire risks",
+    "Understanding hazard distance (NOHD) is essential for safe operations"
+  ],
+  "nextModule": "module-1-2",
+  "prerequisites": [],
+  "difficulty": "beginner"
+}

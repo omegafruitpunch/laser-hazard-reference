@@ -1,0 +1,127 @@
+{
+  "course": "Course 3: Bio-Hazards",
+  "source_pdf": "iec-60825-1.pdf",
+  "gestation_content": {
+    "title": "IEC 60825-1 Standard Requirements - Interpretation Guide",
+    "sections": [
+      {
+        "section_id": "4.3_classification",
+        "title": "Classification Rules (Subclause 4.3)",
+        "key_concepts": [
+          {
+            "concept": "Accessible Emission (AE)",
+            "definition": "The radiation level that is accessible during operation, maintenance, or service conditions.",
+            "interpretation": "AE is compared against AEL (Accessible Emission Limit) to determine laser class."
+          },
+          {
+            "concept": "Multiple Wavelength Radiation",
+            "definition": "When laser products emit at multiple wavelengths simultaneously.",
+            "rule": "See IEC 60825-1:2014/ISH2 for specific additive rules for multi-wavelength analysis."
+          },
+          {
+            "concept": "Extended Source Evaluation",
+            "definition": "Sources with angular subtense at the cornea > 1.5 mrad (αmin).",
+            "default_method": "For wavelengths 400-1400 nm, angle of acceptance may be limited to 100 mrad.",
+            "exception": "400-600 nm for durations > 100s: circular-cone angle of acceptance is not limited.",
+            "class_3b_note": "For Class 3B AELs, angle of acceptance is not limited."
+          }
+        ]
+      },
+      {
+        "section_id": "4.3d_nonuniform_sources",
+        "title": "Non-uniform, Non-circular or Multiple Apparent Sources",
+        "key_principles": [
+          {
+            "principle": "Circular Field Stop Application",
+            "rule": "Applicable for circularly symmetric images of the apparent source.",
+            "non_symmetric_case": "For non-circularly symmetric profiles, vary angle of acceptance in each dimension."
+          },
+          {
+            "principle": "Alpha Max Calculation",
+            "rule": "αmax(t) is calculated for the same emission duration t used to determine AEL(t).",
+            "examples": [
+              "Pulse duration",
+              "Pulse group duration",
+              "Time base for averaging power"
+            ]
+          },
+          {
+            "principle": "AE/AEL Ratio Analysis",
+            "method": "Determine most restrictive (maximum) ratio of AE over AEL by varying angle of acceptance.",
+            "goal": "Find the grouping that maximizes AE/AEL ratio."
+          }
+        ],
+        "example_calculation": {
+          "scenario": "20-emitter diode array, each contributing 1 mW through 7mm aperture",
+          "single_element": {
+            "alpha": "1.85 mrad",
+            "ael": "1.23 mW",
+            "ae": "1 mW",
+            "ratio": "0.81"
+          },
+          "vertical_two_element": {
+            "alpha": "2.5 mrad",
+            "ael": "1.66 mW",
+            "ae": "2 mW",
+            "ratio": "1.20 (CRITICAL - EXCEEDS AEL)"
+          },
+          "one_row_ten_diodes": {
+            "alpha": "28.9 mrad",
+            "ael": "19.2 mW",
+            "ae": "10 mW",
+            "ratio": "0.52"
+          },
+          "conclusion": "Vertical two-element group has maximum AE/AEL ratio; Class 2 AEL exceeded by factor 1.2"
+        }
+      },
+      {
+        "section_id": "4.3f_pulsed_emission",
+        "title": "Pulsed Emission Analysis",
+        "sub_sections": [
+          {
+            "title": "Alpha Determination (4.3 f) 3)",
+            "alpha_max_rule": "αmax(t) limits both C6(α) determination and angle of acceptance γ",
+            "time_consistency": "Same emission duration t used for AEL(t) and αmax(t)",
+            "c5_criterion_exception": "For 'Unless α > 100 mrad', α is NOT restricted by αmax",
+            "non_uniform_sources": "Both angular dimensions must satisfy inequality for C5 = 1"
+          },
+          {
+            "title": "T2(α) Calculation",
+            "alpha_limit": "α limited to max 100 mrad (equivalent to αmax for 0.25s and longer)",
+            "criteria_alpha_values": [
+              "α ≤ 5 mrad",
+              "5 mrad < α ≤ αmax",
+              "α > αmax"
+            ],
+            "arithmetic_mean": "Mean value used to determine α; both dimensions need not independently satisfy criterion"
+          }
+        ]
+      },
+      {
+        "section_id": "pulse_groups",
+        "title": "Groups of Pulses with Duration > Ti",
+        "thermal_additivity": {
+          "principle": "When pulses are close together, they thermally group into one 'effective' pulse",
+          "c5_application": "C5 applies to these 'effective' pulses",
+          "n_definition": "N = number of pulse groups within T2 or time base (whichever is shorter)"
+        },
+        "analysis_method": {
+          "ael_single": "Determined for pulse group duration t_group",
+          "c5_determination": "N is number of pulse groups within evaluation duration",
+          "ael_application": "C5 applied to AELsingle to obtain AELs.p.train"
+        },
+        "simplification_rule": {
+          "varying_peak_power": "For groups with varying peak power, set t_group equal to integration duration",
+          "fwhm_note": "No need to determine group duration based on FWHM criterion"
+        }
+      }
+    ],
+    "critical_parameters": {
+      "alpha_min": "1.5 mrad - limiting angular subtense",
+      "alpha_max": "100 mrad for 0.25s and longer",
+      "t2_time_constant": "Thermal injury time constant dependent on α",
+      "c5": "Pulse repetition correction factor",
+      "c6": "Extended source correction factor"
+    }
+  }
+}

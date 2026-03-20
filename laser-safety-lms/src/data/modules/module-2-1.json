@@ -1,0 +1,50 @@
+{
+  "id": "module-2-1",
+  "courseId": "course-2",
+  "title": "FDA Regulatory Framework",
+  "description": "Overview of 21 CFR 1040 — the federal standard governing laser product performance in the United States.",
+  "order": 1,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "Understanding FDA's Role",
+      "content": "The FDA's Center for Devices and Radiological Health (CDRH) regulates laser products in the US. Unlike many safety regulations that are enforced by OSHA, laser product standards are enforced by FDA. This creates a unique regulatory landscape.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "21 CFR 1040 Performance Standards",
+      "content": "Title 21 of the Code of Federal Regulations, Part 1040 (21 CFR 1040) establishes performance standards for laser products manufactured or imported into the United States.\n\n## Key Requirements:\n\n### Certification and Identification\n- All laser products must be certified as compliant\n- Certification must be based on testing by the manufacturer\n- Products must bear required labeling and warning statements\n\n### Performance Standards by Class\n\n**Class I**: No performance standards (inherently safe)\n\n**Class IIa/II**: Labeling requirements, protective housing\n\n**Class IIIa**: Additional emission indicators, remote interlock connector\n\n**Class IIIb**: Key control, emission delay, scanning safeguards\n\n**Class IV**: All Class IIIb requirements plus beam attenuators\n\n## Enforcement\n\nThe CDRH can:\n- Issue warning letters\n- Request product recalls\n- Seize non-compliant products\n- Impose civil penalties\n- Pursue criminal prosecution for willful violations",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "Regulatory Scenario Analysis",
+      "content": "Analyze the following regulatory scenarios:\n\n**Scenario 1**: A manufacturer imports laser projectors without FDA certification.\n\n**Scenario 2**: A laser product has the wrong class label (Class IIIb labeled as Class IIIa).\n\n**Scenario 3**: An entertainment company modifies a Class IIIa laser to increase output power.",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-2-1",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "FDA Regulatory Framework Guide",
+      "path": "/docs/course-2-fda-compliance/fda-regulatory-framework.pdf"
+    }
+  ],
+  "keyTakeaways": [
+    "21 CFR 1040 sets performance standards for electronic laser products",
+    "Manufacturers must certify products before sale in the US",
+    "The FDA Center for Devices and Radiological Health (CDRH) enforces these standards",
+    "Both domestic manufacturers and importers must comply"
+  ],
+  "nextModule": "module-2-2",
+  "prerequisites": [],
+  "difficulty": "intermediate"
+}

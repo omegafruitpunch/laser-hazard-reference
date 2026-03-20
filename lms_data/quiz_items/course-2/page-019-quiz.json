@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 19,
+  "quiz_items": [
+    {
+      "id": "C2-P19-Q1",
+      "type": "multiple_select",
+      "difficulty": "advanced",
+      "question": "What actions must a manufacturer take when CDRH determines a product has a radiation defect? (Select all that apply)",
+      "options": [
+        "Immediately cease all manufacturing",
+        "Submit a report with total number of products produced",
+        "Provide a Corrective Action Plan (CAP)",
+        "Notify distributors and purchasers"
+      ],
+      "correct_answer": [1, 2, 3],
+      "explanation": "Upon notification of a defect, manufacturer must submit report stating: total products produced, location of violative products, hazard evaluation, and CAP. They must also notify distributors and purchasers unless granted exemption.",
+      "learning_objective": "Understand recall procedures",
+      "regulatory_reference": "21 CFR 1003.10, 1003.20, 1003.21"
+    },
+    {
+      "id": "C2-P19-Q2",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Under what circumstance may a manufacturer be exempted from notification and corrective action requirements?",
+      "options": [
+        "If the defect affects less than 100 units",
+        "If the manufacturer demonstrates the defect does not create significant risk of injury",
+        "If the product is Class I only",
+        "Exemptions are never granted"
+      ],
+      "correct_answer": 1,
+      "explanation": "An exemption may be requested if the manufacturer can demonstrate that the defect or noncompliance does not create a significant risk of injury per 21 CFR 1003.30 and 1003.31.",
+      "learning_objective": "Know exemption provisions",
+      "regulatory_reference": "21 CFR 1003.30, 1003.31"
+    }
+  ]
+}

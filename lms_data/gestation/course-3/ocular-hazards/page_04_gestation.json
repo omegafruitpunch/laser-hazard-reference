@@ -1,0 +1,27 @@
+{
+  "page_num": 4,
+  "source_pdf": "ocular-hazards.pdf",
+  "digestion": {
+    "summary": "SYMPTOMS AND CLINICAL PRESENTATION\n\nRETINAL INJURY SYMPTOMS:\n- Immediate or delayed vision loss\n- Scotoma (blind spot) in visual field\n- Metamorphopsia (distorted vision)\n- Flash blindness (temporary)...",
+    "key_concepts": [
+      "scotoma",
+      "flash blindness",
+      "laser pointer hazards"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "SYMPTOMS AND CLINICAL PRESENTATION\n\nRETINAL INJURY SYMPTOMS:\n- Immediate or delayed vision loss\n- Scotoma (blind spot) in visual field\n- Metamorphopsia (distorted vision)\n- Flash blindness (temporary)\n- Floaters (from vitreous hemorrhage in severe cases)\n\nCORNEAL INJURY SYMPTOMS:\n- Pain (often delayed 6-12 hours for UV injuries)\n- Photophobia (light sensitivity)\n- Tearing\n- Sensation of foreign body in eye\n- Blurred vision\n\nLASER POINTERS AND EYE INJURIES:\n\nClass 2 laser pointers (<1 mW): Generally safe due to blink reflex, though \nintentional staring can cause injury.\n\nClass 3R laser pointers (1-5 mW): Low risk of injury, but possible with \nintentional prolonged exposure.\n\nClass 3B laser pointers (>5 mW): Significant hazard, can cause permanent \nretinal damage even with brief exposure.\n\nReports of retinal injuries from laser pointers have increased with \navailability of high-powered devices mislabeled as safe.\n",
+    "analogies": [
+      "The eye's focusing capability is like a magnifying glass concentrating sunlight - it amplifies laser power by 100,000x at the retina."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Always wear appropriate laser eyewear when working with Class 3B or Class 4 lasers.",
+      "UV laser exposure has cumulative effects similar to sun damage - use full coverage PPE."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.118724"
+}

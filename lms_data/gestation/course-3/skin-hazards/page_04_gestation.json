@@ -1,0 +1,27 @@
+{
+  "page_num": 4,
+  "source_pdf": "skin-hazards.pdf",
+  "digestion": {
+    "summary": "VISIBLE AND INFRARED SKIN HAZARDS\n\nVISIBLE LIGHT (400-700 nm):\n- Primarily thermal effects\n- Melanin absorption significant for darker skin\n- Hemoglobin absorption bands (418, 542, 577 nm)\n- Used ther...",
+    "key_concepts": [
+      "visible light",
+      "infrared",
+      "water absorption",
+      "CO2 laser"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "VISIBLE AND INFRARED SKIN HAZARDS\n\nVISIBLE LIGHT (400-700 nm):\n- Primarily thermal effects\n- Melanin absorption significant for darker skin\n- Hemoglobin absorption bands (418, 542, 577 nm)\n- Used therapeutically (PDT - Photodynamic Therapy)\n- Hazard increases with power density\n\nNEAR-INFRARED (700-1400 nm):\n- Deep tissue penetration\n- Water absorption increases with wavelength\n- Can cause significant thermal injury\n- Nd:YAG (1064 nm): Used for hair removal, skin treatment\n- Risk of deep burns\n\nMID-INFRARED (1400-3000 nm):\n- Stronger water absorption\n- More superficial heating\n- Er:YAG (2940 nm): Strong water absorption, superficial ablation\n- CO (~5000 nm): Water absorption peak\n\nFAR-INFRARED (>3000 nm):\n- CO2 laser (10,600 nm): Very strong water absorption\n- Superficial effect (0.1-0.2 mm)\n- Precision cutting and ablation\n- Lower risk of deep thermal damage\n\nHAZARD INCREASES WITH:\n- Longer exposure duration\n- Higher irradiance\n- Smaller beam spot size (less heat dissipation)\n",
+    "analogies": [
+      "Laser skin burns are similar to thermal burns but can be more precisely localized."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Use protective gloves and long sleeves when operating high-power lasers."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.122245"
+}

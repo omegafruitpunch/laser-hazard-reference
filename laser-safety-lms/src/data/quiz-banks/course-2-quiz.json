@@ -1,0 +1,90 @@
+{
+  "id": "course-2-quiz",
+  "courseId": "course-2",
+  "title": "FDA Compliance & Reporting Assessment",
+  "description": "Assessment covering FDA regulations, variance applications, reporting requirements, and jurisdictional issues.",
+  "passingScore": 80,
+  "timeLimit": 30,
+  "randomizeQuestions": true,
+  "questions": [
+    {
+      "id": "c2-q1",
+      "type": "multiple_choice",
+      "question": "Which regulation governs laser product performance in the United States?",
+      "options": ["ANSI Z136.1", "21 CFR 1040", "IEC 60825-1", "OSHA 29 CFR 1910.97"],
+      "correctIndex": 1,
+      "explanation": "21 CFR 1040 (Code of Federal Regulations, Title 21, Part 1040) sets federal performance standards for laser products sold in the US, enforced by FDA's CDRH."
+    },
+    {
+      "id": "c2-q2",
+      "type": "multiple_choice",
+      "question": "What must an entertainment laser operator obtain from the FDA before performing shows with Class IIIb/IV lasers?",
+      "options": ["A product registration", "A variance", "A safety certification", "A permit from CDRH"],
+      "correctIndex": 1,
+      "explanation": "Operators must obtain a variance (deviation from the performance standard) from FDA to use Class IIIb/IV lasers for entertainment purposes where the beam may be directed at or near audiences."
+    },
+    {
+      "id": "c2-q3",
+      "type": "multiple_choice",
+      "question": "What does Laser Notice 50 (LN50) primarily address?",
+      "options": [
+        "Laser product labeling requirements",
+        "Audience scanning with high-power lasers",
+        "Laser disposal procedures",
+        "Import/export of laser equipment"
+      ],
+      "correctIndex": 1,
+      "explanation": "Laser Notice 50 provides FDA guidance on the use of Class IIIb and IV lasers for audience scanning in entertainment applications, establishing exposure criteria for audience areas."
+    },
+    {
+      "id": "c2-q4",
+      "type": "multiple_choice",
+      "question": "Within how many days must manufacturers report laser product defects that could cause injury?",
+      "options": ["7 days", "15 days", "30 days", "60 days"],
+      "correctIndex": 2,
+      "explanation": "Under 21 CFR 803, manufacturers must submit a mandatory report within 30 days of learning of a malfunction that could cause or contribute to serious injury if it were to recur."
+    },
+    {
+      "id": "c2-q5",
+      "type": "multiple_choice",
+      "question": "Which agency enforces 21 CFR 1040?",
+      "options": ["OSHA", "EPA", "FDA's Center for Devices and Radiological Health (CDRH)", "FCC"],
+      "correctIndex": 2,
+      "explanation": "The FDA Center for Devices and Radiological Health (CDRH) enforces 21 CFR 1040 and administers the electronic product radiation control program."
+    },
+    {
+      "id": "c2-q6",
+      "type": "multiple_choice",
+      "question": "If a state has stricter laser regulations than federal FDA standards, which applies?",
+      "options": [
+        "Federal standards always supersede state standards",
+        "State standards apply — states can be stricter than federal minimums",
+        "Operators can choose which standard to follow",
+        "Neither — the operator must petition for a compromise standard"
+      ],
+      "correctIndex": 1,
+      "explanation": "States can impose requirements stricter than federal minimums. Operators must comply with both federal standards AND any stricter state requirements that apply."
+    },
+    {
+      "id": "c2-q7",
+      "type": "multiple_choice",
+      "question": "A variance from FDA is granted to whom?",
+      "options": ["The laser manufacturer", "The specific operator for specific show types", "Any licensed laser technician", "The venue where shows are held"],
+      "correctIndex": 1,
+      "explanation": "FDA variances are granted to specific operators (not equipment or venues) for specific show types described in the application. Operators cannot transfer variances to others."
+    },
+    {
+      "id": "c2-q8",
+      "type": "multiple_choice",
+      "question": "What is FDA Form 3632 used for?",
+      "options": ["Reporting laser injuries", "Applying for a variance", "Reporting laser product introductions by manufacturers", "Requesting an FDA inspection"],
+      "correctIndex": 2,
+      "explanation": "FDA Form 3632 (Report of Accession) is used by laser product manufacturers to report the introduction of new laser products to FDA as required under 21 CFR 1040."
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-01-01T00:00:00Z"
+  }
+}

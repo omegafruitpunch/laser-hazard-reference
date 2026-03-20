@@ -1,0 +1,79 @@
+{
+  "component_id": "esta_standards_matrix",
+  "name": "ESTA Standards Cross-Reference Matrix",
+  "type": "interactive_table",
+  "description": "Visual cross-reference of ESTA entertainment technology standards",
+  "matrix": {
+    "categories": [
+      {
+        "category": "Control Protocols",
+        "color": "#2196F3",
+        "standards": [
+          {
+            "id": "E1.17",
+            "name": "ANSI E1.17",
+            "title": "Architecture for Control Networks (ACN)",
+            "description": "Comprehensive control protocol architecture",
+            "coverage": ["Device discovery", "Configuration", "Data transport"],
+            "transport": "UDP"
+          },
+          {
+            "id": "E1.30-11",
+            "name": "ANSI E1.30-11",
+            "title": "ACN Root Layer on TCP",
+            "description": "TCP transport for ACN protocols",
+            "coverage": ["Reliable transport", "Large data blocks"],
+            "transport": "TCP"
+          },
+          {
+            "id": "E1.31",
+            "name": "ANSI E1.31",
+            "title": "Streaming ACN (sACN)",
+            "description": "Lightweight streaming DMX over IP",
+            "coverage": ["DMX512 streaming", "Real-time control"],
+            "transport": "UDP"
+          }
+        ]
+      },
+      {
+        "category": "Safety",
+        "color": "#f44336",
+        "standards": [
+          {
+            "id": "E1.46",
+            "name": "ANSI E1.46",
+            "title": "Entertainment Technology - Laser Safety",
+            "description": "Laser safety for entertainment applications",
+            "coverage": ["Audience scanning", "MPE compliance", "Safety systems"],
+            "related": ["Z136.10", "Z136.1"]
+          }
+        ]
+      },
+      {
+        "category": "Rigging",
+        "color": "#FF9800",
+        "standards": [
+          {"id": "B1.1", "name": "B1.1", "title": "Chain Hoists"},
+          {"id": "B1.6", "name": "B1.6", "title": "Manual Hoists"},
+          {"id": "E1.21", "name": "E1.21", "title": "Lifting Towers"}
+        ]
+      }
+    ]
+  },
+  "interactions": {
+    "cell_click": {
+      "action": "show_standard_details",
+      "reveal": ["full_description", "relationships", "purchase_info"]
+    },
+    "filter": {
+      "by_category": true,
+      "by_transport": true,
+      "by_coverage": true
+    }
+  },
+  "reference_info": {
+    "esta_website": "http://tsp.esta.org",
+    "purchase_link": "https://webstore.ansi.org",
+    "technical_resources": "ESTA Technical Standards Program"
+  }
+}

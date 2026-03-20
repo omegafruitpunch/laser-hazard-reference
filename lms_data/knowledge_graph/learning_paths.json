@@ -1,0 +1,244 @@
+{
+  "beginner": {
+    "name": "Beginner Path",
+    "description": "Essential fundamentals for all laser safety personnel",
+    "target_audience": "New laser operators, venue staff, basic users",
+    "estimated_hours": 8,
+    "prerequisites": [],
+    "courses": [
+      "course-1",
+      "course-3"
+    ],
+    "modules": [
+      {
+        "course": "course-1",
+        "focus": "Laser fundamentals and classification"
+      },
+      {
+        "course": "course-3",
+        "focus": "Basic bio-effects and MPE concepts"
+      }
+    ],
+    "key_concepts": [
+      "Laser Classification (Class 1-4)",
+      "Basic eye and skin hazards",
+      "MPE fundamentals",
+      "Safety controls overview"
+    ],
+    "certification_outcome": "Basic Laser Safety Awareness"
+  },
+  "lso_certification": {
+    "name": "LSO Certification Path",
+    "description": "Complete preparation for Certified Laser Safety Officer",
+    "target_audience": "Aspiring Laser Safety Officers",
+    "estimated_hours": 45,
+    "prerequisites": [
+      "Basic laser safety knowledge"
+    ],
+    "courses": [
+      "course-1",
+      "course-3",
+      "course-8",
+      "course-2",
+      "course-4"
+    ],
+    "modules": [
+      {
+        "course": "course-1",
+        "focus": "Core fundamentals",
+        "required": true
+      },
+      {
+        "course": "course-3",
+        "focus": "Bio-effects and MPE calculations",
+        "required": true
+      },
+      {
+        "course": "course-8",
+        "focus": "Industry standards (ANSI Z136)",
+        "required": true
+      },
+      {
+        "course": "course-2",
+        "focus": "FDA regulatory framework",
+        "required": true
+      },
+      {
+        "course": "course-4",
+        "focus": "State-specific requirements",
+        "required": false
+      }
+    ],
+    "key_concepts": [
+      "LSO responsibilities and authority",
+      "MPE/NOHD calculations",
+      "ANSI Z136.1 requirements",
+      "FDA 21 CFR 1040 compliance",
+      "State regulatory variations"
+    ],
+    "certification_outcome": "Preparation for CLSO/CMLSO certification"
+  },
+  "compliance_officer": {
+    "name": "Compliance Officer Path",
+    "description": "Comprehensive regulatory compliance training",
+    "target_audience": "Regulatory compliance officers, legal staff",
+    "estimated_hours": 50,
+    "prerequisites": [
+      "Basic laser knowledge"
+    ],
+    "courses": [
+      "course-1",
+      "course-2",
+      "course-4",
+      "course-5",
+      "course-8"
+    ],
+    "modules": [
+      {
+        "course": "course-1",
+        "focus": "Fundamentals foundation",
+        "required": true
+      },
+      {
+        "course": "course-2",
+        "focus": "FDA federal regulations",
+        "required": true
+      },
+      {
+        "course": "course-4",
+        "focus": "State regulations (all states)",
+        "required": true
+      },
+      {
+        "course": "course-5",
+        "focus": "International regulations",
+        "required": true
+      },
+      {
+        "course": "course-8",
+        "focus": "Standards compliance",
+        "required": true
+      }
+    ],
+    "key_concepts": [
+      "Federal vs State jurisdiction",
+      "FDA reporting requirements",
+      "State-by-state variations",
+      "International harmonization",
+      "Variance procedures"
+    ],
+    "certification_outcome": "Laser Regulatory Compliance Specialist"
+  },
+  "technician": {
+    "name": "Laser Technician Path",
+    "description": "Practical skills for laser show technicians",
+    "target_audience": "Laser operators, show technicians, roadies",
+    "estimated_hours": 35,
+    "prerequisites": [],
+    "courses": [
+      "course-1",
+      "course-3",
+      "course-7",
+      "course-6"
+    ],
+    "modules": [
+      {
+        "course": "course-1",
+        "focus": "Fundamentals",
+        "required": true
+      },
+      {
+        "course": "course-3",
+        "focus": "Bio-effects and eyewear",
+        "required": true
+      },
+      {
+        "course": "course-7",
+        "focus": "Event safety and crowd management",
+        "required": true
+      },
+      {
+        "course": "course-6",
+        "focus": "Outdoor shows and FAA coordination",
+        "required": false
+      }
+    ],
+    "key_concepts": [
+      "Safe laser operation",
+      "Protective eyewear selection",
+      "Crowd safety protocols",
+      "Emergency procedures",
+      "NOTAM procedures (if outdoor)"
+    ],
+    "certification_outcome": "Certified Laser Show Technician"
+  },
+  "advanced": {
+    "name": "Advanced Practitioner Path",
+    "description": "Expert-level comprehensive training",
+    "target_audience": "Experienced LSOs, consultants, advanced practitioners",
+    "estimated_hours": 65,
+    "prerequisites": [
+      "LSO certification or equivalent experience"
+    ],
+    "courses": [
+      "course-1",
+      "course-2",
+      "course-3",
+      "course-4",
+      "course-5",
+      "course-6",
+      "course-7",
+      "course-8"
+    ],
+    "modules": [
+      {
+        "course": "course-1",
+        "focus": "Advanced fundamentals review",
+        "required": true
+      },
+      {
+        "course": "course-2",
+        "focus": "Advanced FDA compliance",
+        "required": true
+      },
+      {
+        "course": "course-3",
+        "focus": "Advanced bio-effects",
+        "required": true
+      },
+      {
+        "course": "course-4",
+        "focus": "Multi-state compliance",
+        "required": true
+      },
+      {
+        "course": "course-5",
+        "focus": "Global regulatory framework",
+        "required": true
+      },
+      {
+        "course": "course-6",
+        "focus": "Complex outdoor operations",
+        "required": true
+      },
+      {
+        "course": "course-7",
+        "focus": "Large-scale event safety",
+        "required": true
+      },
+      {
+        "course": "course-8",
+        "focus": "Standards interpretation",
+        "required": true
+      }
+    ],
+    "key_concepts": [
+      "All core concepts",
+      "Complex compliance scenarios",
+      "Multi-jurisdictional shows",
+      "Risk assessment methodologies",
+      "Standards development process"
+    ],
+    "certification_outcome": "Advanced Laser Safety Professional"
+  }
+}

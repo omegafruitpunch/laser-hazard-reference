@@ -1,0 +1,56 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 15,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Medical laser product requirements",
+      "Surveying/leveling/alignment laser restrictions",
+      "Demonstration laser product definition and restrictions",
+      "Laser light show requirements"
+    ],
+    "key_terms": [
+      {
+        "term": "Medical Laser Product",
+        "definition": "Device for in vivo human body irradiation for diagnosis, surgery, or therapy"
+      },
+      {
+        "term": "Exposure Measurement System",
+        "definition": "±20% accuracy device for measuring delivered radiation in medical lasers"
+      },
+      {
+        "term": "Surveying/Leveling/Alignment Laser",
+        "definition": "Construction/agriculture lasers limited to 5 mW visible"
+      },
+      {
+        "term": "Demonstration Laser Product",
+        "definition": "Classroom, artistic display, or laser show equipment"
+      },
+      {
+        "term": "Laser Notice #50",
+        "definition": "Guidance on safe laser light shows"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.11(a) - Medical laser products",
+      "21 CFR 1040.11(b) - Surveying/leveling/alignment products",
+      "21 CFR 1040.11(c) - Demonstration products",
+      "21 CFR 1040.10(b)(13) - Demonstration product definition",
+      "Laser Notice #50"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Apply medical laser measurement requirements",
+      "Understand surveying laser restrictions",
+      "Identify demonstration product classifications",
+      "Know laser show safety requirements"
+    ],
+    "prerequisites": [
+      "Pages 6-14 content"
+    ],
+    "estimated_study_time_minutes": 25,
+    "content_type": "specialized_products",
+    "has_tables": false
+  }
+}

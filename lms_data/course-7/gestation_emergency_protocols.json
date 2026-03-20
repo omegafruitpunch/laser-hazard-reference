@@ -1,0 +1,575 @@
+{
+  "course": "Course 7: Event Safety Planning",
+  "module": "Emergency Protocols",
+  "generated_at": "2026-03-19",
+  "frameworks_referenced": [
+    "National Incident Management System (NIMS)",
+    "Incident Command System (ICS)",
+    "FEMA IS-15 Special Events Contingency Planning"
+  ],
+  "emergency_planning_framework": {
+    "title": "Emergency Planning Framework",
+    "nims_ics_integration": {
+      "description": "NIMS provides nationwide template for incident management",
+      "ics_structure": {
+        "command": {
+          "role": "Incident Commander (IC)",
+          "responsibilities": [
+            "Overall incident management",
+            "Sets incident objectives",
+            "Approves action plans",
+            "Coordinates with agencies"
+          ]
+        },
+        "command_staff": {
+          "public_information_officer": {
+            "role": "Media and public communications",
+            "responsibilities": [
+              "Press releases",
+              "Social media monitoring",
+              "Public announcements"
+            ]
+          },
+          "safety_officer": {
+            "role": "Incident safety oversight",
+            "responsibilities": [
+              "Monitor safety conditions",
+              "Stop unsafe operations",
+              "Ensure responder safety"
+            ]
+          },
+          "liaison_officer": {
+            "role": "Agency coordination",
+            "responsibilities": [
+              "Coordinate with assisting agencies",
+              "Manage agency representatives"
+            ]
+          }
+        },
+        "general_staff": {
+          "operations_section": {
+            "role": "Direct tactical operations",
+            "functions": [
+              "Crowd management",
+              "Medical response",
+              "Fire suppression",
+              "Search and rescue"
+            ]
+          },
+          "planning_section": {
+            "role": "Information and planning",
+            "functions": [
+              "Situation assessment",
+              "Resource tracking",
+              "Documentation"
+            ]
+          },
+          "logistics_section": {
+            "role": "Resource support",
+            "functions": [
+              "Personnel support",
+              "Equipment provisioning",
+              "Communications"
+            ]
+          },
+          "finance_administration": {
+            "role": "Financial tracking",
+            "functions": [
+              "Cost tracking",
+              "Procurement",
+              "Time recording"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "major_incident_planning": {
+    "title": "Major Incident Planning",
+    "definitions": {
+      "minor_incident": {
+        "description": "Can be managed through routine arrangements",
+        "examples": [
+          "Low-level crime",
+          "Lost children",
+          "Minor injuries",
+          "Small medical emergencies"
+        ]
+      },
+      "major_incident": {
+        "description": "Requires special arrangements and resources",
+        "characteristics": [
+          "Large number of casualties",
+          "Direct or indirect involvement of large numbers",
+          "Large scale media interest",
+          "Combined resources of multiple emergency services",
+          "Threat of death or serious injury to many"
+        ]
+      }
+    },
+    "planning_team": {
+      "composition": [
+        "Event organizer or representative",
+        "Event safety coordinator",
+        "Police representative",
+        "Fire department representative",
+        "EMS representative",
+        "Venue management",
+        "Key contractors"
+      ],
+      "responsibilities": [
+        "Develop joint emergency procedures",
+        "Define clear demarcation of duties",
+        "Issue procedures in writing",
+        "Conduct training and exercises"
+      ]
+    },
+    "plan_components": {
+      "title": "Major Incident Plan Components",
+      "elements": [
+        {
+          "id": "MIP-001",
+          "element": "Key Decision Makers",
+          "description": "Identification of personnel with authority to make critical decisions"
+        },
+        {
+          "id": "MIP-002",
+          "element": "Command Post Location",
+          "description": "Designated location for incident command coordination"
+        },
+        {
+          "id": "MIP-003",
+          "element": "Event Stoppage Procedures",
+          "description": "Conditions and procedures for stopping the event"
+        },
+        {
+          "id": "MIP-004",
+          "element": "Emergency Routes",
+          "description": "Identification of routes for emergency vehicle access"
+        },
+        {
+          "id": "MIP-005",
+          "element": "Special Needs Considerations",
+          "description": "Procedures for assisting people with disabilities"
+        },
+        {
+          "id": "MIP-006",
+          "element": "Holding Areas",
+          "description": "Designated areas for performers, workers, and audience"
+        },
+        {
+          "id": "MIP-007",
+          "element": "Alert Procedures",
+          "description": "Coded messages and scripts for alerting staff"
+        },
+        {
+          "id": "MIP-008",
+          "element": "Public Warning",
+          "description": "Mechanisms for warning the public"
+        },
+        {
+          "id": "MIP-009",
+          "element": "Evacuation Procedures",
+          "description": "Detailed evacuation and containment measures"
+        },
+        {
+          "id": "MIP-010",
+          "element": "PA Announcements",
+          "description": "Pre-scripted announcements for various scenarios"
+        },
+        {
+          "id": "MIP-011",
+          "element": "Rendezvous Points",
+          "description": "Designated points for emergency services"
+        },
+        {
+          "id": "MIP-012",
+          "element": "Medical Facilities",
+          "description": "Ambulance loading points and triage areas"
+        },
+        {
+          "id": "MIP-013",
+          "element": "Hospital Coordination",
+          "description": "Area hospitals prepared for major incident"
+        },
+        {
+          "id": "MIP-014",
+          "element": "Morgue Facilities",
+          "description": "Temporary morgue if required"
+        }
+      ]
+    }
+  },
+  "specific_emergency_scenarios": {
+    "title": "Specific Emergency Scenarios",
+    "scenarios": [
+      {
+        "type": "Fire Emergency",
+        "response_levels": {
+          "level_1": {
+            "description": "Small, contained fire",
+            "response": [
+              "Activate nearest fire extinguisher",
+              "Notify command post",
+              "Evacuate immediate area if necessary",
+              "Stand by for further instructions"
+            ]
+          },
+          "level_2": {
+            "description": "Fire requiring professional response",
+            "response": [
+              "Activate fire alarm",
+              "Call 911/fire department",
+              "Begin evacuation of affected area",
+              "Notify incident commander"
+            ]
+          },
+          "level_3": {
+            "description": "Major fire requiring full evacuation",
+            "response": [
+              "Activate full evacuation alarm",
+              "All staff assist with evacuation",
+              "Account for all personnel",
+              "Establish incident command"
+            ]
+          }
+        },
+        "evacuation_procedures": [
+          "Use nearest safe exit",
+          "Do not use elevators",
+          "Assist people with disabilities",
+          "Close doors behind you (do not lock)",
+          "Proceed to designated assembly points",
+          "Report to area supervisor",
+          "Do not re-enter until all-clear"
+        ]
+      },
+      {
+        "type": "Medical Emergency",
+        "response_procedures": {
+          "initial_response": [
+            "Assess scene safety",
+            "Approach victim if safe",
+            "Assess responsiveness",
+            "Call for help/medical personnel",
+            "Begin first aid/CPR if trained"
+          ],
+          "command_notification": [
+            "Location of incident",
+            "Nature of medical problem",
+            "Number of victims",
+            "Severity of injuries",
+            "Resources needed"
+          ]
+        },
+        "mass_casualty": {
+          "description": "Multiple victims requiring triage",
+          "triage_categories": [
+            {
+              "category": "Immediate (Red)",
+              "description": "Life-threatening, immediate care needed",
+              "examples": ["Severe bleeding", "Airway obstruction", "Shock"]
+            },
+            {
+              "category": "Delayed (Yellow)",
+              "description": "Serious but stable, can wait for treatment",
+              "examples": ["Fractures", "Non-severe burns", "Minor bleeding"]
+            },
+            {
+              "category": "Minor (Green)",
+              "description": "Walking wounded, minimal treatment",
+              "examples": ["Minor cuts", "Sprains", "Anxiety"]
+            },
+            {
+              "category": "Deceased (Black)",
+              "description": "No signs of life",
+              "action": "Tag and move to designated area"
+            }
+          ]
+        }
+      },
+      {
+        "type": "Severe Weather",
+        "weather_triggers": [
+          {
+            "condition": "Lightning",
+            "trigger": "Within 8 miles",
+            "action": "Move to shelters, suspend outdoor activities"
+          },
+          {
+            "condition": "High Winds",
+            "trigger": "Exceeds safe threshold for structures",
+            "action": "Consider evacuation, secure loose items"
+          },
+          {
+            "condition": "Tornado Warning",
+            "trigger": "Warning issued for area",
+            "action": "Immediate shelter in designated safe areas"
+          },
+          {
+            "condition": "Hail",
+            "trigger": "Within 8 miles",
+            "action": "Move to covered areas"
+          }
+        ],
+        "shelter_procedures": [
+          "Move away from tents and temporary structures",
+          "Avoid metal objects and tall structures",
+          "Do not shelter under trees",
+          "Move to permanent buildings if available",
+          "Use designated storm shelters",
+          "Stay sheltered until all-clear"
+        ]
+      },
+      {
+        "type": "Bomb Threat",
+        "threat_response": {
+          "telephone_threat": [
+            "Keep caller on line as long as possible",
+            "Use Bomb Threat Checklist (Appendix B1)",
+            "Note exact wording of threat",
+            "Record caller voice characteristics",
+            "Note background sounds",
+            "Ask specific questions",
+            "Notify police immediately"
+          ],
+          "written_threat": [
+            "Handle minimally to preserve evidence",
+            "Place in envelope",
+            "Notify police",
+            "Document who handled it"
+          ]
+        },
+        "search_procedures": [
+          "Police will direct search",
+          "Staff familiar with venue assist",
+          "Search assigned areas systematically",
+          "Do not touch suspicious items",
+          "Report anything unusual"
+        ],
+        "evacuation_decision": {
+          "note": "Police will advise on validity of threat",
+          "decision_maker": "Event organizer (unless police initiate)",
+          "considerations": [
+            "Credibility of threat",
+            "Time remaining to search",
+            "Ability to evacuate safely",
+            "Secondary device risk"
+          ]
+        }
+      },
+      {
+        "type": "Structural Failure",
+        "warning_signs": [
+          "Unusual creaking or groaning sounds",
+          "Visible sagging or deformation",
+          "Cracking in supports",
+          "Excessive movement in wind",
+          "Guy lines loosening"
+        ],
+        "immediate_response": [
+          "Clear area immediately",
+          "Do not approach damaged structure",
+          "Establish exclusion zone",
+          "Notify incident commander",
+          "Call structural engineer",
+          "Evacuate if failure threatens safety"
+        ]
+      },
+      {
+        "type": "Active Threat/Violence",
+        "run_hide_fight": {
+          "run": {
+            "when": "Safe escape route available",
+            "actions": [
+              "Leave belongings behind",
+              "Keep hands visible",
+              "Help others if possible",
+              "Do not attempt to move wounded",
+              "Call 911 when safe"
+            ]
+          },
+          "hide": {
+            "when": "Cannot safely escape",
+            "actions": [
+              "Get out of shooter's view",
+              "Lock and barricade doors",
+              "Silence cell phones",
+              "Hide behind large objects",
+              "Remain quiet"
+            ]
+          },
+          "fight": {
+            "when": "Last resort when confronted",
+            "actions": [
+              "Commit to actions",
+              "Improvise weapons",
+              "Act with physical aggression",
+              "Disrupt attacker's plan"
+            ]
+          }
+        },
+        "law_enforcement_response": [
+          "Remain calm and follow instructions",
+          "Keep hands visible at all times",
+          "Avoid pointing or sudden movements",
+          "Avoid screaming or yelling",
+          "Proceed in direction officers enter"
+        ]
+      },
+      {
+        "type": "Power Failure",
+        "response": [
+          "Activate emergency lighting",
+          "Initiate backup power for critical systems",
+          "Communicate with crowd using backup PA",
+          "Station staff at key locations with flashlights",
+          "Consider evacuation if lighting inadequate",
+          "Monitor for secondary issues"
+        ]
+      },
+      {
+        "type": "Crowd Crush/Surge",
+        "prevention": [
+          "Monitor crowd density continuously",
+          "Open additional space when density high",
+          "Communicate with crowd about delays",
+          "Avoid creating bottlenecks"
+        ],
+        "response": [
+          "Stop event immediately",
+          "Open additional egress routes",
+          "Request crowd to stop pushing via PA",
+          "Deploy all available crowd managers",
+          "Medical teams to standby",
+          "Consider full evacuation"
+        ]
+      }
+    ]
+  },
+  "emergency_communications": {
+    "title": "Emergency Communications",
+    "alert_systems": [
+      {
+        "system": "Public Address System",
+        "use_cases": [
+          "Emergency announcements",
+          "Evacuation instructions",
+          "Crowd management instructions",
+          "All-clear notifications"
+        ],
+        "requirements": [
+          "Backup power",
+          "Coverage of all areas",
+          "Clear, calm voice",
+          "Pre-scripted messages"
+        ]
+      },
+      {
+        "system": "Radio Communications",
+        "requirements": [
+          "Dedicated emergency channel",
+          "Backup communication method",
+          "Standardized terminology",
+          "Regular radio checks"
+        ]
+      },
+      {
+        "system": "Visual Alerts",
+        "methods": [
+          "Strobe lights for hearing impaired",
+          "Digital signage",
+          "Flag signals"
+        ]
+      }
+    ],
+    "media_management": {
+      "description": "Social media turns every patron into a potential reporter",
+      "strategies": [
+        "Appoint chief press officer",
+        "Establish media rendezvous point",
+        "Prepare holding statements",
+        "Monitor social media",
+        "Coordinate with police media manager"
+      ]
+    }
+  },
+  "training_and_exercises": {
+    "title": "Emergency Training and Exercises",
+    "training_requirements": {
+      "all_staff": [
+        "Basic emergency procedures",
+        "Evacuation routes",
+        "Assembly point locations",
+        "Communication methods"
+      ],
+      "supervisory_staff": [
+        "Incident recognition",
+        "Decision-making authority",
+        "Resource coordination",
+        "Documentation requirements"
+      ],
+      "specialized_staff": [
+        "First aid/CPR certification",
+        "Fire extinguisher use",
+        "Crowd management techniques",
+        "Emergency communications"
+      ]
+    },
+    "exercise_types": [
+      {
+        "type": "Tabletop Exercise",
+        "description": "Discussion-based scenario walkthrough",
+        "purpose": "Test plans and coordination"
+      },
+      {
+        "type": "Functional Exercise",
+        "description": "Simulated response in real-time",
+        "purpose": "Test communication and coordination"
+      },
+      {
+        "type": "Full-Scale Exercise",
+        "description": "Actual deployment of personnel and equipment",
+        "purpose": "Test all systems comprehensively"
+      }
+    ]
+  },
+  "post_incident_activities": {
+    "title": "Post-Incident Activities",
+    "immediate_actions": [
+      "Ensure scene safety",
+      "Preserve evidence",
+      "Account for all personnel",
+      "Provide medical care",
+      "Notify families if needed"
+    ],
+    "documentation": [
+      "Incident timeline",
+      "Witness statements",
+      "Photographs/video",
+      "Radio logs",
+      "Decision rationale"
+    ],
+    "investigation": [
+      "Determine cause",
+      "Identify contributing factors",
+      "Interview witnesses",
+      "Review procedures",
+      "Preserve evidence"
+    ],
+    "recovery": [
+      "Critical incident stress debriefing",
+      "Return to normal operations",
+      "Media management",
+      "Legal considerations",
+      "Insurance claims"
+    ],
+    "lessons_learned": [
+      "Conduct after-action review",
+      "Update emergency plans",
+      "Identify training needs",
+      "Implement improvements",
+      "Share lessons with industry"
+    ]
+  }
+}

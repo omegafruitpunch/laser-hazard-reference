@@ -1,0 +1,186 @@
+{
+  "moduleId": "c5-m5",
+  "moduleTitle": "IEC 60825-1 & ISO Harmonization",
+  "nodes": [
+    {
+      "id": "iec-60825-1",
+      "label": "IEC 60825-1",
+      "type": "standard",
+      "description": "International standard for laser product safety",
+      "connections": ["edition-2", "edition-3", "tc76", "ael", "classification-system", "harmonization"]
+    },
+    {
+      "id": "edition-2",
+      "label": "Edition 2 (2001)",
+      "type": "version",
+      "description": "Previous edition with Class 1, 2, 3A, 3B, 4",
+      "status": "Superseded",
+      "connections": ["class-3a", "fixed-measurement"]
+    },
+    {
+      "id": "edition-3",
+      "label": "Edition 3 (2014)",
+      "type": "version",
+      "description": "Current edition with Class 1M, 2M, 3R replacing 3A",
+      "status": "Current",
+      "connections": ["class-1m", "class-2m", "class-3r", "extended-sources", "led-sources"]
+    },
+    {
+      "id": "tc76",
+      "label": "IEC TC 76",
+      "type": "organization",
+      "description": "Technical Committee 76 - Laser safety standards development",
+      "connections": ["iec-60825-1"]
+    },
+    {
+      "id": "class-3a",
+      "label": "Class 3A",
+      "type": "classification",
+      "description": "Old classification - replaced by Class 3R in Edition 3"
+    },
+    {
+      "id": "class-3r",
+      "label": "Class 3R",
+      "type": "classification",
+      "description": "Low risk, normally safe with aversion response"
+    },
+    {
+      "id": "class-1m",
+      "label": "Class 1M",
+      "type": "classification",
+      "description": "Safe except when viewed with magnifying optics"
+    },
+    {
+      "id": "class-2m",
+      "label": "Class 2M",
+      "type": "classification",
+      "description": "As Class 2, but unsafe with magnifying optics"
+    },
+    {
+      "id": "extended-sources",
+      "label": "Extended Sources",
+      "type": "concept",
+      "description": "Comprehensive criteria added in Edition 3 with angular subtense (α)"
+    },
+    {
+      "id": "ael",
+      "label": "Accessible Emission Limits",
+      "type": "concept",
+      "description": "Consolidated AEL tables in Edition 3"
+    },
+    {
+      "id": "mpe",
+      "label": "Maximum Permissible Exposure",
+      "type": "concept",
+      "description": "Updated MPE values based on new research",
+      "connections": ["edition-2", "edition-3"]
+    },
+    {
+      "id": "led-sources",
+      "label": "LED Sources",
+      "type": "concept",
+      "description": "High-power LEDs explicitly addressed in Edition 3"
+    },
+    {
+      "id": "harmonization",
+      "label": "Global Harmonization",
+      "type": "concept",
+      "description": "Alignment of national standards with IEC",
+      "connections": ["en-60825", "bs-en-60825", "as-nzs-4173", "jis-c-6802", "gb-7247", "fda-cdrh"]
+    },
+    {
+      "id": "en-60825",
+      "label": "EN 60825-1",
+      "type": "regional-standard",
+      "region": "European Union",
+      "status": "Fully Harmonized",
+      "description": "European adoption of IEC 60825-1"
+    },
+    {
+      "id": "bs-en-60825",
+      "label": "BS EN 60825-1",
+      "type": "regional-standard",
+      "region": "United Kingdom",
+      "status": "Fully Harmonized",
+      "description": "British Standard adopting EN 60825-1"
+    },
+    {
+      "id": "fda-cdrh",
+      "label": "FDA CDRH 21 CFR 1040",
+      "type": "regional-standard",
+      "region": "United States",
+      "status": "Partially Harmonized",
+      "description": "FDA maintains separate requirements"
+    },
+    {
+      "id": "iso-11553",
+      "label": "ISO 11553",
+      "type": "iso-standard",
+      "description": "Laser processing machines safety"
+    },
+    {
+      "id": "iso-17526",
+      "label": "ISO 17526",
+      "type": "iso-standard",
+      "description": "Ophthalmic instruments - laser coherence"
+    },
+    {
+      "id": "iso-21254",
+      "label": "ISO 21254",
+      "type": "iso-standard",
+      "description": "Test methods for laser beam parameters"
+    },
+    {
+      "id": "icnirp",
+      "label": "ICNIRP Guidelines",
+      "type": "reference",
+      "description": "International Commission on Non-Ionizing Radiation Protection"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "edition-2",
+      "target": "edition-3",
+      "type": "superseded-by",
+      "description": "Edition 2 was superseded by Edition 3 in 2014"
+    },
+    {
+      "source": "tc76",
+      "target": "iec-60825-1",
+      "type": "maintains",
+      "description": "TC 76 maintains the IEC 60825-1 standard"
+    },
+    {
+      "source": "iec-60825-1",
+      "target": "en-60825",
+      "type": "adopted-as",
+      "description": "IEC standard adopted as European standard"
+    },
+    {
+      "source": "en-60825",
+      "target": "bs-en-60825",
+      "type": "adopted-as",
+      "description": "EN standard adopted as British Standard"
+    },
+    {
+      "source": "iec-60825-1",
+      "target": "iso-11553",
+      "type": "complements",
+      "description": "IEC standard complemented by ISO for specific applications"
+    },
+    {
+      "source": "icnirp",
+      "target": "mpe",
+      "type": "informs",
+      "description": "ICNIRP guidelines inform MPE values"
+    }
+  ],
+  "timeline": [
+    { "year": 1984, "event": "First Edition of IEC 60825-1 published" },
+    { "year": 1993, "event": "Edition 1 Amendment - first revision" },
+    { "year": 2001, "event": "Edition 2 - major restructuring" },
+    { "year": 2007, "event": "Edition 2 Amendment 1 - technical corrections" },
+    { "year": 2014, "event": "Edition 3 - major classification changes" },
+    { "year": 2022, "event": "Edition 3 Amendment - latest updates" }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 28,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Beam stops and overfilling mirrors",
+      "Mirror ball scanning safeguards",
+      "Low-angle forward scatter considerations",
+      "Employee-only area exceptions"
+    ],
+    "key_terms": [
+      {
+        "term": "Beam Stops",
+        "definition": "Devices terminating laser radiation at end of beam path"
+      },
+      {
+        "term": "Overfilling Mirrors",
+        "definition": "Beam diameter exceeding mirror size"
+      },
+      {
+        "term": "Forward Scatter",
+        "definition": "Low-angle radiation scattering from optical surfaces"
+      },
+      {
+        "term": "Specular Reflection",
+        "definition": "Mirror-like reflection from smooth surfaces"
+      },
+      {
+        "term": "Laser Safety Officer",
+        "definition": "Person responsible for laser safety education"
+      }
+    ],
+    "regulatory_references": [
+      "Variance conditions for beam stops",
+      "ANSI Z136.1 reference"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Design beam termination systems",
+      "Assess overfilling scenarios",
+      "Calculate forward scatter levels",
+      "Apply employee-only exceptions"
+    ],
+    "prerequisites": [
+      "Pages 23-27 content"
+    ],
+    "estimated_study_time_minutes": 30,
+    "content_type": "specialized_guidance",
+    "has_tables": false
+  }
+}

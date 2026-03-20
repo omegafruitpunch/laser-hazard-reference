@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 6,
+  "quiz_items": [
+    {
+      "id": "C2-P6-Q1",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "How is a laser product's Class determined?",
+      "options": [
+        "By the laser medium used (He-Ne, CO2, etc.)",
+        "By the intended application (medical, industrial, etc.)",
+        "By the highest level of laser radiation to which human access is possible during operation",
+        "By the product's sales price"
+      ],
+      "correct_answer": 2,
+      "explanation": "Laser products are classified based on the highest level of laser radiation to which human access is possible during operation only. Maintenance/service access levels don't affect classification but may affect labeling and interlock requirements.",
+      "learning_objective": "Understand classification basis",
+      "regulatory_reference": "21 CFR 1040.10(c), 1040.10(b)(27)"
+    },
+    {
+      "id": "C2-P6-Q2",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "A laser product has radiation accessible only during infrequent maintenance procedures. How does this affect classification?",
+      "options": [
+        "The product must be classified based on maintenance access levels",
+        "The maintenance access level does not affect classification",
+        "The product is automatically Class IV",
+        "The product cannot be certified"
+      ],
+      "correct_answer": 1,
+      "explanation": "Human access during maintenance does not affect the product classification, though it may affect labeling and safety interlock requirements. Classification is based on highest accessible radiation during operation only.",
+      "learning_objective": "Distinguish operation vs maintenance access",
+      "regulatory_reference": "21 CFR 1040.10(c), 1040.10(b)(24)"
+    }
+  ]
+}

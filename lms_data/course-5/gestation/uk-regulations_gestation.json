@@ -1,0 +1,267 @@
+{
+  "pdf_name": "uk-regulations.pdf",
+  "module_id": "c5-m2",
+  "module_title": "UK Post-Brexit Regulations",
+  "total_pages": 35,
+  "processing_timestamp": "2026-03-19T15:46:00Z",
+  "agent": "PDF Elite Processor Agent #13",
+  "regional_requirements": {
+    "description": "UK-specific laser display safety requirements post-Brexit",
+    "primary_guidance": "Safety of Display Lasers (2016) - replaces HS(G)95",
+    "contributing_organizations": [
+      "AC Lasers", "BBC", "Definitive Special Projects Ltd", "ER Productions",
+      "Hart District Council", "Human Applications Ltd", "ITV",
+      "Laser Hire Ltd", "Laser Hire London Ltd", "Laser Grafix Ltd",
+      "Olympia London", "PLASA", "Royal Albert Hall",
+      "South Staffordshire Council", "Tim Fothergill Productions Ltd",
+      "Wandsworth Borough Council", "Yutree Insurance Ltd",
+      "Prosight Speciality Insurance Ltd", "Health and Safety Executive",
+      "Public Health England"
+    ],
+    "legal_framework": {
+      "primary_act": "Health and Safety at Work etc. Act 1974",
+      "key_regulations": [
+        "Control of Artificial Optical Radiation at Work Regulations 2010",
+        "Air Navigation Order (for outdoor displays)",
+        "CAA CAP 736 (Civil Aviation Authority guidance)"
+      ]
+    }
+  },
+  "directive_mapping": {
+    "post_brexit_changes": {
+      "ce_marking": "Continued recognition during transition; UKCA marking now required for UK market",
+      "ukca_marking": {
+        "description": "UK Conformity Assessed marking replaces CE for UK domestic market",
+        "applicability": "Products placed on UK market post-Brexit"
+      }
+    },
+    "retained_eu_law": {
+      "description": "EU OAR Directive equivalent retained in UK domestic law",
+      "reference": "Control of Artificial Optical Radiation at Work Regulations 2010"
+    },
+    "hse_guidance": {
+      "current": "Safety of Display Lasers (2016)",
+      "superseded": "HS(G)95 'The Radiation Safety of Lasers Used for Display Purposes'",
+      "status": "Guidance - not compulsory unless specifically stated"
+    }
+  },
+  "compliance_procedures": {
+    "plan_do_check_act": {
+      "plan": [
+        "Identify information recipients and requirements",
+        "Outline laser display details (venue, dates, type, installer)",
+        "Ensure adequate insurance arrangements",
+        "Determine installation/alignment/performance management",
+        "Confirm audience/performer exposure assessment",
+        "Confirm staff accountability chains and contacts",
+        "Provide stage drawings with dimensions",
+        "Provide risk assessments and emergency plans"
+      ],
+      "do": [
+        "Implement safe systems of work",
+        "Ensure all roles understand responsibilities",
+        "Maintain communication and liaison arrangements"
+      ],
+      "check": [
+        "Verify sign-off documentation completed",
+        "Review subsequent performances",
+        "Record what worked and what didn't"
+      ],
+      "act": [
+        "Implement improvements for next time",
+        "Document adverse incidents fully"
+      ]
+    },
+    "roles_responsibilities": {
+      "client": {
+        "responsibilities": [
+          "Ensure retained personnel are competent",
+          "Confirm installation/display will be safe"
+        ]
+      },
+      "organiser": {
+        "responsibilities": [
+          "Implement safety management processes",
+          "Ensure awareness of responsibilities",
+          "Establish communication arrangements"
+        ]
+      },
+      "venue": {
+        "responsibilities": [
+          "Ensure safe installation and operation",
+          "No risk to workers or public"
+        ]
+      },
+      "installer": {
+        "responsibilities": [
+          "Safe installation of permanent systems"
+        ]
+      },
+      "supplier": {
+        "responsibilities": [
+          "Safe installation and operation of temporary systems"
+        ]
+      },
+      "laser_safety_officer": {
+        "responsibilities": [
+          "Evaluate and manage laser risks",
+          "Implement safety precautions",
+          "Executive (not just advisory) responsibility"
+        ],
+        "requirements": [
+          "Detailed knowledge of laser systems",
+          "Knowledge of radiant power, beam divergence, wavelengths",
+          "Effect capabilities and exposure hazards",
+          "Control systems and safety systems knowledge"
+        ]
+      },
+      "operator_programmer": {
+        "responsibilities": [
+          "Safe operation of laser effects",
+          "Complete daily/weekly alignment checks log",
+          "Understand emergency procedures"
+        ]
+      },
+      "laser_safety_adviser": {
+        "role": "Independent advisory role",
+        "scope": "Advisory only - no executive mandate",
+        "requirements": "Sound knowledge of laser hazard concepts and prevention strategies"
+      }
+    },
+    "safety_zones": {
+      "supervised_installations": {
+        "vertical_separation": "3m minimum above audience",
+        "lateral_separation": "2.5m minimum from audience"
+      },
+      "unsupervised_installations": {
+        "vertical_separation": "6m minimum above audience",
+        "lateral_separation": "2.5m minimum from audience"
+      }
+    },
+    "mpe_requirements": {
+      "standard_value": "10W/m² (equivalent to 1mW/cm²) for 400-700nm",
+      "children_adjustment": "Reduce by factor of 10 for wavelengths below 500nm",
+      "skin_mpe": "200mW/cm² for 10 seconds or greater",
+      "measurement_aperture": "7mm diameter",
+      "time_bases": {
+        "0.25s": "2.54 mW/cm² (eye aversion response)",
+        "1s": "1.80 mW/cm²",
+        "3s": "1.37 mW/cm²",
+        "10s": "1.01 mW/cm² (minimum for audience exposure)"
+      }
+    },
+    "show_planning_requirements": {
+      "creative_brief": "Client's initial vision of laser display",
+      "location_assessment": [
+        "Personal exposure risks from fault conditions",
+        "Target material reflectivity",
+        "Specular vs diffuse reflection assessment",
+        "Additional e-stop operators where needed"
+      ],
+      "timing": "Outline when hazard present including alignment and rehearsals",
+      "implementation": [
+        "Clear display control instructions",
+        "Details of permissible effects and safety implications",
+        "Manual shutdown information",
+        "Emergency shutdown system details",
+        "Routine servicing procedures",
+        "Operator competency requirements",
+        "Supplier contact information",
+        "Special conditions"
+      ]
+    },
+    "pre_show_checks": {
+      "visual_checks": [
+        "External optical component alignment",
+        "Daily checks according to specified procedure"
+      ],
+      "physical_checks": [
+        "Unauthorized use prevention systems",
+        "E-stop location and accessibility",
+        "E-stop testing before each performance"
+      ],
+      "measurement_requirements": [
+        "Confirm MPE compliance with measurements",
+        "Worst-case exposure calculations",
+        "Scan-fail system demonstration"
+      ],
+      "sign_off": [
+        "Installer confirms safe to use",
+        "Organiser/venue confirms understanding",
+        "Event manager and venue operators confirm permission"
+      ]
+    },
+    "outdoor_displays": {
+      "caa_notification": "Required for all outdoor displays",
+      "cap_736": "UK CAA policy for directed light operations",
+      "additional_considerations": [
+        "Maritime and harbour authorities",
+        "Police",
+        "Highways Agency",
+        "Civil Aviation Authority"
+      ],
+      "air_navigation_order": "Exposure of pilot may be offence"
+    }
+  },
+  "page_analyses": [
+    {"page": 1, "section": "Title Page", "content_type": "Document identification"},
+    {"page": 2, "section": "Foreword", "content_type": "HSE endorsement and guidance status"},
+    {"page": 3, "section": "Acknowledgements", "content_type": "Contributing organizations"},
+    {"page": 4, "section": "Table of Contents", "content_type": "Document structure"},
+    {"page": 5, "section": "Introduction", "content_type": "Purpose, scope, legal status"},
+    {"page": 6, "section": "Chapter 1 - Laser Beam Hazards", "content_type": "Optical hazards, MPE, control measures"},
+    {"page": 7, "section": "Chapter 1 Continued", "content_type": "Scan failure systems, reflection hazards, skin burns"},
+    {"page": 8, "section": "Chapter 1 Continued", "content_type": "Other hazards, outdoor considerations"},
+    {"page": 9, "section": "Chapter 2 - Managing Laser Safety", "content_type": "Roles and responsibilities"},
+    {"page": 10, "section": "Chapter 2 Continued", "content_type": "Operator responsibilities, Plan phase"},
+    {"page": 11, "section": "Chapter 2 Continued", "content_type": "Liaising with others, competency, emergencies"},
+    {"page": 12, "section": "Chapter 3 - Show Planning", "content_type": "System design, scanning frequency"},
+    {"page": 13, "section": "Chapter 3 Continued", "content_type": "Creative brief, location, timing"},
+    {"page": 14, "section": "Chapter 3 Continued", "content_type": "Implementation details, documentation"},
+    {"page": 15, "section": "Chapter 3 Continued", "content_type": "MPE tables and exposure criteria"},
+    {"page": 16, "section": "Chapter 4 - Installation and Alignment", "content_type": "Installation requirements, safety zones"},
+    {"page": 17, "section": "Chapter 4 Continued", "content_type": "Separation distance diagrams"},
+    {"page": 18, "section": "Chapter 4 Continued", "content_type": "Alignment procedures, programming, rehearsal"},
+    {"page": 19, "section": "Chapter 5 - Pre Show Checks", "content_type": "Assessing for safety, visual and physical checks"},
+    {"page": 20, "section": "Chapter 5 Continued", "content_type": "Sign off procedures"},
+    {"page": 21, "section": "Chapter 6-7 - Operation and Post Show", "content_type": "Monitoring, dismantling"},
+    {"page": 22, "section": "Appendix A - Glossary", "content_type": "AEL, Alignment, Amsler Grid definitions"},
+    {"page": 23, "section": "Appendix A Continued", "content_type": "Attenuation through Diffraction Grating"},
+    {"page": 24, "section": "Appendix A Continued", "content_type": "Display Laser Product through Laser Classification"},
+    {"page": 25, "section": "Appendix A Continued", "content_type": "Laser System through Q-Switch"},
+    {"page": 26, "section": "Appendix A Continued", "content_type": "Retina through Zero Diffracted Order"},
+    {"page": 27, "section": "Appendix B - Types of Lasers", "content_type": "OPSL, DPSS, Diode, Pulsed, Gas Water-Cooled"},
+    {"page": 28, "section": "Appendix C - Laser Classification", "content_type": "Class 1 through Class 4 definitions"},
+    {"page": 29, "section": "Appendix D - Case Study 1", "content_type": "Outdoor Music Festival example"},
+    {"page": 30, "section": "Appendix D - Case Study 2", "content_type": "Indoor Corporate Awards Dinner"},
+    {"page": 31, "section": "Appendix D - Case Study 3", "content_type": "Permanent Nightclub Installation"},
+    {"page": 32, "section": "Appendix D - Case Study 4", "content_type": "Mobile DJ Village Hall"}
+  ],
+  "extracted_entities": {
+    "regulatory_bodies": [
+      {"name": "HSE", "full_name": "Health and Safety Executive", "role": "Primary UK safety regulator"},
+      {"name": "CAA", "full_name": "Civil Aviation Authority", "role": "Aviation safety for outdoor shows"},
+      {"name": "PLASA", "role": "Industry association developing guidance"},
+      {"name": "Public Health England", "role": "Health advisory support"}
+    ],
+    "standards_referenced": [
+      "BS EN 60825 Part 1",
+      "HS(G)95 (superseded)",
+      "CAA CAP 736"
+    ],
+    "safety_systems": [
+      "Scan-fail detection systems",
+      "Emergency Stop (E-stop)",
+      "Software blanking",
+      "Metallic masking plates",
+      "Safety scan lenses"
+    ],
+    "laser_types": [
+      "OPSL (Optically Pumped Semiconductor)",
+      "DPSS (Diode Pumped Solid State)",
+      "Direct Diode",
+      "Pulsed/Q-switched",
+      "Gas Water-Cooled"
+    ]
+  }
+}

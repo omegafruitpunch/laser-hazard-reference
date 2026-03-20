@@ -1,0 +1,390 @@
+{
+  "course": "Course 7: Event Safety Planning",
+  "module": "Crowd Management",
+  "generated_at": "2026-03-19",
+  "standards_referenced": [
+    "ANSI ES1.9-2020 Crowd Management",
+    "Event Safety Alliance Guide"
+  ],
+  "crowd_management_framework": {
+    "principles": [
+      {
+        "principle": "Life Safety First",
+        "description": "Protection of human life is the highest priority in all crowd management decisions"
+      },
+      {
+        "principle": "Prevention Over Reaction",
+        "description": "Proactive measures to prevent dangerous crowd conditions are preferred"
+      },
+      {
+        "principle": "Communication is Critical",
+        "description": "Clear, timely communication with crowd and staff prevents panic"
+      },
+      {
+        "principle": "Trained Personnel",
+        "description": "All crowd management staff must be properly trained for their roles"
+      }
+    ],
+    "key_concepts": {
+      "crowd_density": {
+        "title": "Crowd Density Management",
+        "description": "Critical factor in crowd safety",
+        "measurements": {
+          "comfortable": {
+            "density": "1 person per 10 sq ft (1 per 0.93 m²)",
+            "description": "Free movement, low risk"
+          },
+          "dense": {
+            "density": "1 person per 7 sq ft (1 per 0.65 m²)",
+            "description": "Restricted movement, increased monitoring needed"
+          },
+          "critical": {
+            "density": "1 person per 5 sq ft (1 per 0.46 m²)",
+            "description": "Dangerous - immediate action required"
+          },
+          "crush_threshold": {
+            "density": "1 person per 3.5 sq ft (1 per 0.33 m²)",
+            "description": "Crush condition - stop entry immediately"
+          }
+        },
+        "monitoring_methods": [
+          "Visual observation from elevated positions",
+          "CCTV monitoring",
+          "Crowd spotters in key areas",
+          "Regular density reports from stewards"
+        ]
+      },
+      "crowd_flow": {
+        "title": "Crowd Flow Management",
+        "factors": [
+          {
+            "factor": "Bottlenecks",
+            "identification": "Narrow points where crowd flow is restricted",
+            "mitigation": [
+              "Widen entry/exit points where possible",
+              "Stagger entry times",
+              "Multiple entry points",
+              "Clear signage directing flow"
+            ]
+          },
+          {
+            "factor": "Contra-flows",
+            "identification": "People moving in opposite directions",
+            "mitigation": [
+              "Separate ingress and egress routes",
+              "Physical barriers between opposing flows",
+              "Clear directional signage"
+            ]
+          },
+          {
+            "factor": "Merge points",
+            "identification": "Where multiple flows combine",
+            "mitigation": [
+              "Design smooth merge angles",
+              "Station crowd managers at merge points",
+              "Monitor for compression"
+            ]
+          }
+        ]
+      }
+    },
+    "crowd_management_plan": {
+      "title": "Crowd Management Plan Components",
+      "required_elements": [
+        {
+          "element": "Audience Profile Analysis",
+          "components": [
+            "Expected attendance numbers",
+            "Age demographics",
+            "Previous behavior patterns",
+            "Special needs considerations",
+            "Cultural factors"
+          ]
+        },
+        {
+          "element": "Staffing Plan",
+          "components": [
+            "Steward-to-patron ratios",
+            "Security personnel requirements",
+            "Supervisory structure",
+            "Communication protocols",
+            "Training requirements"
+          ]
+        },
+        {
+          "element": "Venue Configuration",
+          "components": [
+            "Seating vs. general admission areas",
+            "Barrier placements",
+            "Viewing area designations",
+            "Accessible areas for people with disabilities"
+          ]
+        },
+        {
+          "element": "Entry and Exit Management",
+          "components": [
+            "Ticketing and access control",
+            "Search procedures",
+            "Entry timing strategies",
+            "Emergency exit protocols"
+          ]
+        }
+      ]
+    },
+    "staffing_guidelines": {
+      "title": "Crowd Management Staffing",
+      "steward_roles": [
+        {
+          "role": "Event Stewards",
+          "responsibilities": [
+            "Monitor crowd conditions",
+            "Provide information to patrons",
+            "Report incidents and hazards",
+            "Assist with emergency evacuations"
+          ],
+          "placement": "Distributed throughout venue"
+        },
+        {
+          "role": "Supervisory Stewards",
+          "responsibilities": [
+            "Oversee assigned areas",
+            "Coordinate response to incidents",
+            "Communicate with command center",
+            "Manage steward rotations"
+          ],
+          "placement": "Strategic positions with oversight"
+        },
+        {
+          "role": "Crowd Managers",
+          "responsibilities": [
+            "Overall crowd condition assessment",
+            "Decision authority for flow adjustments",
+            "Liaison with security and emergency services",
+            "Implementation of crowd control measures"
+          ],
+          "placement": "Command center and key locations"
+        }
+      ],
+      "staffing_ratios": {
+        "general_guidelines": [
+          {
+            "venue_type": "Seated venues",
+            "ratio": "1 steward per 250-500 seats"
+          },
+          {
+            "venue_type": "General admission standing",
+            "ratio": "1 steward per 100-150 patrons"
+          },
+          {
+            "venue_type": "High-risk events",
+            "ratio": "1 steward per 50-75 patrons"
+          }
+        ],
+        "key_considerations": [
+          "Complexity of venue layout",
+          "Event type and audience profile",
+          "History of crowd issues",
+          "Availability of CCTV coverage",
+          "Proximity to stage/attraction"
+        ]
+      }
+    },
+    "dangerous_conditions": {
+      "title": "Recognition of Dangerous Crowd Conditions",
+      "warning_signs": [
+        {
+          "sign": "Crowd Surge",
+          "description": "Sudden mass movement of people",
+          "indicators": [
+            "Waves of movement through crowd",
+            "People losing balance",
+            "Compression at barriers"
+          ],
+          "response": [
+            "Stop event or performance if necessary",
+            "Open additional egress routes",
+            "PA announcement to stop pushing",
+            "Deploy additional crowd managers"
+          ]
+        },
+        {
+          "sign": "Crowd Collapse",
+          "description": "People falling due to pressure",
+          "indicators": [
+            "People falling to ground",
+            "Cries for help",
+            "Visible distress in crowd"
+          ],
+          "response": [
+            "Immediately stop event",
+            "Initiate emergency extraction",
+            "Call for medical assistance",
+            "Clear space around affected area"
+          ]
+        },
+        {
+          "sign": "Barrier Failure",
+          "description": "Crowd barriers giving way",
+          "indicators": [
+            "Visible barrier movement",
+            "Barriers leaning or bending",
+            "Gaps appearing in barrier line"
+          ],
+          "response": [
+            "Evacuate area behind barriers",
+            "Reinforce or replace barriers",
+            "Consider event stoppage",
+            "Redirect crowd flow away from area"
+          ]
+        },
+        {
+          "sign": "Panic Indicators",
+          "description": "Signs of crowd panic developing",
+          "indicators": [
+            "Sudden changes in crowd noise",
+            "Rapid movement in multiple directions",
+            "People climbing over barriers",
+            "Abandoned personal belongings"
+          ],
+          "response": [
+            "Calm PA announcements",
+            "Open all available exits",
+            "Clear sight lines for crowd",
+            "Avoid actions that may escalate panic"
+          ]
+        }
+      ]
+    },
+    "emergency_evacuation": {
+      "title": "Crowd Emergency Evacuation Procedures",
+      "triggers_for_evacuation": [
+        "Fire or explosion",
+        "Structural failure",
+        "Severe weather",
+        "Terrorist threat or attack",
+        "Civil disturbance",
+        "Medical emergency requiring area clearance",
+        "Utility failure (power, water)",
+        "Hazardous material release"
+      ],
+      "evacuation_principles": [
+        {
+          "principle": "Orderly Exit",
+          "description": "Rapid but controlled evacuation prevents additional injuries"
+        },
+        {
+          "principle": "Multiple Routes",
+          "description": "Distribute evacuees across all available exits"
+        },
+        {
+          "principle": "Accessibility",
+          "description": "Ensure people with disabilities can evacuate safely"
+        },
+        {
+          "principle": "Assembly Points",
+          "description": "Designate safe areas away from venue for accountability"
+        }
+      ],
+      "evacuation_procedures": {
+        "announcement": [
+          "Clear, calm PA announcement",
+          "Specific instructions on exit routes",
+          "Reassurance that situation is under control",
+          "Request for cooperation and calm"
+        ],
+        "staff_actions": [
+          "Open all available exits immediately",
+          "Direct crowd toward nearest exits",
+          "Assist people with special needs",
+          "Prevent return to venue until all-clear"
+        ],
+        "coordination": [
+          "Notify emergency services",
+          "Establish incident command",
+          "Account for all staff",
+          "Prepare for media inquiries"
+        ]
+      }
+    },
+    "special_populations": {
+      "title": "Crowd Management for Special Populations",
+      "groups": [
+        {
+          "group": "Children and Families",
+          "considerations": [
+            "Family-friendly entry procedures",
+            "Lost child protocols",
+            "Family reunification procedures",
+            "Appropriate facilities (changing areas, etc.)"
+          ]
+        },
+        {
+          "group": "People with Disabilities",
+          "considerations": [
+            "Accessible entry and exit routes",
+            "Accessible viewing areas",
+            "Communication accessibility",
+            "Evacuation assistance procedures"
+          ]
+        },
+        {
+          "group": "Intoxicated Patrons",
+          "considerations": [
+            "Early identification",
+            "Refusal of entry protocols",
+            "Medical assessment if needed",
+            "Safe removal procedures"
+          ]
+        },
+        {
+          "group": "Large Groups/Parties",
+          "considerations": [
+            "Group entry coordination",
+            "Meeting point establishment",
+            "Reunification if separated"
+          ]
+        }
+      ]
+    },
+    "barrier_management": {
+      "title": "Crowd Barrier Management",
+      "barrier_types": [
+        {
+          "type": "Stage Barriers",
+          "purpose": "Separate audience from performers and equipment",
+          "requirements": [
+            "Engineered for expected crowd pressure",
+            "Non-climbable design",
+            "Quick-release capability for emergencies",
+            "Regular inspection during event"
+          ]
+        },
+        {
+          "type": "Queue Barriers",
+          "purpose": "Organize lines and control flow",
+          "requirements": [
+            "Stable and secure",
+            "Adequate width for queues",
+            "Clear sight lines for staff"
+          ]
+        },
+        {
+          "type": "Pedestrian Barriers",
+          "purpose": "Direct crowd movement",
+          "requirements": [
+            "Interlocking capability",
+            "Visibility through barrier",
+            "Rounded edges for safety"
+          ]
+        }
+      ],
+      "barrier_safety": [
+        "Calculate expected crowd pressure on barriers",
+        "Install barriers to withstand surge forces",
+        "Provide escape routes for people in front row",
+        "Monitor barrier integrity throughout event",
+        "Train staff on barrier emergency release"
+      ]
+    }
+  }
+}

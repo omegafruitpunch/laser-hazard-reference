@@ -1,0 +1,50 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 17,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Laser Product Reports (Initial and Model Change)",
+      "Reporting guides and formats",
+      "Single product exemption",
+      "Supplemental reports for modifications"
+    ],
+    "key_terms": [
+      {
+        "term": "Laser Product Report",
+        "definition": "Submission describing product compliance and testing"
+      },
+      {
+        "term": "Product Report",
+        "definition": "Combined term for Initial and Model Change Reports"
+      },
+      {
+        "term": "Supplemental Report",
+        "definition": "Report on changes to previously reported models"
+      },
+      {
+        "term": "Reporting Guide",
+        "definition": "FDA format requirements for product reports"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1002.10 - Product reports",
+      "21 CFR 1002.7(b) - Reporting guide requirements",
+      "Guide for Preparing Product Reports for Lasers"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Determine when product reports are required",
+      "Use appropriate reporting guides",
+      "Submit supplemental reports for changes",
+      "Understand single product exemptions"
+    ],
+    "prerequisites": [
+      "Page 16 content"
+    ],
+    "estimated_study_time_minutes": 25,
+    "content_type": "reporting_requirements",
+    "has_tables": false
+  }
+}

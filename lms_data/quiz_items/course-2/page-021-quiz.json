@@ -1,0 +1,37 @@
+{
+  "course": "course-2",
+  "page_number": 21,
+  "quiz_items": [
+    {
+      "id": "C2-P21-Q1",
+      "type": "matching",
+      "difficulty": "intermediate",
+      "question": "Match the requirement code to its meaning in Appendix A:",
+      "pairs": [
+        {"item": "R", "matches": "Required"},
+        {"item": "N/A", "matches": "Not applicable"},
+        {"item": "NP", "matches": "Not permitted"},
+        {"item": "S", "matches": "Same as other products of that class"}
+      ],
+      "explanation": "Appendix A uses: R=Required, N/A=Not applicable, NP=Not permitted, S=Same requirements as other products of that class, D=Depends on level of interior radiation.",
+      "learning_objective": "Interpret requirements matrix",
+      "regulatory_reference": "Appendix A Legend"
+    },
+    {
+      "id": "C2-P21-Q2",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "According to Appendix A, which class(es) require a beam attenuator?",
+      "options": [
+        "Class I only",
+        "Class II and IIIa",
+        "Class IIIa, IIIb, and IV",
+        "Class IV only"
+      ],
+      "correct_answer": 2,
+      "explanation": "Per Appendix A Table, beam attenuator (1040.10(f)(6)) is Required (R) for Class IIIa, IIIb, and IV. It is N/A (Not applicable) for Class I and IIa.",
+      "learning_objective": "Use requirements matrix",
+      "regulatory_reference": "Appendix A, 21 CFR 1040.10(f)(6)"
+    }
+  ]
+}

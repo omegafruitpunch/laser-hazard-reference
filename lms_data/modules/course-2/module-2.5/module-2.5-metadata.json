@@ -1,0 +1,190 @@
+{
+  "module_id": "course-2-module-2.5",
+  "course": "Course 2: FDA Compliance",
+  "course_part": 2,
+  "module_number": "2.5",
+  "title": "Variance Applications",
+  "description": "Complete guide to FDA variance application procedures including Form FDA 3147, demonstration laser variances, alternate labeling, and performance requirement alternatives.",
+  "version": "1.0.0",
+  "last_updated": "2026-03-19",
+  
+  "learning_objectives": [
+    "Understand when a variance application is required",
+    "Complete Form FDA 3147 for demonstration laser products",
+    "Identify the components of a complete variance application",
+    "Navigate the variance decision flowchart",
+    "Understand the variance review timeline and process"
+  ],
+  
+  "cfr_references": [
+    "21 CFR 1010.4 - Variance applications",
+    "21 CFR 1040.11(b) - Surveying/leveling/alignment products",
+    "21 CFR 1040.11(c) - Demonstration laser products",
+    "FORM FDA 3147 - Application for Variance"
+  ],
+  
+  "estimated_duration_minutes": 50,
+  "difficulty_level": "advanced",
+  
+  "prerequisites": [
+    "course-2-module-2.4"
+  ],
+  
+  "interactive_components": [
+    {
+      "id": "variance_type_selector",
+      "name": "Variance Type Selector",
+      "type": "selector",
+      "description": "Explore different types of variances and their requirements"
+    },
+    {
+      "id": "form_3147_simulator",
+      "name": "Form 3147 Simulator",
+      "type": "form_simulator",
+      "description": "Interactive walkthrough of the variance application form"
+    },
+    {
+      "id": "variance_decision_flow",
+      "name": "Variance Decision Flow",
+      "type": "decision_tree",
+      "description": "Determine if a variance is needed for your situation"
+    },
+    {
+      "id": "requirements_checklist",
+      "name": "Requirements Checklist",
+      "type": "checklist",
+      "description": "Interactive checklist for variance application completeness"
+    },
+    {
+      "id": "process_timeline",
+      "name": "Process Timeline",
+      "type": "timeline",
+      "description": "Step-by-step variance application process with timing"
+    }
+  ],
+  
+  "content_sections": [
+    {
+      "id": "overview",
+      "title": "Module Overview",
+      "duration_minutes": 5,
+      "type": "introduction"
+    },
+    {
+      "id": "types",
+      "title": "Variance Types",
+      "duration_minutes": 10,
+      "type": "educational"
+    },
+    {
+      "id": "simulator",
+      "title": "Form 3147 Simulator",
+      "duration_minutes": 15,
+      "type": "interactive"
+    },
+    {
+      "id": "flow",
+      "title": "Decision Flow",
+      "duration_minutes": 10,
+      "type": "interactive"
+    },
+    {
+      "id": "checklist",
+      "title": "Requirements Checklist",
+      "duration_minutes": 5,
+      "type": "reference"
+    },
+    {
+      "id": "process",
+      "title": "Process Timeline",
+      "duration_minutes": 5,
+      "type": "reference"
+    }
+  ],
+  
+  "assessment": {
+    "quiz_id": "course-2-module-2.5-quiz",
+    "total_questions": 10,
+    "passing_score": 80,
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Which form is used for demonstration laser product variance applications?",
+        "options": [
+          "FDA Form 3632",
+          "FDA Form 3147",
+          "FDA Form 3500",
+          "No form required"
+        ],
+        "correct_answer": 1,
+        "cfr_reference": "21 CFR 1010.4"
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Variance applications must be approved BEFORE introducing the product into commerce.",
+        "correct_answer": true,
+        "cfr_reference": "21 CFR 1010.4"
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "What is the typical review time for a variance application?",
+        "options": [
+          "30 days",
+          "60 days",
+          "90-120 days",
+          "180 days"
+        ],
+        "correct_answer": 2,
+        "cfr_reference": "FDA guidance"
+      },
+      {
+        "id": "q4",
+        "type": "multiple_select",
+        "question": "What must a variance application include? (Select all that apply)",
+        "options": [
+          "Technical justification",
+          "Alternative safety measures",
+          "Demonstration of equivalent safety",
+          "Marketing plan"
+        ],
+        "correct_answers": [0, 1, 2],
+        "cfr_reference": "21 CFR 1010.4(a)"
+      }
+    ]
+  },
+  
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "FORM FDA 3147",
+      "description": "Application for Variance from 21 CFR 1040.11(c)",
+      "filename": "fda-3147.pdf"
+    },
+    {
+      "type": "link",
+      "title": "Laser Light Show Reporting Guide",
+      "url": "https://www.fda.gov/radiation-emitting-products"
+    }
+  ],
+  
+  "completion_criteria": {
+    "view_all_sections": true,
+    "complete_simulator": true,
+    "pass_quiz": true,
+    "minimum_time_minutes": 35
+  },
+  
+  "tags": [
+    "FDA",
+    "variance",
+    "Form-3147",
+    "demonstration-laser",
+    "laser-light-show",
+    "alternate-labeling",
+    "compliance",
+    "21-CFR-1010.4"
+  ]
+}

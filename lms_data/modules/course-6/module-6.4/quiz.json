@@ -1,0 +1,232 @@
+{
+  "quiz_id": "quiz_6_4",
+  "module_id": "6.4",
+  "title": "Module 6.4: Securing Outdoor Laser Shows - Assessment",
+  "description": "Assessment of knowledge for outdoor laser show security procedures",
+  "version": "1.0.0",
+  "time_limit_minutes": 45,
+  "passing_score": 85,
+  "attempts_allowed": 3,
+  "randomize_questions": true,
+  "randomize_options": true,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Knowledge",
+      "learning_objective": "6.4.1",
+      "text": "How many days before an outdoor laser show should FAA Form 7140-1 be submitted to the appropriate Service Center?",
+      "options": [
+        {"id": "a", "text": "7 days", "correct": false},
+        {"id": "b", "text": "14 days", "correct": false},
+        {"id": "c", "text": "30 days (recommended)", "correct": true},
+        {"id": "d", "text": "60 days", "correct": false}
+      ],
+      "explanation": "FAA AC 70-1B recommends submitting Form 7140-1 at least 30 days before the planned operation to allow adequate time for review."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Application",
+      "learning_objective": "6.4.2",
+      "text": "At what sustained wind speed should you consider delaying or shutting down an outdoor laser show?",
+      "options": [
+        {"id": "a", "text": "15 mph", "correct": false},
+        {"id": "b", "text": "25 mph", "correct": true},
+        {"id": "c", "text": "35 mph", "correct": false},
+        {"id": "d", "text": "45 mph", "correct": false}
+      ],
+      "explanation": "Sustained winds above 25 mph are approaching the threshold where equipment stability and beam control become safety concerns."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "learning_objective": "6.4.3",
+      "text": "What is the minimum recommended overlap between adjacent observer coverage zones?",
+      "options": [
+        {"id": "a", "text": "No overlap needed", "correct": false},
+        {"id": "b", "text": "10°", "correct": false},
+        {"id": "c", "text": "30°", "correct": true},
+        {"id": "d", "text": "60°", "correct": false}
+      ],
+      "explanation": "A 30° overlap between adjacent observer coverage zones ensures no gaps in airspace monitoring."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Analysis",
+      "learning_objective": "6.4.4",
+      "text": "During a show, an observer reports an aircraft 2 miles out. What is the FIRST action the laser operator must take?",
+      "options": [
+        {"id": "a", "text": "Ask for more details about the aircraft", "correct": false},
+        {"id": "b", "text": "Activate the emergency stop immediately", "correct": true},
+        {"id": "c", "text": "Redirect the beams to avoid the aircraft", "correct": false},
+        {"id": "d", "text": "Contact ATC for confirmation", "correct": false}
+      ],
+      "explanation": "The emergency stop must be activated IMMEDIATELY upon any aircraft report. Details and confirmation come after shutdown."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "learning_objective": "6.4.1",
+      "text": "Which of the following is NOT part of the T-1 hour final check?",
+      "options": [
+        {"id": "a", "text": "360° sky scan", "correct": false},
+        {"id": "b", "text": "Equipment inventory", "correct": true},
+        {"id": "c", "text": "Weather condition verification", "correct": false},
+        {"id": "d", "text": "Emergency kill switch test", "correct": false}
+      ],
+      "explanation": "Equipment inventory should be completed during setup (T-4 hours), not during final checks. The T-1 hour check focuses on operational readiness."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Evaluation",
+      "learning_objective": "6.4.2",
+      "text": "Lightning is detected 8 miles from the venue and approaching. What is the correct decision?",
+      "options": [
+        {"id": "a", "text": "Continue monitoring - lightning is still distant", "correct": false},
+        {"id": "b", "text": "Prepare for possible shutdown", "correct": false},
+        {"id": "c", "text": "Immediate shutdown and evacuation", "correct": true},
+        {"id": "d", "text": "Reduce beam power and continue", "correct": false}
+      ],
+      "explanation": "Lightning within 10 miles requires immediate shutdown and evacuation of outdoor areas. The 30-minute rule applies after the last thunder."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Application",
+      "learning_objective": "6.4.3",
+      "text": "How many safety observers are required minimum for a single laser projection site with 360° airspace exposure?",
+      "options": [
+        {"id": "a", "text": "1", "correct": false},
+        {"id": "b", "text": "2", "correct": true},
+        {"id": "c", "text": "3", "correct": false},
+        {"id": "d", "text": "4", "correct": false}
+      ],
+      "explanation": "A minimum of 2 observers are required for 360° coverage, with each observer responsible for approximately 180° of coverage with overlap."
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Synthesis",
+      "learning_objective": "6.4.4",
+      "text": "It's 30 minutes before showtime. Wind is 22 mph with gusts to 32 mph, forecast to worsen. The promoter is pressuring you to start on time. What should you do?",
+      "options": [
+        {"id": "a", "text": "Start the show as scheduled - the promoter is paying", "correct": false},
+        {"id": "b", "text": "Delay and reassess after checking updated weather", "correct": true},
+        {"id": "c", "text": "Reduce beam power and start on time", "correct": false},
+        {"id": "d", "text": "Cancel the show immediately", "correct": false}
+      ],
+      "explanation": "The prudent decision is to delay and gather more information before making a final decision. Safety always takes priority over schedule."
+    },
+    {
+      "id": "q9",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Knowledge",
+      "learning_objective": "6.4.1",
+      "text": "What is the minimum visibility required for safe outdoor laser operations?",
+      "options": [
+        {"id": "a", "text": "1 mile", "correct": false},
+        {"id": "b", "text": "3 miles", "correct": true},
+        {"id": "c", "text": "5 miles", "correct": false},
+        {"id": "d", "text": "10 miles", "correct": false}
+      ],
+      "explanation": "Visibility below 3 miles compromises the ability of observers to detect aircraft and requires immediate shutdown."
+    },
+    {
+      "id": "q10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Evaluation",
+      "learning_objective": "6.4.4",
+      "text": "An observer calls in sick 1 hour before showtime. You have 3 observers for a site that requires 360° coverage. What is the best course of action?",
+      "options": [
+        {"id": "a", "text": "Proceed with 3 observers covering larger sectors", "correct": false},
+        {"id": "b", "text": "Call off the show entirely", "correct": false},
+        {"id": "c", "text": "Redeploy to optimize coverage and increase vigilance", "correct": true},
+        {"id": "d", "text": "Have a non-trained crew member fill in", "correct": false}
+      ],
+      "explanation": "With one observer down, redeploy the remaining 3 to optimize coverage (120° each with overlap) and increase vigilance. This maintains safety while allowing the show to proceed."
+    },
+    {
+      "id": "q11",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "blooms_level": "Application",
+      "learning_objective": "6.4.1",
+      "text": "Which of the following items are considered CRITICAL on the pre-show checklist? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "FAA approval letter on-site", "correct": true},
+        {"id": "b", "text": "Spare cables organized", "correct": false},
+        {"id": "c", "text": "Emergency kill switches tested", "correct": true},
+        {"id": "d", "text": "360° sky scan completed", "correct": true},
+        {"id": "e", "text": "Catering arrangements confirmed", "correct": false},
+        {"id": "f", "text": "Weather conditions acceptable", "correct": true}
+      ],
+      "explanation": "Critical items include FAA approval, emergency systems testing, sky scans, and weather assessment. Spare cables and catering are important but not safety-critical."
+    },
+    {
+      "id": "q12",
+      "type": "true_false",
+      "difficulty": "easy",
+      "blooms_level": "Knowledge",
+      "learning_objective": "6.4.3",
+      "text": "Safety observers should look directly at the laser beams to verify they are pointing correctly.",
+      "correct_answer": false,
+      "explanation": "Observers must NEVER look directly at laser beams. They scan the airspace for aircraft, not at the beams themselves."
+    },
+    {
+      "id": "q13",
+      "type": "fill_in_blank",
+      "difficulty": "medium",
+      "blooms_level": "Application",
+      "learning_objective": "6.4.2",
+      "text": "When lightning is detected within ______ miles of the venue, immediate shutdown and evacuation of outdoor areas is required.",
+      "correct_answer": "10",
+      "acceptable_answers": ["10", "ten"],
+      "explanation": "The 10-mile lightning safety rule requires immediate shutdown when lightning is within 10 miles of the operation."
+    },
+    {
+      "id": "q14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Analysis",
+      "learning_objective": "6.4.4",
+      "text": "After an emergency shutdown due to aircraft, when can the show resume?",
+      "options": [
+        {"id": "a", "text": "Immediately when the aircraft passes", "correct": false},
+        {"id": "b", "text": "After 5 minutes to be safe", "correct": false},
+        {"id": "c", "text": "After all observers confirm all-clear", "correct": true},
+        {"id": "d", "text": "Only after ATC gives permission", "correct": false}
+      ],
+      "explanation": "Restart requires confirmation from ALL observers that airspace is clear. ATC notification is good practice but not required for restart."
+    },
+    {
+      "id": "q15",
+      "type": "matching",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "learning_objective": "6.4.2",
+      "text": "Match the weather condition with the appropriate action:",
+      "pairs": [
+        {"condition": "Wind 28 mph with 40 mph gusts", "action": "Immediate shutdown"},
+        {"condition": "Visibility 2 miles", "action": "Immediate shutdown"},
+        {"condition": "Lightning 12 miles away, approaching", "action": "Prepare for shutdown"},
+        {"condition": "Wind 18 mph, stable forecast", "action": "Proceed with monitoring"}
+      ],
+      "explanation": "Understanding the thresholds for different weather actions is critical for safe operations."
+    }
+  ]
+}

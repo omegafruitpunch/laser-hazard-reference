@@ -1,0 +1,26 @@
+{
+  "page_num": 8,
+  "source_pdf": "ocular-hazards.pdf",
+  "digestion": {
+    "summary": "TREATMENT AND PROGNOSIS\n\nIMMEDIATE RESPONSE TO SUSPECTED EXPOSURE:\n- Document incident (wavelength, power, duration, time)\n- Do not rub eye\n- Shield eye from further light exposure\n- Seek ophthalmolog...",
+    "key_concepts": [
+      "ophthalmological evaluation",
+      "OCT imaging",
+      "prevention"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "TREATMENT AND PROGNOSIS\n\nIMMEDIATE RESPONSE TO SUSPECTED EXPOSURE:\n- Document incident (wavelength, power, duration, time)\n- Do not rub eye\n- Shield eye from further light exposure\n- Seek ophthalmological evaluation\n\nCLINICAL EVALUATION:\n- Visual acuity testing\n- Visual field assessment\n- Fundoscopic examination\n- OCT (Optical Coherence Tomography) for retinal imaging\n- Fluorescein angiography if vascular damage suspected\n\nTREATMENT OPTIONS:\n- Corneal injuries: Lubrication, patching, antibiotics\n- Retinal injuries: Limited treatment options\n- Macular injuries: Poor prognosis for central vision recovery\n- Periphery injuries: Better prognosis, may compensate\n\nPROGNOSIS:\n- Corneal injuries: Usually heal well, may scar\n- Retinal injuries: Permanent, no regeneration of photoreceptors\n- Macular injuries: Most devastating, affects reading and detailed vision\n- Early detection crucial but treatment options limited\n\nPREVENTION IS THE ONLY EFFECTIVE STRATEGY\n",
+    "analogies": [
+      "The eye's focusing capability is like a magnifying glass concentrating sunlight - it amplifies laser power by 100,000x at the retina."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Always wear appropriate laser eyewear when working with Class 3B or Class 4 lasers."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.119329"
+}

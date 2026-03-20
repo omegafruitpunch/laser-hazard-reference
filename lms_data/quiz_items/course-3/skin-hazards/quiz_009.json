@@ -1,0 +1,13 @@
+{
+  "id": "skin-hazards_q009",
+  "type": "fill_blank",
+  "question": "For thermal skin burns, cell death occurs at temperatures above ________ degrees Celsius.",
+  "answer": "60",
+  "acceptable": [
+    "60",
+    "sixty",
+    "60°C",
+    "60 C"
+  ],
+  "explanation": "Protein denaturation begins at 45-50°C, but cell death typically occurs when tissue temperatures exceed 60°C."
+}

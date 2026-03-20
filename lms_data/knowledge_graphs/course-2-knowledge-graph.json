@@ -1,0 +1,339 @@
+{
+  "course_id": "course-2",
+  "course_name": "FDA Laser Regulatory Compliance",
+  "document": "fda-regulatory-framework.pdf",
+  "extraction_date": "2026-03-19",
+  "knowledge_graph": {
+    "entities": [
+      {
+        "id": "E001",
+        "type": "regulatory_body",
+        "name": "FDA CDRH",
+        "full_name": "Food and Drug Administration Center for Devices and Radiological Health",
+        "attributes": {
+          "role": "Regulates laser products",
+          "contact": "RadHealth@fda.hhs.gov"
+        }
+      },
+      {
+        "id": "E002",
+        "type": "regulation",
+        "name": "21 CFR 1040.10",
+        "attributes": {
+          "title": "Laser Products Performance Standard",
+          "effective_date": "August 2, 1976"
+        }
+      },
+      {
+        "id": "E003",
+        "type": "regulation",
+        "name": "21 CFR 1040.11",
+        "attributes": {
+          "title": "Specific Purpose Laser Products"
+        }
+      },
+      {
+        "id": "E004",
+        "type": "regulation",
+        "name": "21 CFR 1002",
+        "attributes": {
+          "title": "Records and Reports"
+        }
+      },
+      {
+        "id": "E005",
+        "type": "regulation",
+        "name": "21 CFR 1003",
+        "attributes": {
+          "title": "Notification of Defects and Recalls"
+        }
+      },
+      {
+        "id": "E006",
+        "type": "regulation",
+        "name": "21 CFR 1010.4",
+        "attributes": {
+          "title": "Variances"
+        }
+      },
+      {
+        "id": "E007",
+        "type": "regulation",
+        "name": "FFDCA Chapter V",
+        "attributes": {
+          "title": "Electronic Product Radiation Control"
+        }
+      },
+      {
+        "id": "E008",
+        "type": "laser_class",
+        "name": "Class I",
+        "attributes": {
+          "hazard_level": "Inherently safe",
+          "limits": "Table I"
+        }
+      },
+      {
+        "id": "E009",
+        "type": "laser_class",
+        "name": "Class II",
+        "attributes": {
+          "hazard_level": "Direct long-term ocular exposure",
+          "wavelength": "400-710 nm visible",
+          "limits": "Table II"
+        }
+      },
+      {
+        "id": "E010",
+        "type": "laser_class",
+        "name": "Class IIIa",
+        "attributes": {
+          "hazard_level": "Direct viewing hazard",
+          "power_limit": "5 mW visible",
+          "limits": "Table III-A"
+        }
+      },
+      {
+        "id": "E011",
+        "type": "laser_class",
+        "name": "Class IIIb",
+        "attributes": {
+          "hazard_level": "Ocular and skin hazard",
+          "power_range": "5-500 mW visible",
+          "requirements": "All reporting + Supplemental Reports"
+        }
+      },
+      {
+        "id": "E012",
+        "type": "laser_class",
+        "name": "Class IV",
+        "attributes": {
+          "hazard_level": "Scattered reflection and direct hazard",
+          "requirements": "Most stringent controls"
+        }
+      },
+      {
+        "id": "E013",
+        "type": "requirement",
+        "name": "Protective Housing",
+        "attributes": {
+          "cfr": "1040.10(f)(1)",
+          "applies_to": "All classes"
+        }
+      },
+      {
+        "id": "E014",
+        "type": "requirement",
+        "name": "Safety Interlocks",
+        "attributes": {
+          "cfr": "1040.10(f)(2)",
+          "special": "Fail-safe/redundant for Class IIIb/IV"
+        }
+      },
+      {
+        "id": "E015",
+        "type": "requirement",
+        "name": "Remote Interlock Connector",
+        "attributes": {
+          "cfr": "1040.10(f)(3)",
+          "applies_to": "Class IIIb and IV"
+        }
+      },
+      {
+        "id": "E016",
+        "type": "requirement",
+        "name": "Key Control",
+        "attributes": {
+          "cfr": "1040.10(f)(4)",
+          "applies_to": "Class IIIb and IV"
+        }
+      },
+      {
+        "id": "E017",
+        "type": "requirement",
+        "name": "Beam Attenuator",
+        "attributes": {
+          "cfr": "1040.10(f)(6)",
+          "applies_to": "Class IIIa, IIIb, IV"
+        }
+      },
+      {
+        "id": "E018",
+        "type": "requirement",
+        "name": "Warning Labels",
+        "attributes": {
+          "cfr": "1040.10(g)",
+          "types": ["CAUTION", "DANGER", "Class IIa statement"]
+        }
+      },
+      {
+        "id": "E019",
+        "type": "report",
+        "name": "Laser Product Report",
+        "attributes": {
+          "cfr": "1002.10",
+          "when": "Prior to commerce introduction"
+        }
+      },
+      {
+        "id": "E020",
+        "type": "report",
+        "name": "Annual Report",
+        "attributes": {
+          "cfr": "1002.13",
+          "due": "September 1",
+          "covers": "Year ending June 30"
+        }
+      },
+      {
+        "id": "E021",
+        "type": "guidance",
+        "name": "Laser Notice 56",
+        "attributes": {
+          "topic": "IEC 60825-1 Ed. 3 conformance",
+          "year": "Current"
+        }
+      },
+      {
+        "id": "E022",
+        "type": "guidance",
+        "name": "Laser Notice 41",
+        "attributes": {
+          "topic": "Low Power Laser Reporting Exemption",
+          "date": "August 9, 1988"
+        }
+      },
+      {
+        "id": "E023",
+        "type": "guidance",
+        "name": "Laser Notice 50",
+        "attributes": {
+          "topic": "Safe laser light shows"
+        }
+      },
+      {
+        "id": "E024",
+        "type": "product_type",
+        "name": "Medical Laser Product",
+        "attributes": {
+          "cfr": "1040.11(a)",
+          "special_requirement": "±20% measurement accuracy"
+        }
+      },
+      {
+        "id": "E025",
+        "type": "product_type",
+        "name": "Demonstration Laser Product",
+        "attributes": {
+          "cfr": "1040.11(c)",
+          "limit": "Class IIIa"
+        }
+      },
+      {
+        "id": "E026",
+        "type": "product_type",
+        "name": "Surveying/Leveling/Alignment Laser",
+        "attributes": {
+          "cfr": "1040.11(b)",
+          "limit": "5 mW visible, Class I other"
+        }
+      },
+      {
+        "id": "E027",
+        "type": "process",
+        "name": "Variance",
+        "attributes": {
+          "cfr": "1010.4",
+          "purpose": "Permission to deviate from standard"
+        }
+      },
+      {
+        "id": "E028",
+        "type": "process",
+        "name": "Product Recall",
+        "attributes": {
+          "cfr": "1003",
+          "actions": ["Repair", "Replace", "Refund"]
+        }
+      },
+      {
+        "id": "E029",
+        "type": "standard",
+        "name": "ANSI Z136.1",
+        "attributes": {
+          "title": "Safe Use of Lasers",
+          "referenced_in": "Laser show variance conditions"
+        }
+      },
+      {
+        "id": "E030",
+        "type": "standard",
+        "name": "IEC 60825-1 Ed. 3",
+        "attributes": {
+          "title": "International laser safety standard"
+        }
+      }
+    ],
+    "relationships": [
+      {"id": "R001", "source": "E001", "target": "E002", "type": "enforces", "attributes": {}},
+      {"id": "R002", "source": "E001", "target": "E003", "type": "enforces", "attributes": {}},
+      {"id": "R003", "source": "E002", "target": "E008", "type": "defines", "attributes": {}},
+      {"id": "R004", "source": "E002", "target": "E009", "type": "defines", "attributes": {}},
+      {"id": "R005", "source": "E002", "target": "E010", "type": "defines", "attributes": {}},
+      {"id": "R006", "source": "E002", "target": "E011", "type": "defines", "attributes": {}},
+      {"id": "R007", "source": "E002", "target": "E012", "type": "defines", "attributes": {}},
+      {"id": "R008", "source": "E008", "target": "E013", "type": "requires", "attributes": {"code": "R"}},
+      {"id": "R009", "source": "E011", "target": "E014", "type": "requires", "attributes": {"special": "redundant/fail-safe"}},
+      {"id": "R010", "source": "E012", "target": "E014", "type": "requires", "attributes": {"special": "redundant/fail-safe"}},
+      {"id": "R011", "source": "E011", "target": "E015", "type": "requires", "attributes": {}},
+      {"id": "R012", "source": "E012", "target": "E015", "type": "requires", "attributes": {}},
+      {"id": "R013", "source": "E010", "target": "E017", "type": "requires", "attributes": {}},
+      {"id": "R014", "source": "E011", "target": "E017", "type": "requires", "attributes": {}},
+      {"id": "R015", "source": "E012", "target": "E017", "type": "requires", "attributes": {}},
+      {"id": "R016", "source": "E008", "target": "E018", "type": "exempt_from", "attributes": {"note": "Class warning not required"}},
+      {"id": "R017", "source": "E009", "target": "E018", "type": "requires", "attributes": {"type": "CAUTION"}},
+      {"id": "R018", "source": "E010", "target": "E018", "type": "requires", "attributes": {"type": "CAUTION/DANGER based on irradiance"}},
+      {"id": "R019", "source": "E011", "target": "E018", "type": "requires", "attributes": {"type": "DANGER"}},
+      {"id": "R020", "source": "E012", "target": "E018", "type": "requires", "attributes": {"type": "DANGER"}},
+      {"id": "R021", "source": "E011", "target": "E019", "type": "requires", "attributes": {"includes": "Supplemental Reports"}},
+      {"id": "R022", "source": "E012", "target": "E019", "type": "requires", "attributes": {"includes": "Supplemental Reports"}},
+      {"id": "R023", "source": "E008", "target": "E020", "type": "requires", "attributes": {}},
+      {"id": "R024", "source": "E025", "target": "E027", "type": "may_require", "attributes": {"condition": "Class IIIb/IV demonstration"}},
+      {"id": "R025", "source": "E001", "target": "E021", "type": "issues", "attributes": {}},
+      {"id": "R026", "source": "E024", "target": "E011", "type": "is_a", "attributes": {}},
+      {"id": "R027", "source": "E024", "target": "E012", "type": "is_a", "attributes": {}},
+      {"id": "R028", "source": "E027", "target": "E025", "type": "applies_to", "attributes": {}}
+    ],
+    "page_summaries": [
+      {"page": 1, "summary": "FDA 2023 final rule amending radiological health regulations, effective February 21, 2023. Removes/reduces annual reports, codifies Laser Notice 41 and 42 policies. Introduces Laser Notice 56 for IEC conformance.", "key_concepts": ["regulatory updates", "reporting exemptions"], "difficulty": "intermediate"},
+      {"page": 2, "summary": "Title page identifying HHS Publication FDA 86-8260, Compliance Guide for Laser Products, June 1992.", "key_concepts": ["document identification"], "difficulty": "beginner"},
+      {"page": 3, "summary": "Table of contents listing all major sections: Introduction, Classification, Requirements, Recordkeeping, Reporting, Recalls, Variances, and Appendices.", "key_concepts": ["document navigation"], "difficulty": "beginner"},
+      {"page": 4, "summary": "Introduction to FFDCA Chapter V, Subchapter C - Electronic Product Radiation Control. Defines laser (180-1,000,000 nm) and manufacturer. Explains guide purpose and limitations.", "key_concepts": ["legal basis", "definitions"], "difficulty": "intermediate"},
+      {"page": 5, "summary": "Manufacturer responsibilities: design for compliance, test, certify, maintain records, submit reports, report accidental occurrences and defects, conduct recalls. OEM and export provisions.", "key_concepts": ["manufacturer duties", "OEM requirements"], "difficulty": "intermediate"},
+      {"page": 6, "summary": "Classification principles based on highest accessible radiation during operation. Protective housing requirements. Operation vs maintenance vs service definitions.", "key_concepts": ["classification basis", "protective housing"], "difficulty": "advanced"},
+      {"page": 7, "summary": "Complete laser class definitions: Class I (inherently safe), Class II (400-710 nm, >0.25 sec), Class IIIa (≤5 mW visible), Class IIIb (5-500 mW, ocular/skin hazard), Class IV (scattered reflection hazard).", "key_concepts": ["class limits", "hazard levels"], "difficulty": "advanced"},
+      {"page": 8, "summary": "Measurement methodology: 7mm aperture, 10^-3 or 10^-5 sr acceptance angle, collimating optics ≤5 diopters. Worst-case analysis requirements.", "key_concepts": ["measurement procedures", "radiometric units"], "difficulty": "advanced"},
+      {"page": 9, "summary": "Collateral radiation limits (0.5 mR/hr X-ray). Multiple wavelength emission rules. Emission duration range: 1 nanosecond to >10^4 seconds.", "key_concepts": ["collateral radiation", "measurement parameters"], "difficulty": "intermediate"},
+      {"page": 10, "summary": "Performance requirements: protective housings must be contiguous, safety interlocks (fail-safe/redundant for Class IIIb/IV), Laser Notice #37 for industrial workstations.", "key_concepts": ["interlock requirements", "protective housing design"], "difficulty": "intermediate"},
+      {"page": 11, "summary": "Interlock details: defeatable interlocks require visible/audible indication. Remote interlock connector required for Class IIIb/IV (≤130V rms). Prohibited switch types.", "key_concepts": ["fail-safe design", "remote interlock"], "difficulty": "advanced"},
+      {"page": 12, "summary": "Key control, beam attenuator (not power switch), emission indicator with delay, operating controls location, viewing optics (fail-safe), scanning safeguard requirements.", "key_concepts": ["control requirements", "viewing safety"], "difficulty": "advanced"},
+      {"page": 13, "summary": "Labeling requirements: CAUTION vs DANGER threshold (2.5 mW/cm²), aperture labels, certification label (21 CFR reference), identification label (manufacturer, date, place).", "key_concepts": ["warning labels", "certification"], "difficulty": "intermediate"},
+      {"page": 14, "summary": "Information requirements: user manual content, servicing information, Laser Notice #39 for multi-axis workstations, MPE boundary identification.", "key_concepts": ["documentation requirements"], "difficulty": "intermediate"},
+      {"page": 15, "summary": "Specific-purpose products: medical (±20% measurement), surveying/leveling/alignment (5 mW limit), demonstration (Class IIIa limit, variance required for higher), Laser Notice #50 for shows.", "key_concepts": ["medical lasers", "demonstration limits"], "difficulty": "intermediate"},
+      {"page": 16, "summary": "Recordkeeping requirements: QC procedures, test results, life testing, safety communications, distribution records. HHS Publication FDA 76-8036 on quality control practices.", "key_concepts": ["recordkeeping", "quality control"], "difficulty": "intermediate"},
+      {"page": 17, "summary": "Laser Product Reports required prior to commerce introduction. Product, labeling, compliance method, testing program, life testing, test equipment description.", "key_concepts": ["product reporting"], "difficulty": "intermediate"},
+      {"page": 18, "summary": "Class-based reporting: Class I-IIIa require Product and Annual Reports. Class IIIb-IV also require Supplemental Reports. Annual Report due September 1. Laser Notice #41 exemptions.", "key_concepts": ["reporting requirements", "annual reports"], "difficulty": "intermediate"},
+      {"page": 19, "summary": "Product recall procedures: notification to CDRH, distributors, purchasers. Corrective Action Plans (CAP). Exemption if no significant injury risk.", "key_concepts": ["recalls", "corrective action"], "difficulty": "advanced"},
+      {"page": 20, "summary": "Variance provisions: alternate but equal safety, or product cannot perform function if compliant. Federal agency exemptions (DOD, DOE, NASA, NOAA). Annual reporting exemptions.", "key_concepts": ["variances", "exemptions"], "difficulty": "advanced"},
+      {"page": 21, "summary": "Appendix A: Tabulation of requirements by class (I, IIa, II, IIIa, IIIb, IV). Matrix showing performance, labeling, and information requirements with codes R, N/A, S, NP.", "key_concepts": ["requirements matrix"], "difficulty": "intermediate"},
+      {"page": 22, "summary": "Appendix A footnotes: interlock variations, medical laser measurement, demonstration variance requirements, effective dates.", "key_concepts": ["requirement clarifications"], "difficulty": "intermediate"},
+      {"page": 23, "summary": "Appendix B introduction: variance definition for laser shows, non-transferability, individual performance standard concept, projector vs show manufacturer responsibilities.", "key_concepts": ["laser show variances"], "difficulty": "advanced"},
+      {"page": 24, "summary": "Variance amendments for substantial changes. Three reporting methods: general guide, light show guide, notification letter.", "key_concepts": ["variance amendments", "reporting"], "difficulty": "advanced"},
+      {"page": 25, "summary": "Reporting guide usage: referencing manufacturer reports, describing compliance with variance conditions, combined reporting approaches.", "key_concepts": ["reporting procedures"], "difficulty": "advanced"},
+      {"page": 26, "summary": "Light show report content: touring vs permanent vs special project requirements, installation diagrams, QC procedures, MPE boundaries.", "key_concepts": ["show documentation"], "difficulty": "advanced"},
+      {"page": 27, "summary": "Scanning safeguard requirements: audience scanning definition, reaction time specifications, Class I limits for audience areas, variance violation consequences.", "key_concepts": ["scanning safeguards", "audience scanning"], "difficulty": "advanced"},
+      {"page": 28, "summary": "Beam stops and overfilling mirrors: mirror ball safeguards, forward scatter considerations, employee-only area exceptions with LSO education.", "key_concepts": ["beam termination", "mirror ball safety"], "difficulty": "advanced"},
+      {"page": 29, "summary": "Set-up safety control measures: ANSI Z136.1 compliance, low beam power procedures, personnel clearance protocols.", "key_concepts": ["set-up safety", "ANSI standards"], "difficulty": "intermediate"}
+    ]
+  }
+}

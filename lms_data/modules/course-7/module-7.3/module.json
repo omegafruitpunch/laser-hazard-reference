@@ -1,0 +1,269 @@
+{
+  "module_id": "module-7.3",
+  "course_id": "course-7",
+  "course_name": "Event Safety",
+  "title": "Crowd Safety & Management",
+  "subtitle": "Master Crowd Dynamics, Density Management, and Emergency Egress",
+  "description": "Learn to recognize dangerous crowd conditions before they become critical. Master crowd density calculations, flow management, barrier design, and emergency evacuation procedures.",
+  "version": "2.0",
+  "last_updated": "2026-03-19",
+  "polished_by": "UI/UX Agent - Event Safety Edition",
+  "duration_minutes": 30,
+  "difficulty": "intermediate",
+  "prerequisites": ["module-7.1", "module-7.2"],
+  "next_module": "module-7.4",
+  "ui_theme": {
+    "industry": "event_production",
+    "color_palette": {
+      "primary": "#FF6B00",
+      "primary_dark": "#CC5500",
+      "secondary": "#1A1A2E",
+      "accent": "#FFD700",
+      "crowd_safe": "#16A34A",
+      "crowd_dense": "#FACC15",
+      "crowd_critical": "#F97316",
+      "crowd_crush": "#DC2626",
+      "density_comfortable": "#22C55E",
+      "density_caution": "#EAB308",
+      "density_warning": "#F97316",
+      "density_danger": "#DC2626",
+      "density_critical": "#7F1D1D",
+      "background": "#0F0F1A",
+      "surface": "#1E1E2E",
+      "text": "#FFFFFF",
+      "text_secondary": "#A1A1AA"
+    },
+    "density_visualization": {
+      "comfortable": { "density": "≤1 per 10 sq ft", "color": "#22C55E", "emoji": "✅" },
+      "dense": { "density": "1 per 7 sq ft", "color": "#EAB308", "emoji": "⚠️" },
+      "critical": { "density": "1 per 5 sq ft", "color": "#F97316", "emoji": "🚨" },
+      "crush": { "density": "1 per 3.5 sq ft", "color": "#DC2626", "emoji": "⛔" }
+    },
+    "heatmap_colors": {
+      "safe": "#4CAF50",
+      "caution": "#FFC107",
+      "warning": "#FF9800",
+      "danger": "#F44336",
+      "critical": "#B71C1C"
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "lo-7.3-1",
+      "text": "Calculate and monitor crowd density in real-time",
+      "icon": "users",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.3-2",
+      "text": "Recognize warning signs of dangerous crowd conditions",
+      "icon": "eye-alert",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.3-3",
+      "text": "Design effective crowd flow patterns",
+      "icon": "git-branch",
+      "priority": "high"
+    },
+    {
+      "id": "lo-7.3-4",
+      "text": "Execute emergency crowd evacuations",
+      "icon": "log-out",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.3-5",
+      "text": "Respond to crowd surges and crush conditions",
+      "icon": "shield-alert",
+      "priority": "critical"
+    }
+  ],
+  "content_structure": {
+    "warmup": {
+      "title": "Crowd Dynamics",
+      "duration": 5,
+      "icon": "users",
+      "activities": [
+        "Hillsborough case study",
+        "Density fundamentals",
+        "Behavior factors"
+      ]
+    },
+    "core": {
+      "title": "Density Management",
+      "duration": 16,
+      "icon": "activity",
+      "activities": [
+        "Interactive density calculator",
+        "Emergency egress planner",
+        "Dangerous condition recognition"
+      ]
+    },
+    "practice": {
+      "title": "Response Scenarios",
+      "duration": 7,
+      "icon": "alert-triangle",
+      "activities": [
+        "Surge detection scenario",
+        "Barrier emergency response",
+        "Evacuation decision making"
+      ]
+    },
+    "challenge": {
+      "title": "Crowd Safety Expert",
+      "duration": 2,
+      "icon": "award",
+      "activities": [
+        "Knowledge verification",
+        "Competency badge award"
+      ]
+    }
+  },
+  "emergency_elements": {
+    "quick_access_checklists": [
+      {
+        "id": "crowd-monitoring",
+        "title": "CROWD MONITORING CHECKLIST",
+        "icon": "eye",
+        "priority": "critical",
+        "items": [
+          { "task": "Monitor crowd density continuously", "priority": "CRITICAL", "threshold": "STOP ENTRY at 1 per 5 sq ft" },
+          { "task": "Watch for crowd waves and movement patterns", "priority": "CRITICAL" },
+          { "task": "Check barrier stability every 15 min", "priority": "HIGH" },
+          { "task": "Verify emergency routes remain clear", "priority": "CRITICAL", "frequency": "Every 30 min" },
+          { "task": "Maintain communication with all stewards", "priority": "CRITICAL" }
+        ]
+      },
+      {
+        "id": "surge-response",
+        "title": "CROWD SURGE RESPONSE",
+        "icon": "alert-octagon",
+        "priority": "critical",
+        "color": "danger",
+        "items": [
+          { "task": "STOP THE EVENT immediately", "priority": "CRITICAL", "auto_trigger": "density > 1 per 5 sq ft" },
+          { "task": "Open additional egress routes", "priority": "CRITICAL" },
+          { "task": "PA announcement requesting calm", "priority": "HIGH" },
+          { "task": "Deploy all available crowd managers", "priority": "CRITICAL" },
+          { "task": "Medical teams to standby", "priority": "HIGH" }
+        ]
+      }
+    ],
+    "emergency_buttons": [
+      {
+        "id": "stop-event",
+        "label": "STOP EVENT",
+        "color": "danger",
+        "icon": "octagon-x",
+        "action": "immediate_show_stop",
+        "confirmation_required": true,
+        "style": "pulsing_critical",
+        "conditions": ["crowd_surge_detected", "barrier_failure", "medical_emergency"]
+      },
+      {
+        "id": "density-alert",
+        "label": "DENSITY CRITICAL",
+        "color": "crowd_critical",
+        "icon": "users",
+        "action": "density_warning_protocol",
+        "auto_trigger": "density > 1 per 5 sq ft"
+      }
+    ],
+    "warning_signs": [
+      {
+        "sign": "Crowd Surge",
+        "indicators": ["Waves of movement", "People losing balance", "Compression at barriers", "Cries of distress"],
+        "actions": ["Stop event", "Open egress", "PA announcement", "Deploy managers"]
+      },
+      {
+        "sign": "Barrier Failure",
+        "indicators": ["Visible barrier movement", "Barriers leaning", "Gaps appearing", "Noise from connections"],
+        "actions": ["Clear area", "Stop event", "Reinforce barriers", "Redirect flow"]
+      },
+      {
+        "sign": "Crowd Collapse",
+        "indicators": ["People falling", "Cries for help", "Visible distress", "Chaotic waves"],
+        "actions": ["Stop event immediately", "Emergency extraction", "Call medical", "Clear space"]
+      }
+    ]
+  },
+  "interactive_features": [
+    {
+      "id": "density-calculator",
+      "type": "interactive_calculation",
+      "title": "Crowd Density Calculator & Visualizer",
+      "description": "Calculate crowd density in real-time with visual feedback",
+      "modes": ["basic", "advanced", "visual_estimation"],
+      "density_levels": [
+        { "level": "comfortable", "max_density": 1.1, "unit": "persons/m²", "color": "#22C55E" },
+        { "level": "dense", "max_density": 1.5, "unit": "persons/m²", "color": "#EAB308" },
+        { "level": "critical", "max_density": 2.1, "unit": "persons/m²", "color": "#F97316" },
+        { "level": "crush", "max_density": 3.0, "unit": "persons/m²", "color": "#DC2626" }
+      ],
+      "mobile_optimized": true,
+      "features": ["heatmap", "person_icons", "measurement_tools", "decision_support"]
+    },
+    {
+      "id": "egress-planner",
+      "type": "interactive_planning",
+      "title": "Emergency Egress Planner",
+      "description": "Design and test emergency evacuation plans",
+      "features": ["drag_drop_designer", "capacity_calculation", "evacuation_simulation"],
+      "templates": ["concert_venue", "festival_ground", "theater"],
+      "mobile_optimized": true
+    }
+  ],
+  "mobile_optimizations": {
+    "touch_targets": {
+      "min_size": "48px",
+      "density_slider": "56px"
+    },
+    "quick_actions": [
+      { "icon": "users", "label": "Density", "action": "density_calculator" },
+      { "icon": "alert-triangle", "label": "Surge", "action": "surge_protocol" },
+      { "icon": "log-out", "label": "Evacuate", "action": "evacuation_plan" }
+    ],
+    "density_gauge": {
+      "type": "circular_progress",
+      "size": "120px",
+      "color_zones": true,
+      "haptic_feedback": true
+    }
+  },
+  "density_reference": {
+    "levels": [
+      { "level": "Comfortable", "density": "≤1 per 10 sq ft", "metric": "≤1.1/m²", "action": "Normal monitoring" },
+      { "level": "Dense", "density": "1 per 7 sq ft", "metric": "1.5/m²", "action": "Increase monitoring" },
+      { "level": "Critical", "density": "1 per 5 sq ft", "metric": "2.1/m²", "action": "STOP ENTRY" },
+      { "level": "Crush Threshold", "density": "1 per 3.5 sq ft", "metric": "3.0/m²", "action": "EMERGENCY - Stop event" }
+    ],
+    "historical_incidents": [
+      { "event": "Hillsborough", "density": "3.5-4.5/m²", "outcome": "96 fatalities" },
+      { "event": "Love Parade Duisburg", "density": "4-6/m²", "outcome": "21 fatalities" },
+      { "event": "Cambodia Water Festival", "density": "5+/m²", "outcome": "347 fatalities" }
+    ]
+  },
+  "staffing_calculator": {
+    "ratios": [
+      { "venue_type": "Seated venues", "ratio": "1:250-500", "factors": "Layout complexity" },
+      { "venue_type": "General admission", "ratio": "1:100-150", "factors": "Density, stage proximity" },
+      { "venue_type": "High-risk events", "ratio": "1:50-75", "factors": "History, alcohol" }
+    ]
+  },
+  "badge": {
+    "id": "crowd_safety_expert",
+    "name": "Crowd Safety Expert",
+    "icon": "users",
+    "emoji": "👥",
+    "color": "#22C55E",
+    "description": "Mastered crowd safety and emergency management"
+  },
+  "completion_criteria": {
+    "quiz_pass_score": 80,
+    "minimum_time_minutes": 24,
+    "required_exercises": ["crowd_density_calculator", "emergency_egress_planner", "crowd_surge_responder"]
+  },
+  "standards_reference": ["ANSI ES1.9", "Event Safety Guide Chapter 9", "NFPA 130"],
+  "source_files": ["module_metadata.json", "lessons.json"]
+}

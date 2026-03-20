@@ -1,0 +1,191 @@
+{
+  "quiz_id": "course-3-protective-eyewear-quiz",
+  "module_id": "course-3-protective-eyewear",
+  "title": "Laser Protective Eyewear Assessment",
+  "description": "Test your knowledge of laser protective eyewear selection, optical density calculations, and safety requirements",
+  "time_limit_minutes": 30,
+  "passing_score": 80,
+  "questions": [
+    {
+      "question_id": "pew_q1",
+      "type": "multiple_choice",
+      "difficulty": "basic",
+      "topic": "regulatory_requirements",
+      "question": "According to OSHA 29 CFR 1926.102(b)(2), what are the two primary requirements for laser safety goggles?",
+      "options": [
+        "Color and style matching",
+        "Protection for the specific wavelength and adequate optical density for the energy involved",
+        "UV protection and impact resistance",
+        "Prescription compatibility and anti-fog coating"
+      ],
+      "correct_answer": 1,
+      "explanation": "The OSHA construction standard states that employees exposed to laser beams shall be furnished suitable laser safety goggles which will protect for the specific wavelength of the laser and be of optical density (O.D.) adequate for the energy involved."
+    },
+    {
+      "question_id": "pew_q2",
+      "type": "calculation",
+      "difficulty": "intermediate",
+      "topic": "optical_density_calculation",
+      "question": "Calculate the minimum Optical Density required for a 5-watt Argon laser (0.514 μm) for 600-second exposure. Given: H0 = 12.99 W/cm², MPE (600 sec) = 16.7 × 10⁻⁶ W/cm².",
+      "formula": "OD = log10(H0/MPE)",
+      "variables": {
+        "H0": "12.99 W/cm²",
+        "MPE": "16.7 × 10⁻⁶ W/cm²"
+      },
+      "correct_answer": "5.9",
+      "acceptable_range": "5.8-6.0",
+      "explanation": "OD = log10(12.99 / 16.7×10⁻⁶) = log10(777,844) ≈ 5.9. For 8-hour occupational exposure, this increases to OD = 7.1."
+    },
+    {
+      "question_id": "pew_q3",
+      "type": "multiple_choice",
+      "difficulty": "basic",
+      "topic": "laser_classification",
+      "question": "For which laser classes is protective eyewear MANDATORY for all personnel in the controlled area?",
+      "options": [
+        "Class I and Class II only",
+        "Class IIIA and Class IIIB",
+        "Class IIIB and Class IV",
+        "Class IV only"
+      ],
+      "correct_answer": 2,
+      "explanation": "Protective eyewear is required for Class IIIB when MPE is exceeded, and MANDATORY for Class IV for all personnel in the controlled area. Class I, II, and IIIA do not normally require eyewear."
+    },
+    {
+      "question_id": "pew_q4",
+      "type": "multiple_select",
+      "difficulty": "intermediate",
+      "topic": "labeling_requirements",
+      "question": "Select ALL required labeling information for laser protective eyewear:",
+      "options": [
+        "OD values for protection",
+        "Wavelengths for which protection is afforded",
+        "Manufacturer's name and model number",
+        "ANSI Z 136.1 compliance statement",
+        "CE marking for European markets"
+      ],
+      "correct_answers": [0, 1],
+      "explanation": "According to ANSI Z 136.1, all laser eyewear shall be clearly labeled with OD values and wavelengths for which protection is afforded. While manufacturer info and compliance statements are good practice, the OD and wavelength are the essential safety labeling requirements."
+    },
+    {
+      "question_id": "pew_q5",
+      "type": "scenario",
+      "difficulty": "advanced",
+      "topic": "eyewear_selection",
+      "scenario": "A research laboratory uses a Class IV Nd:YAG laser (1.064 μm, 10W CW) for materials processing. During alignment procedures, operators work at approximately 2 meters from the beam path. The beam is not fully enclosed during these procedures.",
+      "questions": [
+        {
+          "sub_id": "a",
+          "question": "What is the MINIMUM Optical Density required for intrabeam protection for 10-second exposure? (Reference: OD table shows 5.1 × 10⁻³ for 10 sec)",
+          "correct_answer": "OD 5.1 or higher",
+          "explanation": "For Nd:YAG (CW) at 1.064 μm, the table specifies OD = 5.1 × 10⁻³ (commonly written as OD 5.1) for 10-second exposure. For 8-hour exposure, OD = 1.6 × 10⁻³."
+        },
+        {
+          "sub_id": "b",
+          "question": "Should diffuse reflection protection be considered adequate with the same OD as intrabeam?",
+          "correct_answer": "No",
+          "explanation": "Viewing Class IV diffuse reflections generally require LESS OD than intrabeam viewing. The specific OD should be determined based on laser parameters, power, and viewing distance."
+        },
+        {
+          "sub_id": "c",
+          "question": "What additional controls are required at the entryway to the Class IV laser area?",
+          "correct_answers": [
+            "Proper laser protective eye wear for all entering personnel",
+            "Clearly marked panic button (non-lockable disconnect)",
+            "Training verification for personnel"
+          ],
+          "explanation": "Class IV areas require: eyewear for all personnel, rapid entrance/exit capability, panic button for rapid deactivation, and appropriate training."
+        }
+      ]
+    },
+    {
+      "question_id": "pew_q6",
+      "type": "multiple_choice",
+      "difficulty": "basic",
+      "topic": "exposure_times",
+      "question": "What exposure time represents the 'human aversion time' (blink reflex) used as the first line of defense for unexpected exposure?",
+      "options": [
+        "0.1 second",
+        "0.25 second",
+        "10 seconds",
+        "600 seconds"
+      ],
+      "correct_answer": 1,
+      "explanation": "0.25 second is the human aversion time for bright-light stimuli (the blink reflex). This is the basis of the Class II concept and represents the 'first line of defense' for unexpected exposure."
+    },
+    {
+      "question_id": "pew_q7",
+      "type": "true_false",
+      "difficulty": "basic",
+      "topic": "primary_protection",
+      "question": "Laser protective eyewear should be the primary method of protection rather than engineering controls.",
+      "correct_answer": false,
+      "explanation": "False. Engineering controls should serve as primary protection rather than depending solely on employees to use protective eyewear. Many accidents have occurred when eyewear was available but not worn."
+    },
+    {
+      "question_id": "pew_q8",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "topic": "ofcs_eyewear",
+      "question": "When working with Optical Fiber Communication Systems (OFCS) during splicing, what type of eye-loupe is permitted for examining fiber ends?",
+      "options": [
+        "Any standard eye-loupe with 10x magnification",
+        "Only eye-loupes containing appropriate filters for the wavelength",
+        "Standard jeweler's loupe with LED illumination",
+        "No magnification devices should be used"
+      ],
+      "correct_answer": 1,
+      "explanation": "During splicing operations, if examination of fiber ends with an eye-loupe is required, only an eye-loupe containing an appropriate filter shall be used."
+    },
+    {
+      "question_id": "pew_q9",
+      "type": "calculation",
+      "difficulty": "advanced",
+      "topic": "worst_case_scenario",
+      "question": "For worst-case exposure calculations, what limiting aperture (pupil size) is assumed for visible and near-infrared lasers?",
+      "options": [
+        "3 mm",
+        "5 mm",
+        "7 mm",
+        "9 mm"
+      ],
+      "correct_answer": 2,
+      "explanation": "For visible and near-infrared lasers, a 7-mm limiting aperture is assumed, representing a fully dilated pupil (worst-case scenario). For UV and FIR beams, a 1-mm limiting aperture is used."
+    },
+    {
+      "question_id": "pew_q10",
+      "type": "scenario",
+      "difficulty": "advanced",
+      "topic": "comprehensive_planning",
+      "scenario": "You are the Laser Safety Officer (LSO) for a facility installing a new Class IV CO2 laser (10.6 μm, 500W) for industrial cutting operations.",
+      "questions": [
+        {
+          "sub_id": "a",
+          "question": "What OD is required for protective eyewear for this laser? (Reference: CO2 laser OD values)",
+          "correct_answer": "OD 5.0 or higher",
+          "explanation": "For CO2 lasers at 10.6 μm, the OD table shows 100.0 × 10⁻³ (OD 5.0) for both 10-second and 8-hour exposures. Note that MPE values for CO2 are nearly identical for different exposure times."
+        },
+        {
+          "sub_id": "b",
+          "question": "List three engineering controls that should be implemented in addition to eyewear:",
+          "correct_answers": [
+            "Protective housing/enclosure",
+            "Safety interlocks on access panels",
+            "Remote interlock connector",
+            "Master key switch control",
+            "Beam stop or attenuator",
+            "Laser activation warning system"
+          ],
+          "min_correct": 3,
+          "explanation": "Class IV lasers require multiple engineering controls including: protective housing, interlocks, remote interlock connector, key control, beam stop/attenuator, and warning systems."
+        },
+        {
+          "sub_id": "c",
+          "question": "Why is CO2 laser eyewear different from visible laser eyewear in appearance?",
+          "correct_answer": "CO2 laser eyewear for 10.6 μm (far-infrared) is often clear or lightly tinted because the radiation is not visible and the eyewear uses different absorption materials than visible-wavelength protective filters.",
+          "explanation": "Unlike visible laser eyewear which is often dark, CO2 laser protective eyewear may appear clear or lightly tinted because it blocks far-infrared radiation (10.6 μm) which is invisible anyway."
+        }
+      ]
+    }
+  ]
+}

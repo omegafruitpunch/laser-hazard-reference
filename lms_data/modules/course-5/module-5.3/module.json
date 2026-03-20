@@ -1,0 +1,63 @@
+{
+  "module_id": "course-5-module-5.3",
+  "course_id": "course-5",
+  "title": "Module 5.3: Canadian Regulations (REDA)",
+  "subtitle": "Master the Radiation Emitting Devices Act & Transport Canada Requirements",
+  "description": "Navigate Canada's Radiation Emitting Devices Act (REDA), understand Health Canada's role, and learn Transport Canada's requirements for outdoor laser operations. Features interactive REDA compliance flow and indoor/outdoor decision tree.",
+  "version": "1.0.0",
+  "last_updated": "2026-03-19",
+  "duration_minutes": 15,
+  "difficulty": "intermediate",
+  "learning_objectives": [
+    "Understand the structure and provisions of REDA",
+    "Identify Health Canada vs Transport Canada jurisdictions",
+    "Navigate indoor vs outdoor show requirements",
+    "Complete the Notice of Proposal process for outdoor shows",
+    "Understand inspector powers and manufacturer obligations",
+    "Apply the 2.5 mW/cm² MPE limit for indoor shows"
+  ],
+  "prerequisites": [
+    "course-5-module-5.1"
+  ],
+  "completion_criteria": {
+    "quiz_pass_score": 80,
+    "interactive_exercises_completed": [
+      "reda_compliance_flow",
+      "indoor_outdoor_decision_tree",
+      "inspector_powers_simulator"
+    ],
+    "minimum_time_minutes": 12
+  },
+  "badge": {
+    "id": "canada_compliance_expert",
+    "name": "Canada Compliance Expert",
+    "icon": "🇨🇦",
+    "description": "Mastered Canadian laser regulations under REDA"
+  },
+  "keywords": [
+    "REDA",
+    "Radiation Emitting Devices Act",
+    "Health Canada",
+    "Transport Canada",
+    "Notice of Proposal",
+    "indoor shows",
+    "outdoor shows",
+    "inspector powers",
+    "MPE 2.5 mW/cm²"
+  ],
+  "standards_reference": [
+    "Radiation Emitting Devices Act (R.S.C., 1985, c. R-1)",
+    "ANSI Z136 series (alignment)",
+    "Transport Canada Advisory Circulars"
+  ],
+  "research_alignment": {
+    "adult_learning": "Regulatory pathway learning with decision trees",
+    "brilliant_patterns": [
+      "Interactive compliance flowchart",
+      "Before/After permit scenarios",
+      "Step-by-step form completion",
+      "Decision tree navigation"
+    ],
+    "retention_strategy": "Scenario-based learning with indoor/outdoor differentiation"
+  }
+}

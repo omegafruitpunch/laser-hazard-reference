@@ -1,0 +1,116 @@
+{
+  "id": "course-4-quiz",
+  "courseId": "course-4",
+  "title": "US State & Local Regulations Assessment",
+  "description": "Assessment covering state-specific regulations for California, Florida, New York, Texas, Nevada, Illinois, Georgia, Washington, Massachusetts, and Colorado.",
+  "passingScore": 80,
+  "timeLimit": 35,
+  "randomizeQuestions": true,
+  "questions": [
+    {
+      "id": "c4-q1",
+      "type": "multiple_choice",
+      "question": "Which California agency requires registration of Class IIIb and IV lasers?",
+      "options": ["Cal/OSHA", "California Air Resources Board", "California Department of Public Health (CDPH)", "California PUC"],
+      "correctIndex": 2,
+      "explanation": "The California Department of Public Health (CDPH) administers the radiation control program and requires registration of Class IIIb and IV lasers used professionally in California."
+    },
+    {
+      "id": "c4-q2",
+      "type": "multiple_choice",
+      "question": "Nevada has specific regulations particularly relevant to which city's laser show industry?",
+      "options": ["Reno", "Las Vegas", "Henderson", "Carson City"],
+      "correctIndex": 1,
+      "explanation": "Nevada's laser regulations are particularly significant for the Las Vegas entertainment market, where casino venues and entertainment complexes frequently use high-power laser systems. Clark County has additional requirements beyond state regulations."
+    },
+    {
+      "id": "c4-q3",
+      "type": "multiple_choice",
+      "question": "Which state is noted for having one of the most comprehensive state laser regulation programs?",
+      "options": ["California", "New York", "Massachusetts", "Florida"],
+      "correctIndex": 2,
+      "explanation": "Massachusetts has one of the most comprehensive state laser regulation programs, requiring Laser Radiation Safety Permits for all Class 3B and 4 uses, with detailed safety plan submissions and active inspection programs."
+    },
+    {
+      "id": "c4-q4",
+      "type": "multiple_choice",
+      "question": "NYC laser show operators must submit safety plans to which local authority?",
+      "options": ["NYC Police Department", "NYC Department of Buildings", "NYC Fire Department", "NYC Department of Health"],
+      "correctIndex": 2,
+      "explanation": "New York City requires laser show operators to submit safety plans to the NYC Fire Department, which has jurisdiction over fire and safety hazards in public assembly occupancies."
+    },
+    {
+      "id": "c4-q5",
+      "type": "multiple_choice",
+      "question": "What unique consideration applies to Colorado laser shows at high-altitude venues?",
+      "options": [
+        "Lower humidity reduces beam scatter",
+        "Reduced atmospheric absorption affects hazard distances",
+        "Higher UV levels require stricter controls",
+        "Altitude permits relaxed MPE values"
+      ],
+      "correctIndex": 1,
+      "explanation": "At high altitude (Denver, Vail, Aspen), the reduced atmospheric density means less beam attenuation over distance, potentially extending hazard distances compared to sea-level calculations."
+    },
+    {
+      "id": "c4-q6",
+      "type": "multiple_choice",
+      "question": "Florida entertainment laser shows require advance notification to which state agency?",
+      "options": ["Florida DEP", "Florida Department of Health", "Florida Division of Emergency Management", "Florida Public Service Commission"],
+      "correctIndex": 1,
+      "explanation": "The Florida Department of Health administers radiation control and requires advance notification for entertainment laser shows, including operator credentials and safety documentation."
+    },
+    {
+      "id": "c4-q7",
+      "type": "multiple_choice",
+      "question": "What does CRCPD stand for?",
+      "options": [
+        "Council for Radiation Control and Public Disclosure",
+        "Conference of Radiation Control Program Directors",
+        "Committee for Regional Compliance and Policy Development",
+        "Center for Radiological and Chemical Products Division"
+      ],
+      "correctIndex": 1,
+      "explanation": "CRCPD (Conference of Radiation Control Program Directors) is the organization of state radiation control directors that develops Suggested State Regulations (SSRs) used as a model by many state programs."
+    },
+    {
+      "id": "c4-q8",
+      "type": "multiple_choice",
+      "question": "In Illinois, which agency regulates lasers under its radiation protection program?",
+      "options": ["Illinois EPA", "Illinois Emergency Management Agency (IEMA)", "Illinois Department of Labor", "Illinois Department of Commerce"],
+      "correctIndex": 1,
+      "explanation": "The Illinois Emergency Management Agency (IEMA) administers the state's radiation protection program, including registration requirements for Class 3B and 4 laser operators."
+    },
+    {
+      "id": "c4-q9",
+      "type": "multiple_choice",
+      "question": "Texas entertainment laser operators must comply with which requirements?",
+      "options": [
+        "Only federal FDA variance requirements",
+        "Only Texas state radiation control requirements",
+        "Both state requirements AND federal FDA variance requirements",
+        "Only local municipal ordinances"
+      ],
+      "correctIndex": 2,
+      "explanation": "Texas operators must comply with Texas Department of State Health Services registration requirements AND federal FDA variance requirements for entertainment use of Class IIIb/IV lasers."
+    },
+    {
+      "id": "c4-q10",
+      "type": "multiple_choice",
+      "question": "Washington State requires what type of documentation for laser operators?",
+      "options": [
+        "FDA clearance letters",
+        "Safety training documentation",
+        "International standards certifications",
+        "CRCPD membership certificates"
+      ],
+      "correctIndex": 1,
+      "explanation": "Washington State DOH requires documentation of safety training for laser operators as part of its registration requirements, ensuring operators have appropriate qualifications."
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-01-01T00:00:00Z"
+  }
+}

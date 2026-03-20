@@ -1,0 +1,241 @@
+{
+  "component_id": "classification_tree",
+  "name": "Laser Classification Decision Tree",
+  "version": "1.0.0",
+  "type": "decision_tree",
+  "description": "Interactive decision tree for determining laser classification according to IEC 60825-1",
+  "pedagogical_approach": {
+    "concept_first": true,
+    "step_by_step_guidance": true,
+    "immediate_feedback": true,
+    "branching_scenarios": true
+  },
+  "decision_tree": {
+    "start_node": "wavelength_check",
+    "nodes": {
+      "wavelength_check": {
+        "id": "wavelength_check",
+        "question": "What is the laser wavelength?",
+        "type": "single_select",
+        "explanation": "Wavelength determines which eye structures are affected and which AEL tables apply.",
+        "options": [
+          {
+            "id": "uv",
+            "label": "UV (180-400 nm)",
+            "description": "Corneal hazard - absorbed by eye surface",
+            "next_node": "enclosure_check",
+            "visual": "wavelength_uv"
+          },
+          {
+            "id": "visible",
+            "label": "Visible (400-700 nm)",
+            "description": "Retinal hazard - focused on retina, blink reflex possible",
+            "next_node": "enclosure_check",
+            "visual": "wavelength_visible"
+          },
+          {
+            "id": "near_ir",
+            "label": "Near-IR (700-1400 nm)",
+            "description": "Retinal hazard - invisible, no blink reflex",
+            "next_node": "enclosure_check",
+            "visual": "wavelength_near_ir"
+          },
+          {
+            "id": "mid_far_ir",
+            "label": "Mid/Far-IR (>1400 nm)",
+            "description": "Corneal hazard - absorbed before retina",
+            "next_node": "enclosure_check",
+            "visual": "wavelength_mid_far_ir"
+          }
+        ]
+      },
+      "enclosure_check": {
+        "id": "enclosure_check",
+        "question": "Is the laser fully enclosed with interlocks?",
+        "type": "single_select",
+        "explanation": "Enclosed lasers with proper interlocks may qualify as Class 1 even if they contain high-power sources.",
+        "options": [
+          {
+            "id": "fully_enclosed",
+            "label": "Yes, fully enclosed with safety interlocks",
+            "description": "No accessible radiation during normal operation",
+            "result": {
+              "classification": "Class 1",
+              "explanation": "Fully enclosed lasers with interlocks prevent any accessible emission during normal operation."
+            }
+          },
+          {
+            "id": "partially_enclosed",
+            "label": "Partially enclosed or no interlocks",
+            "description": "Accessible emission possible",
+            "next_node": "power_check"
+          }
+        ]
+      },
+      "power_check": {
+        "id": "power_check",
+        "question": "What is the accessible output power (CW) or energy (pulsed)?",
+        "type": "numeric_input",
+        "explanation": "Compare the accessible emission to the AEL tables for the identified wavelength.",
+        "input_config": {
+          "power": {
+            "label": "Power (CW)",
+            "unit": "mW",
+            "default": 1.0,
+            "min": 0.001,
+            "max": 10000
+          },
+          "energy": {
+            "label": "Energy (Pulsed)",
+            "unit": "mJ",
+            "default": 0.1,
+            "min": 0.0001,
+            "max": 1000
+          }
+        },
+        "conditional_logic": {
+          "visible": {
+            "power_ranges": [
+              {"max": 0.39, "class": "Class 1"},
+              {"max": 1.0, "class": "Class 2"},
+              {"max": 5.0, "class": "Class 3R"},
+              {"max": 500, "class": "Class 3B"},
+              {"max": null, "class": "Class 4"}
+            ]
+          },
+          "near_ir": {
+            "power_ranges": [
+              {"max": 0.39, "class": "Class 1", "ca_factor": 1.0},
+              {"max": 1.95, "class": "Class 1", "ca_factor": 5.0},
+              {"max": 9.75, "class": "Class 3R", "ca_factor": 5.0},
+              {"max": 500, "class": "Class 3B"},
+              {"max": null, "class": "Class 4"}
+            ]
+          }
+        },
+        "next_node": "divergence_check"
+      },
+      "divergence_check": {
+        "id": "divergence_check",
+        "question": "What is the beam divergence?",
+        "type": "numeric_input",
+        "explanation": "Divergence affects whether optical instruments can collect hazardous amounts of radiation.",
+        "input_config": {
+          "divergence": {
+            "label": "Divergence (half-angle)",
+            "unit": "mrad",
+            "default": 1.0,
+            "min": 0.01,
+            "max": 100
+          }
+        },
+        "conditional_logic": {
+          "m_classification_threshold": {
+            "divergence_min": 1.5,
+            "explanation": "Beams with divergence >1.5 mrad may qualify for M-suffix"
+          }
+        },
+        "next_node": "optics_check"
+      },
+      "optics_check": {
+        "id": "optics_check",
+        "question": "Could optical instruments be used to view the beam?",
+        "type": "single_select",
+        "explanation": "If optical instruments can increase the hazard, an M-suffix classification may be appropriate.",
+        "options": [
+          {
+            "id": "optics_possible",
+            "label": "Yes, telescopes/binoculars/microscopes could be used",
+            "description": "Optical collection could increase hazard",
+            "result_modifier": "add_M_suffix"
+          },
+          {
+            "id": "no_optics",
+            "label": "No, situation prevents optical instrument use",
+            "description": "Standard classification applies"
+          }
+        ]
+      }
+    }
+  },
+  "practice_scenarios": [
+    {
+      "id": "scenario_1",
+      "title": "Laser Pointer Evaluation",
+      "description": "A consumer laser pointer is rated at 5 mW output, 650 nm wavelength, with 1 mrad divergence.",
+      "parameters": {
+        "wavelength": 650,
+        "power": 5,
+        "divergence": 1,
+        "exposure_type": "cw"
+      },
+      "expected_classification": "Class 3R",
+      "hints": [
+        "Visible wavelength allows Class 2 consideration",
+        "5 mW is exactly at the Class 3R boundary",
+        "Low divergence means standard classification"
+      ],
+      "explanation": "This is a Class 3R laser because: (1) 650 nm is visible, (2) 5 mW equals the Class 3R AEL limit, (3) Low divergence means no M-suffix needed."
+    },
+    {
+      "id": "scenario_2",
+      "title": "Enclosed Industrial Laser",
+      "description": "A 50W CO2 laser (10600 nm) is installed in a manufacturing system with complete enclosure and safety interlocks.",
+      "parameters": {
+        "wavelength": 10600,
+        "power": 50000,
+        "enclosed": true,
+        "interlocks": true
+      },
+      "expected_classification": "Class 1",
+      "hints": [
+        "Consider enclosure status first",
+        "High power doesn't matter if properly enclosed",
+        "Interlocks prevent exposure during operation"
+      ],
+      "explanation": "Despite containing a high-power Class 4 source, proper enclosure with interlocks makes this a Class 1 product during normal operation."
+    },
+    {
+      "id": "scenario_3",
+      "title": "Fiber Optic Source",
+      "description": "A fiber-coupled 980 nm diode laser outputs 100 mW with 0.2 NA divergence (approximately 11.5° cone angle).",
+      "parameters": {
+        "wavelength": 980,
+        "power": 100,
+        "divergence": 200,
+        "na": 0.2
+      },
+      "expected_classification": "Class 3B or Class 1M",
+      "hints": [
+        "Near-IR wavelength - no blink reflex protection",
+        "Calculate if divergence qualifies for M-suffix",
+        "Consider optical instrument usage"
+      ],
+      "explanation": "At 100 mW near-IR, this exceeds Class 3R limits. The high divergence may qualify for 1M if optical instruments are a concern, otherwise Class 3B."
+    }
+  ],
+  "teaching_feedback": {
+    "correct_classification": {
+      "message": "Correct! You've properly applied the IEC 60825-1 classification criteria.",
+      "reinforcement": "Remember that enclosure and interlocks can override high-power classification."
+    },
+    "incorrect_classification": {
+      "message": "That's not quite right. Let's review the decision path.",
+      "guidance": "Check: (1) Is the wavelength in the retinal hazard region? (2) Does enclosure apply? (3) Compare power to AEL tables."
+    },
+    "common_mistakes": [
+      {
+        "mistake": "Assuming high power always equals Class 4",
+        "correction": "Enclosed systems can be Class 1 regardless of internal power"
+      },
+      {
+        "mistake": "Forgetting M-suffix for divergent beams",
+        "correction": "High divergence + optical instrument access = M-classification"
+      },
+      {
+        "mistake": "Applying blink reflex to all wavelengths",
+        "correction": "Blink reflex only protects against visible light (400-700 nm)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "quiz_title": "Laser Notice No. 50 - IEC Harmonization Quiz Bank",
+  "document_source": "laser-notice-50.pdf",
+  "course": "Course 2 - FDA Compliance",
+  "total_questions": 15,
+  
+  "questions": [
+    {
+      "id": "c2_ln50_q1",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "category": "Document Identification",
+      "question": "What is the document number for Laser Notice No. 50?",
+      "options": [
+        "1345",
+        "1346",
+        "1347",
+        "1348"
+      ],
+      "correct_answer": 1,
+      "explanation": "Laser Notice No. 50 is document number 1346.",
+      "cfr_reference": "Document header"
+    },
+    {
+      "id": "c2_ln50_q2",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "category": "Document History",
+      "question": "When was Laser Notice No. 50 issued?",
+      "options": [
+        "July 26, 2001",
+        "June 24, 2007",
+        "August 20, 1986",
+        "February 27, 1997"
+      ],
+      "correct_answer": 1,
+      "explanation": "Laser Notice No. 50 was issued on June 24, 2007, superseding the previous version from July 26, 2001.",
+      "cfr_reference": "Document header"
+    },
+    {
+      "id": "c2_ln50_q3",
+      "type": "true_false",
+      "difficulty": "easy",
+      "category": "Legal Status",
+      "question": "Laser Notice No. 50 is a legally binding regulation.",
+      "correct_answer": false,
+      "explanation": "Laser Notice No. 50 is a guidance document containing nonbinding recommendations. It does not create or confer any rights for or on any person.",
+      "cfr_reference": "Preface and Introduction"
+    },
+    {
+      "id": "c2_ln50_q4",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "category": "IEC Standards",
+      "question": "Which IEC standard covers medical electrical equipment requirements for lasers?",
+      "options": [
+        "IEC 60825-1",
+        "IEC 60601-1",
+        "IEC 60601-2-22",
+        "IEC 60825-2"
+      ],
+      "correct_answer": 2,
+      "explanation": "IEC 60601-2-22 covers particular requirements for surgical, cosmetic, therapeutic and diagnostic laser equipment. IEC 60825-1 covers general laser product safety.",
+      "cfr_reference": "IEC Standards Referenced"
+    },
+    {
+      "id": "c2_ln50_q5",
+      "type": "multiple_true_false",
+      "difficulty": "hard",
+      "category": "Mandatory Requirements",
+      "question": "Regardless of IEC conformance, which of the following are ALWAYS required for laser products introduced into U.S. commerce? (Select all that apply)",
+      "options": [
+        "Compliance with 21 CFR 1040.10 and 1040.11",
+        "Certification per 21 CFR 1010.2",
+        "Identification per 21 CFR 1010.3",
+        "Reporting per 21 CFR 1002.10"
+      ],
+      "correct_answers": [0, 1, 2, 3],
+      "explanation": "All four requirements are mandatory for ALL laser products introduced into U.S. commerce, regardless of IEC conformance claims.",
+      "cfr_reference": "Introduction section"
+    },
+    {
+      "id": "c2_ln50_q6",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "category": "Harmonized Sections",
+      "question": "How many sections of 21 CFR 1040 can use IEC 60825-1 conformance as an alternative under Laser Notice No. 50?",
+      "options": [
+        "10 sections",
+        "13 sections",
+        "17 sections",
+        "21 sections"
+      ],
+      "correct_answer": 2,
+      "explanation": "Laser Notice No. 50 allows IEC conformance for 17 harmonized sections, including definitions, classification, emission limits, test methods, and various performance requirements.",
+      "cfr_reference": "Harmonized sections list"
+    },
+    {
+      "id": "c2_ln50_q7",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "category": "Unaffected Sections",
+      "question": "Which of the following sections is UNAFFECTED by Laser Notice No. 50 and still requires FDA compliance?",
+      "options": [
+        "Classification (1040.10(c)(1))",
+        "Safety interlocks (1040.10(f)(2))",
+        "Certification (1010.2)",
+        "Beam attenuator (1040.10(f)(6))"
+      ],
+      "correct_answer": 2,
+      "explanation": "Certification (1010.2), Identification (1010.3), and Variances (1010.4) are among the unaffected sections. Classification, safety interlocks, and beam attenuators are harmonized sections.",
+      "cfr_reference": "Unaffected sections list"
+    },
+    {
+      "id": "c2_ln50_q8",
+      "type": "fill_in_blank",
+      "difficulty": "medium",
+      "category": "Contact Information",
+      "question": "Who is the contact person for Laser Notice No. 50 at FDA/CDRH?",
+      "correct_answer": "Jerome Dennis",
+      "acceptable_variants": ["Jerome Dennis", "jerome.dennis"],
+      "explanation": "Jerome Dennis is the contact person for Laser Notice No. 50, reachable at 240-276-3330 or jerome.dennis@fda.hhs.gov.",
+      "cfr_reference": "Document header"
+    },
+    {
+      "id": "c2_ln50_q9",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "category": "Certification Label",
+      "question": "What modified certification statement must manufacturers use on the certification label when claiming IEC conformance under Laser Notice No. 50?",
+      "options": [
+        "Complies with IEC 60825-1 only",
+        "Complies with FDA performance standards for laser products except for deviations pursuant to Laser Notice No. 50, dated June 24, 2007",
+        "IEC Certified - FDA Exempt",
+        "Meets international standards"
+      ],
+      "correct_answer": 1,
+      "explanation": "Manufacturers must use the specific modified statement that mentions deviations pursuant to Laser Notice No. 50 with the date.",
+      "cfr_reference": "Modified Certification Statement section"
+    },
+    {
+      "id": "c2_ln50_q10",
+      "type": "multiple_true_false",
+      "difficulty": "medium",
+      "category": "Previous Concessions",
+      "question": "CDRH has previously issued notices stating non-objection to which of the following? (Select all that apply)",
+      "options": [
+        "Lack of emission indicators on Class II and IIIa systems",
+        "Lack of beam attenuators on Class II and IIIa systems",
+        "IEC 60825-1 hazard warning labels",
+        "All of the above"
+      ],
+      "correct_answers": [0, 1, 2],
+      "explanation": "CDRH has previously stated non-objection to: (1) lack of emission indicators or beam attenuators on Class II and Class IIIa systems, and (2) hazard warning labels as specified in IEC 60825-1.",
+      "cfr_reference": "Previous Concessions section"
+    },
+    {
+      "id": "c2_ln50_q11",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "category": "Editions Accepted",
+      "question": "Which editions of IEC 60825-1 are accepted under Laser Notice No. 50?",
+      "options": [
+        "Edition 1 only",
+        "Edition 2 only",
+        "Editions 1.2 or 2",
+        "All editions"
+      ],
+      "correct_answer": 2,
+      "explanation": "Laser Notice No. 50 accepts conformance with IEC 60825-1, Editions 1.2 or 2.",
+      "cfr_reference": "Guidance section"
+    },
+    {
+      "id": "c2_ln50_q12",
+      "type": "true_false",
+      "difficulty": "medium",
+      "category": "Manual Reset",
+      "question": "The manual reset mechanism requirement (1040.10(f)(10)) is one of the unaffected sections under Laser Notice No. 50.",
+      "correct_answer": true,
+      "explanation": "Manual reset mechanism (1040.10(f)(10)) is listed as an unaffected section. Laser products must continue to conform to this FDA-specific requirement.",
+      "cfr_reference": "Unaffected sections list"
+    },
+    {
+      "id": "c2_ln50_q13",
+      "type": "scenario",
+      "difficulty": "hard",
+      "category": "Compliance Scenarios",
+      "question": "Scenario: A manufacturer wants to introduce a laser product that fully complies with IEC 60825-1 Edition 2 for classification, emission limits, and safety interlocks. What additional requirements must they meet for U.S. compliance?",
+      "options": [
+        "Only IEC compliance is needed - no additional FDA requirements",
+        "Must add FDA certification label and submit product report, but can use IEC compliance for harmonized sections",
+        "Must completely redesign to meet FDA-only requirements",
+        "Cannot use IEC compliance for any purpose"
+      ],
+      "correct_answer": 1,
+      "explanation": "The manufacturer can use IEC compliance for harmonized sections (like classification and interlocks) but must still comply with unaffected FDA requirements including certification, identification, and reporting.",
+      "cfr_reference": "Guidance and Unaffected sections"
+    },
+    {
+      "id": "c2_ln50_q14",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "category": "Guidance Terminology",
+      "question": "In FDA guidance documents, what does the word 'should' indicate?",
+      "options": [
+        "A mandatory requirement",
+        "A suggestion or recommendation, but not required",
+        "Only applies to medical devices",
+        "A criminal penalty will result if not followed"
+      ],
+      "correct_answer": 1,
+      "explanation": "In FDA guidance documents, 'should' means something is suggested or recommended, but not required. Alternative approaches are acceptable if they satisfy applicable statutes and regulations.",
+      "cfr_reference": "Introduction section"
+    },
+    {
+      "id": "c2_ln50_q15",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "category": "Demonstration Lasers",
+      "question": "Demonstration laser products requirements under 1040.11(c) are considered:",
+      "options": [
+        "Harmonized with IEC standards",
+        "Unaffected by Laser Notice No. 50",
+        "Optional for compliance",
+        "Only applicable to Class I lasers"
+      ],
+      "correct_answer": 1,
+      "explanation": "Demonstration laser products (1040.11(c)) are listed as an unaffected section. Manufacturers must conform to these FDA requirements even if they differ from IEC standards.",
+      "cfr_reference": "Unaffected sections list"
+    }
+  ]
+}

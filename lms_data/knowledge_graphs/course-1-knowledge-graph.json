@@ -1,0 +1,119 @@
+{
+  "course_id": "course-1",
+  "course_name": "Laser Safety Fundamentals",
+  "document": "safety-controls.pdf",
+  "extraction_date": "2026-03-19",
+  "knowledge_graph": {
+    "entities": [
+      {
+        "id": "E001",
+        "type": "document",
+        "name": "Laser Safety Training Acknowledgment",
+        "attributes": {
+          "purpose": "Documentation of training receipt",
+          "audience": "LSOs, operations managers, technicians, laser personnel"
+        }
+      },
+      {
+        "id": "E002",
+        "type": "role",
+        "name": "Laser Safety Officer (LSO)",
+        "attributes": {
+          "responsibility": "Oversee laser safety program"
+        }
+      },
+      {
+        "id": "E003",
+        "type": "training_topic",
+        "name": "Laser Biological Hazards",
+        "attributes": {
+          "content": "Health risks to eyes and skin"
+        }
+      },
+      {
+        "id": "E004",
+        "type": "training_topic",
+        "name": "Outdoor Laser Safety",
+        "attributes": {
+          "content": "Guidelines and forms for outdoor use"
+        }
+      },
+      {
+        "id": "E005",
+        "type": "training_topic",
+        "name": "Standards and Regulations",
+        "attributes": {
+          "content": "National and international regulations"
+        }
+      },
+      {
+        "id": "E006",
+        "type": "training_topic",
+        "name": "On Site Training Observation",
+        "attributes": {
+          "content": "Field evaluation of trainees"
+        }
+      },
+      {
+        "id": "E007",
+        "type": "regulatory_aspect",
+        "name": "Record Keeping",
+        "attributes": {
+          "purpose": "Regulatory compliance documentation"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "id": "R001",
+        "source": "E001",
+        "target": "E002",
+        "type": "signed_by",
+        "attributes": {}
+      },
+      {
+        "id": "R002",
+        "source": "E001",
+        "target": "E003",
+        "type": "covers",
+        "attributes": {}
+      },
+      {
+        "id": "R003",
+        "source": "E001",
+        "target": "E004",
+        "type": "covers",
+        "attributes": {}
+      },
+      {
+        "id": "R004",
+        "source": "E001",
+        "target": "E005",
+        "type": "covers",
+        "attributes": {}
+      },
+      {
+        "id": "R005",
+        "source": "E001",
+        "target": "E006",
+        "type": "includes",
+        "attributes": {}
+      },
+      {
+        "id": "R006",
+        "source": "E002",
+        "target": "E007",
+        "type": "responsible_for",
+        "attributes": {}
+      }
+    ],
+    "page_summaries": [
+      {
+        "page": 1,
+        "summary": "Laser Safety Training Acknowledgment form documenting training receipt for laser personnel including LSOs, managers, and technicians. Covers topics from basic laser definitions to outdoor safety, biological hazards, regulations, and on-site evaluation.",
+        "key_concepts": ["training documentation", "regulatory compliance", "personnel certification"],
+        "difficulty": "beginner"
+      }
+    ]
+  }
+}

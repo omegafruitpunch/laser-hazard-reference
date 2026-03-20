@@ -1,0 +1,36 @@
+{
+  "module_id": "course-7-module-7.2",
+  "course_id": "course-7",
+  "title": "Module 7.2: Venue Assessment & Fire Safety",
+  "subtitle": "Comprehensive Venue Evaluation and Fire Safety Management",
+  "description": "Master venue assessment techniques and fire safety requirements for live events. Learn to evaluate means of egress, conduct fire safety inspections, select appropriate fire extinguishers, and implement comprehensive fire safety plans that comply with NFPA standards and local codes.",
+  "duration_minutes": 28,
+  "difficulty": "intermediate",
+  "learning_objectives": [
+    "Conduct comprehensive venue safety assessments",
+    "Evaluate means of egress for compliance and adequacy",
+    "Identify and classify fire hazards by type",
+    "Select appropriate fire extinguishers for different fire classes",
+    "Implement fire watch procedures and fire safety plans",
+    "Navigate NFPA codes and local fire safety requirements"
+  ],
+  "prerequisites": ["course-7-module-7.1"],
+  "completion_criteria": {
+    "quiz_pass_score": 80,
+    "interactive_exercises_completed": ["venue_assessment_tool", "fire_safety_inspector", "extinguisher_selector"],
+    "minimum_time_minutes": 22
+  },
+  "badge": {
+    "id": "fire_safety_specialist",
+    "name": "Venue & Fire Safety Specialist",
+    "icon": "🔥",
+    "description": "Mastered venue assessment and fire safety management"
+  },
+  "keywords": ["fire safety", "venue assessment", "means of egress", "fire extinguisher", "NFPA", "fire code", "emergency exit", "fire watch"],
+  "standards_reference": ["NFPA 1", "NFPA 101", "NFPA 10", "NFPA 701", "IFC"],
+  "research_alignment": {
+    "adult_learning": "Visual learning with interactive diagrams",
+    "technical_training": "Checklist-based competency verification",
+    "interactive_design": "Interactive venue walkthroughs with hotspot identification"
+  }
+}

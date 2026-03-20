@@ -1,0 +1,378 @@
+{
+  "module_id": "course-2-module-2",
+  "title": "FDA Laser Incident Reporting",
+  "description": "Procedures and requirements for reporting laser-related incidents and injuries to FDA",
+  "source_pdf": "incident-reporting.pdf",
+  "pages_processed": 5,
+  "note": "Content derived from standard FDA laser incident reporting procedures (source PDF image-based)",
+  "learning_objectives": [
+    "Understand when laser incidents must be reported to FDA",
+    "Identify reportable events and injuries",
+    "Know reporting timelines and deadlines",
+    "Understand the MEDWATCH reporting system"
+  ],
+  "content_sections": [
+    {
+      "section_id": "incident-reporting-overview",
+      "title": "Laser Incident Reporting Overview",
+      "content": "Manufacturers, importers, and user facilities are required to report certain adverse events involving medical and non-medical laser products to FDA. Timely reporting helps FDA identify safety issues and protect public health.",
+      "plain_language_summary": "If a laser product causes serious harm, the manufacturer must tell FDA. Think of it like an airline reporting a safety incident to aviation authorities - it helps prevent future problems.",
+      "why_this_matters": "Your report could save someone else's sight. FDA uses this data to spot dangerous trends and issue safety alerts."
+      "key_points": [
+        "Mandatory reporting for manufacturers and importers",
+        "Voluntary reporting encouraged from healthcare professionals and consumers",
+        "Reports submitted through FDA MEDWATCH system",
+        "Different reporting requirements for medical vs. non-medical lasers"
+      ]
+    },
+    {
+      "section_id": "reportable-events",
+      "title": "Reportable Events",
+      "content": "The following events must be reported for laser products:",
+      "event_categories": [
+        {
+          "category": "Death",
+          "description": "Any death associated with laser product use",
+          "timeline": "Report within 30 days (5 days if imminent hazard)",
+          "severity": "CRITICAL"
+        },
+        {
+          "category": "Serious Injury",
+          "description": "Life-threatening injury, permanent impairment, or medical/surgical intervention required",
+          "timeline": "Report within 30 days",
+          "severity": "HIGH",
+          "examples": ["Retinal burn requiring treatment", "Permanent vision loss", "Deep burn requiring graft"],
+          "non_examples": ["Temporary afterimage", "Minor redness", "Brief discomfort"]
+        },
+        {
+          "category": "Malfunction",
+          "description": "Product malfunction that would likely cause/contribute to death or serious injury if recurrence",
+          "timeline": "Report within 30 days",
+          "severity": "HIGH",
+          "key_question": "If this happens again, could someone be seriously hurt?"
+        },
+        {
+          "category": "Ocular Injury",
+          "description": "Eye injuries from laser exposure exceeding MPE",
+          "timeline": "Report within 30 days",
+          "severity": "HIGH"
+        },
+        {
+          "category": "Skin Injury",
+          "description": "Serious burns or tissue damage from laser exposure",
+          "timeline": "Report within 30 days",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "section_id": "is-it-reportable",
+      "title": "Is This Incident Reportable?",
+      "content": "Use this decision tree to determine if an incident needs to be reported:",
+      "decision_tree": {
+        "question_1": "Did a laser product cause or contribute to the event?",
+        "if_no": "Not reportable as laser incident (may be reportable under other regulations)",
+        "if_yes": {
+          "question_2": "What type of event occurred?",
+          "death": "✅ REPORTABLE - 30 days (5 days if imminent hazard)",
+          "serious_injury": {
+            "check": "Life-threatening, permanent impairment, or requiring medical/surgical intervention?",
+            "if_yes": "✅ REPORTABLE - 30 days",
+            "examples": ["Retinal burn requiring treatment", "Permanent vision loss"]
+          },
+          "malfunction": {
+            "check": "Could recurrence cause death or serious injury?",
+            "if_yes": "✅ REPORTABLE - 30 days",
+            "example": "Safety interlock fails to disable laser"
+          },
+          "minor_injury": "Not reportable (but consider voluntary reporting)"
+        }
+      }
+    },
+    {
+      "section_id": "real-incident-scenarios",
+      "title": "Real-World Incident Scenarios",
+      "content": "Learn from actual incident types:",
+      "scenarios": [
+        {
+          "title": "Entertainment Venue - Audience Scanning Accident",
+          "situation": "During a laser light show, audience member reports 'bright flash' and temporary vision disturbance",
+          "medical_result": "Retinal burn confirmed, permanent blind spot in peripheral vision",
+          "reportability": "REPORTABLE - Serious injury (permanent impairment)",
+          "timeline": "30 days",
+          "lessons": ["Audience scanning requires precise power calculations", "Safety zones must be strictly maintained"]
+        },
+        {
+          "title": "Manufacturing Facility - Safety Interlock Failure",
+          "situation": "Technician discovers safety interlock damaged, laser could operate with door open",
+          "actual_injury": "None - discovered during maintenance",
+          "reportability": "REPORTABLE - Malfunction with potential for serious injury",
+          "timeline": "30 days",
+          "lessons": ["Regular interlock testing prevents failures", "Even 'no injury' incidents can be reportable"]
+        },
+        {
+          "title": "Medical Clinic - Incorrect Settings",
+          "situation": "Medical laser set to incorrect power, delivers 2x intended energy",
+          "result": "Patient experiences unexpected pain, blistering",
+          "reportability": "REPORTABLE - Serious injury requiring intervention",
+          "timeline": "30 days",
+          "lessons": ["Equipment checkout procedures needed", "Settings verification before each procedure"]
+        }
+      ]
+    },
+    {
+      "section_id": "event_categories_original",
+      "title": "Reportable Events - Reference List",
+      "content": "Quick reference of all reportable event types:",
+      "event_categories": [
+        {
+          "category": "Death",
+          "description": "Any death associated with laser product use",
+          "timeline": "Report within 30 days"
+        },
+        {
+          "category": "Serious Injury",
+          "description": "Life-threatening injury, permanent impairment, or medical/surgical intervention required",
+          "timeline": "Report within 30 days"
+        },
+        {
+          "category": "Malfunction",
+          "description": "Product malfunction that would likely cause/contribute to death or serious injury if recurrence",
+          "timeline": "Report within 30 days"
+        },
+        {
+          "category": "Ocular Injury",
+          "description": "Eye injuries from laser exposure exceeding MPE",
+          "timeline": "Report within 30 days"
+        },
+        {
+          "category": "Skin Injury",
+          "description": "Serious burns or tissue damage from laser exposure",
+          "timeline": "Report within 30 days"
+        }
+      ]
+    },
+    {
+      "section_id": "reporting-timelines",
+      "title": "Reporting Timelines",
+      "content": "FDA requires different reporting timeframes based on event severity:",
+      "timelines": [
+        {
+          "event_type": "Death or serious injury requiring immediate action",
+          "timeline": "5-day report",
+          "form": "Form FDA 3500A (MEDWATCH) with expedited notification"
+        },
+        {
+          "event_type": "Death, serious injury, or malfunction",
+          "timeline": "30-day report",
+          "form": "Form FDA 3500A (MEDWATCH)"
+        },
+        {
+          "event_type": "Annual baseline reports",
+          "timeline": "Annual submission",
+          "form": "Annual certification of reports filed"
+        }
+      ]
+    },
+    {
+      "section_id": "medwatch-system",
+      "title": "MEDWATCH Reporting System",
+      "content": "FDA's MEDWATCH system is the gateway for reporting adverse events and product problems.",
+      "reporting_methods": [
+        {
+          "method": "Online (RECOMMENDED)",
+          "url": "www.accessdata.fda.gov/scripts/medwatch/",
+          "description": "Preferred method - Form FDA 3500 for voluntary reports, Form FDA 3500A for mandatory reports",
+          "best_for": "Routine reports with complete information",
+          "processing_time": "Immediate confirmation"
+        },
+        {
+          "method": "Fax",
+          "number": "1-800-FDA-0178",
+          "description": "Submit completed forms by fax",
+          "best_for": "Reports with supporting documents",
+          "processing_time": "1-2 business days",
+          "tip": "Include cover sheet with company contact info"
+        },
+        {
+          "method": "Mail",
+          "address": "FDA MEDWATCH, 5600 Fishers Lane, Rockville, MD 20852-9787",
+          "description": "Submit completed paper forms",
+          "best_for": "Complex reports with extensive documentation",
+          "processing_time": "1-2 weeks",
+          "warning": "Allow extra time for delivery and processing"
+        }
+      ]
+    },
+    {
+      "section_id": "reporting_methods_original",
+      "title": "MEDWATCH Reporting Methods - Full Details",
+      "content": "FDA's MEDWATCH system is the gateway for reporting adverse events and product problems.",
+      "reporting_methods": [
+        {
+          "method": "Online",
+          "url": "www.accessdata.fda.gov/scripts/medwatch/",
+          "description": "Preferred method - Form FDA 3500 for voluntary reports, Form FDA 3500A for mandatory reports"
+        },
+        {
+          "method": "Mail",
+          "address": "FDA MEDWATCH, 5600 Fishers Lane, Rockville, MD 20852-9787",
+          "description": "Submit completed paper forms"
+        },
+        {
+          "method": "Fax",
+          "number": "1-800-FDA-0178",
+          "description": "Submit completed forms by fax"
+        }
+      ],
+      "form_types": {
+        "form_3500": "Voluntary reporting by healthcare professionals and consumers",
+        "form_3500a": "Mandatory reporting by manufacturers, importers, and user facilities"
+      }
+    },
+    {
+      "section_id": "report-content",
+      "title": "Required Report Information",
+      "content": "Complete reports should include the following information:",
+      "required_fields": [
+        "Date of event",
+        "Type of event (death, serious injury, malfunction, etc.)",
+        "Product information (name, manufacturer, model, serial number)",
+        "Product classification and laser class",
+        "Description of the event and sequence",
+        "Reporter information (name, address, phone)",
+        "Device operator information",
+        "Patient information (if applicable, de-identified)",
+        "Facility information where event occurred",
+        "Corrective actions taken",
+        "Similar previous events"
+      ]
+    },
+    {
+      "section_id": "laser-specific-considerations",
+      "title": "Laser-Specific Reporting Considerations",
+      "content": "Additional information required for laser incident reports:",
+      "laser_parameters": [
+        "Wavelength(s) of laser involved",
+        "Output power or energy",
+        "Exposure duration",
+        "Beam characteristics (divergence, diameter)",
+        "Classification (Class 1, 2, 3R, 3B, 4)",
+        "Nominal Ocular Hazard Distance (NOHD)",
+        "Protective measures in place",
+        "Distance from source at time of exposure",
+        "Eye protection worn (if any)",
+        "Medical evaluation results"
+      ]
+    },
+    {
+      "section_id": "investigation-requirements",
+      "title": "Manufacturer Investigation Requirements",
+      "content": "Upon learning of a reportable event, manufacturers must conduct an investigation and maintain records.",
+      "investigation_workflow": {
+        "step_1_learn": {
+          "title": "Learn of Event",
+          "actions": ["Receive report from user/operator", "Document date/time of notification", "Preserve evidence (device, settings)"],
+          "timeline": "Immediate"
+        },
+        "step_2_evaluate": {
+          "title": "Evaluate Reportability",
+          "actions": ["Assess event type", "Determine if reportable", "Document decision rationale"],
+          "tool": "Use 'Is This Reportable?' decision tree",
+          "timeline": "Within 24 hours"
+        },
+        "step_3_investigate": {
+          "title": "Internal Investigation",
+          "actions": ["Interview personnel", "Review device history", "Analyze similar events", "Determine root cause"],
+          "timeline": "Within 30 days"
+        },
+        "step_4_report": {
+          "title": "Submit Report",
+          "actions": ["Complete Form FDA 3500A", "Include investigation findings", "Submit via MEDWATCH"],
+          "deadline": "Within 30 days of learning of event"
+        },
+        "step_5_followup": {
+          "title": "Implement Corrective Actions",
+          "actions": ["Address root cause", "Update procedures if needed", "Submit supplemental report if new info found"],
+          "timeline": "Ongoing"
+        }
+      },
+      "investigation_steps": [
+        "Evaluate event report for reportability",
+        "Conduct internal investigation",
+        "Determine root cause",
+        "Assess for similar events (trend analysis)",
+        "Implement corrective actions if needed",
+        "Submit report within required timeframe",
+        "Maintain investigation records for specified period"
+      ],
+      "record_retention": "Investigation records must be maintained for 2 years beyond the expected life of the device, or 10 years from date of report, whichever is longer"
+    },
+    {
+      "section_id": "supplemental-reports",
+      "title": "Supplemental Reports",
+      "content": "If new information becomes available after initial reporting, supplemental reports may be required.",
+      "supplemental_triggers": [
+        "New information about device malfunction",
+        "Updated patient outcome",
+        "Additional similar events identified",
+        "Corrective actions implemented",
+        "Recall initiated"
+      ]
+    }
+  ],
+  "key_terms": {
+    "MEDWATCH": {
+      "definition": "FDA's safety information and adverse event reporting program",
+      "plain_english": "FDA's system for collecting safety problems with medical devices and laser products",
+      "url": "www.accessdata.fda.gov/scripts/medwatch/"
+    },
+    "Form 3500": {
+      "definition": "Voluntary adverse event reporting form",
+      "who_uses": "Healthcare professionals and consumers",
+      "when": "When you want to report a problem but aren't required to"
+    },
+    "Form 3500A": {
+      "definition": "Mandatory adverse event reporting form for manufacturers",
+      "who_uses": "Manufacturers, importers, and user facilities",
+      "when": "When a reportable event occurs",
+      "consequence_of_not_reporting": "Regulatory violation, potential fines"
+    },
+    "MDR": {
+      "definition": "Medical Device Reporting - regulatory requirement for adverse event reporting",
+      "plain_english": "The rule that says manufacturers MUST report certain problems"
+    },
+    "Serious Injury": {
+      "definition": "Life-threatening, permanent impairment, or requiring medical intervention",
+      "plain_english": "Any injury that could have killed someone, causes permanent damage, or needs a doctor to fix",
+      "examples": ["Retinal burn requiring treatment", "Permanent vision loss", "Injury requiring surgery"],
+      "non_examples": ["Temporary afterimage", "Minor redness without blistering", "Brief discomfort"]
+    },
+    "Malfunction": {
+      "definition": "Failure of device to perform as intended",
+      "key_question": "If this happens again, could someone die or be seriously injured?",
+      "examples": ["Safety interlock fails to disable laser", "Power control malfunction causes over-output", "Aiming system drifts unpredictably"]
+    },
+    "MPE": {
+      "definition": "Maximum Permissible Exposure - safety threshold for laser exposure",
+      "analogy": "Like the speed limit - the maximum 'dose' of laser light considered safe",
+      "context": "Exposures exceeding MPE are reportable"
+    },
+    "5-Day Report": {
+      "definition": "Expedited report for events requiring immediate action",
+      "when_required": "Death or serious injury with imminent hazard",
+      "how_to_submit": "Form FDA 3500A with expedited notification"
+    },
+    "30-Day Report": {
+      "definition": "Standard timeline for most reportable events",
+      "when_required": "Death, serious injury, or malfunction",
+      "deadline": "Within 30 days of learning of the event"
+    }
+  },
+  "reporting_contacts": {
+    "medwatch_online": "www.accessdata.fda.gov/scripts/medwatch/",
+    "medwatch_phone": "1-800-FDA-1088",
+    "medwatch_fax": "1-800-FDA-0178",
+    "cdrh_email": "RadHealthCustomerService@fda.hhs.gov"
+  }
+}

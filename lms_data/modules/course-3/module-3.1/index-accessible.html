@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Module 3.1: Learn about ocular anatomy and how laser light interacts with eye structures. Interactive educational module with accessible diagrams and simulations.">
+    <title>Module 3.1: Ocular Anatomy & Laser Interactions - Accessible Version</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e8e8e8;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Skip to main content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #e94560;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 0 0 4px 0;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .module-header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .module-header h1 {
+            font-size: 2.5rem;
+            color: #e94560;
+            margin-bottom: 10px;
+        }
+
+        .module-header p {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Progress bar with ARIA */
+        .progress-bar {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .progress-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #2a2a4a;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .progress-dot.active {
+            background: #e94560;
+            border-color: #fff;
+            transform: scale(1.2);
+        }
+
+        .progress-dot.completed {
+            background: #4ecca3;
+        }
+
+        .progress-dot:focus {
+            outline: 3px solid #fff;
+            outline-offset: 2px;
+        }
+
+        /* Phase Cards */
+        .phase-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            display: none;
+        }
+
+        .phase-card.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .phase-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(233, 69, 96, 0.3);
+        }
+
+        .phase-number {
+            background: linear-gradient(135deg, #e94560, #ff6b6b);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .phase-title h2 {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .phase-title p {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
+
+        /* Warm-up Puzzle */
+        .warmup-puzzle {
+            text-align: center;
+            padding: 40px;
+            background: rgba(15, 52, 96, 0.3);
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .warmup-puzzle h3 {
+            color: #4ecca3;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .puzzle-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .puzzle-option {
+            background: rgba(255,255,255,0.1);
+            border: 2px solid transparent;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .puzzle-option:hover,
+        .puzzle-option:focus {
+            border-color: #e94560;
+            transform: translateY(-3px);
+            outline: 3px solid #fff;
+            outline-offset: 2px;
+        }
+
+        .puzzle-option.selected {
+            border-color: #4ecca3;
+            background: rgba(78, 204, 163, 0.2);
+        }
+
+        .puzzle-option.correct {
+            border-color: #4ecca3;
+            background: rgba(78, 204, 163, 0.3);
+        }
+
+        .puzzle-option.incorrect {
+            border-color: #e94560;
+            background: rgba(233, 69, 96, 0.3);
+        }
+
+        /* Eye Anatomy Explorer */
+        .anatomy-explorer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 900px) {
+            .anatomy-explorer {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .eye-diagram-container {
+            background: rgba(0,0,0,0.3);
+            border-radius: 12px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .eye-diagram {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Accessible eye structure styling */
+        .eye-structure {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0.7;
+            stroke-width: 3;
+        }
+
+        .eye-structure:hover,
+        .eye-structure:focus {
+            opacity: 1;
+            filter: brightness(1.3);
+            outline: none;
+            stroke-width: 5;
+        }
+
+        .eye-structure.active {
+            opacity: 1;
+            filter: brightness(1.5);
+            stroke-width: 5;
+        }
+
+        /* Pattern fills for colorblind accessibility */
+        .pattern-cornea { fill: url(#pattern-purple); }
+        .pattern-aqueous { fill: url(#pattern-blue); }
+        .pattern-lens { fill: url(#pattern-yellow); }
+        .pattern-vitreous { fill: url(#pattern-green); }
+        .pattern-retina { fill: url(#pattern-red); }
+        .pattern-optic { fill: url(#pattern-orange); }
+
+        .structure-info {
+            background: rgba(15, 52, 96, 0.5);
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .structure-info h3 {
+            color: #e94560;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .structure-info p {
+            color: #c0c0c0;
+            margin-bottom: 15px;
+        }
+
+        /* Wavelength tags with icons */
+        .wavelength-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .wavelength-tag {
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: 2px solid transparent;
+        }
+
+        .tag-uv { 
+            background: #9b59b6; 
+            color: white; 
+            border-style: dotted;
+        }
+        .tag-visible { 
+            background: #3498db; 
+            color: white; 
+            border-style: solid;
+        }
+        .tag-nir { 
+            background: #e74c3c; 
+            color: white; 
+            border-style: dashed;
+        }
+        .tag-fir { 
+            background: #f39c12; 
+            color: white; 
+            border-style: double;
+        }
+
+        /* Wavelength Slider */
+        .wavelength-slider-section {
+            background: rgba(15, 52, 96, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .slider-container {
+            margin: 30px 0;
+        }
+
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+            color: #a0a0a0;
+        }
+
+        .wavelength-slider {
+            width: 100%;
+            height: 12px;
+            border-radius: 6px;
+            background: linear-gradient(to right, 
+                #9b59b6 0%, #9b59b6 15%,
+                #3498db 15%, #3498db 35%,
+                #2ecc71 35%, #2ecc71 42%,
+                #f1c40f 42%, #f1c40f 50%,
+                #e67e22 50%, #e67e22 58%,
+                #e74c3c 58%, #e74c3c 70%,
+                #c0392b 70%, #c0392b 100%
+            );
+            -webkit-appearance: none;
+            appearance: none;
+            outline: none;
+        }
+
+        .wavelength-slider:focus {
+            box-shadow: 0 0 0 3px #fff;
+        }
+
+        .wavelength-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid #e94560;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .wavelength-display {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .wavelength-value {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #e94560;
+        }
+
+        .wavelength-region {
+            font-size: 1.2rem;
+            color: #4ecca3;
+            margin-top: 5px;
+        }
+
+        .penetration-visual {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 12px;
+        }
+
+        .eye-cross-section {
+            position: relative;
+            height: 200px;
+            margin: 20px 0;
+        }
+
+        .penetration-beam {
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            height: 4px;
+            background: currentColor;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px currentColor;
+        }
+
+        .penetration-label {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #fff;
+            margin-top: 15px;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn:focus {
+            outline: 3px solid #fff;
+            outline-offset: 2px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #e94560, #ff6b6b);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Live region for announcements */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Feedback Messages */
+        .feedback-message {
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .feedback-message.show {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .feedback-correct {
+            background: rgba(78, 204, 163, 0.2);
+            border: 2px solid #4ecca3;
+            color: #4ecca3;
+        }
+
+        .feedback-incorrect {
+            background: rgba(233, 69, 96, 0.2);
+            border: 2px solid #e94560;
+            color: #e94560;
+        }
+
+        /* MPE Visualizer */
+        .mpe-visualizer {
+            background: rgba(15, 52, 96, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .mpe-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .mpe-comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .mpe-card {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .mpe-card:focus-within {
+            border-color: #fff;
+        }
+
+        .mpe-card h4 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .mpe-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #e94560;
+        }
+
+        .mpe-unit {
+            font-size: 1rem;
+            color: #a0a0a0;
+        }
+
+        .mpe-explanation {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #c0c0c0;
+        }
+
+        /* Completion Badge */
+        .completion-badge {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(78, 204, 163, 0.2), rgba(78, 204, 163, 0.05));
+            border-radius: 16px;
+            border: 2px solid #4ecca3;
+        }
+
+        .badge-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .completion-badge h3 {
+            color: #4ecca3;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .completion-badge p {
+            color: #a0a0a0;
+        }
+
+        /* Challenge Section */
+        .challenge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .challenge-card {
+            background: rgba(0,0,0,0.3);
+            border-radius: 12px;
+            padding: 25px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .challenge-card:hover,
+        .challenge-card:focus {
+            border-color: #e94560;
+            transform: translateY(-5px);
+            outline: 3px solid #fff;
+            outline-offset: 2px;
+        }
+
+        .challenge-card.selected {
+            border-color: #4ecca3;
+            background: rgba(78, 204, 163, 0.1);
+        }
+
+        .challenge-card h4 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .challenge-card p {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
+
+        /* Table styling for accessibility */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        th {
+            background: rgba(233, 69, 96, 0.3);
+            color: #fff;
+            font-weight: bold;
+        }
+
+        tr:focus-within {
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .module-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .phase-card {
+                padding: 20px;
+            }
+            
+            .wavelength-value {
+                font-size: 2rem;
+            }
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            .eye-structure {
+                stroke-width: 4;
+            }
+            
+            .btn:focus,
+            .puzzle-option:focus,
+            .challenge-card:focus,
+            .eye-structure:focus {
+                outline: 4px solid #fff;
+            }
+        }
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="container">
+        <!-- Module Header -->
+        <header class="module-header" role="banner">
+            <h1><span aria-hidden="true">👁️</span> Ocular Anatomy & Laser Interactions</h1>
+            <p>Explore how laser light interacts with eye structures and understand why the eye is uniquely vulnerable to laser radiation</p>
+            <nav aria-label="Module progress">
+                <div class="progress-bar" role="tablist" aria-label="Phase navigation">
+                    <button class="progress-dot active" data-phase="1" role="tab" aria-selected="true" aria-label="Phase 1: Warm-Up Puzzle" tabindex="0"></button>
+                    <button class="progress-dot" data-phase="2" role="tab" aria-selected="false" aria-label="Phase 2: Eye Anatomy Explorer" tabindex="-1"></button>
+                    <button class="progress-dot" data-phase="3" role="tab" aria-selected="false" aria-label="Phase 3: Damage Mechanisms" tabindex="-1"></button>
+                    <button class="progress-dot" data-phase="4" role="tab" aria-selected="false" aria-label="Phase 4: Expert Challenge" tabindex="-1"></button>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content" role="main">
+            <!-- Live region for dynamic announcements -->
+            <div id="announcements" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+            <!-- Phase 1: Warm-up -->
+            <section class="phase-card active" id="phase-1" aria-labelledby="phase1-title">
+                <div class="phase-header">
+                    <div class="phase-number" aria-hidden="true">1</div>
+                    <div class="phase-title">
+                        <h2 id="phase1-title">Warm-Up: The Focusing Puzzle</h2>
+                        <p>Activate your intuition before diving into the anatomy</p>
+                    </div>
+                </div>
+
+                <div class="warmup-puzzle" role="region" aria-labelledby="warmup-heading">
+                    <h3 id="warmup-heading"><span aria-hidden="true">🔍</span> Quick Question</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 25px;">The eye's lens can concentrate laser energy by what factor compared to the beam's original intensity?</p>
+                    
+                    <div class="puzzle-options" role="radiogroup" aria-labelledby="warmup-heading">
+                        <div class="puzzle-option" data-answer="10" role="radio" aria-checked="false" tabindex="0">
+                            <strong>10×</strong>
+                            <p style="font-size: 0.85rem; margin-top: 8px;">Like a magnifying glass</p>
+                        </div>
+                        <div class="puzzle-option" data-answer="1000" role="radio" aria-checked="false" tabindex="0">
+                            <strong>1,000×</strong>
+                            <p style="font-size: 0.85rem; margin-top: 8px;">Significant concentration</p>
+                        </div>
+                        <div class="puzzle-option" data-answer="100000" role="radio" aria-checked="false" tabindex="0">
+                            <strong>100,000×</strong>
+                            <p style="font-size: 0.85rem; margin-top: 8px;">Extreme focusing power</p>
+                        </div>
+                        <div class="puzzle-option" data-answer="1000000" role="radio" aria-checked="false" tabindex="0">
+                            <strong>1,000,000×</strong>
+                            <p style="font-size: 0.85rem; margin-top: 8px;">Maximum theoretical</p>
+                        </div>
+                    </div>
+
+                    <div class="feedback-message" id="warmup-feedback" role="status" aria-live="polite"></div>
+                </div>
+
+                <nav class="nav-buttons" aria-label="Phase navigation">
+                    <button class="btn btn-secondary" disabled>Previous</button>
+                    <button class="btn btn-primary" id="next-1" disabled aria-label="Continue to Phase 2">Continue <span aria-hidden="true">→</span></button>
+                </nav>
+            </section>
+
+            <!-- Phase 2: Core Concept - Eye Anatomy Explorer -->
+            <section class="phase-card" id="phase-2" aria-labelledby="phase2-title">
+                <div class="phase-header">
+                    <div class="phase-number" aria-hidden="true">2</div>
+                    <div class="phase-title">
+                        <h2 id="phase2-title">Core Concept: Eye Anatomy Explorer</h2>
+                        <p>Interactive exploration of eye structures and their vulnerability to different laser wavelengths</p>
+                    </div>
+                </div>
+
+                <div class="anatomy-explorer">
+                    <div class="eye-diagram-container">
+                        <svg class="eye-diagram" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" 
+                             role="img" aria-label="Cross-section diagram of human eye showing major structures">
+                            
+                            <!-- Pattern definitions for accessibility -->
+                            <defs>
+                                <pattern id="pattern-purple" patternUnits="userSpaceOnUse" width="10" height="10">
+                                    <rect width="10" height="10" fill="rgba(155, 89, 182, 0.5)"/>
+                                    <circle cx="5" cy="5" r="2" fill="rgba(155, 89, 182, 0.8)"/>
+                                </pattern>
+                                <pattern id="pattern-blue" patternUnits="userSpaceOnUse" width="10" height="10">
+                                    <rect width="10" height="10" fill="rgba(52, 152, 219, 0.3)"/>
+                                    <line x1="0" y1="5" x2="10" y2="5" stroke="rgba(52, 152, 219, 0.8)" stroke-width="1"/>
+                                </pattern>
+                                <pattern id="pattern-yellow" patternUnits="userSpaceOnUse" width="10" height="10">
+                                    <rect width="10" height="10" fill="rgba(241, 196, 15, 0.5)"/>
+                                    <rect x="2" y="2" width="6" height="6" fill="rgba(241, 196, 15, 0.8)"/>
+                                </pattern>
+                                <pattern id="pattern-green" patternUnits="userSpaceOnUse" width="10" height="10">
+                                    <rect width="10" height="10" fill="rgba(46, 204, 113, 0.2)"/>
+                                    <circle cx="5" cy="5" r="1.5" fill="rgba(46, 204, 113, 0.8)"/>
+                                </pattern>
+                                <pattern id="pattern-red" patternUnits="userSpaceOnUse" width="10" height="10">
+                                    <rect width="10" height="10" fill="rgba(231, 76, 60, 0.5)"/>
+                                    <line x1="0" y1="0" x2="10" y2="10" stroke="rgba(231, 76, 60, 0.8)" stroke-width="1"/>
+                                    <line x1="10" y1="0" x2="0" y2="10" stroke="rgba(231, 76, 60, 0.8)" stroke-width="1"/>
+                                </pattern>
+                                <pattern id="pattern-orange" patternUnits="userSpaceOnUse" width="10" height="10">
+                                    <rect width="10" height="10" fill="rgba(230, 126, 34, 0.5)"/>
+                                    <rect x="1" y="1" width="8" height="3" fill="rgba(230, 126, 34, 0.8)"/>
+                                    <rect x="1" y="6" width="8" height="3" fill="rgba(230, 126, 34, 0.8)"/>
+                                </pattern>
+                            </defs>
+                            
+                            <!-- Eye Outline -->
+                            <ellipse cx="200" cy="125" rx="180" ry="100" fill="#2a2a4a" stroke="#4a4a6a" stroke-width="2"/>
+                            
+                            <!-- Cornea - Purple dotted pattern -->
+                            <path class="eye-structure pattern-cornea" id="cornea-path" data-structure="cornea"
+                                d="M 60 125 Q 80 80 120 70 Q 100 125 120 180 Q 80 170 60 125"
+                                fill="rgba(155, 89, 182, 0.5)" stroke="#9b59b6" stroke-width="2"
+                                role="listitem" 
+                                aria-label="Cornea: The transparent outer layer at the front of the eye. Absorbs UV and far-infrared radiation, protecting deeper structures."
+                                tabindex="0"/>
+                            
+                            <!-- Aqueous Humor - Blue line pattern -->
+                            <path class="eye-structure pattern-aqueous" id="aqueous-path" data-structure="aqueous"
+                                d="M 120 70 Q 140 75 160 90 L 160 160 Q 140 175 120 180 Q 100 125 120 70"
+                                fill="rgba(52, 152, 219, 0.3)" stroke="#3498db" stroke-width="1"
+                                role="listitem"
+                                aria-label="Aqueous Humor: Clear fluid between the cornea and lens. Transmits most visible and near-infrared wavelengths."
+                                tabindex="0"/>
+                            
+                            <!-- Lens - Yellow square pattern -->
+                            <ellipse class="eye-structure pattern-lens" id="lens-path" data-structure="lens"
+                                cx="175" cy="125" rx="25" ry="35"
+                                fill="rgba(241, 196, 15, 0.5)" stroke="#f1c40f" stroke-width="2"
+                                role="listitem"
+                                aria-label="Lens: Focuses light onto the retina. Can concentrate laser energy up to 100,000 times. Absorbs some UV-A radiation."
+                                tabindex="0"/>
+                            
+                            <!-- Vitreous Humor - Green dot pattern -->
+                            <ellipse class="eye-structure pattern-vitreous" id="vitreous-path" data-structure="vitreous"
+                                cx="250" cy="125" rx="90" ry="70"
+                                fill="rgba(46, 204, 113, 0.2)" stroke="#2ecc71" stroke-width="1"
+                                role="listitem"
+                                aria-label="Vitreous Humor: Gel-like substance filling the back of the eye. Transmits visible and near-infrared light to the retina."
+                                tabindex="0"/>
+                            
+                            <!-- Retina - Red X pattern (MOST CRITICAL) -->
+                            <path class="eye-structure pattern-retina" id="retina-path" data-structure="retina"
+                                d="M 340 125 Q 300 60 220 55 Q 200 125 220 195 Q 300 190 340 125"
+                                fill="rgba(231, 76, 60, 0.5)" stroke="#e74c3c" stroke-width="3"
+                                role="listitem"
+                                aria-label="Retina: THE MOST VULNERABLE STRUCTURE. Contains light-sensitive cells. Visible and near-infrared lasers (400-1400 nm) focus here with deadly concentration."
+                                tabindex="0"/>
+                            
+                            <!-- Optic Nerve - Orange bar pattern -->
+                            <rect class="eye-structure pattern-optic" id="optic-path" data-structure="optic"
+                                x="340" y="110" width="40" height="30"
+                                fill="rgba(230, 126, 34, 0.5)" stroke="#e67e22" stroke-width="2"
+                                role="listitem"
+                                aria-label="Optic Nerve: Transmits visual information from retina to brain. Damage here causes permanent vision loss."
+                                tabindex="0"/>
+                            
+                            <!-- Labels -->
+                            <text x="90" y="125" fill="#fff" font-size="10" text-anchor="middle" opacity="0.7">Cornea</text>
+                            <text x="175" y="125" fill="#fff" font-size="10" text-anchor="middle" opacity="0.7">Lens</text>
+                            <text x="300" y="125" fill="#fff" font-size="10" text-anchor="middle" opacity="0.7">Retina</text>
+                        </svg>
+                        <p style="text-align: center; color: #a0a0a0; font-size: 0.9rem; margin-top: 10px;">
+                            <span aria-hidden="true">👆</span> Click or press Enter on eye structures to explore their laser vulnerability
+                        </p>
+                    </div>
+
+                    <div class="structure-info" id="structure-info" role="region" aria-live="polite" aria-atomic="true">
+                        <h3><span aria-hidden="true">👁️</span> Select a Structure</h3>
+                        <p>Click on any part of the eye diagram to learn about its function and vulnerability to different laser wavelengths.</p>
+                        <div class="wavelength-tags" role="list" aria-label="Wavelength categories">
+                            <span class="wavelength-tag tag-uv" role="listitem">
+                                <span aria-hidden="true">☀️</span> UV: 100-400 nm
+                            </span>
+                            <span class="wavelength-tag tag-visible" role="listitem">
+                                <span aria-hidden="true">🌈</span> Visible: 400-700 nm
+                            </span>
+                            <span class="wavelength-tag tag-nir" role="listitem">
+                                <span aria-hidden="true">🔴</span> Near-IR: 700-1400 nm
+                            </span>
+                            <span class="wavelength-tag tag-fir" role="listitem">
+                                <span aria-hidden="true">🔥</span> Far-IR: >1400 nm
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wavelength-slider-section" role="region" aria-labelledby="wavelength-heading">
+                    <h3 id="wavelength-heading" style="text-align: center; margin-bottom: 20px;"><span aria-hidden="true">🌈</span> Wavelength Penetration Visualizer</h3>
+                    <p style="text-align: center; color: #a0a0a0; margin-bottom: 20px;">
+                        Drag the slider or use arrow keys to see how different wavelengths penetrate eye structures
+                    </p>
+                    
+                    <div class="slider-container">
+                        <div class="slider-labels" aria-hidden="true">
+                            <span>UV-C<br>200nm</span>
+                            <span>UV-A<br>350nm</span>
+                            <span>Blue<br>450nm</span>
+                            <span>Green<br>550nm</span>
+                            <span>Red<br>650nm</span>
+                            <span>NIR<br>850nm</span>
+                            <span>Nd:YAG<br>1064nm</span>
+                            <span>CO₂<br>10600nm</span>
+                        </div>
+                        <input type="range" class="wavelength-slider" id="wavelength-slider" 
+                               min="200" max="10600" value="550" step="10"
+                               aria-label="Wavelength selector. Current value: 550 nanometers."
+                               aria-valuemin="200" aria-valuemax="10600" aria-valuenow="550"
+                               aria-describedby="wavelength-current">
+                    </div>
+
+                    <div class="wavelength-display">
+                        <div class="wavelength-value" id="wavelength-value" aria-live="polite">550 nm</div>
+                        <div class="wavelength-region" id="wavelength-region">Visible Light - Green</div>
+                        <p id="wavelength-current" class="sr-only">550 nanometers, Visible Light - Green region. This wavelength transmits through all ocular media and focuses on the retina.</p>
+                    </div>
+
+                    <div class="penetration-visual">
+                        <svg viewBox="0 0 600 200" style="width: 100%; height: auto;" role="img" 
+                             aria-label="Cross-section showing laser beam penetration through eye at different wavelengths">
+                            <!-- Eye cross-section simplified -->
+                            <path d="M 50 100 Q 100 40 200 40 L 500 40 Q 550 100 500 160 L 200 160 Q 100 160 50 100"
+                                  fill="rgba(100,100,150,0.2)" stroke="#666" stroke-width="2"/>
+                            
+                            <!-- Cornea -->
+                            <path d="M 50 100 Q 70 70 100 65 L 100 135 Q 70 130 50 100"
+                                  fill="rgba(155, 89, 182, 0.4)" stroke="#9b59b6" stroke-width="1"/>
+                            
+                            <!-- Lens -->
+                            <ellipse cx="180" cy="100" rx="20" ry="30"
+                                     fill="rgba(241, 196, 15, 0.4)" stroke="#f1c40f" stroke-width="1"/>
+                            
+                            <!-- Retina -->
+                            <path d="M 480 100 Q 460 70 400 60 L 400 140 Q 460 130 480 100"
+                                  fill="rgba(231, 76, 60, 0.4)" stroke="#e74c3c" stroke-width="2"/>
+                            
+                            <!-- Laser Beam -->
+                            <line id="penetration-beam" x1="20" y1="100" x2="400" y2="100"
+                                  stroke="#2ecc71" stroke-width="6" stroke-linecap="round"
+                                  opacity="0.8" filter="url(#glow)"/>
+                            
+                            <!-- Beam stopping indicator for UV/Far-IR -->
+                            <rect id="beam-stop" x="60" y="90" width="20" height="20" rx="5"
+                                  fill="#e74c3c" opacity="0"/>
+                            
+                            <defs>
+                                <filter id="glow">
+                                    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                    <feMerge>
+                                        <feMergeNode in="coloredBlur"/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                        </svg>
+                        <div class="penetration-label" id="penetration-label" aria-live="polite">
+                            Visible light transmits through all ocular media and focuses on the retina
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="nav-buttons" aria-label="Phase navigation">
+                    <button class="btn btn-secondary" id="prev-2" aria-label="Return to Phase 1"><span aria-hidden="true">←</span> Previous</button>
+                    <button class="btn btn-primary" id="next-2" aria-label="Continue to Phase 3">Continue <span aria-hidden="true">→</span></button>
+                </nav>
+            </section>
+
+            <!-- Phase 3: Guided Practice -->
+            <section class="phase-card" id="phase-3" aria-labelledby="phase3-title">
+                <div class="phase-header">
+                    <div class="phase-number" aria-hidden="true">3</div>
+                    <div class="phase-title">
+                        <h2 id="phase3-title">Guided Practice: Damage Mechanisms</h2>
+                        <p>Understand how different types of laser damage occur</p>
+                    </div>
+                </div>
+
+                <div class="mpe-visualizer" role="region" aria-labelledby="mpe-heading">
+                    <h3 id="mpe-heading" style="text-align: center; margin-bottom: 10px;"><span aria-hidden="true">⚡</span> MPE Comparison: Eye vs Skin</h3>
+                    <p style="text-align: center; color: #a0a0a0; margin-bottom: 25px;">
+                        Maximum Permissible Exposure limits show why eyes need more protection
+                    </p>
+
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <label for="mpe-wavelength" style="color: #a0a0a0; margin-right: 10px;">Select Wavelength:</label>
+                        <select id="mpe-wavelength" style="padding: 10px 20px; border-radius: 5px; background: rgba(0,0,0,0.3); color: #fff; border: 1px solid #4a4a6a;"
+                                aria-describedby="mpe-wavelength-help">
+                            <option value="532">532 nm (Green)</option>
+                            <option value="1064">1064 nm (Nd:YAG)</option>
+                            <option value="10600">10,600 nm (CO₂)</option>
+                        </select>
+                        <p id="mpe-wavelength-help" class="sr-only">Selecting different wavelengths will update the MPE values below</p>
+                    </div>
+
+                    <div class="mpe-comparison">
+                        <div class="mpe-card" role="region" aria-labelledby="eye-mpe-label">
+                            <h4 id="eye-mpe-label"><span aria-hidden="true">👁️</span> Eye MPE</h4>
+                            <div class="mpe-value" id="eye-mpe" aria-live="polite">0.39</div>
+                            <div class="mpe-unit">mW/cm² (0.25s)</div>
+                            <div class="mpe-explanation">
+                                Eyes are <strong>100× more sensitive</strong> than skin due to focusing effect
+                            </div>
+                        </div>
+                        <div class="mpe-card" role="region" aria-labelledby="skin-mpe-label">
+                            <h4 id="skin-mpe-label"><span aria-hidden="true">✋</span> Skin MPE</h4>
+                            <div class="mpe-value" id="skin-mpe" aria-live="polite">39</div>
+                            <div class="mpe-unit">mW/cm² (0.25s)</div>
+                            <div class="mpe-explanation">
+                                Skin can tolerate much higher exposures without permanent damage
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: rgba(15, 52, 96, 0.3); border-radius: 12px; padding: 30px; margin: 30px 0;" role="region" aria-labelledby="mechanism-heading">
+                    <h3 id="mechanism-heading" style="text-align: center; margin-bottom: 20px;"><span aria-hidden="true">🔬</span> Damage Mechanism Matching</h3>
+                    <p style="text-align: center; color: #a0a0a0; margin-bottom: 25px;">
+                        Match each mechanism to its description
+                    </p>
+
+                    <div class="challenge-grid" id="mechanism-matching" role="radiogroup" aria-labelledby="mechanism-heading">
+                        <div class="challenge-card" data-mechanism="photochemical" role="radio" aria-checked="false" tabindex="0">
+                            <h4>Photochemical Damage</h4>
+                            <p>Click to see description</p>
+                        </div>
+                        <div class="challenge-card" data-mechanism="thermal" role="radio" aria-checked="false" tabindex="0">
+                            <h4>Thermal Damage</h4>
+                            <p>Click to see description</p>
+                        </div>
+                        <div class="challenge-card" data-mechanism="mechanical" role="radio" aria-checked="false" tabindex="0">
+                            <h4>Mechanical Damage</h4>
+                            <p>Click to see description</p>
+                        </div>
+                    </div>
+
+                    <div id="mechanism-description" style="background: rgba(0,0,0,0.3); border-radius: 10px; padding: 20px; margin-top: 20px; display: none;" 
+                         role="region" aria-live="polite">
+                        <!-- Content populated by JS -->
+                    </div>
+                </div>
+
+                <nav class="nav-buttons" aria-label="Phase navigation">
+                    <button class="btn btn-secondary" id="prev-3" aria-label="Return to Phase 2"><span aria-hidden="true">←</span> Previous</button>
+                    <button class="btn btn-primary" id="next-3" aria-label="Continue to Phase 4">Continue <span aria-hidden="true">→</span></button>
+                </nav>
+            </section>
+
+            <!-- Phase 4: Challenge -->
+            <section class="phase-card" id="phase-4" aria-labelledby="phase4-title">
+                <div class="phase-header">
+                    <div class="phase-number" aria-hidden="true">4</div>
+                    <div class="phase-title">
+                        <h2 id="phase4-title">Challenge: Expert Scenario</h2>
+                        <p>Test your understanding with a real-world challenge</p>
+                    </div>
+                </div>
+
+                <div style="background: rgba(15, 52, 96, 0.3); border-radius: 12px; padding: 30px; margin: 30px 0;" role="region" aria-labelledby="challenge-heading">
+                    <h3 id="challenge-heading" style="color: #e94560; margin-bottom: 15px;"><span aria-hidden="true">🎯</span> Scenario Challenge</h3>
+                    <p style="color: #c0c0c0; margin-bottom: 25px; line-height: 1.8;">
+                        A researcher is working with a 5mW, 532nm green laser pointer. They mention that since it's "just a pointer" 
+                        and visible light, there's no real danger if they accidentally look at it briefly. 
+                        <strong>What is the flaw in this reasoning?</strong>
+                    </p>
+
+                    <div class="challenge-grid" role="radiogroup" aria-labelledby="challenge-heading">
+                        <div class="challenge-card" data-answer="blink" role="radio" aria-checked="false" tabindex="0">
+                            <h4>A) Blink Reflex Timing</h4>
+                            <p>The blink reflex takes 0.25s, but damage can occur faster at certain power densities</p>
+                        </div>
+                        <div class="challenge-card" data-answer="power" role="radio" aria-checked="false" tabindex="0">
+                            <h4>B) Power Classification</h4>
+                            <p>5mW is Class 3R - above the 1mW Class 2 safety threshold for visible lasers</p>
+                        </div>
+                        <div class="challenge-card" data-answer="focusing" role="radio" aria-checked="false" tabindex="0">
+                            <h4>C) Retinal Focusing Effect</h4>
+                            <p>The eye's lens concentrates the beam 100,000× on the retina</p>
+                        </div>
+                        <div class="challenge-card" data-answer="all" role="radio" aria-checked="false" tabindex="0">
+                            <h4>D) All of the Above</h4>
+                            <p>All these factors contribute to the potential hazard</p>
+                        </div>
+                    </div>
+
+                    <div class="feedback-message" id="challenge-feedback" role="status" aria-live="polite"></div>
+                </div>
+
+                <div class="completion-badge" id="completion-badge" style="display: none;" role="region" aria-labelledby="completion-title">
+                    <div class="badge-icon" aria-hidden="true">🏆</div>
+                    <h3 id="completion-title">Module Completed!</h3>
+                    <p>You've earned the <strong>"Eye Anatomy Expert"</strong> badge</p>
+                    <p style="margin-top: 15px; font-size: 0.9rem;">You've demonstrated understanding of ocular anatomy and laser interactions</p>
+                </div>
+
+                <nav class="nav-buttons" aria-label="Phase navigation">
+                    <button class="btn btn-secondary" id="prev-4" aria-label="Return to Phase 3"><span aria-hidden="true">←</span> Previous</button>
+                    <button class="btn btn-primary" id="finish-module" style="display: none;" aria-label="Finish and complete module">
+                        Finish Module <span aria-hidden="true">✓</span>
+                    </button>
+                </nav>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Module state
+        let currentPhase = 1;
+        const totalPhases = 4;
+        let warmupAnswered = false;
+        let challengeAnswered = false;
+
+        // Announcement function for screen readers
+        function announce(message) {
+            const announcer = document.getElementById('announcements');
+            announcer.textContent = message;
+            setTimeout(() => announcer.textContent = '', 1000);
+        }
+
+        // Structure data for eye anatomy explorer
+        const structureData = {
+            cornea: {
+                name: "Cornea",
+                icon: "🛡️",
+                description: "The transparent outer layer that provides about 2/3 of the eye's focusing power. It absorbs UV radiation (UV-B and UV-C) and far-infrared radiation, protecting deeper structures.",
+                vulnerable: "UV-C (100-280nm), UV-B (280-315nm), Far-IR (>1400nm)",
+                effects: "Photokeratitis ('welder's flash'), corneal burns, corneal opacity",
+                tags: ['tag-uv', 'tag-fir'],
+                pattern: 'dotted'
+            },
+            aqueous: {
+                name: "Aqueous Humor",
+                icon: "💧",
+                description: "Clear fluid between the cornea and lens that maintains intraocular pressure. It transmits most visible and near-infrared wavelengths with minimal absorption.",
+                vulnerable: "Minimal direct vulnerability",
+                effects: "Can be affected by pressure changes from severe trauma",
+                tags: [],
+                pattern: 'none'
+            },
+            lens: {
+                name: "Lens",
+                icon: "🔍",
+                description: "Focuses light onto the retina. UV-A radiation (315-400nm) is partially absorbed here, which can contribute to cataract formation over time with chronic exposure.",
+                vulnerable: "UV-A (315-400nm), Near-IR (700-1400nm)",
+                effects: "Cataracts (clouding), lens opacities",
+                tags: ['tag-uv', 'tag-nir'],
+                pattern: 'solid'
+            },
+            vitreous: {
+                name: "Vitreous Humor",
+                icon: "🫧",
+                description: "Gel-like substance filling the posterior chamber. It transmits visible and near-infrared wavelengths to the retina.",
+                vulnerable: "Minimal direct absorption",
+                effects: "Vitreous hemorrhage in severe trauma",
+                tags: [],
+                pattern: 'none'
+            },
+            retina: {
+                name: "Retina",
+                icon: "🎯",
+                description: "THE MOST VULNERABLE STRUCTURE! Contains photoreceptors (rods and cones) that convert light to neural signals. The RETINAL HAZARD REGION (400-1400nm) focuses here with 100,000× concentration.",
+                vulnerable: "Visible (400-700nm) & Near-IR (700-1400nm) - THE MOST DANGEROUS",
+                effects: "Permanent vision loss, scotomas (blind spots), flash blindness",
+                tags: ['tag-visible', 'tag-nir'],
+                pattern: 'crosshatch'
+            },
+            optic: {
+                name: "Optic Nerve",
+                icon: "🔗",
+                description: "Transmits visual information from retina to brain. Damage here is catastrophic as it affects the entire visual field.",
+                vulnerable: "Indirect from severe retinal damage",
+                effects: "Permanent vision loss in affected eye",
+                tags: [],
+                pattern: 'striped'
+            }
+        };
+
+        // Wavelength data
+        const wavelengthData = {
+            uv: { name: "Ultraviolet", max: 400, color: "#9b59b6", penetration: "cornea" },
+            visible: { name: "Visible Light", max: 700, color: "#2ecc71", penetration: "retina" },
+            nir: { name: "Near-Infrared", max: 1400, color: "#e74c3c", penetration: "retina" },
+            mir: { name: "Mid-Infrared", max: 3000, color: "#e67e22", penetration: "cornea" },
+            fir: { name: "Far-Infrared", max: 100000, color: "#f39c12", penetration: "cornea" }
+        };
+
+        // MPE data
+        const mpeData = {
+            532: { eye: 0.39, skin: 39, unit: "mW/cm²", note: "Visible green light" },
+            1064: { eye: 1.96, skin: 39, unit: "mW/cm²", note: "Near-infrared Nd:YAG" },
+            10600: { eye: 10.0, skin: 100, unit: "mW/cm²", note: "Far-infrared CO2" }
+        };
+
+        // Navigation functions
+        function goToPhase(phase) {
+            // Hide all phases
+            document.querySelectorAll('.phase-card').forEach(card => {
+                card.classList.remove('active');
+                card.setAttribute('aria-hidden', 'true');
+            });
+            
+            // Show target phase
+            const targetPhase = document.getElementById(`phase-${phase}`);
+            targetPhase.classList.add('active');
+            targetPhase.setAttribute('aria-hidden', 'false');
+            
+            // Update progress dots
+            document.querySelectorAll('.progress-dot').forEach((dot, index) => {
+                dot.classList.remove('active', 'completed');
+                dot.setAttribute('aria-selected', 'false');
+                dot.setAttribute('tabindex', '-1');
+                
+                if (index + 1 < phase) {
+                    dot.classList.add('completed');
+                    dot.setAttribute('aria-label', `Phase ${index + 1}: Completed`);
+                }
+                if (index + 1 === phase) {
+                    dot.classList.add('active');
+                    dot.setAttribute('aria-selected', 'true');
+                    dot.setAttribute('tabindex', '0');
+                }
+            });
+            
+            currentPhase = phase;
+            announce(`Now on Phase ${phase} of ${totalPhases}`);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Warm-up puzzle
+        document.querySelectorAll('#phase-1 .puzzle-option').forEach(option => {
+            option.addEventListener('click', function() {
+                handleWarmupSelection(this);
+            });
+            
+            option.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    handleWarmupSelection(this);
+                }
+            });
+        });
+
+        function handleWarmupSelection(element) {
+            // Clear previous selections
+            document.querySelectorAll('#phase-1 .puzzle-option').forEach(o => {
+                o.classList.remove('selected', 'correct', 'incorrect');
+                o.setAttribute('aria-checked', 'false');
+            });
+            
+            const answer = element.dataset.answer;
+            const feedback = document.getElementById('warmup-feedback');
+            
+            element.classList.add('selected');
+            element.setAttribute('aria-checked', 'true');
+            
+            if (answer === '100000') {
+                element.classList.add('correct');
+                feedback.className = 'feedback-message feedback-correct show';
+                feedback.innerHTML = `
+                    <strong>Correct! <span aria-hidden="true">🎉</span></strong><br>
+                    The eye's lens can concentrate laser energy by up to <strong>100,000×</strong> on the retina. 
+                    This is why even relatively low-power lasers can cause permanent eye damage.
+                `;
+                announce('Correct! The eye\'s lens can concentrate laser energy by up to 100,000 times on the retina.');
+                warmupAnswered = true;
+                document.getElementById('next-1').disabled = false;
+            } else {
+                element.classList.add('incorrect');
+                feedback.className = 'feedback-message feedback-incorrect show';
+                feedback.innerHTML = `
+                    <strong>Not quite right.</strong> Think about the focusing power of the eye's lens. 
+                    How much can it concentrate light?
+                `;
+                announce('Incorrect. Try again. Consider the focusing power of the eye\'s lens.');
+            }
+        }
+
+        // Eye anatomy explorer - keyboard and click support
+        document.querySelectorAll('.eye-structure').forEach(structure => {
+            structure.addEventListener('click', function() {
+                selectStructure(this.dataset.structure);
+            });
+            
+            structure.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    selectStructure(this.dataset.structure);
+                }
+                // Arrow key navigation between structures
+                const structures = Array.from(document.querySelectorAll('.eye-structure'));
+                const currentIndex = structures.indexOf(this);
+                
+                if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    const nextIndex = (currentIndex + 1) % structures.length;
+                    structures[nextIndex].focus();
+                }
+                if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    const prevIndex = (currentIndex - 1 + structures.length) % structures.length;
+                    structures[prevIndex].focus();
+                }
+            });
+        });
+
+        function selectStructure(structureId) {
+            const data = structureData[structureId];
+            if (!data) return;
+            
+            // Update visual state
+            document.querySelectorAll('.eye-structure').forEach(s => s.classList.remove('active'));
+            document.getElementById(`${structureId}-path`).classList.add('active');
+            
+            // Update info panel
+            const infoPanel = document.getElementById('structure-info');
+            const tagsHtml = data.tags.length > 0 
+                ? `<div class="wavelength-tags" role="list" aria-label="Vulnerable wavelengths">
+                    ${data.tags.map(tag => {
+                        const icons = { 'tag-uv': '☀️ UV', 'tag-visible': '🌈 Visible', 'tag-nir': '🔴 Near-IR', 'tag-fir': '🔥 Far-IR' };
+                        const labels = { 'tag-uv': 'Ultraviolet', 'tag-visible': 'Visible light', 'tag-nir': 'Near-infrared', 'tag-fir': 'Far-infrared' };
+                        return `<span class="wavelength-tag ${tag}" role="listitem"><span aria-hidden="true">${icons[tag]}</span> ${labels[tag]}</span>`;
+                    }).join('')}
+                   </div>`
+                : '<p style="color: #a0a0a0; margin-top: 15px;">No specific wavelength vulnerability</p>';
+            
+            infoPanel.innerHTML = `
+                <h3><span aria-hidden="true">${data.icon}</span> ${data.name}</h3>
+                <p>${data.description}</p>
+                <p style="margin-top: 10px;"><strong>Vulnerable to:</strong> ${data.vulnerable}</p>
+                <p><strong>Effects:</strong> ${data.effects}</p>
+                ${tagsHtml}
+            `;
+            
+            announce(`${data.name} selected. ${data.description} Vulnerable to: ${data.vulnerable}`);
+        }
+
+        // Wavelength slider
+        const wavelengthSlider = document.getElementById('wavelength-slider');
+        const wavelengthValue = document.getElementById('wavelength-value');
+        const wavelengthRegion = document.getElementById('wavelength-region');
+        const wavelengthCurrent = document.getElementById('wavelength-current');
+        const penetrationLabel = document.getElementById('penetration-label');
+        const penetrationBeam = document.getElementById('penetration-beam');
+
+        wavelengthSlider.addEventListener('input', function() {
+            updateWavelengthDisplay(this.value);
+        });
+
+        function updateWavelengthDisplay(value) {
+            value = parseInt(value);
+            wavelengthValue.textContent = `${value} nm`;
+            wavelengthSlider.setAttribute('aria-valuenow', value);
+            
+            let region, penetration, description, beamLength;
+            
+            if (value < 400) {
+                region = "Ultraviolet (UV)";
+                penetration = "Absorbed by cornea - cannot reach retina";
+                description = `Ultraviolet radiation at ${value} nanometers is absorbed by the cornea and cannot reach the retina.`;
+                beamLength = 15;
+            } else if (value < 700) {
+                region = "Visible Light";
+                penetration = "Transmits through all structures - focuses on retina";
+                description = `Visible light at ${value} nanometers transmits through all ocular media and focuses on the retina with 100,000 times concentration.`;
+                beamLength = 100;
+            } else if (value < 1400) {
+                region = "Near-Infrared (NIR) - RETINAL HAZARD";
+                penetration = "INVISIBLE but focuses on retina - most dangerous!";
+                description = `Near-infrared radiation at ${value} nanometers is INVISIBLE but still focuses on the retina. No blink reflex protection - extremely dangerous.`;
+                beamLength = 100;
+            } else {
+                region = "Far-Infrared (IR)";
+                penetration = "Absorbed by cornea - surface damage only";
+                description = `Far-infrared radiation at ${value} nanometers is absorbed by the cornea before reaching deeper structures.`;
+                beamLength = 15;
+            }
+            
+            wavelengthRegion.textContent = region;
+            wavelengthCurrent.textContent = `${value} nanometers, ${region}. ${description}`;
+            penetrationLabel.textContent = penetration;
+            penetrationBeam.setAttribute('x2', 100 + (beamLength * 4));
+            
+            // Update beam color
+            const hue = value < 400 ? 270 : value < 700 ? (value - 400) * 0.75 : value < 1400 ? 0 : 30;
+            penetrationBeam.setAttribute('stroke', `hsl(${hue}, 70%, 50%)`);
+        }
+
+        // MPE wavelength selector
+        document.getElementById('mpe-wavelength').addEventListener('change', function() {
+            const data = mpeData[this.value];
+            if (data) {
+                document.getElementById('eye-mpe').textContent = data.eye;
+                document.getElementById('skin-mpe').textContent = data.skin;
+                announce(`MPE values updated. Eye: ${data.eye} ${data.unit}, Skin: ${data.skin} ${data.unit}. ${data.note}`);
+            }
+        });
+
+        // Mechanism matching
+        document.querySelectorAll('#mechanism-matching .challenge-card').forEach(card => {
+            card.addEventListener('click', function() {
+                showMechanismDescription(this.dataset.mechanism);
+            });
+            
+            card.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    showMechanismDescription(this.dataset.mechanism);
+                }
+            });
+        });
+
+        function showMechanismDescription(mechanism) {
+            const descriptions = {
+                photochemical: {
+                    title: "Photochemical Damage",
+                    content: "High-energy photons trigger chemical reactions in tissue. Blue light (400-550 nm) is particularly dangerous. Damage accumulates over time and is often permanent.",
+                    example: "Example: Retinal damage from prolonged blue LED exposure"
+                },
+                thermal: {
+                    title: "Thermal Damage",
+                    content: "Laser energy converts to heat, raising tissue temperature. Above 10°C increase, proteins denature and tissue is destroyed. Can occur instantly with high power.",
+                    example: "Example: Immediate retinal burn from direct beam exposure"
+                },
+                mechanical: {
+                    title: "Mechanical Damage",
+                    content: "High-energy pulsed lasers create shock waves and acoustic effects. Tissue is torn apart by rapid expansion. Most common with Q-switched and ultra-short pulse lasers.",
+                    example: "Example: Retinal hemorrhage from nanosecond pulse laser"
+                }
+            };
+            
+            const data = descriptions[mechanism];
+            const descDiv = document.getElementById('mechanism-description');
+            descDiv.style.display = 'block';
+            descDiv.innerHTML = `
+                <h4>${data.title}</h4>
+                <p>${data.content}</p>
+                <p style="margin-top: 10px; font-style: italic;">${data.example}</p>
+            `;
+            announce(`${data.title}: ${data.content}`);
+        }
+
+        // Challenge question
+        document.querySelectorAll('#phase-4 .challenge-card').forEach(card => {
+            card.addEventListener('click', function() {
+                handleChallengeSelection(this);
+            });
+            
+            card.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    handleChallengeSelection(this);
+                }
+            });
+        });
+
+        function handleChallengeSelection(element) {
+            document.querySelectorAll('#phase-4 .challenge-card').forEach(c => {
+                c.classList.remove('selected', 'correct', 'incorrect');
+                c.setAttribute('aria-checked', 'false');
+            });
+            
+            const answer = element.dataset.answer;
+            const feedback = document.getElementById('challenge-feedback');
+            
+            element.classList.add('selected');
+            element.setAttribute('aria-checked', 'true');
+            
+            if (answer === 'all') {
+                element.classList.add('correct');
+                feedback.className = 'feedback-message feedback-correct show';
+                feedback.innerHTML = `
+                    <strong>Correct! <span aria-hidden="true">🎉</span></strong><br>
+                    All three factors are important: (A) The blink reflex takes 0.25s, which is the Class 2 safety basis; 
+                    (B) 5mW exceeds the 1mW Class 2 limit; and (C) The 100,000× focusing effect means even 5mW becomes 
+                    dangerously concentrated on the retina.
+                `;
+                announce('Correct! All three factors contribute to the hazard: blink reflex timing, power classification, and retinal focusing effect.');
+                challengeAnswered = true;
+                document.getElementById('completion-badge').style.display = 'block';
+                document.getElementById('finish-module').style.display = 'flex';
+                announce('Congratulations! You have completed Module 3.1 and earned the Eye Anatomy Expert badge.');
+            } else {
+                element.classList.add('incorrect');
+                feedback.className = 'feedback-message feedback-incorrect show';
+                const explanations = {
+                    blink: "While the blink reflex timing is important, it's not the only factor. Think about what else makes this laser dangerous.",
+                    power: "Power classification is important, but consider why 5mW is classified as it is. What other factors are at play?",
+                    focusing: "The focusing effect is critical, but are there other safety considerations for this laser?"
+                };
+                feedback.innerHTML = `<strong>That's partially correct.</strong> ${explanations[answer]}`;
+                announce(`${explanations[answer]} Consider selecting All of the Above.`);
+            }
+        }
+
+        // Navigation button event listeners
+        document.getElementById('next-1').addEventListener('click', () => goToPhase(2));
+        document.getElementById('prev-2').addEventListener('click', () => goToPhase(1));
+        document.getElementById('next-2').addEventListener('click', () => goToPhase(3));
+        document.getElementById('prev-3').addEventListener('click', () => goToPhase(2));
+        document.getElementById('next-3').addEventListener('click', () => goToPhase(4));
+        document.getElementById('prev-4').addEventListener('click', () => goToPhase(3));
+        document.getElementById('finish-module').addEventListener('click', () => {
+            announce('Module complete. Redirecting to course menu.');
+            // Add completion logic here
+        });
+
+        // Progress dot navigation
+        document.querySelectorAll('.progress-dot').forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                if (index + 1 <= currentPhase || warmupAnswered) {
+                    goToPhase(index + 1);
+                }
+            });
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            announce('Module 3.1: Ocular Anatomy and Laser Interactions loaded. Phase 1 of 4. Use Tab to navigate.');
+        });
+    </script>
+</body>
+</html>

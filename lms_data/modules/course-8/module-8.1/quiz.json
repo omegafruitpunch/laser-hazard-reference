@@ -1,0 +1,144 @@
+{
+  "module_id": "8.1",
+  "quiz_title": "Module 8.1: ANSI Z136 Series Assessment",
+  "description": "Test your knowledge of ANSI Z136 standards structure and navigation",
+  "passing_score": 80,
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "questions": [
+    {
+      "id": "8.1-Q1",
+      "type": "multiple_choice",
+      "text": "Which ANSI Z136 standard is the foundation document that all other Z136 standards reference?",
+      "options": [
+        "ANSI Z136.3",
+        "ANSI Z136.1",
+        "ANSI Z136.10",
+        "ANSI Z136.8"
+      ],
+      "correct_answer": 1,
+      "points": 5,
+      "explanation": "ANSI Z136.1 (Safe Use of Lasers) is the foundational standard. Other Z136 documents are application-specific supplements."
+    },
+    {
+      "id": "8.1-Q2",
+      "type": "multiple_choice",
+      "text": "A hospital is installing new surgical lasers. Which Z136 standard applies?",
+      "options": [
+        "Z136.1 only",
+        "Z136.3",
+        "Z136.10",
+        "Z136.6"
+      ],
+      "correct_answer": 1,
+      "points": 5,
+      "explanation": "ANSI Z136.3 covers Safe Use of Lasers in Health Care Facilities, including medical and surgical applications."
+    },
+    {
+      "id": "8.1-Q3",
+      "type": "multiple_select",
+      "text": "Select all application-specific ANSI Z136 standards:",
+      "options": [
+        "Z136.1 - Safe Use of Lasers",
+        "Z136.3 - Health Care Facilities",
+        "Z136.8 - Research and Development",
+        "Z136.10 - Entertainment"
+      ],
+      "correct_answer": [1, 2, 3],
+      "points": 5,
+      "explanation": "Z136.1 is the foundation standard. Z136.3, Z136.8, and Z136.10 are application-specific supplements."
+    },
+    {
+      "id": "8.1-Q4",
+      "type": "multiple_choice",
+      "text": "In ANSI Z136.1, which tables contain MPE values for direct ocular exposure?",
+      "options": [
+        "Tables 1a and 1b",
+        "Tables 5a and 5b",
+        "Appendix A",
+        "Section 4.2 only"
+      ],
+      "correct_answer": 1,
+      "points": 5,
+      "explanation": "Tables 5a and 5b in Z136.1 contain the Maximum Permissible Exposure values for ocular exposure."
+    },
+    {
+      "id": "8.1-Q5",
+      "type": "true_false",
+      "text": "ANSI Z136 standards are federal regulations that are legally mandatory.",
+      "correct_answer": false,
+      "points": 5,
+      "explanation": "ANSI Z136 standards are voluntary consensus standards. However, OSHA may reference them as minimum standards of care."
+    },
+    {
+      "id": "8.1-Q6",
+      "type": "multiple_choice",
+      "text": "Which section of ANSI Z136.1 contains Laser Safety Officer responsibilities?",
+      "options": [
+        "Section 1",
+        "Section 3",
+        "Section 5",
+        "Appendix B"
+      ],
+      "correct_answer": 1,
+      "points": 5,
+      "explanation": "Section 3 of ANSI Z136.1 covers LSO responsibilities, authority, and qualifications."
+    },
+    {
+      "id": "8.1-Q7",
+      "type": "multiple_choice",
+      "text": "What is the MPE formula for visible light (400-700nm) with exposure between 18μs and 10 seconds?",
+      "options": [
+        "MPE = 1.8 × t^0.75 mW/cm²",
+        "MPE = 3.0 × 10⁻³ J/cm²",
+        "MPE = 0.1 W/cm²",
+        "MPE = 1.8 × t mW/cm²"
+      ],
+      "correct_answer": 0,
+      "points": 5,
+      "explanation": "For visible light in the specified time range, the formula is MPE = 1.8 × t^0.75 mW/cm²."
+    },
+    {
+      "id": "8.1-Q8",
+      "type": "multiple_choice",
+      "text": "A university research lab is using Class 4 lasers for spectroscopy. Which standard applies?",
+      "options": [
+        "Z136.3",
+        "Z136.8",
+        "Z136.9",
+        "Z136.10"
+      ],
+      "correct_answer": 1,
+      "points": 5,
+      "explanation": "Z136.8 covers Safe Use of Lasers in Research, Development, and Testing environments."
+    },
+    {
+      "id": "8.1-Q9",
+      "type": "multiple_choice",
+      "text": "Which organization serves as the Secretariat for ANSI Z136 standards?",
+      "options": [
+        "FDA",
+        "LIA (Laser Institute of America)",
+        "ESTA",
+        "OSHA"
+      ],
+      "correct_answer": 1,
+      "points": 5,
+      "explanation": "The Laser Institute of America (LIA) serves as the Secretariat for the ANSI Z136 series standards."
+    },
+    {
+      "id": "8.1-Q10",
+      "type": "multiple_select",
+      "text": "Which sections are part of ANSI Z136.1? (Select all that apply)",
+      "options": [
+        "Section 1: Scope and Purpose",
+        "Section 4: Hazard Evaluation",
+        "Section 5: Control Measures",
+        "Section 9: FDA Compliance"
+      ],
+      "correct_answer": [0, 1, 2],
+      "points": 5,
+      "explanation": "ANSI Z136.1 contains sections on Scope, LSO responsibilities, Hazard Evaluation (Section 4), Control Measures (Section 5), Medical Surveillance (Section 6), and Non-Beam Hazards (Section 7). FDA compliance is covered in separate regulations, not Z136.1."
+    }
+  ]
+}

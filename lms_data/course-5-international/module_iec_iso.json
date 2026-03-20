@@ -1,0 +1,435 @@
+{
+  "module_id": "course-5-iec-iso",
+  "course_id": "course-5",
+  "course_name": "International Laser Regulations",
+  "module_name": "IEC 60825-1 and ISO Harmonization",
+  "source_pdf": "iec-iso-harmonization.pdf",
+  "total_pages": 37,
+  "estimated_duration_minutes": 45,
+  "learning_objectives": [
+    "Understand IEC 60825-1 structure and scope",
+    "Comprehend laser classification principles",
+    "Learn Accessible Emission Limits (AELs) for each class",
+    "Understand classification rules for complex sources",
+    "Know measurement geometry requirements",
+    "Understand labeling and safety requirements"
+  ],
+  "content_pages": [
+    {
+      "page_number": 1,
+      "title": "IEC 60825-1 Overview",
+      "content": {
+        "standard_info": {
+          "number": "IEC 60825-1",
+          "edition": "3.0",
+          "year": "2014",
+          "title": "Safety of laser products – Part 1: Equipment classification and requirements",
+          "status": "Group Safety Publication",
+          "language": "Bilingual (English/French)"
+        },
+        "scope": {
+          "wavelength_range": "180 nm to 1 mm",
+          "exclusions": "Lasers emitting below 180 nm (vacuum UV) as they require evacuated enclosures",
+          "applications_covered": [
+            "Demonstration of physical and optical phenomena",
+            "Materials processing",
+            "Data reading and storage",
+            "Transmission and display of information"
+          ]
+        },
+        "key_concepts": [
+          "Accessible Emission (AE) - measured radiation level",
+          "Accessible Emission Limit (AEL) - maximum permitted emission for a class",
+          "Classification based on AE compared to AEL"
+        ]
+      },
+      "quiz_questions": []
+    },
+    {
+      "page_number": 2,
+      "title": "Interpretation Sheets and Updates",
+      "content": {
+        "interpretation_sheets": {
+          "description": "Official clarifications to IEC 60825-1:2014",
+          "sheets": [
+            {
+              "number": "ISH1",
+              "year": "2017",
+              "topic": "Classification rules clarification",
+              "committee": "IEC TC 76: Optical radiation safety and laser equipment"
+            },
+            {
+              "number": "ISH2",
+              "year": "2017",
+              "topic": "Conventional lamp replacement criteria"
+            }
+          ]
+        },
+        "important_notes": [
+          "Abbreviation 'AE' used for 'accessible emission'",
+          "Clarifications apply equivalently to MPE analysis in Annex A",
+          "Colour inside logo indicates color printing is recommended for understanding"
+        ]
+      },
+      "quiz_questions": []
+    },
+    {
+      "page_number": 3,
+      "title": "Classification Rules - Multiple Wavelengths and Extended Sources",
+      "content": {
+        "multiple_wavelengths": {
+          "reference": "Subclause 4.3 b)",
+          "note": "See IEC 60825-1:2014/ISH2 for detailed guidance"
+        },
+        "extended_sources": {
+          "reference": "Subclause 4.3 c)",
+          "wavelength_range": "≥ 400 nm and < 1,400 nm",
+          "default_method": {
+            "angle_of_acceptance": "Limited to 100 mrad",
+            "exception": "400-600 nm for durations > 100s - angle not limited"
+          },
+          "class_3b_evaluation": "Angle of acceptance is not limited"
+        },
+        "non_uniform_sources": {
+          "reference": "Subclause 4.3 d)",
+          "rule": "Vary angle of acceptance in each dimension",
+          "field_stop": "Circular for circularly symmetric images",
+          "general_principle": "Same emission duration t used for AEL determination and αmax calculation"
+        }
+      },
+      "quiz_questions": [
+        {
+          "question": "For extended sources in the wavelength range 400-1400 nm using default evaluation, what is the standard angle of acceptance limit?",
+          "type": "multiple_choice",
+          "options": [
+            "50 mrad",
+            "100 mrad",
+            "150 mrad",
+            "No limit"
+          ],
+          "correct_answer": 1,
+          "explanation": "When using the default (simplified) evaluation method for wavelengths ≥ 400 nm and < 1,400 nm, the angle of acceptance may be limited to 100 mrad."
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "title": "Source Grouping Analysis Example",
+      "content": {
+        "example_description": "Analysis of 20 emitters with different groupings",
+        "methodology": {
+          "step_1": "Calculate α for different sub-groups",
+          "step_2": "Determine AEL for each grouping",
+          "step_3": "Calculate AE/AEL ratio",
+          "step_4": "Identify grouping with maximum ratio"
+        },
+        "calculations": {
+          "single_element": {
+            "alpha": "(1.5 mrad + 2.2 mrad)/2 = 1.85 mrad",
+            "ael": "1.23 mW",
+            "ae": "1 mW",
+            "ratio": "0.8"
+          },
+          "vertical_two_element": {
+            "alpha": "(2.8 + 2.2)/2 = 2.5 mrad",
+            "ael": "1.66 mW",
+            "ae": "2 mW",
+            "ratio": "1.2 (most restrictive)"
+          },
+          "one_row_10_diodes": {
+            "alpha": "(1.5 + 56.2)/2 = 28.9 mrad",
+            "ael": "19.2 mW",
+            "ae": "10 mW",
+            "ratio": "0.5"
+          }
+        },
+        "conclusion": "Vertical two-element group has maximum AE/AEL ratio (1.2), meaning Class 2 AEL is exceeded by factor of 1.2"
+      },
+      "quiz_questions": []
+    },
+    {
+      "page_number": 5,
+      "title": "Pulse Groups and Thermal Additivity",
+      "content": {
+        "pulse_groups": {
+          "reference": "Subclause 4.3 f) 3)",
+          "condition": "α > 5 mrad and group duration > Ti",
+          "requirement": "Apply thermal additivity (C5 correction factor)"
+        },
+        "key_parameters": {
+          "T2": "Calculated with αmax limited to 100 mrad",
+          "C5": "Pulse grouping correction factor",
+          "C6": "Extended source correction factor"
+        },
+        "inequalities": [
+          "α ≤ 5 mrad",
+          "5 mrad < α ≤ αmax",
+          "α > αmax"
+        ],
+        "thermal_grouping": "When individual pulses are close together, they represent one 'effective' pulse"
+      },
+      "quiz_questions": []
+    },
+    {
+      "page_number": 6,
+      "title": "Pulse Duration Analysis and Critical Period",
+      "content": {
+        "pulse_group_analysis": {
+          "integration_window": "Must vary in temporal position and duration",
+          "simplified_analysis": "Pulses with sufficient temporal spacing need not be considered as groups"
+        },
+        "critical_period": {
+          "formula_alpha_less": "Tcrit = 2 × tpulse (tpulse in seconds)",
+          "formula_alpha_greater": "Tcrit = 0.01 × αmax × tpulse^0.5 (tpulse in seconds, αmax in mrad)",
+          "note": "αmax not limited to αmax value"
+        },
+        "conditions_for_grouping": [
+          "Pulse group durations between Ti and 0.25s",
+          "Angular subtense > 5 mrad",
+          "Pulse period < Tcrit"
+        ]
+      },
+      "quiz_questions": []
+    },
+    {
+      "page_number": 7,
+      "title": "Extended Analysis Simplifications",
+      "content": {
+        "larger_apparent_source": {
+          "issue": "AEL can be more restrictive for larger α values (contrary to biophysical principles)",
+          "solution": "Classification may be based on α < 5 mrad even if actual source is larger"
+        },
+        "square_aperture": {
+          "application": "2D scanned laser beams",
+          "rule": "Square aperture stop (7 mm side) equivalent to or more restrictive than circular"
+        },
+        "simplified_analysis": {
+          "basis": "α = 1.5 mrad assumption",
+          "applicability": "Still valid even if actual α > 5 mrad"
+        },
+        "moving_sources": {
+          "description": "Scanned emission not accommodating to pivot point",
+          "c5_determination": "Use stationary apparent source α for inequalities"
+        }
+      },
+      "quiz_questions": []
+    },
+    {
+      "page_number": 8,
+      "title": "Total-On-Time Pulse (TOTP) Method",
+      "content": {
+        "totp_method": {
+          "source": "IEC 60825-1:2007, 8.3 f) 3b)",
+          "definition": "Sum of all pulse durations within emission duration or T2",
+          "pulse_assignment": "Pulses < Ti assigned duration of Ti"
+        },
+        "limitations": {
+          "not_applicable": "Strongly varying peak powers",
+          "reason": "Small peak power pulses might increase AEL more than total energy"
+        },
+        "varying_peak_power": {
+          "method": "Count pulses based on relative peak power",
+          "example": "70% peak power = count as 0.7",
+          "threshold": "Don't count pulses < 10% of maximum peak power"
+        }
+      },
+      "quiz_questions": [
+        {
+          "question": "What does TOTP stand for in laser classification?",
+          "type": "multiple_choice",
+          "options": [
+            "Total Output Transmission Power",
+            "Total-On-Time Pulse",
+            "Time-Optimized Transmission Protocol",
+            "Thermal Output Temperature Parameter"
+          ],
+          "correct_answer": 1,
+          "explanation": "TOTP stands for Total-On-Time Pulse, which is the sum of all pulse durations within the emission duration or T2."
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "title": "Conventional Lamp Replacement (Subclause 4.4)",
+      "content": {
+        "radiance_criterion": {
+          "description": "Criterion based on radiance for laser products functioning as conventional lamps",
+          "angular_subtense": "Determined at 50% of peak radiance",
+          "reference": "Equivalent to IEC 62471:2006 and IEC 62471-5:2015"
+        },
+        "measurement_distance": "200 mm from closest point of human access",
+        "inhomogeneous_sources": {
+          "rule": "Use outer edge (50% level) of apparent source profile",
+          "application": "Both radiance limit and minimum source size"
+        }
+      },
+      "quiz_questions": []
+    },
+    {
+      "page_number": 10,
+      "title": "Radiance Limit and Product Classification",
+      "content": {
+        "radiance_limit_lt": {
+          "nature": "Not an AEL, merely a criterion",
+          "does_not_imply": "Product is 'safe' or specific Risk Group under IEC 62471"
+        },
+        "classification_requirements": {
+          "applicable": "Requirements of IEC 60825-1 still apply (labels, engineering, service, user info)",
+          "class_1_label": "Mandatory for products with emission excluded under 4.4",
+          "additional_label": "Risk Group label according to IEC 62471 series"
+        },
+        "component_modules": {
+          "light_modules": "Not subject to IEC 60825-1 when sold as components",
+          "end_products": "Luminaires are in scope including subclause 4.4"
+        },
+        "emission_characteristics": {
+          "broadband": "Not required - can be monochromatic",
+          "coherence": "No specific requirement"
+        }
+      },
+      "quiz_questions": [
+        {
+          "question": "For a Class 1 laser product with emission excluded under subclause 4.4, is the Class 1 label mandatory or optional?",
+          "type": "multiple_choice",
+          "options": [
+            "Optional",
+            "Mandatory",
+            "Not required",
+            "Depends on application"
+          ],
+          "correct_answer": 1,
+          "explanation": "Contrary to normal Class 1 products where the label is optional, for products with light emission excluded under 4.4, the Class 1 label is mandatory."
+        }
+      ]
+    },
+    {
+      "page_number": 11,
+      "title": "IEC 60825-1 Table of Contents Overview",
+      "content": {
+        "document_structure": [
+          "1. Scope and object",
+          "2. Normative references",
+          "3. Terms and definitions",
+          "4. Classification principles",
+          "5. Determination of accessible emission level and classification",
+          "6. Engineering specifications (access panels, interlocks, remote interlock)",
+          "7. Marking and labeling requirements",
+          "8. Other informational requirements",
+          "9. Additional requirements for specific laser products"
+        ],
+        "annexes": [
+          "Annex A: Maximum Permissible Exposure (MPE) tables",
+          "Annex B: Biophysical basis",
+          "Annex C: Medical applications",
+          "Annex D: Biological effects",
+          "Annex E: MPEs and AELs as radiance",
+          "Annex F: Summary tables",
+          "Annex G: Overview of associated parts"
+        ]
+      },
+      "quiz_questions": []
+    },
+    {
+      "page_number": 12,
+      "title": "Labeling Requirements Overview",
+      "content": {
+        "label_types": [
+          {
+            "type": "Warning label",
+            "purpose": "Hazard symbol",
+            "classes": "Class 2, 2M, 3R, 3B, 4"
+          },
+          {
+            "type": "Explanatory label",
+            "purpose": "Describe hazard type"
+          },
+          {
+            "type": "Aperture label",
+            "purpose": "Identify laser aperture location"
+          },
+          {
+            "type": "Access panel labels",
+            "purpose": "Warning for removable panels"
+          }
+        ],
+        "specific_warnings": [
+          "Invisible laser radiation warning",
+          "Visible laser radiation warning",
+          "Skin and anterior eye hazard warning"
+        ]
+      },
+      "quiz_questions": []
+    },
+    {
+      "page_number": 13,
+      "title": "Measurement Geometry",
+      "content": {
+        "measurement_condition_1": "Accessible emission at closest point of human access",
+        "measurement_condition_2": "At specified distance with specified aperture",
+        "measurement_condition_3": "For collimated beams at specified reference points",
+        "default_evaluation": {
+          "aperture_diameter": "7 mm (for eye)",
+          "measurement_distance": "Varies by condition"
+        },
+        "extended_source_evaluation": {
+          "method_1": "Image apparent source onto field stop plane",
+          "method_2": "Place circular aperture close to apparent source"
+        }
+      },
+      "quiz_questions": []
+    }
+  ],
+  "key_tables": {
+    "accessible_emission_limits": [
+      {
+        "class": "Class 1",
+        "description": "Safe under reasonably foreseeable conditions",
+        "label": "Optional"
+      },
+      {
+        "class": "Class 1M",
+        "description": "Safe except when viewed with magnifying optics",
+        "warning": "Do not view directly with optical instruments"
+      },
+      {
+        "class": "Class 2",
+        "description": "Visible lasers, eye protection by blink reflex",
+        "wavelength": "400-700 nm"
+      },
+      {
+        "class": "Class 2M",
+        "description": "As Class 2 but unsafe with magnifying optics"
+      },
+      {
+        "class": "Class 3R",
+        "description": "Low risk, normally safe with aversion response"
+      },
+      {
+        "class": "Class 3B",
+        "description": "Direct beam viewing hazardous",
+        "diffuse": "Normally safe for short exposure"
+      },
+      {
+        "class": "Class 4",
+        "description": "High power, fire and diffuse reflection hazard",
+        "requirements": "All hazard control measures required"
+      }
+    ]
+  },
+  "glossary": {
+    "AE": "Accessible Emission - measured radiation level at specified conditions",
+    "AEL": "Accessible Emission Limit - maximum permitted emission for a laser class",
+    "MPE": "Maximum Permissible Exposure - safe exposure limit for humans",
+    "αmax": "Maximum angular subtense of apparent source",
+    "C5": "Correction factor for pulse groups",
+    "C6": "Correction factor for extended sources",
+    "Ti": "Thermal injury time constant",
+    "T2": "Time base for thermal hazard assessment"
+  },
+  "related_standards": [
+    "IEC 62471: Photobiological safety of lamps and lamp systems",
+    "IEC 60601-2-22: Medical electrical equipment",
+    "ISO 15004-2: Ophthalmic instruments",
+    "ICNIRP guidelines on exposure limits"
+  ]
+}

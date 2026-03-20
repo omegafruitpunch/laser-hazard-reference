@@ -1,0 +1,13 @@
+{
+  "id": "skin-hazards_q010",
+  "type": "multiple_choice",
+  "question": "What is the daily 8-hour MPE for UV-C (180-280 nm) skin exposure?",
+  "options": [
+    "0.3 mJ/cm²",
+    "3 mJ/cm²",
+    "30 mJ/cm²",
+    "300 mJ/cm²"
+  ],
+  "correct": 1,
+  "explanation": "The daily (8-hour) MPE for UV-C radiation is 3 mJ/cm² for the most sensitive skin types."
+}

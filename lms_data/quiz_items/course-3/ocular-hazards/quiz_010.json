@@ -1,0 +1,13 @@
+{
+  "id": "ocular-hazards_q010",
+  "type": "multiple_choice",
+  "question": "Which population is MOST vulnerable to blue light photochemical retinal damage?",
+  "options": [
+    "Adult males",
+    "Children",
+    "Elderly",
+    "Contact lens wearers"
+  ],
+  "correct": 1,
+  "explanation": "Children have larger pupils allowing more light entry and more transparent ocular media, making them more susceptible to blue light photochemical damage."
+}

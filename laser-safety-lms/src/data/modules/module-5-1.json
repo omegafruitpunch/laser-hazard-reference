@@ -1,0 +1,50 @@
+{
+  "id": "module-5-1",
+  "courseId": "course-5",
+  "title": "EU Laser Safety Directives",
+  "description": "European Union directives governing laser products and worker exposure limits.",
+  "order": 1,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "The EU Regulatory Framework",
+      "content": "The European Union has harmonized laser safety requirements across member states through directives. Understanding these requirements is essential for shows in Europe or equipment sold in the EU market.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "EU Directives and Standards",
+      "content": "The EU has two main regulatory instruments affecting laser safety: directives which are legally binding, and harmonized standards which provide presumption of conformity. Directive 2006/25/EC protects workers from optical radiation exposure and applies to all employers in EU member states. CE marking requires compliance with applicable EU directives and standards. EN 60825 is the European adoption of IEC 60825 with some modifications for the European market.",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "EU Compliance Scenario",
+      "content": "An American laser company wants to tour Europe:\n\n1. What marking must their equipment have?\n2. What directive governs worker protection?\n3. What standard applies to their laser displays?",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-5-1",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "EU Directives Guide",
+      "path": "/docs/course-5-international/eu-directives.pdf"
+    }
+  ],
+  "keyTakeaways": [
+    "EU Directive 2006/25/EC on the minimum health and safety requirements regarding the exposure of workers to risks arising from physical agents (artificial optical radiation) applies to laser workers",
+    "CE marking requires compliance with applicable EU directives and standards",
+    "EN 60825 is the European adoption of IEC 60825 with some differences",
+    "EU member states may implement additional national requirements"
+  ],
+  "nextModule": "module-5-2",
+  "prerequisites": [],
+  "difficulty": "advanced"
+}

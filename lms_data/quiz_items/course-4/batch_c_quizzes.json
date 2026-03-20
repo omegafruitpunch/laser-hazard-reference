@@ -1,0 +1,264 @@
+{
+  "batch": "C",
+  "course": 4,
+  "agent": "PDF Elite Processor Agent #12",
+  "quiz_items": [
+    {
+      "id": "c4-nevada-001",
+      "state": "Nevada",
+      "question": "Which Nevada agency oversees laser safety regulations?",
+      "type": "multiple_choice",
+      "options": [
+        "Nevada Department of Transportation",
+        "Radiation Control Program, Division of Public and Behavioral Health",
+        "Nevada Occupational Safety and Health Administration",
+        "Nevada Environmental Protection Agency"
+      ],
+      "correct_answer": 1,
+      "explanation": "Nevada's Radiation Control Program, Division of Public and Behavioral Health manages laser safety regulations.",
+      "reference": "Nevada State Laser Safety Contacts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "c4-nevada-002",
+      "state": "Nevada",
+      "question": "What is the primary requirement for laser operations in Nevada?",
+      "type": "multiple_choice",
+      "options": [
+        "Annual registration fee of $500",
+        "Advance notification to the Radiation Control Program",
+        "Quarterly safety inspections",
+        "FDA variance approval only"
+      ],
+      "correct_answer": 1,
+      "explanation": "Nevada requires advance notification to the Radiation Control Program before laser installation or use.",
+      "reference": "Nevada State Laser Safety Contacts",
+      "difficulty": "medium"
+    },
+    {
+      "id": "c4-nevada-003",
+      "state": "Nevada",
+      "question": "True or False: Nevada conducts routine inspections of laser facilities.",
+      "type": "true_false",
+      "correct_answer": false,
+      "explanation": "According to the Nevada regulations documentation, inspections are marked as 'No' for routine laser facility inspections.",
+      "reference": "Nevada State Laser Safety Contacts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "c4-ny-001",
+      "state": "New York",
+      "question": "Which New York regulation governs laser safety requirements?",
+      "type": "multiple_choice",
+      "options": [
+        "NYCRR Part 40",
+        "12 NYCRR Part 50 (Industrial Code Rule 50)",
+        "New York Labor Law Section 200",
+        "Title 15 Environmental Regulations"
+      ],
+      "correct_answer": 1,
+      "explanation": "New York laser safety is governed by Industrial Code Rule 50 under Title 12 (12 NYCRR Part 50), amended March 2, 1994.",
+      "reference": "New York Laser Training Courses",
+      "difficulty": "medium"
+    },
+    {
+      "id": "c4-ny-002",
+      "state": "New York",
+      "question": "What are the two classes of laser operator certificates in New York?",
+      "type": "multiple_choice",
+      "options": [
+        "Class 1 and Class 2",
+        "Class A (low intensity) and Class B (low and high intensity)",
+        "Basic and Advanced",
+        "Initial and Renewal"
+      ],
+      "correct_answer": 1,
+      "explanation": "New York offers Class A Certificate for low intensity lasers and Class B Certificate for low and high intensity lasers.",
+      "reference": "New York Laser Training Courses",
+      "difficulty": "easy"
+    },
+    {
+      "id": "c4-ny-003",
+      "state": "New York",
+      "question": "Which organization is listed as a provider for Class B laser certification in New York?",
+      "type": "multiple_choice",
+      "options": [
+        "NYC Fire Department",
+        "LIA Laser Institute",
+        "Cornell University",
+        "NYU Medical Center"
+      ],
+      "correct_answer": 1,
+      "explanation": "The LIA Laser Institute (Laser Institute of America) is listed as a provider for Class B certification with contact at lia.org.",
+      "reference": "New York Laser Training Courses",
+      "difficulty": "easy"
+    },
+    {
+      "id": "c4-ny-004",
+      "state": "New York",
+      "question": "True or False: New York requires laser facilities to undergo inspections.",
+      "type": "true_false",
+      "correct_answer": true,
+      "explanation": "New York is one of the states that conducts inspections of laser facilities, as indicated in the state contacts documentation.",
+      "reference": "New York Laser Training Courses",
+      "difficulty": "easy"
+    },
+    {
+      "id": "c4-texas-001",
+      "state": "Texas",
+      "question": "Which Texas Administrative Code section covers laser registration requirements?",
+      "type": "multiple_choice",
+      "options": [
+        "25 TAC 289.100",
+        "25 TAC 289.301 and 289.302",
+        "Texas Health and Safety Code Chapter 401",
+        "25 TAC 295.1"
+      ],
+      "correct_answer": 1,
+      "explanation": "Texas laser registration is governed by 25 TAC 289.301 (Lasers and Intense-Pulsed Light Devices) and 289.302 (Laser Hair Removal Devices).",
+      "reference": "Texas State Laser Safety Contacts",
+      "difficulty": "medium"
+    },
+    {
+      "id": "c4-texas-002",
+      "state": "Texas",
+      "question": "Which Texas agency manages the Laser Registration Program?",
+      "type": "multiple_choice",
+      "options": [
+        "Texas Commission on Environmental Quality",
+        "Department of State Health Services Radiation Safety Licensing Branch",
+        "Texas Department of Licensing and Regulation",
+        "Texas Occupational Safety and Health Administration"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Texas Department of State Health Services Radiation Safety Licensing Branch manages the Laser Registration Program.",
+      "reference": "Texas State Laser Safety Contacts",
+      "difficulty": "medium"
+    },
+    {
+      "id": "c4-texas-003",
+      "state": "Texas",
+      "question": "True or False: Texas conducts routine inspections of registered laser facilities.",
+      "type": "true_false",
+      "correct_answer": true,
+      "explanation": "Texas is documented as conducting inspections of laser facilities as part of their registration program.",
+      "reference": "Texas State Laser Safety Contacts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "c4-texas-004",
+      "state": "Texas",
+      "question": "What special consideration exists for laser light shows in Texas regulations?",
+      "type": "multiple_choice",
+      "options": [
+        "They are completely exempt from all regulations",
+        "ILDA has submitted comments regarding potential exemptions or modified requirements",
+        "They require federal FAA approval only",
+        "No special considerations exist"
+      ],
+      "correct_answer": 1,
+      "explanation": "According to ILDA (International Laser Display Association) comments in the Texas documentation, there are discussions about exempting or modifying requirements for laser light shows.",
+      "reference": "Texas ILDA Regulatory Comments",
+      "difficulty": "hard"
+    },
+    {
+      "id": "c4-wa-001",
+      "state": "Washington",
+      "question": "Which Washington Administrative Code governs laser safety?",
+      "type": "multiple_choice",
+      "options": [
+        "WAC 296-800",
+        "WAC 296-62-09005",
+        "RCW 49.17",
+        "WAC 173-480"
+      ],
+      "correct_answer": 1,
+      "explanation": "Washington laser safety follows State rules Ch. 296-62-09005 WAC.",
+      "reference": "Washington State Laser Safety Contacts",
+      "difficulty": "medium"
+    },
+    {
+      "id": "c4-wa-002",
+      "state": "Washington",
+      "question": "What is required for laser light shows in Washington?",
+      "type": "multiple_choice",
+      "options": [
+        "Federal variance only",
+        "Advance written notification",
+        "No notification required",
+        "County-level permit only"
+      ],
+      "correct_answer": 1,
+      "explanation": "Washington requires advance written notification for laser light shows according to Ch. 296-62-09005 WAC.",
+      "reference": "Washington State Laser Safety Contacts",
+      "difficulty": "medium"
+    },
+    {
+      "id": "c4-wa-003",
+      "state": "Washington",
+      "question": "Who is the Director of Washington's X-Ray Control/Radiation Protection office?",
+      "type": "multiple_choice",
+      "options": [
+        "Karen Beckley",
+        "David B. Jansen",
+        "Kirk Fisher",
+        "Shannon Dove-Edson"
+      ],
+      "correct_answer": 1,
+      "explanation": "David B. Jansen is listed as the Director of the X-Ray Control Department of Health/Radiation Protection in Washington.",
+      "reference": "Washington State Laser Safety Contacts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "c4-comparative-001",
+      "state": "Comparative",
+      "question": "Which two states in Batch C conduct routine inspections of laser facilities?",
+      "type": "multiple_choice",
+      "options": [
+        "Nevada and Washington",
+        "New York and Texas",
+        "Nevada and Texas",
+        "Washington and New York"
+      ],
+      "correct_answer": 1,
+      "explanation": "Among the Batch C states, only New York and Texas conduct routine inspections of laser facilities.",
+      "reference": "Batch C Comparative Analysis",
+      "difficulty": "medium"
+    },
+    {
+      "id": "c4-comparative-002",
+      "state": "Comparative",
+      "question": "Which state requires specific laser operator training certificates (Class A and Class B)?",
+      "type": "multiple_choice",
+      "options": [
+        "Nevada",
+        "New York",
+        "Texas",
+        "Washington"
+      ],
+      "correct_answer": 1,
+      "explanation": "New York is the only Batch C state that specifically requires laser operator training certificates - Class A for low intensity and Class B for low and high intensity lasers.",
+      "reference": "New York Laser Training Courses",
+      "difficulty": "easy"
+    }
+  ],
+  "summary": {
+    "total_quiz_items": 16,
+    "by_state": {
+      "nevada": 3,
+      "new-york": 4,
+      "texas": 4,
+      "washington": 3,
+      "comparative": 2
+    },
+    "by_difficulty": {
+      "easy": 8,
+      "medium": 6,
+      "hard": 2
+    },
+    "by_type": {
+      "multiple_choice": 13,
+      "true_false": 3
+    }
+  }
+}

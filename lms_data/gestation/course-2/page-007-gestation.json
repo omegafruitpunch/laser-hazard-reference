@@ -1,0 +1,60 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 7,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Complete laser product classification system",
+      "Class II, IIa, IIIa, IIIb, IV limits and characteristics",
+      "Wavelength ranges and emission durations",
+      "Hazard levels for each class"
+    ],
+    "key_terms": [
+      {
+        "term": "Class II",
+        "definition": "Visible spectrum (400-710 nm) products with emission >0.25 sec - hazard for direct long-term ocular exposure"
+      },
+      {
+        "term": "Class IIIa",
+        "definition": "Visible spectrum beams with total collectable radiant power ≤5 mW - includes most He-Ne lasers"
+      },
+      {
+        "term": "Class IIIb",
+        "definition": "UV, visible, IR devices 5-500 mW visible - ocular and skin hazards"
+      },
+      {
+        "term": "Class IV",
+        "definition": "Exceeds Class IIIb limits - hazard for scattered/diffuse reflection"
+      },
+      {
+        "term": "k1 and k2 Factors",
+        "definition": "Wavelength and emission duration correction factors for class limits"
+      },
+      {
+        "term": "Radiant Energy (J)",
+        "definition": "Energy measured through 7mm aperture with 10^-3 steradian acceptance"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.10(b)(5)-(11) - Class definitions",
+      "21 CFR 1040.10(d)(Tables I, II-A, II, III-A, III-B) - Class limit tables",
+      "21 CFR 1040.10(d)(Tables IV, V) - k1 and k2 values"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Differentiate between all five laser product classes",
+      "Understand wavelength and duration factors in classification",
+      "Identify hazard levels for each class",
+      "Apply class limit tables to determine product classification"
+    ],
+    "prerequisites": [
+      "Understanding of electromagnetic spectrum",
+      "Basic physics of light measurement",
+      "Page 6 content"
+    ],
+    "estimated_study_time_minutes": 35,
+    "content_type": "technical_specifications",
+    "has_tables": true
+  }
+}

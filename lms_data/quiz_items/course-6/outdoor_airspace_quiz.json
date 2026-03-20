@@ -1,0 +1,208 @@
+{
+  "course_id": "course-6",
+  "course_title": "Outdoor Laser Safety & Airspace",
+  "quiz_items": [
+    {
+      "id": "c6-q1",
+      "question": "What is the maximum penalty under 18 USC 39A for aiming a laser pointer at an aircraft?",
+      "options": [
+        "1 year imprisonment and $10,000 fine",
+        "3 years imprisonment and $100,000 fine",
+        "5 years imprisonment and $250,000 fine",
+        "10 years imprisonment and $500,000 fine"
+      ],
+      "correct_answer": 2,
+      "explanation": "18 USC Section 39A makes it a federal felony to knowingly aim a laser pointer at an aircraft or its flight path, with penalties up to 5 years imprisonment and a $250,000 fine.",
+      "source_pdf": "international-outdoor-standards.pdf",
+      "difficulty": "intermediate",
+      "topic": "Federal Regulations"
+    },
+    {
+      "id": "c6-q2",
+      "question": "What are the three main types of visual interference hazards from laser illumination?",
+      "options": [
+        "Corneal burn, retinal damage, cataracts",
+        "Distraction, glare, flashblindness",
+        "Headache, nausea, disorientation",
+        "Temporary blindness, permanent blindness, eye pain"
+      ],
+      "correct_answer": 1,
+      "explanation": "The three main visual interference hazards are: 1) Distraction - mental interference, 2) Glare - inability to see past the light, and 3) Flashblindness - vision-impairing afterimages that can last seconds or minutes.",
+      "source_pdf": "international-outdoor-standards.pdf",
+      "difficulty": "beginner",
+      "topic": "Visual Interference Hazards"
+    },
+    {
+      "id": "c6-q3",
+      "question": "How many documented permanent eye injuries have occurred from over 20,000 laser incidents reported to FAA and UK CAA?",
+      "options": [
+        "Fewer than 10",
+        "Approximately 50",
+        "Over 100",
+        "Zero"
+      ],
+      "correct_answer": 3,
+      "explanation": "As of 2015, there have been zero documented cases of permanent eye injuries in over 20,000 laser incidents reported to the FAA and UK CAA. The visual interference hazard (distraction during critical flight phases) is the primary concern.",
+      "source_pdf": "international-outdoor-standards.pdf",
+      "difficulty": "intermediate",
+      "topic": "Eye Injury Statistics"
+    },
+    {
+      "id": "c6-q4",
+      "question": "What percentage of FAA-reported laser incidents involve green laser light?",
+      "options": [
+        "Approximately 50%",
+        "Approximately 75%",
+        "Approximately 90%",
+        "Approximately 95%"
+      ],
+      "correct_answer": 3,
+      "explanation": "About 95% of incidents reported to FAA involve green laser light at approximately 532 nm wavelength, because the human eye is most sensitive to green light, making green lasers more visible at greater distances.",
+      "source_pdf": "international-outdoor-standards.pdf",
+      "difficulty": "intermediate",
+      "topic": "Laser Color Hazards"
+    },
+    {
+      "id": "c6-q5",
+      "question": "Which FAA Advisory Circular provides guidance for planning outdoor laser operations that may affect aircraft?",
+      "options": [
+        "AC 70-1B",
+        "AC 70-2A",
+        "AC 91-11",
+        "AC 120-76"
+      ],
+      "correct_answer": 0,
+      "explanation": "FAA Advisory Circular 70-1B (Outdoor Laser Operations) provides information to assist proponents planning outdoor laser operations that may affect aircraft operations in the National Airspace System.",
+      "source_pdf": "outdoor-hazard-calculations.pdf",
+      "difficulty": "intermediate",
+      "topic": "FAA Guidance Documents"
+    },
+    {
+      "id": "c6-q6",
+      "question": "What does ATC regard a laser illumination incident as?",
+      "options": [
+        "A minor incident requiring routine reporting",
+        "An in-flight emergency",
+        "A maintenance issue",
+        "A weather-related event"
+      ],
+      "correct_answer": 1,
+      "explanation": "ATC regards a laser illumination incident as an in-flight emergency and will treat them as such until the aircrew states otherwise, due to potential debilitating injuries and interference with aircrew duties.",
+      "source_pdf": "securing-outdoor-shows.pdf",
+      "difficulty": "beginner",
+      "topic": "ATC Procedures"
+    },
+    {
+      "id": "c6-q7",
+      "question": "What is the recommended Optical Density (OD) for green laser (532nm) protective eyewear for pilots?",
+      "options": [
+        "OD 1",
+        "OD 2 or 2.5",
+        "OD 3",
+        "OD 4"
+      ],
+      "correct_answer": 1,
+      "explanation": "For single-wavelength green (532 nm) protection, OD 3 blocks too much light (both laser and instrument panel). An OD of 2 or 2.5 is suggested to allow pilots to track the laser beam to its source while still providing protection.",
+      "source_pdf": "international-outdoor-standards.pdf",
+      "difficulty": "advanced",
+      "topic": "Protective Eyewear"
+    },
+    {
+      "id": "c6-q8",
+      "question": "Which flight zone is defined as airspace in the immediate proximity of an airport where the beam irradiance must be less than 50 μW/cm²?",
+      "options": [
+        "Laser Free Zone (LFZ)",
+        "Critical Flight Zone (CFZ)",
+        "Sensitive Flight Zone (SFZ)",
+        "Normal Flight Zone (NFZ)"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Laser Free Zone (LFZ) is airspace in the immediate proximity of the airport (< 2 NM from the runway, up to 2,000 ft AGL) where laser radiation is restricted to levels that should not cause any visual distraction or glare (less than 50 μW/cm²).",
+      "source_pdf": "outdoor-hazard-calculations.pdf",
+      "difficulty": "advanced",
+      "topic": "Flight Zone Classifications"
+    },
+    {
+      "id": "c6-q9",
+      "question": "What is the chance of a pilot being illuminated in a laser incident on any given flight in a single year?",
+      "options": [
+        "1 in 1,000",
+        "1 in 5,000",
+        "1 in 15,000",
+        "1 in 50,000"
+      ],
+      "correct_answer": 2,
+      "explanation": "Based on FAA ATADS flight data on airport operations, the chance of a pilot seeing a laser beam on any given flight in a single year is about 1 in 15,000. The chance of adverse effects is about 1 in 1,500,000 flights.",
+      "source_pdf": "international-outdoor-standards.pdf",
+      "difficulty": "advanced",
+      "topic": "Statistics"
+    },
+    {
+      "id": "c6-q10",
+      "question": "What is the first priority when a pilot is illuminated by a laser during flight?",
+      "options": [
+        "Report to ATC immediately",
+        "Turn on all cockpit lights",
+        "Put on protective eyewear",
+        "Fly the aircraft"
+      ],
+      "correct_answer": 3,
+      "explanation": "The first and most important priority is to 'Fly the plane.' The pilot must maintain aircraft control and situational awareness before taking other actions like blocking the light, informing ATC, or reporting the incident.",
+      "source_pdf": "international-outdoor-standards.pdf",
+      "difficulty": "beginner",
+      "topic": "Emergency Procedures"
+    },
+    {
+      "id": "c6-q11",
+      "question": "Which FAA form is used to provide notice of proposed outdoor laser operations?",
+      "options": [
+        "Form 7233-1",
+        "Form 7140-1",
+        "Form 7400-2",
+        "Form 7110-65"
+      ],
+      "correct_answer": 1,
+      "explanation": "FAA Form 7140-1 (Notice of Proposed Outdoor Laser Operation(s)) is the form used to notify the FAA of proposed outdoor laser operations that may affect the National Airspace System.",
+      "source_pdf": "notam-procedures.pdf",
+      "difficulty": "intermediate",
+      "topic": "FAA Forms"
+    },
+    {
+      "id": "c6-q12",
+      "question": "How often will ATC broadcast cautions about laser illumination events on appropriate control frequencies?",
+      "options": [
+        "Every minute for 10 minutes",
+        "Every 5 minutes for 20 minutes",
+        "Every 10 minutes for 30 minutes",
+        "Once per hour"
+      ],
+      "correct_answer": 1,
+      "explanation": "ATC will broadcast cautions every 5 minutes for 20 minutes (four times) after each reported laser illumination event on appropriate control frequencies.",
+      "source_pdf": "securing-outdoor-shows.pdf",
+      "difficulty": "intermediate",
+      "topic": "ATC Broadcast Procedures"
+    }
+  ],
+  "metadata": {
+    "total_questions": 12,
+    "difficulty_distribution": {
+      "beginner": 3,
+      "intermediate": 6,
+      "advanced": 3
+    },
+    "topics_covered": [
+      "Federal Regulations",
+      "Visual Interference Hazards",
+      "Eye Injury Statistics",
+      "Laser Color Hazards",
+      "FAA Guidance Documents",
+      "ATC Procedures",
+      "Protective Eyewear",
+      "Flight Zone Classifications",
+      "Statistics",
+      "Emergency Procedures",
+      "FAA Forms",
+      "ATC Broadcast Procedures"
+    ]
+  }
+}

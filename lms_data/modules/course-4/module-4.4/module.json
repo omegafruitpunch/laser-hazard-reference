@@ -1,0 +1,20 @@
+{
+  "module_id": "4.4",
+  "course_id": "course-4",
+  "title": "Module 4.4: Nevada, New York, Texas & Washington",
+  "subtitle": "Diverse State Regulatory Models",
+  "description": "Examine four distinct state regulatory approaches: Nevada and Washington (notification-based), New York (comprehensive with training requirements), and Texas (comprehensive with industry engagement).",
+  "learning_objectives": [
+    "Differentiate between notification-only and comprehensive regulatory models",
+    "Understand New York's unique training certification system (Class A/Class B)",
+    "Navigate Texas regulations including ILDA engagement history",
+    "Apply Washington's laser show notification requirements",
+    "Compare inspection programs across all four states"
+  ],
+  "duration_minutes": 50,
+  "difficulty": "intermediate",
+  "states_covered": ["nevada", "new-york", "texas", "washington"],
+  "prerequisites": ["module-4.3"],
+  "version": "1.0.0",
+  "last_updated": "2026-03-19"
+}

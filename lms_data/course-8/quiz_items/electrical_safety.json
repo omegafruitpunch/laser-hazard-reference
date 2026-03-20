@@ -1,0 +1,153 @@
+{
+  "source": "electrical-safety-standards.pdf",
+  "quiz_items": [
+    {
+      "id": "ES-Q001",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "topic": "OSHA Enforcement",
+      "question": "How does OSHA enforce laser safety when there are no specific laser interlock regulations?",
+      "options": [
+        "OSHA cannot enforce laser safety without specific regulations",
+        "Through the General Duty Clause of 29 CFR 1910",
+        "Only state OSHA programs can enforce laser safety",
+        "OSHA delegates enforcement to FDA"
+      ],
+      "correct_answer": 1,
+      "explanation": "Federal OSHA uses the General Duty Clause of 29 CFR 1910 to require companies to follow industry standard best practices for laser safety, referencing ANSI Z136.1-2014.",
+      "regulatory_reference": "OSHA 29 CFR 1910 General Duty Clause"
+    },
+    {
+      "id": "ES-Q002",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "topic": "Regulatory References",
+      "question": "When OSHA finds a laser safety problem, which FDA regulations do they reference?",
+      "options": [
+        "21 CFR 1000-1005 only",
+        "21 CFR 1040 (FLPPS)",
+        "21 CFR 1010 only",
+        "FDA does not regulate laser safety"
+      ],
+      "correct_answer": 1,
+      "explanation": "OSHA refers to FDA enforcement codes under 21 CFR 1040, the Federal Laser Product Performance Standards (FLPPS).",
+      "regulatory_reference": "21 CFR 1040"
+    },
+    {
+      "id": "ES-Q003",
+      "type": "multiple_select",
+      "difficulty": "advanced",
+      "topic": "21CFR Chapters",
+      "question": "Which 21CFR chapters are relevant to laser product safety? (Select all that apply)",
+      "options": [
+        "21CFR1000-1005 - Records, reports, import/export",
+        "21CFR1010 - General performance standards",
+        "21CFR1040.10 - Laser product performance standards",
+        "21CFR1040.11 - Specific use laser products"
+      ],
+      "correct_answers": [0, 1, 2, 3],
+      "explanation": "All listed chapters are relevant: 1000-1005 covers records/reports/import-export, 1010 covers general standards, 1040.10 covers laser performance standards, and 1040.11 covers specific use products.",
+      "regulatory_reference": "21CFR1000-1050"
+    },
+    {
+      "id": "ES-Q004",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "topic": "Interlock Requirements",
+      "question": "What is the legal mandate regarding external interlocks on commercial lasers?",
+      "options": [
+        "Only Class 4 lasers require external interlocks",
+        "All Class 3B and Class 4 lasers must have external interlocks",
+        "Interlocks are optional for all laser classes",
+        "Only medical lasers require interlocks"
+      ],
+      "correct_answer": 1,
+      "explanation": "FLPPS mandates that manufacturers provide external interlocks on all commercial Class 3B and Class 4 lasers.",
+      "regulatory_reference": "21CFR1040.10, FLPPS"
+    },
+    {
+      "id": "ES-Q005",
+      "type": "true_false",
+      "difficulty": "advanced",
+      "topic": "Interlock Usage",
+      "question": "Federal law mandates that end users must utilize the remote interlock connectors provided on Class 3B and 4 lasers.",
+      "correct_answer": false,
+      "explanation": "False. While manufacturers must provide interlocks, there is no federal legal mandate requiring end users to actually use them. This creates a significant safety gap.",
+      "regulatory_reference": "Electrical Safety Standards Page 2"
+    },
+    {
+      "id": "ES-Q006",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "topic": "Interlock Connector State",
+      "question": "In what state do interlock connectors typically arrive from the manufacturer?",
+      "options": [
+        "Active and ready for safety circuit connection",
+        "Electrically shorted (disabled)",
+        "Open circuit requiring immediate attention",
+        "Pre-wired to facility safety systems"
+      ],
+      "correct_answer": 1,
+      "explanation": "Interlock connectors typically come from the manufacturer in an electrically shorted state, which unfortunately means lasers are often placed into service without proper interlock configuration.",
+      "regulatory_reference": "Electrical Safety Standards Page 2"
+    },
+    {
+      "id": "ES-Q007",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "topic": "In-House Laser Construction",
+      "question": "What is expected when a facility constructs a laser for its own in-house use?",
+      "options": [
+        "In-house lasers are exempt from all safety standards",
+        "Every effort should be made to meet FLPPS intent",
+        "Only ANSI Z136.1 applies, not FLPPS",
+        "OSHA approval is required before operation"
+      ],
+      "correct_answer": 1,
+      "explanation": "Facilities constructing in-house lasers should make every effort to meet the intent of FLPPS. Adopting ANSI Z136.1 effectively adopts FLPPS requirements.",
+      "regulatory_reference": "Electrical Safety Standards Page 2"
+    },
+    {
+      "id": "ES-Q008",
+      "type": "multiple_select",
+      "difficulty": "advanced",
+      "topic": "FLPPS in ANSI Z136.1",
+      "question": "Which ANSI Z136.1-2014 sections repeat FLPPS specifications expected to exist in commercially certified products? (Select all that apply)",
+      "options": [
+        "Section 4.3.1",
+        "Section 4.3.5.1",
+        "Section 4.3.7",
+        "Section 4.3.14"
+      ],
+      "correct_answers": [0, 1, 2, 3],
+      "explanation": "ANSI Z136.1-2014 sections 4.3.1, 4.3.2, 4.3.3, 4.3.4, 4.3.5.1, 4.3.7, 4.3.8, and 4.3.14 are FLPPS specifications expected in commercially certified products.",
+      "regulatory_reference": "ANSI Z136.1-2014 Section 4.3"
+    },
+    {
+      "id": "ES-Q009",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "topic": "Laser Safety Officer Role",
+      "question": "Why does DIY laser construction place increased emphasis on the Laser Safety Officer?",
+      "options": [
+        "LSOs must approve all DIY laser designs",
+        "Anyone can build Class 3B/4 lasers without safety knowledge, requiring LSO oversight",
+        "DIY lasers are automatically exempt from regulations",
+        "LSOs must personally construct all in-house lasers"
+      ],
+      "correct_answer": 1,
+      "explanation": "With increased availability of high-power laser diodes, anyone with basic electronics knowledge can construct Class 3B or 4 lasers without laser physics or safety knowledge, requiring the LSO to monitor and enforce safety.",
+      "regulatory_reference": "Electrical Safety Standards Page 2"
+    },
+    {
+      "id": "ES-Q010",
+      "type": "fill_in_blank",
+      "difficulty": "intermediate",
+      "topic": "Standard Reference",
+      "question": "OSHA references the _____ standard for laser safety enforcement.",
+      "correct_answer": "ANSI Z136.1-2014",
+      "explanation": "OSHA looks at guidelines set forth in ANSI Z136.1-2014 and related ANSI Z136 sub-chapters when enforcing laser safety.",
+      "regulatory_reference": "Electrical Safety Standards Page 1"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 25,
+  "quiz_items": [
+    {
+      "id": "C2-P25-Q1",
+      "type": "scenario",
+      "difficulty": "advanced",
+      "question": "A light show manufacturer purchases a certified Class IIIb projector from another company. How should they report the projector in their light show report?",
+      "options": [
+        "Submit a complete new product report for the projector",
+        "Reference the projector manufacturer's existing report",
+        "No reporting needed for purchased equipment",
+        "Submit only an Annual Report mention"
+      ],
+      "correct_answer": 1,
+      "explanation": "If the projector was purchased and is certified by its manufacturer, the light show manufacturer may provide information concerning the projector by reference to the manufacturer's report on the projector.",
+      "learning_objective": "Apply reporting guide usage",
+      "regulatory_reference": "Appendix B - Reporting Guide Usage"
+    },
+    {
+      "id": "C2-P25-Q2",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Who must have an approved variance for a laser light show using Class IIIb/IV projectors?",
+      "options": [
+        "Only the projector manufacturer",
+        "Only the laser light show manufacturer",
+        "Both projector and light show manufacturers (unless same company)",
+        "The venue owner only"
+      ],
+      "correct_answer": 2,
+      "explanation": "If different entities: projector manufacturer needs variance to certify Class IIIb/IV projector; light show manufacturer needs variance to certify the show. If same company, one variance covers both.",
+      "learning_objective": "Understand variance coverage requirements",
+      "regulatory_reference": "Appendix B - Variance Coverage"
+    }
+  ]
+}

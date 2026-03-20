@@ -1,0 +1,510 @@
+{
+  "course": "Course 7: Event Safety Planning",
+  "module": "Quiz Questions",
+  "generated_at": "2026-03-19",
+  "quiz_categories": {
+    "planning_scenarios": {
+      "title": "Planning Scenario Questions",
+      "questions": [
+        {
+          "id": "PS-001",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "According to the Event Safety Guide, when should an organizer confirm the event date with public service agencies?",
+          "options": [
+            "After tickets go on sale",
+            "Before promoting or going on sale with the event",
+            "One week before the event",
+            "Only for events over 10,000 capacity"
+          ],
+          "correct_answer": 1,
+          "rationale": "Section 2.1.4 states organizers should not promote or go on sale before confirming date/time with community public service agencies to ensure resource availability.",
+          "reference": "Event Safety Guide, Section 2.1.4"
+        },
+        {
+          "id": "PS-002",
+          "type": "multiple_choice",
+          "difficulty": "beginner",
+          "question": "What is the first critical step in developing a comprehensive safety and health program?",
+          "options": [
+            "Hiring security staff",
+            "Purchasing insurance",
+            "Identifying physical and health hazards through hazard/risk assessment",
+            "Installing fire extinguishers"
+          ],
+          "correct_answer": 2,
+          "rationale": "Section 2.9.1 states that identifying physical and health hazards at the work site through a hazard/risk assessment is the first critical step.",
+          "reference": "Event Safety Guide, Section 2.9.1"
+        },
+        {
+          "id": "PS-003",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "What are the four key elements of successful health and safety management?",
+          "options": [
+            "Security, lighting, barriers, and signage",
+            "Creating policy, developing plan, organizing management structure, and analyzing performance",
+            "Fire safety, medical, crowd control, and weather monitoring",
+            "Training, equipment, personnel, and budget"
+          ],
+          "correct_answer": 1,
+          "rationale": "Section 2.2.1 lists: creating a health and safety policy, developing an event-specific plan, organizing an effective management structure, and analyzing/reviewing performance.",
+          "reference": "Event Safety Guide, Section 2.2.1"
+        },
+        {
+          "id": "PS-004",
+          "type": "multiple_choice",
+          "difficulty": "advanced",
+          "question": "In a life safety evaluation, which of the following is NOT one of the conditions that must be assessed?",
+          "options": [
+            "Nature of events and associated risks",
+            "Estimated concession sales revenue",
+            "Emergency response capability",
+            "Fire safety measures"
+          ],
+          "correct_answer": 1,
+          "rationale": "Section 2.17.2 lists required assessments: nature of events, access/egress, structural integrity, fire safety, emergency communication, and emergency response. Revenue is not listed.",
+          "reference": "Event Safety Guide, Section 2.17.2"
+        },
+        {
+          "id": "PS-005",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "What is the maximum recommended travel distance to a portable fire extinguisher?",
+          "options": [
+            "25 feet",
+            "50 feet",
+            "75 feet",
+            "100 feet"
+          ],
+          "correct_answer": 1,
+          "rationale": "Section 4.6.8 states that generally, the maximum travel distance to an extinguisher should be 50 feet (15.24 m).",
+          "reference": "Event Safety Guide, Section 4.6.8"
+        },
+        {
+          "id": "PS-006",
+          "type": "multiple_choice",
+          "difficulty": "advanced",
+          "question": "What does an extinguisher rating of '1-A:10-B:C' mean?",
+          "options": [
+            "1 pound of chemical for class A, 10 pounds for class B and C",
+            "1.25 gallons water equivalent on Class A, 10 sq ft Class B capability",
+            "1 minute discharge time for Class A, 10 minutes for B and C",
+            "1 meter range for Class A, 10 meter range for B and C"
+          ],
+          "correct_answer": 1,
+          "rationale": "Section 4.6.5 explains: number before A × 1.25 = gallons of water equivalent. Number before B = square feet of Class B fire an ordinary user should be able to extinguish.",
+          "reference": "Event Safety Guide, Section 4.6.5"
+        },
+        {
+          "id": "PS-007",
+          "type": "true_false",
+          "difficulty": "beginner",
+          "question": "Outsourcing event execution relieves organizers of their legal obligations for safety.",
+          "correct_answer": false,
+          "rationale": "Section 2.3.6 states that even when outsourcing, organizers do not relieve themselves of legal obligations and remain responsible for contractor/subcontractor compliance.",
+          "reference": "Event Safety Guide, Section 2.3.6"
+        },
+        {
+          "id": "PS-008",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "What is the minimum height for exit sign lettering that must be seen from distances greater than 100 feet?",
+          "options": [
+            "4 inches",
+            "6 inches",
+            "8 inches",
+            "12 inches"
+          ],
+          "correct_answer": 2,
+          "rationale": "Section 4.3.4.4 states that exit signs that must be seen from greater than 100 feet should be at least 8 inches (0.2032 m) in height.",
+          "reference": "Event Safety Guide, Section 4.3.4.4"
+        },
+        {
+          "id": "PS-009",
+          "type": "multiple_choice",
+          "difficulty": "advanced",
+          "question": "According to NIMS/ICS, who has overall incident management responsibility?",
+          "options": [
+            "Event organizer",
+            "Police chief",
+            "Incident Commander (IC)",
+            "Fire marshal"
+          ],
+          "correct_answer": 2,
+          "rationale": "Appendix A and Section 3 describe ICS structure where the Incident Commander has overall incident management responsibility.",
+          "reference": "Event Safety Guide, Appendix A and Section 3"
+        },
+        {
+          "id": "PS-010",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "What is the minimum width requirement for stairways serving as means of egress?",
+          "options": [
+            "24 inches",
+            "30 inches",
+            "36 inches",
+            "48 inches"
+          ],
+          "correct_answer": 2,
+          "rationale": "Section 4.3.3.8 states stairways must have a width of not less than 36 inches (0.914 m).",
+          "reference": "Event Safety Guide, Section 4.3.3.8"
+        }
+      ]
+    },
+    "assessment_checklist": {
+      "title": "Assessment Checklist Questions",
+      "questions": [
+        {
+          "id": "AC-001",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "What certification is required for tents and membrane structures before a permit will be issued?",
+          "options": [
+            "ISO 9001 quality certification",
+            "NFPA 701 flame propagation certification",
+            "OSHA 10-hour training certificate",
+            "ANSI Z136 laser safety certification"
+          ],
+          "correct_answer": 1,
+          "rationale": "Section 4.3.3.4 states that fire authorities require NFPA 701 certification certifying flame propagation performance before issuing permits for tents.",
+          "reference": "Event Safety Guide, Section 4.3.3.4"
+        },
+        {
+          "id": "AC-002",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "What is the minimum headroom clearance required for egress stairways?",
+          "options": [
+            "72 inches (6 feet)",
+            "80 inches",
+            "84 inches (7 feet)",
+            "96 inches (8 feet)"
+          ],
+          "correct_answer": 1,
+          "rationale": "Section 4.3.3.8 states stairways must have minimum headroom clearance of not less than 80 inches (2.032 m).",
+          "reference": "Event Safety Guide, Section 4.3.3.8"
+        },
+        {
+          "id": "AC-003",
+          "type": "multiple_choice",
+          "difficulty": "advanced",
+          "question": "At what height must guy lines and support members for tents cross over means of egress?",
+          "options": [
+            "6 feet",
+            "7 feet",
+            "8 feet (2.438 m)",
+            "10 feet"
+          ],
+          "correct_answer": 2,
+          "rationale": "Section 4.3.3.7 states guy lines, guy ropes and support members must not cross means of egress at height less than 8 feet (2.438 m).",
+          "reference": "Event Safety Guide, Section 4.3.3.7"
+        },
+        {
+          "id": "AC-004",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "What is the maximum running slope for a ramp that IS part of a means of egress?",
+          "options": [
+            "1:8 (12.5%)",
+            "1:10 (10%)",
+            "1:12 (8%)",
+            "1:20 (5%)"
+          ],
+          "correct_answer": 2,
+          "rationale": "Section 4.3.3.10 states maximum running slope for egress ramp must not exceed 1:12 (8% slope).",
+          "reference": "Event Safety Guide, Section 4.3.3.10"
+        },
+        {
+          "id": "AC-005",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "For ramps serving means of egress, what is the minimum landing size at top and bottom?",
+          "options": [
+            "48 inches by 48 inches",
+            "60 inches (1.525 m) by width of ramp",
+            "72 inches by 72 inches",
+            "Same width as ramp, 36 inches long"
+          ],
+          "correct_answer": 1,
+          "rationale": "Section 4.3.3.10 states ramps must have landings at least as wide as the ramp and at least 60 inches (1.525 m) long at bottom and top.",
+          "reference": "Event Safety Guide, Section 4.3.3.10"
+        },
+        {
+          "id": "AC-006",
+          "type": "true_false",
+          "difficulty": "beginner",
+          "question": "Fire doors protecting exits may be propped open during events if monitored by staff.",
+          "correct_answer": false,
+          "rationale": "Section 4.3.3.12 states fire doors protecting exits should not be propped or blocked open as they are specially constructed fire-resistant doors.",
+          "reference": "Event Safety Guide, Section 4.3.3.12"
+        },
+        {
+          "id": "AC-007",
+          "type": "multiple_choice",
+          "difficulty": "advanced",
+          "question": "Where Class D fires (combustible metals) are present, how close must an appropriate extinguisher be?",
+          "options": [
+            "Within 30 feet",
+            "Within 50 feet",
+            "Within 75 feet (22.860 m)",
+            "Within 100 feet"
+          ],
+          "correct_answer": 2,
+          "rationale": "Section 4.6.9 states where flammable solids such as magnesium are processed, an appropriate Class D extinguisher must be within 75 feet (22.860 m).",
+          "reference": "Event Safety Guide, Section 4.6.9"
+        },
+        {
+          "id": "AC-008",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "What is the definition of 'means of egress'?",
+          "options": [
+            "Any door that leads outside",
+            "Continuous and unobstructed path from any occupied portion to a public way",
+            "Fire exits only",
+            "Main entrance and emergency exits"
+          ],
+          "correct_answer": 1,
+          "rationale": "Section 4.2.11 defines means of egress as a continuous and unobstructed path of vertical and horizontal egress travel from any occupied portion to a public way.",
+          "reference": "Event Safety Guide, Section 4.2.11"
+        }
+      ]
+    },
+    "emergency_response": {
+      "title": "Emergency Response Questions",
+      "questions": [
+        {
+          "id": "ER-001",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "What is the difference between a 'minor incident' and a 'major incident'?",
+          "options": [
+            "Minor incidents have no injuries, major incidents have injuries",
+            "Minor incidents can be managed through routine arrangements; major incidents require special arrangements",
+            "Minor incidents are under $10,000 damage, major incidents exceed $10,000",
+            "Minor incidents are handled by venue staff, major incidents require police"
+          ],
+          "correct_answer": 1,
+          "rationale": "Section 3.2.2 defines minor incidents as manageable through routine arrangements, while major incidents require special/non-routine arrangements and resources.",
+          "reference": "Event Safety Guide, Section 3.2.2"
+        },
+        {
+          "id": "ER-002",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "Who typically coordinates the on-site response once a major incident is declared?",
+          "options": [
+            "Event organizer",
+            "Fire department",
+            "Police",
+            "Incident Commander"
+          ],
+          "correct_answer": 2,
+          "rationale": "Section 3.5.1 states that once a major incident is declared, police will coordinate and facilitate the on-site and off-site response.",
+          "reference": "Event Safety Guide, Section 3.5.1"
+        },
+        {
+          "id": "ER-003",
+          "type": "multiple_choice",
+          "difficulty": "advanced",
+          "question": "In triage, which category receives priority for immediate treatment?",
+          "options": [
+            "Minor (Green) - walking wounded",
+            "Delayed (Yellow) - serious but stable",
+            "Immediate (Red) - life-threatening",
+            "Deceased (Black) - no signs of life"
+          ],
+          "correct_answer": 2,
+          "rationale": "Immediate (Red) category includes life-threatening conditions like severe bleeding and airway obstruction requiring immediate care.",
+          "reference": "Emergency Protocols - Mass Casualty Triage"
+        },
+        {
+          "id": "ER-004",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "What should be done if a telephone bomb threat is received?",
+          "options": [
+            "Hang up immediately and evacuate",
+            "Keep caller on line and use Bomb Threat Checklist",
+            "Tell the caller you don't believe them",
+            "Transfer to security immediately"
+          ],
+          "correct_answer": 1,
+          "rationale": "Section 3.12.3.1 states to keep caller on line as long as possible and use Bomb Threat Checklist to record details for police evaluation.",
+          "reference": "Event Safety Guide, Section 3.12.3.1"
+        },
+        {
+          "id": "ER-005",
+          "type": "true_false",
+          "difficulty": "intermediate",
+          "question": "In an active threat situation, running should be your first option if a safe escape route is available.",
+          "correct_answer": true,
+          "rationale": "The Run-Hide-Fight protocol recommends running as the first option when a safe escape route is available.",
+          "reference": "Emergency Protocols - Active Threat/Violence"
+        },
+        {
+          "id": "ER-006",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "Who has the authority to decide whether to evacuate due to a bomb threat?",
+          "options": [
+            "Only the police can decide",
+            "Event organizer (unless police have specific information)",
+            "Fire marshal",
+            "Building owner"
+          ],
+          "correct_answer": 1,
+          "rationale": "Section 3.12.3.2 states police will advise on validity, but generally the decision to evacuate rests with the event organizer unless police have specific information.",
+          "reference": "Event Safety Guide, Section 3.12.3.2"
+        },
+        {
+          "id": "ER-007",
+          "type": "multiple_choice",
+          "difficulty": "advanced",
+          "question": "What is the first priority when responding to a medical emergency?",
+          "options": [
+            "Call 911 immediately",
+            "Begin CPR",
+            "Assess scene safety",
+            "Move the victim to first aid station"
+          ],
+          "correct_answer": 2,
+          "rationale": "Scene safety assessment is always the first step before approaching any victim to prevent additional casualties.",
+          "reference": "Emergency Protocols - Medical Emergency"
+        },
+        {
+          "id": "ER-008",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "At what lightning distance should outdoor activities be suspended?",
+          "options": [
+            "Within 3 miles",
+            "Within 5 miles",
+            "Within 8 miles",
+            "Only when visible"
+          ],
+          "correct_answer": 2,
+          "rationale": "Weather Decision Trigger Chart indicates lightning within 8 miles requires immediate retreat to designated shelters.",
+          "reference": "Weather Decision Trigger Chart"
+        },
+        {
+          "id": "ER-009",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "What should NOT be used to extinguish a Class B (flammable liquid) fire?",
+          "options": [
+            "Dry chemical extinguisher",
+            "Carbon dioxide extinguisher",
+            "Foam extinguisher",
+            "Solid stream of water"
+          ],
+          "correct_answer": 3,
+          "rationale": "Section 4.4.3.4 states a solid stream of water should never be used on Class B fires as it can scatter fuel and spread the fire.",
+          "reference": "Event Safety Guide, Section 4.4.3.4"
+        },
+        {
+          "id": "ER-010",
+          "type": "multiple_choice",
+          "difficulty": "advanced",
+          "question": "Which of the following is NOT a recommended action during the 'Hide' phase of Run-Hide-Fight?",
+          "options": [
+            "Lock and barricade doors",
+            "Silence cell phones",
+            "Remain quiet",
+            "Call 911 immediately"
+          ],
+          "correct_answer": 3,
+          "rationale": "Calling 911 during hiding may reveal your location. The protocol recommends silencing phones and remaining quiet.",
+          "reference": "Emergency Protocols - Active Threat/Violence"
+        }
+      ]
+    },
+    "crowd_management": {
+      "title": "Crowd Management Questions",
+      "questions": [
+        {
+          "id": "CM-001",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "What crowd density is considered critical and requires immediate action?",
+          "options": [
+            "1 person per 10 sq ft",
+            "1 person per 7 sq ft",
+            "1 person per 5 sq ft",
+            "1 person per 15 sq ft"
+          ],
+          "correct_answer": 2,
+          "rationale": "At 1 person per 5 sq ft, crowd density is considered dangerous and requires immediate action to prevent crush conditions.",
+          "reference": "Crowd Management - Density Measurements"
+        },
+        {
+          "id": "CM-002",
+          "type": "multiple_choice",
+          "difficulty": "advanced",
+          "question": "What is the crush threshold density?",
+          "options": [
+            "1 person per 5 sq ft",
+            "1 person per 4 sq ft",
+            "1 person per 3.5 sq ft",
+            "1 person per 2 sq ft"
+          ],
+          "correct_answer": 2,
+          "rationale": "The crush threshold is 1 person per 3.5 sq ft (0.33 m²) - at this density entry must be stopped immediately.",
+          "reference": "Crowd Management - Density Measurements"
+        },
+        {
+          "id": "CM-003",
+          "type": "multiple_choice",
+          "difficulty": "intermediate",
+          "question": "For general admission standing areas, what is the recommended steward-to-patron ratio?",
+          "options": [
+            "1 per 500 patrons",
+            "1 per 250 patrons",
+            "1 per 100-150 patrons",
+            "1 per 50 patrons"
+          ],
+          "correct_answer": 2,
+          "rationale": "For general admission standing areas, the guideline is 1 steward per 100-150 patrons.",
+          "reference": "Crowd Management - Staffing Ratios"
+        },
+        {
+          "id": "CM-004",
+          "type": "true_false",
+          "difficulty": "beginner",
+          "question": "Stage barriers should be designed to be climbable for better crowd engagement.",
+          "correct_answer": false,
+          "rationale": "Stage barriers should be non-climbable in design to prevent crowd members from climbing over them.",
+          "reference": "Crowd Management - Barrier Management"
+        },
+        {
+          "id": "CM-005",
+          "type": "multiple_choice",
+          "difficulty": "advanced",
+          "question": "What is the first action to take when a crowd surge is detected?",
+          "options": [
+            "Immediately evacuate the entire venue",
+            "Stop the event or performance if necessary",
+            "Call the police",
+            "Turn up the music to calm the crowd"
+          ],
+          "correct_answer": 1,
+          "rationale": "When crowd surge is detected, stopping the event or performance may be necessary to prevent escalation to crush conditions.",
+          "reference": "Crowd Management - Dangerous Conditions"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "total_questions": 35,
+    "difficulty_distribution": {
+      "beginner": 7,
+      "intermediate": 20,
+      "advanced": 8
+    },
+    "type_distribution": {
+      "multiple_choice": 31,
+      "true_false": 4
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "course": "course-2",
+  "page_number": 4,
+  "quiz_items": [
+    {
+      "id": "C2-P4-Q1",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Under which Act and chapter are laser product regulations established?",
+      "options": [
+        "Federal Food, Drug, and Cosmetic Act (FFDCA), Chapter III",
+        "Federal Food, Drug, and Cosmetic Act (FFDCA), Chapter V, Subchapter C",
+        "Radiation Control for Health and Safety Act, Chapter II",
+        "Occupational Safety and Health Act, Section 5"
+      ],
+      "correct_answer": 1,
+      "explanation": "Laser product regulations are established under the Federal Food, Drug and Cosmetic Act (FFDCA), Chapter V, Subchapter C - Electronic Product Radiation Control.",
+      "learning_objective": "Understand legal basis for regulation",
+      "regulatory_reference": "FFDCA Chapter V, Subchapter C"
+    },
+    {
+      "id": "C2-P4-Q2",
+      "type": "fill_in_blank",
+      "difficulty": "advanced",
+      "question": "According to 21 CFR 1040.10(b)(19), a laser produces electromagnetic radiation in the wavelength range from ______ nm to ______ nm.",
+      "correct_answer": "180 to 1 x 10^6 (or 1,000,000)",
+      "explanation": "The regulation defines a laser as a device capable of producing electromagnetic radiation in the wavelength range from 180 to 1 x 10^6 nanometers (1 million nm) by controlled stimulated emission.",
+      "learning_objective": "Know regulatory definition of laser",
+      "regulatory_reference": "21 CFR 1040.10(b)(19)"
+    },
+    {
+      "id": "C2-P4-Q3",
+      "type": "scenario",
+      "difficulty": "advanced",
+      "question": "A company modifies existing laser products by adding new control software. Under 21 CFR 1040.10(i), is this company considered a manufacturer?",
+      "options": [
+        "Yes, because they are modifying laser products",
+        "No, because they are only changing software",
+        "Only if the modification affects laser output power",
+        "Only if they also manufacture the original hardware"
+      ],
+      "correct_answer": 0,
+      "explanation": "Under 21 CFR 1040.10(i), a manufacturer includes any person or organization modifying laser products. Software modifications that affect laser operation would qualify the company as a manufacturer with associated regulatory responsibilities.",
+      "learning_objective": "Apply manufacturer definition",
+      "regulatory_reference": "21 CFR 1040.10(i), 1000.3(f)"
+    }
+  ]
+}

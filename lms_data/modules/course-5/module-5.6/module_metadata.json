@@ -1,0 +1,24 @@
+{
+  "id": "c5-m6",
+  "title": "International Show Documentation",
+  "description": "Comprehensive guide to preparing documentation packages for international laser show deployments.",
+  "pdfPath": "/docs/course-5-international/international-show-docs.pdf",
+  "keyTakeaways": [
+    "International shows require advance planning and comprehensive documentation",
+    "Documentation must often be provided in local languages",
+    "Equipment export may require compliance certificates and import licenses",
+    "Temporary import procedures vary significantly by country"
+  ],
+  "estimatedMinutes": 15,
+  "interactiveComponents": [
+    "OverseasShowPlanner",
+    "DocumentationChecklistGenerator",
+    "PermitCalculator"
+  ],
+  "learningObjectives": [
+    "Prepare comprehensive documentation packages for international shows",
+    "Navigate temporary equipment import procedures",
+    "Calculate permit requirements by destination country",
+    "Plan international show timelines with regulatory considerations"
+  ]
+}

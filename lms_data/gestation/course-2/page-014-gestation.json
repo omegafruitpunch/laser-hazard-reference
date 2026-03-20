@@ -1,0 +1,56 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 14,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "User information requirements",
+      "Product literature requirements",
+      "Servicing information requirements",
+      "Laser Notice #39 for multi-axis workstations",
+      "MPE boundary identification"
+    ],
+    "key_terms": [
+      {
+        "term": "User Information",
+        "definition": "Operating instructions with warnings in user manual"
+      },
+      {
+        "term": "Servicing Information",
+        "definition": "Service procedures with exposure warnings"
+      },
+      {
+        "term": "Laser Notice #39",
+        "definition": "Requirements for multi-axis robotic high-power workstations"
+      },
+      {
+        "term": "MPE",
+        "definition": "Maximum Permissible Exposure - safe exposure limits"
+      },
+      {
+        "term": "Radiation Specifications",
+        "definition": "Output power/energy values in product documentation"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.10(h)(1) - User information",
+      "21 CFR 1040.10(h)(2) - Product literature and servicing info",
+      "Laser Notice #39 - Multi-axis workstation requirements"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Compile required user manual content",
+      "Create servicing documentation",
+      "Apply Laser Notice #39 requirements",
+      "Determine MPE boundaries for workstations"
+    ],
+    "prerequisites": [
+      "Technical writing skills",
+      "Pages 6-13 content"
+    ],
+    "estimated_study_time_minutes": 25,
+    "content_type": "informational_requirements",
+    "has_tables": false
+  }
+}

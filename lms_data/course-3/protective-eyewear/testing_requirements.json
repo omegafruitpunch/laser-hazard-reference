@@ -1,0 +1,162 @@
+{
+  "testing_id": "eyewear-testing-standards",
+  "title": "Laser Protective Eyewear Testing Requirements",
+  "version": "1.0",
+  "regulatory_standards": {
+    "ansi_z136_1": {
+      "title": "ANSI Z 136.1 - Safe Use of Lasers",
+      "scope": "User requirements for eyewear selection and use",
+      "requirements": [
+        "Eyewear must be labeled with OD and wavelength",
+        "Eyewear must be appropriate for laser parameters",
+        "Regular inspection required"
+      ]
+    },
+    "ansi_z87_1": {
+      "title": "ANSI Z87.1 - Occupational Eye and Face Protection",
+      "scope": "General eye protection requirements",
+      "requirements": [
+        "Impact resistance testing",
+        "Optical clarity standards",
+        "Frame durability"
+      ]
+    },
+    "en_207": {
+      "title": "EN 207 - European Standard for Laser Eyewear",
+      "scope": "European laser protection requirements",
+      "scale_numbers": {
+        "description": "EN 207 uses scale numbers (D, I, R, M) with wavelength ranges",
+        "durability_levels": [
+          "D - Continuous wave (CW) lasers",
+          "I - Pulsed lasers",
+          "R - Q-switched lasers", 
+          "M - Mode-locked lasers"
+        ],
+        "scale_1_to_10": "Higher numbers = higher protection levels"
+      }
+    },
+    "en_208": {
+      "title": "EN 208 - European Standard for Alignment Eyewear",
+      "scope": "Eyewear for laser alignment procedures",
+      "requirement": "Allows visible laser light for alignment while providing protection"
+    }
+  },
+  "manufacturer_testing": {
+    "spectral_transmittance": {
+      "test": "Measure transmission at specified wavelengths",
+      "requirement": "Transmission must be below 10^(-OD) at rated wavelength",
+      "verification": "Spectrophotometer measurement"
+    },
+    "damage_threshold": {
+      "test": "Exposure to high-power laser to verify damage resistance",
+      "requirement": "Eyewear must withstand rated power/energy without degradation",
+      "method": "Controlled exposure testing per EN 207/ANSI standards"
+    },
+    "impact_resistance": {
+      "test": "Impact testing per ANSI Z87.1",
+      "requirements": {
+        "basic_impact": "Drop ball test (1 inch steel ball from 50 inches)",
+        "high_impact": "High mass impact test (500g projectile from 130cm)"
+      }
+    },
+    "optical_quality": {
+      "test": "Verification of optical clarity",
+      "requirements": [
+        "No visible defects (bubbles, scratches, inclusions)",
+        "Refractive power within limits",
+        "Prismatic deviation within limits",
+        "Abrasion resistance (coatings)"
+      ]
+    }
+  },
+  "field_testing": {
+    "visual_inspection": {
+      "frequency": "Before each use and daily",
+      "checklist": [
+        "Check for cracks in lenses",
+        "Check for scratches that could affect vision",
+        "Verify frame integrity",
+        "Check for discoloration or damage to filters",
+        "Verify all labeling is legible"
+      ]
+    },
+    "transmission_verification": {
+      "description": "Portable laser power meter testing",
+      "method": "Compare power with and without eyewear",
+      "calculation": "OD = log10(P0/P_transmitted)",
+      "frequency": "Periodic (monthly or per facility protocol)"
+    },
+    "fit_testing": {
+      "description": "Ensure proper fit for each user",
+      "checks": [
+        "No gaps between frame and face",
+        "Side shields provide adequate coverage",
+        "Temples grip securely without pressure points",
+        "Does not interfere with other PPE"
+      ]
+    }
+  },
+  "certification_markings": {
+    "required_labeling": {
+      "OD_value": "Optical Density at specified wavelength",
+      "wavelength_range": "Wavelength(s) of protection in nm or μm",
+      "manufacturer": "Manufacturer name or trademark",
+      "model_number": "Specific model identification",
+      "standards_compliance": "ANSI Z87.1, EN 207, etc."
+    },
+    "example_labels": [
+      "OD 5+ @ 1064 nm",
+      "OD 6+ @ 532 nm / OD 7+ @ 1064 nm",
+      "EN 207: 1064 D LB5"
+    ],
+    "placement": "Labels must be permanent and clearly visible"
+  },
+  "acceptance_testing": {
+    "new_purchase": {
+      "documentation_review": [
+        "Verify manufacturer test data",
+        "Check wavelength coverage matches requirement",
+        "Verify OD ratings meet calculated needs",
+        "Confirm compliance with applicable standards"
+      ],
+      "physical_inspection": [
+        "Inspect for manufacturing defects",
+        "Verify labeling is complete and legible",
+        "Test fit with intended users",
+        "Verify comfort for extended wear"
+      ]
+    }
+  },
+  "periodic_testing_schedule": {
+    "daily_user_inspection": {
+      "responsibility": "Individual user",
+      "actions": ["Visual check for damage", "Cleanliness check", "Label legibility"]
+    },
+    "monthly_inspection": {
+      "responsibility": "Supervisor/LSO",
+      "actions": [
+        "Detailed visual inspection",
+        "Fit verification",
+        "Documentation review"
+      ]
+    },
+    "annual_verification": {
+      "responsibility": "LSO or qualified personnel",
+      "actions": [
+        "Transmission testing if equipment available",
+        "Replacement consideration",
+        "Inventory update"
+      ]
+    }
+  },
+  "failure_criteria": {
+    "immediate_removal": [
+      "Cracked or chipped lenses",
+      "Delamination of filter layers",
+      "Frame damage affecting fit",
+      "Illegible or missing labels",
+      "Transmission measurement shows degraded OD"
+    ],
+    "disposal": "Damaged eyewear must be destroyed to prevent accidental reuse"
+  }
+}

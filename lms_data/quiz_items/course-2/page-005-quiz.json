@@ -1,0 +1,49 @@
+{
+  "course": "course-2",
+  "page_number": 5,
+  "quiz_items": [
+    {
+      "id": "C2-P5-Q1",
+      "type": "multiple_select",
+      "difficulty": "advanced",
+      "question": "Which of the following are required responsibilities of laser product manufacturers under FDA regulations? (Select all that apply)",
+      "options": [
+        "Design and manufacture products to comply with the standard",
+        "Submit Annual Reports to CDRH by September 1 each year",
+        "Report accidental radiation occurrences",
+        "Conduct quarterly safety inspections at customer sites"
+      ],
+      "correct_answer": [0, 1, 2],
+      "explanation": "Manufacturers must: design/manufacture for compliance, test products, certify compliance, maintain records, submit reports (including Annual Reports), report accidental radiation occurrences, report defects/noncompliances, and conduct recalls when necessary. Quarterly customer site inspections are not a specific regulatory requirement.",
+      "learning_objective": "Know manufacturer responsibilities",
+      "regulatory_reference": "21 CFR 1040.10, 1002.10, 1002.13, 1003"
+    },
+    {
+      "id": "C2-P5-Q2",
+      "type": "true_false",
+      "difficulty": "intermediate",
+      "question": "OEM laser products (components sold to other manufacturers) are completely exempt from all FDA reporting requirements.",
+      "options": ["True", "False"],
+      "correct_answer": 1,
+      "explanation": "False. While OEM products have reduced requirements, manufacturers must still register and submit minimal information including product name, model number, and laser medium or wavelength per 21 CFR 1040.10(a)(3).",
+      "learning_objective": "Understand OEM requirements",
+      "regulatory_reference": "21 CFR 1040.10(a)(3)"
+    },
+    {
+      "id": "C2-P5-Q3",
+      "type": "scenario",
+      "difficulty": "advanced",
+      "question": "A U.S. company manufactures laser products exclusively for export to Europe and labels them 'For Export Only - Not for Use in USA.' The products comply with EU regulations but not 21 CFR 1040.10. Is this compliant?",
+      "options": [
+        "No, all lasers manufactured in the U.S. must comply with 21 CFR 1040.10",
+        "Yes, if labeled as export-only and complying with importing country requirements",
+        "Only if the company also obtains a variance from CDRH",
+        "Only if the lasers are Class I or II"
+      ],
+      "correct_answer": 1,
+      "explanation": "Products intended only for export, properly labeled as such, and complying with the importing country's requirements are exempt from the standard per 21 CFR 1010.20.",
+      "learning_objective": "Apply export-only provisions",
+      "regulatory_reference": "21 CFR 1010.20"
+    }
+  ]
+}

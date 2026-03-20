@@ -1,0 +1,213 @@
+{
+  "quiz_id": "quiz-state-federal-jurisdiction",
+  "title": "State and Federal Jurisdiction Quiz",
+  "source_document": "state-federal-jurisdiction.pdf",
+  "passing_score": 80,
+  "questions": [
+    {
+      "id": "qj_001",
+      "type": "multiple_choice",
+      "question": "Under which clause does Federal OSHA enforce laser safety standards?",
+      "options": [
+        "Specific Laser Safety Clause of 29 CFR 1926",
+        "General Duty Clause of 29 CFR 1910",
+        "FLPPS Mandate of 21 CFR 1040",
+        "ANSI Adoption Clause"
+      ],
+      "correct_answer": 1,
+      "explanation": "Federal OSHA uses the General Duty Clause of 29 CFR 1910 to enforce laser safety 'best practices' since there is no specific laser interlock requirement.",
+      "category": "jurisdiction",
+      "difficulty": "easy"
+    },
+    {
+      "id": "qj_002",
+      "type": "multiple_choice",
+      "question": "Which document does OSHA reference when enforcing laser safety standards?",
+      "options": [
+        "FDA 21 CFR 1040 only",
+        "OSHA 29 CFR 1926",
+        "ANSI Z136.1-2014 and related sub-chapters",
+        "State-specific laser codes"
+      ],
+      "correct_answer": 2,
+      "explanation": "OSHA references ANSI Z136.1-2014 and related ANSI Z136 sub-chapters for enforcement. They may refer to FDA codes under 21 CFR 1040 if problems are found.",
+      "category": "standards",
+      "difficulty": "easy"
+    },
+    {
+      "id": "qj_003",
+      "type": "multiple_choice",
+      "question": "Which FDA center is responsible for laser product regulations?",
+      "options": [
+        "Center for Drug Evaluation and Research (CDER)",
+        "Center for Biologics Evaluation and Research (CBER)",
+        "Center for Devices and Radiological Health (CDRH)",
+        "Center for Food Safety and Applied Nutrition (CFSAN)"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Center for Devices and Radiological Health (CDRH) is responsible for laser product mandates released as federal code in Title 21 CFR.",
+      "category": "jurisdiction",
+      "difficulty": "easy"
+    },
+    {
+      "id": "qj_004",
+      "type": "multiple_choice",
+      "question": "In which 21 CFR section are performance standards for laser product manufacturing found?",
+      "options": [
+        "21 CFR 1000-1005",
+        "21 CFR 1010",
+        "21 CFR 1040.10",
+        "21 CFR 1040.11"
+      ],
+      "correct_answer": 2,
+      "explanation": "21 CFR 1040.10 contains performance standards for manufacture of laser products, including interlocks, labeling, and power classification.",
+      "category": "regulations",
+      "difficulty": "medium"
+    },
+    {
+      "id": "qj_005",
+      "type": "multiple_choice",
+      "question": "Which 21 CFR section covers specific use laser products such as medical and survey lasers?",
+      "options": [
+        "21 CFR 1000-1005",
+        "21 CFR 1010",
+        "21 CFR 1040.10",
+        "21 CFR 1040.11"
+      ],
+      "correct_answer": 3,
+      "explanation": "21 CFR 1040.11 covers performance standards for specific use laser products including medical, survey, leveling, alignment, and demonstration lasers.",
+      "category": "regulations",
+      "difficulty": "medium"
+    },
+    {
+      "id": "qj_006",
+      "type": "true_false",
+      "question": "State OSHA programs are required to have specific laser interlock requirements.",
+      "correct_answer": false,
+      "explanation": "State OSHA may or may not specifically address Laser Interlocks - it depends on the individual state. There is no universal requirement.",
+      "category": "jurisdiction",
+      "difficulty": "medium"
+    },
+    {
+      "id": "qj_007",
+      "type": "multiple_choice",
+      "question": "What happens when a facility fully adopts ANSI Z136.1?",
+      "options": [
+        "They are exempt from FLPPS requirements",
+        "They are effectively adopting FLPPS",
+        "They must only follow state OSHA requirements",
+        "They no longer need Laser Safety Officer oversight"
+      ],
+      "correct_answer": 1,
+      "explanation": "A facility that fully adopts ANSI Z136.1 is effectively adopting FLPPS because most FLPPS requirements are repeated in section 4.3 of the ANSI standard.",
+      "category": "standards",
+      "difficulty": "medium"
+    },
+    {
+      "id": "qj_008",
+      "type": "multiple_select",
+      "question": "Which ANSI Z136.1-2014 sections contain FLPPS specifications expected in commercially certified products? (Select all that apply)",
+      "options": [
+        "Section 4.3.1",
+        "Section 4.3.5.1",
+        "Section 4.3.10",
+        "Section 4.3.14"
+      ],
+      "correct_answers": [0, 1, 3],
+      "explanation": "Sections 4.3.1, 4.3.2, 4.3.3, 4.3.4, 4.3.5.1, 4.3.7, 4.3.8, and 4.3.14 contain FLPPS specifications expected to exist in commercially certified products.",
+      "category": "standards",
+      "difficulty": "hard"
+    },
+    {
+      "id": "qj_009",
+      "type": "true_false",
+      "question": "There is a federal legal mandate requiring end users to use the remote interlock connectors on Class 3B and Class 4 lasers.",
+      "correct_answer": false,
+      "explanation": "While manufacturers are mandated to provide external interlocks, there is NO federal legal mandate requiring end users to actually use them. The connectors typically come electrically shorted from the manufacturer.",
+      "category": "regulations",
+      "difficulty": "hard"
+    },
+    {
+      "id": "qj_010",
+      "type": "multiple_choice",
+      "question": "What is the typical state of the interlock connector when received from the manufacturer?",
+      "options": [
+        "Open circuit requiring immediate connection",
+        "Electrically shorted",
+        "Connected to an emergency stop system",
+        "Disabled pending LSO approval"
+      ],
+      "correct_answer": 1,
+      "explanation": "The interlock connector typically comes from the manufacturer in an electrically shorted state, allowing operation without an external interlock system.",
+      "category": "practical",
+      "difficulty": "medium"
+    },
+    {
+      "id": "qj_011",
+      "type": "scenario",
+      "question": "Scenario: Your company purchases a Class 4 laser for in-house manufacturing. The interlock connector is shorted. What is your responsibility as the Laser Safety Officer?",
+      "options": [
+        "Nothing - the manufacturer compliance is sufficient",
+        "Verify FLPPS requirements exist and ensure proper interlock configuration",
+        "Contact FDA for a variance",
+        "Request a refund from the manufacturer"
+      ],
+      "correct_answer": 1,
+      "explanation": "The LSO must monitor and enforce laser safety issues, verify FLPPS requirements exist upon receipt, and ensure proper interlock configuration despite no federal mandate to use them.",
+      "category": "scenario",
+      "difficulty": "hard"
+    },
+    {
+      "id": "qj_012",
+      "type": "multiple_choice",
+      "question": "Why is there no federal mandate for end users to use remote interlocks?",
+      "options": [
+        "It was determined to be too expensive",
+        "There are thousands of possible laser applications",
+        "OSHA and FDA have conflicting jurisdiction",
+        "ANSI standards already cover all use cases"
+      ],
+      "correct_answer": 1,
+      "explanation": "There are thousands of possible laser applications, making a one-size-fits-all mandate impractical. Responsibility shifts to the LSO to determine when interlocks are appropriate.",
+      "category": "regulations",
+      "difficulty": "hard"
+    },
+    {
+      "id": "qj_013",
+      "type": "matching",
+      "question": "Match the regulatory body with its primary jurisdiction:",
+      "pairs": [
+        {"item": "FDA CDRH", "match": "Manufacturers of laser products"},
+        {"item": "Federal OSHA", "match": "Employers using lasers in workplace"},
+        {"item": "ANSI", "match": "Industry best practices and standards"}
+      ],
+      "explanation": "FDA regulates manufacturers, OSHA regulates employers in the workplace, and ANSI provides the voluntary consensus standards referenced by both.",
+      "category": "jurisdiction",
+      "difficulty": "medium"
+    },
+    {
+      "id": "qj_014",
+      "type": "multiple_choice",
+      "question": "What should be done with FLPPS specifications when a laser is built in-house?",
+      "options": [
+        "Only follow ANSI Z136.1",
+        "Full compliance is expected",
+        "Request exemption from state OSHA",
+        "Follow manufacturer guidelines only"
+      ],
+      "correct_answer": 1,
+      "explanation": "When a laser or laser system is built in-house, full FLPPS compliance is expected, just as it would be for a commercially manufactured product.",
+      "category": "practical",
+      "difficulty": "hard"
+    },
+    {
+      "id": "qj_015",
+      "type": "true_false",
+      "question": "21 CFR 1040.10 is a useful reference for end users building Class 1 enclosures around Class 3B or Class 4 laser systems.",
+      "correct_answer": true,
+      "explanation": "True. In addition to manufacturer requirements, 21 CFR 1040.10 is a useful reference for end users building their own Class 1 enclosures around higher-class laser systems.",
+      "category": "practical",
+      "difficulty": "medium"
+    }
+  ]
+}

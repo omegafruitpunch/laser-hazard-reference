@@ -1,0 +1,188 @@
+{
+  "component_id": "ael_explorer",
+  "name": "AEL Table Explorer",
+  "version": "1.0.0",
+  "type": "interactive_table",
+  "description": "Interactive exploration of Accessible Emission Limits (AELs) for laser classification",
+  "pedagogical_approach": {
+    "concept_first": true,
+    "progressive_disclosure": true,
+    "visual_guidance": true
+  },
+  "configuration": {
+    "initial_view": {
+      "wavelength_range": "visible",
+      "laser_class": "all",
+      "exposure_type": "cw"
+    },
+    "filtering": {
+      "wavelength_ranges": [
+        {"id": "uv", "label": "Ultraviolet (180-400 nm)", "color": "#8b5cf6"},
+        {"id": "visible", "label": "Visible (400-700 nm)", "color": "#22c55e"},
+        {"id": "near_ir", "label": "Near-Infrared (700-1400 nm)", "color": "#ef4444"},
+        {"id": "mid_ir", "label": "Mid-Infrared (1400-3000 nm)", "color": "#f97316"},
+        {"id": "far_ir", "label": "Far-Infrared (>3000 nm)", "color": "#eab308"}
+      ],
+      "laser_classes": [
+        {"id": "1", "label": "Class 1", "hazard_level": "minimal"},
+        {"id": "1M", "label": "Class 1M", "hazard_level": "minimal_with_optics"},
+        {"id": "2", "label": "Class 2", "hazard_level": "low"},
+        {"id": "2M", "label": "Class 2M", "hazard_level": "low_with_optics"},
+        {"id": "3R", "label": "Class 3R", "hazard_level": "moderate"},
+        {"id": "3B", "label": "Class 3B", "hazard_level": "high"},
+        {"id": "4", "label": "Class 4", "hazard_level": "very_high"}
+      ],
+      "exposure_types": [
+        {"id": "cw", "label": "Continuous Wave (CW)"},
+        {"id": "pulsed", "label": "Pulsed"},
+        {"id": "single_pulse", "label": "Single Pulse"}
+      ]
+    }
+  },
+  "data_tables": {
+    "visible_cw": {
+      "wavelength_range": "400-700 nm",
+      "exposure_type": "CW",
+      "columns": ["Class", "AEL (Power)", "AEL (Irradiance)", "Notes"],
+      "rows": [
+        {
+          "class": "Class 1",
+          "ael_power": "≤ 0.39 mW",
+          "ael_irradiance": "≤ 1.0 mW/cm²",
+          "notes": "Safe under all conditions"
+        },
+        {
+          "class": "Class 2",
+          "ael_power": "≤ 1.0 mW",
+          "ael_irradiance": "≤ 1.0 mW/cm²",
+          "notes": "Safe due to blink reflex (0.25s)"
+        },
+        {
+          "class": "Class 3R",
+          "ael_power": "≤ 5.0 mW",
+          "ael_irradiance": "≤ 5.0 mW/cm²",
+          "notes": "Low risk, avoid direct viewing"
+        },
+        {
+          "class": "Class 3B",
+          "ael_power": "≤ 500 mW",
+          "ael_irradiance": "Varies",
+          "notes": "Direct viewing hazardous"
+        },
+        {
+          "class": "Class 4",
+          "ael_power": "> 500 mW",
+          "ael_irradiance": "Varies",
+          "notes": "All exposure hazardous"
+        }
+      ]
+    },
+    "near_ir_cw": {
+      "wavelength_range": "700-1400 nm",
+      "exposure_type": "CW",
+      "columns": ["Class", "AEL (Power)", "Correction Factor", "Notes"],
+      "rows": [
+        {
+          "class": "Class 1",
+          "ael_power": "≤ 0.39-1.95 mW",
+          "correction": "CA (wavelength dependent)",
+          "notes": "CA = 1.0 at 700nm, 5.0 at 1050-1400nm"
+        },
+        {
+          "class": "Class 3R",
+          "ael_power": "≤ 2.0-10.0 mW",
+          "correction": "5× Class 1 AEL",
+          "notes": "Invisible - no blink protection"
+        },
+        {
+          "class": "Class 3B",
+          "ael_power": "≤ 500 mW",
+          "correction": "None",
+          "notes": "Retinal hazard region - focused on retina"
+        }
+      ]
+    },
+    "uv_pulsed": {
+      "wavelength_range": "180-400 nm",
+      "exposure_type": "Single Pulse",
+      "columns": ["Class", "AEL (Energy)", "Exposure Duration", "Notes"],
+      "rows": [
+        {
+          "class": "Class 1",
+          "ael_energy": "Varies by wavelength",
+          "duration": "< 1 ns to > 1000 s",
+          "notes": "Corneal hazard - UV absorbed by eye surface"
+        },
+        {
+          "class": "Class 3R",
+          "ael_energy": "5× Class 1 AEL",
+          "duration": "Same",
+          "notes": "Photochemical damage mechanism"
+        }
+      ]
+    }
+  },
+  "interactive_features": {
+    "cell_highlighting": {
+      "description": "Hover over cells to see detailed explanations",
+      "enabled": true
+    },
+    "comparison_mode": {
+      "description": "Compare AELs between classes",
+      "enabled": true,
+      "max_selection": 3
+    },
+    "wavelength_slider": {
+      "description": "Visual wavelength selector with spectrum display",
+      "enabled": true,
+      "range": [180, 1400],
+      "unit": "nm"
+    },
+    "safety_margin_visualizer": {
+      "description": "Visual representation of safety margins between AEL and MPE",
+      "enabled": true
+    }
+  },
+  "teaching_elements": {
+    "concept_explanations": {
+      "ael_definition": {
+        "title": "What is AEL?",
+        "content": "Accessible Emission Limit (AEL) is the maximum level of laser radiation that a product in a given class is permitted to emit. It serves as the boundary line between laser classes.",
+        "visual": "ael_boundary_diagram"
+      },
+      "class_comparison": {
+        "title": "Understanding Class Boundaries",
+        "content": "Each class has specific AEL boundaries. Class 1 has the lowest AEL (safest), while Class 4 has the highest. The M and R suffixes modify these boundaries based on specific conditions.",
+        "visual": "class_hierarchy_chart"
+      }
+    },
+    "worked_examples": [
+      {
+        "title": "Classifying a 5mW Red Laser Pointer",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Identify wavelength",
+            "detail": "650 nm (visible red light)"
+          },
+          {
+            "step": 2,
+            "action": "Check Class 2 AEL",
+            "detail": "Class 2 AEL = 1.0 mW for visible CW"
+          },
+          {
+            "step": 3,
+            "action": "Check Class 3R AEL",
+            "detail": "Class 3R AEL = 5.0 mW (5× Class 2)"
+          },
+          {
+            "step": 4,
+            "action": "Determine class",
+            "detail": "5 mW = exactly at Class 3R boundary → Class 3R"
+          }
+        ],
+        "conclusion": "A 5 mW, 650 nm CW laser is at the upper limit of Class 3R."
+      }
+    ]
+  }
+}

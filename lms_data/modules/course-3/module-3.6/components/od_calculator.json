@@ -1,0 +1,313 @@
+{
+  "component_id": "od_calculator",
+  "name": "OD Calculator",
+  "version": "1.0.0",
+  "type": "calculation_tool",
+  "description": "Calculate required optical density for laser protective eyewear",
+  "pedagogical_approach": {
+    "step_by_step_calculation": true,
+    "show_formula_derivation": true,
+    "visualize_logarithm": true,
+    "explain_safety_margin": true
+  },
+  "input_sections": {
+    "laser_parameters": {
+      "title": "Step 1: Laser Parameters",
+      "fields": [
+        {
+          "id": "wavelength",
+          "label": "Wavelength",
+          "type": "slider_with_number",
+          "unit": "nm",
+          "min": 180,
+          "max": 11000,
+          "default": 532,
+          "visual": "spectrum_bar_with_hazard_region"
+        },
+        {
+          "id": "power",
+          "label": "Laser Power (CW)",
+          "type": "number_with_unit",
+          "unit_options": ["mW", "W"],
+          "default": 100,
+          "default_unit": "mW",
+          "help_text": "Total output power of the laser"
+        },
+        {
+          "id": "beam_diameter",
+          "label": "Beam Diameter at Eye Position",
+          "type": "number_with_unit",
+          "unit": "mm",
+          "default": 7,
+          "min": 0.1,
+          "max": 50,
+          "help_text": "Use 7 mm (dilated pupil) for worst-case scenario"
+        },
+        {
+          "id": "beam_profile",
+          "label": "Beam Profile",
+          "type": "radio_button",
+          "options": [
+            {"id": "gaussian", "label": "Gaussian (TEM₀₀)", "description": "Standard laser beam"},
+            {"id": "uniform", "label": "Uniform/Top-hat", "description": "Even distribution"},
+            {"id": "unknown", "label": "Unknown", "description": "Use conservative assumption"}
+          ],
+          "default": "gaussian"
+        }
+      ]
+    },
+    "exposure_conditions": {
+      "title": "Step 2: Exposure Conditions",
+      "fields": [
+        {
+          "id": "exposure_duration",
+          "label": "Maximum Exposure Duration",
+          "type": "radio_with_custom",
+          "options": [
+            {"value": 0.25, "label": "0.25 s", "description": "Blink reflex (accidental)"},
+            {"value": 10, "label": "10 s", "description": "Momentary viewing"},
+            {"value": 600, "label": "10 min", "description": "Brief task"},
+            {"value": 30000, "label": "8 hours", "description": "Workday exposure"}
+          ],
+          "default": 0.25,
+          "custom_enabled": true,
+          "custom_unit": "seconds"
+        },
+        {
+          "id": "exposure_type",
+          "label": "Exposure Type",
+          "type": "radio_button",
+          "options": [
+            {"id": "intrabeam", "label": "Intrabeam (Direct)", "description": "Most conservative"},
+            {"id": "specular", "label": "Specular Reflection", "description": "Mirror-like reflection"},
+            {"id": "diffuse", "label": "Diffuse Reflection", "description": "Scattered reflection"}
+          ],
+          "default": "intrabeam"
+        }
+      ]
+    },
+    "mpe_options": {
+      "title": "Step 3: MPE Options",
+      "description": "Calculate or enter MPE manually",
+      "fields": [
+        {
+          "id": "mpe_mode",
+          "label": "MPE Input Method",
+          "type": "radio_button",
+          "options": [
+            {"id": "auto", "label": "Calculate Automatically", "description": "Use built-in MPE tables"},
+            {"id": "manual", "label": "Enter Manually", "description": "Use value from external calculation"}
+          ],
+          "default": "auto"
+        },
+        {
+          "id": "manual_mpe",
+          "label": "MPE Value",
+          "type": "number_with_unit",
+          "unit_options": ["mW/cm²", "W/cm²", "mJ/cm²", "J/cm²"],
+          "conditional_display": "mpe_mode == 'manual'"
+        }
+      ]
+    }
+  },
+  "calculation_logic": {
+    "step_1_irradiance": {
+      "title": "Calculate Actual Irradiance",
+      "formula": "E = Power / Area",
+      "area_calculation": {
+        "gaussian": "Area = π × (d/2)² × 0.5",
+        "uniform": "Area = π × (d/2)²",
+        "note": "Gaussian correction factor accounts for peak vs average"
+      },
+      "unit_conversion": {
+        "power_to_mw": "Convert all power to mW",
+        "area_to_cm2": "Convert diameter to cm, calculate area in cm²"
+      }
+    },
+    "step_2_mpe": {
+      "title": "Determine MPE",
+      "reference": "IEC 60825-1 Table A.1",
+      "auto_calculation": {
+        "enabled": true,
+        "use_mpe_calculator_logic": true
+      }
+    },
+    "step_3_ratio": {
+      "title": "Calculate Attenuation Ratio",
+      "formula": "Ratio = E_actual / MPE",
+      "interpretation": "How many times the actual exposure exceeds the safe limit"
+    },
+    "step_4_od": {
+      "title": "Calculate Required OD",
+      "formula": "OD = log₁₀(Ratio)",
+      "explanation": "Logarithm converts the ratio to orders of magnitude",
+      "visualization": {
+        "type": "log_scale_slider",
+        "show_ratio_position": true,
+        "mark_od_levels": true
+      }
+    },
+    "step_5_rounding": {
+      "title": "Apply Safety Margin",
+      "rule": "Round UP to next integer OD",
+      "justification": [
+        "Compensates for calculation uncertainties",
+        "Accounts for eyewear degradation",
+        "Provides margin for unexpected conditions",
+        "Ensures compliance with standards"
+      ]
+    }
+  },
+  "output_display": {
+    "primary_result": {
+      "title": "Required Optical Density",
+      "display_type": "large_badge",
+      "show_exact_value": true,
+      "show_rounded_value": true,
+      "color_coding": {
+        "od_1_3": {"color": "#22c55e", "label": "Low OD"},
+        "od_4_5": {"color": "#f59e0b", "label": "Medium OD"},
+        "od_6_plus": {"color": "#dc2626", "label": "High OD"}
+      }
+    },
+    "calculation_steps": {
+      "title": "Calculation Steps",
+      "display_order": [
+        "input_summary",
+        "irradiance_calculation",
+        "mpe_lookup",
+        "ratio_calculation",
+        "od_calculation",
+        "final_recommendation"
+      ],
+      "expandable_details": true
+    },
+    "visual_representations": {
+      "attenuation_visual": {
+        "type": "stacked_bars",
+        "show": ["E_actual", "E_after_OD", "MPE"],
+        "scale": "logarithmic"
+      },
+      "od_scale_marker": {
+        "type": "numbered_scale",
+        "range": [0, 10],
+        "mark_calculated": true,
+        "mark_rounded": true,
+        "show_transmission_percentages": true
+      }
+    },
+    "reference_table": {
+      "title": "OD Reference Table",
+      "columns": ["OD", "Transmission", "Attenuation", "Typical Use"],
+      "highlight_row": "calculated_od"
+    }
+  },
+  "worked_examples": [
+    {
+      "title": "532 nm, 100 mW HeNe-style Laser",
+      "inputs": {
+        "wavelength": 532,
+        "power": 100,
+        "power_unit": "mW",
+        "beam_diameter": 7,
+        "exposure_duration": 0.25,
+        "exposure_type": "intrabeam"
+      },
+      "steps": [
+        {
+          "description": "Calculate beam area",
+          "calculation": "Area = π × (0.35 cm)² = 0.385 cm²",
+          "result": "0.385 cm²"
+        },
+        {
+          "description": "Calculate actual irradiance",
+          "calculation": "E = 100 mW / 0.385 cm²",
+          "result": "260 mW/cm²"
+        },
+        {
+          "description": "Look up MPE",
+          "calculation": "MPE = 1.8 × 0.25^0.75 × 10^-3 J/cm² / 0.25s",
+          "result": "2.56 mW/cm²"
+        },
+        {
+          "description": "Calculate ratio",
+          "calculation": "260 / 2.56",
+          "result": "101.6"
+        },
+        {
+          "description": "Calculate OD",
+          "calculation": "log₁₀(101.6)",
+          "result": "2.01"
+        },
+        {
+          "description": "Round up with safety margin",
+          "result": "OD 3"
+        }
+      ],
+      "final_answer": "OD 3 minimum (OD 4 recommended for safety margin)"
+    },
+    {
+      "title": "1064 nm, 10 W Nd:YAG Laser",
+      "inputs": {
+        "wavelength": 1064,
+        "power": 10,
+        "power_unit": "W",
+        "beam_diameter": 5,
+        "exposure_duration": 0.25,
+        "exposure_type": "intrabeam"
+      },
+      "steps": [
+        {
+          "description": "Calculate beam area",
+          "calculation": "Area = π × (0.25 cm)² = 0.196 cm²",
+          "result": "0.196 cm²"
+        },
+        {
+          "description": "Calculate actual irradiance",
+          "calculation": "E = 10,000 mW / 0.196 cm²",
+          "result": "51,000 mW/cm²"
+        },
+        {
+          "description": "Look up MPE with CA=5",
+          "calculation": "MPE = 5 × 2.56 mW/cm²",
+          "result": "12.8 mW/cm²"
+        },
+        {
+          "description": "Calculate ratio",
+          "calculation": "51,000 / 12.8",
+          "result": "3,984"
+        },
+        {
+          "description": "Calculate OD",
+          "calculation": "log₁₀(3,984)",
+          "result": "3.6"
+        },
+        {
+          "description": "Round up",
+          "result": "OD 4"
+        }
+      ],
+      "final_answer": "OD 4 minimum (OD 5-7 typical for Class 4)",
+      "note": "High-power lasers typically require OD 6-7 to account for diffuse reflection hazards"
+    }
+  ],
+  "validation": {
+    "input_checks": {
+      "wavelength_range": {"min": 180, "max": 11000},
+      "power_positive": true,
+      "beam_diameter_reasonable": {"min": 0.1, "max": 100}
+    },
+    "result_warnings": [
+      {
+        "condition": "calculated_od < 1",
+        "message": "OD less than 1 - verify if eyewear is actually needed",
+        "severity": "warning"
+      },
+      {
+        "condition": "calculated_od > 10",
+        "message": "Very high OD required - consider engineering controls instead",
+        "severity": "info"
+      }
+    ]
+  }
+}

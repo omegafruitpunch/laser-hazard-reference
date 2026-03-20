@@ -1,0 +1,28 @@
+{
+  "page_num": 1,
+  "source_pdf": "ocular-hazards.pdf",
+  "digestion": {
+    "summary": "OCULAR HAZARDS OF LASER RADIATION\n\nThe eye is the most vulnerable organ to laser injury due to its optical properties.\nThe cornea and lens focus light onto the retina, potentially concentrating laser ...",
+    "key_concepts": [
+      "eye anatomy",
+      "cornea",
+      "lens",
+      "retina"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "OCULAR HAZARDS OF LASER RADIATION\n\nThe eye is the most vulnerable organ to laser injury due to its optical properties.\nThe cornea and lens focus light onto the retina, potentially concentrating laser \nenergy by a factor of 100,000 or more.\n\nSTRUCTURE OF THE EYE RELEVANT TO LASER HAZARDS:\n\nCornea: Transparent outer layer, primary defense against UV and IR (wavelengths \noutside visible spectrum). Can absorb UV-B, UV-C, and far-infrared causing \n\"welder's flash\" or corneal burns.\n\nAqueous Humor: Clear fluid between cornea and lens, transmits most wavelengths.\n\nLens: Focuses light onto retina. UV-A accumulates here over time, contributing \nto cataract formation. Near-infrared can also damage the lens.\n\nVitreous Humor: Gel-like substance filling the eye chamber, transmits visible \nand near-infrared wavelengths.\n\nRetina: Light-sensitive tissue at back of eye containing photoreceptors (rods \nand cones). Most critical for visible and near-infrared laser wavelengths.\n",
+    "analogies": [
+      "The eye's focusing capability is like a magnifying glass concentrating sunlight - it amplifies laser power by 100,000x at the retina."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Always wear appropriate laser eyewear when working with Class 3B or Class 4 lasers.",
+      "UV laser exposure has cumulative effects similar to sun damage - use full coverage PPE."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.118191"
+}

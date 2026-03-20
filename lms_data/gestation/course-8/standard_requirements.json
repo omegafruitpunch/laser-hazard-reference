@@ -1,0 +1,215 @@
+{
+  "gestation_type": "Standard Requirements Extraction",
+  "course": "Course 8: Entertainment Technology Standards",
+  "standards_analyzed": [
+    "ANSI Z136 Series (via UK Safety of Display Lasers)",
+    "FDA 21 CFR 1040 (Laser Performance Standard)",
+    "ESTA/ANSI Standards Process"
+  ],
+  "requirements_by_category": {
+    "laser_classification": {
+      "source": "FDA 21 CFR 1040",
+      "requirements": [
+        {
+          "class": "Class I",
+          "power_limit": "<0.39 µW continuous",
+          "hazard_level": "No biological damage",
+          "applicability": "Inherently safe or fully enclosed"
+        },
+        {
+          "class": "Class II",
+          "power_limit": "<1 mW continuous",
+          "hazard_level": "Eye damage after long direct exposure",
+          "applicability": "Low power visible, blink reflex protection"
+        },
+        {
+          "class": "Class IIIa",
+          "power_limit": "1-5 mW visible",
+          "hazard_level": "Direct beam exposure injurious",
+          "applicability": "Momentary exposure generally safe"
+        },
+        {
+          "class": "Class IIIb",
+          "power_limit": "5-500 mW",
+          "hazard_level": "Immediate tissue injury",
+          "applicability": "Requires variance for entertainment"
+        },
+        {
+          "class": "Class IV",
+          "power_limit": ">500 mW",
+          "hazard_level": "Injury from direct, reflected, scattered",
+          "applicability": "Requires variance, strict controls"
+        }
+      ]
+    },
+    "variance_requirements": {
+      "source": "FDA 21 CFR 1040",
+      "mandatory_for": ["Class IIIb lasers in entertainment", "Class IV lasers in entertainment"],
+      "key_conditions": [
+        "Laser must meet class design/labeling requirements",
+        "Radiation cannot exceed Class I limits at audience locations",
+        "Scanning safeguards required for reflected beams",
+        "Performers cannot exceed Class I if must view beam",
+        "Separation distances: 3m vertical (attended) or 6m (unattended), 2.5m horizontal",
+        "Designated Laser Safety Officer with shutdown authority"
+      ],
+      "penalties": {
+        "civil_penalty_max": "$300,000",
+        "other": ["Court injunction", "Show shutdown"]
+      }
+    },
+    "mpe_requirements": {
+      "source": "ANSI Z136 / UK Safety of Display Lasers",
+      "exposure_categories": [
+        {
+          "category": "Audience",
+          "normal_operation": "Continuous, direct ocular, 10+ seconds",
+          "fault_condition": "Match safety system response time (minimum 10s)"
+        },
+        {
+          "category": "Employees",
+          "normal_operation": "Continuous, direct ocular, 10+ seconds",
+          "with_training": "0.25s aversion response for CW beams"
+        },
+        {
+          "category": "Performers",
+          "normal_operation": "As for employees with training",
+          "choreography": "Use stage movement to negate exposure risk"
+        }
+      ],
+      "measurement_requirements": [
+        "Confirmatory measurements for accessible beams",
+        "Scanning failure safety system verification",
+        "Worst-case exposure condition testing",
+        "On-site verification where personal exposure likely"
+      ]
+    },
+    "safety_systems": {
+      "source": "ANSI Z136",
+      "required_systems": [
+        {
+          "system": "Scan Failure Detection",
+          "purpose": "Auto-terminate emission upon scanner fault",
+          "performance": "Shutdown within few milliseconds",
+          "reliability": "Must not be sole safety measure"
+        },
+        {
+          "system": "Emergency Stop (E-stop)",
+          "purpose": "Manual shutdown capability",
+          "requirements": [
+            "Clearly identifiable and easily operated",
+            "Tested before each performance",
+            "Requires deliberate action to restart",
+            "Accessible to LSO at all times"
+          ]
+        },
+        {
+          "system": "Access Control",
+          "purpose": "Prevent unauthorized operation",
+          "methods": ["Pass key control", "Password entry", "Physical security"]
+        }
+      ]
+    },
+    "personnel_requirements": {
+      "source": "ANSI Z136 / FDA",
+      "roles": [
+        {
+          "role": "Laser Safety Officer (LSO)",
+          "responsibilities": [
+            "Evaluate and manage laser risks",
+            "Implement safety precautions",
+            "Executive authority (not advisory)",
+            "Pre-performance safety checks",
+            "Emergency response coordination"
+          ],
+          "qualifications": [
+            "Sufficient skills and knowledge",
+            "Experience in laser risk evaluation",
+            "Capability to implement safety measures"
+          ]
+        },
+        {
+          "role": "Laser Safety Adviser (LSA)",
+          "responsibilities": [
+            "Independent advisory role",
+            "Fundamental knowledge of laser hazards",
+            "Understand legal requirements"
+          ],
+          "limitations": "No executive mandate - advisory only"
+        },
+        {
+          "role": "Operator/Programmer",
+          "responsibilities": [
+            "Safe operation of laser effects",
+            "Daily/weekly alignment checks",
+            "Emergency procedure knowledge",
+            "Competency demonstration"
+          ]
+        }
+      ]
+    },
+    "notification_requirements": {
+      "source": "FDA / FAA",
+      "notifications": [
+        {
+          "authority": "FDA",
+          "timing": "30 days in advance",
+          "method": "Written (phone if last-minute)",
+          "requirement": "Mandatory for all Class IIIb/IV shows"
+        },
+        {
+          "authority": "FAA",
+          "timing": "2-4 weeks in advance",
+          "method": "Written to regional office",
+          "requirement": "Mandatory for outdoor shows"
+        },
+        {
+          "authority": "State/Local",
+          "timing": "In advance (varies)",
+          "method": "Varies by jurisdiction",
+          "requirement": "Check local requirements"
+        }
+      ]
+    },
+    "documentation_requirements": {
+      "source": "ANSI Z136",
+      "required_documents": [
+        "Risk assessment",
+        "MPE calculations and verification",
+        "Safety assessment flow documentation",
+        "Hand-over documentation",
+        "Pre-show check records",
+        "Sign-off documentation",
+        "Emergency procedures",
+        "Alignment check logs",
+        "Variance documentation (if applicable)"
+      ],
+      "hand_over_content": [
+        "Clear instructions on display controls",
+        "Details of permissible effects and constraints",
+        "Manual shutdown procedures",
+        "Automatic emergency shutdown systems info",
+        "Routine servicing procedures",
+        "Adjustment and alignment check procedures",
+        "Operator competency requirements",
+        "Supplier/LSO contact information",
+        "Special conditions"
+      ]
+    }
+  },
+  "cross_references": {
+    "ansi_z136_to_fda": [
+      "MPE values harmonized between standards",
+      "Classification systems aligned (with minor naming differences)",
+      "Safety officer requirements complementary"
+    ],
+    "esta_e146_context": [
+      "ESTA E1.46 provides entertainment-specific guidance",
+      "References ANSI Z136 for technical criteria",
+      "Adds venue/operator qualification requirements"
+    ]
+  },
+  "version": "1.0",
+  "generated_by": "PDF Elite Processor Agent #19",
+  "timestamp": "2026-03-19T15:46:00Z"
+}

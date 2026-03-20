@@ -1,0 +1,49 @@
+{
+  "id": "flpps-requirements",
+  "title": "Federal Laser Product Performance Standards (FLPPS)",
+  "source": "state-federal-jurisdiction.pdf",
+  "content": "FLPPS for Manufacturers:\n\nFLPPS (Federal Laser Product Performance Standards under 21 CFR 1040) applies to manufacturers offering laser products for sale in the United States. Key requirements include:\n\n- Laser housing interlocks\n- Remote electrical interlocks\n- Proper labeling\n- Power classification\n\nFLPPS for In-House Laser Construction:\n\nEvery effort should be made to meet the intent of FLPPS when a facility constructs a laser or laser enclosure for its own use. With increased availability of high-power laser diodes, individuals can construct Class 3B or Class 4 lasers without knowledge of laser physics or safety.\n\nANSI Z136.1 Adoption of FLPPS:\n\nA facility that fully adopts ANSI Z136.1 is effectively adopting FLPPS. Most FLPPS requirements are repeated (almost verbatim) in section 4.3 of ANSI Z136.1-2014.\n\nSpecific FLPPS sections in ANSI Z136.1:\nSections 4.3.1, 4.3.2, 4.3.3, 4.3.4, 4.3.5.1, 4.3.7, 4.3.8, and 4.3.14 are FLPPS specifications expected to exist as performance features in commercially certified products.\n\nVerification Requirements:\n\nThese items should be verified upon receipt of a laser and checked periodically. If the laser or system is built in-house, full compliance is expected.",
+  "plain_language_summary": "FLPPS is like the 'building code' for laser products. If you sell lasers, you must build them to this code. If you build lasers for your own use, you should still follow this code for safety.",
+  "flpps_requirements_breakdown": {
+    "laser_housing_interlocks": {
+      "requirement": "Housing must have interlocks that disable laser when opened",
+      "why": "Prevents accidental exposure during maintenance",
+      "applies_to": "Class 3B and Class 4 lasers"
+    },
+    "remote_electrical_interlocks": {
+      "requirement": "External connector for safety system integration",
+      "why": "Allows connection to door interlocks, E-stops, etc.",
+      "applies_to": "Class 3B and Class 4 lasers"
+    },
+    "labeling": {
+      "requirement": "Specific warning labels and classification markings",
+      "why": "Alerts users to hazards and proper precautions",
+      "applies_to": "All laser classes"
+    },
+    "power_classification": {
+      "requirement": "Product must be properly classified (Class 1, 2, 3R, 3B, 4)",
+      "why": "Ensures safety features match hazard level",
+      "applies_to": "All laser products"
+    }
+  },
+  "ansi_flpps_relationship": {
+    "key_insight": "A facility that fully adopts ANSI Z136.1 is effectively adopting FLPPS",
+    "why": "Most FLPPS requirements are repeated (almost verbatim) in ANSI Z136.1 section 4.3",
+    "benefit": "Following ANSI automatically ensures FLPPS compliance for end users",
+    "specific_sections": {
+      "description": "These ANSI sections contain FLPPS specifications expected in commercial products:",
+      "sections": ["4.3.1", "4.3.2", "4.3.3", "4.3.4", "4.3.5.1", "4.3.7", "4.3.8", "4.3.14"],
+      "action": "Verify these features exist upon receipt of laser; check periodically"
+    }
+  },
+  "in_house_construction_guidance": {
+    "warning": "With increased availability of high-power laser diodes, anyone can build Class 3B/4 lasers",
+    "risk": "Individuals can construct dangerous lasers without knowledge of laser physics or safety",
+    "requirement": "Every effort should be made to meet FLPPS intent for in-house construction",
+    "lso_role": "LSO must monitor and enforce safety for custom-built systems",
+    "compliance_level": "Full FLPPS compliance expected for in-house systems"
+  },
+  "key_concepts": ["FLPPS", "21 CFR 1040", "ANSI Z136.1 Section 4.3", "In-house laser construction", "Manufacturer compliance"],
+  "authority_level": "federal",
+  "difficulty": "advanced"
+}

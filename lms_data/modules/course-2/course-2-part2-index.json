@@ -1,0 +1,209 @@
+{
+  "course_id": "course-2",
+  "course_title": "FDA Compliance",
+  "course_part": 2,
+  "part_title": "Reporting, Variances, and Incident Management",
+  "version": "1.0.0",
+  "last_updated": "2026-03-19",
+  
+  "modules": [
+    {
+      "module_number": "2.4",
+      "module_id": "course-2-module-2.4",
+      "title": "Reporting Requirements (Product, Annual, Supplemental)",
+      "description": "Comprehensive coverage of FDA reporting requirements including Product Reports, Supplemental Reports, and Annual Reports under 21 CFR Part 1002.",
+      "file": "module-2.4/module-2.4-reporting-requirements.tsx",
+      "metadata": "module-2.4/module-2.4-metadata.json",
+      "assessment": "module-2.4/assessment-integration.tsx",
+      "duration_minutes": 45,
+      "difficulty": "intermediate",
+      "prerequisites": ["course-2-module-2.3"],
+      "interactive_components": [
+        {
+          "name": "Report Type Selector",
+          "type": "decision_tree",
+          "description": "Interactive decision tree for determining required report type"
+        },
+        {
+          "name": "Timeline Calculator",
+          "type": "calculator",
+          "description": "Calculate reporting deadlines based on product introduction dates"
+        },
+        {
+          "name": "Compliance Scenarios",
+          "type": "scenario",
+          "description": "Multi-step scenario exercises for reporting situations"
+        },
+        {
+          "name": "Report Checklist",
+          "type": "checklist",
+          "description": "Interactive checklist of required report elements"
+        }
+      ],
+      "cfr_references": [
+        "21 CFR 1002.10 - Product reports",
+        "21 CFR 1002.11 - Supplemental reports",
+        "21 CFR 1002.13 - Annual reports",
+        "FORM FDA 3632"
+      ]
+    },
+    {
+      "module_number": "2.5",
+      "module_id": "course-2-module-2.5",
+      "title": "Variance Applications",
+      "description": "Complete guide to FDA variance application procedures including Form FDA 3147 for demonstration lasers and alternate labeling/performance requests.",
+      "file": "module-2.5/module-2.5-variance-applications.tsx",
+      "metadata": "module-2.5/module-2.5-metadata.json",
+      "duration_minutes": 50,
+      "difficulty": "advanced",
+      "prerequisites": ["course-2-module-2.4"],
+      "interactive_components": [
+        {
+          "name": "Variance Type Selector",
+          "type": "selector",
+          "description": "Explore different variance types and requirements"
+        },
+        {
+          "name": "Form 3147 Simulator",
+          "type": "form_simulator",
+          "description": "Step-through of variance application form completion"
+        },
+        {
+          "name": "Variance Decision Flow",
+          "type": "decision_tree",
+          "description": "Determine if variance is needed for a situation"
+        },
+        {
+          "name": "Requirements Checklist",
+          "type": "checklist",
+          "description": "Application completeness verification"
+        },
+        {
+          "name": "Process Timeline",
+          "type": "timeline",
+          "description": "Variance application process with timing"
+        }
+      ],
+      "cfr_references": [
+        "21 CFR 1010.4 - Variance applications",
+        "21 CFR 1040.11(b) - Surveying/leveling/alignment",
+        "21 CFR 1040.11(c) - Demonstration laser products",
+        "FORM FDA 3147"
+      ]
+    },
+    {
+      "module_number": "2.6",
+      "module_id": "course-2-module-2.6",
+      "title": "Incident Reporting & State-Federal Jurisdiction",
+      "description": "Coverage of incident reporting requirements and the division of jurisdiction between FDA, OSHA, and state radiation control programs.",
+      "file": "module-2.6/module-2.6-incident-reporting-jurisdiction.tsx",
+      "metadata": "module-2.6/module-2.6-metadata.json",
+      "duration_minutes": 40,
+      "difficulty": "intermediate",
+      "prerequisites": ["course-2-module-2.4", "course-2-module-2.5"],
+      "interactive_components": [
+        {
+          "name": "Jurisdiction Mapper",
+          "type": "interactive_diagram",
+          "description": "Visual diagram of FDA/OSHA/State jurisdiction boundaries"
+        },
+        {
+          "name": "Incident Guide",
+          "type": "selector",
+          "description": "Determine reporting requirements by incident type"
+        },
+        {
+          "name": "Incident Scenarios",
+          "type": "scenario",
+          "description": "Test knowledge with realistic incident scenarios"
+        },
+        {
+          "name": "Reporting Timeline",
+          "type": "timeline",
+          "description": "Reporting deadlines for different incident types"
+        }
+      ],
+      "cfr_references": [
+        "21 CFR 1002.20 - Accidents",
+        "21 CFR 1003.10 - Notification of defects",
+        "21 CFR 1003.11 - Repair of defective products",
+        "29 CFR 1904 - OSHA recordkeeping"
+      ]
+    }
+  ],
+  
+  "part_assessment": {
+    "total_questions": 30,
+    "passing_score": 80,
+    "time_limit_minutes": 60,
+    "covers_modules": ["2.4", "2.5", "2.6"],
+    "question_distribution": {
+      "2.4": 10,
+      "2.5": 10,
+      "2.6": 10
+    }
+  },
+  
+  "completion_criteria": {
+    "all_modules_completed": true,
+    "part_assessment_passed": true,
+    "minimum_total_time_minutes": 120
+  },
+  
+  "learning_path": {
+    "recommended_order": ["2.4", "2.5", "2.6"],
+    "alternative_paths": [
+      {
+        "name": "Fast Track",
+        "description": "For experienced compliance professionals",
+        "modules": ["2.4", "2.6"],
+        "skip": ["2.5"],
+        "note": "Module 2.5 required only if working with demonstration lasers"
+      }
+    ]
+  },
+  
+  "resources": {
+    "documents": [
+      {
+        "title": "FORM FDA 3632",
+        "description": "Guide for Preparing Product Reports",
+        "path": "lms_data/extracted_content/course-2/fda-forms_extracted.json"
+      },
+      {
+        "title": "Laser Notice No. 50",
+        "description": "Guidance on IEC 60825-1 conformance",
+        "path": "lms_data/extracted_content/course-2/laser-notice-50_extracted.json"
+      }
+    ],
+    "quiz_banks": [
+      {
+        "title": "FDA Forms Quiz Bank",
+        "path": "lms_data/quiz_banks/course-2/fda-forms_quiz.json"
+      },
+      {
+        "title": "Laser Notice 50 Quiz Bank",
+        "path": "lms_data/quiz_banks/course-2/laser-notice-50_quiz.json"
+      }
+    ],
+    "knowledge_graphs": [
+      {
+        "title": "FDA Forms Knowledge Graph",
+        "path": "lms_data/knowledge_graphs/course-2/fda-forms_knowledge_graph.json"
+      },
+      {
+        "title": "Laser Notice 50 Knowledge Graph",
+        "path": "lms_data/knowledge_graphs/course-2/laser-notice-50_knowledge_graph.json"
+      }
+    ]
+  },
+  
+  "certification": {
+    "eligible_after_completion": true,
+    "certificate_title": "FDA Compliance - Reporting and Incident Management",
+    "continuing_education_credits": {
+      "credits": 3,
+      "organization": "Laser Safety Certification Board"
+    }
+  }
+}

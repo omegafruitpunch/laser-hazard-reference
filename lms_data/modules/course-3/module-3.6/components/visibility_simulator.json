@@ -1,0 +1,258 @@
+{
+  "component_id": "visibility_simulator",
+  "name": "Visibility Simulator",
+  "version": "1.0.0",
+  "type": "visual_simulation",
+  "description": "Simulate vision through different laser protective eyewear filters",
+  "pedagogical_approach": {
+    "visual_learning": true,
+    "compare_options": true,
+    "understand_trade_offs": true,
+    "empathy_for_users": true
+  },
+  "simulation_modes": {
+    "laboratory_scene": {
+      "name": "Laboratory Environment",
+      "description": "Typical laser lab with equipment and beam paths",
+      "image": "lab_scene.jpg",
+      "key_elements": [
+        {"id": "beam_path", "label": "Laser Beam Path", "type": "hazard_indicator"},
+        {"id": "equipment", "label": "Laser Equipment", "type": "work_target"},
+        {"id": "displays", "label": "Monitor Displays", "type": "visual_task"},
+        {"id": "signs", "label": "Safety Signage", "type": "visual_task"}
+      ]
+    },
+    "alignment_scene": {
+      "name": "Beam Alignment Task",
+      "description": "Aligning a laser beam through optics",
+      "image": "alignment_scene.jpg",
+      "key_elements": [
+        {"id": "beam_spot", "label": "Laser Beam Spot", "type": "work_target"},
+        {"id": "optics", "label": "Optical Components", "type": "work_target"},
+        {"id": "targets", "label": "Alignment Targets", "type": "work_target"}
+      ]
+    },
+    "control_panel_scene": {
+      "name": "Control Panel Operation",
+      "description": "Operating laser control panels and reading displays",
+      "image": "control_panel.jpg",
+      "key_elements": [
+        {"id": "lcd_display", "label": "LCD Display", "type": "visual_task"},
+        {"id": "led_indicators", "label": "LED Indicators", "type": "visual_task"},
+        {"id": "buttons", "label": "Control Buttons", "type": "work_target"}
+      ]
+    }
+  },
+  "eyewear_filters": {
+    "clear": {
+      "name": "No Filter (Clear)",
+      "od": 0,
+      "vlt": 100,
+      "color": "#ffffff",
+      "description": "No protection - reference view",
+      "use_case": "Reference only"
+    },
+    "uv_clear": {
+      "name": "UV Protection (Clear)",
+      "od": "6+ @ UV",
+      "vlt": 85,
+      "color": "#fffef8",
+      "description": "Nearly invisible UV protection",
+      "use_case": "UV lasers (248-355 nm)"
+    },
+    "amber_532": {
+      "name": "Amber (532 nm)",
+      "od": "7 @ 532",
+      "vlt": 45,
+      "color": "#ffb347",
+      "description": "Blocks green, transmits other colors",
+      "use_case": "Frequency-doubled Nd:YAG"
+    },
+    "blue_633": {
+      "name": "Blue (633 nm)",
+      "od": "6 @ 633",
+      "vlt": 35,
+      "color": "#6495ed",
+      "description": "Blocks red HeNe",
+      "use_case": "HeNe lasers"
+    },
+    "green_1064": {
+      "name": "Green (1064 nm)",
+      "od": "7 @ 1064",
+      "vlt": 25,
+      "color": "#228b22",
+      "description": "Blocks near-IR",
+      "use_case": "Nd:YAG lasers"
+    },
+    "orange_dual": {
+      "name": "Orange (532+1064)",
+      "od": "5+ @ both",
+      "vlt": 15,
+      "color": "#ff8c00",
+      "description": "Multi-wavelength protection",
+      "use_case": "Dual-wavelength labs"
+    },
+    "dark_broadband": {
+      "name": "Dark Broadband",
+      "od": "6+ @ wide range",
+      "vlt": 8,
+      "color": "#3d3d3d",
+      "description": "Broad protection, low visibility",
+      "use_case": "Multiple wavelength protection"
+    }
+  },
+  "visual_effects": {
+    "vlt_reduction": {
+      "type": "brightness_filter",
+      "implementation": "css_filter_brightness",
+      "formula": "brightness = VLT / 100"
+    },
+    "color_tint": {
+      "type": "color_overlay",
+      "implementation": "css_blend_mode",
+      "formula": "mix-blend-mode: multiply with filter color"
+    },
+    "contrast_reduction": {
+      "type": "contrast_filter",
+      "implementation": "css_filter_contrast",
+      "low_vlt_bonus": "Additional contrast reduction for VLT < 20%"
+    },
+    "color_discrimination": {
+      "type": "color_shift",
+      "affected_by": ["filter_color", "vlt"],
+      "severity_levels": {
+        "mild": {"vlt_range": [40, 100], "description": "Slight color shift"},
+        "moderate": {"vlt_range": [20, 40], "description": "Noticeable color distortion"},
+        "severe": {"vlt_range": [0, 20], "description": "Significant color discrimination loss"}
+      }
+    }
+  },
+  "interactive_features": {
+    "filter_selector": {
+      "type": "carousel",
+      "display_properties": ["name", "od", "vlt", "use_case"],
+      "show_color_swatch": true
+    },
+    "split_screen": {
+      "enabled": true,
+      "modes": [
+        {"id": "single", "label": "Single Filter"},
+        {"id": "split", "label": "Split Compare"},
+        {"id": "quad", "label": "Quad Compare"}
+      ]
+    },
+    "adjustable_lighting": {
+      "enabled": true,
+      "ambient_light": {
+        "min": 20,
+        "max": 100,
+        "default": 75,
+        "unit": "%",
+        "description": "Adjust room lighting to see compensation effects"
+      }
+    },
+    "task_performance_indicators": {
+      "enabled": true,
+      "tasks": [
+        {
+          "id": "read_display",
+          "name": "Read LCD Display",
+          "difficulty_by_vlt": {
+            "easy": [60, 100],
+            "moderate": [30, 60],
+            "difficult": [15, 30],
+            "very_difficult": [0, 15]
+          }
+        },
+        {
+          "id": "distinguish_colors",
+          "name": "Distinguish LED Colors",
+          "difficulty_by_filter": {
+            "uv_clear": "easy",
+            "amber_532": "easy",
+            "blue_633": "moderate",
+            "green_1064": "moderate",
+            "orange_dual": "difficult",
+            "dark_broadband": "very_difficult"
+          }
+        },
+        {
+          "id": "navigate_room",
+          "name": "Navigate Laboratory",
+          "difficulty_by_vlt": {
+            "easy": [40, 100],
+            "moderate": [20, 40],
+            "difficult": [10, 20],
+            "hazardous": [0, 10]
+          }
+        }
+      ]
+    }
+  },
+  "educational_content": {
+    "the_visibility_trade_off": {
+      "title": "Understanding the Visibility Trade-off",
+      "content": "Higher OD protection necessarily reduces visible light transmission. This creates a safety trade-off: excessive protection can reduce visibility enough to create new hazards (trips, errors, non-compliance).",
+      "key_points": [
+        "OD and VLT are inversely related",
+        "Minimum adequate OD is safer than maximum OD",
+        "Task lighting can compensate for reduced VLT",
+        "Different tasks require different visibility levels"
+      ]
+    },
+    "color_discrimination": {
+      "title": "Color Discrimination Effects",
+      "content": "Colored filters block their complementary colors. This affects ability to distinguish warning lights, wire colors, and display indicators.",
+      "examples": [
+        {
+          "filter": "Amber (blocks green)",
+          "affected_colors": ["Green LEDs become invisible", "Blue appears dark", "Red appears normal"]
+        },
+        {
+          "filter": "Blue (blocks red)",
+          "affected_colors": ["Red LEDs become invisible", "Green appears dark", "Blue appears normal"]
+        }
+      ]
+    },
+    "compensation_strategies": {
+      "title": "Compensating for Reduced Visibility",
+      "strategies": [
+        {
+          "strategy": "Increase ambient lighting",
+          "effectiveness": "High",
+          "implementation": "Add task lighting, increase room illumination"
+        },
+        {
+          "strategy": "Use alignment eyewear",
+          "effectiveness": "High",
+          "implementation": "Lower OD for alignment, higher OD for operation"
+        },
+        {
+          "strategy": "Digital displays",
+          "effectiveness": "Medium",
+          "implementation": "Use high-contrast displays, larger fonts"
+        },
+        {
+          "strategy": "Remote viewing",
+          "effectiveness": "Very High",
+          "implementation": "Cameras and monitors eliminate eyewear need"
+        }
+      ]
+    }
+  },
+  "comparison_tools": {
+    "side_by_side": {
+      "enabled": true,
+      "max_comparisons": 4,
+      "synchronization": {
+        "cursor_position": true,
+        "zoom_level": true,
+        "lighting_level": true
+      }
+    },
+    "specification_table": {
+      "enabled": true,
+      "columns": ["Filter", "OD", "VLT", "Pros", "Cons"]
+    }
+  }
+}

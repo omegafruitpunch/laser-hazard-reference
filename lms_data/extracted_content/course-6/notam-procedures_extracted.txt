@@ -1,0 +1,886 @@
+PDF: notam-procedures.pdf
+Total Pages: 3
+================================================================================
+
+--- Page 1 ---
+Words: 363, Images: 1
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+U.S. Department
+of Transportation 
+Federal Aviation 
+Administration 
+FAA Form 7140-1, Notice of Proposed Outdoor Laser Operation(s) 
+Who Should Complete and Submit This Form 
+Any person, entity, or proponent who plans to conduct outdoor laser operations with a visible laser 
+beam exceeding 50 nanowatts per square centimeter in navigable airspace or with any laser beam 
+(visible or non-visible) that exceeds the maximum permissible exposure in navigable airspace. FAA 
+encourages proponents to contact the applicable FAA service center for guidance. 
+Instructions to Complete 
+Consult FAA Advisory Circular (AC) 70-1 for detailed instructions to assist with completing and 
+submitting this form. Refer to FAA Order JO 7400.2, Chapter 29 for additional background 
+information. FAA provides public access to these documents via 
+https://www.faa.gov/regulations_policies. 
+Please print or type on this form and complete all sections prior to submission to the appropriate FAA 
+service center. To enhance clarity, use plain language and numbers, e.g., decimal notation (0.7277) 
+instead of scientific notation (72.77x10-2 or 72.77E-02). Failure to provide all requested information 
+may delay processing. 
+Paperwork Reduction Act Statement 
+A federal agency may not conduct or sponsor, and a person is not required to respond to, nor shall a person be subject to 
+a penalty for failure to comply with a collection of information subject to the requirements of the Paperwork Reduction Act 
+unless that collection of information displays a currently valid OMB control number. The OMB control number for this 
+information collection is 2120-0662. Public reporting for this collection of information is estimated to be approximately 240 
+minutes per response, including the time for reviewing instructions, searching existing data sources, gathering and 
+maintaining the data needed, completing, and reviewing the collection of information. 
+The Federal Aviation Administration (FAA) requires all responses to this collection of information if the proponent wishes 
+to obtain or retain benefits available per Title 21 Code of Federal Regulations Part 1010 if projecting into navigable 
+airspace. Send comments regarding this burden estimate or any other aspect of this collection of information, including 
+suggestions for reducing this burden to: Information Collection Clearance Officer, Federal Aviation Administration, 10101 
+Hillwood Parkway, Fort Worth, TX 76177-1524. 
+FAA Form 7140-1 approved July 2021 revised April 2022 (supersedes previous version) 
+Page i 
+
+
+================================================================================
+
+--- Page 2 ---
+Words: 233, Images: 1
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Form Approved OMB No 2120-0662 
+Expiration Date: 07/31/2024 
+Please print or type on this form. Failure to provide all requested information may delay processing. 
+U.S. Department of Transportation
+Federal Aviation Administration 
+Notice of Proposed Outdoor Laser Operation(s)
+1. General information 
+a. To 
+(FAA Service Center) 
+b. From (Proponent) 
+c. Name of event 
+or facility
+d. Date
+prepared 
+e. Customer 
+f. Site
+address 
+2. Date(s) and time(s) of laser operation 
+a. Testing and alignment 
+b. Operation 
+3. Brief description of laser operation 
+4. On-site operation information 
+a. Operator(s)
+b. On-site phone 1
+(primary) 
+c. On-site phone 2
+(secondary) 
+5. FDA/CDRH information (if applicable) 
+a. Variance #
+b. Variance
+expiration date 
+c. Accession # 
+6. Brief description of control measures 
+7. Attachments
+a. Number of laser configurations (state the total number of configurations and complete a Laser Configuration Worksheet (page 2) for each): 
+b. Attachments: List all attachments (example: maps, diagrams, control measure details, calculation details, or software printouts) 
+8. Designated contact person (if FAA requires further information) 
+a. Name 
+b. Position 
+c. Phone 
+d. Fax 
+e. E-mail 
+9. Statement of accuracy: To the best of my knowledge, the information provided in this form (all pages) and corresponding attachment(s) is accurate and correct 
+a. Name 
+b. Signature
+c. Position 
+d. Date 
+FAA Form 7140-1 approved July 2021 revised April 2022 (supersedes previous version) 
+Page 1 of 2 
+Print form
+Select the FAA Service Center
+SIGN
+
+
+================================================================================
+
+--- Page 3 ---
+Words: 457, Images: 0
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Form Approved OMB No 2120-0662 
+Expiration Date: 07/31/2024 
+Please print or type on this form. Failure to provide all requested information may delay processing. 
+Laser Configuration Worksheet
+10. Configuration information 
+a. Configuration number (example: 7 of 9): 
+of 
+b. Brief description of configuration 
+11. Geographic location 
+a. Site elevation, in feet mean sea level: 
+d. Information determined by: ☐ GPS ☐ Map (topo) ☐ Other:
+b. Laser height above site elevation, in feet above ground level: 
+e. Latitude: 
+degrees, 
+minutes, 
+seconds 
+c. Overall laser elevation (a) + (b), in feet mean sea level: 
+f. Longitude: 
+degrees, 
+minutes, 
+seconds 
+12. Beam characteristics and calculations (check only one mode of operation and fill in only that column) 
+Mode of Operation 
+☐Single pulse 
+☐Continuous wave 
+☐Repetitively pulsed 
+a. Laser and beam characteristics 
+Laser type 
+(example: CO2, diode, or Nd:YAG) 
+Laser hazard class 
+(example: Class 2, Class 3B, Class 4) 
+Power 
+Watts (W) 
+(not applicable) 
+(maximum power) 
+(average power ) 
+Pulse energy 
+Joules (J) 
+(not applicable) 
+Pulse duration 
+Seconds (s) 
+(not applicable) 
+Pulse repetition frequency (PRF) 
+Hertz (Hz) 
+(not applicable) 
+Beam diameter at 1/e points 
+Centimeters (cm) 
+Beam divergence 1/e at full angle 
+Milliradians (mrad) 
+Wavelength(s) 
+Nanometers (nm) 
+b. Maximum permissible exposure (MPE) values (use this value to calculate the NOHD) 
+MPE 
+Milliwatts per square cm (mW/cm2) 
+(not applicable) 
+MPE per pulse 
+Joules per square cm (J/cm2) 
+(not applicable) 
+c. Visual effect calculations 
+The following items are for lasers with visible wavelengths (400 nm to 700 nm). If the laser has no visible wavelengths, enter “N/A (non-visible laser)” in all blocks. 
+Pre-corrected power (PCP) 
+Watts (W) 
+Pulse energy (J) x 4 
+Maximum power (W) 
+Pulse energy (J) x PRF (Hz) 
+Visual Correction Factor (VCF) 
+Enter “1.0” or use FAA AC 70-1 Table 3 
+Visually Corrected Power 
+See FAA AC 70-1 
+13. Beam direction(s)
+a. Minimum elevation angle
+(degrees, where horizontal = 0 degrees) 
+c. Azimuth
+☐True north or 
+(degrees, least to greatest) 
+☐Magnetic north 
+b. Maximum elevation angle
+(degrees, where vertical = 90 degrees) 
+d. Magnetic declination
+(degrees, if using magnetic north) 
+14. Protection distances (fill in the entire NOHD row and the entire column for the applicable mode of operation) 
+Slant range (feet) 
+Horizontal distance (feet) 
+Vertical distance (feet) 
+a. NOHD (based on MPE value) 
+The following items are for lasers with visible wavelengths (400 nm to 700 nm). If the laser has no visible wavelengths, enter “N/A (non-visible laser)” in all blocks. 
+b. SZED (for 100 µW/cm2)
+c. CZED (for 5 µW/cm2)
+d. LFED (for 50 nW/cm2)
+15. Calculation method 
+☐Commercial software (enter product name and version below) or ☐ Other (describe method such as a spreadsheet or calculator below) 
+FAA Form 7140-1 approved July 2021 revised April 2022 (supersedes previous version) 
+Page 2 of 2 
+Print form
+0
+
+
+================================================================================
+

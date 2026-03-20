@@ -1,0 +1,17 @@
+{
+  "id": "skin-hazards_q008",
+  "type": "multiple_select",
+  "question": "Which factors increase the severity of laser skin injury? (Select all that apply)",
+  "options": [
+    "Smaller beam spot size",
+    "Higher power density",
+    "Lighter skin pigmentation",
+    "Longer exposure duration"
+  ],
+  "correct": [
+    0,
+    1,
+    3
+  ],
+  "explanation": "Smaller spot size reduces heat dissipation, higher power density increases temperature rise, and longer duration allows more energy deposition. Lighter skin is MORE vulnerable, not less."
+}

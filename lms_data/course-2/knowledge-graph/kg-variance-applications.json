@@ -1,0 +1,344 @@
+{
+  "graph_id": "course-2-kg-1",
+  "module_id": "course-2-module-1",
+  "title": "FDA Variance Applications Knowledge Graph",
+  "description": "Procedural knowledge graph for FDA variance application processes",
+  "nodes": [
+    {
+      "id": "variance_application",
+      "type": "process",
+      "label": "Variance Application Process",
+      "description": "Main process for requesting FDA approval for alternative compliance methods"
+    },
+    {
+      "id": "form_3147",
+      "type": "artifact",
+      "label": "Form FDA 3147",
+      "description": "Variance Application Form - Required for all variance requests"
+    },
+    {
+      "id": "form_3640",
+      "type": "artifact",
+      "label": "Form FDA 3640",
+      "description": "Laser Light Show Report - Detailed show safety information"
+    },
+    {
+      "id": "form_3632",
+      "type": "artifact",
+      "label": "Form FDA 3632",
+      "description": "Laser Product Report - Product specifications and testing data"
+    },
+    {
+      "id": "form_3636",
+      "type": "artifact",
+      "label": "Form FDA 3636",
+      "description": "Annual Report Form - Required by September 1st yearly"
+    },
+    {
+      "id": "light_show_producer",
+      "type": "entity",
+      "label": "Light Show Producer",
+      "description": "Entity that assembles laser light shows, considered a manufacturer"
+    },
+    {
+      "id": "laser_projector_manufacturer",
+      "type": "entity",
+      "label": "Laser Projector Manufacturer",
+      "description": "Entity that manufactures laser projection equipment"
+    },
+    {
+      "id": "lip_lili_manufacturer",
+      "type": "entity",
+      "label": "LIP/LILI Manufacturer",
+      "description": "Entity that manufactures laser-illuminated projectors or lighting instruments"
+    },
+    {
+      "id": "dealer_distributor",
+      "type": "entity",
+      "label": "Dealer/Distributor",
+      "description": "Entity that sells or distributes laser products"
+    },
+    {
+      "id": "lip_lili_user",
+      "type": "entity",
+      "label": "LIP/LILI User",
+      "description": "Entity that uses LIP/LILI equipment in permanent or temporary installations"
+    },
+    {
+      "id": "cdrh",
+      "type": "organization",
+      "label": "CDRH",
+      "description": "Center for Devices and Radiological Health - FDA division processing variance applications"
+    },
+    {
+      "id": "dms",
+      "type": "organization",
+      "label": "Dockets Management Staff",
+      "description": "FDA DMS - issues Docket numbers for variance applications"
+    },
+    {
+      "id": "original_application",
+      "type": "process_step",
+      "label": "Original Application",
+      "description": "First-time variance approval request"
+    },
+    {
+      "id": "renewal",
+      "type": "process_step",
+      "label": "Variance Renewal",
+      "description": "Extension of existing variance approval"
+    },
+    {
+      "id": "amendment",
+      "type": "process_step",
+      "label": "Variance Amendment",
+      "description": "Changes to approved variance"
+    },
+    {
+      "id": "annual_report",
+      "type": "process_step",
+      "label": "Annual Reporting",
+      "description": "Yearly submission to maintain variance status"
+    },
+    {
+      "id": "september_1_deadline",
+      "type": "milestone",
+      "label": "September 1st Deadline",
+      "description": "Annual report submission deadline"
+    },
+    {
+      "id": "accession_number",
+      "type": "artifact",
+      "label": "Accession Number",
+      "description": "Tracking number issued by CDRH/DCC"
+    },
+    {
+      "id": "docket_number",
+      "type": "artifact",
+      "label": "Docket Number",
+      "description": "Tracking number issued by DMS"
+    },
+    {
+      "id": "laser_notice_22",
+      "type": "regulation",
+      "label": "Laser Notice #22",
+      "description": "Defines manufacturer status for laser light show producers"
+    },
+    {
+      "id": "laser_notice_51",
+      "type": "regulation",
+      "label": "Laser Notice #51",
+      "description": "Clarifies laser light show procedures"
+    },
+    {
+      "id": "laser_notice_55",
+      "type": "regulation",
+      "label": "Laser Notice #55",
+      "description": "Clarifies automatic renewal policy"
+    },
+    {
+      "id": "cfr_1040_10",
+      "type": "regulation",
+      "label": "21 CFR 1040.10(b)(13)",
+      "description": "Regulation requiring variance for demonstration laser products"
+    },
+    {
+      "id": "submission_email",
+      "type": "action",
+      "label": "Email Submission",
+      "description": "Send documents to RadHealthCustomerService@fda.hhs.gov"
+    },
+    {
+      "id": "checklist_completion",
+      "type": "action",
+      "label": "Complete Checklist",
+      "description": "Verify all required items before submission"
+    }
+  ],
+  "edges": [
+    {
+      "source": "light_show_producer",
+      "target": "form_3147",
+      "type": "requires",
+      "label": "must submit"
+    },
+    {
+      "source": "light_show_producer",
+      "target": "form_3640",
+      "type": "requires",
+      "label": "must submit"
+    },
+    {
+      "source": "laser_projector_manufacturer",
+      "target": "form_3147",
+      "type": "requires",
+      "label": "must submit"
+    },
+    {
+      "source": "laser_projector_manufacturer",
+      "target": "form_3640",
+      "type": "requires",
+      "label": "must submit"
+    },
+    {
+      "source": "laser_projector_manufacturer",
+      "target": "form_3632",
+      "type": "requires",
+      "label": "must submit"
+    },
+    {
+      "source": "lip_lili_manufacturer",
+      "target": "form_3147",
+      "type": "requires",
+      "label": "must submit"
+    },
+    {
+      "source": "lip_lili_manufacturer",
+      "target": "form_3632",
+      "type": "requires",
+      "label": "must submit"
+    },
+    {
+      "source": "dealer_distributor",
+      "target": "form_3147",
+      "type": "requires",
+      "label": "must submit"
+    },
+    {
+      "source": "lip_lili_user",
+      "target": "form_3147",
+      "type": "requires",
+      "label": "must submit"
+    },
+    {
+      "source": "variance_application",
+      "target": "checklist_completion",
+      "type": "depends_on",
+      "label": "requires"
+    },
+    {
+      "source": "checklist_completion",
+      "target": "submission_email",
+      "type": "precedes",
+      "label": "before"
+    },
+    {
+      "source": "submission_email",
+      "target": "cdrh",
+      "type": "sent_to",
+      "label": "submitted to"
+    },
+    {
+      "source": "cdrh",
+      "target": "accession_number",
+      "type": "issues",
+      "label": "assigns"
+    },
+    {
+      "source": "dms",
+      "target": "docket_number",
+      "type": "issues",
+      "label": "assigns"
+    },
+    {
+      "source": "cdrh",
+      "target": "dms",
+      "type": "forwards_to",
+      "label": "forwards applications to"
+    },
+    {
+      "source": "annual_report",
+      "target": "form_3636",
+      "type": "uses",
+      "label": "requires"
+    },
+    {
+      "source": "annual_report",
+      "target": "september_1_deadline",
+      "type": "has_deadline",
+      "label": "due by"
+    },
+    {
+      "source": "september_1_deadline",
+      "target": "renewal",
+      "type": "triggers",
+      "label": "automatically extends"
+    },
+    {
+      "source": "original_application",
+      "target": "variance_application",
+      "type": "is_a",
+      "label": "type of"
+    },
+    {
+      "source": "renewal",
+      "target": "variance_application",
+      "type": "is_a",
+      "label": "type of"
+    },
+    {
+      "source": "amendment",
+      "target": "variance_application",
+      "type": "is_a",
+      "label": "type of"
+    },
+    {
+      "source": "laser_notice_22",
+      "target": "light_show_producer",
+      "type": "defines",
+      "label": "establishes manufacturer status for"
+    },
+    {
+      "source": "laser_notice_51",
+      "target": "variance_application",
+      "type": "clarifies",
+      "label": "provides guidance for"
+    },
+    {
+      "source": "laser_notice_55",
+      "target": "renewal",
+      "type": "clarifies",
+      "label": "explains automatic"
+    },
+    {
+      "source": "cfr_1040_10",
+      "target": "variance_application",
+      "type": "mandates",
+      "label": "requires"
+    }
+  ],
+  "process_flows": [
+    {
+      "name": "Original Variance Application",
+      "steps": [
+        "Identify product type and entity classification",
+        "Determine required forms using matrix",
+        "Complete all applicable form sections",
+        "Include manufacturer email on all forms",
+        "Obtain manufacturer signatures",
+        "Include at least one make and model",
+        "Complete checklist cover sheet",
+        "Email as separate PDFs to CDRH",
+        "Include firm name in subject line",
+        "Receive Accession and Docket numbers"
+      ]
+    },
+    {
+      "name": "Annual Report Submission",
+      "steps": [
+        "Prepare Form FDA 3636",
+        "Submit by September 1st",
+        "Receive automatic one-year extension"
+      ]
+    },
+    {
+      "name": "Renewal After Expiration",
+      "steps": [
+        "Complete cover sheet indicating expired status",
+        "Include Variance Number",
+        "Submit missing annual reports",
+        "Email to CDRH for processing"
+      ]
+    }
+  ]
+}

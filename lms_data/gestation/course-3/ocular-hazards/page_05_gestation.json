@@ -1,0 +1,28 @@
+{
+  "page_num": 5,
+  "source_pdf": "ocular-hazards.pdf",
+  "digestion": {
+    "summary": "MPE VALUES FOR EYE EXPOSURE (Selected Wavelengths)\n\nMaximum Permissible Exposure (MPE) is the level of laser radiation to which \na person may be exposed without hazardous effect.\n\nVISIBLE RANGE (400-7...",
+    "key_concepts": [
+      "MPE",
+      "Maximum Permissible Exposure",
+      "exposure limits"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "MPE VALUES FOR EYE EXPOSURE (Selected Wavelengths)\n\nMaximum Permissible Exposure (MPE) is the level of laser radiation to which \na person may be exposed without hazardous effect.\n\nVISIBLE RANGE (400-700 nm):\nFor continuous wave (CW) exposure of duration t (seconds):\n- 400-700 nm: 1.8 × t^0.75 mW/cm² for 0.25 to 10 seconds\n- 400-700 nm: 1.0 mW/cm² for exposures > 10 seconds\n\nFor point source viewing (intrabeam):\n- 400-700 nm: 1.8 × t^0.75 × 10^-3 J/cm² for 10^-13 to 10 seconds\n- 400-700 nm: 10 × 10^-3 J/cm² (10 mJ/cm²) for 10-100 seconds\n\nNEAR-INFRARED (700-1400 nm):\n- 700-1050 nm: MPE scales from visible values at 700 nm to 5× visible MPE at 1050 nm\n- 1050-1400 nm: 5× visible MPE values\n\nINFRARED (>1400 nm):\n- 1400 nm - 1 mm: 0.32 × t^0.75 W/cm² for 10^-13 to 10 seconds\n- 1400 nm - 1 mm: 1.0 W/cm² for 10-3×10^4 seconds\n\nNote: These are simplified values. Always consult IEC 60825-1 or ANSI Z136.1 \nfor complete MPE tables and conditions.\n",
+    "analogies": [
+      "The eye's focusing capability is like a magnifying glass concentrating sunlight - it amplifies laser power by 100,000x at the retina."
+    ],
+    "practical_examples": [
+      "Calculate NOHD (Nominal Ocular Hazard Distance) using MPE values before laser operations."
+    ],
+    "safety_implications": [
+      "Always wear appropriate laser eyewear when working with Class 3B or Class 4 lasers."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.118885"
+}

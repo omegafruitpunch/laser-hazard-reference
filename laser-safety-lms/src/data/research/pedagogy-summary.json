@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "description": "Research-based pedagogical approach for laser safety training",
+  "generated_at": "2024-01-01T00:00:00Z",
+  "pedagogical_principles": {
+    "spaced_repetition": {
+      "description": "Content is reviewed at increasing intervals to enhance long-term retention",
+      "implementation": "Review quizzes at module end, course end, and 30-day follow-up",
+      "evidence": "Ebbinghaus forgetting curve research"
+    },
+    "active_learning": {
+      "description": "Learners engage with content through interaction rather than passive consumption",
+      "implementation": "Interactive components, scenario-based exercises, simulations",
+      "evidence": "Prince (2004) meta-analysis of active learning"
+    },
+    "microlearning": {
+      "description": "Content delivered in short, focused segments",
+      "implementation": "15-minute modules with clear learning objectives",
+      "evidence": "Buchem & Hamelmann (2010) microlearning research"
+    },
+    "scenario_based_learning": {
+      "description": "Learning embedded in realistic workplace scenarios",
+      "implementation": "Industry-specific case studies and decision exercises",
+      "evidence": "Clark & Mayer (2016) scenario-based learning effectiveness"
+    },
+    "adaptive_assessment": {
+      "description": "Assessment difficulty adjusts based on learner performance",
+      "implementation": "Dynamic question selection based on prior responses",
+      "evidence": "van der Kleij et al. (2015) adaptive testing review"
+    }
+  },
+  "module_structure": {
+    "warmup_phase": {
+      "purpose": "Activate prior knowledge and set learning context",
+      "duration": "2 minutes",
+      "activities": ["Pre-reflection questions", "Real-world connection prompts"]
+    },
+    "core_content_phase": {
+      "purpose": "Deliver primary learning content",
+      "duration": "8 minutes",
+      "activities": ["Interactive explanations", "Visual demonstrations", "Component integration"]
+    },
+    "practice_phase": {
+      "purpose": "Apply knowledge in controlled environment",
+      "duration": "3 minutes",
+      "activities": ["Scenario exercises", "Calculation problems", "Decision-making tasks"]
+    },
+    "challenge_phase": {
+      "purpose": "Validate learning through assessment",
+      "duration": "2 minutes",
+      "activities": ["Formative quiz", "Knowledge check questions"]
+    }
+  },
+  "retention_strategies": {
+    "immediate_reinforcement": {
+      "timing": "Within module",
+      "method": "Practice exercises following core content"
+    },
+    "delayed_reinforcement": {
+      "timing": "End of course",
+      "method": "Comprehensive assessment covering all modules"
+    },
+    "spaced_reinforcement": {
+      "timing": "30 days post-completion",
+      "method": "Follow-up quiz and refresher notification"
+    }
+  },
+  "accessibility_features": {
+    "wcag_compliance": "Level AA",
+    "features": [
+      "Screen reader compatibility",
+      "Keyboard navigation support",
+      "High contrast mode",
+      "Text size adjustment",
+      "Closed captions for video content",
+      "Alternative text for images"
+    ]
+  },
+  "engagement_metrics": {
+    "target_completion_rate": 0.85,
+    "target_average_score": 0.85,
+    "target_time_on_task": "Within 10% of estimated duration",
+    "engagement_indicators": [
+      "Module progression rate",
+      "Interactive component usage",
+      "Retry attempts on practice exercises",
+      "Help resource access patterns"
+    ]
+  }
+}

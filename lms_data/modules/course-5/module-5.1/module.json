@@ -1,0 +1,65 @@
+{
+  "module_id": "course-5-module-5.1",
+  "course_id": "course-5",
+  "title": "Module 5.1: European Union Directives",
+  "subtitle": "Navigate EU Laser Safety Regulations & Country Classifications",
+  "description": "Master EU laser safety directives including 2006/25/EC, understand the Status A-F country classification system, and learn compliance requirements for laser displays across EU member states. Features interactive country status maps and directive hierarchy visualizations.",
+  "version": "1.0.0",
+  "last_updated": "2026-03-19",
+  "duration_minutes": 18,
+  "difficulty": "intermediate",
+  "learning_objectives": [
+    "Navigate the EU Status A-F country classification system for laser displays",
+    "Understand the hierarchy from EU Directive 2006/25/EC to EN 60825 to national implementations",
+    "Identify specific requirements for Status A countries (permits, inspections, MPE limits)",
+    "Compare regulatory approaches across EU member states",
+    "Apply EU compliance procedures for touring laser shows",
+    "Recognize when CE marking and additional national certifications are required"
+  ],
+  "prerequisites": [
+    "course-1-module-1.2",
+    "course-3-module-3.1"
+  ],
+  "completion_criteria": {
+    "quiz_pass_score": 80,
+    "interactive_exercises_completed": [
+      "eu_country_status_map",
+      "directive_hierarchy_visualizer",
+      "compliance_pathway_simulator"
+    ],
+    "minimum_time_minutes": 15
+  },
+  "badge": {
+    "id": "eu_regulatory_navigator",
+    "name": "EU Regulatory Navigator",
+    "icon": "🇪🇺",
+    "description": "Mastered EU laser safety directives and country classification system"
+  },
+  "keywords": [
+    "EU Directive 2006/25/EC",
+    "EN 60825",
+    "CE marking",
+    "Status A-F",
+    "audience scanning",
+    "permit requirements",
+    "STUK",
+    "FOPH",
+    "harmonized standards"
+  ],
+  "standards_reference": [
+    "EU Directive 2006/25/EC",
+    "EN 60825-1:2014",
+    "IEC 60825-1",
+    "OENORM S1105:2014"
+  ],
+  "research_alignment": {
+    "adult_learning": "Scenario-based learning with real country examples",
+    "brilliant_patterns": [
+      "Interactive country status map",
+      "Progressive directive disclosure",
+      "Visual hierarchy demonstration",
+      "Sortable compliance checklist"
+    ],
+    "retention_strategy": "Spaced exposure to country-specific requirements with comparison exercises"
+  }
+}

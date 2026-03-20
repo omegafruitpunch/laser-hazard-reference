@@ -1,0 +1,167 @@
+{
+  "quiz_id": "module_3.4_quiz",
+  "module_id": "3.4",
+  "title": "IEC 60825-1 Standard Assessment",
+  "description": "Test your understanding of laser classification, AEL tables, and IEC/FDA standards",
+  "version": "1.0.0",
+  "config": {
+    "randomize_questions": true,
+    "randomize_options": true,
+    "show_feedback_immediately": true,
+    "passing_score": 80,
+    "time_limit_minutes": 30,
+    "attempts_allowed": 3
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "blooms_level": "Knowledge",
+      "question": "What does AEL stand for in laser safety standards?",
+      "options": [
+        {"id": "a", "text": "Allowed Emission Level", "correct": false},
+        {"id": "b", "text": "Accessible Emission Limit", "correct": true},
+        {"id": "c", "text": "Authorized Exposure Limit", "correct": false},
+        {"id": "d", "text": "Average Energy Level", "correct": false}
+      ],
+      "correct_feedback": "Correct! AEL (Accessible Emission Limit) is the maximum laser radiation that a product in a given class is permitted to emit.",
+      "incorrect_feedback": "Incorrect. AEL stands for Accessible Emission Limit - it defines the boundary between laser classes."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "blooms_level": "Knowledge",
+      "question": "How many laser classes are defined in IEC 60825-1?",
+      "options": [
+        {"id": "a", "text": "4 classes", "correct": false},
+        {"id": "b", "text": "5 classes", "correct": false},
+        {"id": "c", "text": "6 classes", "correct": false},
+        {"id": "d", "text": "7 classes", "correct": true}
+      ],
+      "correct_feedback": "Correct! IEC 60825-1 defines 7 classes: 1, 1M, 2, 2M, 3R, 3B, and 4.",
+      "incorrect_feedback": "Incorrect. IEC 60825-1 defines 7 laser classes: 1, 1M, 2, 2M, 3R, 3B, and 4."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "question": "What is the significance of the 'M' suffix in Class 1M and Class 2M?",
+      "options": [
+        {"id": "a", "text": "The laser has a motorized shutter", "correct": false},
+        {"id": "b", "text": "The laser is safe only when viewed with magnification", "correct": false},
+        {"id": "c", "text": "The laser is safe for naked eye but hazardous with optical instruments", "correct": true},
+        {"id": "d", "text": "The laser is manufactured to military specifications", "correct": false}
+      ],
+      "correct_feedback": "Correct! The 'M' suffix indicates Magnification hazard - safe for naked eye viewing but potentially hazardous when viewed through optical instruments like binoculars or telescopes.",
+      "incorrect_feedback": "Incorrect. The 'M' stands for Magnification hazard. These lasers are safe for naked eye viewing but can become hazardous when viewed through optical instruments like binoculars or telescopes."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Application",
+      "question": "A 3 mW, 650 nm laser pointer would be classified as:",
+      "options": [
+        {"id": "a", "text": "Class 2", "correct": false},
+        {"id": "b", "text": "Class 3R", "correct": true},
+        {"id": "c", "text": "Class 3B", "correct": false},
+        {"id": "d", "text": "Class 2M", "correct": false}
+      ],
+      "correct_feedback": "Correct! A 3 mW visible laser exceeds the Class 2 limit (1 mW) but is below the Class 3R limit (5 mW), making it Class 3R.",
+      "incorrect_feedback": "Incorrect. Class 2 is limited to 1 mW for visible lasers. 3 mW exceeds this but is within Class 3R limits (5 mW)."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "question": "Which statement about Class 1 lasers is TRUE?",
+      "options": [
+        {"id": "a", "text": "Class 1 lasers are always low power (<1 mW)", "correct": false},
+        {"id": "b", "text": "Class 1 lasers may contain enclosed Class 4 lasers", "correct": true},
+        {"id": "c", "text": "Class 1 lasers require no safety interlocks", "correct": false},
+        {"id": "d", "text": "Class 1 is only for visible wavelengths", "correct": false}
+      ],
+      "correct_feedback": "Correct! Class 1 indicates the product is safe under normal use, which may be achieved through enclosure of high-power sources.",
+      "incorrect_feedback": "Incorrect. Class 1 lasers can contain high-power sources that are fully enclosed and interlocked, making the product safe during normal operation."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Analysis",
+      "question": "What is the approximate relationship between IEC Class 3R AEL and Class 2 AEL for visible lasers?",
+      "options": [
+        {"id": "a", "text": "Class 3R AEL = 2 × Class 2 AEL", "correct": false},
+        {"id": "b", "text": "Class 3R AEL = 5 × Class 2 AEL", "correct": true},
+        {"id": "c", "text": "Class 3R AEL = 10 × Class 2 AEL", "correct": false},
+        {"id": "d", "text": "Class 3R AEL = Class 2 AEL (same limit)", "correct": false}
+      ],
+      "correct_feedback": "Correct! Class 3R allows up to 5 times the Class 2 AEL. For visible lasers: Class 2 = 1 mW, Class 3R = 5 mW.",
+      "incorrect_feedback": "Incorrect. Class 3R AEL is approximately 5 times the Class 2 AEL (5 mW vs 1 mW for visible CW lasers)."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "question": "Which IEC class corresponds approximately to FDA Class IIIa?",
+      "options": [
+        {"id": "a", "text": "Class 3B", "correct": false},
+        {"id": "b", "text": "Class 3R", "correct": true},
+        {"id": "c", "text": "Class 2M", "correct": false},
+        {"id": "d", "text": "Class 2", "correct": false}
+      ],
+      "correct_feedback": "Correct! IEC Class 3R corresponds approximately to FDA Class IIIa, both representing intermediate hazard levels between low-power and high-power lasers.",
+      "incorrect_feedback": "Incorrect. IEC Class 3R (R = Reduced requirements) corresponds to FDA Class IIIa. Both represent intermediate hazard levels."
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Analysis",
+      "question": "A fully enclosed 500W CO2 laser with safety interlocks would be classified as:",
+      "options": [
+        {"id": "a", "text": "Class 4 (because of the high power)", "correct": false},
+        {"id": "b", "text": "Class 1 (because it's fully enclosed)", "correct": true},
+        {"id": "c", "text": "Class 3B (enclosed industrial lasers)", "correct": false},
+        {"id": "d", "text": "Class 1M (high power with enclosure)", "correct": false}
+      ],
+      "correct_feedback": "Correct! Proper enclosure with safety interlocks means no hazardous radiation is accessible during normal operation, qualifying as Class 1 regardless of internal power.",
+      "incorrect_feedback": "Incorrect. A fully enclosed laser with proper interlocks prevents access to hazardous radiation, making it Class 1 regardless of the internal laser power."
+    },
+    {
+      "id": "q9",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Application",
+      "question": "A fiber-coupled 850 nm diode laser outputs 50 mW. Which statement is correct?",
+      "options": [
+        {"id": "a", "text": "This is Class 2 because the power is low", "correct": false},
+        {"id": "b", "text": "This is Class 3B (exceeds 3R limits for near-IR)", "correct": true},
+        {"id": "c", "text": "This is Class 1 because it's fiber-coupled", "correct": false},
+        {"id": "d", "text": "This is Class 2M because it's near-IR", "correct": false}
+      ],
+      "correct_feedback": "Correct! For near-IR (700-1400 nm), Class 3R limit is approximately 10 mW (5× the adjusted Class 1 limit). 50 mW exceeds this, making it Class 3B.",
+      "incorrect_feedback": "Incorrect. For 850 nm, the CA correction factor increases the Class 1 limit to about 2 mW, making Class 3R approximately 10 mW. 50 mW exceeds this, so it's Class 3B."
+    },
+    {
+      "id": "q10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Synthesis",
+      "question": "What is the primary purpose of FDA Laser Notice 50?",
+      "options": [
+        {"id": "a", "text": "To ban Class 4 lasers from consumer products", "correct": false},
+        {"id": "b", "text": "To require additional safety features on all lasers", "correct": false},
+        {"id": "c", "text": "To harmonize FDA requirements with IEC 60825-1", "correct": true},
+        {"id": "d", "text": "To establish new emission limits for laser pointers", "correct": false}
+      ],
+      "correct_feedback": "Correct! Laser Notice 50 allows manufacturers to use IEC 60825-1 instead of 21 CFR 1040.10, harmonizing US regulations with international standards.",
+      "incorrect_feedback": "Incorrect. Laser Notice 50 harmonizes FDA regulations with the international IEC 60825-1 standard, allowing manufacturers to use a single compliance approach for global markets."
+    }
+  ]
+}

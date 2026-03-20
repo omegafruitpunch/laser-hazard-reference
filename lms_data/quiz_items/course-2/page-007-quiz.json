@@ -1,0 +1,48 @@
+{
+  "course": "course-2",
+  "page_number": 7,
+  "quiz_items": [
+    {
+      "id": "C2-P7-Q1",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which laser class is considered hazardous for scattered (diffuse) reflection exposure?",
+      "options": [
+        "Class II",
+        "Class IIIa",
+        "Class IIIb",
+        "Class IV"
+      ],
+      "correct_answer": 3,
+      "explanation": "Class IV exceeds Class IIIb limits and is a hazard for scattered (diffuse) reflection as well as direct exposure. Classes II and IIIa are primarily direct viewing hazards.",
+      "learning_objective": "Understand class-specific hazards",
+      "regulatory_reference": "21 CFR 1040.10(b)(11)"
+    },
+    {
+      "id": "C2-P7-Q2",
+      "type": "fill_in_blank",
+      "difficulty": "intermediate",
+      "question": "Class IIIa products emitting visible light have a maximum total collectable radiant power of ______ milliwatts.",
+      "correct_answer": "5",
+      "explanation": "Class IIIa limits apply to visible spectrum products where the total collectable radiant power does not exceed 5 milliwatts. This class includes most helium-neon lasers.",
+      "learning_objective": "Know Class IIIa power limits",
+      "regulatory_reference": "21 CFR 1040.10(b)(8), 1040.10(d)(Table III-A)"
+    },
+    {
+      "id": "C2-P7-Q3",
+      "type": "multiple_select",
+      "difficulty": "advanced",
+      "question": "For Class IIIb products, which hazards exist? (Select all that apply)",
+      "options": [
+        "Ocular hazards for direct exposure throughout the class range",
+        "Skin hazards at higher levels of the class",
+        "Scattered reflection hazards",
+        "Fire hazards"
+      ],
+      "correct_answer": [0, 1],
+      "explanation": "Class IIIb emission levels (5-500 mW visible) are ocular hazards for direct exposure throughout the range and skin hazards at the higher levels. Scattered reflection hazards begin at Class IV. While high powers may present fire hazards, this is not specifically mentioned in the regulatory classification criteria.",
+      "learning_objective": "Identify Class IIIb hazards",
+      "regulatory_reference": "21 CFR 1040.10(b)(9)"
+    }
+  ]
+}

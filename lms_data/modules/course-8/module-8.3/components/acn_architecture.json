@@ -1,0 +1,95 @@
+{
+  "component_id": "acn_architecture_explorer",
+  "name": "ACN Protocol Architecture Explorer",
+  "type": "interactive_diagram",
+  "description": "Interactive exploration of the ACN protocol stack and components",
+  "protocol_stack": {
+    "layers": [
+      {
+        "layer": 4,
+        "name": "Application Layer",
+        "protocols": [
+          {
+            "name": "DDL",
+            "full_name": "Device Description Language",
+            "description": "Allows devices to describe their capabilities",
+            "features": ["Self-describing devices", "Automatic configuration", "Protocol independence"]
+          }
+        ],
+        "color": "#e94560"
+      },
+      {
+        "layer": 3,
+        "name": "Root Layer",
+        "protocols": [
+          {
+            "name": "RLP",
+            "full_name": "Root Layer Protocol",
+            "description": "Provides message formatting and addressing",
+            "features": ["PDU formatting", "Addressing", "Protocol encapsulation"]
+          }
+        ],
+        "color": "#9C27B0"
+      },
+      {
+        "layer": 2,
+        "name": "Transport Layer",
+        "protocols": [
+          {
+            "name": "UDP (E1.17)",
+            "description": "Unreliable but fast transport",
+            "use_case": "Real-time control where speed matters"
+          },
+          {
+            "name": "TCP (E1.30-11)",
+            "description": "Reliable transport with flow control",
+            "use_case": "Configuration and reliable data transfer"
+          }
+        ],
+        "color": "#2196F3"
+      },
+      {
+        "layer": 1,
+        "name": "Network Layer",
+        "protocols": [
+          {
+            "name": "IP",
+            "description": "Internet Protocol",
+            "features": ["Addressing", "Routing", "Fragmentation"]
+          }
+        ],
+        "color": "#4CAF50"
+      }
+    ]
+  },
+  "interactions": {
+    "layer_click": {
+      "action": "expand_layer_details",
+      "reveal": ["protocol_specifications", "message_format", "use_cases"]
+    },
+    "protocol_click": {
+      "action": "show_protocol_info",
+      "reveal": ["standard_reference", "implementation_notes", "compatibility"]
+    }
+  },
+  "visualization_modes": [
+    {
+      "mode": "stack_view",
+      "description": "Traditional protocol stack view"
+    },
+    {
+      "mode": "flow_view",
+      "description": "Data flow between components"
+    },
+    {
+      "mode": "comparison_view",
+      "description": "Compare UDP vs TCP transport"
+    }
+  ],
+  "key_insights": [
+    "ACN separates device description from transport",
+    "DDL enables plug-and-play device integration",
+    "Root Layer provides protocol independence",
+    "Multiple transport options (UDP/TCP) for different needs"
+  ]
+}

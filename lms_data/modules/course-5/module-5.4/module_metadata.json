@@ -1,0 +1,23 @@
+{
+  "id": "c5-m4",
+  "title": "Australia & New Zealand Standards",
+  "description": "AS/NZS 4173 laser safety standards, Radiation Council requirements, and ILDA country classification system.",
+  "pdfPath": "/docs/course-5-international/australia-nz.pdf",
+  "keyTakeaways": [
+    "AS/NZS 4173 provides comprehensive guidance for laser safety in Australia and New Zealand",
+    "Each Australian state/territory has its own radiation protection legislation and requirements",
+    "New Zealand requires operator licenses under the Radiation Safety Act 2016",
+    "ILDA country categories help laser show operators understand international regulatory complexity"
+  ],
+  "estimatedMinutes": 15,
+  "interactiveComponents": [
+    "CountryClassificationSystem",
+    "ASNZS4173Navigator"
+  ],
+  "learningObjectives": [
+    "Understand the AS/NZS 4173 standard structure and key requirements",
+    "Navigate Australian state/territory radiation protection requirements",
+    "Explain New Zealand's laser operator licensing system",
+    "Apply ILDA country categories for international show planning"
+  ]
+}

@@ -1,0 +1,902 @@
+/* Module 1.1: Introduction to Laser Hazards - Styles */
+
+/* ===== Container & Layout ===== */
+.moduleContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  color: #1F2937;
+  line-height: 1.6;
+}
+
+.moduleHeader {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #6B7280;
+  margin-bottom: 8px;
+}
+
+.moduleTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.moduleDescription {
+  font-size: 16px;
+  color: #4B5563;
+  margin: 0 0 24px 0;
+}
+
+/* ===== Phase Progress ===== */
+.phaseProgress {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.phaseIndicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.phaseIndicator.activePhase,
+.phaseIndicator.completedPhase {
+  opacity: 1;
+}
+
+.phaseDot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #E5E7EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+  transition: all 0.2s;
+}
+
+.activePhase .phaseDot {
+  background: #10B981;
+  color: white;
+}
+
+.completedPhase .phaseDot {
+  background: #059669;
+  color: white;
+}
+
+.phaseLabel {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: #374151;
+}
+
+.phaseDuration {
+  font-size: 11px;
+  color: #6B7280;
+}
+
+/* ===== Phase Container ===== */
+.phaseContainer {
+  padding: 16px 0;
+}
+
+.phaseTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 16px 0;
+}
+
+.phaseDescription {
+  font-size: 16px;
+  color: #4B5563;
+  margin-bottom: 24px;
+}
+
+.phaseNavigation {
+  margin-top: 32px;
+  text-align: center;
+}
+
+/* ===== Buttons ===== */
+.continueButton,
+.completeButton,
+.primaryButton {
+  background: #10B981;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.continueButton:hover,
+.completeButton:hover,
+.primaryButton:hover {
+  background: #059669;
+  transform: translateY(-1px);
+}
+
+.secondaryButton {
+  background: white;
+  color: #374151;
+  border: 1px solid #D1D5DB;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: all 0.2s;
+}
+
+.secondaryButton:hover {
+  background: #F3F4F6;
+}
+
+.hintButton {
+  background: transparent;
+  border: 1px dashed #D1D5DB;
+  color: #6B7280;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: all 0.2s;
+}
+
+.hintButton:hover:not(:disabled) {
+  border-color: #10B981;
+  color: #10B981;
+}
+
+/* ===== Warm-up Phase ===== */
+.warmupContent {
+  text-align: center;
+}
+
+.phaseIntro {
+  font-size: 16px;
+  color: #6B7280;
+  margin-bottom: 32px;
+}
+
+.warmupQuestion h3 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.scenarioCards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.scenarioCard {
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 24px;
+  width: 280px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.scenarioCard:hover {
+  border-color: #10B981;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.scenarioIcon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.scenarioCard h4 {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+
+.scenarioCard p {
+  font-size: 14px;
+  color: #6B7280;
+  margin: 0;
+}
+
+.warmupFeedback {
+  background: #F0FDF4;
+  border: 1px solid #10B981;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.correctFeedback {
+  color: #065F46;
+}
+
+.incorrectFeedback {
+  color: #7C2D12;
+}
+
+/* ===== Quiz Styles ===== */
+.quizHeader {
+  margin-bottom: 24px;
+}
+
+.quizProgress {
+  font-size: 14px;
+  color: #6B7280;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.progressBar {
+  height: 8px;
+  background: #E5E7EB;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: #10B981;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.quizContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.quizQuestion {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #111827;
+}
+
+.hintBox {
+  background: #FFFBEB;
+  border-left: 4px solid #F59E0B;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #92400E;
+}
+
+.answerOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.answerOption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.answerOption:hover:not(:disabled) {
+  border-color: #10B981;
+  background: #F0FDF4;
+}
+
+.correctAnswer {
+  border-color: #10B981 !important;
+  background: #D1FAE5 !important;
+}
+
+.wrongAnswer {
+  border-color: #EF4444 !important;
+  background: #FEE2E2 !important;
+}
+
+.disabledOption {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.optionLetter {
+  width: 28px;
+  height: 28px;
+  background: #E5E7EB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.optionText {
+  flex: 1;
+  font-size: 15px;
+}
+
+.correctMark {
+  color: #059669;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrongMark {
+  color: #DC2626;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feedbackBox {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.correctFeedbackBox {
+  background: #D1FAE5;
+  border: 1px solid #10B981;
+}
+
+.incorrectFeedbackBox {
+  background: #FEE2E2;
+  border: 1px solid #EF4444;
+}
+
+.retryHint {
+  font-size: 14px;
+  color: #92400E;
+  margin-top: 12px;
+}
+
+/* ===== Component: Laser Property Comparison ===== */
+.propertyComparison {
+  margin: 24px 0;
+}
+
+.componentTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.componentDescription {
+  font-size: 14px;
+  color: #6B7280;
+  margin-bottom: 24px;
+}
+
+.propertyTabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.propertyTab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.activeTab {
+  border-color: #10B981;
+  background: #F0FDF4;
+}
+
+.tabIcon {
+  font-size: 20px;
+}
+
+.tabName {
+  font-weight: 500;
+}
+
+.comparisonContainer {
+  background: #F9FAFB;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.comparisonRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.laserSide,
+.conventionalSide {
+  flex: 1;
+  text-align: center;
+}
+
+.sideHeader {
+  margin-bottom: 16px;
+}
+
+.laserBadge,
+.conventionalBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.laserBadge {
+  background: #D1FAE5;
+  color: #065F46;
+}
+
+.conventionalBadge {
+  background: #E5E7EB;
+  color: #374151;
+}
+
+.visualContainer {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.propertySvg {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.sideDescription {
+  font-size: 14px;
+  color: #4B5563;
+  margin: 0;
+}
+
+.vsDivider {
+  font-weight: 700;
+  color: #9CA3AF;
+  font-size: 14px;
+}
+
+.keyPoint {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #FFFBEB;
+  border: 1px solid #FCD34D;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.keyPointIcon {
+  font-size: 24px;
+}
+
+.keyPointText {
+  font-size: 14px;
+  color: #92400E;
+}
+
+.divider {
+  height: 1px;
+  background: #E5E7EB;
+  margin: 32px 0;
+}
+
+/* ===== Component: Wavelength Explorer ===== */
+.wavelengthExplorer {
+  margin: 24px 0;
+}
+
+.sliderContainer {
+  margin-bottom: 24px;
+}
+
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #6B7280;
+  margin-bottom: 8px;
+}
+
+.wavelengthSlider {
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.wavelengthSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #374151;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.wavelengthSlider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #374151;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sliderValue {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.wavelengthValue {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.wavelengthBadge {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.eyeDiagramContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.eyeSvg {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.wavelengthInfoPanel {
+  background: white;
+  border-left: 4px solid;
+  border-radius: 0 8px 8px 0;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.infoLabel {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.infoValue {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.wavelengthDescription {
+  margin: 16px 0 0 0;
+  font-size: 14px;
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+/* ===== Component: Reflection Hazard Demo ===== */
+.reflectionDemo {
+  margin: 24px 0;
+}
+
+.surfaceSelector {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.surfaceButton {
+  padding: 12px 20px;
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.surfaceButton:hover {
+  border-color: #10B981;
+}
+
+.activeSurface {
+  border-color: #10B981 !important;
+  background: #F0FDF4 !important;
+}
+
+.reflectionVisual {
+  background: #F9FAFB;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.reflectionSvg {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hazardAssessment {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.hazardHeader {
+  margin-bottom: 12px;
+}
+
+.hazardBadge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.surfaceDescription {
+  font-size: 14px;
+  color: #4B5563;
+  margin-bottom: 12px;
+}
+
+.reflectionInfo {
+  font-size: 14px;
+}
+
+.reflectionLabel {
+  font-weight: 600;
+  color: #374151;
+}
+
+.reflectionValue {
+  color: #6B7280;
+}
+
+/* ===== Challenge Phase ===== */
+.scenarioChallenge {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.scenarioHeader {
+  margin-bottom: 24px;
+}
+
+.scenarioHeader h3 {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+}
+
+.laserSpecs {
+  background: #F3F4F6;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.laserSpecs h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.laserSpecs ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.laserSpecs li {
+  font-size: 14px;
+  color: #4B5563;
+  margin-bottom: 4px;
+}
+
+/* ===== Completion Phase ===== */
+.completionCard {
+  text-align: center;
+  padding: 48px 24px;
+  background: linear-gradient(135deg, #F0FDF4 0%, #ECFDF5 100%);
+  border-radius: 16px;
+  border: 1px solid #10B981;
+}
+
+.completionIcon {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.completionTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #065F46;
+  margin: 0 0 8px 0;
+}
+
+.completionMessage {
+  font-size: 16px;
+  color: #059669;
+  margin-bottom: 32px;
+}
+
+.scoreSummary {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 32px;
+}
+
+.scoreItem {
+  text-align: center;
+}
+
+.scoreLabel {
+  display: block;
+  font-size: 14px;
+  color: #6B7280;
+  margin-bottom: 4px;
+}
+
+.scoreValue {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.learningOutcomes {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.learningOutcomes h4 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  color: #374151;
+}
+
+.learningOutcomes ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.learningOutcomes li {
+  font-size: 14px;
+  color: #4B5563;
+  margin-bottom: 8px;
+}
+
+.completionActions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .moduleContainer {
+    padding: 16px;
+  }
+
+  .moduleTitle {
+    font-size: 24px;
+  }
+
+  .phaseProgress {
+    gap: 8px;
+  }
+
+  .phaseIndicator {
+    min-width: 80px;
+  }
+
+  .phaseLabel {
+    font-size: 10px;
+  }
+
+  .scenarioCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scenarioCard {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .comparisonRow {
+    flex-direction: column;
+  }
+
+  .vsDivider {
+    transform: rotate(90deg);
+  }
+
+  .scoreSummary {
+    gap: 24px;
+  }
+}

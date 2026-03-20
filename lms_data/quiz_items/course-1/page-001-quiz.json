@@ -1,0 +1,49 @@
+{
+  "course": "course-1",
+  "page_number": 1,
+  "quiz_items": [
+    {
+      "id": "C1-P1-Q1",
+      "type": "multiple_choice",
+      "difficulty": "beginner",
+      "question": "What is the primary purpose of the Laser Safety Training Acknowledgment document?",
+      "options": [
+        "To certify laser equipment compliance with FDA standards",
+        "To document receipt and understanding of laser safety training by personnel",
+        "To record annual laser safety inspections",
+        "To apply for laser product manufacturing licenses"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Laser Safety Training Acknowledgment is a formal document signed by personnel (including LSOs, operations managers, technicians) to confirm they have received and understood laser safety training covering operation, maintenance, and regulatory compliance.",
+      "learning_objective": "Understand the purpose of training documentation",
+      "regulatory_reference": null
+    },
+    {
+      "id": "C1-P1-Q2",
+      "type": "multiple_select",
+      "difficulty": "beginner",
+      "question": "Which topics are included in the laser safety training curriculum according to the acknowledgment form? (Select all that apply)",
+      "options": [
+        "Laser definitions and safety disclaimer",
+        "Biological hazards related to lasers",
+        "Outdoor laser safety guidelines",
+        "Financial management of laser programs"
+      ],
+      "correct_answer": [0, 1, 2],
+      "explanation": "The training curriculum includes: Intro (definitions, disclaimer), Articles about Laser Safety, Laser Biological Hazards, Outdoor Laser Safety, Governing Agency Contact Information, Reports/Record Keeping, Standards and Regulations, Training materials, and On Site Training Observation/Evaluation.",
+      "learning_objective": "Identify key training topic areas",
+      "regulatory_reference": null
+    },
+    {
+      "id": "C1-P1-Q3",
+      "type": "true_false",
+      "difficulty": "beginner",
+      "question": "On-site training observation and evaluation is an optional component of laser safety training.",
+      "options": ["True", "False"],
+      "correct_answer": 1,
+      "explanation": "False. According to the form, 'On Site Training Observation/Evaluation' is listed as a required component where 'Trainees are observed and evaluated in the field and/or onsite.'",
+      "learning_objective": "Understand comprehensive training requirements",
+      "regulatory_reference": null
+    }
+  ]
+}

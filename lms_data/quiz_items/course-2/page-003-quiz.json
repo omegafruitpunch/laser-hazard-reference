@@ -1,0 +1,53 @@
+{
+  "course": "course-2",
+  "page_number": 3,
+  "quiz_items": [
+    {
+      "id": "C2-P3-Q1",
+      "type": "multiple_choice",
+      "difficulty": "beginner",
+      "question": "According to the table of contents, which appendix contains the tabulation of FDA requirements for laser products?",
+      "options": [
+        "Appendix A",
+        "Appendix B",
+        "Appendix C",
+        "There is no appendix with this information"
+      ],
+      "correct_answer": 0,
+      "explanation": "Appendix A contains the 'Tabulation of FDA Requirements for Laser Products' - a reference table showing requirements by laser class.",
+      "learning_objective": "Navigate the compliance guide structure",
+      "regulatory_reference": "Appendix A, page 21"
+    },
+    {
+      "id": "C2-P3-Q2",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Where in the document would you find information about laser light show requirements?",
+      "options": [
+        "Introduction section",
+        "Classification section",
+        "Appendix B",
+        "Variance section"
+      ],
+      "correct_answer": 2,
+      "explanation": "Appendix B is titled 'Clarification of Certain Laser Light Show Requirements' and appears on page 22 of the document.",
+      "learning_objective": "Locate specialized regulatory guidance",
+      "regulatory_reference": "Appendix B"
+    },
+    {
+      "id": "C2-P3-Q3",
+      "type": "matching",
+      "difficulty": "intermediate",
+      "question": "Match the regulatory topic to its page number in the table of contents:",
+      "pairs": [
+        {"item": "Classification of Laser Products", "matches": "Page 3"},
+        {"item": "Requirements for Specific-Purpose Products", "matches": "Page 14"},
+        {"item": "Variances and Exemptions", "matches": "Page 19"},
+        {"item": "Product Recalls", "matches": "Page 18"}
+      ],
+      "correct_answer": "As shown above",
+      "explanation": "The table of contents shows: Classification on Page 3, Specific-Purpose Products on Page 14, Variances on Page 19, and Product Recalls on Page 18.",
+      "learning_objective": "Navigate document structure efficiently"
+    }
+  ]
+}

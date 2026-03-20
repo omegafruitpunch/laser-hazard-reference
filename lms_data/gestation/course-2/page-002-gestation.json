@@ -1,0 +1,36 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 2,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "FDA Compliance Guide for Laser Products - official document identification",
+      "HHS Publication FDA 86-8260",
+      "Historical context (June 1992, with August 2008 corrections)"
+    ],
+    "key_terms": [
+      {
+        "term": "HHS Publication FDA 86-8260",
+        "definition": "Official document number for the FDA Compliance Guide for Laser Products"
+      },
+      {
+        "term": "CDRH",
+        "definition": "Center for Devices and Radiological Health - FDA center responsible for laser product regulation"
+      }
+    ],
+    "regulatory_references": [
+      "HHS Publication FDA 86-8260",
+      "21 CFR Chapter I, Subchapter J"
+    ],
+    "difficulty_level": "beginner",
+    "learning_objectives": [
+      "Identify the official FDA compliance guide for laser products",
+      "Recognize the issuing authority (CDRH)"
+    ],
+    "prerequisites": [],
+    "estimated_study_time_minutes": 5,
+    "content_type": "title_page",
+    "has_tables": false
+  }
+}

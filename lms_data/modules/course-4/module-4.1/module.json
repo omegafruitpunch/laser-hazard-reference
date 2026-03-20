@@ -1,0 +1,517 @@
+{
+  "module_id": "4.1",
+  "module_title": "California & Colorado State Regulations",
+  "course": "Course 4: US State & Local Regulations",
+  "states_covered": ["California", "Colorado"],
+  "estimated_duration_minutes": 25,
+  "difficulty": "Intermediate",
+  "learning_objectives": [
+    "Understand California's multi-layer regulatory framework (federal, state, local)",
+    "Navigate Colorado's radiation control program requirements",
+    "Compare and contrast permit requirements between states",
+    "Identify when local fire marshal approval is required",
+    "Apply scenario-based decision making for interstate operations"
+  ],
+  "prerequisites": [
+    "Course 2: FDA Compliance & Reporting",
+    "Understanding of laser classification system"
+  ],
+  "phases": [
+    {
+      "id": "phase-1",
+      "title": "Scenario Warm-Up: The West Coast Tour",
+      "duration": 3,
+      "type": "warmup",
+      "description": "You're planning a laser show tour hitting venues in Los Angeles, San Diego, and Denver. What permits will you need?",
+      "interactive_element": {
+        "type": "scenario_mapper",
+        "id": "west_coast_tour_scenario",
+        "prompt": "Select each location to discover permit requirements:",
+        "locations": [
+          {
+            "name": "Los Angeles Convention Center",
+            "state": "California",
+            "jurisdictions": ["Federal FDA", "California CDPH", "LA County Fire", "LA City Permits"],
+            "requirements": ["FDA Variance", "CA Laser Registration", "Local Fire Permit"]
+          },
+          {
+            "name": "San Diego Waterfront Park",
+            "state": "California",
+            "jurisdictions": ["Federal FDA", "California CDPH", "San Diego Fire-Rescue"],
+            "requirements": ["FDA Variance", "CA Laser Registration", "Special Event Permit (2+ weeks advance)"]
+          },
+          {
+            "name": "Denver Red Rocks Amphitheatre",
+            "state": "Colorado",
+            "jurisdictions": ["Federal FDA", "Colorado Radiation Program"],
+            "requirements": ["FDA Variance", "CO Radiation Control Notification"]
+          }
+        ],
+        "feedback": {
+          "correct_understanding": "Correct! California requires federal, state, AND local permits, while Colorado primarily defers to federal requirements with state notification.",
+          "key_insight": "California has one of the most complex multi-layer regulatory systems in the US."
+        }
+      }
+    },
+    {
+      "id": "phase-2",
+      "title": "Core Concept: California's Multi-Layer Framework",
+      "duration": 8,
+      "type": "core",
+      "description": "Understanding California's three-tier regulatory system",
+      "content_sections": [
+        {
+          "title": "Federal Layer (FDA)",
+          "content": "All laser shows in California require FDA variance under 21 CFR 1040.11. This is the baseline federal requirement.",
+          "key_points": [
+            "Variance Application (Form available on FDA website)",
+            "Annual reporting required (July 1 - June 30)",
+            "Product reports for laser equipment"
+          ]
+        },
+        {
+          "title": "State Layer (CDPH)",
+          "content": "California Department of Public Health requires registration of Class IIIb and IV lasers.",
+          "key_points": [
+            "Device registration with CDPH",
+            "Laser Safety Officer designation",
+            "Maintenance of safety records"
+          ]
+        },
+        {
+          "title": "Local Layer (City/County Fire)",
+          "content": "Based on San Diego guidelines, local fire departments require permits for special events with lasers.",
+          "key_points": [
+            "Special Event Permit required (50+ people)",
+            "Submit 2+ weeks before event",
+            "Site plans and floor plans required",
+            "On-site inspection may be required",
+            "Fee based on current fee schedule"
+          ]
+        }
+      ],
+      "interactive_element": {
+        "type": "interactive_map",
+        "id": "california_jurisdiction_map",
+        "title": "California Regulatory Layers",
+        "layers": [
+          {
+            "name": "Federal (FDA/CDRH)",
+            "applies_to": "All US laser operations",
+            "requirements": ["Variance", "Product Reports", "Annual Reports"]
+          },
+          {
+            "name": "State (CDPH)",
+            "applies_to": "All CA laser operations",
+            "requirements": ["Device Registration", "LSO Designation", "Safety Records"]
+          },
+          {
+            "name": "Local (Fire Departments)",
+            "applies_to": "Public events with 50+ people",
+            "requirements": ["Special Event Permit", "Site Plans", "Inspection"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "phase-3",
+      "title": "State Comparator: California vs Colorado",
+      "duration": 7,
+      "type": "practice",
+      "description": "Interactive side-by-side comparison of state requirements",
+      "interactive_element": {
+        "type": "state_comparator",
+        "id": "ca_co_comparator",
+        "title": "California vs Colorado Requirements",
+        "categories": [
+          {
+            "name": "Regulatory Authority",
+            "california": "CDPH + Local Fire Departments",
+            "colorado": "Colorado Radiation Control Program",
+            "note": "CA has multiple agencies; CO consolidated under radiation program"
+          },
+          {
+            "name": "Device Registration",
+            "california": "Required for Class IIIb/IV",
+            "colorado": "Notification recommended",
+            "note": "CA has formal registration; CO follows federal guidance"
+          },
+          {
+            "name": "Entertainment Shows",
+            "california": "Local fire permit + state registration",
+            "colorado": "FDA variance typically sufficient",
+            "note": "CA requires local approval; CO defers to federal"
+          },
+          {
+            "name": "Advance Notice",
+            "california": "2+ weeks for local permits",
+            "colorado": "Contact Radiation Control before installation",
+            "note": "Both require advance planning"
+          },
+          {
+            "name": "Inspections",
+            "california": "Local fire inspection likely",
+            "colorado": "Not routinely conducted",
+            "note": "CA has more hands-on oversight"
+          },
+          {
+            "name": "Laser Safety Officer",
+            "california": "Required designation",
+            "colorado": "Recommended per federal guidelines",
+            "note": "Both require qualified operator"
+          },
+          {
+            "name": "Fees",
+            "california": "Local permit fees apply",
+            "colorado": "No state registration fee",
+            "note": "CA has additional cost burden"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phase-4",
+      "title": "Permit Requirement Finder",
+      "duration": 5,
+      "type": "practice",
+      "description": "Determine exactly what permits you need based on your situation",
+      "interactive_element": {
+        "type": "decision_tree",
+        "id": "permit_finder",
+        "title": "What Permits Do I Need?",
+        "questions": [
+          {
+            "id": "q1",
+            "question": "Which state will you operate in?",
+            "options": [
+              {"label": "California", "next": "q2_ca"},
+              {"label": "Colorado", "next": "q2_co"}
+            ]
+          },
+          {
+            "id": "q2_ca",
+            "question": "What type of venue in California?",
+            "options": [
+              {"label": "Outdoor public event (50+ people)", "next": "r_ca_outdoor"},
+              {"label": "Indoor venue", "next": "q3_ca"},
+              {"label": "Private studio (no public)", "next": "r_ca_private"}
+            ]
+          },
+          {
+            "id": "q2_co",
+            "question": "What type of venue in Colorado?",
+            "options": [
+              {"label": "Commercial entertainment venue", "next": "r_co_commercial"},
+              {"label": "Private/non-commercial", "next": "r_co_private"}
+            ]
+          },
+          {
+            "id": "q3_ca",
+            "question": "How many people will attend?",
+            "options": [
+              {"label": "50 or more", "next": "r_ca_assembly"},
+              {"label": "Fewer than 50", "next": "r_ca_small"}
+            ]
+          }
+        ],
+        "results": {
+          "r_ca_outdoor": {
+            "title": "California Outdoor Public Event Permits",
+            "permits": [
+              "FDA Variance (Federal)",
+              "CA CDPH Laser Registration",
+              "Local Fire Special Event Permit (2+ weeks advance)",
+              "Site Plan submission required",
+              "Possible on-site inspection"
+            ],
+            "timeline": "Allow 3-4 weeks minimum",
+            "contact": "Local Fire Prevention Bureau + CDPH"
+          },
+          "r_ca_assembly": {
+            "title": "California Indoor Assembly Permits",
+            "permits": [
+              "FDA Variance (Federal)",
+              "CA CDPH Laser Registration",
+              "Local Fire Permit (if 50+ people)"
+            ],
+            "timeline": "Allow 2-3 weeks minimum",
+            "contact": "Local Fire Prevention Bureau"
+          },
+          "r_ca_private": {
+            "title": "California Private Studio",
+            "permits": [
+              "FDA Variance (Federal)",
+              "CA CDPH Laser Registration recommended"
+            ],
+            "timeline": "Federal variance timeline",
+            "note": "No local permits if truly private with no employees"
+          },
+          "r_ca_small": {
+            "title": "California Small Indoor Event",
+            "permits": [
+              "FDA Variance (Federal)",
+              "CA CDPH Laser Registration"
+            ],
+            "timeline": "Allow 2-3 weeks",
+            "note": "May not need local fire permit under 50 people"
+          },
+          "r_co_commercial": {
+            "title": "Colorado Commercial Venue",
+            "permits": [
+              "FDA Variance (Federal)",
+              "Notify Colorado Radiation Control Program"
+            ],
+            "timeline": "Federal variance timeline + notification",
+            "contact": "Colorado Radiation Control Program"
+          },
+          "r_co_private": {
+            "title": "Colorado Private/Non-commercial",
+            "permits": [
+              "FDA Variance (Federal) if applicable"
+            ],
+            "timeline": "Federal variance timeline",
+            "note": "Contact Radiation Control for guidance"
+          }
+        }
+      }
+    },
+    {
+      "id": "phase-5",
+      "title": "Licensing Timeline Visualizer",
+      "duration": 4,
+      "type": "core",
+      "description": "Visual timeline showing the permit process for each state",
+      "interactive_element": {
+        "type": "timeline_visualizer",
+        "id": "licensing_timeline",
+        "scenarios": [
+          {
+            "name": "California Tour Stop",
+            "total_weeks": 4,
+            "events": [
+              {
+                "week": 0,
+                "milestone": "Start Planning",
+                "action": "Gather venue information, laser specs"
+              },
+              {
+                "week": 1,
+                "milestone": "Submit Federal Variance",
+                "action": "FDA Form 3147 (if not already held)"
+              },
+              {
+                "week": 1.5,
+                "milestone": "Submit CA CDPH Registration",
+                "action": "Register Class IIIb/IV devices"
+              },
+              {
+                "week": 2,
+                "milestone": "Submit Local Fire Permit",
+                "action": "San Diego: sdfdevents@sandiego.gov with site plans"
+              },
+              {
+                "week": 3,
+                "milestone": "Permit Review Period",
+                "action": "Await approval, respond to any requests"
+              },
+              {
+                "week": 4,
+                "milestone": "On-site Inspection",
+                "action": "Fire marshal inspection if required"
+              },
+              {
+                "week": 4,
+                "milestone": "Show Day",
+                "action": "Have all permits on-site"
+              }
+            ]
+          },
+          {
+            "name": "Colorado Tour Stop",
+            "total_weeks": 3,
+            "events": [
+              {
+                "week": 0,
+                "milestone": "Start Planning",
+                "action": "Contact venue, confirm laser setup"
+              },
+              {
+                "week": 1,
+                "milestone": "Submit Federal Variance",
+                "action": "FDA Form 3147 (if not already held)"
+              },
+              {
+                "week": 1.5,
+                "milestone": "Notify CO Radiation Control",
+                "action": "Contact program before installation"
+              },
+              {
+                "week": 2,
+                "milestone": "Venue Coordination",
+                "action": "Work with venue on safety requirements"
+              },
+              {
+                "week": 3,
+                "milestone": "Show Day",
+                "action": "Maintain federal compliance documentation"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "phase-6",
+      "title": "Challenge: Multi-State Scenario",
+      "duration": 5,
+      "type": "challenge",
+      "description": "Apply your knowledge to a complex interstate operation",
+      "interactive_element": {
+        "type": "scenario_challenge",
+        "id": "multistate_challenge",
+        "title": "The Multi-State Festival Circuit",
+        "scenario": "You're the LSO for a touring EDM festival hitting Sacramento (CA), then moving to Denver (CO) the following weekend. The festival features Class 4 lasers with audience scanning. Today is March 1st. The first show is March 25th.",
+        "questions": [
+          {
+            "id": "ch_1",
+            "question": "What's your immediate priority for California?",
+            "options": [
+              "Apply for FDA variance immediately",
+              "Contact Sacramento Fire Department for special event permit",
+              "Register lasers with CA CDPH",
+              "Both A and B"
+            ],
+            "correct": 3,
+            "explanation": "You need BOTH federal variance AND local fire permit. With only 3+ weeks, you need to start both processes immediately. The FDA variance can take 2-4 weeks, and CA local permits require 2+ weeks."
+          },
+          {
+            "id": "ch_2",
+            "question": "What additional requirement does Sacramento likely have?",
+            "options": [
+              "State laser registration",
+              "Environmental impact statement",
+              "FAA notification (outdoor show)",
+              "Both A and C"
+            ],
+            "correct": 3,
+            "explanation": "California requires state CDPH registration AND if it's an outdoor show, FAA notification may be required depending on proximity to airspace."
+          },
+          {
+            "id": "ch_3",
+            "question": "For the Denver show, what permits are needed beyond FDA variance?",
+            "options": [
+              "Colorado state laser license",
+              "Denver city entertainment permit",
+              "Notify CO Radiation Control Program",
+              "Both B and C"
+            ],
+            "correct": 2,
+            "explanation": "Colorado primarily requires notifying the Radiation Control Program. Unlike California, there's no separate state licensing requirement, though Denver may have local venue requirements."
+          }
+        ],
+        "badge": {
+          "name": "Multi-State Navigator",
+          "description": "Successfully navigated complex interstate regulatory requirements",
+          "icon": "🗺️"
+        }
+      }
+    }
+  ],
+  "quiz_questions": [
+    {
+      "id": "ca-co-q1",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which agency regulates laser devices at the state level in California?",
+      "options": [
+        "California Department of Transportation",
+        "California Department of Public Health (CDPH)",
+        "California OSHA",
+        "California EPA"
+      ],
+      "correct_answer": 1,
+      "explanation": "California Department of Public Health (CDPH) regulates laser devices at the state level."
+    },
+    {
+      "id": "ca-co-q2",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "How far in advance must San Diego special event permits be submitted?",
+      "options": [
+        "24 hours",
+        "1 week",
+        "2 weeks",
+        "30 days"
+      ],
+      "correct_answer": 2,
+      "explanation": "San Diego Fire-Rescue requires special event permit applications to be submitted at least two weeks prior to the event."
+    },
+    {
+      "id": "ca-co-q3",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "Colorado requires state-level laser device registration for all Class 4 lasers.",
+      "correct_answer": false,
+      "explanation": "Colorado defers to federal regulations and does not require separate state registration. The Radiation Control Program should be notified, but there's no formal registration requirement."
+    },
+    {
+      "id": "ca-co-q4",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "You're planning a laser show in Los Angeles with 200 attendees. What permits are required?",
+      "options": [
+        "FDA variance only",
+        "FDA variance + CA CDPH registration",
+        "FDA variance + CA CDPH registration + LA Fire permit",
+        "FDA variance + LA Fire permit only"
+      ],
+      "correct_answer": 2,
+      "explanation": "California requires all three: FDA variance (federal), CDPH registration (state), AND local fire permit for events with 50+ people."
+    },
+    {
+      "id": "ca-co-q5",
+      "type": "scenario",
+      "difficulty": "medium",
+      "question": "A touring show has an FDA variance and CA CDPH registration. They want to add a last-minute Denver show. What must they do?",
+      "scenario": "Last-minute addition to tour",
+      "correct_answer": "Notify Colorado Radiation Control Program and ensure venue compliance with federal variance terms",
+      "explanation": "Colorado requires notification to the Radiation Control Program but doesn't require separate state licensing if federal variance is in place."
+    }
+  ],
+  "key_takeaways": [
+    "California has a three-tier system: Federal (FDA) + State (CDPH) + Local (Fire)",
+    "Colorado primarily defers to federal requirements with state notification",
+    "San Diego requires 2+ weeks advance notice for special event permits",
+    "California events with 50+ people require local fire permits",
+    "Both states require FDA variance for entertainment laser shows",
+    "Planning timeline: California = 3-4 weeks minimum, Colorado = 2-3 weeks"
+  ],
+  "resources": [
+    {
+      "title": "California CDPH Laser Registration",
+      "url": "https://www.cdph.ca.gov/Programs/CEH/DRSEM/Pages/RHB-Lasers.aspx",
+      "type": "official"
+    },
+    {
+      "title": "San Diego Fire Special Events",
+      "url": "http://www.sandiego.gov/fire/services/policies/index.shtml",
+      "type": "official"
+    },
+    {
+      "title": "Colorado Radiation Control Program",
+      "url": "https://www.colorado.gov/pacific/cdphe/radiation-control",
+      "type": "official"
+    },
+    {
+      "title": "FDA Variance Application",
+      "url": "https://www.fda.gov/radiation-emitting-products/laser-products-and-instruments/variance-applications",
+      "type": "official"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "created_date": "2026-03-19",
+    "author": "Module Builder Agent C4-A",
+    "review_status": "pending"
+  }
+}

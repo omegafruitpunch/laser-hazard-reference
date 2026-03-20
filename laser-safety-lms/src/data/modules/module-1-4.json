@@ -1,0 +1,56 @@
+{
+  "id": "module-1-4",
+  "courseId": "course-1",
+  "title": "Beam Hazard Calculations",
+  "description": "How to calculate Nominal Ocular Hazard Distance (NOHD) and Maximum Permissible Exposure (MPE) values.",
+  "order": 4,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "Why Calculate?",
+      "content": "Beam hazard calculations transform abstract laser parameters into concrete safety distances. These calculations determine where people can safely stand, what controls are needed, and whether a proposed laser operation can be conducted safely.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "NOHD and MPE Fundamentals",
+  "content": "Understanding the relationship between Maximum Permissible Exposure (MPE) and Nominal Ocular Hazard Distance (NOHD) is essential for laser safety.\n\n## Maximum Permissible Exposure (MPE)\n\nThe MPE is the level of laser radiation to which a person may be exposed without hazardous effect or adverse biological changes in the eye or skin.\n\n### Key Factors:\n- **Wavelength**: Eye sensitivity varies dramatically with wavelength\n- **Exposure Duration**: Longer exposures have lower MPE values\n- **Tissue Type**: Eye MPE is much lower than skin MPE\n\n## Nominal Ocular Hazard Distance (NOHD)\n\nThe NOHD is the distance along the axis of an unobstructed laser beam at which the irradiance or radiant exposure has fallen to the level of the MPE.\n\n### Basic Formula:\n```\nNOHD = (1/φ) × √(4×P/(π×MPE))\n```\n\nWhere:\n- φ = beam divergence (radians)\n- P = laser power (Watts)\n- MPE = Maximum Permissible Exposure (W/cm²)\n\n## Extended NOHD (ENOHD)\n\nFor outdoor or uncontrolled environments, an Extended NOHD is calculated using a safety factor, typically 2× the standard NOHD.",
+      "component": "NOHDCalculator",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "Calculation Exercises",
+      "content": "Calculate the NOHD for the following scenarios:\n\n**Problem 1**: 1W laser, 532nm, 1.5 mrad divergence, 0.25s exposure\n\n**Problem 2**: 5W laser, 640nm, 2.0 mrad divergence, 0.25s exposure\n\n**Problem 3**: Compare indoor vs outdoor NOHD for a 10W RGB projector.",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-1-4",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "Beam Hazard Calculations Guide",
+      "path": "/docs/course-1-fundamentals/beam-hazard-calculations.pdf"
+    },
+    {
+      "type": "interactive",
+      "title": "NOHD Calculator",
+      "component": "NOHDCalculator"
+    }
+  ],
+  "keyTakeaways": [
+    "MPE is the maximum laser exposure level considered safe for the eye or skin",
+    "NOHD is the distance at which irradiance falls below the MPE",
+    "Calculations depend on wavelength, pulse duration, beam divergence, and power",
+    "Always calculate for worst-case scenario (e.g., dilated pupil in darkness)"
+  ],
+  "nextModule": "module-1-5",
+  "prerequisites": ["module-1-3"],
+  "difficulty": "intermediate"
+}

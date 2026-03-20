@@ -1,0 +1,166 @@
+{
+  "processing_agent": "PDF Elite Processor Agent #8",
+  "course": "Course 3: Bio-Hazards",
+  "processing_date": "2026-03-19T15:46:17-07:00",
+  "status": "COMPLETE",
+  "pdfs_processed": [
+    {
+      "filename": "iec-60825-1.pdf",
+      "path": "laser-safety-lms/public/docs/course-3-bio-hazards/iec-60825-1.pdf",
+      "pages": 37,
+      "content_type": "IEC Standard Interpretation Sheet",
+      "key_topics": [
+        "Classification rules (Subclause 4.3)",
+        "Extended source analysis",
+        "Pulsed emission evaluation",
+        "Multiple wavelength considerations",
+        "Pulse group analysis"
+      ]
+    },
+    {
+      "filename": "mpe-tables.pdf",
+      "path": "laser-safety-lms/public/docs/course-3-bio-hazards/mpe-tables.pdf",
+      "pages": 10,
+      "content_type": "ANSI Z136.1-2000 Definitions",
+      "key_topics": [
+        "Laser safety terminology",
+        "MPE parameters and correction factors",
+        "Angular measurement definitions",
+        "Time constants (T1, T2)",
+        "Wavelength regions and hazards"
+      ]
+    }
+  ],
+  "outputs_generated": {
+    "extraction_files": [
+      {
+        "file": "iec-60825-1_extracted.json",
+        "description": "Full structured extraction of IEC 60825-1 PDF",
+        "size_bytes": 142921
+      },
+      {
+        "file": "iec-60825-1_extracted.txt",
+        "description": "Plain text extraction for human reading",
+        "size_bytes": 140376
+      },
+      {
+        "file": "iec-60825-1_concepts.json",
+        "description": "Key concepts extracted from IEC standard",
+        "size_bytes": 3694
+      },
+      {
+        "file": "mpe-tables_extracted.json",
+        "description": "Full structured extraction of MPE Tables PDF",
+        "size_bytes": 26695
+      },
+      {
+        "file": "mpe-tables_extracted.txt",
+        "description": "Plain text extraction for human reading",
+        "size_bytes": 25969
+      },
+      {
+        "file": "mpe-tables_concepts.json",
+        "description": "Key concepts extracted from MPE definitions",
+        "size_bytes": 683
+      }
+    ],
+    "gestation_content": [
+      {
+        "file": "gestation_standard_requirements.json",
+        "description": "IEC 60825-1 standard requirements interpretation guide",
+        "topics_covered": [
+          "Classification rules (4.3)",
+          "Non-uniform source analysis (4.3d)",
+          "Pulsed emission analysis (4.3f)",
+          "Pulse group evaluation",
+          "Critical parameters reference"
+        ]
+      },
+      {
+        "file": "gestation_table_interpretation.json",
+        "description": "MPE Tables interpretation guide",
+        "topics_covered": [
+          "Key parameter definitions (αmin, αmax, T1, T2)",
+          "Correction factors (CA, CB, CC, CE, CP)",
+          "Table lookup procedures",
+          "Measurement conditions",
+          "Wavelength region hazards"
+        ]
+      },
+      {
+        "file": "gestation_formula_components.json",
+        "description": "Formula components and calculation methods",
+        "topics_covered": [
+          "AEL calculation procedures",
+          "Angular subtense calculations",
+          "T2 time constant formula",
+          "C5 and C6 correction factors",
+          "Optical density calculations",
+          "NOHD calculations",
+          "Unit conversions"
+        ]
+      },
+      {
+        "file": "gestation_measurement_parameters.json",
+        "description": "Measurement parameters and conditions",
+        "topics_covered": [
+          "IEC measurement conditions (1, 2, 3)",
+          "Standard apertures",
+          "Time bases for evaluation",
+          "Angular parameters",
+          "Measurement instruments",
+          "Environmental conditions"
+        ]
+      }
+    ],
+    "quiz_content": [
+      {
+        "file": "quiz_questions.json",
+        "description": "Generated quiz questions",
+        "total_questions": 25,
+        "categories": {
+          "table_lookup": {
+            "count": 5,
+            "description": "Questions on MPE table lookup and interpretation"
+          },
+          "limit_calculation": {
+            "count": 5,
+            "description": "Questions on calculating AELs, MPEs, and correction factors"
+          },
+          "classification_determination": {
+            "count": 5,
+            "description": "Questions on laser product classification"
+          },
+          "parameter_selection": {
+            "count": 5,
+            "description": "Questions on selecting appropriate parameters"
+          }
+        }
+      }
+    ],
+    "knowledge_graph": [
+      {
+        "file": "knowledge_graph.json",
+        "description": "Standards and limits knowledge graph",
+        "nodes": {
+          "standards": 2,
+          "laser_classes": 8,
+          "limits": 2,
+          "correction_factors": 7,
+          "measurement_parameters": 6,
+          "hazard_regions": 7,
+          "measurement_conditions": 3
+        },
+        "relationships": 8
+      }
+    ]
+  },
+  "summary": {
+    "total_files_created": 14,
+    "total_content_size_bytes": 368566,
+    "processing_status": "SUCCESS",
+    "gestation_subagents_spawned": 4,
+    "quiz_architects_spawned": 4,
+    "knowledge_graphs_built": 1
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 26,
+  "quiz_items": [
+    {
+      "id": "C2-P26-Q1",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "For a touring laser show, what type of installation diagrams are required in the report?",
+      "options": [
+        "Exact diagrams for each venue",
+        "General diagrams showing typical setups",
+        "No diagrams required for touring shows",
+        "3D CAD models only"
+      ],
+      "correct_answer": 1,
+      "explanation": "For touring shows, general diagrams showing typical installations are required. For permanent/semi-permanent shows, specific installation diagrams are needed.",
+      "learning_objective": "Distinguish reporting for show types",
+      "regulatory_reference": "Appendix B - Installation Diagrams"
+    },
+    {
+      "id": "C2-P26-Q2",
+      "type": "multiple_select",
+      "difficulty": "advanced",
+      "question": "What must be included in notification letters for laser light shows? (Select all that apply)",
+      "options": [
+        "Show schedule with dates, times, and full addresses",
+        "Clear identification of outdoor shows",
+        "Reference to previously reported effects",
+        "Ticket prices"
+      ],
+      "correct_answer": [0, 1, 2],
+      "explanation": "Notification letters must include: show schedule (dates, times, locations with full addresses), identification of outdoor shows, and reference to previously reported effects for each show.",
+      "learning_objective": "Know notification requirements",
+      "regulatory_reference": "Appendix B - Notification Letter Content"
+    }
+  ]
+}

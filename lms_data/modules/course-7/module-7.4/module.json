@@ -1,0 +1,264 @@
+{
+  "module_id": "module-7.4",
+  "course_id": "course-7",
+  "course_name": "Event Safety",
+  "title": "Emergency Response Procedures",
+  "subtitle": "NIMS/ICS Frameworks & Major Incident Command",
+  "description": "Master emergency response through NIMS/ICS frameworks, major incident planning, and multi-agency coordination with immersive scenario-based training.",
+  "version": "2.0",
+  "last_updated": "2026-03-19",
+  "polished_by": "UI/UX Agent - Event Safety Edition",
+  "duration_minutes": 25,
+  "difficulty": "intermediate",
+  "prerequisites": ["module-7.3"],
+  "next_module": "module-7.5",
+  "ui_theme": {
+    "industry": "event_production",
+    "emergency_focus": true,
+    "color_palette": {
+      "primary": "#FF6B00",
+      "primary_dark": "#CC5500",
+      "secondary": "#1A1A2E",
+      "accent": "#FFD700",
+      "command": "#DC2626",
+      "operations": "#16A34A",
+      "planning": "#2563EB",
+      "logistics": "#D97706",
+      "finance": "#7C3AED",
+      "triage_immediate": "#DC2626",
+      "triage_delayed": "#EAB308",
+      "triage_minor": "#16A34A",
+      "triage_deceased": "#374151",
+      "danger": "#DC2626",
+      "critical": "#991B1B",
+      "warning": "#F97316",
+      "success": "#16A34A",
+      "background": "#0F0F1A",
+      "surface": "#1E1E2E",
+      "text": "#FFFFFF",
+      "text_secondary": "#A1A1AA"
+    },
+    "ics_section_colors": {
+      "command": { "color": "#DC2626", "icon": "crown", "label": "Command" },
+      "operations": { "color": "#16A34A", "icon": "tools", "label": "Operations" },
+      "planning": { "color": "#2563EB", "icon": "clipboard-list", "label": "Planning" },
+      "logistics": { "color": "#D97706", "icon": "truck", "label": "Logistics" },
+      "finance": { "color": "#7C3AED", "icon": "dollar-sign", "label": "Finance/Admin" }
+    },
+    "triage_colors": {
+      "immediate": { "color": "#DC2626", "label": "IMMEDIATE", "tag": "Red" },
+      "delayed": { "color": "#EAB308", "label": "DELAYED", "tag": "Yellow" },
+      "minor": { "color": "#16A34A", "label": "MINOR", "tag": "Green" },
+      "deceased": { "color": "#374151", "label": "DECEASED", "tag": "Black" }
+    },
+    "emergency_protocols": {
+      "mayday": { "code": "MAYDAY MAYDAY MAYDAY", "color": "#DC2626", "meaning": "Life-threatening emergency" },
+      "urgent": { "code": "Emergency Traffic", "color": "#F97316", "meaning": "Urgent situation" },
+      "evacuate": { "code": "Evacuate [Area]", "color": "#DC2626", "meaning": "Immediate evacuation" }
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "lo-7.4-1",
+      "text": "Understand NIMS principles and ICS organizational structure",
+      "icon": "sitemap",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.4-2",
+      "text": "Apply incident command procedures in major emergencies",
+      "icon": "command",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.4-3",
+      "text": "Coordinate effectively with emergency services",
+      "icon": "radio",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.4-4",
+      "text": "Execute proper evacuation and cordon procedures",
+      "icon": "shield",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.4-5",
+      "text": "Document incidents according to professional standards",
+      "icon": "file-text",
+      "priority": "high"
+    }
+  ],
+  "content_structure": {
+    "warmup": {
+      "title": "ICS Fundamentals",
+      "duration": 3,
+      "icon": "graduation-cap",
+      "activities": ["NIMS overview", "ICS structure introduction", "Role matching exercise"]
+    },
+    "core": {
+      "title": "NIMS/ICS Deep Dive",
+      "duration": 8,
+      "icon": "network",
+      "activities": ["Interactive ICS org chart", "Command staff responsibilities", "Communication protocols"]
+    },
+    "practice": {
+      "title": "Emergency Simulator",
+      "duration": 10,
+      "icon": "activity",
+      "activities": ["Stage collapse scenario", "Crowd crush scenario", "Decision consequence review"]
+    },
+    "challenge": {
+      "title": "Major Incident Command",
+      "duration": 4,
+      "icon": "award",
+      "activities": ["Multi-incident command challenge", "Resource allocation decisions"]
+    }
+  },
+  "interactive_components": {
+    "emergency_response_simulator": {
+      "type": "branching_scenario",
+      "title": "🚨 Emergency Response Simulator",
+      "description": "Multi-branching emergency scenarios with time-critical decisions",
+      "scenarios": ["stage_collapse", "crowd_crush"],
+      "features": ["timed_decisions", "consequence_tracking", "role_playing"],
+      "emergency_styling": true,
+      "time_pressure": true
+    },
+    "nims_ics_explorer": {
+      "type": "interactive_org_chart",
+      "title": "NIMS/ICS Role Explorer",
+      "description": "Interactive organizational chart with all ICS positions",
+      "sections": ["command", "operations", "planning", "logistics", "finance"],
+      "color_coded": true,
+      "role_count": 8
+    },
+    "triage_trainer": {
+      "type": "sorting_exercise",
+      "title": "START Triage Trainer",
+      "description": "Practice triage categorization using START system",
+      "categories": ["immediate", "delayed", "minor", "deceased"],
+      "color_coded": true
+    },
+    "documentation_trainer": {
+      "type": "form_practice",
+      "title": "Incident Documentation Trainer",
+      "description": "Practice completing incident reports",
+      "forms": ["initial_report", "witness_statement"]
+    }
+  },
+  "emergency_elements": {
+    "quick_access_protocols": [
+      {
+        "id": "ics-activation",
+        "title": "ICS ACTIVATION CHECKLIST",
+        "icon": "sitemap",
+        "priority": "critical",
+        "items": [
+          { "task": "Establish Incident Command", "priority": "CRITICAL", "time": "Immediate" },
+          { "task": "Assess situation and size-up", "priority": "CRITICAL", "time": "0-2 min" },
+          { "task": "Establish command post", "priority": "HIGH", "time": "5 min" },
+          { "task": "Activate Safety Officer", "priority": "CRITICAL", "time": "Immediate" },
+          { "task": "Begin incident documentation", "priority": "HIGH", "time": "Ongoing" }
+        ]
+      },
+      {
+        "id": "evacuation-protocol",
+        "title": "MASS EVACUATION PROTOCOL",
+        "icon": "running",
+        "priority": "critical",
+        "color": "danger",
+        "items": [
+          { "task": "Declare evacuation via all channels", "priority": "CRITICAL" },
+          { "task": "Activate air horn signals", "priority": "CRITICAL", "signal": "2 long blasts" },
+          { "task": "Clear all egress routes", "priority": "CRITICAL" },
+          { "task": "Direct to assembly points", "priority": "HIGH" },
+          { "task": "Account for all personnel", "priority": "CRITICAL" }
+        ]
+      }
+    ],
+    "emergency_buttons": [
+      {
+        "id": "mayday",
+        "label": "MAYDAY",
+        "color": "critical",
+        "icon": "radio",
+        "action": "declare_mayday",
+        "confirmation_required": true,
+        "style": "pulsing_critical",
+        "code": "MAYDAY MAYDAY MAYDAY"
+      },
+      {
+        "id": "declare-major-incident",
+        "label": "DECLARE MAJOR INCIDENT",
+        "color": "danger",
+        "icon": "alert-octagon",
+        "action": "activate_ics",
+        "confirmation_required": true
+      },
+      {
+        "id": "stop-unsafe-ops",
+        "label": "STOP UNSAFE OPERATIONS",
+        "color": "warning",
+        "icon": "shield-alert",
+        "action": "safety_officer_authority",
+        "authority": "Safety Officer"
+      }
+    ],
+    "radio_codes": [
+      { "code": "MAYDAY MAYDAY MAYDAY", "meaning": "Life-threatening emergency", "action": "All clear frequency" },
+      { "code": "Emergency Traffic", "meaning": "Urgent situation", "action": "Clear frequency" },
+      { "code": "Standby", "meaning": "Wait for instruction", "action": "Maintain position" },
+      { "code": "All Clear", "meaning": "Emergency resolved", "action": "Resume operations" },
+      { "code": "Evacuate [Area]", "meaning": "Immediate evacuation", "action": "Leave immediately" }
+    ]
+  },
+  "ics_structure": {
+    "command_staff": [
+      { "role": "Incident Commander", "icon": "crown", "authority": "Full", "key_decisions": ["Evacuation", "Resource Priority", "Unified Command"] },
+      { "role": "Safety Officer", "icon": "shield", "authority": "Emergency stop authority", "key_decisions": ["Suspend Operations", "PPE Requirements"] },
+      { "role": "Public Information Officer", "icon": "megaphone", "authority": "Limited", "key_decisions": ["Message Timing", "Media Access"] },
+      { "role": "Liaison Officer", "icon": "handshake", "authority": "Advisory", "key_decisions": ["Agency Coordination"] }
+    ],
+    "general_staff": [
+      { "role": "Operations Section Chief", "icon": "tools", "color": "#16A34A", "responsibilities": ["Tactical operations", "Resource deployment"] },
+      { "role": "Planning Section Chief", "icon": "clipboard-list", "color": "#2563EB", "responsibilities": ["Information management", "Incident Action Plan"] },
+      { "role": "Logistics Section Chief", "icon": "truck", "color": "#D97706", "responsibilities": ["Resources", "Facilities", "Services"] },
+      { "role": "Finance/Admin Chief", "icon": "dollar-sign", "color": "#7C3AED", "responsibilities": ["Cost tracking", "Contracts", "Claims"] }
+    ]
+  },
+  "mobile_optimizations": {
+    "touch_targets": { "min_size": "48px" },
+    "quick_actions": [
+      { "icon": "sitemap", "label": "ICS Chart", "action": "open_ics_explorer" },
+      { "icon": "activity", "label": "Triage", "action": "triage_trainer" },
+      { "icon": "radio", "label": "MAYDAY", "action": "emergency_protocols" }
+    ],
+    "emergency_access": {
+      "swipe_gesture": "triple_tap_top_right",
+      "quick_button": "persistent_fab"
+    }
+  },
+  "assessment": {
+    "quiz_questions": 8,
+    "passing_score": 80,
+    "scenario_assessment": true,
+    "time_limited": true
+  },
+  "resources": {
+    "fema_courses": [
+      { "code": "IS-100", "title": "Introduction to ICS", "hours": 2 },
+      { "code": "IS-200", "title": "ICS for Single Resources", "hours": 4 },
+      { "code": "IS-700", "title": "National Incident Management System", "hours": 4 },
+      { "code": "IS-15.b", "title": "Special Events Contingency Planning", "hours": 2 }
+    ]
+  },
+  "metadata": {
+    "version": "2.0",
+    "created_date": "2026-03-19",
+    "polished_by": "UI/UX Agent - Event Safety Edition",
+    "content_source": "lms_data/course-7-event-safety/modules/module-emergency-response.json",
+    "interactive": true,
+    "scenario_based": true
+  }
+}

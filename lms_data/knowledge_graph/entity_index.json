@@ -1,0 +1,2415 @@
+{
+  "by_type": {
+    "document": [
+      "E00000",
+      "E00068",
+      "E00069",
+      "E00070",
+      "E00079",
+      "E00109",
+      "E00110",
+      "E00233"
+    ],
+    "role": [
+      "E00001",
+      "E00013",
+      "E00025",
+      "E00026",
+      "E00027",
+      "E00028",
+      "E00286"
+    ],
+    "training_topic": [
+      "E00002",
+      "E00003",
+      "E00004",
+      "E00005"
+    ],
+    "regulatory_aspect": [
+      "E00006"
+    ],
+    "Person": [
+      "E00007"
+    ],
+    "organization": [
+      "E00008",
+      "E00009",
+      "E00010",
+      "E00011",
+      "E00037",
+      "E00038",
+      "E00039",
+      "E00040",
+      "E00077",
+      "E00078",
+      "E00080",
+      "E00081",
+      "E00111",
+      "E00177",
+      "E00178",
+      "E00179",
+      "E00180",
+      "E00193",
+      "E00211",
+      "E00274",
+      "E00275",
+      "E00276",
+      "E00277",
+      "E00278"
+    ],
+    "standard": [
+      "E00012",
+      "E00076",
+      "E00112",
+      "E00113",
+      "E00200",
+      "E00267",
+      "E00268",
+      "E00269",
+      "E00270"
+    ],
+    "Agency": [
+      "E00014",
+      "E00015"
+    ],
+    "hazard": [
+      "E00016",
+      "E00017",
+      "E00018",
+      "E00019",
+      "E00161",
+      "E00168",
+      "E00169",
+      "E00170"
+    ],
+    "LaserClass": [
+      "E00020",
+      "E00021",
+      "E00022",
+      "E00023",
+      "E00024"
+    ],
+    "concept": [
+      "E00029",
+      "E00030",
+      "E00031",
+      "E00032",
+      "E00033",
+      "E00055",
+      "E00056",
+      "E00057",
+      "E00058",
+      "E00059",
+      "E00084",
+      "E00085",
+      "E00086",
+      "E00087",
+      "E00088",
+      "E00089",
+      "E00101",
+      "E00114",
+      "E00115",
+      "E00116",
+      "E00117",
+      "E00118",
+      "E00119",
+      "E00120",
+      "E00121",
+      "E00122",
+      "E00123",
+      "E00124",
+      "E00125",
+      "E00126",
+      "E00127",
+      "E00128",
+      "E00129",
+      "E00130",
+      "E00131",
+      "E00132",
+      "E00133",
+      "E00134",
+      "E00135",
+      "E00136",
+      "E00137",
+      "E00138",
+      "E00139",
+      "E00145",
+      "E00146",
+      "E00147",
+      "E00148",
+      "E00149",
+      "E00150",
+      "E00151",
+      "E00152",
+      "E00153",
+      "E00154",
+      "E00155",
+      "E00156",
+      "E00157",
+      "E00158",
+      "E00159",
+      "E00160",
+      "E00163",
+      "E00164",
+      "E00165",
+      "E00166",
+      "E00167",
+      "E00171",
+      "E00173",
+      "E00174",
+      "E00175",
+      "E00176",
+      "E00194",
+      "E00195",
+      "E00196",
+      "E00197",
+      "E00198",
+      "E00199",
+      "E00201",
+      "E00202",
+      "E00203",
+      "E00204",
+      "E00207",
+      "E00208",
+      "E00212",
+      "E00213",
+      "E00214",
+      "E00215",
+      "E00216",
+      "E00217",
+      "E00218",
+      "E00226",
+      "E00227",
+      "E00240",
+      "E00241",
+      "E00242",
+      "E00243",
+      "E00279",
+      "E00280",
+      "E00281",
+      "E00285"
+    ],
+    "regulation": [
+      "E00034",
+      "E00035",
+      "E00036",
+      "E00048",
+      "E00049",
+      "E00050",
+      "E00051",
+      "E00052",
+      "E00053",
+      "E00054",
+      "E00102",
+      "E00103",
+      "E00104",
+      "E00105",
+      "E00106",
+      "E00107",
+      "E00108",
+      "E00181",
+      "E00182",
+      "E00183",
+      "E00184",
+      "E00248",
+      "E00271",
+      "E00272",
+      "E00273"
+    ],
+    "equipment": [
+      "E00041",
+      "E00042",
+      "E00043",
+      "E00044",
+      "E00045",
+      "E00046",
+      "E00047"
+    ],
+    "requirement": [
+      "E00060",
+      "E00061",
+      "E00062",
+      "E00063",
+      "E00064",
+      "E00065",
+      "E00094",
+      "E00095",
+      "E00096",
+      "E00097",
+      "E00098",
+      "E00185",
+      "E00186",
+      "E00187",
+      "E00188",
+      "E00206",
+      "E00244",
+      "E00245"
+    ],
+    "report": [
+      "E00066",
+      "E00067"
+    ],
+    "product_type": [
+      "E00071",
+      "E00072",
+      "E00073"
+    ],
+    "process": [
+      "E00074",
+      "E00075",
+      "E00099",
+      "E00234"
+    ],
+    "report_type": [
+      "E00082",
+      "E00083"
+    ],
+    "label": [
+      "E00090",
+      "E00091",
+      "E00092",
+      "E00093"
+    ],
+    "identifier": [
+      "E00100"
+    ],
+    "contact": [
+      "E00140",
+      "E00141",
+      "E00189",
+      "E00190",
+      "E00191",
+      "E00192"
+    ],
+    "concession": [
+      "E00142",
+      "E00143",
+      "E00144"
+    ],
+    "control": [
+      "E00162",
+      "E00172"
+    ],
+    "regulator": [
+      "E00205"
+    ],
+    "version": [
+      "E00209",
+      "E00210"
+    ],
+    "regional-standard": [
+      "E00219",
+      "E00220",
+      "E00221"
+    ],
+    "iso-standard": [
+      "E00222",
+      "E00223",
+      "E00224"
+    ],
+    "reference": [
+      "E00225"
+    ],
+    "document-category": [
+      "E00228",
+      "E00229",
+      "E00230",
+      "E00231",
+      "E00232"
+    ],
+    "stage": [
+      "E00235",
+      "E00236",
+      "E00237",
+      "E00238"
+    ],
+    "tool": [
+      "E00239"
+    ],
+    "procedure": [
+      "E00246",
+      "E00258",
+      "E00282",
+      "E00283",
+      "E00284"
+    ],
+    "resource": [
+      "E00247"
+    ],
+    "hazard_category": [
+      "E00249"
+    ],
+    "airspace_zone": [
+      "E00250",
+      "E00251",
+      "E00252",
+      "E00253"
+    ],
+    "federal_law": [
+      "E00254"
+    ],
+    "faa_guidance": [
+      "E00255",
+      "E00256"
+    ],
+    "faa_form": [
+      "E00257"
+    ],
+    "safety_equipment": [
+      "E00259"
+    ],
+    "laser_type": [
+      "E00260"
+    ],
+    "operational_procedure": [
+      "E00261"
+    ],
+    "system": [
+      "E00262"
+    ],
+    "hazard_type": [
+      "E00263",
+      "E00264",
+      "E00265"
+    ],
+    "flight_concept": [
+      "E00266"
+    ]
+  },
+  "by_course": {
+    "course-1": [
+      "E00000",
+      "E00001",
+      "E00002",
+      "E00003",
+      "E00004",
+      "E00005",
+      "E00006",
+      "E00007",
+      "E00008",
+      "E00009",
+      "E00010",
+      "E00011",
+      "E00012",
+      "E00013",
+      "E00013",
+      "E00014",
+      "E00015",
+      "E00016",
+      "E00017",
+      "E00018",
+      "E00019",
+      "E00020",
+      "E00021",
+      "E00022",
+      "E00023",
+      "E00024",
+      "E00025",
+      "E00026",
+      "E00027",
+      "E00028",
+      "E00029",
+      "E00030",
+      "E00031",
+      "E00032",
+      "E00033",
+      "E00034",
+      "E00035",
+      "E00036",
+      "E00037",
+      "E00038",
+      "E00039",
+      "E00040",
+      "E00041",
+      "E00042",
+      "E00043",
+      "E00044",
+      "E00045",
+      "E00046",
+      "E00047"
+    ],
+    "course-2": [
+      "E00012",
+      "E00048",
+      "E00049",
+      "E00049",
+      "E00049",
+      "E00050",
+      "E00050",
+      "E00050",
+      "E00051",
+      "E00052",
+      "E00053",
+      "E00053",
+      "E00053",
+      "E00054",
+      "E00055",
+      "E00056",
+      "E00057",
+      "E00058",
+      "E00059",
+      "E00060",
+      "E00060",
+      "E00061",
+      "E00062",
+      "E00062",
+      "E00063",
+      "E00063",
+      "E00064",
+      "E00064",
+      "E00065",
+      "E00066",
+      "E00067",
+      "E00067",
+      "E00068",
+      "E00069",
+      "E00070",
+      "E00071",
+      "E00071",
+      "E00072",
+      "E00072",
+      "E00073",
+      "E00073",
+      "E00074",
+      "E00075",
+      "E00076",
+      "E00077",
+      "E00077",
+      "E00078",
+      "E00078",
+      "E00079",
+      "E00080",
+      "E00081",
+      "E00082",
+      "E00083",
+      "E00084",
+      "E00085",
+      "E00086",
+      "E00087",
+      "E00088",
+      "E00089",
+      "E00090",
+      "E00091",
+      "E00092",
+      "E00093",
+      "E00094",
+      "E00095",
+      "E00096",
+      "E00097",
+      "E00098",
+      "E00099",
+      "E00100",
+      "E00101",
+      "E00102",
+      "E00103",
+      "E00103",
+      "E00104",
+      "E00105",
+      "E00106",
+      "E00106",
+      "E00107",
+      "E00107",
+      "E00108",
+      "E00109",
+      "E00110",
+      "E00111",
+      "E00112",
+      "E00113",
+      "E00114",
+      "E00115",
+      "E00116",
+      "E00117",
+      "E00118",
+      "E00119",
+      "E00120",
+      "E00121",
+      "E00122",
+      "E00123",
+      "E00124",
+      "E00125",
+      "E00126",
+      "E00127",
+      "E00128",
+      "E00129",
+      "E00130",
+      "E00131",
+      "E00132",
+      "E00133",
+      "E00134",
+      "E00135",
+      "E00136",
+      "E00137",
+      "E00138",
+      "E00139",
+      "E00140",
+      "E00141",
+      "E00142",
+      "E00143",
+      "E00144",
+      "E00145",
+      "E00146",
+      "E00147",
+      "E00148"
+    ],
+    "course-8": [
+      "E00012",
+      "E00013",
+      "E00013",
+      "E00025",
+      "E00029",
+      "E00030",
+      "E00055",
+      "E00056",
+      "E00059",
+      "E00112",
+      "E00207",
+      "E00267",
+      "E00268",
+      "E00269",
+      "E00270",
+      "E00271",
+      "E00272",
+      "E00273",
+      "E00274",
+      "E00275",
+      "E00276",
+      "E00277",
+      "E00278",
+      "E00279",
+      "E00280",
+      "E00281",
+      "E00282",
+      "E00283",
+      "E00284",
+      "E00285",
+      "E00286"
+    ],
+    "course-5": [
+      "E00022",
+      "E00029",
+      "E00029",
+      "E00030",
+      "E00112",
+      "E00194",
+      "E00195",
+      "E00196",
+      "E00197",
+      "E00198",
+      "E00199",
+      "E00200",
+      "E00201",
+      "E00202",
+      "E00203",
+      "E00204",
+      "E00205",
+      "E00206",
+      "E00207",
+      "E00208",
+      "E00209",
+      "E00210",
+      "E00211",
+      "E00212",
+      "E00213",
+      "E00214",
+      "E00215",
+      "E00216",
+      "E00217",
+      "E00218",
+      "E00219",
+      "E00220",
+      "E00221",
+      "E00222",
+      "E00223",
+      "E00224",
+      "E00225",
+      "E00226",
+      "E00227",
+      "E00227",
+      "E00228",
+      "E00229",
+      "E00230",
+      "E00231",
+      "E00232",
+      "E00233",
+      "E00234",
+      "E00235",
+      "E00236",
+      "E00237",
+      "E00238",
+      "E00239",
+      "E00240",
+      "E00241",
+      "E00242",
+      "E00243",
+      "E00244",
+      "E00245",
+      "E00246",
+      "E00247"
+    ],
+    "course-3": [
+      "E00029",
+      "E00029",
+      "E00149",
+      "E00150",
+      "E00151",
+      "E00152",
+      "E00153",
+      "E00154",
+      "E00154",
+      "E00155",
+      "E00156",
+      "E00156",
+      "E00157",
+      "E00158",
+      "E00158",
+      "E00159",
+      "E00159",
+      "E00160",
+      "E00161",
+      "E00162",
+      "E00163",
+      "E00164",
+      "E00165",
+      "E00166",
+      "E00167",
+      "E00168",
+      "E00169",
+      "E00170",
+      "E00171",
+      "E00172"
+    ],
+    "course-6": [
+      "E00030",
+      "E00248",
+      "E00249",
+      "E00250",
+      "E00251",
+      "E00252",
+      "E00253",
+      "E00254",
+      "E00255",
+      "E00256",
+      "E00257",
+      "E00258",
+      "E00259",
+      "E00260",
+      "E00261",
+      "E00262",
+      "E00263",
+      "E00264",
+      "E00265",
+      "E00266"
+    ],
+    "course-4": [
+      "E00173",
+      "E00174",
+      "E00175",
+      "E00176",
+      "E00177",
+      "E00178",
+      "E00179",
+      "E00180",
+      "E00181",
+      "E00182",
+      "E00183",
+      "E00184",
+      "E00185",
+      "E00186",
+      "E00187",
+      "E00188",
+      "E00189",
+      "E00190",
+      "E00191",
+      "E00192",
+      "E00193"
+    ]
+  },
+  "by_name": {
+    "laser safety training acknowledgment": "E00000",
+    "laser safety officer (lso)": "E00001",
+    "laser biological hazards": "E00002",
+    "outdoor laser safety": "E00003",
+    "standards and regulations": "E00004",
+    "on site training observation": "E00005",
+    "record keeping": "E00006",
+    "roberta mchatton": "E00007",
+    "laser safety services llc": "E00008",
+    "ansi z136": "E00009",
+    "ilda": "E00010",
+    "esa": "E00011",
+    "ansi z136.1": "E00012",
+    "laser safety officer": "E00013",
+    "faa": "E00014",
+    "fda/cdrh": "E00015",
+    "permanent eye damage": "E00016",
+    "skin burns": "E00017",
+    "fire/ignition": "E00018",
+    "distraction/dazzle/glare": "E00019",
+    "class 1": "E00020",
+    "class 2": "E00021",
+    "class 3r": "E00022",
+    "class 3b": "E00023",
+    "class 4": "E00024",
+    "laser safety adviser": "E00025",
+    "operator/programmer": "E00026",
+    "client": "E00027",
+    "venue": "E00028",
+    "mpe": "E00029",
+    "nohd": "E00030",
+    "ael": "E00031",
+    "e-stop": "E00032",
+    "scanner": "E00033",
+    "caa cap 736": "E00034",
+    "hs(g)95": "E00035",
+    "control of artificial optical radiation 2010": "E00036",
+    "hse": "E00037",
+    "caa": "E00038",
+    "plasa": "E00039",
+    "bsi": "E00040",
+    "opsl": "E00041",
+    "dpss": "E00042",
+    "diode": "E00043",
+    "gas laser": "E00044",
+    "scan-failure detection": "E00045",
+    "blanking plates": "E00046",
+    "srcs": "E00047",
+    "fda cdrh": "E00048",
+    "21 cfr 1040.10": "E00049",
+    "21 cfr 1040.11": "E00050",
+    "21 cfr 1002": "E00051",
+    "21 cfr 1003": "E00052",
+    "21 cfr 1010.4": "E00053",
+    "ffdca chapter v": "E00054",
+    "class i": "E00055",
+    "class ii": "E00056",
+    "class iiia": "E00057",
+    "class iiib": "E00058",
+    "class iv": "E00059",
+    "protective housing": "E00060",
+    "safety interlocks": "E00061",
+    "remote interlock connector": "E00062",
+    "key control": "E00063",
+    "beam attenuator": "E00064",
+    "warning labels": "E00065",
+    "laser product report": "E00066",
+    "annual report": "E00067",
+    "laser notice 56": "E00068",
+    "laser notice 41": "E00069",
+    "laser notice 50": "E00070",
+    "medical laser product": "E00071",
+    "demonstration laser product": "E00072",
+    "surveying/leveling/alignment laser": "E00073",
+    "variance": "E00074",
+    "product recall": "E00075",
+    "iec 60825-1 ed. 3": "E00076",
+    "center for devices and radiological health": "E00077",
+    "food and drug administration": "E00078",
+    "form fda 3632": "E00079",
+    "division of small manufacturer's assistance": "E00080",
+    "national institute of standards and technology": "E00081",
+    "product report": "E00082",
+    "supplemental report": "E00083",
+    "class i laser product": "E00084",
+    "class iia laser product": "E00085",
+    "class ii laser product": "E00086",
+    "class iiia laser product": "E00087",
+    "class iiib laser product": "E00088",
+    "class iv laser product": "E00089",
+    "certification label": "E00090",
+    "identification label": "E00091",
+    "warning logotype": "E00092",
+    "aperture label": "E00093",
+    "safety interlock": "E00094",
+    "fail-safe interlock": "E00095",
+    "laser radiation emission indicator": "E00096",
+    "manual reset": "E00097",
+    "scanning safeguard": "E00098",
+    "quality control program": "E00099",
+    "cdrh accession number": "E00100",
+    "model family": "E00101",
+    "21 cfr 1002.7": "E00102",
+    "21 cfr 1002.10": "E00103",
+    "21 cfr 1002.11": "E00104",
+    "21 cfr 1002.13": "E00105",
+    "21 cfr 1010.2": "E00106",
+    "21 cfr 1010.3": "E00107",
+    "21 cfr 1005.25": "E00108",
+    "laser notice no. 50": "E00109",
+    "laser notice no. 50 (2001)": "E00110",
+    "international electrotechnical commission": "E00111",
+    "iec 60825-1": "E00112",
+    "iec 60601-2-22": "E00113",
+    "1040.10(b) definitions": "E00114",
+    "1040.10(c)(1) classification": "E00115",
+    "1040.10(d) accessible emission limits": "E00116",
+    "1040.10(e) tests for compliance": "E00117",
+    "1040.10(f)(1) protective housing": "E00118",
+    "1040.10(f)(2) safety interlocks": "E00119",
+    "1040.10(f)(3) remote interlock connector": "E00120",
+    "1040.10(f)(4) key control": "E00121",
+    "1040.10(f)(5) emission indicator": "E00122",
+    "1040.10(f)(6) beam attenuator": "E00123",
+    "1040.10(f)(7) location of controls": "E00124",
+    "1040.10(f)(8) viewing optics": "E00125",
+    "1040.10(f)(9) scanning safeguard": "E00126",
+    "1040.10(g) labeling requirements": "E00127",
+    "1040.10(h)(1) user information": "E00128",
+    "1040.11(a) medical lasers": "E00129",
+    "1010.2 certification": "E00130",
+    "1010.3 identification": "E00131",
+    "1010.4 variances": "E00132",
+    "1040.10(a) applicability": "E00133",
+    "1040.10(c)(2) removable laser systems": "E00134",
+    "1040.10(f)(10) manual reset": "E00135",
+    "1040.10(h)(2) purchasing and servicing info": "E00136",
+    "1040.10(i) modification of certified product": "E00137",
+    "1040.11(b) surveying/leveling/alignment lasers": "E00138",
+    "1040.11(c) demonstration laser products": "E00139",
+    "jerome dennis": "E00140",
+    "dsma": "E00141",
+    "class ii/iiia emission indicators": "E00142",
+    "class ii/iiia beam attenuators": "E00143",
+    "iec warning labels": "E00144",
+    "regulatory harmonization": "E00145",
+    "least burdensome approach": "E00146",
+    "nonbinding guidance": "E00147",
+    "alternative approach": "E00148",
+    "eye": "E00149",
+    "cornea": "E00150",
+    "lens": "E00151",
+    "retina": "E00152",
+    "retinal hazard region": "E00153",
+    "visible light": "E00154",
+    "near-infrared": "E00155",
+    "ultraviolet": "E00156",
+    "far-infrared": "E00157",
+    "photochemical damage": "E00158",
+    "thermal damage": "E00159",
+    "mechanical damage": "E00160",
+    "scotoma": "E00161",
+    "blink reflex": "E00162",
+    "skin": "E00163",
+    "epidermis": "E00164",
+    "dermis": "E00165",
+    "melanin": "E00166",
+    "infrared": "E00167",
+    "erythema": "E00168",
+    "blister formation": "E00169",
+    "sunburn": "E00170",
+    "fitzpatrick scale": "E00171",
+    "personal protective equipment": "E00172",
+    "nevada": "E00173",
+    "new york": "E00174",
+    "texas": "E00175",
+    "washington": "E00176",
+    "nevada radiation control program": "E00177",
+    "nys dept. of labor radiological health unit": "E00178",
+    "texas dshs radiation safety licensing branch": "E00179",
+    "washington doh radiation protection": "E00180",
+    "12 nycrr part 50": "E00181",
+    "25 tac 289.301": "E00182",
+    "25 tac 289.302": "E00183",
+    "wac 296-62-09005": "E00184",
+    "advance notification": "E00185",
+    "laser operator training": "E00186",
+    "routine inspections": "E00187",
+    "light show advance notification": "E00188",
+    "karen beckley": "E00189",
+    "kirk fisher": "E00190",
+    "shannon dove-edson": "E00191",
+    "david b. jansen": "E00192",
+    "international laser display association (ilda)": "E00193",
+    "ilda country classification system": "E00194",
+    "category a": "E00195",
+    "category b": "E00196",
+    "category f": "E00197",
+    "category g": "E00198",
+    "category x": "E00199",
+    "as/nzs 4173": "E00200",
+    "australian states/territories": "E00201",
+    "new zealand": "E00202",
+    "new south wales": "E00203",
+    "victoria": "E00204",
+    "epa new zealand": "E00205",
+    "laser operator license": "E00206",
+    "laser classification": "E00207",
+    "entertainment-specific requirements": "E00208",
+    "edition 2 (2001)": "E00209",
+    "edition 3 (2014)": "E00210",
+    "iec tc 76": "E00211",
+    "class 3a": "E00212",
+    "class 1m": "E00213",
+    "class 2m": "E00214",
+    "extended sources": "E00215",
+    "accessible emission limits": "E00216",
+    "led sources": "E00217",
+    "global harmonization": "E00218",
+    "en 60825-1": "E00219",
+    "bs en 60825-1": "E00220",
+    "fda cdrh 21 cfr 1040": "E00221",
+    "iso 11553": "E00222",
+    "iso 17526": "E00223",
+    "iso 21254": "E00224",
+    "icnirp guidelines": "E00225",
+    "international laser show": "E00226",
+    "documentation package": "E00227",
+    "regulatory documentation": "E00228",
+    "equipment documentation": "E00229",
+    "safety documentation": "E00230",
+    "personnel documentation": "E00231",
+    "show documentation": "E00232",
+    "ata carnet": "E00233",
+    "planning stages": "E00234",
+    "initial research": "E00235",
+    "permit applications": "E00236",
+    "equipment & logistics": "E00237",
+    "final preparations": "E00238",
+    "permit calculator": "E00239",
+    "united states": "E00240",
+    "germany": "E00241",
+    "china": "E00242",
+    "uae": "E00243",
+    "document translation": "E00244",
+    "work permits / visas": "E00245",
+    "temporary import": "E00246",
+    "local consultant": "E00247",
+    "faa regulations": "E00248",
+    "visual interference hazards": "E00249",
+    "laser free zone (lfz)": "E00250",
+    "critical flight zone (cfz)": "E00251",
+    "sensitive flight zone (sfz)": "E00252",
+    "normal flight zone (nfz)": "E00253",
+    "18 usc 39a": "E00254",
+    "faa ac 70-1b": "E00255",
+    "faa ac 70-2a": "E00256",
+    "faa form 7140-1": "E00257",
+    "notam": "E00258",
+    "laser protective eyewear": "E00259",
+    "green laser (532nm)": "E00260",
+    "atc laser procedures": "E00261",
+    "domestic events network (den)": "E00262",
+    "flashblindness": "E00263",
+    "glare": "E00264",
+    "distraction": "E00265",
+    "critical flight phases": "E00266",
+    "ansi z136.10": "E00267",
+    "ansi e1.46": "E00268",
+    "ansi e1.17": "E00269",
+    "ansi e1.30-11": "E00270",
+    "21 cfr 1040": "E00271",
+    "faa order 7400.2": "E00272",
+    "state radiation control": "E00273",
+    "ansi": "E00274",
+    "lia": "E00275",
+    "esta": "E00276",
+    "fda": "E00277",
+    "iec": "E00278",
+    "fda variance": "E00279",
+    "scan failure detection": "E00280",
+    "emergency stop": "E00281",
+    "variance application": "E00282",
+    "faa notification": "E00283",
+    "mpe calculation": "E00284",
+    "class iii": "E00285",
+    "laser operator": "E00286"
+  },
+  "search_terms": {
+    "laser": [
+      "E00000",
+      "E00001",
+      "E00002",
+      "E00003",
+      "E00008",
+      "E00013",
+      "E00025",
+      "E00044",
+      "E00066",
+      "E00068",
+      "E00069",
+      "E00070",
+      "E00071",
+      "E00072",
+      "E00073",
+      "E00084",
+      "E00085",
+      "E00086",
+      "E00087",
+      "E00088",
+      "E00089",
+      "E00096",
+      "E00109",
+      "E00110",
+      "E00134",
+      "E00139",
+      "E00186",
+      "E00193",
+      "E00206",
+      "E00207",
+      "E00226",
+      "E00250",
+      "E00259",
+      "E00260",
+      "E00261",
+      "E00286"
+    ],
+    "safety": [
+      "E00000",
+      "E00001",
+      "E00003",
+      "E00008",
+      "E00013",
+      "E00025",
+      "E00061",
+      "E00094",
+      "E00119",
+      "E00179",
+      "E00230"
+    ],
+    "training": [
+      "E00000",
+      "E00005",
+      "E00186"
+    ],
+    "acknowledgment": [
+      "E00000"
+    ],
+    "officer": [
+      "E00001",
+      "E00013"
+    ],
+    "(lso)": [
+      "E00001"
+    ],
+    "biological": [
+      "E00002"
+    ],
+    "hazards": [
+      "E00002",
+      "E00249"
+    ],
+    "outdoor": [
+      "E00003"
+    ],
+    "standards": [
+      "E00004",
+      "E00081"
+    ],
+    "and": [
+      "E00004",
+      "E00077",
+      "E00078",
+      "E00081",
+      "E00136"
+    ],
+    "regulations": [
+      "E00004",
+      "E00248"
+    ],
+    "site": [
+      "E00005"
+    ],
+    "observation": [
+      "E00005"
+    ],
+    "record": [
+      "E00006"
+    ],
+    "keeping": [
+      "E00006"
+    ],
+    "roberta": [
+      "E00007"
+    ],
+    "mchatton": [
+      "E00007"
+    ],
+    "services": [
+      "E00008"
+    ],
+    "llc": [
+      "E00008"
+    ],
+    "ansi": [
+      "E00009",
+      "E00012",
+      "E00267",
+      "E00268",
+      "E00269",
+      "E00270",
+      "E00274"
+    ],
+    "z136": [
+      "E00009"
+    ],
+    "ilda": [
+      "E00010",
+      "E00194"
+    ],
+    "esa": [
+      "E00011"
+    ],
+    "z136.1": [
+      "E00012"
+    ],
+    "faa": [
+      "E00014",
+      "E00248",
+      "E00255",
+      "E00256",
+      "E00257",
+      "E00272",
+      "E00283"
+    ],
+    "fda/cdrh": [
+      "E00015"
+    ],
+    "permanent": [
+      "E00016"
+    ],
+    "eye": [
+      "E00016",
+      "E00149"
+    ],
+    "damage": [
+      "E00016",
+      "E00158",
+      "E00159",
+      "E00160"
+    ],
+    "skin": [
+      "E00017",
+      "E00163"
+    ],
+    "burns": [
+      "E00017"
+    ],
+    "fire/ignition": [
+      "E00018"
+    ],
+    "distraction/dazzle/glare": [
+      "E00019"
+    ],
+    "class": [
+      "E00020",
+      "E00021",
+      "E00022",
+      "E00023",
+      "E00024",
+      "E00055",
+      "E00056",
+      "E00057",
+      "E00058",
+      "E00059",
+      "E00084",
+      "E00085",
+      "E00086",
+      "E00087",
+      "E00088",
+      "E00089",
+      "E00142",
+      "E00143",
+      "E00212",
+      "E00213",
+      "E00214",
+      "E00285"
+    ],
+    "adviser": [
+      "E00025"
+    ],
+    "operator/programmer": [
+      "E00026"
+    ],
+    "client": [
+      "E00027"
+    ],
+    "venue": [
+      "E00028"
+    ],
+    "mpe": [
+      "E00029",
+      "E00284"
+    ],
+    "nohd": [
+      "E00030"
+    ],
+    "ael": [
+      "E00031"
+    ],
+    "e-stop": [
+      "E00032"
+    ],
+    "scanner": [
+      "E00033"
+    ],
+    "caa": [
+      "E00034",
+      "E00038"
+    ],
+    "cap": [
+      "E00034"
+    ],
+    "736": [
+      "E00034"
+    ],
+    "hs(g)95": [
+      "E00035"
+    ],
+    "control": [
+      "E00036",
+      "E00063",
+      "E00099",
+      "E00121",
+      "E00177",
+      "E00273"
+    ],
+    "artificial": [
+      "E00036"
+    ],
+    "optical": [
+      "E00036"
+    ],
+    "radiation": [
+      "E00036",
+      "E00096",
+      "E00177",
+      "E00179",
+      "E00180",
+      "E00273"
+    ],
+    "2010": [
+      "E00036"
+    ],
+    "hse": [
+      "E00037"
+    ],
+    "plasa": [
+      "E00039"
+    ],
+    "bsi": [
+      "E00040"
+    ],
+    "opsl": [
+      "E00041"
+    ],
+    "dpss": [
+      "E00042"
+    ],
+    "diode": [
+      "E00043"
+    ],
+    "gas": [
+      "E00044"
+    ],
+    "scan-failure": [
+      "E00045"
+    ],
+    "detection": [
+      "E00045",
+      "E00280"
+    ],
+    "blanking": [
+      "E00046"
+    ],
+    "plates": [
+      "E00046"
+    ],
+    "srcs": [
+      "E00047"
+    ],
+    "fda": [
+      "E00048",
+      "E00079",
+      "E00221",
+      "E00277",
+      "E00279"
+    ],
+    "cdrh": [
+      "E00048",
+      "E00100",
+      "E00221"
+    ],
+    "cfr": [
+      "E00049",
+      "E00050",
+      "E00051",
+      "E00052",
+      "E00053",
+      "E00102",
+      "E00103",
+      "E00104",
+      "E00105",
+      "E00106",
+      "E00107",
+      "E00108",
+      "E00221",
+      "E00271"
+    ],
+    "1040.10": [
+      "E00049"
+    ],
+    "1040.11": [
+      "E00050"
+    ],
+    "1002": [
+      "E00051"
+    ],
+    "1003": [
+      "E00052"
+    ],
+    "1010.4": [
+      "E00053",
+      "E00132"
+    ],
+    "ffdca": [
+      "E00054"
+    ],
+    "chapter": [
+      "E00054"
+    ],
+    "iiia": [
+      "E00057",
+      "E00087"
+    ],
+    "iiib": [
+      "E00058",
+      "E00088"
+    ],
+    "protective": [
+      "E00060",
+      "E00118",
+      "E00172",
+      "E00259"
+    ],
+    "housing": [
+      "E00060",
+      "E00118"
+    ],
+    "interlocks": [
+      "E00061",
+      "E00119"
+    ],
+    "remote": [
+      "E00062",
+      "E00120"
+    ],
+    "interlock": [
+      "E00062",
+      "E00094",
+      "E00095",
+      "E00120"
+    ],
+    "connector": [
+      "E00062",
+      "E00120"
+    ],
+    "key": [
+      "E00063",
+      "E00121"
+    ],
+    "beam": [
+      "E00064",
+      "E00123",
+      "E00143"
+    ],
+    "attenuator": [
+      "E00064",
+      "E00123"
+    ],
+    "warning": [
+      "E00065",
+      "E00092",
+      "E00144"
+    ],
+    "labels": [
+      "E00065",
+      "E00144"
+    ],
+    "product": [
+      "E00066",
+      "E00071",
+      "E00072",
+      "E00075",
+      "E00082",
+      "E00084",
+      "E00085",
+      "E00086",
+      "E00087",
+      "E00088",
+      "E00089",
+      "E00137"
+    ],
+    "report": [
+      "E00066",
+      "E00067",
+      "E00082",
+      "E00083"
+    ],
+    "annual": [
+      "E00067"
+    ],
+    "notice": [
+      "E00068",
+      "E00069",
+      "E00070",
+      "E00109",
+      "E00110"
+    ],
+    "medical": [
+      "E00071",
+      "E00129"
+    ],
+    "demonstration": [
+      "E00072",
+      "E00139"
+    ],
+    "surveying/leveling/alignment": [
+      "E00073",
+      "E00138"
+    ],
+    "variance": [
+      "E00074",
+      "E00279",
+      "E00282"
+    ],
+    "recall": [
+      "E00075"
+    ],
+    "iec": [
+      "E00076",
+      "E00112",
+      "E00113",
+      "E00144",
+      "E00211",
+      "E00278"
+    ],
+    "60825-1": [
+      "E00076",
+      "E00112",
+      "E00219",
+      "E00220"
+    ],
+    "ed.": [
+      "E00076"
+    ],
+    "center": [
+      "E00077"
+    ],
+    "for": [
+      "E00077",
+      "E00117"
+    ],
+    "devices": [
+      "E00077"
+    ],
+    "radiological": [
+      "E00077",
+      "E00178"
+    ],
+    "health": [
+      "E00077",
+      "E00178"
+    ],
+    "food": [
+      "E00078"
+    ],
+    "drug": [
+      "E00078"
+    ],
+    "administration": [
+      "E00078"
+    ],
+    "form": [
+      "E00079",
+      "E00257"
+    ],
+    "3632": [
+      "E00079"
+    ],
+    "division": [
+      "E00080"
+    ],
+    "small": [
+      "E00080"
+    ],
+    "manufacturer's": [
+      "E00080"
+    ],
+    "assistance": [
+      "E00080"
+    ],
+    "national": [
+      "E00081"
+    ],
+    "institute": [
+      "E00081"
+    ],
+    "technology": [
+      "E00081"
+    ],
+    "supplemental": [
+      "E00083"
+    ],
+    "iia": [
+      "E00085"
+    ],
+    "certification": [
+      "E00090",
+      "E00130"
+    ],
+    "label": [
+      "E00090",
+      "E00091",
+      "E00093"
+    ],
+    "identification": [
+      "E00091",
+      "E00131"
+    ],
+    "logotype": [
+      "E00092"
+    ],
+    "aperture": [
+      "E00093"
+    ],
+    "fail-safe": [
+      "E00095"
+    ],
+    "emission": [
+      "E00096",
+      "E00116",
+      "E00122",
+      "E00142",
+      "E00216"
+    ],
+    "indicator": [
+      "E00096",
+      "E00122"
+    ],
+    "manual": [
+      "E00097",
+      "E00135"
+    ],
+    "reset": [
+      "E00097",
+      "E00135"
+    ],
+    "scanning": [
+      "E00098",
+      "E00126"
+    ],
+    "safeguard": [
+      "E00098",
+      "E00126"
+    ],
+    "quality": [
+      "E00099"
+    ],
+    "program": [
+      "E00099",
+      "E00177"
+    ],
+    "accession": [
+      "E00100"
+    ],
+    "number": [
+      "E00100"
+    ],
+    "model": [
+      "E00101"
+    ],
+    "family": [
+      "E00101"
+    ],
+    "1002.7": [
+      "E00102"
+    ],
+    "1002.10": [
+      "E00103"
+    ],
+    "1002.11": [
+      "E00104"
+    ],
+    "1002.13": [
+      "E00105"
+    ],
+    "1010.2": [
+      "E00106",
+      "E00130"
+    ],
+    "1010.3": [
+      "E00107",
+      "E00131"
+    ],
+    "1005.25": [
+      "E00108"
+    ],
+    "no.": [
+      "E00109",
+      "E00110"
+    ],
+    "(2001)": [
+      "E00110",
+      "E00209"
+    ],
+    "international": [
+      "E00111",
+      "E00193",
+      "E00226"
+    ],
+    "electrotechnical": [
+      "E00111"
+    ],
+    "commission": [
+      "E00111"
+    ],
+    "60601-2-22": [
+      "E00113"
+    ],
+    "1040.10(b)": [
+      "E00114"
+    ],
+    "definitions": [
+      "E00114"
+    ],
+    "1040.10(c)(1)": [
+      "E00115"
+    ],
+    "classification": [
+      "E00115",
+      "E00194",
+      "E00207"
+    ],
+    "1040.10(d)": [
+      "E00116"
+    ],
+    "accessible": [
+      "E00116",
+      "E00216"
+    ],
+    "limits": [
+      "E00116",
+      "E00216"
+    ],
+    "1040.10(e)": [
+      "E00117"
+    ],
+    "tests": [
+      "E00117"
+    ],
+    "compliance": [
+      "E00117"
+    ],
+    "1040.10(f)(1)": [
+      "E00118"
+    ],
+    "1040.10(f)(2)": [
+      "E00119"
+    ],
+    "1040.10(f)(3)": [
+      "E00120"
+    ],
+    "1040.10(f)(4)": [
+      "E00121"
+    ],
+    "1040.10(f)(5)": [
+      "E00122"
+    ],
+    "1040.10(f)(6)": [
+      "E00123"
+    ],
+    "1040.10(f)(7)": [
+      "E00124"
+    ],
+    "location": [
+      "E00124"
+    ],
+    "controls": [
+      "E00124"
+    ],
+    "1040.10(f)(8)": [
+      "E00125"
+    ],
+    "viewing": [
+      "E00125"
+    ],
+    "optics": [
+      "E00125"
+    ],
+    "1040.10(f)(9)": [
+      "E00126"
+    ],
+    "1040.10(g)": [
+      "E00127"
+    ],
+    "labeling": [
+      "E00127"
+    ],
+    "requirements": [
+      "E00127",
+      "E00208"
+    ],
+    "1040.10(h)(1)": [
+      "E00128"
+    ],
+    "user": [
+      "E00128"
+    ],
+    "information": [
+      "E00128"
+    ],
+    "1040.11(a)": [
+      "E00129"
+    ],
+    "lasers": [
+      "E00129",
+      "E00138"
+    ],
+    "variances": [
+      "E00132"
+    ],
+    "1040.10(a)": [
+      "E00133"
+    ],
+    "applicability": [
+      "E00133"
+    ],
+    "1040.10(c)(2)": [
+      "E00134"
+    ],
+    "removable": [
+      "E00134"
+    ],
+    "systems": [
+      "E00134"
+    ],
+    "1040.10(f)(10)": [
+      "E00135"
+    ],
+    "1040.10(h)(2)": [
+      "E00136"
+    ],
+    "purchasing": [
+      "E00136"
+    ],
+    "servicing": [
+      "E00136"
+    ],
+    "info": [
+      "E00136"
+    ],
+    "1040.10(i)": [
+      "E00137"
+    ],
+    "modification": [
+      "E00137"
+    ],
+    "certified": [
+      "E00137"
+    ],
+    "1040.11(b)": [
+      "E00138"
+    ],
+    "1040.11(c)": [
+      "E00139"
+    ],
+    "products": [
+      "E00139"
+    ],
+    "jerome": [
+      "E00140"
+    ],
+    "dennis": [
+      "E00140"
+    ],
+    "dsma": [
+      "E00141"
+    ],
+    "ii/iiia": [
+      "E00142",
+      "E00143"
+    ],
+    "indicators": [
+      "E00142"
+    ],
+    "attenuators": [
+      "E00143"
+    ],
+    "regulatory": [
+      "E00145",
+      "E00228"
+    ],
+    "harmonization": [
+      "E00145",
+      "E00218"
+    ],
+    "least": [
+      "E00146"
+    ],
+    "burdensome": [
+      "E00146"
+    ],
+    "approach": [
+      "E00146",
+      "E00148"
+    ],
+    "nonbinding": [
+      "E00147"
+    ],
+    "guidance": [
+      "E00147"
+    ],
+    "alternative": [
+      "E00148"
+    ],
+    "cornea": [
+      "E00150"
+    ],
+    "lens": [
+      "E00151"
+    ],
+    "retina": [
+      "E00152"
+    ],
+    "retinal": [
+      "E00153"
+    ],
+    "hazard": [
+      "E00153"
+    ],
+    "region": [
+      "E00153"
+    ],
+    "visible": [
+      "E00154"
+    ],
+    "light": [
+      "E00154",
+      "E00188"
+    ],
+    "near-infrared": [
+      "E00155"
+    ],
+    "ultraviolet": [
+      "E00156"
+    ],
+    "far-infrared": [
+      "E00157"
+    ],
+    "photochemical": [
+      "E00158"
+    ],
+    "thermal": [
+      "E00159"
+    ],
+    "mechanical": [
+      "E00160"
+    ],
+    "scotoma": [
+      "E00161"
+    ],
+    "blink": [
+      "E00162"
+    ],
+    "reflex": [
+      "E00162"
+    ],
+    "epidermis": [
+      "E00164"
+    ],
+    "dermis": [
+      "E00165"
+    ],
+    "melanin": [
+      "E00166"
+    ],
+    "infrared": [
+      "E00167"
+    ],
+    "erythema": [
+      "E00168"
+    ],
+    "blister": [
+      "E00169"
+    ],
+    "formation": [
+      "E00169"
+    ],
+    "sunburn": [
+      "E00170"
+    ],
+    "fitzpatrick": [
+      "E00171"
+    ],
+    "scale": [
+      "E00171"
+    ],
+    "personal": [
+      "E00172"
+    ],
+    "equipment": [
+      "E00172",
+      "E00229",
+      "E00237"
+    ],
+    "nevada": [
+      "E00173",
+      "E00177"
+    ],
+    "new": [
+      "E00174",
+      "E00202",
+      "E00203",
+      "E00205"
+    ],
+    "york": [
+      "E00174"
+    ],
+    "texas": [
+      "E00175",
+      "E00179"
+    ],
+    "washington": [
+      "E00176",
+      "E00180"
+    ],
+    "nys": [
+      "E00178"
+    ],
+    "dept.": [
+      "E00178"
+    ],
+    "labor": [
+      "E00178"
+    ],
+    "unit": [
+      "E00178"
+    ],
+    "dshs": [
+      "E00179"
+    ],
+    "licensing": [
+      "E00179"
+    ],
+    "branch": [
+      "E00179"
+    ],
+    "doh": [
+      "E00180"
+    ],
+    "protection": [
+      "E00180"
+    ],
+    "nycrr": [
+      "E00181"
+    ],
+    "part": [
+      "E00181"
+    ],
+    "tac": [
+      "E00182",
+      "E00183"
+    ],
+    "289.301": [
+      "E00182"
+    ],
+    "289.302": [
+      "E00183"
+    ],
+    "wac": [
+      "E00184"
+    ],
+    "296-62-09005": [
+      "E00184"
+    ],
+    "advance": [
+      "E00185",
+      "E00188"
+    ],
+    "notification": [
+      "E00185",
+      "E00188",
+      "E00283"
+    ],
+    "operator": [
+      "E00186",
+      "E00206",
+      "E00286"
+    ],
+    "routine": [
+      "E00187"
+    ],
+    "inspections": [
+      "E00187"
+    ],
+    "show": [
+      "E00188",
+      "E00226",
+      "E00232"
+    ],
+    "karen": [
+      "E00189"
+    ],
+    "beckley": [
+      "E00189"
+    ],
+    "kirk": [
+      "E00190"
+    ],
+    "fisher": [
+      "E00190"
+    ],
+    "shannon": [
+      "E00191"
+    ],
+    "dove-edson": [
+      "E00191"
+    ],
+    "david": [
+      "E00192"
+    ],
+    "jansen": [
+      "E00192"
+    ],
+    "display": [
+      "E00193"
+    ],
+    "association": [
+      "E00193"
+    ],
+    "(ilda)": [
+      "E00193"
+    ],
+    "country": [
+      "E00194"
+    ],
+    "system": [
+      "E00194"
+    ],
+    "category": [
+      "E00195",
+      "E00196",
+      "E00197",
+      "E00198",
+      "E00199"
+    ],
+    "as/nzs": [
+      "E00200"
+    ],
+    "4173": [
+      "E00200"
+    ],
+    "australian": [
+      "E00201"
+    ],
+    "states/territories": [
+      "E00201"
+    ],
+    "zealand": [
+      "E00202",
+      "E00205"
+    ],
+    "south": [
+      "E00203"
+    ],
+    "wales": [
+      "E00203"
+    ],
+    "victoria": [
+      "E00204"
+    ],
+    "epa": [
+      "E00205"
+    ],
+    "license": [
+      "E00206"
+    ],
+    "entertainment-specific": [
+      "E00208"
+    ],
+    "edition": [
+      "E00209",
+      "E00210"
+    ],
+    "(2014)": [
+      "E00210"
+    ],
+    "extended": [
+      "E00215"
+    ],
+    "sources": [
+      "E00215",
+      "E00217"
+    ],
+    "led": [
+      "E00217"
+    ],
+    "global": [
+      "E00218"
+    ],
+    "1040": [
+      "E00221",
+      "E00271"
+    ],
+    "iso": [
+      "E00222",
+      "E00223",
+      "E00224"
+    ],
+    "11553": [
+      "E00222"
+    ],
+    "17526": [
+      "E00223"
+    ],
+    "21254": [
+      "E00224"
+    ],
+    "icnirp": [
+      "E00225"
+    ],
+    "guidelines": [
+      "E00225"
+    ],
+    "documentation": [
+      "E00227",
+      "E00228",
+      "E00229",
+      "E00230",
+      "E00231",
+      "E00232"
+    ],
+    "package": [
+      "E00227"
+    ],
+    "personnel": [
+      "E00231"
+    ],
+    "ata": [
+      "E00233"
+    ],
+    "carnet": [
+      "E00233"
+    ],
+    "planning": [
+      "E00234"
+    ],
+    "stages": [
+      "E00234"
+    ],
+    "initial": [
+      "E00235"
+    ],
+    "research": [
+      "E00235"
+    ],
+    "permit": [
+      "E00236",
+      "E00239"
+    ],
+    "applications": [
+      "E00236"
+    ],
+    "logistics": [
+      "E00237"
+    ],
+    "final": [
+      "E00238"
+    ],
+    "preparations": [
+      "E00238"
+    ],
+    "calculator": [
+      "E00239"
+    ],
+    "united": [
+      "E00240"
+    ],
+    "states": [
+      "E00240"
+    ],
+    "germany": [
+      "E00241"
+    ],
+    "china": [
+      "E00242"
+    ],
+    "uae": [
+      "E00243"
+    ],
+    "document": [
+      "E00244"
+    ],
+    "translation": [
+      "E00244"
+    ],
+    "work": [
+      "E00245"
+    ],
+    "permits": [
+      "E00245"
+    ],
+    "visas": [
+      "E00245"
+    ],
+    "temporary": [
+      "E00246"
+    ],
+    "import": [
+      "E00246"
+    ],
+    "local": [
+      "E00247"
+    ],
+    "consultant": [
+      "E00247"
+    ],
+    "visual": [
+      "E00249"
+    ],
+    "interference": [
+      "E00249"
+    ],
+    "free": [
+      "E00250"
+    ],
+    "zone": [
+      "E00250",
+      "E00251",
+      "E00252",
+      "E00253"
+    ],
+    "(lfz)": [
+      "E00250"
+    ],
+    "critical": [
+      "E00251",
+      "E00266"
+    ],
+    "flight": [
+      "E00251",
+      "E00252",
+      "E00253",
+      "E00266"
+    ],
+    "(cfz)": [
+      "E00251"
+    ],
+    "sensitive": [
+      "E00252"
+    ],
+    "(sfz)": [
+      "E00252"
+    ],
+    "normal": [
+      "E00253"
+    ],
+    "(nfz)": [
+      "E00253"
+    ],
+    "usc": [
+      "E00254"
+    ],
+    "39a": [
+      "E00254"
+    ],
+    "70-1b": [
+      "E00255"
+    ],
+    "70-2a": [
+      "E00256"
+    ],
+    "7140-1": [
+      "E00257"
+    ],
+    "notam": [
+      "E00258"
+    ],
+    "eyewear": [
+      "E00259"
+    ],
+    "green": [
+      "E00260"
+    ],
+    "(532nm)": [
+      "E00260"
+    ],
+    "atc": [
+      "E00261"
+    ],
+    "procedures": [
+      "E00261"
+    ],
+    "domestic": [
+      "E00262"
+    ],
+    "events": [
+      "E00262"
+    ],
+    "network": [
+      "E00262"
+    ],
+    "(den)": [
+      "E00262"
+    ],
+    "flashblindness": [
+      "E00263"
+    ],
+    "glare": [
+      "E00264"
+    ],
+    "distraction": [
+      "E00265"
+    ],
+    "phases": [
+      "E00266"
+    ],
+    "z136.10": [
+      "E00267"
+    ],
+    "e1.46": [
+      "E00268"
+    ],
+    "e1.17": [
+      "E00269"
+    ],
+    "e1.30-11": [
+      "E00270"
+    ],
+    "order": [
+      "E00272"
+    ],
+    "7400.2": [
+      "E00272"
+    ],
+    "state": [
+      "E00273"
+    ],
+    "lia": [
+      "E00275"
+    ],
+    "esta": [
+      "E00276"
+    ],
+    "scan": [
+      "E00280"
+    ],
+    "failure": [
+      "E00280"
+    ],
+    "emergency": [
+      "E00281"
+    ],
+    "stop": [
+      "E00281"
+    ],
+    "application": [
+      "E00282"
+    ],
+    "calculation": [
+      "E00284"
+    ],
+    "iii": [
+      "E00285"
+    ]
+  }
+}

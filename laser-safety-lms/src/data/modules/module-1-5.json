@@ -1,0 +1,56 @@
+{
+  "id": "module-1-5",
+  "courseId": "course-1",
+  "title": "Engineering & Administrative Controls",
+  "description": "Practical implementation of laser safety controls: barriers, interlocks, PPE, and standard operating procedures.",
+  "order": 5,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "Hierarchy of Controls",
+      "content": "Not all controls are equal. The hierarchy of controls prioritizes engineering solutions over administrative procedures and personal protective equipment. Understanding this hierarchy ensures resources are allocated to the most effective safety measures.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "Implementing Laser Safety Controls",
+      "content": "Effective laser safety relies on a combination of engineering controls, administrative procedures, and personal protective equipment. Engineering controls like enclosures, interlocks, and beam stops are most effective because they do not rely on human behavior. Administrative controls such as SOPs and training are secondary. PPE including laser protective eyewear is the last line of defense and must be properly selected for wavelength and optical density requirements.",
+      "component": "ControlHierarchy",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "Control Selection Exercise",
+      "content": "For each scenario, identify appropriate controls using the hierarchy:\n\n**Scenario 1**: Class 4 laser in a research laboratory\n\n**Scenario 2**: Laser light show in an entertainment venue\n\n**Scenario 3**: Industrial laser cutting operation\n\n**Scenario 4**: Medical laser procedure room",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-1-5",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "Safety Controls Implementation Guide",
+      "path": "/docs/course-1-fundamentals/safety-controls.pdf"
+    },
+    {
+      "type": "interactive",
+      "title": "Control Hierarchy Explorer",
+      "component": "ControlHierarchy"
+    }
+  ],
+  "keyTakeaways": [
+    "Engineering controls (enclosures, interlocks) are preferred over administrative controls",
+    "Laser Controlled Areas must be clearly posted with warning signs",
+    "Personal Protective Equipment (OD-rated eyewear) is the last line of defense",
+    "Written SOPs must be developed and followed for all Class 3B/4 operations"
+  ],
+  "nextModule": null,
+  "prerequisites": ["module-1-4"],
+  "difficulty": "beginner"
+}

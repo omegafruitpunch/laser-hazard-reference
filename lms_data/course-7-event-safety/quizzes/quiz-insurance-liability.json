@@ -1,0 +1,128 @@
+{
+  "quiz_id": "course-7-quiz-3",
+  "title": "Insurance and Liability Assessment",
+  "module": "Insurance and Liability Requirements",
+  "passing_score": 80,
+  "time_limit_minutes": 25,
+  "questions": [
+    {
+      "question_id": "il-q1",
+      "type": "multiple_choice",
+      "question": "When should event organizers obtain legal and insurance advice?",
+      "options": [
+        "After ticket sales begin",
+        "During the event",
+        "Early in the planning stage",
+        "Only after an incident occurs"
+      ],
+      "correct_answer": 2,
+      "explanation": "Organizers should consider obtaining legal and insurance advice early in the planning stage."
+    },
+    {
+      "question_id": "il-q2",
+      "type": "multiple_select",
+      "question": "Which of the following are items that warrant consideration for event organizer liability? (Select all that apply)",
+      "options": [
+        "Liability for injuries",
+        "Liability for acts or omissions",
+        "Liability for financial obligations in emergency response",
+        "Potential liability for effects on normal emergency operations",
+        "Ticket pricing strategies"
+      ],
+      "correct_answers": [0, 1, 2, 3],
+      "explanation": "Liability considerations include injuries, acts/omissions, emergency response costs, and effects on normal emergency operations."
+    },
+    {
+      "question_id": "il-q3",
+      "type": "true_false",
+      "question": "Under mutual aid programs, borrowed equipment remains covered under the lending community's insurance.",
+      "correct_answer": false,
+      "explanation": "False. Under mutual aid programs, borrowed equipment becomes an asset of the borrowing community and is covered under their insurance until released."
+    },
+    {
+      "question_id": "il-q4",
+      "type": "multiple_choice",
+      "question": "Who should the safety coordinator report to?",
+      "options": [
+        "The security company",
+        "The event organizer directly",
+        "The venue owner",
+        "The local fire department"
+      ],
+      "correct_answer": 1,
+      "explanation": "The safety coordinator should report directly to the organizer to eliminate filtering of information by third parties."
+    },
+    {
+      "question_id": "il-q5",
+      "type": "multiple_select",
+      "question": "Which agencies may be involved in a multi-agency approach to major incidents? (Select all that apply)",
+      "options": [
+        "Event organizer",
+        "Law enforcement",
+        "Ambulance service",
+        "Fire authority",
+        "Local authority",
+        "Food vendors"
+      ],
+      "correct_answers": [0, 1, 2, 3, 4],
+      "explanation": "A multi-agency approach may involve the event organizer, law enforcement, ambulance, fire authority, and local authority."
+    },
+    {
+      "question_id": "il-q6",
+      "type": "multiple_choice",
+      "question": "What form should each organization's role commitment take in major incident planning?",
+      "options": [
+        "Verbal agreement",
+        "Email confirmation",
+        "Statement of intent",
+        "Social media post"
+      ],
+      "correct_answer": 2,
+      "explanation": "Each organization should provide a clear undertaking as to their role in the form of a statement of intent."
+    },
+    {
+      "question_id": "il-q7",
+      "type": "true_false",
+      "question": "A multi-agency approach to planning shares ownership of problems and leads to more effective solutions.",
+      "correct_answer": true,
+      "explanation": "True. Experience has shown that multi-agency planning shares problem ownership and leads to effective solutions."
+    },
+    {
+      "question_id": "il-q8",
+      "type": "matching",
+      "question": "Match the liability consideration with its description:",
+      "pairs": [
+        {"term": "Liability for injuries", "definition": "Responsibility for attendee and staff harm"},
+        {"term": "Liability for acts or omissions", "definition": "Responsibility for actions taken or not taken"},
+        {"term": "Mutual aid programs", "definition": "Sharing resources and liability between communities"},
+        {"term": "Statement of intent", "definition": "Written commitment of roles and resources"}
+      ],
+      "explanation": "Each liability consideration addresses different aspects of event responsibility and risk management."
+    },
+    {
+      "question_id": "il-q9",
+      "type": "multiple_choice",
+      "question": "Why is keeping records of meetings and decisions important?",
+      "options": [
+        "To satisfy curiosity",
+        "For legal documentation and accountability",
+        "To share on social media",
+        "To determine ticket prices"
+      ],
+      "correct_answer": 1,
+      "explanation": "Keeping and retaining records of meetings and decisions is important for legal documentation and accountability."
+    },
+    {
+      "question_id": "il-q10",
+      "type": "scenario",
+      "question": "Scenario: You are organizing a large outdoor music festival and working with neighboring communities on resource sharing. A neighboring fire department wants to loan you specialized equipment for the event. Describe how you should handle the insurance and liability aspects of this arrangement.",
+      "model_answer": "1) Document the equipment loan agreement as part of mutual aid program. 2) Confirm the equipment becomes our asset and is covered under our event insurance while in our possession. 3) Verify our general liability and property insurance covers borrowed equipment. 4) Get written statement of intent from lending department. 5) Document equipment condition at transfer. 6) Establish clear protocols for equipment return. 7) Ensure our safety coordinator is aware of the arrangement and equipment location.",
+      "key_points": ["Mutual aid agreement", "Insurance coverage transfer", "Written documentation", "Equipment tracking"]
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "processing_agent": "PDF Elite Processor Agent #18",
+    "created_date": "2026-03-19"
+  }
+}

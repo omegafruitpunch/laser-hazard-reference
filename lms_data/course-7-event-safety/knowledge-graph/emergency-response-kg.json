@@ -1,0 +1,161 @@
+{
+  "graph_id": "course-7-kg-1",
+  "title": "Emergency Response Knowledge Graph",
+  "domain": "Event Emergency Management",
+  "source": "Course 7 - Event Safety PDFs",
+  "nodes": [
+    {
+      "id": "nims",
+      "type": "system",
+      "label": "National Incident Management System (NIMS)",
+      "description": "Consistent nationwide template for incident management across all levels of government and organizations",
+      "attributes": {
+        "established": "2003",
+        "directive": "HSPD-5",
+        "scope": "Federal, state, local, tribal, private-sector, NGOs"
+      }
+    },
+    {
+      "id": "ics",
+      "type": "system",
+      "label": "Incident Command System (ICS)",
+      "description": "Standardized organizational structure for incident management",
+      "attributes": {
+        "components": ["Command", "Operations", "Planning", "Logistics", "Finance/Administration"],
+        "training_courses": ["IS-100", "IS-200", "IS-700"]
+      }
+    },
+    {
+      "id": "incident_commander",
+      "type": "role",
+      "label": "Incident Commander",
+      "description": "Person responsible for overall incident management",
+      "responsibilities": ["Establishes command post", "Sets objectives", "Approves action plans"]
+    },
+    {
+      "id": "safety_officer",
+      "type": "role",
+      "label": "Safety Officer",
+      "description": "Monitors safety conditions and has authority to stop unsafe operations"
+    },
+    {
+      "id": "police",
+      "type": "agency",
+      "label": "Police Department",
+      "description": "Coordinates on-site and off-site response once major incident declared",
+      "primary_role": "Incident coordination and security"
+    },
+    {
+      "id": "fire_department",
+      "type": "agency",
+      "label": "Fire Department",
+      "description": "Responsible for fire-related on-site response and technical rescue",
+      "primary_role": "Fire suppression and rescue operations"
+    },
+    {
+      "id": "ems",
+      "type": "agency",
+      "label": "Emergency Medical Services",
+      "description": "Coordinates medical response, casualty distribution, and hospital notification",
+      "primary_role": "Medical treatment and transportation"
+    },
+    {
+      "id": "major_incident",
+      "type": "event_type",
+      "label": "Major Incident",
+      "description": "Incident requiring special or non-routine arrangements from emergency services",
+      "indicators": [
+        "Large number of casualties",
+        "Involvement of large numbers of people",
+        "Need for combined resources of multiple emergency services",
+        "Threat of death, serious injury, or homelessness"
+      ]
+    },
+    {
+      "id": "minor_incident",
+      "type": "event_type",
+      "label": "Minor Incident",
+      "description": "Simple undesired event managed through normal service delivery",
+      "examples": ["Low-level crime", "Lost children", "Minor injuries"]
+    },
+    {
+      "id": "command_post",
+      "type": "facility",
+      "label": "Incident Command Post (ICP)",
+      "description": "Designated on-site facility for incident management",
+      "requirements": ["Appropriate location", "Communications equipment", "Access to site plans"]
+    },
+    {
+      "id": "triage_area",
+      "type": "facility",
+      "label": "Triage Area",
+      "description": "Location for sorting and prioritizing casualties",
+      "attributes": {
+        "nearby": "Ambulance loading points",
+        "may_include": "Helipads for air evacuation"
+      }
+    },
+    {
+      "id": "evacuation",
+      "type": "procedure",
+      "label": "Evacuation Procedures",
+      "description": "Methods for safely removing people from hazardous areas",
+      "components": ["Public warning mechanisms", "Evacuation routes", "Holding areas"]
+    },
+    {
+      "id": "cordons",
+      "type": "procedure",
+      "label": "Cordons",
+      "description": "Perimeter controls for access management during incidents",
+      "characteristics": ["May be moved during incident", "Placed according to circumstances"]
+    },
+    {
+      "id": "risk_assessment",
+      "type": "document",
+      "label": "Risk Assessment",
+      "description": "Process and document estimating hazard impact and mitigation",
+      "purpose": "Identify and mitigate preventable risks"
+    },
+    {
+      "id": "eop",
+      "type": "document",
+      "label": "Emergency Operations Plan (EOP)",
+      "description": "Jurisdiction's plan assigning responsibilities for emergency response",
+      "components": ["Warning systems", "Public information", "Evacuation", "Shelter"]
+    }
+  ],
+  "edges": [
+    {"source": "nims", "target": "ics", "relationship": "includes", "description": "NIMS includes ICS as standardized structure"},
+    {"source": "ics", "target": "incident_commander", "relationship": "led_by", "description": "ICS Command led by Incident Commander"},
+    {"source": "ics", "target": "safety_officer", "relationship": "includes", "description": "Safety Officer is part of Command Staff"},
+    {"source": "incident_commander", "target": "command_post", "relationship": "operates_from", "description": "IC operates from command post"},
+    {"source": "police", "target": "major_incident", "relationship": "coordinates_response", "description": "Police coordinate response to major incidents"},
+    {"source": "fire_department", "target": "major_incident", "relationship": "responds_to", "description": "Fire responds to fires and technical rescue"},
+    {"source": "ems", "target": "triage_area", "relationship": "manages", "description": "EMS manages triage and casualty distribution"},
+    {"source": "major_incident", "target": "evacuation", "relationship": "may_require", "description": "Major incidents may require evacuation"},
+    {"source": "major_incident", "target": "cordons", "relationship": "may_require", "description": "Major incidents may require cordons"},
+    {"source": "risk_assessment", "target": "eop", "relationship": "informs", "description": "Risk assessment informs emergency operations planning"},
+    {"source": "eop", "target": "nims", "relationship": "implements", "description": "EOP implements NIMS principles"},
+    {"source": "minor_incident", "target": "major_incident", "relationship": "can_escalate_to", "description": "Minor incidents can escalate to major if not managed"}
+  ],
+  "query_patterns": [
+    {
+      "pattern": "What agencies are involved in major incident response?",
+      "cypher": "MATCH (a:agency)-[:responds_to|:coordinates_response]->(m:major_incident) RETURN a.label"
+    },
+    {
+      "pattern": "What are the components of ICS?",
+      "cypher": "MATCH (i:system {id: 'ics'}) RETURN i.attributes.components"
+    },
+    {
+      "pattern": "What procedures are activated during a major incident?",
+      "cypher": "MATCH (m:major_incident)-[:may_require]->(p:procedure) RETURN p.label"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "processing_agent": "PDF Elite Processor Agent #18",
+    "created_date": "2026-03-19",
+    "source_documents": ["emergency-response.pdf", "event-safety-planning.pdf"]
+  }
+}

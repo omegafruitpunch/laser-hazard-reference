@@ -1,0 +1,326 @@
+{
+  "module_id": "course-5-international-show-docs",
+  "course_id": "course-5",
+  "course_name": "International Laser Regulations",
+  "module_name": "International Laser Show Documentation",
+  "source_pdf": "international-show-docs.pdf",
+  "total_pages": 7,
+  "estimated_duration_minutes": 25,
+  "disclaimer": "The following information is NOT official. ILDA is not liable for the accuracy of this information. Anyone doing audience scanning is responsible for following all local laws and regulations.",
+  "learning_objectives": [
+    "Understand worldwide audience scanning regulations",
+    "Identify countries with specific laser show requirements",
+    "Know documentation requirements for international laser shows",
+    "Understand ILDA member safety obligations",
+    "Recognize regional variations in laser entertainment regulations"
+  ],
+  "content_pages": [
+    {
+      "page_number": 1,
+      "title": "ILDA and International Laser Show Safety",
+      "content": {
+        "ildA_role": {
+          "full_name": "International Laser Display Association",
+          "website": "LasershowSafety.info",
+          "mission": "Presenting worldwide audience scanning laws and safety guidance"
+        },
+        "important_disclaimer": {
+          "status": "NOT official information",
+          "liability": "ILDA is not liable for accuracy",
+          "compilation_date": "Mid-2014",
+          "user_responsibility": "Anyone doing audience scanning must follow all local laws and regulations"
+        },
+        "ilda_member_requirements": {
+          "affirmation": "ILDA Members are required to affirm the safety of their laser shows",
+          "regardless": "Regardless of any laws or regulations",
+          "specific_requirement": "Affirm safety of audience scanning in writing if performed"
+        },
+        "regulatory_categories": {
+          "description": "Countries classified by regulatory status for audience scanning",
+          "categories": {
+            "A": "Explicitly permitted with proper authorization",
+            "B": "Generally allowed, may need notification",
+            "F": "Situation unclear, permission usually not required but case-by-case",
+            "G": "State/provincial laws vary",
+            "X": "Unknown status"
+          }
+        }
+      },
+      "quiz_questions": [
+        {
+          "question": "According to ILDA, who is responsible for following local laws and regulations for laser shows?",
+          "type": "multiple_choice",
+          "options": [
+            "Only ILDA officers",
+            "The venue owner only",
+            "Anyone doing audience scanning",
+            "Local government only"
+          ],
+          "correct_answer": 2,
+          "explanation": "ILDA states that anyone doing audience scanning is responsible for following all local laws and regulations."
+        },
+        {
+          "question": "Are ILDA members required to affirm laser show safety even if no laws require it?",
+          "type": "true_false",
+          "correct_answer": true,
+          "explanation": "ILDA Members are required to affirm the safety of their laser shows, regardless of any laws or regulations."
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "title": "Country Classifications for Audience Scanning",
+      "content": {
+        "category_f_countries": {
+          "description": "Situation unclear. Usually no permission required, but authorities might unexpectedly deny permission case-by-case.",
+          "countries": [
+            "China",
+            "Egypt", 
+            "India",
+            "Iran",
+            "Nigeria",
+            "Poland",
+            "Qatar",
+            "Russia",
+            "Saudi Arabia",
+            "United Arab Emirates"
+          ]
+        },
+        "category_g_countries": {
+          "description": "Each state/canton/province may have its own laws (in lieu of or in addition to federal laws)",
+          "note": "None listed at time of document compilation"
+        },
+        "category_x_countries": {
+          "description": "Unknown status",
+          "countries": [
+            "Algeria",
+            "Argentina",
+            "Australia",
+            "Brazil",
+            "Chile",
+            "Denmark",
+            "Hong Kong",
+            "Indonesia",
+            "Malaysia",
+            "Mexico",
+            "New Zealand",
+            "Pakistan",
+            "Peru",
+            "Philippines",
+            "Singapore",
+            "South Africa",
+            "South Korea",
+            "Taiwan",
+            "Thailand",
+            "Turkey",
+            "Vietnam"
+          ]
+        },
+        "canada_note": {
+          "status": "Audience scanning regulations unclear",
+          "recent_changes": "June 2018 laser pointer laws affect Montreal, Toronto, and Vancouver",
+          "warning": "Shows may not be legal in these major cities after 2018 regulations"
+        }
+      },
+      "quiz_questions": [
+        {
+          "question": "Which of the following countries is classified as Category F (situation unclear)?",
+          "type": "multiple_choice",
+          "options": [
+            "United States",
+            "United Kingdom",
+            "China",
+            "Germany"
+          ],
+          "correct_answer": 2,
+          "explanation": "China is listed as Category F where the situation is unclear and authorities might unexpectedly deny permission."
+        },
+        {
+          "question": "Which Canadian cities had laser show restrictions after June 2018?",
+          "type": "multiple_choice",
+          "options": [
+            "Calgary, Edmonton, Ottawa",
+            "Montreal, Toronto, Vancouver",
+            "Halifax, Quebec City, Winnipeg",
+            "All Canadian cities"
+          ],
+          "correct_answer": 1,
+          "explanation": "The document notes that after June 2018 laser pointer laws, shows may not be legal in Montreal, Toronto, and Vancouver."
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "title": "Finland Laser Show Regulations",
+      "content": {
+        "regulatory_authority": "Finnish Radiation Authorities",
+        "permit_requirements": {
+          "required": true,
+          "authority": "Finnish Radiation Authorities",
+          "documentation": "All lasers used and techs working must be listed in permit"
+        },
+        "audience_scanning": {
+          "general_rule": "NO audience scanning allowed in Finland",
+          "regulation_status": "Clearly stated in Finnish regulations",
+          "exceptions": "Special permits may be given for specific shows with audience scanning effects within MPE limits"
+        },
+        "recent_developments": {
+          "note": "Authority has recently given special permits for audience scanning",
+          "condition": "Must be within MPE (Maximum Permissible Exposure) limits"
+        }
+      },
+      "quiz_questions": [
+        {
+          "question": "Is audience scanning generally allowed in Finland?",
+          "type": "multiple_choice",
+          "options": [
+            "Yes, without restrictions",
+            "Yes, with notification only",
+            "No, not allowed",
+            "Only for Class 2 lasers"
+          ],
+          "correct_answer": 2,
+          "explanation": "Finnish regulations clearly state that no audience scanning is allowed in Finland, though special permits may occasionally be granted."
+        },
+        {
+          "question": "What must be listed in a Finnish laser show permit?",
+          "type": "multiple_choice",
+          "options": [
+            "Only the laser manufacturer",
+            "Only the venue address",
+            "All lasers used and techs working",
+            "Only the show duration"
+          ],
+          "correct_answer": 2,
+          "explanation": "In Finland, the permit must list all lasers used and technicians working in the show."
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "title": "Additional Country Requirements",
+      "content": {
+        "documentation_best_practices": {
+          "laser_specifications": [
+            "Laser class and power output",
+            "Wavelength(s)",
+            "Manufacturer and model",
+            "Serial numbers"
+          ],
+          "operator_qualifications": [
+            "Laser safety training certificates",
+            "ILDA membership (if applicable)",
+            "Local laser safety officer certification"
+          ],
+          "show_documentation": [
+            "Beam divergence calculations",
+            "Exposure assessments",
+            "Safety zone diagrams",
+            "Emergency procedures"
+          ]
+        },
+        "traveling_shows": {
+          "recommendations": [
+            "Research each country's regulations before booking",
+            "Obtain necessary permits well in advance",
+            "Have laser equipment documentation ready for customs",
+            "Consider hiring local laser safety consultants",
+            "Maintain ILDA safety standards regardless of local requirements"
+          ]
+        }
+      },
+      "quiz_questions": []
+    },
+    {
+      "page_number": 5,
+      "title": "ILDA Safety Affirmation Requirements",
+      "content": {
+        "member_obligations": {
+          "written_affirmation": "Members must affirm show safety in writing",
+          "audience_scanning": "If audience scanning is performed, specific written safety affirmation required",
+          "mpe_compliance": "Must ensure exposures are within MPE limits",
+          "measurement": "Recommended to have exposure measurements documented"
+        },
+        "safety_best_practices": {
+          "pre_show": [
+            "Conduct hazard analysis",
+            "Document safety procedures",
+            "Train all operators",
+            "Inspect all equipment"
+          ],
+          "during_show": [
+            "Monitor beam paths",
+            "Maintain safety zones",
+            "Have emergency stops accessible",
+            "Follow written safety plan"
+          ],
+          "documentation": [
+            "Keep exposure calculations",
+            "Record safety checks",
+            "Maintain incident logs",
+            "Archive show safety records"
+          ]
+        }
+      },
+      "quiz_questions": [
+        {
+          "question": "What must ILDA members provide if performing audience scanning?",
+          "type": "multiple_choice",
+          "options": [
+            "Only verbal confirmation",
+            "Written safety affirmation",
+            "Video recording of the show",
+            "Insurance certificate only"
+          ],
+          "correct_answer": 1,
+          "explanation": "ILDA members performing audience scanning must affirm the safety of their shows in writing."
+        }
+      ]
+    }
+  ],
+  "regulatory_summary": {
+    "category_definitions": {
+      "A": {
+        "description": "Explicitly permitted with proper authorization",
+        "examples": "Countries where audience scanning is legal with permits"
+      },
+      "B": {
+        "description": "Generally allowed, may need notification",
+        "examples": "Countries with less restrictive regulations"
+      },
+      "F": {
+        "description": "Situation unclear",
+        "countries": ["China", "Egypt", "India", "Iran", "Nigeria", "Poland", "Qatar", "Russia", "Saudi Arabia", "UAE"],
+        "advice": "Contact local authorities before performing shows"
+      },
+      "G": {
+        "description": "State/provincial variation",
+        "advice": "Check both federal and local regulations"
+      },
+      "X": {
+        "description": "Unknown status",
+        "countries": ["Algeria", "Argentina", "Australia", "Brazil", "Chile", "Denmark", "Hong Kong", "Indonesia", "Malaysia", "Mexico", "New Zealand", "Pakistan", "Peru", "Philippines", "Singapore", "South Africa", "South Korea", "Taiwan", "Thailand", "Turkey", "Vietnam"],
+        "advice": "Research required before performing shows"
+      }
+    }
+  },
+  "glossary": {
+    "ILDA": "International Laser Display Association",
+    "Audience Scanning": "Directing laser beams into audience areas",
+    "MPE": "Maximum Permissible Exposure - safe exposure limit",
+    "Laser Pointer Laws": "Regulations restricting high-powered handheld lasers"
+  },
+  "references": [
+    "LasershowSafety.info",
+    "ILDA (International Laser Display Association)"
+  ],
+  "quiz_summary": {
+    "total_questions": 6,
+    "categories": [
+      "ILDA member obligations",
+      "Country classifications",
+      "Finnish regulations",
+      "Documentation requirements"
+    ]
+  }
+}

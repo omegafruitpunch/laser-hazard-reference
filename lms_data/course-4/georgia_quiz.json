@@ -1,0 +1,143 @@
+{
+  "state": "Georgia",
+  "quiz_title": "Georgia Laser Safety Regulations Assessment",
+  "total_questions": 10,
+  "passing_score": 80,
+  "questions": [
+    {
+      "id": "GA-Q1",
+      "type": "multiple_choice",
+      "difficulty": "basic",
+      "question": "What federal agency issues the variance required for laser light shows in Georgia?",
+      "options": [
+        "Federal Aviation Administration (FAA)",
+        "Food and Drug Administration (FDA)",
+        "Occupational Safety and Health Administration (OSHA)",
+        "Environmental Protection Agency (EPA)"
+      ],
+      "correct_answer": 1,
+      "explanation": "The FDA issues variances for laser light shows under 21 CFR 1040.11. Georgia follows federal guidelines for laser light show operations."
+    },
+    {
+      "id": "GA-Q2",
+      "type": "multiple_choice",
+      "difficulty": "basic",
+      "question": "Which form must be completed for outdoor unterminated laser shows?",
+      "options": [
+        "FDA Form 3500",
+        "FAA Form 7140-1",
+        "OSHA Form 300",
+        "EPA Form 7520"
+      ],
+      "correct_answer": 1,
+      "explanation": "FAA Form 7140 (Notice of Proposed Outdoor Operations) must be completed for outdoor unterminated laser shows."
+    },
+    {
+      "id": "GA-Q3",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the email address for submitting FDA laser product reports?",
+      "options": [
+        "lasers@fda.gov",
+        "RadHealthCustomerService@fda.hhs.gov",
+        "cdrh@fda.gov",
+        "variance@fda.gov"
+      ],
+      "correct_answer": 1,
+      "explanation": "Laser product reports and accidental occurrence reports can be submitted via email to RadHealthCustomerService@fda.hhs.gov."
+    },
+    {
+      "id": "GA-Q4",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What FAA Service Area email should be used for laser show notifications in Georgia?",
+      "options": [
+        "9-ATO-ESA-OSG-Lasers-Searchlights@faa.gov",
+        "9-ASW-Operations-Support-Lasers@faa.gov",
+        "9-ATO-WSA-OSG-Lasers@faa.gov",
+        "lasers@faa.gov"
+      ],
+      "correct_answer": 0,
+      "explanation": "Georgia is in the Eastern Service Area, so notifications should be sent to 9-ATO-ESA-OSG-Lasers-Searchlights@faa.gov."
+    },
+    {
+      "id": "GA-Q5",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the reporting period for the FDA Annual Report?",
+      "options": [
+        "January 1 to December 31",
+        "April 1 to March 31",
+        "July 1 to June 30",
+        "October 1 to September 30"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Annual Report covers laser activity from July 1 to June 30 each year. Filing this report auto-renews a basic variance."
+    },
+    {
+      "id": "GA-Q6",
+      "type": "true_false",
+      "difficulty": "basic",
+      "question": "Georgia has state-specific laser registration requirements separate from federal requirements.",
+      "options": ["True", "False"],
+      "correct_answer": 1,
+      "explanation": "False. Georgia follows federal regulations. The Georgia document primarily references federal forms and other states with specific requirements."
+    },
+    {
+      "id": "GA-Q7",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which document describes all safety hazards and recommended mitigation for laser shows?",
+      "options": [
+        "Standard Operating Procedures",
+        "Quality Control Safety Checklist",
+        "Health and Safety Report with Risk Assessment",
+        "Operation Log Sheet"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Health and Safety Report includes Risk Assessment describing all safety hazards, show information, laser descriptions, diagrams, proof of training, and insurance certificates."
+    },
+    {
+      "id": "GA-Q8",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "Which cities require special fire/rescue coordination for laser shows?",
+      "options": [
+        "New York City and Orlando",
+        "Chicago and Miami",
+        "Atlanta and Savannah",
+        "Los Angeles and Seattle"
+      ],
+      "correct_answer": 0,
+      "explanation": "New York City requires permits for Theatrical Fog/Haze plus Certificate of Fitness. Orlando/Orange County Fire also requires coordination."
+    },
+    {
+      "id": "GA-Q9",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What must be recorded on the Sample Operation Log Sheet?",
+      "options": [
+        "Financial transactions",
+        "Record of SOP followed",
+        "Audience attendance numbers",
+        "Weather conditions"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Sample Operation Log Sheet is used to record that Standard Operating Procedures (SOP) were followed during laser operations."
+    },
+    {
+      "id": "GA-Q10",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "Which of the following is NOT a standard record-keeping form for laser operations?",
+      "options": [
+        "Quality Control Safety Checklist - Single Page",
+        "Annual Financial Statement",
+        "Standard Operating Procedures",
+        "Outdoor Operation Log Sheet"
+      ],
+      "correct_answer": 1,
+      "explanation": "Annual Financial Statement is not a laser safety record-keeping form. The other options are all standard forms for documenting laser safety procedures."
+    }
+  ]
+}

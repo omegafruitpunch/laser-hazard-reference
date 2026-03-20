@@ -1,0 +1,13 @@
+{
+  "id": "skin-hazards_q005",
+  "type": "multiple_choice",
+  "question": "Which laser wavelength is MOST strongly absorbed by skin water content, resulting in superficial effects?",
+  "options": [
+    "532 nm (green)",
+    "1064 nm (Nd:YAG)",
+    "2940 nm (Er:YAG)",
+    "10,600 nm (CO2)"
+  ],
+  "correct": 3,
+  "explanation": "The CO2 laser at 10,600 nm has extremely high water absorption, limiting penetration to 0.1-0.2 mm and producing superficial effects ideal for precision cutting."
+}

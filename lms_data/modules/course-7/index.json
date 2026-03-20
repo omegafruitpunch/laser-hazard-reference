@@ -1,0 +1,311 @@
+{
+  "course_id": "course-7",
+  "course_name": "Event Safety",
+  "version": "2.0",
+  "polished_date": "2026-03-19",
+  "polished_by": "UI/UX Agent - Event Safety Edition",
+  "description": "Comprehensive event safety training with production industry aesthetic, safety-first warning systems, and mobile-optimized design for on-site safety professionals.",
+  "design_system": {
+    "name": "Event Safety Design System",
+    "version": "2.0",
+    "theme": "event_production",
+    "aesthetic": "Safety-first with industrial production styling"
+  },
+  "modules": [
+    {
+      "module_id": "module-7.1",
+      "title": "Event Safety Planning",
+      "subtitle": "Master the Fundamentals",
+      "order": 1,
+      "duration_minutes": 25,
+      "icon": "shield-check",
+      "color": "#FF6B00",
+      "badge": "🛡️ Event Safety Planner",
+      "interactive_features": [
+        "Safety Planning Timeline",
+        "Hazard Assessment Walkthrough",
+        "Stakeholder Coordination Scenario"
+      ],
+      "path": "module-7.1/",
+      "ui_polished": true
+    },
+    {
+      "module_id": "module-7.2",
+      "title": "Venue Assessment & Fire Safety",
+      "subtitle": "Fire Safety & Egress",
+      "order": 2,
+      "duration_minutes": 28,
+      "icon": "flame",
+      "color": "#DC2626",
+      "badge": "🔥 Fire Safety Specialist",
+      "prerequisites": ["module-7.1"],
+      "interactive_features": [
+        "Venue Assessment Tool",
+        "Fire Safety Inspector",
+        "Extinguisher Selector"
+      ],
+      "path": "module-7.2/",
+      "ui_polished": true
+    },
+    {
+      "module_id": "module-7.3",
+      "title": "Crowd Safety & Management",
+      "subtitle": "Crowd Dynamics & Evacuation",
+      "order": 3,
+      "duration_minutes": 30,
+      "icon": "users",
+      "color": "#22C55E",
+      "badge": "👥 Crowd Safety Expert",
+      "prerequisites": ["module-7.1", "module-7.2"],
+      "interactive_features": [
+        "Crowd Density Calculator",
+        "Emergency Egress Planner",
+        "Crowd Surge Responder"
+      ],
+      "path": "module-7.3/",
+      "ui_polished": true
+    },
+    {
+      "module_id": "module-7.4",
+      "title": "Emergency Response Procedures",
+      "subtitle": "NIMS/ICS & Incident Command",
+      "order": 4,
+      "duration_minutes": 25,
+      "icon": "activity",
+      "color": "#7C3AED",
+      "badge": "🚨 Emergency Responder",
+      "prerequisites": ["module-7.3"],
+      "interactive_features": [
+        "Emergency Response Simulator",
+        "NIMS/ICS Role Explorer",
+        "START Triage Trainer",
+        "Incident Documentation Trainer"
+      ],
+      "path": "module-7.4/",
+      "ui_polished": true
+    },
+    {
+      "module_id": "module-7.5",
+      "title": "Weather Protocols & Evacuation",
+      "subtitle": "Weather Decision Making",
+      "order": 5,
+      "duration_minutes": 25,
+      "icon": "cloud-lightning",
+      "color": "#3B82F6",
+      "badge": "⛈️ Weather Safety Officer",
+      "prerequisites": ["module-7.4"],
+      "interactive_features": [
+        "Weather Decision Matrix",
+        "Weather Decision Simulator",
+        "Evacuation Route Planner",
+        "Alert Signal Trainer"
+      ],
+      "path": "module-7.5/",
+      "ui_polished": true
+    },
+    {
+      "module_id": "module-7.6",
+      "title": "Insurance & Liability",
+      "subtitle": "Risk Management & Legal",
+      "order": 6,
+      "duration_minutes": 25,
+      "icon": "scale",
+      "color": "#0891B2",
+      "badge": "⚖️ Risk Management Pro",
+      "prerequisites": ["module-7.5"],
+      "interactive_features": [
+        "Liability Assessment Tool",
+        "Contract Clause Analyzer",
+        "Incident Documentation Trainer",
+        "Liability Scenario Analyzer",
+        "Insurance Coverage Explorer"
+      ],
+      "path": "module-7.6/",
+      "ui_polished": true
+    }
+  ],
+  "total_duration_minutes": 158,
+  "total_modules": 6,
+  "assessment_summary": {
+    "total_quiz_questions": 48,
+    "passing_score": 80,
+    "scenario_assessments": 6,
+    "interactive_exercises": 18,
+    "certification_badge": "Event Safety Professional"
+  },
+  "ui_theme": {
+    "color_palette": {
+      "primary": "#FF6B00",
+      "primary_dark": "#CC5500",
+      "secondary": "#1A1A2E",
+      "accent": "#FFD700",
+      "danger": "#DC2626",
+      "critical": "#991B1B",
+      "warning": "#F97316",
+      "caution": "#EAB308",
+      "success": "#16A34A",
+      "info": "#3B82F6",
+      "background": "#0F0F1A",
+      "surface": "#1E1E2E",
+      "surface_elevated": "#2A2A3E",
+      "text": "#FFFFFF",
+      "text_secondary": "#A1A1AA",
+      "text_muted": "#71717A"
+    },
+    "typography": {
+      "heading_font": "Inter, system-ui, -apple-system, sans-serif",
+      "body_font": "Inter, system-ui, -apple-system, sans-serif",
+      "emergency_font": "Roboto Mono, monospace",
+      "sizes": {
+        "hero": "2.5rem",
+        "h1": "2rem",
+        "h2": "1.5rem",
+        "h3": "1.25rem",
+        "body": "1rem",
+        "small": "0.875rem",
+        "caption": "0.75rem"
+      }
+    },
+    "spacing": {
+      "touch_target_min": "48px",
+      "button_padding": "16px 24px",
+      "button_padding_small": "12px 16px",
+      "card_padding": "20px",
+      "section_gap": "24px",
+      "element_gap": "16px",
+      "input_height": "48px"
+    },
+    "border_radius": {
+      "buttons": "8px",
+      "cards": "12px",
+      "alerts": "8px",
+      "inputs": "6px",
+      "badges": "16px",
+      "modals": "16px"
+    },
+    "shadows": {
+      "card": "0 4px 6px -1px rgba(0, 0, 0, 0.3)",
+      "elevated": "0 10px 15px -3px rgba(0, 0, 0, 0.4)",
+      "alert": "0 0 20px rgba(255, 107, 0, 0.4)",
+      "critical": "0 0 30px rgba(220, 38, 38, 0.6)"
+    },
+    "animations": {
+      "alert_pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      "warning_flash": "flash 1s ease-in-out infinite",
+      "slide_in": "slideIn 0.3s ease-out",
+      "fade_in": "fadeIn 0.2s ease-out"
+    }
+  },
+  "mobile_first_design": {
+    "breakpoints": {
+      "mobile": "0px",
+      "tablet": "768px",
+      "desktop": "1024px",
+      "wide": "1440px"
+    },
+    "touch_targets": {
+      "min_size": "48px",
+      "min_spacing": "8px",
+      "button_height": "48px",
+      "checkbox_size": "44px",
+      "list_item_height": "56px"
+    },
+    "quick_access": {
+      "emergency_button": {
+        "position": "persistent_fab",
+        "location": "bottom_right",
+        "size": "56px",
+        "color": "danger"
+      },
+      "checklist_drawer": {
+        "trigger": "swipe_from_right",
+        "peek_width": "40px"
+      }
+    }
+  },
+  "emergency_elements": {
+    "alert_levels": [
+      {
+        "level": "monitor",
+        "color": "#22C55E",
+        "icon": "eye",
+        "label": "MONITOR"
+      },
+      {
+        "level": "caution",
+        "color": "#EAB308",
+        "icon": "alert-triangle",
+        "label": "CAUTION"
+      },
+      {
+        "level": "warning",
+        "color": "#F97316",
+        "icon": "alert-octagon",
+        "label": "WARNING"
+      },
+      {
+        "level": "critical",
+        "color": "#DC2626",
+        "icon": "x-octagon",
+        "label": "CRITICAL"
+      }
+    ],
+    "emergency_buttons": {
+      "style": "high_contrast",
+      "animation": "pulse_when_active",
+      "confirmation_required": ["evacuation", "show_stop", "mayday"],
+      "persistent_access": true
+    },
+    "checklist_focus": {
+      "display": "collapsible_sections",
+      "progress_indicator": "visual_checklist",
+      "priority_highlighting": true,
+      "completion_badges": true
+    }
+  },
+  "industry_styling": {
+    "visual_elements": {
+      "hard_hat_accents": true,
+      "caution_stripes": true,
+      "warning_icons": true,
+      "production_equipment_silhouettes": true
+    },
+    "iconography": {
+      "style": "outlined",
+      "weight": "medium",
+      "safety_symbols": true,
+      "weather_icons": true
+    },
+    "terminology": {
+      "load_in": "Load-In",
+      "load_out": "Load-Out",
+      "show_time": "Show Time",
+      "front_of_house": "FOH",
+      "back_of_house": "Backstage"
+    }
+  },
+  "source_content": "lms_data/course-7-event-safety/",
+  "output_directory": "lms_data/modules/course-7/",
+  "file_manifest": [
+    "index.json",
+    "UI_STYLE_GUIDE.md",
+    "module-7.1/module.json",
+    "module-7.1/module_metadata.json",
+    "module-7.1/lessons.json",
+    "module-7.2/module.json",
+    "module-7.2/module_metadata.json",
+    "module-7.2/lessons.json",
+    "module-7.3/module.json",
+    "module-7.3/module_metadata.json",
+    "module-7.3/lessons.json",
+    "module-7.4/module.json",
+    "module-7.4/data.ts",
+    "module-7.4/types.ts",
+    "module-7.5/module.json",
+    "module-7.5/data.ts",
+    "module-7.5/types.ts",
+    "module-7.6/module.json",
+    "module-7.6/data.ts",
+    "module-7.6/types.ts"
+  ]
+}

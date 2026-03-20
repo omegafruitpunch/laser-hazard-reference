@@ -1,0 +1,23 @@
+{
+  "id": "c5-m5",
+  "title": "IEC 60825-1 & ISO Harmonization",
+  "description": "International laser safety standards evolution, edition comparisons, and global harmonization efforts.",
+  "pdfPath": "/docs/course-5-international/iec-iso-harmonization.pdf",
+  "keyTakeaways": [
+    "IEC 60825-1 is the foundational international standard for laser product safety",
+    "Edition 3 (2014) introduced significant changes from Edition 2 (2001)",
+    "ISO standards complement IEC standards for specific applications",
+    "Harmonization reduces trade barriers while maintaining safety"
+  ],
+  "estimatedMinutes": 15,
+  "interactiveComponents": [
+    "IECEditionComparator",
+    "HarmonizationMap"
+  ],
+  "learningObjectives": [
+    "Compare key differences between IEC 60825-1 editions",
+    "Understand the relationship between IEC and ISO standards",
+    "Identify national deviations from international standards",
+    "Apply edition-specific requirements for international trade"
+  ]
+}

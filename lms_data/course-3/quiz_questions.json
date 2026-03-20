@@ -1,0 +1,298 @@
+{
+  "course": "Course 3: Bio-Hazards",
+  "quiz_title": "IEC 60825-1 and MPE Tables Assessment",
+  "total_questions": 25,
+  "categories": {
+    "table_lookup": {
+      "description": "Questions requiring lookup and interpretation of MPE tables",
+      "questions": [
+        {
+          "id": "TL-01",
+          "type": "multiple_choice",
+          "question": "What is the limiting angular subtense (αmin) that divides small-source viewing from extended-source viewing?",
+          "options": [
+            "0.5 mrad",
+            "1.5 mrad",
+            "5 mrad",
+            "100 mrad"
+          ],
+          "correct_answer": 1,
+          "explanation": "αmin is defined as 1.5 mrad. Sources with angular subtense ≤ 1.5 mrad are considered small sources, while larger sources are extended sources requiring different MPE calculations.",
+          "reference": "ANSI Z136.1-2000, Section 8.1"
+        },
+        {
+          "id": "TL-02",
+          "type": "multiple_choice",
+          "question": "What is the maximum value of αmax for exposure durations of 0.25 seconds or longer?",
+          "options": [
+            "5 mrad",
+            "10 mrad",
+            "50 mrad",
+            "100 mrad"
+          ],
+          "correct_answer": 3,
+          "explanation": "αmax is defined as 100 mrad for exposure durations of 0.25 s and longer. This represents the angular limit beyond which extended source MPEs are expressed as constant radiance.",
+          "reference": "IEC 60825-1:2014, Clause 3"
+        },
+        {
+          "id": "TL-03",
+          "type": "multiple_choice",
+          "question": "Which correction factor (CA, CB, CC) applies to the near-infrared spectral band (700-1400 nm)?",
+          "options": [
+            "CA - based on reduced melanin absorption",
+            "CB - based on reduced photochemical hazards",
+            "CC - based on pre-retinal absorption",
+            "CE - extended source correction"
+          ],
+          "correct_answer": 0,
+          "explanation": "CA increases MPE values in the IR-A spectral band (700-1400 nm) based on reduced absorption properties of melanin pigment granules in the skin and retinal pigment epithelium.",
+          "reference": "MPE Tables, Definition of CA"
+        },
+        {
+          "id": "TL-04",
+          "type": "multiple_choice",
+          "question": "What is the standard aversion response time assumed for visible laser exposures?",
+          "options": [
+            "0.1 seconds",
+            "0.25 seconds",
+            "1.0 seconds",
+            "2.5 seconds"
+          ],
+          "correct_answer": 1,
+          "explanation": "The aversion response to bright laser sources is assumed to occur within 0.25 seconds, including the blink reflex time. This is the basis for Class 2 accessible emission limits.",
+          "reference": "MPE Tables, Definition of aversion response"
+        },
+        {
+          "id": "TL-05",
+          "type": "multiple_choice",
+          "question": "Which wavelength range is known as the 'retinal hazard region'?",
+          "options": [
+            "180-400 nm",
+            "400-700 nm",
+            "400-1400 nm",
+            "1400 nm - 1 mm"
+          ],
+          "correct_answer": 2,
+          "explanation": "The retinal hazard region spans 400-1400 nm. In this range, the eye's focusing mechanism can concentrate laser energy on the retina, creating potential for retinal damage.",
+          "reference": "MPE Tables, Definition of retinal hazard region"
+        }
+      ]
+    },
+    "limit_calculation": {
+      "description": "Questions on calculating AELs, MPEs, and correction factors",
+      "questions": [
+        {
+          "id": "LC-01",
+          "type": "calculation",
+          "question": "Calculate C6 for a source with angular subtense α = 15 mrad.",
+          "setup": "Given: αmin = 1.5 mrad, α = 15 mrad",
+          "solution_steps": [
+            "Check: α > αmin (15 > 1.5)",
+            "C6 = α / αmin",
+            "C6 = 15 / 1.5 = 10"
+          ],
+          "correct_answer": "10",
+          "explanation": "For extended sources where 1.5 mrad < α ≤ 100 mrad, C6 = α / αmin. This factor scales the AEL for larger apparent sources.",
+          "reference": "IEC 60825-1, Subclause 4.3"
+        },
+        {
+          "id": "LC-02",
+          "type": "calculation",
+          "question": "Calculate C5 for a repetitive pulse laser with 1000 pulses within the evaluation time.",
+          "setup": "N = 1000 pulses",
+          "formula": "C5 = N^(-0.25)",
+          "solution": "C5 = 1000^(-0.25) = 0.178",
+          "correct_answer": "0.178 (or approximately 0.18)",
+          "explanation": "C5 accounts for thermal additivity in repetitive pulse trains. With 1000 pulses, the single-pulse AEL is reduced by a factor of about 5.6 (1/0.178).",
+          "reference": "IEC 60825-1, Subclause 4.3 f)"
+        },
+        {
+          "id": "LC-03",
+          "type": "calculation",
+          "question": "What is the optical density (OD) required for eyewear if the expected exposure is 10 W/cm² and the MPE is 1 mW/cm²?",
+          "setup": "E = 10 W/cm² = 10,000 mW/cm², MPE = 1 mW/cm²",
+          "formula": "OD = log10(E/MPE)",
+          "solution": "OD = log10(10000/1) = log10(10000) = 4",
+          "correct_answer": "4",
+          "explanation": "Eyewear with OD 4 will attenuate the beam by a factor of 10^4 = 10,000, reducing 10 W/cm² to 1 mW/cm².",
+          "reference": "MPE Tables, Optical Density definition"
+        },
+        {
+          "id": "LC-04",
+          "type": "calculation",
+          "question": "For a source with α = 50 mrad, what is the approximate T2 value?",
+          "setup": "Given: αmin = 1.5 mrad, αmax = 100 mrad, α = 50 mrad",
+          "formula": "T2 = 10 × 10^((α - 1.5)/(100 - 1.5))",
+          "solution": "T2 = 10 × 10^((50 - 1.5)/98.5) = 10 × 10^0.492 = 10 × 3.1 = 31 seconds",
+          "correct_answer": "Approximately 31 seconds (accept 30-35 s)",
+          "explanation": "T2 ranges from 10 s at αmin to 100 s at αmax. At 50 mrad (roughly halfway), T2 is approximately 31 seconds.",
+          "reference": "IEC 60825-1, Definition of T2"
+        },
+        {
+          "id": "LC-05",
+          "type": "multiple_choice",
+          "question": "An extended source has AE = 5 mW and the calculated AEL for its angular subtense is 3 mW. What is the AE/AEL ratio and does it exceed the limit?",
+          "options": [
+            "Ratio = 0.6, does not exceed",
+            "Ratio = 1.2, exceeds by 20%",
+            "Ratio = 1.67, exceeds by 67%",
+            "Ratio = 2.0, exceeds by 100%"
+          ],
+          "correct_answer": 2,
+          "explanation": "AE/AEL = 5/3 = 1.67. Since the ratio exceeds 1.0, the accessible emission exceeds the AEL by approximately 67%.",
+          "reference": "IEC 60825-1/ISH1, Example calculation"
+        }
+      ]
+    },
+    "classification_determination": {
+      "description": "Questions on determining laser product classifications",
+      "questions": [
+        {
+          "id": "CD-01",
+          "type": "multiple_choice",
+          "question": "According to IEC 60825-1, what is the primary factor in determining the most restrictive AEL for extended sources?",
+          "options": [
+            "Total power through the measurement aperture",
+            "The grouping that maximizes the AE/AEL ratio",
+            "The largest angular subtense possible",
+            "The smallest field of view that captures all emission"
+          ],
+          "correct_answer": 1,
+          "explanation": "For extended sources, the analysis requires varying the angle of acceptance to find the grouping that maximizes the AE/AEL ratio. This grouping determines the applicable limit.",
+          "reference": "IEC 60825-1/ISH1, Subclause 4.3 d)"
+        },
+        {
+          "id": "CD-02",
+          "type": "multiple_choice",
+          "question": "When evaluating Class 3B AELs for wavelengths 400-1400 nm, what is the rule for the angle of acceptance?",
+          "options": [
+            "Limited to 100 mrad",
+            "Limited to αmax",
+            "Not limited",
+            "Limited to 7 mm diameter"
+          ],
+          "correct_answer": 2,
+          "explanation": "When evaluating emissions for comparison to Class 3B AELs, the angle of acceptance is not limited, unlike for lower classes where it may be limited to 100 mrad.",
+          "reference": "IEC 60825-1/ISH1, Clause 2"
+        },
+        {
+          "id": "CD-03",
+          "type": "multiple_choice",
+          "question": "For pulsed emission analysis, how is αmax determined when evaluating thermal retinal limits?",
+          "options": [
+            "αmax is constant at 100 mrad for all durations",
+            "αmax(t) is determined for the same emission duration t used for AEL(t)",
+            "αmax is always 5 mrad for pulsed lasers",
+            "αmax is not used for pulsed emission"
+          ],
+          "correct_answer": 1,
+          "explanation": "For pulsed emission, αmax is a function of time. The value αmax(t) used for C6 determination is calculated for the same emission duration t used to determine AEL(t) - whether pulse duration, pulse group duration, or averaging duration.",
+          "reference": "IEC 60825-1/ISH1, Subclause 4.3 f)"
+        },
+        {
+          "id": "CD-04",
+          "type": "multiple_choice",
+          "question": "In the C5 criteria (4.3 f) 3), when does C5 = 1 apply for the 'Unless α > 100 mrad' criterion?",
+          "options": [
+            "When the actual α is less than 5 mrad",
+            "When the actual α exceeds 100 mrad (not limited by αmax)",
+            "When N < 10 pulses",
+            "When the pulse duration is less than Tmin"
+          ],
+          "correct_answer": 1,
+          "explanation": "For the 'Unless α > 100 mrad' criterion, the angular subtense α is NOT restricted by αmax. For non-uniform sources, both angular dimensions must satisfy α > 100 mrad for C5 = 1 to apply.",
+          "reference": "IEC 60825-1/ISH1, Subclause 4.3 f) 3)"
+        },
+        {
+          "id": "CD-05",
+          "type": "multiple_choice",
+          "question": "For groups of pulses where the peak power varies within the group, how is the group duration (t_group) determined?",
+          "options": [
+            "By the FWHM criterion applied to the highest pulse",
+            "Set equal to the integration duration used to determine AE_group",
+            "Always equal to T2",
+            "Calculated as N × pulse duration"
+          ],
+          "correct_answer": 1,
+          "explanation": "When group duration is not well defined due to varying peak power, t_group can be set equal to the integration duration used to determine AE_group. This simplifies evaluation without requiring FWHM analysis.",
+          "reference": "IEC 60825-1/ISH1, Subclause 5"
+        }
+      ]
+    },
+    "parameter_selection": {
+      "description": "Questions on selecting appropriate parameters for evaluations",
+      "questions": [
+        {
+          "id": "PS-01",
+          "type": "multiple_choice",
+          "question": "Which standard measurement aperture is used for ocular exposure evaluations?",
+          "options": [
+            "1 mm diameter",
+            "3.5 mm diameter",
+            "7 mm diameter",
+            "10 mm diameter"
+          ],
+          "correct_answer": 2,
+          "explanation": "The 7 mm diameter aperture represents a fully dilated pupil under dark-adapted conditions and is used for all ocular MPE and AEL evaluations.",
+          "reference": "IEC 60825-1, Table 10"
+        },
+        {
+          "id": "PS-02",
+          "type": "multiple_choice",
+          "question": "When is the circular-cone angle of acceptance NOT limited to 100 mrad for wavelengths 400-600 nm?",
+          "options": [
+            "For all Class 1 evaluations",
+            "For exposure durations longer than 100 seconds",
+            "For pulsed lasers only",
+            "For skin exposure evaluations"
+          ],
+          "correct_answer": 1,
+          "explanation": "In the wavelength range 400-600 nm, the circular-cone angle of acceptance is not limited to 100 mrad when exposure durations are longer than 100 s, due to photochemical hazard considerations.",
+          "reference": "IEC 60825-1/ISH1, Clause 2"
+        },
+        {
+          "id": "PS-03",
+          "type": "multiple_choice",
+          "question": "What is the arithmetic mean used for in extended source analysis?",
+          "options": [
+            "Calculating the average power of the laser",
+            "Determining α from non-circular source dimensions",
+            "Finding the center wavelength of broadband sources",
+            "Computing the average of multiple MPE values"
+          ],
+          "correct_answer": 1,
+          "explanation": "The arithmetic mean α = (αx + αy) / 2 is used to determine the angular subtense for non-circular sources. It is not necessary that both dimensions independently satisfy the criterion.",
+          "reference": "IEC 60825-1/ISH1, Subclause 4"
+        },
+        {
+          "id": "PS-04",
+          "type": "multiple_choice",
+          "question": "For calculating T2 and the inequalities 'α ≤ 5 mrad', '5 mrad < α ≤ αmax', and 'α > αmax', what is the maximum value of α used?",
+          "options": [
+            "αmax(t) for the specific duration",
+            "100 mrad",
+            "α determined from the actual source",
+            "5 mrad"
+          ],
+          "correct_answer": 1,
+          "explanation": "For T2 calculation and the inequalities related to C5 selection, α is limited to a maximum of 100 mrad (equivalent to αmax for 0.25 s and longer). This is the same value used for C6 determination at 0.25 s and longer durations.",
+          "reference": "IEC 60825-1/ISH1, Subclause 4"
+        },
+        {
+          "id": "PS-05",
+          "type": "multiple_choice",
+          "question": "When evaluating moving apparent sources (e.g., scanned emission), how is α determined for the C5 criteria?",
+          "options": [
+            "Using the maximum scan angle",
+            "From the stationary apparent source at the analyzed accommodation condition",
+            "Always using α = 100 mrad",
+            "Using the time-averaged angular subtense"
+          ],
+          "correct_answer": 1,
+          "explanation": "For moving apparent sources from scanned emission, the value of α for the C5 criteria inequalities is determined for the stationary apparent source and the respective accommodation condition being analyzed (such as accommodation to infinity).",
+          "reference": "IEC 60825-1/ISH1, Subclause 4"
+        }
+      ]
+    }
+  }
+}

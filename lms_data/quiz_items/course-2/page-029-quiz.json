@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 29,
+  "quiz_items": [
+    {
+      "id": "C2-P29-Q1",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What safety standard is referenced for set-up, alignment, and testing control measures?",
+      "options": [
+        "OSHA 1926",
+        "ANSI Z136.1",
+        "ISO 9001",
+        "IEC 60825-1 only"
+      ],
+      "correct_answer": 1,
+      "explanation": "The variance condition requires control measures in accordance with recognized laser safety standards such as ANSI Z136.1 (American National Standard for Safe Use of Lasers).",
+      "learning_objective": "Identify referenced safety standards",
+      "regulatory_reference": "Appendix B - Set-up Safety Control Measures"
+    },
+    {
+      "id": "C2-P29-Q2",
+      "type": "scenario",
+      "difficulty": "intermediate",
+      "question": "During laser show set-up and alignment, who should be cleared from the projection area?",
+      "options": [
+        "Only audience members",
+        "All personnel not needed for the alignment",
+        "Only untrained personnel",
+        "No one needs to be cleared with proper eyewear"
+      ],
+      "correct_answer": 1,
+      "explanation": "All personnel not needed for alignment should be cleared from the projection area until initial alignment is done. This is considered an important control measure.",
+      "learning_objective": "Apply set-up safety procedures",
+      "regulatory_reference": "Appendix B - Set-up Safety"
+    }
+  ]
+}

@@ -1,0 +1,1428 @@
+PDF: international-outdoor-standards.pdf
+Total Pages: 17
+================================================================================
+
+--- Page 1 ---
+Words: 520, Images: 1
+
+LASER SAFETY CONCEPTS FOR AVIATION 
+Paper #902 
+ 
+Patrick Murphy 
+ 
+Editor, LaserPointerSafety.com  
+7062 Edgeworth Drive, Orlando, Florida 32819, USA 
+ 
+Abstract 
+This document is a review of laser safety concepts that 
+are relevant for pilots and aviation officials. 
+In recent years, there have been about 10 laser/aircraft 
+incidents per night reported to the U.S. Federal 
+Aviation Administration (FAA). Visual interference 
+from visible laser beams, during critical phases of 
+flight, is considered the most significant hazard. This 
+can be distraction (a mental interference), glare (cannot 
+see past the light until it is removed), and 
+flashblindness (visually interfering afterimage that can 
+last seconds or minutes). Eye injury is a secondary 
+concern. Due to various factors, in aviation incidents 
+the chance of even temporary injury to the eye is 
+considered extremely low. 
+Laser illuminations are not usually a single, fixed 
+brightness but instead a series of flashes due to the 
+difficulty of keeping a hand-held laser aimed at a 
+moving aircraft. Helicopters are more susceptible to 
+laser interference due to spending more time at lower 
+altitudes and slower speeds. On the other hand, 
+helicopters can remain in the area in order to direct 
+police to the source of the (very visible) beam. 
+Laser protective eyewear, to reduce the intensity of 
+light, may be appropriate for pilots flying into a known 
+or suspected laser area. It is vital to select eyewear that 
+does not block instruments or airport lighting; testing 
+on the aircraft to be used is necessary. 
+If lased, follow procedures such as “fly the plane.” 
+First, block the light, resist the urge to rub your eyes, 
+inform ATC, and report the incident to FAA. 
+Information is given about the possibility of injury. For 
+example, being lased while inside the Nominal Ocular 
+Hazard Distance does not necessarily mean that injury 
+occurred.  
+Introduction 
+When a pilot sees a laser beam aimed toward an 
+aircraft, he or she may be adversely distracted. If the 
+beam enters the pilot’s eyes, this can additionally cause 
+visual impairments such as glare, flashblindness and/or 
+afterimages, one or more blind spots, blurry vision, and 
+significant loss of night vision acclimation. A few 
+pilots have even reported feeling a sense of shock 
+when they are unexpectedly illuminated by bright laser 
+light. 
+These “visual interference hazards” during critical 
+phases of flight are the primary concern of 
+laser/aviation safety experts.1 During critical flight 
+phases such as landing, takeoff, low-level flying or an 
+emergency, laser distractions or vision blocking could 
+contribute to an accident. 
+A secondary concern is temporary or permanent eye 
+injuries (retinal burns). Fortunately, as discussed later 
+in this document, during aviation incidents the laser 
+beam’s power at the pilot’s eye is so weak, and 
+exposures are so brief, that the chance of even a 
+temporary injury is extremely low.  
+Important Principles for Pilots to Remember 
+From 2011 to 2014, there were about 3,500 to 4,000 
+incidents in the U.S. of pilots reporting laser 
+illuminations. This is roughly 10 incidents per night.  
+ 
+Figure 1: Number of laser illumination incidents 
+reported to the U.S. FAA, 2004-2014 
+If you are a pilot, you should prepare for a laser 
+incident by keeping these general principles in mind: 
+
+
+================================================================================
+
+--- Page 2 ---
+Words: 504, Images: 3
+
+1. The primary hazard for pilots is visual 
+interference during critical phases of flight. 
+Distraction can be mentally controlled – don’t pay 
+so much attention to the waving laser beam that 
+you forget to fly the plane. Glare and 
+flashblindness are more serious since the light is 
+blocking part of your vision. Follow the laser 
+illumination procedures listed later in this 
+document. 
+2. In addition to the interference, a sudden laser 
+flash can startle you. The surprise can cause a 
+feeling of shock or a headache, even though only a 
+bright light is illuminating your body. Avoid 
+rubbing your eye too vigorously; this can cause a 
+painful temporary corneal abrasion. 
+3. Do not unduly worry about eye damage. It 
+is highly unlikely that a consumer pointer or 
+handheld would cause eye damage to a pilot in 
+flight. At aviation distances – over, say 200 feet --
+not enough light is deposited on the retina for a 
+long enough period to cause a retinal injury. The 
+U.S. FAA and U.K. CAA have had no 
+documented cases of permanent eye injuries in 
+over 20,000+ incident reports. If you do have any 
+concern after a flight, schedule an eye exam -- 
+preferably with a retinal specialist who has some 
+laser knowledge or experience. 
+4. If you are a police, medical or other first 
+responder pilot you may want to consider laser 
+protective glasses developed especially for 
+pilots. Do not wear them routinely but keep a pair 
+nearby in the cockpit for times when lasers are 
+active or likely. 
+The remainder of this document goes into more detail 
+on these and other points. 
+Visual Interference Hazards 
+It should first be noted that not all laser light in 
+airspace poses a risk to flight operations. For example, 
+in May 2005, NORAD began using a laser Visual 
+Warning System in the Washington, D.C. Air Defense 
+Identification Zone.2 An eye-safe laser beam, one that 
+flashes red-red-green and is visible up to 25 miles 
+away, is aimed directly at aircraft in the ADIZ when 
+the pilot cannot be reached by radio. 
+The primary concern of laser/aviation experts3 is when 
+unauthorized laser light interferes with pilots’ vision or 
+otherwise adversely affects their ability to safely 
+operate the aircraft. The photos in Figures 2-4 were 
+taken in an FAA simulator. They illustrate examples of 
+the three main visual interference hazards. 
+ 
+Figure 2: Temporary flashblindness4. The light is so 
+bright it causes afterimages that last even after the light 
+is off. This is the most serious problem, causing vision-
+impairing afterimages. 
+ 
+Figure 3: Glare. It is difficult to see past the light, as 
+long as it remains on. This also blocks a pilot’s vision, 
+but only as long as the beam is directly in his or her 
+eyes. 
+ 
+Figure 4: Distraction. The light is brighter than 
+background lights. Distraction is a mental interference, 
+since vision is not blocked. However, distraction 
+during critical flight phases could lead to loss of 
+situational awareness. Pilots can successfully counter 
+distraction by focusing their attention on the task of 
+flying. 
+
+
+================================================================================
+
+--- Page 3 ---
+Words: 419, Images: 2
+
+Figure 5 shows the distances over which lasers can 
+cause flashblindness, glare and distraction. For 
+example, the green arrow points to the visual 
+interference hazard distances of a 5 milliwatt green 
+laser pointer. (This is the most powerful laser that can 
+legally be sold as a “pointer” under U.S. Food and 
+Drug Administration regulations.) 
+Here is how to interpret the line to the right of the 
+green arrow: A 5 mW green laser pointer is a 
+flashblindness hazard from 0 to 250 feet (red zone), a 
+glare hazard from 250 to 1,100 feet (orange zone), and 
+a distraction from 1,100 to 11,000 feet (yellow zone). 
+Beyond 11,000 feet (green zone), it is not a visual 
+hazard; the FAA has determined that the laser’s light 
+would be no brighter than other city and navigation 
+lights visible at night. 
+One of the key concepts the hazard distance chart 
+illustrates is that the beam’s color is an important 
+factor determining how much it can interfere with 
+vision. That’s because the human eye is most sensitive 
+to green light. The curve in Figure 6 shows the eye’s 
+response to color.5 A 532 nm green laser beam – the 
+most common type sold to consumers – will appear 
+much brighter than a 633 nm red beam or a 455 nm 
+blue beam of equivalent power. 
+ 
+Figure 6: Human eye response to color. 
+The curve plots the data used in the FAA’s Advisory 
+Circular 70-1, which is used to evaluate laser hazards 
+in airspace. 
+Another way to consider this is that a green laser beam 
+will be a visual interference hazard over a longer 
+distance than red or blue beams of equivalent power. 
+Figure 7 shows this comparison for red and green 
+beams. As the highlighted area shows, a 5 mW red 
+laser pointer can cause glare up to 570 feet away, while 
+an otherwise identical 5 mW green pointer can cause 
+glare up to 1,100 feet. Again, this is because the human 
+eye is more sensitive to green light than to an 
+equivalent amount of red light. 
+Figure 8 shows a similar comparison between green 
+and blue laser beams. A 1000 mW green handheld is a 
+glare hazard up to 15,510 feet away, while the exact  
+ 
+Figure 5: Visual interference hazard distances for selected lasers. Note that for comparison purposes, the chart 
+assumes all lasers have a tight, 1 milliradian beam. Generally, higher power handheld lasers will have increased 
+divergence, which means their real-world hazard distances will be less than what is shown here. 
+ 
+
+
+================================================================================
+
+--- Page 4 ---
+Words: 201, Images: 2
+
+same laser but emitting blue light is a glare hazard to 
+2,890 feet -- that’s only 18% of the green glare 
+distance.6 
+Unfortunately for pilots, green lasers are the most 
+common and also have the longest visual interference 
+distances, compared to otherwise identical red or blue 
+lasers. This explains why about 95% of incidents 
+reported to FAA involve green laser light.7 
+Phase Of Flight And Altitude 
+As A Hazard Factor 
+Visual interference is generally considered to be a 
+hazard only during critical phases of flight: takeoff, 
+approach and landing, and critical or emergency 
+maneuvers. During cruise or other non-critical phases, 
+there is enough time to react and recover from even a 
+severe flashblindness incident. 
+The vast majority of incidents take place below 10,000 
+feet above ground level.8 This is because the lower the 
+ 
+Figure 7: Red vs. Green Visual Interference Hazard Distances. The highlighted area shows that red laser light is 
+a visual interference hazard over shorter distances than green laser light of the same laser power. 
+ 
+Figure 8: Blue vs. Green Visual Interference Hazard Distances. The highlighted area shows that blue laser light 
+is a visual interference hazard over shorter distances than green laser light of the same laser power. 
+ 
+
+
+================================================================================
+
+--- Page 5 ---
+Words: 766, Images: 0
+
+aircraft’s altitude, the easier it is for a person on the 
+ground to see the aircraft and thus aim towards it. 
+Laser Eye Injuries – A Remote Possibility 
+Laser/aviation safety experts consider laser-caused eye 
+damage to pilots, while possible, to be extremely rare. 
+As of January 2015, there have been no documented 
+cases of permanent eye injuries in any of the over 
+20,000 laser incidents reported to the U.S. FAA9 and 
+the U.K. CAA10, according to these agencies’ 
+experts.11 There have been a handful of temporary eye 
+injuries that healed with no detrimental effect on 
+vision; the pilots involved returned to flight status.12 
+This section contains a summary of laser eye hazard 
+information. Additional details are in Appendix B. 
+Hazards close up are not the same as over a 
+large distance 
+Laser beams spread out as they travel. Close to the 
+laser, where the beam is narrow, all of the light may be 
+able to enter the pupil and cause damage. But after 
+travelling hundreds or thousands of feet, the beam is 
+many inches or feet across. Only a fraction of the 
+entire beam will enter the pupil. Thus, a beam that is 
+an eye injury hazard close up may well be non-
+injurious at flight distances and altitudes. 
+There are additional factors as well, such as the 
+difficulty in keeping a handheld laser steady on a 
+moving target that is hundreds or thousands of feet 
+away. In most incidents, the beam is not constantly 
+kept on the pilot’s eyes. This reduces heat buildup that 
+can cause thermal injury to the retina. 
+At what distance can a laser start to cause eye 
+injuries? 
+To determine a given laser’s injury potential, scientists 
+calculate its “Nominal Ocular Hazard Distance” or 
+NOHD. This indicates, for a given laser’s power and 
+beam divergence (spread)13, the distance at which the 
+chance of eye injury is “vanishingly small”14 or is a 
+“negligible risk for injury.15” For example, the NOHD 
+of a standard 5 milliwatt laser pointer with 1 
+milliradian divergence is 52 feet. In contrast, the 
+NOHD of the most powerful handheld laser currently 
+available, 2000 milliwatts (2 watts) with 1.75 
+milliradian divergence, is 593 feet.16 
+However, being inside the NOHD – closer to the laser 
+than scientists recommend – does NOT mean certain 
+injury or blindness. The NOHD was developed with a 
+kind of built-in “safety factor” or “reduction factor.” 
+This is a complex topic. But in general, there are two 
+major considerations: 
+• 
+The level of concern is not where there is 
+severe damage or blindness, but instead the 
+level at which the smallest medically 
+detectable changes could be seen in the eyes 
+of laboratory animals, 50% of the time (even 
+in a single eye, sometimes a given exposure 
+caused a detectable change, sometimes it did 
+not). In setting exposure limits, scientists took 
+into account the light levels that caused a 50% 
+chance of a minimally detectable change to 
+the eye. 
+• 
+Scientists then added on a “reduction factor” 
+to reduce the chance of eye change or injury. 
+For visible light, this was set to be 
+approximately 10 times lower than where 
+changes were seen in studies. 
+Thus, as a rough approximation, the MPE is 10 times 
+less than where minimal injuries may occur. In turn, 
+this means that roughly the square root of 10, or 0.316 
+times the NOHD, is where minimal injuries may occur. 
+Beyond this point – in other words, the last 2/3 of the 
+NOHD -- the chance of an injury continues to decline 
+further.17 
+This is why it is called the Nominal Ocular Hazard 
+Distance and not something like the “Actual Ocular 
+Hazard Distance.” 
+Certainly, if it is possible to control a laser exposure 
+and/or distance, a person exposed to laser light in their 
+eyes should be beyond the NOHD. 
+The problem is that pilots, among others, may be 
+exposed involuntarily to laser light while they are 
+within the NOHD.18 They naturally may worry about 
+potential injury. Knowing how the MPE levels and 
+NOHD distances were set, with a “safety factor”, may 
+help alleviate fears of having a serious or debilitating 
+injury. 
+In the real world, the conservative values set for the 
+MPE and NOHD helps explain why there have been no 
+documented permanent eye injuries in FAA and CAA 
+incidents. Almost always, pilots are exposed well 
+beyond the distance at which even the most powerful 
+laser is likely to cause a vision-affecting eye injury. 
+More detailed analysis needed when balancing 
+risk vs. benefits 
+There may be agencies such as police and rescue units, 
+in which it is necessary to balance the risk of laser 
+
+
+================================================================================
+
+--- Page 6 ---
+Words: 675, Images: 1
+
+hazards with the benefits of stopping a laser 
+perpetrator or rescuing someone while others are 
+aiming lasers at the aircraft. Such agencies should 
+work with laser experts to do a detailed analysis of 
+real-world lasers currently being sold, taking into 
+account factors such as those discussed above. 
+It is likely that when public safety is at risk, pilots and 
+officers can, while still minimizing risk, approach a 
+laser closer than a simple worst-case NOHD chart 
+would initially indicate. 
+Non-eye Physical Effects 
+In about 0.1% of laser incidents19, a pilot has reported 
+a physical reaction to being suddenly and brightly 
+illuminated. This has been described as being a 
+“shock” or even a physical impact, and it may cause a 
+headache.20  
+However, a laser beam is composed of coherent but 
+otherwise ordinary light. Like a lamp’s light or a 
+flashlight’s beam, the light from a ground-based laser 
+cannot be felt on the pilot’s skin since it is so widely 
+spread out at aircraft distances. Also, a beam of such 
+light would not cause any physical force or impact.21 
+This infrequent phenomenon – which must be a 
+psychological reaction – is nevertheless a potential 
+flight hazard if misinterpreted by a worried pilot. 
+Remember that a laser beam in an in-flight situation 
+cannot cause heat on the skin, electrical shock, or 
+physical force. 
+What A Laser Illumination Looks Like 
+Laser incidents are not static events. The pilot 
+normally sees a beam moving around, with one or 
+more bright flashes if the beam actually enters the 
+cockpit and the pilot’s eye. The beam intensity will 
+vary widely, because it is almost impossible for 
+someone to steadily handhold a laser onto a moving 
+target at aircraft distances and speeds.22 
+The aircraft windscreen refracts and spreads out the 
+laser light. This is a significant cause of veiling glare – 
+it may seem as if the entire windscreen is lit up. 
+(Fortunately for eye safety, this same effect also helps 
+spread out the beam, reducing the intensity of any light 
+that directly enters the pilot’s pupil.) 
+Figure 9 shows 20 frames taken at ½ second intervals 
+from a police helicopter video.  
+ 
+Figure 9: Frames from a video showing a laser 
+being aimed at and near a police helicopter 
+In 19 of the frames, the laser is being waved around 
+close to the aircraft. In one frame – one instant out of 
+10 seconds – the laser has actually hit the windscreen. 
+Notice that it is not a direct hit into the camera lens, 
+since the beam is still aimed to the lower left.23 But the 
+windscreen has spread out the beam, causing glare that 
+makes it more difficult to see features on the ground.  
+Normally, such veiling glare only lasts a fraction of a 
+second because of the difficulty of keeping a handheld 
+beam aimed precisely at a moving target. If the beam 
+enters the eye directly and is strong enough, it can 
+cause flashblindness, in which case the pilot will 
+experience an afterimage lasting from a few seconds to 
+many minutes – like looking into a camera’s flashbulb. 
+Fixed Vs. Rotary Wing 
+Helicopters are at greater risk for laser attacks. They 
+fly at lower altitudes more often than fixed wing 
+aircraft, and they can hover over the same spot, 
+increasing their exposure potential. In addition, the 
+rotor noise can cause annoyed persons on the ground to 
+aim a laser to “get back” at the aircraft. 
+One compensating benefit is that it is much easier for a 
+helicopter pilot to stay in the area, in order to identify 
+the source of the laser beam. The pilot must avoid 
+direct beams in his or her eyes while determining the 
+perpetrator’s location. For civilian pilots, it is usually 
+best to report the approximate location to ATC, who 
+will relay this to authorities. A law enforcement 
+helicopter can then be sent to safely determine the 
+exact location and to assist ground units. 
+Probability Of Laser Exposure 
+In 2014, there were 3,894 laser incidents reported to 
+the FAA. This is an average of 10.7 incidents each 
+night. 
+
+
+================================================================================
+
+--- Page 7 ---
+Words: 597, Images: 2
+
+In 2012, there were 3,482 incidents, which were 
+reviewed in more detail to determine eye effects. In 35 
+of these incidents (1%), adverse eye exposure was 
+reported. Regarding vision effects, there were 21 
+reports of temporary flashblindness, two reports of 
+blurry vision, one report of blind spots, and one report 
+of temporary peripheral vision loss. Regarding 
+physical effects, there were nine reports of eye 
+discomfort or pain, and three reports of headache. Four 
+persons sought medical attention. In two of the eye 
+exposure cases, the flight was affected (the co-pilot 
+took over in one case; in the other, the pilot requested a 
+vector away from the area). And in four cases, the pilot 
+reported laser light in the eyes with no adverse effect. 
+The FAA’s Civil Aerospace Medical Institute 
+reviewed these cases and determined that none of them 
+was an “injury”.24 
+Based on FAA ATADS flight data on airport 
+operations25, the chance of a pilot seeing a laser beam 
+on any given flight in a single year is about 1 in 
+15,000. In about 28% of incidents, the beam enters the 
+cockpit, making the chance of a cockpit illumination 
+about 1 in 54,000 flights per year. And in about 1% of 
+incidents, the beam causes adverse eye or body effects. 
+This means the chance of being illuminated so it 
+causes such effects is about 1 in 1,500,000 flights. 
+If And When To Use Laser Protective Eyewear 
+Some companies are producing laser safety glasses for 
+pilots. These are designed to attenuate one or more 
+specific wavelengths (colors) of laser light, while still 
+permitting cockpit instrument and airport lights to be 
+seen. 
+ 
+Figure 10: Laser aimed into camera, with no 
+protective eyewear. 
+Figure 10 is a photo taken from the pilot’s seat of a 
+helicopter sitting on an airport ramp. A 70 mW, 532 
+nm (green) laser is aimed almost directly into the 
+camera’s lens from 128 feet away. The camera is 
+within the laser’s Nominal Ocular Hazard Distance – it 
+would be a potential eye hazard if the beam directly 
+entered a person’s pupil. Note that as the laser beam 
+hits the windscreen, the light spreads out, making it 
+almost impossible to see past the glare; this is similar 
+to what would happen in flight. 
+ 
+Figure 11: Laser aimed into the camera, with OD 3 
+protective eyewear over the lens. 
+Figure 11 is a photo of the same setup, but the 
+camera’s lens is almost fully covered by the lens of 
+laser protective eyewear that has an optical density at 
+the laser’s wavelength of 3 (1000x attenuation). (Note 
+part of the curvature of the lens edge at lower left, 
+allowing a small amount of laser light to reach the 
+camera.) 
+In general, laser protective eyewear is most appropriate 
+for police, rescue, medical and other first responder 
+pilots. 
+They 
+have 
+the 
+greatest 
+likelihood 
+of 
+encountering laser beams, and of having to perform 
+operations despite being illuminated. But because 
+eyewear also will reduce the visibility of certain 
+wavelengths (colors) of displays and ground lights, it is 
+critical to determine whether it is suitable for a given 
+mission and aircraft. 
+For pilots who wish to have laser protective eyewear 
+available, there are some key points and cautions: 
+1. Choose from laser protective eyewear 
+designed specifically for pilots. Laboratory 
+eyewear and consumer “blue blockers” or 
+standard sunglasses are not appropriate or 
+safe. 
+2. The glasses first must be safely tested, on 
+the ground and while at cruising altitude, on 
+the actual equipment being used. The glasses 
+should still allow sufficient color rendition 
+and sufficient color discrimination of cockpit 
+instrumentation and airport lights. 
+
+
+================================================================================
+
+--- Page 8 ---
+Words: 709, Images: 0
+
+3. Laser attenuation glasses should NOT be 
+routinely worn. Instead, keep them readily 
+available during flight so they can be 
+deployed and worn in the event of a laser 
+illumination or if laser activity has been 
+reported in the area. 
+4. Glasses that attenuate green laser light 
+should be sufficient in most cases. Over 90% 
+of FAA-reported incidents involve green laser 
+light at 532 nanometers. 
+5. Glasses 
+that 
+attenuate 
+two 
+or 
+more 
+wavelengths, such as green-plus-red or green-
+plus-blue, are available. However, the more 
+wavelengths that are attenuated, the greater 
+the 
+possibility 
+of 
+reduced 
+color 
+discrimination of cockpit instruments. 
+6. It is not necessary for the glasses to fully 
+block the laser’s light. Simply attenuating 
+the light by one or two orders of magnitude 
+(Optical Density 1 or 2) can be sufficient to 
+prevent flashblindness and reduce glare.  
+7. Informal tests have shown that for single-
+wavelength green (532 nm) protection, OD 3 
+blocks too much light (both laser and 
+instrument panel); for example, it is not 
+possible to track the laser beam to its source. 
+Thus, for green protection an OD of 2 or 
+2.5 is suggested. For attenuating red or blue, 
+a lower OD such as 1 or 1.5 is suggested. As 
+stated 
+above, 
+testing 
+on 
+the 
+actual 
+equipment to be flown is essential to ensure 
+that, whatever the OD, it does not adversely 
+affect visibility of instruments and airport 
+lights. 
+Laser Illumination Procedures26 
+“Fly the plane” first. With two pilots, the one who 
+was not exposed should look at the instruments -- not 
+out the window. If the plane is in a critical flight phase 
+such as landing or takeoff, determine whether it can it 
+be flown without looking outside (for example, on an 
+automated final approach). Determine whether a go-
+around might be prudent. 
+Do not look directly towards the light. Instead, look 
+a bit away from it. Be prepared to look completely 
+away and warn the other pilot if the beam or light 
+returns. 
+Block the light if possible with a clipboard, visor or 
+your hand. You can sometimes maneuver the aircraft 
+to block the light. 
+Turn up the cockpit lights. Light-adapted eyes are 
+less prone to the effects of a laser. 
+Resist the urge to rub your eyes. This can irritate the 
+eyes and cause tearing, or a corneal abrasion. 
+Inform ATC as soon as possible and in particular if a 
+decision has been made to diverge from the cleared 
+flight path. 
+After landing, report the incident to the FAA. This 
+webpage has more information: 
+http://www.faa.gov/aircraft/safety/report/laserinfo/ 
+Seek qualified eye care if you have any concerns. 
+An eye doctor with experience in retinal examinations, 
+and especially one who has knowledge of laser 
+injuries, is best. 
+APPENDIX A: 
+Frequently asked questions 
+What is the difference between a laser pointer 
+and a handheld? 
+It is a matter of legalistic terminology. Under U.S. 
+FDA regulations, lasers sold as “pointers” or for 
+pointing purposes must be under 5 mW.27 It is legal to 
+sell any lasers above 5 mW, including battery-powered 
+portable handheld lasers, as long as 1) they have all 
+safety features required for their power (laser 
+classification), 2) they are properly certified to FDA, 
+and 3) they are not sold as “pointers” or for pointing 
+purposes. Often, a pointer and a higher power 
+handheld can look identical. From the standpoint of a 
+pilot who has been illuminated, it does not matter if the 
+laser is legally a pointer or a handheld. 
+What about the visibility of laser beam colors 
+other than red, green and blue? 
+Lasers with yellow, orange, deep violet, or other color 
+beams are relatively rare for consumer pointers or 
+handhelds. All would appear dimmer than a green laser 
+beam of equivalent power and divergence. From a 
+flight safety standpoint, the main issue is not the color; 
+it is how bright the light appears to the pilot and thus 
+how much visual interference could occur. 
+Do atmospheric conditions such as fog or smoke 
+affect laser illuminations? 
+Visible laser light will be more scattered and diffused 
+if there is fog, smoke, dust, rain, snow or other 
+substances in the air. This reduces the amount of light 
+that can reach a pilot’s eyes, compared with clear air 
+conditions. When a beam travels through even clear air 
+
+
+================================================================================
+
+--- Page 9 ---
+Words: 490, Images: 1
+
+for many tens of thousands of feet, the atmosphere can 
+lessen, or attenuate, its power; however, the effect of 
+atmospheric attenuation decreases with altitude. 
+Despite this, laser/aviation experts generally ignore 
+atmospheric attenuation, or its inverse, scintillation 
+(where beams can shimmer, focusing them stronger 
+and weaker for brief milliseconds). For one thing, 
+attenuation and scintillation effects roughly cancel 
+each other out. For another, in terms of mitigating 
+hazards, attenuation and scintillation effects cannot be 
+relied upon so it is usually best to use a worst-case, 
+clear-air approach.28 
+The charts in this document use standard safety 
+calculations and assume no atmospheric attenuation.  
+What is the difference between a laser incident, 
+illumination, hit, strike and attack? 
+When referring to FAA laser incident reports, these 
+terms describe the same thing: someone unauthorized 
+has aimed a laser beam at a pilot. “Incident” is a 
+general term indicating that something occurred that 
+may or may not have had adverse effects. 
+• 
+“Illumination” 
+emphasizes 
+the 
+scientific 
+aspect: that it is only light which is touching 
+the aircraft. 
+• 
+“Hit” and “strike” imply a physical blow and 
+are scientifically inaccurate although some 
+pilots have reported feeling physical effects 
+when unexpectedly illuminated by laser light.  
+• 
+“Attack” implies deliberate intent to cause 
+adverse effects; this may not always be true 
+since many incidents are due to ignorance. 
+Why do people aim at aircraft? 
+Currently, the main problem is ordinary people who do 
+not understand the hazards to aircraft and are not trying 
+to cause harm or trouble. There are four reasons that 
+such persons may believe that aiming at aircraft will 
+not cause problems: 
+1) They may think that the laser beam can’t 
+reach the aircraft, in part because a beam 
+aimed into the air appears as if it ends after a 
+few hundred feet. The photo below depicts 
+this effect. 
+ 
+Figure 12: A laser beam can appear to stop 
+in midair 
+Air close to the ground – the “Planetary 
+Boundary Layer” – contains dust and other 
+particles that scatter light, making the beam 
+visible. As the beam emerges into clear air, 
+from the ground it appears to stop in mid-
+air.29 
+2) They may think the laser will only hit the 
+underside or rear of the aircraft.  
+3) They may think that at worst, the laser will 
+appear to be a small dot on the windscreen, 
+like when they play with their cat or dog. 
+They do not understand that the beam can 
+spread out to fill the windscreen and totally 
+obscure the view. 
+4) They may believe that, like a flashlight, the 
+light intensity is rapidly diminished by 
+distance. 
+These people can hopefully be reached with education 
+programs, and through hearing in the media about 
+persons prosecuted for aiming at aircraft. 
+Unfortunately, there are also a large number of people 
+who simply don't care if they interfere with aircraft. 
+They may deliberately intend to distract pilots; perhaps 
+to stop airborne police missions. They may be upset by 
+
+
+================================================================================
+
+--- Page 10 ---
+Words: 741, Images: 0
+
+aircraft noise. They may be doing this for anti-social 
+“fun,” figuring that the chances of getting caught are 
+small. Ironically, sometimes persons like this who are 
+caught, are also charged with other crimes such as drug 
+possession – the laser literally pointed them out to 
+police attention. 
+Is aiming at aircraft illegal? 
+Yes, many people have gone to jail for violating 
+federal or state laws. The FBI, FAA and local 
+prosecutors take this very seriously. 
+Some laws are specific such as U.S.C. Title 18, 
+Chapter 2, Sec. 39A which makes it illegal to aim a 
+laser pointer at an aircraft or its flight path. Violations 
+can result in up to 5 years in prison and a fine of up to 
+$250,000. Some laws are more general, such as U.S.C. 
+Title 29, Subtitle VII, Part A, Subpart iv, Chapter 465, 
+Paragraph 46505 which bans interference with flight 
+crew member. 
+Under 49 U.S.C. Section 46301(a)(5)(A), FAA may 
+seek a maximum civil penalty of $11,000 per violation 
+for aiming a laser at an aircraft in violation of 14 
+C.F.R. 91.11. From June 2011 through mid-September 
+2013, the FAA has opened 129 civil enforcement cases 
+against persons who aimed lasers at aircraft.30 
+Many states also have laws against aiming at, or 
+interfering with, aircraft.31 
+Can lasers be banned on the ground? 
+For various reasons, restricting laser possession or 
+usage may be difficult. At the federal level it would 
+require new laws from Congress. Banning, licensing or 
+taxing consumer lasers may not make a significant 
+impact for years, since there are already millions of 
+lasers in circulation. Also, it is easy to make a 
+handheld laser using diodes removed from common 
+electronic devices such as DVD drives and laser video 
+projectors. 
+Some limitations do seem to be working. In February 
+2013 the resort town of Myrtle Beach, S.C. restricted 
+laser pointer sales to devices below 1 mW, and banned 
+the sale of pointers to minors. In mid-summer 2013, a 
+local official reported “remarkably fewer complaints” 
+and that the ordinance “made a huge difference.”32 
+However, this has not been the case in Australia. In 
+2008, the country enacted import controls and strict 
+bans on laser possession. A 2013 study33 showed that 
+this has not reduced the number of Australian aircraft 
+lasings; in fact, they went up 27% over three years. It 
+also decreased consumer safety since imported high-
+powered pointers were mislabeled as being of low 
+power, in order to evade import inspection. 
+The Australian experience demonstrates that pilots 
+must be vigilant even if consumer lasers are restricted 
+or banned. There would still be some misuse incidents, 
+so pilots must be prepared. 
+How can pilots help ensure safety? 
+Pilots need to know that they are the last line of 
+defense. They should familiarize themselves with what 
+lasers can and cannot do. Read material similar to this 
+paper, from the FAA and others. Watch the FAA’s 
+video “Aircraft Laser Illumination”34 and other online 
+videos filmed from police helicopters, to get an idea of 
+what a laser illumination looks like from the air. Keep 
+in mind the laser illumination procedures discussed 
+above. 
+A laser incident is very manageable and will not cause 
+safety issues, if a pilot has advance knowledge about 
+how to react and recover from an exposure. 
+APPENDIX B 
+Laser eye hazard considerations 
+for pilots and aircrews 
+Because pilots are understandably concerned about any 
+eye damage, this section goes into more detail about 
+the potential harm from consumers misusing visible 
+laser beams in the aviation environment. 
+How visible laser light can harm the eye 
+The retina is the part of the eye that could be damaged 
+by consumer laser beams. Visible light passes through 
+the transparent lens and cornea, and is absorbed by the 
+retina. Normally, retinal tissue will dissipate any heat 
+build-up. But enough light, kept long enough on the 
+same area, can cause a retinal burn. This burn may be 
+minor and visually unnoticed. It may heal in the same 
+way as a small skin burn. Or, if the power and time-on-
+target are substantial, the burn may cause a permanent 
+spot in the visual field – again, this is highly unlikely 
+with consumer lasers in aviation incidents.  
+For visible light lasers, the retinal hazard is based 
+primarily on the beam’s power entering the eye, which 
+is related to its divergence (spread). More power 
+means more damage potential. A tighter beam means 
+light is more concentrated on the retina, which further 
+increases the damage potential. 
+
+
+================================================================================
+
+--- Page 11 ---
+Words: 443, Images: 1
+
+Laser beams spread out over distance 
+Keep in mind that laser beams do spread out. A beam 
+that can pop a balloon at 2 feet may not be able to do 
+so at 10 feet and may in fact be completely eye-safe at 
+500 feet since the beam’s power is less concentrated at 
+a distance. Videos of people bursting balloons within a 
+few inches or feet of a laser, are not very relevant 
+when considering the safety of pilots much further 
+away – hundreds or thousands of feet in the air. 
+Let’s look at the eye damage potential from ten lasers 
+ranging from 1 mW to 1000 mW (1 watt).  
+For comparison purposes, we will assume they all have 
+a tight beam of 1 milliradian, or about 6/100 of a 
+degree. Such a beam would be 1/10 inch in diameter at 
+one foot from the laser. It would expand to 6 inches 
+across at 500 feet, and would be 63 inches at one 
+statute mile.35, 36 The more the beam spreads out, the 
+smaller the fraction of the original laser power that will 
+enter a person’s pupil.37 
+Figure 13 shows the eye injury hazard distance – called 
+the Nominal Ocular Hazard Distance or NOHD38 – for 
+ten lasers of various powers, assuming for comparison 
+purposes that they all have a 1 milliradian divergence. 
+If a person is beyond the NOHD, it is not considered 
+hazardous to momentarily look directly into the laser’s 
+beam.39 For example, for the 1 mW pointers, the 
+NOHD is 23 feet (top two bars). For the 1 watt 
+handheld lasers, the NOHD is 733 feet (bottom two 
+bars). If a person were standing around 23 feet from a 
+1 mW pointer, or around 733 feet from a 1 watt laser, 
+it would be possible to briefly look directly into the 
+beam without harm – not that this is suggested or 
+recommended!40 
+Recall that for visual interference hazards, different 
+colors have different hazard distances. But for eye 
+hazards, the laser beam color does not matter -- only 
+the beam power (strength) and divergence (spread). In 
+the chart below, the red and green 1 mW lasers have 
+the same NOHD of 23 feet. Similarly, the red and 
+green 5 mW lasers both have an NOHD of 52 feet, and 
+the green and blue 1 watt lasers both have an NOHD of 
+733 feet. 
+ 
+ 
+Figure 13: Nominal Ocular Hazard Distances for selected lasers.  Note that for comparison purposes, the chart 
+assumes all lasers have a tight, 1 milliradian beam. Generally, higher power handheld lasers will have increased 
+divergence, which means their real-world hazard distances will be less than what is shown here. 
+ 
+
+
+================================================================================
+
+--- Page 12 ---
+Words: 295, Images: 2
+
+The NOHD is widely used to determine how far away 
+a person should be from a laser, so that the risk of 
+injury is considered vanishingly small. This is fine for 
+situations where the exposure can be controlled; when 
+possible, persons exposed to laser light should not be 
+within the NOHD.41 But what about uncontrolled 
+incidents such as aircraft lasings, where a pilot may be 
+inside (closer than) the NOHD distance? What does 
+the NOHD tell us about the potential for eye damage? 
+Looking more closely at what NOHD means 
+A laser exposure while inside the NOHD does not 
+necessarily mean instant or severe eye damage. Laser 
+safety experts included a safety factor when 
+establishing the NOHD. As discussed in the main text, 
+that is why it is called the Nominal Ocular Hazard 
+Distance, and not something like the Actual Ocular 
+Hazard Distance. 
+If the NOHD is color-coded to show danger as red and 
+safe as green42, eye hazards are approximately as 
+shown in Figure 15. Yellow is used to indicate the light 
+has a roughly 50/50 chance of causing the smallest 
+medically detectable retinal change43, under laboratory 
+conditions where the laser and eye are both held 
+steady.44  
+ 
+Figure 14: Nominal Ocular Hazard Distances for selected lasers, showing how the NOHD does not depend on 
+the laser beam’s color (unlike visual interference distances; compare with Figures 7 and 8). 
+ 
+ 
+Figure 15: Nominal Ocular Hazard Distances for selected lasers.  This shows the same data as Figure 13, but is 
+color-coded to indicate how the hazard decreases with distance. As with Figure 13, for comparison purposes the 
+chart assumes all lasers have a 1 milliradian divergence; in the real-world, higher powered lasers will have a greater 
+divergence and thus the NOHD will be shorter (see Figure 16). 
+ 
+
+
+================================================================================
+
+--- Page 13 ---
+Words: 491, Images: 1
+
+For example, the yellow spots of the 1 watt lasers in 
+Figure 15 are at 232 feet – a little less than one-third of 
+the 733 foot NOHD distance. A basic interpretation of 
+this is as follows: 
+A person who is 232 feet away from this laser, 
+and who is exposed under worst-case 
+conditions of a stationary laser beam and 
+non-moving eye, would have roughly a 50/50 
+chance of sustaining a retinal burn or spot 
+that would be barely detectable by an expert. 
+Unless the spot was in the fovea (center of 
+vision), it would be unlikely to be noticed by 
+the person or otherwise cause long-term loss 
+of visual function. As the person moves even 
+further away from the laser, the chance of 
+noticeable or adverse injury decreases, until 
+at the NOHD of 733 feet, it is considered 
+negligible by safety experts.45 
+Higher-power lasers’ beams usually spread faster 
+Finally, there is one other important factor that makes 
+real-world high-powered lasers less hazardous than the 
+charts in this document indicate. For comparison 
+purposes, the previous figures (13-15) assume that all 
+lasers have a tight 1 milliradian beam. But high-
+powered lasers usually have wider-diverging beams of 
+1.5 milliradians or more. 
+This spreads out the beams’ power thus reducing the 
+NOHD. The result is that real-world high-powered 
+lasers have a greater margin of safety, compared to the 
+same laser with a theoretical 1 milliradian divergence. 
+Figure 16 shows the hazard distances of real-world 
+lasers based on higher powers having higher 
+divergences. 
+APPENDIX C: 
+A technical note about 
+laser hazard calculations 
+This document is necessarily simplified and general. 
+Keep in mind that laser safety is complex. Some 
+common assumptions are not always true. Here are two 
+examples. 
+Doubling the laser power does not double the 
+hazard distances 
+Doubling the power of a laser does not make the 
+hazard distances twice as long. Take a look at Figure 
+15, the “Worst-case 1 mrad divergence” NOHD chart. 
+A 500 mW laser with 1 milliradian divergence has an 
+NOHD of 519 feet. You might think that doubling the 
+power to 1000 mW (1 watt) would make the NOHD 
+twice as long, 1038 feet, but this is not true – the 
+NOHD is 733 feet, or only 1.4 times longer. 
+Mathematically stated, the NOHD increases as the 
+square root of the power increase. In practical terms, 
+this means that as consumer laser powers increase, the 
+hazard distances do not increase as fast. This is a 
+welcome bit of good news for pilots. 
+ 
+Figure 16: Real-world Nominal Ocular Hazard Distances for selected handheld lasers.  Previous figures (13-15) 
+assumed for comparison purposes that all lasers had the same beam divergence. This is not the case with real-world 
+handheld lasers, where higher powered lasers almost always have higher divergences. The data in this chart, therefore, 
+is more realistic regarding the hazards to pilots and others exposed to handheld lasers. See text for an indication of 
+what the color coding indicates. 
+ 
+
+
+================================================================================
+
+--- Page 14 ---
+Words: 792, Images: 0
+
+Doubling the apparent brightness does not double 
+the hazard distances 
+The calculations work the same way for color. Figure 8 
+compares a 1 Watt green laser with a 1 Watt blue laser. 
+The 1000 mW green at 88% apparent brightness has a 
+glare hazard distance of 15,510 feet. In comparison, 
+the 1000 mW blue laser with 3% apparent brightness 
+has a glare hazard distance of 2,890 feet. 
+While there is an 88/3 or 29 times difference in the 
+apparent brightness, this results in only a 15510/2890 
+or 5.4 times difference in the glare interference hazard 
+distances. (As before, the visual interference distances 
+increase as the square root of the apparent brightness 
+increase.) Thus, although the green laser beam looks 
+much, much brighter than the blue beam, there is not 
+as much difference in the distances at which it is a 
+hazard. 
+Laser beam hazards are not always intuitive 
+The general lesson to be drawn is that laser beam 
+hazards are not always intuitive. A laser that lights 
+cigarettes up close can be eye-safe further away. 
+Conversely, a laser that is relatively weak can be a 
+visual interference hazard hundreds of feet away. 
+Pilots, regulators, reporters and others involved in this 
+issue should be careful that they are understanding the 
+correct laser safety principles in a given situation; for 
+example, in flight at aircraft distances vs. on the 
+ground at close range. 
+Acknowledgements 
+The author wishes to thank the many persons who 
+contributed data and suggestions, and especially to 
+Ricky Chitwood of the U.S. Federal Aviation 
+Administration, who encouraged development of a 
+document specifically to address the detailed concerns 
+of pilots and aviation officials who may not have a 
+laser safety background. 
+Meet the Author 
+Patrick Murphy has been a member of the SAE G10T 
+Laser Safety Hazards Committee since the mid-1990s. 
+In this capacity, he helped develop the regulations and 
+forms 
+used 
+by 
+the 
+U.S. 
+Federal 
+Aviation 
+Administration to evaluate outdoor laser operations. 
+During 2013, he helped write the FAA’s Laser Beam 
+Exposure Questionnaire, and proposed guidance for 
+pilots from which much of this paper comes. He is 
+editor of the website LaserPointerSafety.com, which 
+seeks to be an independent resource for users, 
+regulators, pilots, media and others concerned with 
+handheld portable lasers. 
+ 
+                                                            
+1 Throughout this document, “laser/aviation safety experts” 
+refers to the consensus of groups such as the SAE G10T 
+Laser Safety Hazards Subcommittee and the ANSI Z136.6 
+Outdoor Laser Use standards subcommittee. SAE G10T, in 
+particular, has helped define laser/aviation safety parameters 
+and the resulting FAA procedures.  
+2 From “Visual Warning System for the Washington, D.C. 
+area” by NORAD and USNORTHCOM Public Affairs, May 
+24, 2005. Online at: 
+http://www.norad.mil/Newsroom/tabid/3170/Article/1159/vis
+ual-warning-system-for-the-washington-dc-area.aspx 
+3 See note 1. 
+4 Figure 2, the temporary flashblindness photo, shows the 
+instant of maximum flashblindness when the laser beam 
+strikes the eye. The afterimage would be a blob centered 
+where the laser was, which gradually fades away. Total 
+vision would not be blocked as the photo indicates, but of 
+course the afterimage would be a serious impediment to clear 
+vision. A GIF animation is online which gives a better sense 
+of the initial flash, and the dying-away afterimage; see the 
+three GIFs on the Wikipedia page “Lasers and aviation 
+safety”, 
+http://en.wikipedia.org/wiki/Lasers_and_aviation_safety 
+5 The eye’s color response curve is different for photopic 
+(day) vision and scotopic (night) vision. The curve shown 
+here is taken directly from the data used by the FAA in 
+evaluating laser usage in airspace, and thus is valid for pilots 
+flying at night. Safety experts on the SAE G10-T Laser 
+Safety Hazards Subcommittee determined that, because 
+pilots have instrument lights on, their night-flying vision is 
+not scotopic but is closer to photopic. For the data, see Table 
+5 of FAA Advisory Circular 70-1, available online at 
+www.faa.gov/airports/airport_safety/wildlife/guidance/media
+/Lasers_AC.pdf 
+6 See the second bulleted item in Appendix C, “A Technical 
+Note about Laser Calculations”. It describes how, although 
+the green beam appears 29 times brighter than the blue beam, 
+there is only a 5.4 times difference between the two beams’ 
+hazard distances. This is a reminder that laser safety 
+calculations are not always intuitively simple. 
+7 Based on an analysis of the FAA Weekly Laser Reports for 
+the year 2011, as presented to the SAE G10T Laser Safety 
+Hazards Committee in January 2012. 
+8 Ibid. 
+9 Personal communication to Patrick Murphy in fall 2011, by 
+Dr. Van Nakagawara O.D. At the time he was head of the 
+Vision Research Team at the FAA’s Civil Aerospace 
+Medical Institute. Dr. Nakagawara is former chair of the 
+SAE G10-T Laser Hazards Subcommittee and has authored 
+numerous papers on laser light effects on pilots and aviation. 
+Since Dr. Nakagawara’s statement, the FAA’s Weekly Laser 
+Report has not listed any cases of permanent eye damage, as 
+of the Dec. 31 2014 report. 
+
+
+================================================================================
+
+--- Page 15 ---
+Words: 1124, Images: 0
+
+                                                                                           
+10 Civil Aviation Authority Safety Notice SN-2012/005, 
+issued 13 April 2012: “So far, there have been no 
+documented cases anywhere in the UK where civil aircrew 
+have suffered permanent eye damage as a result of a [laser] 
+attack.” Since that time, CAA has not reported any 
+permanent eye damage incidents. 
+11 This information is for pilots in civil airspace. Military 
+pilots in hostile areas have been exposed to deliberate laser 
+attacks. It is not publicly known if any of these attacks 
+caused permanent eye injuries. In a 1997 case, a military 
+observer claimed eye injury from an alleged laser aimed at 
+his helicopter from a Russian merchant ship, the Kapitan 
+Man. The cause of the observer’s eye abnormalities was 
+disputed – he lost a 2002 court case against the ship’s owner 
+-- so even this is not a proven case of permanent laser injury 
+to a person in an aircraft. See “Case 5” in "Assessment of 
+Alleged 
+Retinal 
+Laser 
+Injuries",” 
+Archives 
+of 
+Ophthalmology, August 2004, pp. 1210–1217, which 
+concluded, “The patient had real complaints, but they were 
+caused by preexisting autoimmune problems rather than by 
+laser injury.” 
+12 Personal communication to Patrick Murphy from Dr. 
+Nakagawara, fall 2011. 
+13 Wavelength also becomes a factor when calculating the 
+NOHD for lasers emitting non-visible beams. For lases with 
+visible beams, the NOHD does not vary depending on the 
+wavelength. For example, a given laser will have the same 
+NOHD regardless of whether it emits red, green, blue or 
+other visible wavelength light. 
+14 Personal communication to Patrick Murphy from Dr. 
+David Sliney, fall 2011. 
+15 Jean, Mathieu and Schulmeister, Karl, “Validation of a 
+Computer Model to Predict Laser Induced Thermal Injury 
+Thresholds of the Retina”, in Proceedings of the International 
+Laser Safety Conference, 2013, page 235. 
+16 The careful reader may note that here it is stated that a 2 
+watt laser has an NOHD of 593 feet, while the NOHD bar 
+graphs later in the document show a 1 watt laser having an 
+longer, more hazardous NOHD of 733 feet. This is because 
+the 2 watt laser example uses a real-world divergence of 1.75 
+milliradians, while for the 1 watt laser the bar graph uses a 
+tighter 1 milliradian divergence. The bar graph is comparing 
+various lasers’ powers so we hold the divergence of them all 
+constant at 1 mrad – even though in the real world, consumer 
+lasers above roughly 500 mW have divergences closer to 1.5-
+2 mrad (and thus shorter NOHDs). 
+17 This discussion is not meant to be exhaustive or 
+conclusive. The closer one looks at ED50 studies, the setting 
+of MPE levels, differences in eyes, scintillation effects, etc. 
+the more difficult it can be to draw a conclusion about the 
+possible effect of any given exposure on any given person. 
+The purpose of the discussion is to give a high level 
+overview for persons who were already involuntarily 
+exposed to laser light, or persons in public safety professions. 
+For pilots or others exposed, the discussion helps them better 
+judge the likelihood of being injured – how much they 
+should be concerned. For example, a pilot who was at 600 
+                                                                                           
+feet AGL when exposed to laser light would have a small 
+concern for eye injury even if the laser were eventually found 
+to be a powerful 1 watt laser (see Figure 16, bottom line on 
+the chart.) For persons in public safety professions, the 
+discussion helps form policy about when pilots or others 
+should continue with a public safety operation despite the 
+risk of laser exposure. For example, if a Coast Guard 
+helicopter is at 600 feet from shore when flashed by a laser, 
+the risk of eye injury may be less than the benefit of 
+continuing an operation such as a rescue mission. 
+18 Of course, in the air during an incident a pilot would not 
+know the power and divergence of the laser, and thus the 
+irradiance, MPE and NOHD would not be able to be 
+calculated. They also may not know the distance precisely. If 
+the laser is recovered and is accurately tested by an expert 
+familiar with laser metrology (not just relying on the label 
+information), then the NOHD can be calculated. In many 
+cases it may be sufficient to obtain a “ballpark figure”, to tell 
+a pilot whether a given laser is likely to cause an exposure 
+above the MPE. For example, an inexpensive red bullet laser 
+costing a few dollars would nominally have an NOHD of 52 
+feet; as long as the pilot was beyond this distance, the 
+exposure was likely below the MPE. 
+19 Out of 3,482 laser incidents reported to the FAA in 2012, 
+three involved headache. No 2012 incident involved a 
+“shock” though this has been reported in previous years.  
+20 A pilot illuminated on January 15 2010 reported a 
+“burning/warm feeling in right eye” although there are no 
+pain receptors in the retina and the laser exposure was not 
+powerful enough to cause heating of body tissue. The pilot 
+later said this “may have been caused by the fact that I was 
+rubbing my eye.” He also reported “emotional effects” of 
+fear and anger. See the ALPA laser conference presentation 
+at http://bit.ly/17k6iwq. 
+21 The beam from a powerful laser, aimed by hand at skin 
+within a few inches or feet, can be felt as heat and may cause 
+a burn. Similarly, at a microscopic level light pressure can 
+affect micron-sized particles and even atoms as is done with 
+“optical tweezers.” But for pilots who are hundreds or 
+thousands of feet away from a pointer or handheld laser, 
+these effects cannot be felt. Laser light at this distance is so 
+diffuse it cannot be felt and does not exert a force. 
+22 The reader is invited to try this himself or herself.  At 
+night, use a low-powered laser to aim at a road sign, car rear 
+light, license plate or other retroreflective material at a 
+distance of a few hundred feet or greater. (Of course, check 
+that there are no persons near or behind the target, and that 
+this would not cause distraction or concern.) It is difficult to 
+hold the beam steady on a head-sized target area. A moving 
+target is even more difficult to track. 
+23 The software used to extract frames only had a ½ second 
+resolution. When looking at YouTube videos or similar, 
+often the direct laser hit will only last a frame or two, 
+meaning 1/30 to 1/15 second. Now, this is still disconcerting 
+and hazardous. But the key point is that a still photo of a 
+frame-filling laser light is not the entire incident, but reflects 
+the worst moment. Similarly, TV news reporters often will 
+film from inside a helicopter on the ground, while someone a 
+
+
+================================================================================
+
+--- Page 16 ---
+Words: 1007, Images: 0
+
+                                                                                           
+few yards away aims a laser at the camera; this is not 
+realistic. What is realistic are videos of incidents as captured 
+by police and news helicopters. These show what actual 
+lasers, from real-life perpetrators, look like. 
+24 Analysis of the 35 incidents in the 2012 FAA Weekly 
+Laser Reports where the field “Injury Reported” was starred. 
+In a few incidents, a single pilot listed multiple symptoms, or 
+more than one pilot was affected. This is why there are 43 
+reports from the 35 incidents. 
+25 Based on FAA Air Traffic Activity Data System report of 
+52,522,825 U.S. airport operations from Dec. 2010 to Dec. 
+2011. 
+26 Tips based in part on information in FAA Aviation News, 
+July/August 2009, p. 31 and FAA AM-400-10/3 “Laser 
+Hazards in Navigable Airspace”, pp. 3-4. 
+27 More specifically, lasers used for pointing are classified by 
+FDA as “demonstration” and/or as “surveying, leveling and 
+alignment” lasers. This gives the FDA authority over the 
+maximum power of these lasers. As of early 2015, the FDA 
+does not appear to have authority to limit the maximum 
+power of general-purpose lasers, including battery-operated 
+handheld lasers. A few states and localities have limitations 
+on the possession, sale and use of pointers and/or handheld 
+lasers. 
+28 Laser safety experts have debated the pros and cons of 
+factoring in atmospheric attenuation and/or scintillation. 
+There may be some situations where it is necessary to take 
+these into account. But for general aviation safety purposes, 
+regarding consumer misuse of lasers at relatively low-
+altitude aircraft at night, in relatively clear air, it is simplest 
+and safest to assume no attenuation and no scintillation. 
+29 The reader is invited to try this demonstration. It works 
+best with relatively powerful lasers such as 50 mW or more. 
+Briefly aim the laser upwards into a clear area of the night 
+sky, where there is no air traffic. You should see that the 
+beam looks like a shaft that appears to end. This effect can 
+vary depending on location (humid seashore air vs. dry desert 
+air) and atmospheric conditions. Seeing this effect in person 
+gives a greater understanding of how someone might think 
+that a beam somehow “stops” in mid-air and would not reach 
+an aircraft. 
+30 Based on paragraph 4 of a press release from the FBI San 
+Juan Field Office, released September 17 2013. It is available 
+online 
+at 
+http://www.fbi.gov/sanjuan/press-
+releases/2013/federal-bureau-of-investigation-and-federal-
+aviation-administration-join-forces-against-aircraft-laser-
+strikes-in-puerto-rico-and-the-u.s.-virgin-islands. 
+31 A selected list is at www.laserpointersafety.com/rules-
+general/uslaws/uslaws.html 
+32 Jason Rodriguez, “Green lasers along Grand Strand not as 
+prominent as last summer”, Myrtle Beach Online (published 
+by the Myrtle Beach Sun News), July 2, 2013. 
+33 “Laser Pointer Prohibition - Improving Safety or Driving 
+Misclassification”, Trevor Wheatley, School of Engineering 
+and IT, UNSW Canberra, Australia, Proceedings of the 2013 
+                                                                                           
+International Laser Safety Conference, pages 48-54, 
+published by the Laser Institute of America. 
+34 
+The 
+FAA’s 
+official 
+21-minute 
+version 
+is 
+at 
+http://www.faa.gov/about/initiatives/lasers/hazards/. 
+There 
+are shorter versions, condensing the main information, at 
+YouTube and other websites; these can be easily found using 
+the search terms “FAA aircraft laser illumination video”. 
+35 To calculate beam diameter at a distance, multiply the 
+beam divergence in radians by the distance; the result is the 
+diameter in the same units as the distance. Note that 1 
+milliradian is 0.001 radians. For example, to find the size in 
+inches of a 1 mrad beam at 500 feet, do the following 
+calculation: 0.001 radians times 500 feet times 12 inches in a 
+foot, or 0.001 x 500 x 12 = 6; the result is a 6 inch diameter 
+beam. For increased accuracy, add in the initial beam 
+diameter at the laser aperture, which is usually on the order 
+of 1/10 to 1/4 inch – although this is not a significant 
+additional amount when the beam is far from the laser.  
+36 The formula provided here includes the majority of the 
+beam within the stated diameter. Scientists use various 
+methods to express the diameter of a laser beam, such as Full 
+Width Half Maximum, 1/e and 1/e². For pilot safety 
+purposes, any of these methods will give a useful general 
+idea of the diameter of a beam at a given distance. There may 
+be some special circumstances when it is necessary to 
+determine the exact amount of power within a specified area 
+at a given distance. In these cases a laser safety expert should 
+be consulted regarding which method is most appropriate. 
+37 For laser safety calculations and standards, the size of a 
+fully dark-adapted pupil is used; this is considered to be 7 
+mm in diameter. For semi-dark conditions such as an aircraft 
+cockpit at night, a size of 5 mm would be more normal. Note 
+that this further reduces the actual laser hazard since less 
+light is entering the eye than is considered by scientists when 
+they draw up safety calculations and standards such as the 
+NOHD. 
+38 The NOHD is directly derived from the laser safety 
+concept of “Maximum Permissible Exposure”. Laser light 
+can be evaluated in terms of what exposure is so low that the 
+chance of human eye injury is vanishingly small; this is the 
+MPE. The NOHD is calculated for a given beam power and 
+divergence, to determine the distance at which laser light 
+entering the pupil is weaker (irradiance is less) than the 
+MPE. 
+39 The NOHD used in this document is for a ¼ second 
+exposure to visible light. This is considered to be an 
+unintended or accidental exposure, where a person would 
+blink or move their head out of the way within ¼ second of 
+the initial laser exposure. This is the situation for a pilot in a 
+laser incident, of course. 
+40 For one thing, the actual power of the laser may be 
+stronger than indicated on the laser’s label. Mislabeling of 
+laser pointers due either to poor quality control or deliberate 
+attempts to avoid import restrictions is a problem. See for 
+example work done by Joshua Hadler at NIST (ILSC 2013 
+Proceedings, page 38), Woody Strzelecki of FDA/CDRH 
+(ibid, page 180), and John O’Hagan, Michael Higlett and 
+
+
+================================================================================
+
+--- Page 17 ---
+Words: 492, Images: 0
+
+                                                                                           
+Marina Khazova of the U.K. Health Protection Agency, now 
+Public Health England (ibid, page 181-188). 
+41 Or, said another way: when possible, persons should not be 
+exposed to laser light in excess of the MPE. 
+42 The exact shading of red-to-yellow-to-green in these charts 
+was carefully determined, based on discussions with laser 
+experts about how fast the chance of injury tapers off as 
+distance increases.  
+43 “Smallest medically detectable retinal change” refers to 
+what can be seen by direct opthalmoscopic observation of the 
+retina. Such changes are significant enough that a person 
+might notice them in the edge of their visual field under 
+special conditions such as looking at a blank wall or blue 
+sky. If it were in the center of their visual field, they would 
+probably notice a spot. Newer, more advanced instruments 
+can detect much more subtle retinal changes; however, these 
+would not necessarily cause any adverse change to a person’s 
+vision. Laser safety standards are based on the earlier, direct 
+opthalmoscopic observations. 
+44 This is a general description of the “ED50”, a concept in 
+the laser safety studies indicating where an effect is seen in 
+50% of the subjects, or for a single subject, 50% of the time. 
+Based on different studies which came up with different 
+ED50 values, the Maximum Permissible Exposure for visible 
+light exposures was set to be about ten times lower than 
+typical ED50 levels. This ten-times reduction is sometimes 
+referred to as a “reduction factor” or “safety factor”. The 
+NOHD is an area function, so the point where laser light 
+intensity is ten times less is the square root of 10 times, or 
+0.316 of the NOHD. This is slightly less than 1/3 of the 
+NOHD. While there is no single “ED50” used to set laser 
+light exposure standards, the concept of ED50 is a 
+fundamental basis for these standards and thus is valid when 
+discussing in general about how specific light levels were set. 
+For the purposes of informing pilots, regulators and non-
+experts that laser hazards are not constant within the NOHD 
+but in fact decrease as the distance from the laser increases, 
+the color-coding in Figures 15 and 16 give a reasonable 
+indication of the chance of laser injury. For more information 
+on this, refer to Sliney, D.H., and Wolbarsht, M.L. Safety 
+with Lasers and Other Optical Sources, New York, Plenum 
+Publishing Corp., 1980. 
+45 Human sensitivity to laser light varies from person to 
+person. Also, it is in some sense probabilistic – a given 
+exposure might or might not cause a detectable change to a 
+given person’s retina. Because of this, the scientific experts 
+who developed laser safety standards could not cover 
+100.0% of all cases. For example, there may be an outlier 
+such as a person whose retinas are especially sensitive to 
+damage by visible light. But the standards are considered to 
+provide safety for the vast majority of persons, in the vast 
+majority of laser exposure situations. 
+
+
+================================================================================
+

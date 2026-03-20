@@ -1,0 +1,61 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 1,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "FDA 2023 final rule amendments to radiological health regulations",
+      "Changes to records and reporting requirements for radiation-emitting products",
+      "Conformance with IEC 60825-1 Ed. 3 and IEC 60601-2-22 Ed. 3.1",
+      "Laser Notice No. 56 guidance for industry"
+    ],
+    "key_terms": [
+      {
+        "term": "Final Rule (January 20, 2023)",
+        "definition": "FDA rule amending records and reports for radiation emitting electronic products, effective February 21, 2023"
+      },
+      {
+        "term": "21 CFR 1002.1",
+        "definition": "Regulation covering records and reports for electronic products"
+      },
+      {
+        "term": "Laser Notice 41",
+        "definition": "Low Power Laser Reporting Exemption guidance"
+      },
+      {
+        "term": "Laser Notice 42",
+        "definition": "Clarification of compliance requirements for manufacturers incorporating certified Class I laser products"
+      },
+      {
+        "term": "Laser Notice 56",
+        "definition": "Guidance on conformance with IEC 60825-1 Ed. 3 and IEC 60601-2-22 Ed. 3.1"
+      },
+      {
+        "term": "OHT8",
+        "definition": "Office of Health Technology 8: Office of Radiological Health"
+      }
+    ],
+    "regulatory_references": [
+      "88 FR 3638 (Federal Register, January 20, 2023)",
+      "21 CFR 1002.1",
+      "21 CFR 1040.10 and 1040.11",
+      "IEC 60825-1 Ed. 3",
+      "IEC 60601-2-22 Ed. 3.1"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Understand recent FDA regulatory changes to laser product reporting",
+      "Identify exemptions from annual reporting requirements",
+      "Know where to find additional FDA guidance documents",
+      "Recognize the role of Laser Notices in regulatory compliance"
+    ],
+    "prerequisites": [
+      "Basic understanding of FDA regulatory framework",
+      "Familiarity with laser product classification"
+    ],
+    "estimated_study_time_minutes": 15,
+    "content_type": "regulatory_update",
+    "has_tables": false
+  }
+}

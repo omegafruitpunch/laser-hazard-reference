@@ -1,0 +1,11 @@
+{
+  "id": "ocular-hazards_q008",
+  "type": "fill_blank",
+  "question": "The ________ is the central area of the retina responsible for detailed vision and is most commonly damaged by laser exposure.",
+  "answer": "fovea",
+  "acceptable": [
+    "macula",
+    "fovea centralis"
+  ],
+  "explanation": "The fovea is the central 1.5 mm of the macula and contains the highest concentration of cone photoreceptors for detailed central vision."
+}

@@ -1,0 +1,77 @@
+{
+  "component_id": "installation_classifier",
+  "name": "Installation Type Classifier",
+  "type": "decision_tree",
+  "description": "Determine whether an installation is supervised or unsupervised per E1.46",
+  "decision_tree": {
+    "start": {
+      "question": "Is a trained operator continuously present during laser operation?",
+      "yes": "has_operator_control",
+      "no": "unsupervised"
+    },
+    "has_operator_control": {
+      "question": "Can the operator immediately terminate laser emission if needed?",
+      "yes": "has_immediate_termination",
+      "no": "unsupervised"
+    },
+    "has_immediate_termination": {
+      "question": "Is the operator positioned to monitor all laser effects and audience areas?",
+      "yes": "supervised",
+      "no": "partially_supervised"
+    }
+  },
+  "classifications": {
+    "supervised": {
+      "name": "Supervised Installation",
+      "description": "Continuous operator monitoring with immediate control",
+      "requirements": {
+        "separation": {
+          "vertical": "3.0m minimum",
+          "horizontal": "2.5m minimum"
+        },
+        "mpe_time_base": "0.25s for trained personnel",
+        "operator_requirements": [
+          "Competency verification",
+          "Understanding of safety procedures",
+          "Access to emergency controls"
+        ]
+      },
+      "examples": [
+        "Live concert with operator at console",
+        "DJ-controlled nightclub lasers",
+        "Stage production with dedicated laser operator"
+      ]
+    },
+    "unsupervised": {
+      "name": "Unsupervised Installation",
+      "description": "Automated or scheduled operation without continuous monitoring",
+      "requirements": {
+        "physical_barriers": "Enhanced barriers required",
+        "mpe_limits": "More conservative (typically 10s base)",
+        "monitoring": "Automatic systems required",
+        "public_access": "Emergency stop accessible to public"
+      },
+      "examples": [
+        "Theme park attraction on schedule",
+        "Automated lobby display",
+        "Permanent museum installation"
+      ]
+    },
+    "partially_supervised": {
+      "name": "Partially Supervised",
+      "description": "Operator present but limited visibility/control",
+      "note": "Treat as unsupervised or provide additional safety measures",
+      "recommendation": "Install additional e-stop operators for blind spots"
+    }
+  },
+  "comparison_table": {
+    "headers": ["Requirement", "Supervised", "Unsupervised"],
+    "rows": [
+      ["Vertical Separation", "3.0m", "Enhanced barriers"],
+      ["Horizontal Separation", "2.5m", "Enhanced barriers"],
+      ["MPE Time Base (Audience)", "10s", "10s"],
+      ["MPE Time Base (Personnel)", "0.25s if trained", "10s"],
+      ["Emergency Access", "Operator control", "Public accessible E-stop"]
+    ]
+  }
+}

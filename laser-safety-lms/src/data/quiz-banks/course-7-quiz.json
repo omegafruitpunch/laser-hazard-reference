@@ -1,0 +1,74 @@
+{
+  "id": "course-7-quiz",
+  "courseId": "course-7",
+  "title": "Event Safety & Operations Assessment",
+  "description": "Assessment covering event safety planning, crowd dynamics, weather protocols, and emergency procedures.",
+  "passingScore": 80,
+  "timeLimit": 30,
+  "randomizeQuestions": true,
+  "questions": [
+    {
+      "id": "c7-q1",
+      "type": "multiple_choice",
+      "question": "At what crowd density does significant crush risk become a concern?",
+      "options": ["2 persons/m²", "4 persons/m²", "6 persons/m²", "8 persons/m²"],
+      "correctIndex": 1,
+      "explanation": "Crowd density above 4 persons/m² creates significant crush risk and limits crowd mobility. At this density, individuals cannot move freely and crowd dynamics can become dangerous."
+    },
+    {
+      "id": "c7-q2",
+      "type": "multiple_choice",
+      "question": "What is the first action when lightning is detected within 10 miles of an outdoor event?",
+      "options": [
+        "Alert the audience to seek shelter",
+        "Suspend outdoor operations immediately",
+        "Consult with the promoter",
+        "Check the lightning forecast"
+      ],
+      "correctIndex": 1,
+      "explanation": "Lightning within 10 miles is the threshold for immediate suspension of outdoor operations. The 30/30 rule (suspend when thunder follows lightning by <30 seconds, resume 30 min after last thunder) is commonly used."
+    },
+    {
+      "id": "c7-q3",
+      "type": "multiple_choice",
+      "question": "What is the first aid priority for a suspected laser eye injury?",
+      "options": [
+        "Rinse the eye with water",
+        "Apply antibiotic eye drops",
+        "Do NOT rub the eye — cover with sterile dressing and seek immediate medical care",
+        "Apply cold compress to reduce swelling"
+      ],
+      "correctIndex": 2,
+      "explanation": "For laser eye injury, the eye should NOT be rubbed (which could worsen retinal damage). Cover with a sterile dressing and immediately transport to emergency ophthalmology care."
+    },
+    {
+      "id": "c7-q4",
+      "type": "multiple_choice",
+      "question": "Which document defines chain of command for safety decisions during an event?",
+      "options": ["Variance application", "Event Safety Plan", "Insurance certificate", "NOTAM filing"],
+      "correctIndex": 1,
+      "explanation": "The Event Safety Plan should clearly define the chain of command for all safety decisions, including who has authority to suspend or stop the show, and escalation procedures."
+    },
+    {
+      "id": "c7-q5",
+      "type": "multiple_choice",
+      "question": "What minimum general liability insurance coverage is recommended for professional laser operations?",
+      "options": ["$100,000 per occurrence", "$500,000 per occurrence", "$1 million per occurrence", "$5 million per occurrence"],
+      "correctIndex": 2,
+      "explanation": "Professional laser operations should carry minimum $1 million per occurrence general liability insurance. Many venues require this as a minimum, and insurers increasingly require evidence of safety training compliance."
+    },
+    {
+      "id": "c7-q6",
+      "type": "multiple_choice",
+      "question": "When should event safety planning ideally begin?",
+      "options": ["Day before the event", "One week before", "At least one month before", "Months before the event"],
+      "correctIndex": 3,
+      "explanation": "Safety planning must begin months before the event to allow proper venue assessment, regulatory permit applications (which can take weeks or months), insurance procurement, and staff training."
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-01-01T00:00:00Z"
+  }
+}

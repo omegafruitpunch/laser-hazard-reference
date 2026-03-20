@@ -1,0 +1,60 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 8,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Measurement methodology for laser classification",
+      "Integrated radiance and radiance definitions",
+      "Radiant exposure and irradiance measurements",
+      "Measurement instrument positioning requirements"
+    ],
+    "key_terms": [
+      {
+        "term": "Integrated Radiance",
+        "definition": "Energy per unit area per unit solid angle (J cm^-2 sr^-1)"
+      },
+      {
+        "term": "Radiance",
+        "definition": "Power per unit area per unit solid angle (W cm^-2 sr^-1)"
+      },
+      {
+        "term": "Radiant Exposure",
+        "definition": "Energy per unit area (J cm^-2) through 7mm aperture"
+      },
+      {
+        "term": "Irradiance",
+        "definition": "Power per unit area (W cm^-2) through specified aperture"
+      },
+      {
+        "term": "Solid Angle of Acceptance",
+        "definition": "10^-3 or 10^-5 steradian depending on measurement type"
+      },
+      {
+        "term": "Collimating Optics",
+        "definition": "5 diopters or less optical power for measuring diverging sources"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.10(e) - Test procedures",
+      "21 CFR 1040.10(e)(2) - Maximum detection positioning",
+      "21 CFR 1040.10(e)(3) - Measurement parameters"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Understand standardized measurement procedures",
+      "Apply correct aperture and acceptance angle specifications",
+      "Calculate radiance and irradiance values",
+      "Determine worst-case emission scenarios"
+    ],
+    "prerequisites": [
+      "Physics background in optics",
+      "Understanding of radiometric units",
+      "Pages 6-7 content"
+    ],
+    "estimated_study_time_minutes": 40,
+    "content_type": "technical_specifications",
+    "has_tables": false
+  }
+}

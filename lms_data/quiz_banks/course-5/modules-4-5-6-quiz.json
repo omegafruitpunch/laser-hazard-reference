@@ -1,0 +1,240 @@
+{
+  "courseId": "course-5",
+  "modules": ["c5-m4", "c5-m5", "c5-m6"],
+  "questions": [
+    {
+      "id": "c5-m4-q1",
+      "moduleId": "c5-m4",
+      "question": "Which ILDA country category includes the United States, Germany, and Australia?",
+      "options": [
+        "Category A - Minimal Regulation",
+        "Category B - Notification System",
+        "Category F - Full Regulatory System",
+        "Category G - Government Controlled"
+      ],
+      "correctIndex": 2,
+      "explanation": "Category F includes countries with comprehensive laser display regulations such as the USA, Germany, France, UK, Australia, Netherlands, and Belgium. These countries require formal permits, LSO presence, and compliance documentation."
+    },
+    {
+      "id": "c5-m4-q2",
+      "moduleId": "c5-m4",
+      "question": "Which Australian state/territory has radiation control regulated by 'WorkSafe ACT'?",
+      "options": [
+        "New South Wales",
+        "Victoria",
+        "Australian Capital Territory",
+        "Western Australia"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Australian Capital Territory (ACT) has its radiation control regulated by WorkSafe ACT. Each Australian state and territory has its own radiation protection legislation and regulatory authority."
+    },
+    {
+      "id": "c5-m4-q3",
+      "moduleId": "c5-m4",
+      "question": "Under New Zealand law, what is required for laser operation?",
+      "options": [
+        "Company registration only",
+        "Laser operator license under the Radiation Safety Act 2016",
+        "No specific requirements",
+        "Only venue approval"
+      ],
+      "correctIndex": 1,
+      "explanation": "New Zealand requires specific laser operator licenses under the Radiation Safety Act 2016. The Environmental Protection Authority (EPA) oversees this licensing system, and Australian operators working in NZ must obtain appropriate licenses."
+    },
+    {
+      "id": "c5-m4-q4",
+      "moduleId": "c5-m4",
+      "question": "What is the minimum lead time recommended for Category G countries?",
+      "options": [
+        "2-4 weeks",
+        "4-6 weeks",
+        "10-16 weeks",
+        "1-2 weeks"
+      ],
+      "correctIndex": 2,
+      "explanation": "Category G (Government Controlled) countries like China, Russia, and Singapore require 10-16 weeks minimum lead time due to extensive permit application processes, government agency oversight, and potential security clearance requirements."
+    },
+    {
+      "id": "c5-m4-q5",
+      "moduleId": "c5-m4",
+      "question": "Which ILDA category requires neither permits nor notification?",
+      "options": [
+        "Category A",
+        "Category B",
+        "Category F",
+        "Category X"
+      ],
+      "correctIndex": 0,
+      "explanation": "Category A countries have minimal or no specific laser display regulations. No specific laser show permits are required, though general electrical safety compliance and venue/event permits may still apply."
+    },
+    {
+      "id": "c5-m5-q1",
+      "moduleId": "c5-m5",
+      "question": "What significant change was introduced in IEC 60825-1 Edition 3 (2014) regarding laser classification?",
+      "options": [
+        "Elimination of Class 4",
+        "Introduction of Class 1M, 2M, and 3R replacing Class 3A",
+        "Removal of all visible laser classifications",
+        "Combining Class 3B and Class 4"
+      ],
+      "correctIndex": 1,
+      "explanation": "IEC 60825-1 Edition 3 introduced more granular classification with Class 1M, 2M, and 3R replacing the previous Class 3A. This change was based on extended source viewing conditions and better hazard assessment."
+    },
+    {
+      "id": "c5-m5-q2",
+      "moduleId": "c5-m5",
+      "question": "Which standard covers laser safety for laser processing machines?",
+      "options": [
+        "IEC 60825-1",
+        "ISO 11553-1",
+        "ANSI Z136.1",
+        "EN 60825-1"
+      ],
+      "correctIndex": 1,
+      "explanation": "ISO 11553-1 covers safety requirements for laser processing machines including cutting, welding, and drilling systems. It complements IEC 60825-1 for industrial applications specifically."
+    },
+    {
+      "id": "c5-m5-q3",
+      "moduleId": "c5-m5",
+      "question": "Which region has adopted EN 60825-1:2014+A11:2021, fully harmonized with IEC 60825-1 Ed. 3?",
+      "options": [
+        "United States",
+        "China",
+        "European Union",
+        "Japan"
+      ],
+      "correctIndex": 2,
+      "explanation": "The European Union has fully harmonized with IEC 60825-1 through EN 60825-1:2014+A11:2021. The US maintains separate FDA requirements (21 CFR 1040.10), China has significant modifications (GB 7247.1), and Japan follows closely but with JIS standards."
+    },
+    {
+      "id": "c5-m5-q4",
+      "moduleId": "c5-m5",
+      "question": "What was removed from IEC 60825-1 in Edition 3 regarding time bases?",
+      "options": [
+        "The 0.25-second time base",
+        "The 10-second time base for certain wavelengths",
+        "The 100-second time base",
+        "All time bases"
+      ],
+      "correctIndex": 1,
+      "explanation": "Edition 3 removed the 10-second time base for certain wavelengths. The remaining time bases are 0.25s, 100s (revised), and 30000s. This change affects classification of some continuous wave visible lasers."
+    },
+    {
+      "id": "c5-m5-q5",
+      "moduleId": "c5-m5",
+      "question": "Which IEC technical committee is responsible for laser safety standards?",
+      "options": [
+        "IEC TC 76",
+        "IEC TC 34",
+        "ISO TC 172",
+        "IEC TC 100"
+      ],
+      "correctIndex": 0,
+      "explanation": "IEC TC 76 is the technical committee responsible for laser safety standards. They maintain IEC 60825-1 and related standards for optical radiation safety and laser equipment."
+    },
+    {
+      "id": "c5-m6-q1",
+      "moduleId": "c5-m6",
+      "question": "How far in advance should permit applications be submitted for Category F countries?",
+      "options": [
+        "1-2 weeks",
+        "4-6 weeks",
+        "6-10 weeks",
+        "16+ weeks"
+      ],
+      "correctIndex": 2,
+      "explanation": "Category F (Full Regulatory System) countries require 6-10 weeks for permit applications. This includes countries like the USA, Germany, UK, and Australia where formal permit applications, compliance documentation, and LSO qualifications must be submitted."
+    },
+    {
+      "id": "c5-m6-q2",
+      "moduleId": "c5-m6",
+      "question": "What document allows temporary import of equipment without paying customs duties?",
+      "options": [
+        "Invoice",
+        "ATA Carnet",
+        "Packing list",
+        "Bill of lading"
+      ],
+      "correctIndex": 1,
+      "explanation": "The ATA Carnet is an international customs document that permits temporary import of equipment without paying customs duties or taxes. It's commonly used for touring laser shows and must be properly executed to avoid equipment being held in customs."
+    },
+    {
+      "id": "c5-m6-q3",
+      "moduleId": "c5-m6",
+      "question": "Which of the following is typically required for all international shows regardless of category?",
+      "options": [
+        "Government security clearance",
+        "Equipment Import License",
+        "Venue Approval Letter",
+        "Local business registration"
+      ],
+      "correctIndex": 2,
+      "explanation": "Venue Approval Letter is required across all ILDA categories (A, B, F, G, X). While other requirements vary by category, written approval from the venue operator is universally necessary for legal show operation."
+    },
+    {
+      "id": "c5-m6-q4",
+      "moduleId": "c5-m6",
+      "question": "What is the recommended minimum lead time for planning a show in China?",
+      "options": [
+        "2-4 weeks",
+        "6-8 weeks",
+        "12-16 weeks",
+        "3-4 months (12+ weeks)"
+      ],
+      "correctIndex": 3,
+      "explanation": "China (Category G) requires a minimum of 3-4 months (12-16+ weeks) lead time. The process involves import licenses, Ministry of Culture approval, and local Public Security requirements, all of which require extensive documentation and local partnership."
+    },
+    {
+      "id": "c5-m6-q5",
+      "moduleId": "c5-m6",
+      "question": "Which calculation document is required for Category F, G, and X countries but not Category A or B?",
+      "options": [
+        "Packing list",
+        "MPE Compliance Calculations",
+        "Crew list",
+        "Passport copies"
+      ],
+      "correctIndex": 1,
+      "explanation": "MPE (Maximum Permissible Exposure) Compliance Calculations are required for Category F, G, and X countries but not for Category A or B. This documentation demonstrates that beam irradiance will remain below safe exposure limits, particularly important for full regulatory systems."
+    },
+    {
+      "id": "c5-m6-q6",
+      "moduleId": "c5-m6",
+      "question": "What is the first stage in the 'I'm Taking My Show Overseas' planner?",
+      "options": [
+        "Permit Applications",
+        "Initial Research & Assessment",
+        "Equipment & Logistics",
+        "Documentation Package"
+      ],
+      "correctIndex": 1,
+      "explanation": "The first stage is 'Initial Research & Assessment' (8-12 weeks before departure). This includes identifying the destination country's ILDA category, researching local regulations, contacting regulatory authorities, and assessing equipment import procedures."
+    },
+    {
+      "id": "c5-m6-q7",
+      "moduleId": "c5-m6",
+      "question": "Which documentation category includes MPE calculations and NOHD analysis?",
+      "options": [
+        "Regulatory Documentation",
+        "Equipment Documentation",
+        "Safety Documentation",
+        "Personnel Documentation"
+      ],
+      "correctIndex": 2,
+      "explanation": "Safety Documentation includes MPE Compliance Calculations, NOHD (Nominal Ocular Hazard Distance) Calculations, beam path diagrams, emergency response plans, and risk assessment documents. These demonstrate safety compliance for regulated shows."
+    },
+    {
+      "id": "c5-m6-q8",
+      "moduleId": "c5-m6",
+      "question": "For which country category is local consultant engagement 'Strongly Recommended' rather than just 'Recommended'?",
+      "options": [
+        "Category A and B only",
+        "Category F only",
+        "Category G and X",
+        "All categories"
+      ],
+      "correctIndex": 2,
+      "explanation": "Local consultant engagement is 'Strongly Recommended' for Category G (Government Controlled) and Category X (Restricted/Prohibited) countries. For Category A and B it's merely 'Recommended', while Category F varies by specific country requirements."
+    }
+  ]
+}

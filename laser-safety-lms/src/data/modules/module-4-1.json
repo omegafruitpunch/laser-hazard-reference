@@ -1,0 +1,50 @@
+{
+  "id": "module-4-1",
+  "courseId": "course-4",
+  "title": "California Laser Regulations",
+  "description": "California Department of Public Health laser use permits, requirements, and compliance procedures.",
+  "order": 1,
+  "duration": 10,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "California's Regulatory Landscape",
+      "content": "California has some of the most comprehensive state laser regulations in the US. With its large entertainment industry, the state has developed specific requirements that go beyond federal standards in some areas.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "CDPH Laser Requirements",
+      "content": "The California Department of Public Health (CDPH) administers the Radiologic Health Branch, which oversees laser safety in the state.\n\n## Registration Requirements\n\n### Who Must Register\n- Any facility using Class IIIb or IV lasers\n- Both permanent installations and temporary events\n- Medical, industrial, and entertainment applications\n\n### Registration Process\n- Submit application to CDPH\n- Pay annual registration fee\n- Renew annually\n- Update within 30 days of equipment changes\n\n## Entertainment-Specific Requirements\n\n### Prior Approval\n- Entertainment laser shows require advance notification\n- Some jurisdictions require local fire marshal approval\n- Show plans may need review\n\n### Insurance Requirements\n- Liability insurance typically required\n- Coverage amounts vary by jurisdiction\n- Certificate of insurance must be current\n\n### Record Keeping\n- Training documentation\n- Equipment inventories\n- Incident reports\n- Show logs",
+      "estimatedMinutes": 6
+    },
+    {
+      "type": "practice",
+      "title": "California Compliance Check",
+      "content": "Review this scenario for California compliance:\n\nA laser show company plans a 3-day festival in Los Angeles with:\n- 10W RGB laser projectors\n- Audience scanning planned\n- Multiple venue locations\n\nWhat California-specific requirements must they address?",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-4-1",
+      "estimatedMinutes": 1
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "California Laser Regulations",
+      "path": "/docs/course-4-state-regs/california.pdf"
+    }
+  ],
+  "keyTakeaways": [
+    "California requires registration of Class IIIb and IV lasers with CDPH",
+    "Entertainment laser shows require prior approval from local fire marshal",
+    "California has stricter audience exposure limits than federal standards in some areas",
+    "Operators must maintain liability insurance and training documentation"
+  ],
+  "nextModule": "module-4-2",
+  "prerequisites": [],
+  "difficulty": "intermediate"
+}

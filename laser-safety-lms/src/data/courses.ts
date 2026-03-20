@@ -10,6 +10,7 @@ export const courses: Course[] = [
     coverColor: 'from-red-600 to-orange-500',
     icon: '🔴',
     totalMinutes: 75,
+    prerequisites: [],
     modules: [
       {
         id: 'c1-m1',
@@ -87,6 +88,7 @@ export const courses: Course[] = [
     coverColor: 'from-blue-700 to-blue-500',
     icon: '🏛️',
     totalMinutes: 90,
+    prerequisites: [],
     modules: [
       {
         id: 'c2-m1',
@@ -177,6 +179,7 @@ export const courses: Course[] = [
     coverColor: 'from-green-700 to-emerald-500',
     icon: '🧬',
     totalMinutes: 75,
+    prerequisites: [],
     modules: [
       {
         id: 'c3-m1',
@@ -254,6 +257,7 @@ export const courses: Course[] = [
     coverColor: 'from-purple-700 to-violet-500',
     icon: '🗺️',
     totalMinutes: 100,
+    prerequisites: [],
     modules: [
       {
         id: 'c4-m1',
@@ -396,6 +400,7 @@ export const courses: Course[] = [
     coverColor: 'from-cyan-700 to-teal-500',
     icon: '🌍',
     totalMinutes: 90,
+    prerequisites: [],
     modules: [
       {
         id: 'c5-m1',
@@ -486,6 +491,7 @@ export const courses: Course[] = [
     coverColor: 'from-sky-600 to-blue-400',
     icon: '✈️',
     totalMinutes: 75,
+    prerequisites: [],
     modules: [
       {
         id: 'c6-m1',
@@ -563,6 +569,7 @@ export const courses: Course[] = [
     coverColor: 'from-amber-600 to-yellow-500',
     icon: '🎪',
     totalMinutes: 90,
+    prerequisites: [],
     modules: [
       {
         id: 'c7-m1',
@@ -653,6 +660,7 @@ export const courses: Course[] = [
     coverColor: 'from-rose-700 to-pink-500',
     icon: '📋',
     totalMinutes: 75,
+    prerequisites: [],
     modules: [
       {
         id: 'c8-m1',

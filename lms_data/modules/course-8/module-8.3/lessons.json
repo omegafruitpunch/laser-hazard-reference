@@ -1,0 +1,267 @@
+{
+  "module_id": "8.3",
+  "lessons": [
+    {
+      "lesson_id": "8.3.1",
+      "title": "ESTA and the Standards Ecosystem",
+      "type": "concept_introduction",
+      "duration_minutes": 6,
+      "content": {
+        "opening_hook": {
+          "type": "question",
+          "text": "Who develops the standards that govern entertainment technology? Meet ESTA, the organization behind E1.46, ACN, and other critical entertainment standards.",
+          "visual": "esta_logo_with_scope"
+        },
+        "core_concept": {
+          "title": "ESTA: Entertainment Services and Technology Association",
+          "text": "ESTA is the trade association representing the entertainment technology industry. Through its Technical Standards Program, ESTA develops ANSI-accredited standards for equipment, protocols, and safety.",
+          "key_points": [
+            "ESTA develops standards through ANSI-accredited process",
+            "Technical Standards Program (TSP) is member-funded",
+            "Standards developed by working groups of industry experts",
+            "E1.xx series covers control protocols and safety",
+            "B1.xx series covers rigging and hardware"
+          ]
+        },
+        "standards_overview": {
+          "categories": [
+            {
+              "category": "Control Protocols (E1.xx)",
+              "standards": [
+                {"id": "E1.17", "name": "ACN - Architecture for Control Networks"},
+                {"id": "E1.31", "name": "sACN - Lightweight streaming protocol"},
+                {"id": "E1.30", "name": "ACN Root Layer on TCP"},
+                {"id": "E1.46", "name": "Laser Safety for Entertainment"}
+              ]
+            },
+            {
+              "category": "Rigging and Hardware (B1.xx)",
+              "standards": [
+                {"id": "B1.1", "name": "Chain Hoists"},
+                {"id": "B1.6", "name": "Manual Hoists"},
+                {"id": "E1.21", "name": "Lifting Towers"}
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "8.3.2",
+      "title": "ACN Protocol Architecture",
+      "type": "interactive_exploration",
+      "duration_minutes": 10,
+      "content": {
+        "title": "Understanding ACN (ANSI E1.17)",
+        "explanation": "The Architecture for Control Networks (ACN) is a suite of protocols for controlling entertainment equipment over networks. Understanding ACN helps integrate laser systems into modern entertainment control setups.",
+        "protocol_stack": {
+          "layers": [
+            {
+              "layer": "Application",
+              "protocol": "Device Description Language (DDL)",
+              "function": "Device discovery and capability description"
+            },
+            {
+              "layer": "Root Layer",
+              "protocol": "ACN Root Layer Protocol",
+              "function": "Message formatting and addressing"
+            },
+            {
+              "layer": "Transport",
+              "protocol": "UDP (E1.17) or TCP (E1.30)",
+              "function": "Data transmission"
+            },
+            {
+              "layer": "Network",
+              "protocol": "IP",
+              "function": "Network addressing"
+            }
+          ]
+        },
+        "interactive_architecture": {
+          "type": "layered_stack",
+          "features": [
+            "Click each layer to expand details",
+            "View protocol relationships",
+            "See message flow examples",
+            "Compare UDP vs TCP transport"
+          ],
+          "key_insights": [
+            "ACN enables interoperability between manufacturers",
+            "DDL allows automatic device configuration",
+            "Root Layer provides protocol independence",
+            "E1.30 adds TCP support for reliable transmission"
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "8.3.3",
+      "title": "Hierarchy of Controls",
+      "type": "interactive_exercise",
+      "duration_minutes": 8,
+      "content": {
+        "title": "Control Measure Prioritization",
+        "explanation": "ANSI standards emphasize a hierarchy of controls. Engineering controls are always preferred over administrative controls or PPE.",
+        "hierarchy": {
+          "levels": [
+            {
+              "level": 1,
+              "name": "Elimination/Substitution",
+              "description": "Remove the hazard or substitute with safer alternative",
+              "examples": ["Use lower power laser", "Change beam path away from occupied areas"],
+              "effectiveness": "Most Effective",
+              "color": "#4CAF50"
+            },
+            {
+              "level": 2,
+              "name": "Engineering Controls",
+              "description": "Isolate people from the hazard",
+              "examples": ["Interlocks", "Enclosures", "Scan failure detection", "Beam stops"],
+              "effectiveness": "High",
+              "color": "#8BC34A"
+            },
+            {
+              "level": 3,
+              "name": "Administrative Controls",
+              "description": "Change the way people work",
+              "examples": ["Procedures", "Training", "Signage", "Scheduling"],
+              "effectiveness": "Medium",
+              "color": "#FFC107"
+            },
+            {
+              "level": 4,
+              "name": "PPE",
+              "description": "Protect the individual",
+              "examples": ["Safety eyewear", "Protective clothing"],
+              "effectiveness": "Least Effective",
+              "color": "#FF9800"
+            }
+          ]
+        },
+        "exercise": {
+          "type": "prioritization_challenge",
+          "scenarios": [
+            {
+              "scenario": "Reduce hazard from a Class 4 laser in a lab",
+              "measures": [
+                {"measure": "Install interlocked enclosure", "level": 2, "correct_order": 1},
+                {"measure": "Provide safety eyewear", "level": 4, "correct_order": 3},
+                {"measure": "Create SOP for operation", "level": 3, "correct_order": 2}
+              ]
+            },
+            {
+              "scenario": "Entertainment laser with audience scanning",
+              "measures": [
+                {"measure": "Use scan failure detection", "level": 2, "correct_order": 1},
+                {"measure": "Position beams above 3m", "level": 1, "correct_order": 2},
+                {"measure": "Operator training", "level": 3, "correct_order": 3}
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "8.3.4",
+      "title": "Documentation Template Gallery",
+      "type": "interactive_templates",
+      "duration_minutes": 12,
+      "content": {
+        "title": "Essential Laser Safety Documentation",
+        "explanation": "Complete and accurate documentation is required for all laser installations. Use these interactive templates to create proper safety documentation.",
+        "templates": [
+          {
+            "id": "risk_assessment",
+            "name": "Risk Assessment Template",
+            "description": "Hazard identification and risk evaluation",
+            "sections": [
+              {"name": "Installation Details", "fields": ["Location", "Laser type/power", "Dates"]},
+              {"name": "Hazard Identification", "fields": ["Beam hazards", "Non-beam hazards", "Exposure scenarios"]},
+              {"name": "Risk Evaluation", "fields": ["Probability", "Severity", "Risk level"]},
+              {"name": "Control Measures", "fields": ["Engineering", "Administrative", "PPE"]}
+            ]
+          },
+          {
+            "id": "handover_doc",
+            "name": "Hand-Over Documentation",
+            "description": "Required for transferring responsibility",
+            "sections": [
+              {"name": "Equipment Details", "fields": ["Manufacturer", "Model", "Serial number", "Power output"]},
+              {"name": "Safety Systems", "fields": ["Interlocks", "E-stops", "Scan fail", "Blanking"]},
+              {"name": "Operating Procedures", "fields": ["Startup", "Normal operation", "Emergency shutdown"]},
+              {"name": "Sign-offs", "fields": ["Installer", "LSO", "Operator", "Venue"]}
+            ]
+          },
+          {
+            "id": "mpe_calc_sheet",
+            "name": "MPE Calculation Record",
+            "description": "Document MPE calculations for audience areas",
+            "sections": [
+              {"name": "Laser Parameters", "fields": ["Wavelength", "Power", "Divergence"]},
+              {"name": "Exposure Parameters", "fields": ["Duration", "Viewing conditions", "Affected population"]},
+              {"name": "Calculations", "fields": ["MPE formula", "Result", "Margin of safety"]},
+              {"name": "Verification", "fields": ["Measurement method", "Equipment used", "Date/technician"]}
+            ]
+          },
+          {
+            "id": "incident_report",
+            "name": "Incident Report Form",
+            "description": "Document any laser-related incidents",
+            "sections": [
+              {"name": "Incident Details", "fields": ["Date/time", "Location", "Persons involved"]},
+              {"name": "Laser Information", "fields": ["Equipment", "Operating mode", "Exposure details"]},
+              {"name": "Immediate Actions", "fields": ["First aid", "Equipment secured", "Notifications"]},
+              {"name": "Follow-up", "fields": ["Investigation", "Corrective actions", "Prevention"]}
+            ]
+          }
+        ],
+        "interactive_features": [
+          "Fillable form fields",
+          "Auto-calculate where applicable",
+          "Save and export to PDF",
+          "Template completion progress tracking"
+        ]
+      }
+    },
+    {
+      "lesson_id": "8.3.5",
+      "title": "Course Integration: Standards Navigator",
+      "type": "capstone_integration",
+      "duration_minutes": 4,
+      "content": {
+        "title": "Putting It All Together",
+        "explanation": "This final lesson integrates all Course 8 content into a comprehensive standards reference framework.",
+        "integration_map": {
+          "type": "cross_reference_matrix",
+          "dimensions": {
+            "x_axis": ["ANSI Z136.1", "ANSI Z136.10", "ANSI E1.46", "FDA 21 CFR 1040", "ACN E1.17"],
+            "y_axis": ["Laser Classification", "MPE/Exposure Limits", "Safety Controls", "Documentation", "Operator Training", "Audience Scanning"]
+          },
+          "cells": {
+            "ANSI Z136.1 x MPE": "Tables 5a/5b - Foundation",
+            "ANSI E1.46 x Audience Scanning": "Detailed requirements",
+            "FDA 21 CFR 1040 x Laser Classification": "Mandatory classes",
+            "ACN E1.17 x Documentation": "Protocol specifications"
+          }
+        },
+        "quick_reference": {
+          "scenarios": [
+            {
+              "situation": "Starting a laser light show business",
+              "references": ["E1.46 for operations", "Z136.10 for safe use", "FDA for product compliance"]
+            },
+            {
+              "situation": "Designing control system integration",
+              "references": ["E1.17 for ACN", "E1.46 for safety interlocks", "Z136.1 for control hierarchy"]
+            },
+            {
+              "situation": "Creating safety documentation",
+              "references": ["E1.46 for templates", "Z136.1 for content", "FDA for reporting requirements"]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

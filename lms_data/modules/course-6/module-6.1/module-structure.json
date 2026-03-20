@@ -1,0 +1,111 @@
+{
+  "module_id": "module-6.1",
+  "course_id": "course-6",
+  "title": "Module 6.1: FAA Regulations for Laser Operations",
+  "description": "Comprehensive guide to FAA regulations governing outdoor laser operations affecting navigable airspace, including filing requirements, review processes, and compliance obligations.",
+  "version": "1.0.0",
+  "last_updated": "2026-03-19",
+  "estimated_duration_minutes": 75,
+  "learning_objectives": [
+    {
+      "id": "6.1.1",
+      "objective": "Explain FAA's authority to regulate outdoor laser operations under 49 U.S.C. § 40103",
+      "bloom_level": "comprehension",
+      "assessment_method": "scenario_analysis"
+    },
+    {
+      "id": "6.1.2", 
+      "objective": "Complete FAA Form 7140-1 with accurate laser configuration data",
+      "bloom_level": "application",
+      "assessment_method": "form_simulation"
+    },
+    {
+      "id": "6.1.3",
+      "objective": "Navigate the FAA review timeline and understand determination outcomes",
+      "bloom_level": "application",
+      "assessment_method": "timeline_interactive"
+    },
+    {
+      "id": "6.1.4",
+      "objective": "Apply 18 USC 39A provisions to laser-aviation incidents",
+      "bloom_level": "application",
+      "assessment_method": "case_study"
+    }
+  ],
+  "prerequisites": [
+    "course-1/laser-fundamentals",
+    "course-2/fda-compliance"
+  ],
+  "sections": [
+    {
+      "id": "6.1.1",
+      "title": "FAA Regulatory Authority",
+      "type": "foundational",
+      "duration_minutes": 15,
+      "content_summary": "Overview of FAA's statutory authority, relationship with FDA/CDRH, and the regulatory framework for outdoor laser operations affecting navigable airspace.",
+      "key_concepts": [
+        "49 U.S.C. § 40103 - Sovereignty and Use of Airspace",
+        "14 CFR § 1.1 - Navigable airspace definition",
+        "FDA/FAA Memorandum of Understanding",
+        "21 CFR § 1040 variance requirement"
+      ]
+    },
+    {
+      "id": "6.1.2",
+      "title": "NOTAM Filing Simulator",
+      "type": "interactive_simulation",
+      "duration_minutes": 25,
+      "component": "NOTAMFilingSimulator",
+      "content_summary": "Interactive Form 7140-1 walkthrough with field-by-field guidance, validation, and submission simulation."
+    },
+    {
+      "id": "6.1.3",
+      "title": "FAA Review Process",
+      "type": "interactive_timeline",
+      "duration_minutes": 20,
+      "component": "FAAReviewTimeline",
+      "content_summary": "Visual timeline of the FAA review process from initial submission to Letter of Determination issuance."
+    },
+    {
+      "id": "6.1.4",
+      "title": "Legal Framework & Enforcement",
+      "type": "case_study",
+      "duration_minutes": 15,
+      "content_summary": "18 USC 39A criminal provisions, civil penalties under 49 U.S.C. § 46301, and real-world enforcement case studies."
+    }
+  ],
+  "assessments": [
+    {
+      "id": "quiz-6.1",
+      "type": "formative",
+      "title": "FAA Regulations Knowledge Check",
+      "passing_score": 80,
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple_choice",
+          "question": "How many days before a planned outdoor laser operation should Form 7140-1 be filed with FAA?",
+          "options": ["7 days", "14 days", "30 days", "60 days"],
+          "correct": 2,
+          "explanation": "FAA requests proponents file a notice at least 30 days before the planned event to allow sufficient time for aeronautical study and determination."
+        },
+        {
+          "id": "q2",
+          "type": "multiple_choice",
+          "question": "Which federal law specifically makes aiming a laser pointer at an aircraft a federal crime?",
+          "options": ["21 CFR § 1040", "49 U.S.C. § 40103", "18 USC 39A", "14 CFR § 91.11"],
+          "correct": 2,
+          "explanation": "18 USC 39A makes it illegal to aim a laser pointer at an aircraft or its flight path, with penalties up to 5 years in prison and $250,000 fine."
+        },
+        {
+          "id": "q3",
+          "type": "multiple_choice",
+          "question": "What is the maximum civil penalty FAA may seek per violation for aiming a laser at an aircraft?",
+          "options": ["$1,000", "$11,000", "$25,000", "$250,000"],
+          "correct": 1,
+          "explanation": "Under 49 U.S.C. § 46301(a)(5)(A), FAA may seek a maximum civil penalty of $11,000 per violation."
+        }
+      ]
+    }
+  ]
+}

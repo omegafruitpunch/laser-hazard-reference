@@ -1,0 +1,54 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 18,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Class-based reporting requirements",
+      "Laser Notice exemptions",
+      "Annual Reports and quarterly updates",
+      "Reporting timelines and deadlines"
+    ],
+    "key_terms": [
+      {
+        "term": "Laser Notice #36",
+        "definition": "Exemption for inherently Class I products (August 1985)"
+      },
+      {
+        "term": "Laser Notice #41",
+        "definition": "Low power laser reporting exemption (August 1988)"
+      },
+      {
+        "term": "Annual Report",
+        "definition": "Yearly summary of records due September 1"
+      },
+      {
+        "term": "Quarterly Updates",
+        "definition": "Supplements to annual report for new models"
+      },
+      {
+        "term": "June 30 Reporting Year",
+        "definition": "Annual report covers preceding year ending June 30"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1002.13 - Annual reports",
+      "Laser Notice #36 (August 23, 1985)",
+      "Laser Notice #41 (August 9, 1988)"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Apply class-based reporting requirements",
+      "Identify exempt products",
+      "Submit timely annual reports",
+      "File quarterly updates correctly"
+    ],
+    "prerequisites": [
+      "Pages 16-17 content"
+    ],
+    "estimated_study_time_minutes": 25,
+    "content_type": "reporting_requirements",
+    "has_tables": false
+  }
+}

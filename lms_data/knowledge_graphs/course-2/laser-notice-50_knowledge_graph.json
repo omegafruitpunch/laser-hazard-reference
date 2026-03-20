@@ -1,0 +1,195 @@
+{
+  "graph_title": "Laser Notice No. 50 Knowledge Graph - IEC Harmonization",
+  "document_source": "laser-notice-50.pdf",
+  "course": "Course 2 - FDA Compliance",
+  "version": "1.0",
+  
+  "nodes": {
+    "documents": [
+      {"id": "Laser_Notice_50", "type": "guidance", "label": "Laser Notice No. 50", "attributes": {"issue_date": "June 24, 2007", "document_number": "1346", "status": "Nonbinding recommendations"}},
+      {"id": "Laser_Notice_50_2001", "type": "guidance", "label": "Laser Notice No. 50 (2001)", "attributes": {"issue_date": "July 26, 2001", "status": "Superseded"}}
+    ],
+    
+    "organizations": [
+      {"id": "CDRH", "type": "organization", "label": "Center for Devices and Radiological Health", "attributes": {"role": "Issuing Authority"}},
+      {"id": "FDA", "type": "organization", "label": "Food and Drug Administration", "attributes": {"role": "Federal Agency"}},
+      {"id": "IEC", "type": "organization", "label": "International Electrotechnical Commission", "attributes": {"role": "International Standards Body"}}
+    ],
+    
+    "standards": [
+      {"id": "IEC_60825-1", "type": "standard", "label": "IEC 60825-1", "attributes": {"title": "Safety of laser products - Part 1", "editions_accepted": ["1.2", "2"]}},
+      {"id": "IEC_60601-2-22", "type": "standard", "label": "IEC 60601-2-22", "attributes": {"title": "Medical electrical equipment - Laser equipment requirements"}}
+    ],
+    
+    "regulatory_framework": [
+      {"id": "21CFR_1040_10", "type": "cfr", "label": "21 CFR 1040.10", "description": "Laser products performance standard"},
+      {"id": "21CFR_1040_11", "type": "cfr", "label": "21 CFR 1040.11", "description": "Specific purpose laser products"},
+      {"id": "21CFR_1010_2", "type": "cfr", "label": "21 CFR 1010.2", "description": "Certification", "status": "unaffected"},
+      {"id": "21CFR_1010_3", "type": "cfr", "label": "21 CFR 1010.3", "description": "Identification", "status": "unaffected"},
+      {"id": "21CFR_1010_4", "type": "cfr", "label": "21 CFR 1010.4", "description": "Variances", "status": "unaffected"},
+      {"id": "21CFR_1002_10", "type": "cfr", "label": "21 CFR 1002.10", "description": "Product reports", "status": "mandatory"}
+    ],
+    
+    "harmonized_sections": [
+      {"id": "1040_10_b", "type": "section", "label": "1040.10(b) Definitions", "iec_equivalent": "IEC definitions", "harmonization_status": "accepted"},
+      {"id": "1040_10_c1", "type": "section", "label": "1040.10(c)(1) Classification", "iec_equivalent": "IEC classification", "harmonization_status": "accepted"},
+      {"id": "1040_10_d", "type": "section", "label": "1040.10(d) Accessible emission limits", "iec_equivalent": "IEC AELs", "harmonization_status": "accepted"},
+      {"id": "1040_10_e", "type": "section", "label": "1040.10(e) Tests for compliance", "iec_equivalent": "IEC test methods", "harmonization_status": "accepted"},
+      {"id": "1040_10_f1", "type": "section", "label": "1040.10(f)(1) Protective housing", "iec_equivalent": "IEC housing requirements", "harmonization_status": "accepted"},
+      {"id": "1040_10_f2", "type": "section", "label": "1040.10(f)(2) Safety interlocks", "iec_equivalent": "IEC interlock requirements", "harmonization_status": "accepted"},
+      {"id": "1040_10_f3", "type": "section", "label": "1040.10(f)(3) Remote interlock connector", "iec_equivalent": "IEC remote interlock", "harmonization_status": "accepted"},
+      {"id": "1040_10_f4", "type": "section", "label": "1040.10(f)(4) Key control", "iec_equivalent": "IEC key control", "harmonization_status": "accepted"},
+      {"id": "1040_10_f5", "type": "section", "label": "1040.10(f)(5) Emission indicator", "iec_equivalent": "IEC indicators", "harmonization_status": "accepted"},
+      {"id": "1040_10_f6", "type": "section", "label": "1040.10(f)(6) Beam attenuator", "iec_equivalent": "IEC attenuators", "harmonization_status": "accepted"},
+      {"id": "1040_10_f7", "type": "section", "label": "1040.10(f)(7) Location of controls", "iec_equivalent": "IEC control location", "harmonization_status": "accepted"},
+      {"id": "1040_10_f8", "type": "section", "label": "1040.10(f)(8) Viewing optics", "iec_equivalent": "IEC viewing optics", "harmonization_status": "accepted"},
+      {"id": "1040_10_f9", "type": "section", "label": "1040.10(f)(9) Scanning safeguard", "iec_equivalent": "IEC scanning safeguards", "harmonization_status": "accepted"},
+      {"id": "1040_10_g", "type": "section", "label": "1040.10(g) Labeling requirements", "iec_equivalent": "IEC labeling", "harmonization_status": "accepted"},
+      {"id": "1040_10_h1", "type": "section", "label": "1040.10(h)(1) User information", "iec_equivalent": "IEC user info", "harmonization_status": "accepted"},
+      {"id": "1040_11_a", "type": "section", "label": "1040.11(a) Medical lasers", "iec_equivalent": "IEC 60601-2-22", "harmonization_status": "accepted"}
+    ],
+    
+    "unaffected_sections": [
+      {"id": "1010_2", "type": "section", "label": "1010.2 Certification", "reason": "Beyond IEC scope or sufficiently different"},
+      {"id": "1010_3", "type": "section", "label": "1010.3 Identification", "reason": "Beyond IEC scope or sufficiently different"},
+      {"id": "1010_4", "type": "section", "label": "1010.4 Variances", "reason": "FDA administrative procedure"},
+      {"id": "1040_10_a", "type": "section", "label": "1040.10(a) Applicability", "reason": "Regulatory scope definition"},
+      {"id": "1040_10_c2", "type": "section", "label": "1040.10(c)(2) Removable laser systems", "reason": "Specific FDA requirement"},
+      {"id": "1040_10_f10", "type": "section", "label": "1040.10(f)(10) Manual reset", "reason": "FDA-specific requirement"},
+      {"id": "1040_10_h2", "type": "section", "label": "1040.10(h)(2) Purchasing and servicing info", "reason": "Beyond IEC scope"},
+      {"id": "1040_10_i", "type": "section", "label": "1040.10(i) Modification of certified product", "reason": "FDA administrative requirement"},
+      {"id": "1040_11_b", "type": "section", "label": "1040.11(b) Surveying/leveling/alignment lasers", "reason": "Specific FDA requirements"},
+      {"id": "1040_11_c", "type": "section", "label": "1040.11(c) Demonstration laser products", "reason": "Specific FDA requirements"}
+    ],
+    
+    "contacts": [
+      {"id": "Jerome_Dennis", "type": "contact", "label": "Jerome Dennis", "role": "Contact Person", "phone": "240-276-3330", "email": "jerome.dennis@fda.hhs.gov"},
+      {"id": "DSMA", "type": "contact", "label": "DSMA", "role": "Document Requests", "email": "dsmica@fda.hhs.gov", "fax": "240-276-3151"}
+    ],
+    
+    "previous_concessions": [
+      {"id": "concession_indicators", "type": "concession", "label": "Class II/IIIa Emission Indicators", "concession": "CDRH non-objection to lack of indicators"},
+      {"id": "concession_attenuators", "type": "concession", "label": "Class II/IIIa Beam Attenuators", "concession": "CDRH non-objection to lack of attenuators"},
+      {"id": "concession_labels", "type": "concession", "label": "IEC Warning Labels", "concession": "CDRH non-objection to IEC 60825-1 hazard labels"}
+    ],
+    
+    "key_concepts": [
+      {"id": "harmonization", "type": "concept", "label": "Regulatory Harmonization", "description": "Alignment of FDA and IEC requirements"},
+      {"id": "least_burdensome", "type": "concept", "label": "Least Burdensome Approach", "description": "Minimizing regulatory burden while ensuring safety"},
+      {"id": "nonbinding", "type": "concept", "label": "Nonbinding Guidance", "description": "Recommendations, not legal requirements"},
+      {"id": "alternative_approach", "type": "concept", "label": "Alternative Approach", "description": "Acceptable if satisfies applicable requirements"}
+    ]
+  },
+  
+  "edges": {
+    "relationships": [
+      {"source": "CDRH", "target": "Laser_Notice_50", "type": "issues", "label": "published"},
+      {"source": "Laser_Notice_50", "target": "Laser_Notice_50_2001", "type": "supersedes", "label": "replaces"},
+      
+      {"source": "Laser_Notice_50", "target": "IEC_60825-1", "type": "references", "label": "harmonizes with"},
+      {"source": "Laser_Notice_50", "target": "IEC_60601-2-22", "type": "references", "label": "harmonizes with"},
+      
+      {"source": "IEC", "target": "IEC_60825-1", "type": "publishes", "label": "standard"},
+      {"source": "IEC", "target": "IEC_60601-2-22", "type": "publishes", "label": "standard"},
+      
+      {"source": "1040_10_b", "target": "IEC_60825-1", "type": "equivalent_to", "label": "comparable to"},
+      {"source": "1040_10_c1", "target": "IEC_60825-1", "type": "equivalent_to", "label": "comparable to"},
+      {"source": "1040_10_d", "target": "IEC_60825-1", "type": "equivalent_to", "label": "comparable to"},
+      {"source": "1040_10_e", "target": "IEC_60825-1", "type": "equivalent_to", "label": "comparable to"},
+      {"source": "1040_11_a", "target": "IEC_60601-2-22", "type": "equivalent_to", "label": "comparable to"},
+      
+      {"source": "Laser_Notice_50", "target": "1040_10_b", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_c1", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_d", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_e", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_f1", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_f2", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_f3", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_f4", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_f5", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_f6", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_f7", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_f8", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_f9", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_g", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_10_h1", "type": "accepts", "label": "harmonized"},
+      {"source": "Laser_Notice_50", "target": "1040_11_a", "type": "accepts", "label": "harmonized"},
+      
+      {"source": "21CFR_1010_2", "target": "Laser_Notice_50", "type": "unaffected_by", "label": "retained despite"},
+      {"source": "21CFR_1010_3", "target": "Laser_Notice_50", "type": "unaffected_by", "label": "retained despite"},
+      {"source": "21CFR_1010_4", "target": "Laser_Notice_50", "type": "unaffected_by", "label": "retained despite"},
+      {"source": "1040_10_c2", "target": "Laser_Notice_50", "type": "unaffected_by", "label": "retained despite"},
+      {"source": "1040_10_f10", "target": "Laser_Notice_50", "type": "unaffected_by", "label": "retained despite"},
+      {"source": "1040_10_h2", "target": "Laser_Notice_50", "type": "unaffected_by", "label": "retained despite"},
+      {"source": "1040_10_i", "target": "Laser_Notice_50", "type": "unaffected_by", "label": "retained despite"},
+      {"source": "1040_11_b", "target": "Laser_Notice_50", "type": "unaffected_by", "label": "retained despite"},
+      {"source": "1040_11_c", "target": "Laser_Notice_50", "type": "unaffected_by", "label": "retained despite"},
+      
+      {"source": "Jerome_Dennis", "target": "Laser_Notice_50", "type": "contact_for", "label": "expert on"},
+      {"source": "CDRH", "target": "Jerome_Dennis", "type": "employs", "label": "staff member"},
+      
+      {"source": "harmonization", "target": "Laser_Notice_50", "type": "embodied_in", "label": "demonstrated by"},
+      {"source": "least_burdensome", "target": "Laser_Notice_50", "type": "principle_of", "label": "guiding principle"},
+      {"source": "nonbinding", "target": "Laser_Notice_50", "type": "characterizes", "label": "describes"}
+    ]
+  },
+  
+  "compliance_matrix": {
+    "mandatory_always": {
+      "description": "Required regardless of IEC conformance",
+      "requirements": [
+        "21 CFR 1040.10 and 1040.11 compliance (as applicable)",
+        "21 CFR 1010.2 Certification",
+        "21 CFR 1010.3 Identification",
+        "21 CFR 1002.10 Reporting"
+      ]
+    },
+    "iec_alternatives_accepted": {
+      "description": "IEC conformance accepted in lieu of FDA requirements",
+      "sections": [
+        "Definitions (1040.10(b))",
+        "Classification (1040.10(c)(1))",
+        "Accessible emission limits (1040.10(d))",
+        "Tests for compliance (1040.10(e))",
+        "Protective housing (1040.10(f)(1))",
+        "Safety interlocks (1040.10(f)(2))",
+        "Remote interlock connector (1040.10(f)(3))",
+        "Key control (1040.10(f)(4))",
+        "Emission indicator (1040.10(f)(5))",
+        "Beam attenuator (1040.10(f)(6))",
+        "Location of controls (1040.10(f)(7))",
+        "Viewing optics (1040.10(f)(8))",
+        "Scanning safeguard (1040.10(f)(9))",
+        "Labeling requirements (1040.10(g))",
+        "User information (1040.10(h)(1))",
+        "Medical laser products (1040.11(a))"
+      ]
+    },
+    "fda_only_requirements": {
+      "description": "FDA requirements that remain unaffected",
+      "sections": [
+        "1010.2 Certification",
+        "1010.3 Identification",
+        "1010.4 Variances",
+        "1040.10(a) Applicability",
+        "1040.10(c)(2) Removable laser systems",
+        "1040.10(f)(10) Manual reset mechanism",
+        "1040.10(h)(2) Purchasing and servicing information",
+        "1040.10(i) Modification of certified product",
+        "1040.11(b) Surveying/leveling/alignment lasers",
+        "1040.11(c) Demonstration laser products"
+      ]
+    }
+  },
+  
+  "certification_options": [
+    "Complies with FDA performance standards for laser products except for deviations pursuant to Laser Notice No. 50, dated (Insert date of this guidance.)",
+    "Complies with 21 CFR 1040.10 and 1040.11 except for deviations pursuant to Laser Notice No. 50, dated June 24, 2007"
+  ],
+  
+  "document_lifecycle": {
+    "effective": "June 24, 2007",
+    "supersedes": "Laser Notice No. 50 (July 26, 2001)",
+    "expires": "On effective date(s) of amendments to Federal regulations"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 19,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Product recall procedures",
+      "Accidental radiation occurrence reporting",
+      "Corrective Action Plans (CAP)",
+      "Exemption from notification requirements"
+    ],
+    "key_terms": [
+      {
+        "term": "Radiation Defect",
+        "definition": "Product failing to comply with performance standards"
+      },
+      {
+        "term": "Corrective Action Plan (CAP)",
+        "definition": "Plan to repair, replace, or refund defective products"
+      },
+      {
+        "term": "Notification",
+        "definition": "Required communication to CDRH, distributors, and purchasers"
+      },
+      {
+        "term": "Significant Risk of Injury",
+        "definition": "Criterion for exemption denial"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1003 - Product recalls",
+      "21 CFR 1003.2 - Radiation defect definition",
+      "21 CFR 1003.10 - Manufacturer notification",
+      "21 CFR 1003.11 - CDRH notification",
+      "21 CFR 1003.21 - Distributor/purchaser notification",
+      "21 CFR 1003.20 - CAP requirements",
+      "21 CFR 1003.30/31 - Exemption provisions"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Execute recall procedures",
+      "Report accidental radiation occurrences",
+      "Develop corrective action plans",
+      "Request notification exemptions"
+    ],
+    "prerequisites": [
+      "Pages 16-18 content"
+    ],
+    "estimated_study_time_minutes": 30,
+    "content_type": "compliance_procedures",
+    "has_tables": false
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "source": "compliance-documentation.pdf",
+  "agent_id": "GESTATION-CD-001",
+  "pages_processed": [
+    {
+      "page": 1,
+      "topic": "FDA Form 3640 - Reporting Guide Introduction",
+      "key_concepts": [
+        "Form FDA 3640",
+        "OMB reporting",
+        "Paperwork Reduction Act"
+      ]
+    },
+    {
+      "page": 2,
+      "topic": "FDA Guidance and Submission Process",
+      "key_concepts": [
+        "CDRH submission address",
+        "Good Guidance Practices",
+        "Electronic Product Reports"
+      ]
+    },
+    {
+      "page": 3,
+      "topic": "Document Overview",
+      "key_concepts": [
+        "21 CFR 1002",
+        "Reporting requirements",
+        "CDRH Office of Compliance"
+      ]
+    },
+    {
+      "page": 4,
+      "topic": "Blank Page",
+      "key_concepts": []
+    },
+    {
+      "page": 5,
+      "topic": "Foreword and Compliance Overview",
+      "key_concepts": [
+        "Manufacturer responsibility",
+        "Accession numbers",
+        "Quality control testing"
+      ]
+    },
+    {
+      "page": 6,
+      "topic": "Product Identification and General Requirements",
+      "key_concepts": [
+        "Model family",
+        "Trade names",
+        "Product codes"
+      ]
+    },
+    {
+      "page": 7,
+      "topic": "Product Testing and Quality Control",
+      "key_concepts": [
+        "Testing program",
+        "Quality control procedures",
+        "Manufacturing tolerances"
+      ]
+    },
+    {
+      "page": 8,
+      "topic": "Radiation Safety Testing",
+      "key_concepts": [
+        "Test results",
+        "Safety interlocks",
+        "Labeling compliance"
+      ]
+    },
+    {
+      "page": 9,
+      "topic": "Quality Assurance Procedures",
+      "key_concepts": [
+        "QA program",
+        "Testing frequency",
+        "Record keeping"
+      ]
+    },
+    {
+      "page": 10,
+      "topic": "Defects and Failures Reporting",
+      "key_concepts": [
+        "Radiation defects",
+        "Failure analysis",
+        "Corrective actions"
+      ]
+    },
+    {
+      "page": 11,
+      "topic": "Annual Reports and Supplements",
+      "key_concepts": [
+        "Annual reporting",
+        "Supplement submission",
+        "Model changes"
+      ]
+    },
+    {
+      "page": 12,
+      "topic": "Import and Export Requirements",
+      "key_concepts": [
+        "Import documentation",
+        "Export certification",
+        "Customs requirements"
+      ]
+    },
+    {
+      "page": 13,
+      "topic": "Record Retention Requirements",
+      "key_concepts": [
+        "Record keeping",
+        "Retention periods",
+        "Document accessibility"
+      ]
+    },
+    {
+      "page": 14,
+      "topic": "Notification Requirements",
+      "key_concepts": [
+        "Radiation notices",
+        "Defect notification",
+        "Recall procedures"
+      ]
+    },
+    {
+      "page": 15,
+      "topic": "Laser Light Show Specific Requirements",
+      "key_concepts": [
+        "Light show reporting",
+        "Display specifications",
+        "Audience safety"
+      ]
+    },
+    {
+      "page": 16,
+      "topic": "Laser Product Classification",
+      "key_concepts": [
+        "Class I-IV lasers",
+        "Classification criteria",
+        "Power levels"
+      ]
+    },
+    {
+      "page": 17,
+      "topic": "Performance Standards Compliance",
+      "key_concepts": [
+        "21 CFR 1040",
+        "Performance testing",
+        "Standard compliance"
+      ]
+    },
+    {
+      "page": 18,
+      "topic": "Labeling and User Information",
+      "key_concepts": [
+        "Warning labels",
+        "User manuals",
+        "Safety information"
+      ]
+    },
+    {
+      "page": 19,
+      "topic": "Inspection and Audit Procedures",
+      "key_concepts": [
+        "FDA inspections",
+        "Audit readiness",
+        "Documentation review"
+      ]
+    },
+    {
+      "page": 20,
+      "topic": "Enforcement Actions",
+      "key_concepts": [
+        "Enforcement procedures",
+        "Violations",
+        "Penalties"
+      ]
+    },
+    {
+      "page": 21,
+      "topic": "Variances and Exemptions",
+      "key_concepts": [
+        "Variance applications",
+        "Exemption criteria",
+        "Alternative compliance"
+      ]
+    },
+    {
+      "page": 22,
+      "topic": "International Trade Considerations",
+      "key_concepts": [
+        "International standards",
+        "Trade agreements",
+        "Certification reciprocity"
+      ]
+    },
+    {
+      "page": 23,
+      "topic": "Electronic Submission Guidelines",
+      "key_concepts": [
+        "eSubmitter",
+        "Electronic formats",
+        "Digital signatures"
+      ]
+    },
+    {
+      "page": 24,
+      "topic": "Contact Information and Resources",
+      "key_concepts": [
+        "CDRH contacts",
+        "Help resources",
+        "Guidance documents"
+      ]
+    },
+    {
+      "page": 25,
+      "topic": "Appendix and Reference Materials",
+      "key_concepts": [
+        "Glossary",
+        "Reference standards",
+        "Additional resources"
+      ]
+    }
+  ],
+  "digest_summary": {
+    "document_type": "FDA Compliance Guide",
+    "regulatory_framework": "21 CFR 1002 - Reporting Requirements for Electronic Products",
+    "key_requirements": [
+      "Manufacturers must submit reports on radiation safety testing",
+      "Accession numbers are assigned to track submissions",
+      "Annual reports and supplements required for model changes",
+      "Quality control and testing programs must be documented",
+      "Import/export documentation requirements must be met",
+      "Records must be retained for specified periods",
+      "Radiation defects must be reported promptly"
+    ],
+    "compliance_workflows": [
+      "Pre-shipment reporting requirement",
+      "Accession number tracking system",
+      "Annual report submission cycle",
+      "Supplement submission for changes",
+      "Quality control documentation",
+      "Defect notification procedures"
+    ]
+  }
+}

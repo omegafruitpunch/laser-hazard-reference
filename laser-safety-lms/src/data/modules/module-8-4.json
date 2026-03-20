@@ -1,0 +1,62 @@
+{
+  "id": "module-8-4",
+  "courseId": "course-8",
+  "title": "Documentation & Compliance Systems",
+  "description": "Standards-compliant documentation, record-keeping, and audit preparation for regulatory authorities.",
+  "order": 4,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "The Documentation Imperative",
+      "content": "Proper documentation is not just a regulatory requirement—it's evidence of due diligence. In the event of an incident, your documentation demonstrates that you followed accepted standards and exercised reasonable care. This module covers the essential documents every laser safety program needs.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "Required Documentation Types",
+      "content": "## Risk Assessment Documentation\n- Hazard identification and analysis\n- MPE calculations for all exposure scenarios\n- Controlled area definitions\n- Risk level determination\n\n## Standard Operating Procedures (SOPs)\n- Startup and shutdown procedures\n- Normal operation guidelines\n- Emergency procedures\n- Maintenance and alignment protocols\n- Personnel responsibilities\n\n## Training Records\n- Initial training documentation\n- Refresher training records\n- Competency assessments\n- Training content and materials\n\n## Medical Surveillance Records\n- Pre-placement examination results\n- Post-exposure evaluation records\n- Incident reports and follow-up\n\n## Installation Documentation\n- Equipment specifications and classifications\n- Installation drawings and beam paths\n- Safety system specifications\n- Hand-over documentation\n\n## Audit and Inspection Records\n- Self-inspection checklists\n- External audit reports\n- Corrective action tracking\n- Compliance matrices",
+      "component": "DocumentationTemplateGallery",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "Documentation Template Selection",
+      "content": "Match each scenario with the appropriate documentation templates:\n\n**Scenario 1**: New laser installation at a music venue requiring complete safety documentation package.\n\n**Scenario 2**: Annual review of existing laser safety program to ensure compliance with updated standards.\n\n**Scenario 3**: Temporary laser show at a corporate event with limited setup time.\n\n**Scenario 4**: Investigation of a near-miss incident involving unexpected beam reflection.\n\nSelect the most relevant templates from the gallery for each scenario.",
+      "component": "ChecklistGenerator",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-8-4",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "Documentation Requirements Guide",
+      "path": "/docs/course-8-standards/documentation-guide.pdf"
+    },
+    {
+      "type": "interactive",
+      "title": "Documentation Templates",
+      "component": "DocumentationTemplateGallery"
+    },
+    {
+      "type": "interactive",
+      "title": "Checklist Generator",
+      "component": "ChecklistGenerator"
+    }
+  ],
+  "keyTakeaways": [
+    "Documentation demonstrates due diligence and compliance with standards",
+    "Risk assessment is the foundation of all laser safety documentation",
+    "SOPs must be specific to your installation and operations",
+    "Training records are essential for proving competency"
+  ],
+  "nextModule": "module-8-5",
+  "prerequisites": ["module-8-3"],
+  "difficulty": "advanced"
+}

@@ -1,0 +1,245 @@
+{
+  "component_id": "iec_vs_fda",
+  "name": "IEC vs FDA Comparison Tool",
+  "version": "1.0.0",
+  "type": "comparison_table",
+  "description": "Side-by-side comparison of IEC 60825-1 and FDA 21 CFR 1040.10 laser classification systems",
+  "pedagogical_approach": {
+    "concept_first": true,
+    "side_by_side_comparison": true,
+    "scenario_based_learning": true
+  },
+  "comparison_views": [
+    {
+      "id": "overview",
+      "title": "Overview Comparison",
+      "description": "High-level differences between the two standards",
+      "table": {
+        "headers": ["Aspect", "IEC 60825-1", "FDA 21 CFR 1040.10"],
+        "rows": [
+          {
+            "aspect": "Jurisdiction",
+            "iec": "International (most countries outside US)",
+            "fda": "United States only"
+          },
+          {
+            "aspect": "Standard Type",
+            "iec": "Product safety standard",
+            "fda": "Mandatory federal regulation"
+          },
+          {
+            "aspect": "Current Edition",
+            "iec": "IEC 60825-1:2014 (Edition 3.0)",
+            "fda": "21 CFR 1040.10 (1985, with amendments)"
+          },
+          {
+            "aspect": "Number of Classes",
+            "iec": "7 classes (1, 1M, 2, 2M, 3R, 3B, 4)",
+            "fda": "6 classes (I, IIa, II, IIIa, IIIb, IV)"
+          },
+          {
+            "aspect": "Harmonization",
+            "iec": "Base standard",
+            "fda": "Laser Notice 50 allows IEC alternative"
+          },
+          {
+            "aspect": "Measurement Apertures",
+            "iec": "7 mm pupil (eye), 3.5 mm (skin)",
+            "fda": "50 mm aperture for some measurements"
+          }
+        ]
+      }
+    },
+    {
+      "id": "class_equivalents",
+      "title": "Class Equivalents",
+      "description": "Approximate mapping between IEC and FDA classes",
+      "table": {
+        "headers": ["IEC Class", "FDA Class", "Key Differences", "Notes"],
+        "rows": [
+          {
+            "iec": "Class 1",
+            "fda": "Class I",
+            "differences": "Essentially equivalent",
+            "notes": "Safe under all conditions"
+          },
+          {
+            "iec": "Class 1M",
+            "fda": "Class IIa or I",
+            "differences": "FDA has no direct 1M equivalent",
+            "notes": "IEC provides specific guidance for optics hazard"
+          },
+          {
+            "iec": "Class 2",
+            "fda": "Class II",
+            "differences": "Essentially equivalent",
+            "notes": "Blink reflex protection for visible only"
+          },
+          {
+            "iec": "Class 2M",
+            "fda": "Class II",
+            "differences": "FDA has no M-suffix",
+            "notes": "IEC provides optics caution guidance"
+          },
+          {
+            "iec": "Class 3R",
+            "fda": "Class IIIa",
+            "differences": "AEL limits slightly different",
+            "notes": "3R is approximately 5× Class 2 AEL"
+          },
+          {
+            "iec": "Class 3B",
+            "fda": "Class IIIb",
+            "differences": "Essentially equivalent",
+            "notes": "Direct viewing hazardous"
+          },
+          {
+            "iec": "Class 4",
+            "fda": "Class IV",
+            "differences": "Essentially equivalent",
+            "notes": "All exposure hazardous"
+          }
+        ]
+      }
+    },
+    {
+      "id": "labeling",
+      "title": "Labeling Requirements",
+      "description": "Comparison of warning label requirements",
+      "table": {
+        "headers": ["Element", "IEC 60825-1", "FDA 21 CFR 1040.10"],
+        "rows": [
+          {
+            "element": "Class 1 Labeling",
+            "iec": "No warning label required",
+            "fda": "No warning label required"
+          },
+          {
+            "element": "Class 2/3R Labeling",
+            "iec": "LASER RADIATION - DO NOT STARE INTO BEAM",
+            "fda": "AVOID DIRECT EYE EXPOSURE"
+          },
+          {
+            "element": "Class 3B Labeling",
+            "iec": "LASER RADIATION - AVOID DIRECT EXPOSURE TO BEAM",
+            "fda": "AVOID DIRECT EXPOSURE TO BEAM"
+          },
+          {
+            "element": "Class 4 Labeling",
+            "iec": "LASER RADIATION - AVOID EYE OR SKIN EXPOSURE TO DIRECT OR SCATTERED RADIATION",
+            "fda": "AVOID EYE OR SKIN EXPOSURE TO DIRECT OR SCATTERED RADIATION"
+          },
+          {
+            "element": "Aperture Label",
+            "iec": "Required for Class 3B/4",
+            "fda": "Required for Class IIIb/IV"
+          },
+          {
+            "element": "Logotype",
+            "iec": "IEC 60417-6040 sunburst symbol",
+            "fda": "Sunburst symbol similar"
+          }
+        ]
+      }
+    }
+  ],
+  "scenario_analysis": [
+    {
+      "id": "scenario_1",
+      "title": "Consumer Laser Pointer",
+      "description": "A 5 mW, 650 nm laser pointer for presentations",
+      "iec_classification": "Class 3R",
+      "fda_classification": "Class IIIa",
+      "analysis": "Both systems classify this similarly. IEC uses Class 3R (more descriptive), FDA uses Class IIIa. Both require warning labels."
+    },
+    {
+      "id": "scenario_2",
+      "title": "Enclosed Industrial System",
+      "description": "A 2 kW fiber laser in a fully enclosed cutting system",
+      "iec_classification": "Class 1 (enclosed)",
+      "fda_classification": "Class I (enclosed)",
+      "analysis": "Both standards allow high-power enclosed systems to be Class 1/I. The internal laser would be Class 4/IV, but enclosure makes it Class 1/I."
+    },
+    {
+      "id": "scenario_3",
+      "title": "Divergent Fiber Source",
+      "description": "A fiber-coupled laser with high divergence output",
+      "iec_classification": "Class 1M or Class 3B",
+      "fda_classification": "Class I or IIIb (no M distinction)",
+      "analysis": "IEC provides M-suffix for optics hazard. FDA would classify based on accessible power without considering optical instrument use."
+    }
+  ],
+  "laser_notice_50": {
+    "title": "FDA Laser Notice 50",
+    "description": "Harmonization between FDA and IEC standards",
+    "key_points": [
+      "Allows manufacturers to use IEC 60825-1 instead of 21 CFR 1040.10",
+      "Applies to laser products manufactured after certain dates",
+      "Maintains equivalent safety levels",
+      "Simplifies global product compliance"
+    ],
+    "conditions": [
+      "Product must comply with all applicable IEC requirements",
+      "Labeling must meet IEC requirements (acceptable to FDA)",
+      "Certain FDA-specific requirements still apply",
+      "Variance may still be required for some products"
+    ],
+    "benefits": [
+      "Single design for global markets",
+      "Reduced testing burden",
+      "Streamlined compliance",
+      "International consistency"
+    ]
+  },
+  "interactive_features": {
+    "class_mapper": {
+      "type": "interactive_converter",
+      "description": "Convert between IEC and FDA classifications",
+      "iec_to_fda": {
+        "1": "I",
+        "1M": "I or IIa",
+        "2": "II",
+        "2M": "II",
+        "3R": "IIIa",
+        "3B": "IIIb",
+        "4": "IV"
+      },
+      "fda_to_iec": {
+        "I": "1",
+        "IIa": "1M (approximate)",
+        "II": "2",
+        "IIIa": "3R",
+        "IIIb": "3B",
+        "IV": "4"
+      }
+    },
+    "label_viewer": {
+      "type": "visual_comparison",
+      "description": "Compare required warning labels side-by-side"
+    }
+  },
+  "teaching_elements": {
+    "key_insight": {
+      "title": "Why Two Standards?",
+      "content": "The FDA regulations predate the current IEC standard and were designed for US-specific regulatory needs. IEC 60825-1 was developed for international harmonization. Laser Notice 50 bridges the gap, allowing US manufacturers to use the international standard while maintaining safety equivalence.",
+      "implication": "Understanding both systems is essential for: (1) Manufacturing for global markets, (2) Importing/exporting laser products, (3) International laser safety operations"
+    },
+    "common_confusion": {
+      "title": "Common Points of Confusion",
+      "points": [
+        {
+          "confusion": "Class 3R vs Class IIIa",
+          "clarification": "3R is the IEC term (R = Reduced requirements), IIIa is FDA. They are approximately equivalent but AEL limits differ slightly."
+        },
+        {
+          "confusion": "M-suffix handling",
+          "clarification": "FDA has no direct equivalent to IEC's M-suffix. Products that would be Class 1M under IEC may be Class I or IIa under FDA."
+        },
+        {
+          "confusion": "Which standard to follow",
+          "clarification": "In the US, FDA has jurisdiction. For international markets, IEC applies. Laser Notice 50 allows IEC compliance in the US for many products."
+        }
+      ]
+    }
+  }
+}

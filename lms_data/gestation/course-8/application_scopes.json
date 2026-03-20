@@ -1,0 +1,241 @@
+{
+  "gestation_type": "Application Scopes and Boundaries",
+  "course": "Course 8: Entertainment Technology Standards",
+  "standards_scope_analysis": {
+    "ansi_z136_series": {
+      "primary_standard": "ANSI Z136.1",
+      "title": "Safe Use of Lasers",
+      "scope": {
+        "covered": [
+          "All laser use except intentionally directed at audiences",
+          "Industrial applications",
+          "Research and development",
+          "Medical applications",
+          "Educational settings"
+        ],
+        "excluded": [
+          "Intentional audience exposure (covered by Z136.10)"
+        ]
+      },
+      "entertainment_relevance": "Foundation document for laser safety principles",
+      "subsidiary_standards": [
+        {
+          "standard": "Z136.2",
+          "title": "Optical Fiber Communication Systems",
+          "scope": "Safe use of lasers in optical fiber systems"
+        },
+        {
+          "standard": "Z136.3",
+          "title": "Health Care Facilities",
+          "scope": "Medical laser applications"
+        },
+        {
+          "standard": "Z136.8",
+          "title": "Research, Development, and Testing",
+          "scope": "R&D laser environments"
+        },
+        {
+          "standard": "Z136.10",
+          "title": "Entertainment - Audience Scanning",
+          "scope": "Intentional audience exposure to laser radiation"
+        }
+      ]
+    },
+    "fda_21_cfr_1040": {
+      "title": "Performance Standards for Light-Emitting Products",
+      "scope": {
+        "covered": [
+          "Manufacture of laser products",
+          "Sale and distribution of laser products",
+          "Importation of laser products",
+          "Demonstration and entertainment use"
+        ],
+        "excluded": [
+          "End-user operational safety (user responsibility)",
+          "Non-product laser systems (custom builds)"
+        ]
+      },
+      "product_classes": {
+        "class_i": {
+          "description": "Inherently safe or enclosed",
+          "requirements": "Minimal labeling"
+        },
+        "class_ii": {
+          "description": "Low power visible",
+          "requirements": "CAUTION label, blink reflex protection"
+        },
+        "class_iii": {
+          "subclasses": {
+            "iiia": "1-5 mW, momentary exposure generally safe",
+            "iiib": "5-500 mW, immediate hazard"
+          },
+          "requirements": "DANGER labels, safety interlocks, key control"
+        },
+        "class_iv": {
+          "description": "High power, all exposure modes hazardous",
+          "requirements": "DANGER labels, emission indicator, beam attenuator"
+        }
+      }
+    },
+    "ansi_e1_46": {
+      "title": "Entertainment Technology - Laser Safety in Entertainment",
+      "scope": {
+        "covered": [
+          "Laser use in live entertainment venues",
+          "Audience scanning applications",
+          "Performance venues (permanent and temporary)",
+          "Touring productions",
+          "Outdoor laser displays"
+        ],
+        "excluded": [
+          "Non-entertainment laser applications",
+          "Industrial laser processing",
+          "Medical laser procedures"
+        ]
+      },
+      "applicability": {
+        "venues": [
+          "Concert halls and arenas",
+          "Theaters",
+          "Nightclubs and discotheques",
+          "Amusement parks",
+          "Outdoor festival sites",
+          "Television studios",
+          "Film production sets"
+        ],
+        "personnel": [
+          "Laser operators",
+          "Laser Safety Officers",
+          "Venue managers",
+          "Production managers",
+          "Performers exposed to beams"
+        ]
+      }
+    },
+    "esta_standards_program": {
+      "scope": {
+        "covered": [
+          "Entertainment industry technical standards",
+          "Control protocols (DMX, ACN)",
+          "Rigging and machinery",
+          "Event safety",
+          "Electrical power systems",
+          "Photometric measurement"
+        ],
+        "process": "ANSI-accredited consensus development"
+      },
+      "laser_related": {
+        "e1_46": "Laser safety specific to entertainment",
+        "event_safety": "General event safety including laser considerations",
+        "control_protocols": "ACN/DMX for laser control systems"
+      }
+    }
+  },
+  "application_boundaries": {
+    "indoor_entertainment": {
+      "applicable_standards": ["ANSI Z136.1", "ANSI E1.46", "FDA 21 CFR 1040"],
+      "specific_considerations": [
+        "Venue size and beam termination",
+        "Reflective surfaces identification",
+        "Audience access control",
+        "Performer exposure zones",
+        "HVAC and fire suppression interactions"
+      ],
+      "jurisdiction": "Federal (FDA), State, Local"
+    },
+    "outdoor_entertainment": {
+      "applicable_standards": ["ANSI Z136.1", "ANSI E1.46", "FDA 21 CFR 1040", "FAA Orders"],
+      "specific_considerations": [
+        "Airspace clearance and FAA coordination",
+        "Atmospheric effects on beam propagation",
+        "Weather conditions",
+        "Beam termination strategies",
+        "Public access control",
+        "Vehicular traffic considerations"
+      ],
+      "jurisdiction": "Federal (FDA, FAA), State, Local"
+    },
+    "touring_productions": {
+      "applicable_standards": ["ANSI Z136.1", "ANSI E1.46", "FDA 21 CFR 1040"],
+      "specific_considerations": [
+        "Multi-jurisdiction compliance",
+        "Portable installation safety",
+        "Venue assessment per location",
+        "Traveling documentation",
+        "Local authority notifications"
+      ],
+      "jurisdiction": "Per venue location"
+    },
+    "permanent_installations": {
+      "applicable_standards": ["ANSI Z136.1", "ANSI E1.46", "FDA 21 CFR 1040", "Local building codes"],
+      "specific_considerations": [
+        "Building code compliance",
+        "Fire marshal approval",
+        "Electrical code compliance",
+        "Long-term maintenance procedures",
+        "Operator training programs"
+      ],
+      "jurisdiction": "Federal, State, Local building/fire"
+    }
+  },
+  "exposure_scenarios": {
+    "audience_scanning": {
+      "description": "Intentional laser beam exposure of audience members",
+      "applicable_standards": ["ANSI Z136.10", "ANSI E1.46"],
+      "requirements": [
+        "MPE must not be exceeded",
+        "Scan failure detection mandatory",
+        "Measurement verification required",
+        "Variance may be required (FDA)"
+      ]
+    },
+    "performer_exposure": {
+      "description": "Performers working in or near laser beams",
+      "applicable_standards": ["ANSI Z136.1", "ANSI E1.46"],
+      "requirements": [
+        "Choreographed exposure control",
+        "Training on avoidance techniques",
+        "MPE compliance for intentional exposure"
+      ]
+    },
+    "worker_exposure": {
+      "description": "Technicians, LSOs, and installation crew",
+      "applicable_standards": ["ANSI Z136.1", "OSHA"],
+      "requirements": [
+        "PPE as appropriate",
+        "Controlled access zones",
+        "Training on specific hazards",
+        "Administrative controls"
+      ]
+    },
+    "incidental_public": {
+      "description": "Members of public near but not part of show",
+      "applicable_standards": ["ANSI Z136.1", "ANSI E1.46"],
+      "requirements": [
+        "Separation distances maintained",
+        "Barriers and warning signage",
+        "No accessible beams above MPE"
+      ]
+    }
+  },
+  "exclusions_and_limitations": {
+    "not_covered_by_entertainment_standards": [
+      "Industrial laser material processing",
+      "Medical/surgical laser procedures",
+      "Military laser applications",
+      "Telecommunication laser systems",
+      "Consumer laser products (pointers, etc.)",
+      "Laboratory/research laser use (non-entertainment)"
+    ],
+    "standards_limitations": [
+      "Minimum requirements only - can go beyond",
+      "Subject to revision and updates",
+      "May be superseded by more stringent regulations",
+      "Do not guarantee absolute safety",
+      "Professional judgment always required"
+    ]
+  },
+  "version": "1.0",
+  "generated_by": "PDF Elite Processor Agent #19",
+  "timestamp": "2026-03-19T15:46:00Z"
+}

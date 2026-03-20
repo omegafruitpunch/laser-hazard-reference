@@ -1,0 +1,309 @@
+{
+  "course_id": "course-5",
+  "course_title": "International Regulations",
+  "generated_by": "PDF Elite Processor Agent #13",
+  "generation_timestamp": "2026-03-19T15:46:00Z",
+  "description": "Supplemental quiz questions based on EU, UK, and Canada regulatory PDFs",
+  "questions": [
+    {
+      "id": "c5-s1",
+      "q": "Which countries classify as 'Status A' where audience scanning requires explicit permit permission?",
+      "options": [
+        "Belgium, Canada, France",
+        "Austria, Finland, Germany, Sweden, Switzerland, UK",
+        "Japan, Luxembourg, Poland",
+        "China, Russia, UAE"
+      ],
+      "answer": 1,
+      "explanation": "Status A countries requiring permits include Austria, Finland, Germany, Scotland, Sweden, Switzerland, United Kingdom, and United States.",
+      "source": "eu-directives.pdf - Page 1",
+      "category": "Regional Compliance",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "c5-s2",
+      "q": "What is the maximum MPE level for audience scanning in Finland according to STUK regulations?",
+      "options": [
+        "10 W/m² (1 mW/cm²)",
+        "2.5 mW/cm²",
+        "1 mW/cm²",
+        "25 mW/cm²"
+      ],
+      "answer": 2,
+      "explanation": "Finland's STUK permits for audience scanning specify MPE as low as 1mW/cm² (equivalent to 10 W/m²), with special permits sometimes granted at this level.",
+      "source": "eu-directives.pdf - Page 3",
+      "category": "MPE Requirements",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "c5-s3",
+      "q": "Under Swiss FOPH regulations, what is the minimum vertical separation for Competence Level 1 events (no laser in audience area)?",
+      "options": [
+        "2 meters",
+        "2.5 meters",
+        "3 meters",
+        "6 meters"
+      ],
+      "answer": 2,
+      "explanation": "Swiss Competence Level 1 applies to events with no laser light in audience area, defined as lasers kept 3 meters above floor or 2.5 meters laterally from audience.",
+      "source": "eu-directives.pdf - Page 5-6",
+      "category": "Regional Compliance",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "c5-s4",
+      "q": "Which organization developed the 'Safety of Display Lasers' guidance that replaced HS(G)95 in the UK?",
+      "options": [
+        "HSE alone",
+        "PLASA and industry representatives",
+        "Civil Aviation Authority",
+        "British Standards Institution"
+      ],
+      "answer": 1,
+      "explanation": "The Safety of Display Lasers guidance (2016) was written by representatives from leading trade organisations, venues and laser companies in the UK, with PLASA being a key contributor.",
+      "source": "uk-regulations.pdf - Page 2-3",
+      "category": "UK Regulations",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "c5-s5",
+      "q": "In the UK, what is the minimum separation distance for supervised laser installations above audience level?",
+      "options": [
+        "2 meters vertical, 1.5 meters lateral",
+        "3 meters vertical, 2.5 meters lateral",
+        "4 meters vertical, 3 meters lateral",
+        "6 meters vertical, 2.5 meters lateral"
+      ],
+      "answer": 1,
+      "explanation": "For supervised installations, beams should be at least 3m above and 2.5m laterally from audience. For unsupervised installations, vertical separation increases to 6m.",
+      "source": "uk-regulations.pdf - Page 16",
+      "category": "Safety Zones",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "c5-s6",
+      "q": "According to UK guidance, what MPE value should be used for children when wavelength is below 500nm?",
+      "options": [
+        "Same as adults - 1 mW/cm²",
+        "Reduced by factor of 5",
+        "Reduced by factor of 10",
+        "Increased by factor of 2"
+      ],
+      "answer": 2,
+      "explanation": "For performances intended for children, the MPE level should be reduced by a factor of 10 for wavelengths below 500nm.",
+      "source": "uk-regulations.pdf - Page 22",
+      "category": "MPE Requirements",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "c5-s7",
+      "q": "Which Canadian federal legislation governs laser products?",
+      "options": [
+        "Canada Safety Standards Act",
+        "Radiation Emitting Devices Act (REDA)",
+        "Health Protection Act",
+        "Nuclear Safety and Control Act"
+      ],
+      "answer": 1,
+      "explanation": "Health Canada regulates laser products under the Radiation Emitting Devices Act (REDA), R.S.C., 1985, c. R-1.",
+      "source": "canada-regulations.pdf - Page 1",
+      "category": "Canadian Regulations",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "c5-s8",
+      "q": "What is the maximum MPE limit for indoor laser shows in Canada?",
+      "options": [
+        "1 mW/cm²",
+        "2.5 mW/cm²",
+        "5 mW/cm²",
+        "10 mW/cm²"
+      ],
+      "answer": 1,
+      "explanation": "Indoor shows in Canada do not require authorization, but there can be no human eye exposure beyond 2.5 mW/cm² according to Canadian law.",
+      "source": "eu-directives.pdf - Page 2",
+      "category": "MPE Requirements",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "c5-s9",
+      "q": "For outdoor laser shows in Canada, which form must be submitted to Transport Canada?",
+      "options": [
+        "FAA Form 3632",
+        "Notice of Proposal to Conduct Outdoor Laser Operation(s)",
+        "REDA Compliance Declaration",
+        "CAA CAP 736 Form"
+      ],
+      "answer": 1,
+      "explanation": "Transport Canada requires submission of 'Notice of Proposal to Conduct Outdoor Laser Operation(s)' for outdoor shows, similar to FAA AC 70-1.",
+      "source": "eu-directives.pdf - Page 2",
+      "category": "Canadian Regulations",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "c5-s10",
+      "q": "Under Canada's Radiation Emitting Devices Act, what is the maximum penalty for contravention of Sections 4-6 on indictment?",
+      "options": [
+        "$1,000 fine",
+        "$5,000 fine",
+        "$10,000 fine",
+        "$50,000 fine"
+      ],
+      "answer": 2,
+      "explanation": "Section 14 of REDA specifies that contravention of Sections 4-6 on conviction on indictment carries a fine not exceeding $10,000.",
+      "source": "canada-regulations.pdf - Page 18",
+      "category": "Canadian Regulations",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "c5-s11",
+      "q": "Which UK government body was consulted in the production of the 'Safety of Display Lasers' guidance?",
+      "options": [
+        "Civil Aviation Authority only",
+        "Health and Safety Executive",
+        "Public Health England only",
+        "British Standards Institution"
+      ],
+      "answer": 1,
+      "explanation": "The Health and Safety Executive (HSE) was consulted in the production of the Safety of Display Lasers guidance, with a foreword from HSE included.",
+      "source": "uk-regulations.pdf - Page 2",
+      "category": "UK Regulations",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "c5-s12",
+      "q": "What is the eye aversion response time used for MPE calculations in the UK?",
+      "options": [
+        "0.1 seconds",
+        "0.25 seconds",
+        "0.5 seconds",
+        "1 second"
+      ],
+      "answer": 1,
+      "explanation": "The aversion response time of 0.25 seconds is used for CW beams in certain circumstances, particularly for employees with safety training during setup.",
+      "source": "uk-regulations.pdf - Page 22",
+      "category": "MPE Requirements",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "c5-s13",
+      "q": "In which EU member state is indoor audience scanning 'not allowed under almost all circumstances'?",
+      "options": [
+        "Germany",
+        "France (indoors)",
+        "United Kingdom",
+        "Netherlands"
+      ],
+      "answer": 1,
+      "explanation": "France (indoors) is classified as Status E where audience scanning is not allowed under almost all circumstances. Outdoor shows in France are Status D (allowed without permit).",
+      "source": "eu-directives.pdf - Page 1",
+      "category": "Regional Compliance",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "c5-s14",
+      "q": "According to the UK's Safety of Display Lasers guidance, who should have 'executive rather than just advisory' responsibility?",
+      "options": [
+        "The venue manager",
+        "The Laser Safety Officer (LSO)",
+        "The show promoter",
+        "The Laser Safety Adviser"
+      ],
+      "answer": 1,
+      "explanation": "The LSO should have executive rather than just advisory responsibility for day-to-day management, operation and maintenance of installations.",
+      "source": "uk-regulations.pdf - Page 9-10",
+      "category": "Roles and Responsibilities",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "c5-s15",
+      "q": "Under Canada's REDA, how long does a manufacturer/importer have to notify the Minister after becoming aware of a device defect?",
+      "options": [
+        "24 hours",
+        "7 days",
+        "Forthwith (immediately)",
+        "30 days"
+      ],
+      "answer": 2,
+      "explanation": "Section 6 of REDA requires manufacturers or importers to notify the Minister 'forthwith' upon becoming aware of non-compliance or defect creating health/safety risk.",
+      "source": "canada-regulations.pdf - Page 5",
+      "category": "Canadian Regulations",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "c5-s16",
+      "q": "What system does the UK guidance recommend for scan-fail safety?",
+      "options": [
+        "Manual monitoring only",
+        "PASS (Professional Audience Safety System) and SafetyScan",
+        "Software blanking alone",
+        "Visual inspection by venue staff"
+      ],
+      "answer": 1,
+      "explanation": "The UK guidance mentions PASS (Professional Audience Safety System) and SafetyScan as systems that could lead to better understanding and safer shows.",
+      "source": "eu-directives.pdf - Page 7",
+      "category": "Safety Systems",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "c5-s17",
+      "q": "What is the standard measurement aperture diameter for MPE compliance testing in the UK?",
+      "options": [
+        "3.5 mm",
+        "7 mm",
+        "10 mm",
+        "15 mm"
+      ],
+      "answer": 1,
+      "explanation": "The instrument for MPE comparison should have an aperture of 7mm diameter, representing a fully dilated pupil.",
+      "source": "uk-regulations.pdf - Page 22",
+      "category": "Measurement Standards",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "c5-s18",
+      "q": "Which city in Scotland is noted for having particularly strict laser show requirements?",
+      "options": [
+        "Edinburgh",
+        "Aberdeen",
+        "Glasgow",
+        "Dundee"
+      ],
+      "answer": 2,
+      "explanation": "Glasgow Council is noted as being particularly tricky to work with, insisting that audiences not be exposed to any diffuse reflection from surfaces targeted by scanned beams.",
+      "source": "eu-directives.pdf - Page 4",
+      "category": "Regional Compliance",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "c5-s19",
+      "q": "For laser shows in the UK, how often should E-stop controls ideally be tested?",
+      "options": [
+        "Weekly",
+        "Before each performance",
+        "Monthly",
+        "Annually"
+      ],
+      "answer": 1,
+      "explanation": "The UK guidance states that E-stops should ideally be tested before each performance to ensure correct operation.",
+      "source": "uk-regulations.pdf - Page 19",
+      "category": "Safety Procedures",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "c5-s20",
+      "q": "Under what circumstances can an inspector enter a dwelling-house under Canada's REDA?",
+      "options": [
+        "At any reasonable time without notice",
+        "Only with occupant consent or warrant",
+        "With 24-hour advance notice",
+        "Only during business hours"
+      ],
+      "answer": 1,
+      "explanation": "Section 8(2) of REDA specifies that an inspector may not enter a dwelling-house without the occupant's consent, except under authority of a warrant issued by a justice of the peace.",
+      "source": "canada-regulations.pdf - Page 7",
+      "category": "Canadian Regulations",
+      "difficulty": "Medium"
+    }
+  ]
+}

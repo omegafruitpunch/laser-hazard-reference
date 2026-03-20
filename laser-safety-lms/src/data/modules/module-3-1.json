@@ -1,0 +1,51 @@
+{
+  "id": "module-3-1",
+  "courseId": "course-3",
+  "title": "Ocular Hazards & Anatomy",
+  "description": "How different laser wavelengths affect different parts of the eye — cornea, lens, and retina.",
+  "order": 1,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "The Eye: A Precise Instrument",
+      "content": "The human eye is an extraordinary optical system. Understanding its structure is crucial because different parts absorb different wavelengths, leading to different injury patterns and symptoms.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "Ocular Anatomy and Laser Effects",
+      "content": "Laser eye injuries depend critically on wavelength due to varying absorption in different ocular structures. The cornea absorbs UV and far-IR wavelengths, the lens absorbs UV-A, and the retina is most vulnerable to visible and near-IR light. The eyes optics focus visible and near-IR laser light onto the retina, concentrating the beam energy more than 100,000 times, which can cause permanent damage without any pain sensation.",
+      "component": "EyeAnatomyExplorer",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "Wavelength Analysis",
+      "content": "For each wavelength, identify the primary structure at risk:\n\n1. 355nm (UV) - used in some laser shows\n2. 532nm (green) - common DPSS laser\n3. 808nm (near-IR) - diode laser pump source\n4. 1064nm (near-IR) - Nd:YAG fundamental\n5. 10.6μm (far-IR) - CO2 laser",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-3-1",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "Ocular Hazards Reference",
+      "path": "/docs/course-3-bio-hazards/ocular-hazards.pdf"
+    }
+  ],
+  "keyTakeaways": [
+    "The retina is the most vulnerable ocular structure for visible and near-IR wavelengths",
+    "UV lasers (200-400nm) primarily damage the cornea and lens",
+    "Far-IR lasers (>1400nm) are absorbed by water in the cornea and vitreous",
+    "Retinal damage is often painless and permanent"
+  ],
+  "nextModule": "module-3-2",
+  "prerequisites": [],
+  "difficulty": "advanced"
+}

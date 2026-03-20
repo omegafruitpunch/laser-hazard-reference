@@ -1,0 +1,282 @@
+{
+  "module_id": "module-7.5",
+  "course_id": "course-7",
+  "course_name": "Event Safety",
+  "title": "Weather Protocols & Evacuation",
+  "subtitle": "Weather Decision-Making & Emergency Response",
+  "description": "Master weather decision-making with interactive threshold tools, evacuation planning, and real-world scenario training for severe weather events at live entertainment venues.",
+  "version": "2.0",
+  "last_updated": "2026-03-19",
+  "polished_by": "UI/UX Agent - Event Safety Edition",
+  "duration_minutes": 25,
+  "difficulty": "intermediate",
+  "prerequisites": ["module-7.4"],
+  "next_module": "module-7.6",
+  "ui_theme": {
+    "industry": "event_production",
+    "weather_focus": true,
+    "color_palette": {
+      "primary": "#FF6B00",
+      "primary_dark": "#CC5500",
+      "secondary": "#1A1A2E",
+      "accent": "#FFD700",
+      "monitor": "#22C55E",
+      "caution": "#EAB308",
+      "warning": "#F97316",
+      "critical": "#DC2626",
+      "wind": "#3B82F6",
+      "lightning": "#FACC15",
+      "tornado": "#7C3AED",
+      "heat": "#F97316",
+      "cold": "#06B6D4",
+      "background": "#0F0F1A",
+      "surface": "#1E1E2E",
+      "text": "#FFFFFF",
+      "text_secondary": "#A1A1AA"
+    },
+    "weather_status_colors": {
+      "monitor": { "color": "#22C55E", "icon": "cloud", "label": "MONITOR" },
+      "caution": { "color": "#EAB308", "icon": "cloud-alert", "label": "CAUTION" },
+      "warning": { "color": "#F97316", "icon": "cloud-lightning", "label": "WARNING" },
+      "critical": { "color": "#DC2626", "icon": "cloud-lightning", "label": "CRITICAL" }
+    },
+    "alert_signals": {
+      "immediate_evacuation": { "signal": "2 long air horn blasts", "color": "#DC2626", "condition": "50+ MPH or tornado" },
+      "show_delay": { "signal": "1 long air horn blast", "color": "#F97316", "condition": "40+ MPH winds" },
+      "radio_alert": { "signal": "Radio communication", "color": "#EAB308", "condition": "Monitor/prepare" },
+      "all_clear": { "signal": "Radio alert", "color": "#22C55E", "condition": "Weather passed" }
+    },
+    "weather_icons": {
+      "wind": "💨",
+      "lightning": "⚡",
+      "rain": "🌧️",
+      "tornado": "🌪️",
+      "heat": "🌡️",
+      "cold": "❄️"
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "lo-7.5-1",
+      "text": "Identify critical weather thresholds and appropriate responses",
+      "icon": "thermometer",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.5-2",
+      "text": "Execute proper evacuation procedures for weather scenarios",
+      "icon": "cloud-rain-wind",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.5-3",
+      "text": "Understand alert methods and communication protocols",
+      "icon": "radio",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.5-4",
+      "text": "Apply decision matrix tools for weather safety",
+      "icon": "table",
+      "priority": "high"
+    },
+    {
+      "id": "lo-7.5-5",
+      "text": "Make time-critical evacuation decisions under pressure",
+      "icon": "timer",
+      "priority": "critical"
+    }
+  ],
+  "content_structure": {
+    "warmup": {
+      "title": "Weather Awareness",
+      "duration": 3,
+      "icon": "cloud-sun",
+      "activities": ["Weather hazard overview", "Industry weather incidents", "Alert signal introduction"]
+    },
+    "core": {
+      "title": "Weather Thresholds & Alerts",
+      "duration": 8,
+      "icon": "cloud-lightning",
+      "activities": ["Interactive decision matrix", "Wind threshold protocols", "Lightning safety procedures"]
+    },
+    "practice": {
+      "title": "Weather Decision Simulator",
+      "duration": 10,
+      "icon": "activity",
+      "activities": ["Thunderstorm approach scenario", "Sudden wind event scenario", "Multi-factor decisions"]
+    },
+    "challenge": {
+      "title": "Evacuation Commander",
+      "duration": 4,
+      "icon": "shield",
+      "activities": ["Time-pressured decisions", "Route capacity analysis"]
+    }
+  },
+  "weather_thresholds": {
+    "critical": {
+      "wind": "50+ MPH or tornado warning",
+      "alert": "2 long air horn blasts",
+      "action": "Immediate evacuation to shelter",
+      "color": "#DC2626",
+      "icon": "🌪️"
+    },
+    "warning": {
+      "wind": "40+ MPH",
+      "alert": "1 long air horn blast",
+      "action": "Show delay; secure equipment",
+      "color": "#F97316",
+      "icon": "💨"
+    },
+    "caution": {
+      "lightning": "Within 8 miles",
+      "wind": "Nearing 30 MPH",
+      "action": "Prepare for shelter; secure equipment",
+      "color": "#EAB308",
+      "icon": "⚡"
+    },
+    "monitor": {
+      "lightning": "Within 20 miles",
+      "wind": "20+ MPH",
+      "action": "Monitor conditions; prepare actions",
+      "color": "#22C55E",
+      "icon": "👁️"
+    }
+  },
+  "interactive_components": {
+    "weather_decision_matrix": {
+      "type": "interactive_matrix",
+      "title": "🌦️ Weather Decision Matrix",
+      "description": "Weather protocol tool showing actions by condition and production area",
+      "thresholds": ["monitor", "caution", "warning", "critical"],
+      "production_areas": ["stage", "led_screens", "audio", "lights", "festival_show"],
+      "features": ["threshold_filtering", "area_filtering", "action_comparison"],
+      "color_coded": true
+    },
+    "weather_simulator": {
+      "type": "progressive_scenario",
+      "title": "⛈️ Weather Decision Simulator",
+      "description": "Real-time weather scenario with progressively worsening conditions",
+      "scenarios": ["approaching_thunderstorm", "sudden_wind_event"],
+      "features": ["live_radar_simulation", "decision_timing", "condition_progression"],
+      "time_pressure": true
+    },
+    "evacuation_planner": {
+      "type": "route_planning",
+      "title": "Evacuation Route Planner",
+      "description": "Interactive evacuation route mapping with capacity analysis",
+      "routes": 4,
+      "features": ["capacity_calculation", "timing_estimates", "accessibility_check"]
+    },
+    "alert_signal_trainer": {
+      "type": "matching_exercise",
+      "title": "Alert Signal Recognition",
+      "description": "Learn and practice weather alert signals",
+      "signals": ["immediate_evacuation", "show_delay", "all_clear", "radio_alert"],
+      "audio_enabled": true
+    }
+  },
+  "emergency_elements": {
+    "quick_access_protocols": [
+      {
+        "id": "lightning-protocol",
+        "title": "⚡ LIGHTNING SAFETY PROTOCOL",
+        "icon": "zap",
+        "priority": "critical",
+        "color": "warning",
+        "thresholds": [
+          { "distance": "20 miles", "action": "Monitor storm approach", "level": "monitor" },
+          { "distance": "8 miles", "action": "Show delay - shelter advisory", "level": "critical" },
+          { "distance": "0 miles", "action": "All personnel in shelter", "level": "critical" }
+        ]
+      },
+      {
+        "id": "wind-protocol",
+        "title": "💨 WIND RESPONSE PROTOCOL",
+        "icon": "wind",
+        "priority": "critical",
+        "thresholds": [
+          { "speed": "20+ MPH", "action": "Monitor conditions", "level": "monitor" },
+          { "speed": "30 MPH", "action": "Land anchors; flatten trusses", "level": "caution" },
+          { "speed": "40+ MPH", "action": "Show delay; secure equipment", "level": "warning" },
+          { "speed": "50+ MPH", "action": "IMMEDIATE EVACUATION", "level": "critical" }
+        ]
+      }
+    ],
+    "emergency_buttons": [
+      {
+        "id": "weather-evacuate",
+        "label": "WEATHER EVACUATION",
+        "color": "critical",
+        "icon": "cloud-lightning",
+        "action": "initiate_weather_evacuation",
+        "confirmation_required": true,
+        "style": "pulsing_critical",
+        "triggers": ["50+ MPH wind", "tornado warning", "lightning within 8 miles"]
+      },
+      {
+        "id": "all-clear",
+        "label": "ALL CLEAR",
+        "color": "success",
+        "icon": "check-circle",
+        "action": "declare_all_clear",
+        "authority": "Safety Coordinator only",
+        "confirmation_required": true
+      }
+    ],
+    "alert_reference": [
+      { "signal": "2 long air horn blasts", "meaning": "IMMEDIATE EVACUATION", "condition": "50+ MPH or tornado" },
+      { "signal": "1 long air horn blast", "meaning": "Show Delay / Shelter", "condition": "40+ MPH winds" },
+      { "signal": "Radio alert", "meaning": "Monitor conditions", "condition": "Approaching thresholds" }
+    ]
+  },
+  "weather_monitoring_tools": [
+    { "id": "on-site-wind", "name": "On-Site Wind Monitor", "alerts": ["20 MPH warning", "40 MPH critical"] },
+    { "id": "lightning-detector", "name": "Lightning Detection", "alerts": ["20 miles alert", "8 miles critical"] },
+    { "id": "weather-radar", "name": "Weather Radar", "alerts": ["30 min warning", "10 min critical"] },
+    { "id": "wbgt-meter", "name": "WBGT Heat Monitor", "alerts": ["82°F warning", "88°F critical"] }
+  ],
+  "evacuation_routes": [
+    { "id": "route-1", "name": "Main Audience Exit", "capacity": 5000, "time": "8-12 min" },
+    { "id": "route-2", "name": "Secondary Exit", "capacity": 3000, "time": "10-15 min" },
+    { "id": "route-3", "name": "Crew Emergency Exit", "capacity": 200, "time": "3-5 min" },
+    { "id": "route-4", "name": "Artist/VIP Exit", "capacity": 50, "time": "2-3 min" }
+  ],
+  "mobile_optimizations": {
+    "touch_targets": { "min_size": "48px" },
+    "quick_actions": [
+      { "icon": "cloud", "label": "Weather", "action": "weather_status" },
+      { "icon": "wind", "label": "Wind", "action": "wind_monitor" },
+      { "icon": "zap", "label": "Lightning", "action": "lightning_status" },
+      { "icon": "running", "label": "Evacuate", "action": "evacuation_protocol" }
+    ],
+    "weather_gauge": {
+      "type": "radial_dial",
+      "size": "150px",
+      "color_zones": true,
+      "haptic_feedback": true
+    }
+  },
+  "assessment": {
+    "quiz_questions": 8,
+    "passing_score": 80,
+    "scenario_assessment": true,
+    "decision_timing_evaluated": true
+  },
+  "resources": {
+    "weather_tools": [
+      "On-site wind monitor",
+      "Lightning detection system",
+      "Weather radar/app",
+      "WBGT heat stress monitor"
+    ]
+  },
+  "metadata": {
+    "version": "2.0",
+    "created_date": "2026-03-19",
+    "polished_by": "UI/UX Agent - Event Safety Edition",
+    "content_source": "lms_data/course-7-event-safety/modules/module-weather-protocols.json",
+    "interactive": true,
+    "scenario_based": true
+  }
+}

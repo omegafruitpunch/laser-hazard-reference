@@ -1,0 +1,87 @@
+{
+  "course_id": "course-6",
+  "course_title": "Outdoor Laser Safety & Airspace",
+  "gestation_timestamp": "2026-03-19T15:46:00Z",
+  "processing_agent": "PDF Elite Processor Agent #16",
+  "pdfs_processed": [
+    {
+      "filename": "international-outdoor-standards.pdf",
+      "topic": "Laser Safety Concepts for Aviation",
+      "pages": 17,
+      "key_concepts": [
+        "Visual interference hazards (flashblindness, glare, distraction)",
+        "Nominal Ocular Hazard Distance (NOHD)",
+        "FAA and CAA incident statistics",
+        "Laser protective eyewear for pilots",
+        "Critical phases of flight vulnerability"
+      ]
+    },
+    {
+      "filename": "securing-outdoor-shows.pdf",
+      "topic": "FAA Laser Illumination Reporting (AC 70-2A)",
+      "pages": 4,
+      "key_concepts": [
+        "Aircrew reporting procedures for laser incidents",
+        "ATC broadcast protocols for laser events",
+        "Laser Beam Exposure Questionnaire",
+        "In-flight emergency classification",
+        "Domestic Events Network (DEN) reporting"
+      ]
+    },
+    {
+      "filename": "outdoor-hazard-calculations.pdf",
+      "topic": "FAA Outdoor Laser Operations (AC 70-1B)",
+      "pages": 48,
+      "key_concepts": [
+        "Laser Free Zone (LFZ)",
+        "Critical Flight Zone (CFZ)",
+        "Sensitive Flight Zone (SFZ)",
+        "Normal Flight Zone (NFZ)",
+        "Visual interference hazard calculations",
+        "Beam divergence and atmospheric effects"
+      ]
+    },
+    {
+      "filename": "notam-procedures.pdf",
+      "topic": "FAA Form 7140-1 Notice of Proposed Outdoor Laser Operation",
+      "pages": 3,
+      "key_concepts": [
+        "NOTAM filing requirements",
+        "Laser hazard zone calculations",
+        "FAA coordination procedures",
+        "Form 7140-1 submission process"
+      ]
+    }
+  ],
+  "learning_objectives": [
+    "Understand FAA laser illumination regulations and reporting requirements",
+    "Calculate visual interference hazard distances for outdoor operations",
+    "Identify flight zones (LFZ, CFZ, SFZ, NFZ) and their restrictions",
+    "Complete FAA Form 7140-1 for outdoor laser operations",
+    "Implement aircrew mitigation procedures during laser incidents",
+    "Apply NOHD concepts for aviation laser safety"
+  ],
+  "hierarchy": {
+    "module_c6-m4": {
+      "title": "Securing Outdoor Laser Shows",
+      "sources": ["securing-outdoor-shows.pdf", "outdoor-hazard-calculations.pdf"],
+      "topics": [
+        "Site assessment for outdoor laser shows",
+        "Perimeter security and beam termination",
+        "FAA flight zone classifications",
+        "Laser Free Zone compliance",
+        "Visual interference hazard analysis"
+      ]
+    },
+    "module_c6-m5": {
+      "title": "International Outdoor Standards",
+      "sources": ["international-outdoor-standards.pdf", "notam-procedures.pdf"],
+      "topics": [
+        "Aviation laser safety concepts",
+        "Pilot protective eyewear standards",
+        "International incident reporting",
+        "NOTAM procedures for laser operations"
+      ]
+    }
+  }
+}

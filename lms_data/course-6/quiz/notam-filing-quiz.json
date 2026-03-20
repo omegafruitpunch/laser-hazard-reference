@@ -1,0 +1,140 @@
+{
+  "quiz_title": "NOTAM Filing and Form 7140-1 Procedures",
+  "course": 6,
+  "topic": "NOTAM Procedures",
+  "questions": [
+    {
+      "id": "c6-notam-001",
+      "type": "multiple_choice",
+      "question": "What coordinate format should be used for latitude and longitude on FAA Form 7140-1?",
+      "options": [
+        "Decimal degrees (e.g., 40.7128°)",
+        "Degrees, minutes, seconds (e.g., 40° 42' 46\" N)",
+        "UTM coordinates",
+        "MGRS grid references"
+      ],
+      "correct_answer": 1,
+      "explanation": "Form 7140-1 requires latitude and longitude in degrees, minutes, and seconds. If sources provide decimal degrees, they must be converted.",
+      "reference": "FAA AC 70-1B, Appendix A, Section A.13"
+    },
+    {
+      "id": "c6-notam-002",
+      "type": "multiple_choice",
+      "question": "When entering azimuth for beam direction on Form 7140-1, what direction is considered 0°/360°?",
+      "options": [
+        "East",
+        "South",
+        "West",
+        "North"
+      ],
+      "correct_answer": 3,
+      "explanation": "FAA considers North as 360° (or 0°), East as 90°, South as 180°, and West as 270°.",
+      "reference": "FAA AC 70-1B, Appendix A, Section A.15"
+    },
+    {
+      "id": "c6-notam-003",
+      "type": "multiple_choice",
+      "question": "For a CW visible laser, what MPE value should be entered in cell 12b of Form 7140-1?",
+      "options": [
+        "0.5 mW/cm²",
+        "1.0 mW/cm²",
+        "2.6 mW/cm²",
+        "5.0 mW/cm²"
+      ],
+      "correct_answer": 2,
+      "explanation": "For continuous wave visible lasers (400-700 nm), the MPE value to enter is 2.6 mW/cm².",
+      "reference": "FAA AC 70-1B, Appendix A, Section A.14.3.2"
+    },
+    {
+      "id": "c6-notam-004",
+      "type": "multiple_choice",
+      "question": "What is the conversion factor used in Equation 70-1.1 for calculating NOHD?",
+      "options": [
+        "12.73",
+        "32.8",
+        "127.32",
+        "1000"
+      ],
+      "correct_answer": 1,
+      "explanation": "The constant 32.8 converts centimeters to feet (0.0328 ft/cm) and is used in all slant range equations.",
+      "reference": "FAA AC 70-1B, Appendix A, Equation 70-1.1"
+    },
+    {
+      "id": "c6-notam-005",
+      "type": "multiple_choice",
+      "question": "At what Pulse Repetition Frequency (PRF) should a repetitively pulsed visible laser be evaluated as continuous wave?",
+      "options": [
+        "> 1 kHz",
+        "> 5 kHz",
+        "> 13 kHz",
+        "> 50 kHz"
+      ],
+      "correct_answer": 2,
+      "explanation": "For visible and infrared wavelengths up to 1050 nm, lasers with PRF greater than 13 kHz should be evaluated as CW lasers.",
+      "reference": "FAA AC 70-1B, Appendix A, Section A.14.3.3"
+    },
+    {
+      "id": "c6-notam-006",
+      "type": "true_false",
+      "question": "When beam elevation angles are given, the horizontal distance should be calculated using the maximum elevation angle.",
+      "correct_answer": false,
+      "explanation": "Horizontal distance should use the MINIMUM elevation angle (beam closest to horizontal), as this gives the maximum horizontal reach.",
+      "reference": "FAA AC 70-1B, Appendix A, Section A.16.4.2"
+    },
+    {
+      "id": "c6-notam-007",
+      "type": "multiple_choice",
+      "question": "What notation should be used for numerical values on Form 7140-1?",
+      "options": [
+        "Scientific notation (e.g., 7.277 × 10⁻²)",
+        "Decimal notation (e.g., 0.07277)",
+        "Fractional notation (e.g., 7277/100000)",
+        "Engineering notation (e.g., 72.77 × 10⁻³)"
+      ],
+      "correct_answer": 1,
+      "explanation": "FAA requests decimal notation instead of scientific notation for clarity.",
+      "reference": "FAA Form 7140-1, Instructions"
+    },
+    {
+      "id": "c6-notam-008",
+      "type": "multiple_choice",
+      "question": "For a laser show with 10 RGB projectors aimed in the same general direction, how many Laser Configuration Worksheets are typically needed if the most powerful projector has both the longest NOHD and longest LFED?",
+      "options": [
+        "One worksheet",
+        "Two worksheets",
+        "Ten worksheets (one per projector)",
+        "None - laser shows are exempt"
+      ],
+      "correct_answer": 0,
+      "explanation": "If the same laser has both the longest NOHD and longest LFED, only one worksheet is needed as all other projectors will be within its protection distances.",
+      "reference": "FAA AC 70-1B, Appendix A, Section A.2"
+    },
+    {
+      "id": "c6-notam-009",
+      "type": "multiple_choice",
+      "question": "If protection distance calculations result in SZED being LESS than NOHD, what should be entered in the SZED cell?",
+      "options": [
+        "The calculated SZED value",
+        "The NOHD value",
+        "'Less than NOHD'",
+        "Zero"
+      ],
+      "correct_answer": 2,
+      "explanation": "For safety, if SZED < NOHD, enter 'Less than NOHD' because the eye hazard distance (NOHD) takes priority for safety calculations.",
+      "reference": "FAA AC 70-1B, Appendix A, Section A.16.1"
+    },
+    {
+      "id": "c6-notam-010",
+      "type": "calculation",
+      "question": "Calculate the CZED slant range for a laser with SZED of 15,000 feet.",
+      "formula": "CZED = SZED × 4.47",
+      "given_values": {
+        "SZED": "15,000 feet"
+      },
+      "correct_answer": "67,050 feet",
+      "acceptable_range": [67000, 67100],
+      "explanation": "CZED = 15,000 × 4.47 = 67,050 feet. The multiplier 4.47 comes from √(100/5), the ratio of SZED (100 µW/cm²) to CZED (5 µW/cm²) thresholds.",
+      "reference": "FAA AC 70-1B, Appendix A, Equation 70-1.4"
+    }
+  ]
+}

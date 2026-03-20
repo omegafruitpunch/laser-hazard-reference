@@ -1,0 +1,71 @@
+{
+  "id": "course-6-quiz",
+  "courseId": "course-6",
+  "title": "Outdoor Laser Safety & Airspace Assessment",
+  "description": "Assessment covering FAA regulations, NOTAM procedures, outdoor hazard calculations, and international outdoor standards.",
+  "passingScore": 80,
+  "timeLimit": 25,
+  "randomizeQuestions": true,
+  "questions": [
+    {
+      "id": "c6-q1",
+      "type": "multiple_choice",
+      "question": "What is the US federal law that makes pointing a laser at an aircraft a crime?",
+      "options": ["FAA Order 7400.2", "14 CFR Part 91", "18 USC 39A", "FAR Part 77"],
+      "correctIndex": 2,
+      "explanation": "18 USC Section 39A makes it a federal felony to knowingly aim a laser pointer at an aircraft or its flight path. Penalties can include up to 5 years imprisonment."
+    },
+    {
+      "id": "c6-q2",
+      "type": "multiple_choice",
+      "question": "How far in advance must a NOTAM typically be filed for outdoor laser operations?",
+      "options": ["1 hour", "6 hours", "24-72 hours", "7 days"],
+      "correctIndex": 2,
+      "explanation": "NOTAMs for outdoor laser operations should generally be filed 24-72 hours in advance to allow proper distribution and processing through the Notice to Air Missions system."
+    },
+    {
+      "id": "c6-q3",
+      "type": "multiple_choice",
+      "question": "What does ARTCC stand for in FAA context?",
+      "options": [
+        "Aerial Radiation Traffic Control Committee",
+        "Air Route Traffic Control Center",
+        "Aviation Risk and Technology Compliance Center",
+        "Airspace Regulation and Traffic Control Coordination"
+      ],
+      "correctIndex": 1,
+      "explanation": "ARTCC (Air Route Traffic Control Center) manages en route air traffic in designated airspace. Laser show operators with complex outdoor shows should coordinate with their local ARTCC."
+    },
+    {
+      "id": "c6-q4",
+      "type": "multiple_choice",
+      "question": "Compared to indoor calculations, outdoor NOHD calculations should account for:",
+      "options": [
+        "Higher ambient light levels",
+        "Atmospheric transmission losses and beam degradation",
+        "Stricter MPE values",
+        "Larger audience areas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Outdoor NOHD calculations must account for atmospheric effects — humidity, aerosols, and turbulence all attenuate or scatter the beam, affecting hazard distances. This often (but not always) reduces the NOHD."
+    },
+    {
+      "id": "c6-q5",
+      "type": "multiple_choice",
+      "question": "What does IEC 60825-3 specifically address?",
+      "options": [
+        "Industrial laser cutting systems",
+        "Laser pointer products",
+        "Laser displays and entertainment",
+        "Laser communication systems"
+      ],
+      "correctIndex": 2,
+      "explanation": "IEC 60825-3 (Safety of laser products — Part 3: Guidance for laser displays) specifically addresses safety requirements for laser light shows, displays, and entertainment applications."
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-01-01T00:00:00Z"
+  }
+}

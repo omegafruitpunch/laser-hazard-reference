@@ -1,0 +1,108 @@
+{
+  "module_id": "8.2",
+  "course_id": "8",
+  "title": "Module 8.2: ANSI E1.46 - Entertainment Laser Safety",
+  "subtitle": "Master Entertainment-Specific Laser Safety Standards",
+  "description": "Comprehensive coverage of ANSI E1.46 (Entertainment Technology - Laser Safety) including audience scanning requirements, MPE compliance for intentional exposure, and the unique safety protocols for laser light shows and entertainment applications.",
+  "version": "1.0.0",
+  "estimated_duration_minutes": 50,
+  "difficulty": "advanced",
+  "prerequisites": ["8.1", "5.2", "5.3"],
+  "learning_objectives": [
+    {
+      "id": "8.2.1",
+      "objective": "Apply ANSI E1.46 requirements for intentional audience exposure to laser radiation",
+      "blooms_level": "Application",
+      "assessment_method": "Exposure scenario calculations"
+    },
+    {
+      "id": "8.2.2",
+      "objective": "Design scan failure safety systems meeting E1.46 response time requirements",
+      "blooms_level": "Synthesis",
+      "assessment_method": "System design challenge"
+    },
+    {
+      "id": "8.2.3",
+      "objective": "Calculate MPE relaxation factors for scanned beams and diffraction effects",
+      "blooms_level": "Application",
+      "assessment_method": "Calculation exercises with verification"
+    },
+    {
+      "id": "8.2.4",
+      "objective": "Execute pre-show safety verification procedures per E1.46",
+      "blooms_level": "Application",
+      "assessment_method": "Virtual pre-show checklist completion"
+    },
+    {
+      "id": "8.2.5",
+      "objective": "Distinguish between supervised and unsupervised installation requirements",
+      "blooms_level": "Analysis",
+      "assessment_method": "Installation classification scenarios"
+    }
+  ],
+  "interactive_components": [
+    {
+      "id": "e146_compliance_checker",
+      "name": "E146 Compliance Checker",
+      "type": "interactive_checklist",
+      "file": "components/e146_compliance_checker.json",
+      "description": "Step-by-step compliance verification for entertainment laser setups"
+    },
+    {
+      "id": "scan_fail_calculator",
+      "name": "Scan Failure Response Calculator",
+      "type": "interactive_calculation",
+      "file": "components/scan_fail_calculator.json",
+      "description": "Calculate required scan failure detection response times"
+    },
+    {
+      "id": "mpe_relaxation_tool",
+      "name": "MPE Relaxation Factor Tool",
+      "type": "interactive_calculation",
+      "file": "components/mpe_relaxation_tool.json",
+      "description": "Calculate MPE relaxation for scanned and diffused beams"
+    },
+    {
+      "id": "installation_classifier",
+      "name": "Installation Type Classifier",
+      "type": "decision_tree",
+      "file": "components/installation_classifier.json",
+      "description": "Determine supervised vs unsupervised installation requirements"
+    },
+    {
+      "id": "preshow_simulator",
+      "name": "Pre-Show Safety Simulator",
+      "type": "interactive_simulation",
+      "file": "components/preshow_simulator.json",
+      "description": "Virtual walkthrough of pre-show safety verification"
+    }
+  ],
+  "content_files": {
+    "lessons": "lessons.json",
+    "quiz": "quiz.json"
+  },
+  "assessment": {
+    "quiz_file": "quiz.json",
+    "passing_score": 85,
+    "attempts_allowed": 3
+  },
+  "badge": {
+    "id": "e146_specialist",
+    "name": "E146 Entertainment Safety Specialist",
+    "icon": "🎭",
+    "description": "Mastered ANSI E1.46 entertainment laser safety standards"
+  },
+  "standards_reference": [
+    "ANSI E1.46-2023 Entertainment Technology - Laser Safety",
+    "ANSI Z136.10-2022 Safe Use of Lasers in Entertainment",
+    "FDA Laser Notice 50 - Audience Scanning"
+  ],
+  "keywords": ["ANSI E1.46", "audience scanning", "scan failure", "MPE relaxation", "entertainment laser", "pre-show checks"],
+  "research_alignment": {
+    "adult_learning": "Scenario-based learning for entertainment contexts",
+    "brilliant_patterns": ["Interactive compliance checking", "Simulation-based practice", "Progressive complexity"],
+    "retention_strategy": "Case study integration with real-world scenarios"
+  },
+  "created_at": "2026-03-19T15:46:00Z",
+  "updated_at": "2026-03-19T15:46:00Z"
+}

@@ -1,0 +1,222 @@
+{
+  "id": "course-8-quiz",
+  "courseId": "course-8",
+  "title": "Entertainment Technology Standards Assessment",
+  "description": "Comprehensive assessment covering ANSI Z136 series, ESTA standards, ANSI E1.46 entertainment laser requirements, and compliance documentation. This examination validates competency in industry standards for professional laser safety practice.",
+  "passingScore": 80,
+  "timeLimit": 30,
+  "randomizeQuestions": true,
+  "randomizeOptions": false,
+  "allowRetake": true,
+  "maxAttempts": 3,
+  "questions": [
+    {
+      "id": "c8-q1",
+      "type": "multiple_choice",
+      "category": "ANSI Z136 Series",
+      "difficulty": "easy",
+      "question": "Which ANSI Z136 standard is the primary general laser safety standard in the US?",
+      "options": ["ANSI Z136.1", "ANSI Z136.2", "ANSI Z136.3", "ANSI Z136.8"],
+      "correctIndex": 0,
+      "explanation": "ANSI Z136.1 (Safe Use of Lasers) is the primary general US laser safety standard. Other Z136 series standards address specific applications (healthcare, fiber optics, R&D) and reference back to Z136.1.",
+      "reference": "ANSI Z136.1 Scope"
+    },
+    {
+      "id": "c8-q2",
+      "type": "multiple_choice",
+      "category": "Entertainment Standards",
+      "difficulty": "easy",
+      "question": "ANSI E1.46 is specifically developed for which industry?",
+      "options": ["Medical laser applications", "Industrial laser processing", "Entertainment laser applications", "Military laser systems"],
+      "correctIndex": 2,
+      "explanation": "ANSI E1.46 (Entertainment Technology — Laser Safety) was developed by ESTA (Entertainment Services and Technology Association) specifically for entertainment laser show applications.",
+      "reference": "ANSI E1.46 Scope"
+    },
+    {
+      "id": "c8-q3",
+      "type": "multiple_choice",
+      "category": "Standards Organizations",
+      "difficulty": "medium",
+      "question": "What organization develops ESTA entertainment technology standards?",
+      "options": [
+        "ANSI (American National Standards Institute)",
+        "ESTA (Entertainment Services and Technology Association)",
+        "IATSE (International Alliance of Theatrical Stage Employees)",
+        "PLASA (Professional Lighting and Sound Association)"
+      ],
+      "correctIndex": 1,
+      "explanation": "ESTA (Entertainment Services and Technology Association) develops entertainment technology standards through its Technical Standards Program (TSP), an ANSI-accredited standards development organization.",
+      "reference": "ESTA TSP Overview"
+    },
+    {
+      "id": "c8-q4",
+      "type": "multiple_choice",
+      "category": "Electrical Standards",
+      "difficulty": "medium",
+      "question": "Which NFPA standard governs electrical installations relevant to laser power supplies?",
+      "options": ["NFPA 101", "NFPA 70 (NEC)", "NFPA 72", "NFPA 30"],
+      "correctIndex": 1,
+      "explanation": "NFPA 70 (National Electrical Code) governs electrical installations in the US. Laser power supplies, temporary event power, and all electrical infrastructure must comply with NEC requirements.",
+      "reference": "NFPA 70 Article 640"
+    },
+    {
+      "id": "c8-q5",
+      "type": "multiple_choice",
+      "category": "Compliance Documentation",
+      "difficulty": "medium",
+      "question": "A Standards Compliance Matrix should document what?",
+      "options": [
+        "All applicable standards and compliance status",
+        "A list of all standards ever published",
+        "Only standards the company has passed inspections for",
+        "International standards only"
+      ],
+      "correctIndex": 0,
+      "explanation": "A Standards Compliance Matrix lists all applicable standards (ANSI, IEC, state, federal), the company's compliance status for each, and any documented deviations with risk assessments and mitigations.",
+      "reference": "ANSI Z136.1 Section 7"
+    },
+    {
+      "id": "c8-q6",
+      "type": "multiple_choice",
+      "category": "ANSI Z136 Series",
+      "difficulty": "medium",
+      "question": "Which ANSI Z136 standard covers safe use of lasers in healthcare settings?",
+      "options": ["ANSI Z136.1", "ANSI Z136.2", "ANSI Z136.3", "ANSI Z136.8"],
+      "correctIndex": 2,
+      "explanation": "ANSI Z136.3 specifically addresses safe use of lasers in healthcare settings including hospitals, clinics, and medical procedures.",
+      "reference": "ANSI Z136.3 Scope"
+    },
+    {
+      "id": "c8-q7",
+      "type": "multiple_choice",
+      "category": "ANSI Z136 Series",
+      "difficulty": "medium",
+      "question": "Which Z136 standard applies to outdoor laser operations?",
+      "options": ["Z136.5", "Z136.6", "Z136.7", "Z136.9"],
+      "correctIndex": 1,
+      "explanation": "ANSI Z136.6 specifically addresses safe use of lasers outdoors, including FAA coordination, beam termination requirements, and atmospheric considerations.",
+      "reference": "ANSI Z136.6 Scope"
+    },
+    {
+      "id": "c8-q8",
+      "type": "multiple_choice",
+      "category": "Entertainment Standards",
+      "difficulty": "hard",
+      "question": "What is the minimum vertical separation distance required by E1.46 for supervised venues?",
+      "options": ["2 meters", "2.5 meters", "3 meters", "4 meters"],
+      "correctIndex": 2,
+      "explanation": "ANSI E1.46 requires a minimum 3-meter vertical separation between laser beams and the audience in supervised venues.",
+      "reference": "ANSI E1.46 Section 6.2"
+    },
+    {
+      "id": "c8-q9",
+      "type": "multiple_choice",
+      "category": "Entertainment Standards",
+      "difficulty": "hard",
+      "question": "What is the required response time for scan failure detection systems per E1.46?",
+      "options": ["Within 100 milliseconds", "Within 1 second", "Within a few milliseconds", "Within 10 seconds"],
+      "correctIndex": 2,
+      "explanation": "E1.46 requires scan failure detection systems to respond within a few milliseconds to prevent hazardous exposure in case of scanner malfunction.",
+      "reference": "ANSI E1.46 Section 7.4"
+    },
+    {
+      "id": "c8-q10",
+      "type": "multiple_choice",
+      "category": "LSO Responsibilities",
+      "difficulty": "hard",
+      "question": "What type of authority must the LSO have according to ANSI Z136.1?",
+      "options": [
+        "Advisory authority only",
+        "Executive authority with power to modify or terminate operations",
+        "Administrative authority for paperwork only",
+        "No authority — role is consultative"
+      ],
+      "correctIndex": 1,
+      "explanation": "ANSI Z136.1 requires the LSO to have executive authority and responsibility, including the power to modify or terminate operations for safety reasons.",
+      "reference": "ANSI Z136.1 Section 3.1"
+    },
+    {
+      "id": "c8-q11",
+      "type": "multiple_choice",
+      "category": "Control Measures",
+      "difficulty": "medium",
+      "question": "In the hierarchy of controls, which level is most effective?",
+      "options": ["Administrative controls", "PPE", "Engineering controls", "Elimination/Substitution"],
+      "correctIndex": 3,
+      "explanation": "Elimination/substitution is the most effective level as it removes the hazard entirely rather than controlling exposure to it.",
+      "reference": "ANSI Z136.1 Section 5"
+    },
+    {
+      "id": "c8-q12",
+      "type": "multiple_choice",
+      "category": "Control Measures",
+      "difficulty": "medium",
+      "question": "Which of the following is an engineering control?",
+      "options": [
+        "Safety training program",
+        "Protective eyewear",
+        "Safety interlocks and enclosures",
+        "Standard Operating Procedures"
+      ],
+      "correctIndex": 2,
+      "explanation": "Engineering controls physically isolate people from hazards. Safety interlocks and enclosures are engineering controls, while training and SOPs are administrative controls, and eyewear is PPE.",
+      "reference": "ANSI Z136.1 Section 5.1"
+    },
+    {
+      "id": "c8-q13",
+      "type": "multiple_choice",
+      "category": "Certification",
+      "difficulty": "medium",
+      "question": "What is the passing score for CLSO certification?",
+      "options": ["60%", "70%", "75%", "80%"],
+      "correctIndex": 1,
+      "explanation": "The passing score for CLSO certification is 70%. Candidates must achieve this score across all examination domains.",
+      "reference": "CLSO Candidate Handbook"
+    },
+    {
+      "id": "c8-q14",
+      "type": "multiple_choice",
+      "category": "Certification",
+      "difficulty": "hard",
+      "question": "Which domain has the highest weighting on the CLSO exam?",
+      "options": [
+        "Fundamentals",
+        "Control Measures and Standards/Regulations (tied at 20%)",
+        "LSO Responsibilities",
+        "Medical Surveillance"
+      ],
+      "correctIndex": 1,
+      "explanation": "Control Measures and Standards/Regulations are tied at 20% each, making them the highest-weighted domains on the CLSO examination.",
+      "reference": "CLSO Exam Blueprint"
+    },
+    {
+      "id": "c8-q15",
+      "type": "multiple_choice",
+      "category": "Documentation",
+      "difficulty": "medium",
+      "question": "What must SOPs include for laser operations?",
+      "options": [
+        "Only startup procedures",
+        "Startup, normal operation, emergency, and shutdown procedures",
+        "Only emergency procedures",
+        "Only maintenance schedules"
+      ],
+      "correctIndex": 1,
+      "explanation": "Comprehensive SOPs must cover startup, normal operation, emergency procedures, and shutdown to ensure safe operation under all conditions.",
+      "reference": "ANSI Z136.1 Section 5.2"
+    }
+  ],
+  "metadata": {
+    "version": "1.1.0",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-03-19T00:00:00Z",
+    "reviewedBy": "Technical Standards Committee",
+    "standardsReferenced": [
+      "ANSI Z136.1",
+      "ANSI Z136.3",
+      "ANSI Z136.6",
+      "ANSI E1.46",
+      "NFPA 70"
+    ]
+  }
+}

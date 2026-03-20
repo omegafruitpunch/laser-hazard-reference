@@ -1,0 +1,153 @@
+{
+  "graph_title": "FDA Forms Knowledge Graph - FORM FDA 3632",
+  "document_source": "fda-forms.pdf",
+  "course": "Course 2 - FDA Compliance",
+  "version": "1.0",
+  
+  "nodes": {
+    "entities": [
+      {"id": "CDRH", "type": "organization", "label": "Center for Devices and Radiological Health", "attributes": {"role": "Regulatory Authority", "parent": "FDA"}},
+      {"id": "FDA", "type": "organization", "label": "Food and Drug Administration", "attributes": {"role": "Federal Agency"}},
+      {"id": "FORM_3632", "type": "document", "label": "FORM FDA 3632", "attributes": {"type": "Product Reporting Guide", "pages": 37, "omb_control": "0910-0025"}},
+      {"id": "DSMA", "type": "organization", "label": "Division of Small Manufacturer's Assistance", "attributes": {"contact": "1-800-638-2041"}},
+      {"id": "NIST", "type": "organization", "label": "National Institute of Standards and Technology", "attributes": {"former_name": "National Bureau of Standards"}},
+      
+      {"id": "Product_Report", "type": "report_type", "label": "Product Report", "attributes": {"cfr": "21 CFR 1002.10", "timing": "Before introduction to commerce"}},
+      {"id": "Supplemental_Report", "type": "report_type", "label": "Supplemental Report", "attributes": {"cfr": "21 CFR 1002.11", "purpose": "Changes to existing reports"}},
+      {"id": "Annual_Report", "type": "report_type", "label": "Annual Report", "attributes": {"cfr": "21 CFR 1002.13", "due": "September 1"}},
+      
+      {"id": "Class_I", "type": "laser_class", "label": "Class I Laser Product", "attributes": {"risk": "Minimal", "requirements": "Basic"}},
+      {"id": "Class_IIa", "type": "laser_class", "label": "Class IIa Laser Product", "attributes": {"risk": "Low"}},
+      {"id": "Class_II", "type": "laser_class", "label": "Class II Laser Product", "attributes": {"risk": "Low", "warning_required": true}},
+      {"id": "Class_IIIa", "type": "laser_class", "label": "Class IIIa Laser Product", "attributes": {"risk": "Moderate"}},
+      {"id": "Class_IIIb", "type": "laser_class", "label": "Class IIIb Laser Product", "attributes": {"risk": "High", "controls_required": true}},
+      {"id": "Class_IV", "type": "laser_class", "label": "Class IV Laser Product", "attributes": {"risk": "Very High", "controls_required": true}},
+      
+      {"id": "Certification_Label", "type": "label", "label": "Certification Label", "attributes": {"cfr": "1010.2", "required_for": "All classes"}},
+      {"id": "Identification_Label", "type": "label", "label": "Identification Label", "attributes": {"cfr": "1010.3", "required_for": "All classes"}},
+      {"id": "Warning_Logotype", "type": "label", "label": "Warning Logotype", "attributes": {"cfr": "1040.10(g)", "required_for": "Class II, III, IV"}},
+      {"id": "Aperture_Label", "type": "label", "label": "Aperture Label", "attributes": {"cfr": "1040.10(g)", "required_for": "Class II, III, IV"}},
+      
+      {"id": "Protective_Housing", "type": "requirement", "label": "Protective Housing", "attributes": {"cfr": "1040.10(f)(1)", "applies_to": "All classes"}},
+      {"id": "Safety_Interlock", "type": "requirement", "label": "Safety Interlock", "attributes": {"cfr": "1040.10(f)(2)", "applies_to": "All classes"}},
+      {"id": "Fail_Safe", "type": "requirement", "label": "Fail-Safe Interlock", "attributes": {"cfr": "1040.10(f)(2)(iii)", "applies_to": "Class IIIb/IV interlocks"}},
+      {"id": "Remote_Interlock", "type": "requirement", "label": "Remote Interlock Connector", "attributes": {"cfr": "1040.10(f)(3)", "applies_to": "Class IIIb/IV"}},
+      {"id": "Key_Control", "type": "requirement", "label": "Key Control", "attributes": {"cfr": "1040.10(f)(4)", "applies_to": "Class IIIb/IV"}},
+      {"id": "Emission_Indicator", "type": "requirement", "label": "Laser Radiation Emission Indicator", "attributes": {"cfr": "1040.10(f)(5)", "applies_to": "Class II, IIIa, IIIb, IV"}},
+      {"id": "Beam_Attenuator", "type": "requirement", "label": "Beam Attenuator", "attributes": {"cfr": "1040.10(f)(6)", "applies_to": "Class II, IIIa, IIIb, IV"}},
+      {"id": "Manual_Reset", "type": "requirement", "label": "Manual Reset", "attributes": {"cfr": "1040.10(f)(10)", "applies_to": "Class IV after Aug 20, 1986"}},
+      {"id": "Scanning_Safeguard", "type": "requirement", "label": "Scanning Safeguard", "attributes": {"cfr": "1040.10(f)(9)", "trigger": "Scan failure"}},
+      
+      {"id": "Medical_Laser", "type": "product_type", "label": "Medical Laser Product", "attributes": {"cfr": "1040.11(a)", "calibration_accuracy": "+/- 20%"}},
+      {"id": "Surveying_Laser", "type": "product_type", "label": "Surveying/Leveling/Alignment Laser", "attributes": {"cfr": "1040.11(b)"}},
+      {"id": "Demonstration_Laser", "type": "product_type", "label": "Demonstration Laser Product", "attributes": {"cfr": "1040.11(c)", "variance_required_above": "Class IIIa"}},
+      
+      {"id": "Quality_Control", "type": "process", "label": "Quality Control Program", "attributes": {"basis": "Good Manufacturing Practices"}},
+      {"id": "Accession_Number", "type": "identifier", "label": "CDRH Accession Number", "attributes": {"purpose": "Future reference", "assigned_on": "Report receipt"}},
+      {"id": "Model_Family", "type": "concept", "label": "Model Family", "attributes": {"definition": "Variations of basic design"}}
+    ],
+    
+    "regulatory_citations": [
+      {"id": "21CFR_1002_7", "type": "cfr", "label": "21 CFR 1002.7", "description": "Reporting guides"},
+      {"id": "21CFR_1002_10", "type": "cfr", "label": "21 CFR 1002.10", "description": "Product reports"},
+      {"id": "21CFR_1002_11", "type": "cfr", "label": "21 CFR 1002.11", "description": "Supplemental reports"},
+      {"id": "21CFR_1002_13", "type": "cfr", "label": "21 CFR 1002.13", "description": "Annual reports"},
+      {"id": "21CFR_1010_2", "type": "cfr", "label": "21 CFR 1010.2", "description": "Certification"},
+      {"id": "21CFR_1010_3", "type": "cfr", "label": "21 CFR 1010.3", "description": "Identification"},
+      {"id": "21CFR_1010_4", "type": "cfr", "label": "21 CFR 1010.4", "description": "Variances"},
+      {"id": "21CFR_1040_10", "type": "cfr", "label": "21 CFR 1040.10", "description": "Laser products"},
+      {"id": "21CFR_1040_11", "type": "cfr", "label": "21 CFR 1040.11", "description": "Specific purpose laser products"},
+      {"id": "21CFR_1005_25", "type": "cfr", "label": "21 CFR 1005.25", "description": "Importing agent requirements"}
+    ]
+  },
+  
+  "edges": {
+    "relationships": [
+      {"source": "FDA", "target": "CDRH", "type": "parent_of", "label": "oversees"},
+      {"source": "CDRH", "target": "FORM_3632", "type": "issues", "label": "publishes"},
+      {"source": "CDRH", "target": "DSMA", "type": "contains", "label": "includes"},
+      
+      {"source": "21CFR_1002_10", "target": "Product_Report", "type": "governs", "label": "requires"},
+      {"source": "21CFR_1002_11", "target": "Supplemental_Report", "type": "governs", "label": "requires"},
+      {"source": "21CFR_1002_13", "target": "Annual_Report", "type": "governs", "label": "requires"},
+      
+      {"source": "Product_Report", "target": "Accession_Number", "type": "receives", "label": "assigned"},
+      {"source": "Supplemental_Report", "target": "Accession_Number", "type": "references", "label": "must reference"},
+      
+      {"source": "21CFR_1010_2", "target": "Certification_Label", "type": "requires", "label": "mandates"},
+      {"source": "21CFR_1010_3", "target": "Identification_Label", "type": "requires", "label": "mandates"},
+      {"source": "21CFR_1040_10", "target": "Warning_Logotype", "type": "requires", "label": "mandates for Class II+"},
+      {"source": "21CFR_1040_10", "target": "Aperture_Label", "type": "requires", "label": "mandates for Class II+"},
+      
+      {"source": "Certification_Label", "target": "Class_I", "type": "applies_to", "label": "required for"},
+      {"source": "Certification_Label", "target": "Class_II", "type": "applies_to", "label": "required for"},
+      {"source": "Certification_Label", "target": "Class_IIIa", "type": "applies_to", "label": "required for"},
+      {"source": "Certification_Label", "target": "Class_IIIb", "type": "applies_to", "label": "required for"},
+      {"source": "Certification_Label", "target": "Class_IV", "type": "applies_to", "label": "required for"},
+      
+      {"source": "Warning_Logotype", "target": "Class_II", "type": "applies_to", "label": "required for"},
+      {"source": "Warning_Logotype", "target": "Class_IIIa", "type": "applies_to", "label": "required for"},
+      {"source": "Warning_Logotype", "target": "Class_IIIb", "type": "applies_to", "label": "required for"},
+      {"source": "Warning_Logotype", "target": "Class_IV", "type": "applies_to", "label": "required for"},
+      
+      {"source": "Protective_Housing", "target": "Class_I", "type": "applies_to", "label": "required for"},
+      {"source": "Protective_Housing", "target": "Class_II", "type": "applies_to", "label": "required for"},
+      {"source": "Protective_Housing", "target": "Class_IIIa", "type": "applies_to", "label": "required for"},
+      {"source": "Protective_Housing", "target": "Class_IIIb", "type": "applies_to", "label": "required for"},
+      {"source": "Protective_Housing", "target": "Class_IV", "type": "applies_to", "label": "required for"},
+      
+      {"source": "Remote_Interlock", "target": "Class_IIIb", "type": "applies_to", "label": "required for"},
+      {"source": "Remote_Interlock", "target": "Class_IV", "type": "applies_to", "label": "required for"},
+      {"source": "Key_Control", "target": "Class_IIIb", "type": "applies_to", "label": "required for"},
+      {"source": "Key_Control", "target": "Class_IV", "type": "applies_to", "label": "required for"},
+      {"source": "Manual_Reset", "target": "Class_IV", "type": "applies_to", "label": "required for"},
+      
+      {"source": "Safety_Interlock", "target": "Fail_Safe", "type": "requires", "label": "must be"},
+      {"source": "Fail_Safe", "target": "Class_IIIb", "type": "applies_to", "label": "for interlocks preventing"},
+      {"source": "Fail_Safe", "target": "Class_IV", "type": "applies_to", "label": "for interlocks preventing"},
+      
+      {"source": "Medical_Laser", "target": "21CFR_1040_11", "type": "governed_by", "label": "subject to"},
+      {"source": "Surveying_Laser", "target": "21CFR_1040_11", "type": "governed_by", "label": "subject to"},
+      {"source": "Demonstration_Laser", "target": "21CFR_1040_11", "type": "governed_by", "label": "subject to"},
+      
+      {"source": "Quality_Control", "target": "21CFR_1010_2", "type": "required_by", "label": "basis for certification"},
+      {"source": "NIST", "target": "Quality_Control", "type": "supports", "label": "traceability to"}
+    ]
+  },
+  
+  "compliance_pathways": {
+    "new_product_introduction": [
+      "Determine laser classification",
+      "Complete Product Report (21 CFR 1002.10)",
+      "Submit to CDRH before introduction to commerce",
+      "Receive accession number",
+      "Maintain quality control program",
+      "Submit Annual Report (21 CFR 1002.13)"
+    ],
+    "product_modification": [
+      "Assess if change affects emission or compliance",
+      "If yes, submit Supplemental Report (21 CFR 1002.11)",
+      "Reference original accession number",
+      "Submit before introduction of modified product"
+    ],
+    "importation": [
+      "Designate importing agent (21 CFR 1005.25)",
+      "Submit Product Report before importation",
+      "Comply with certification and identification"
+    ]
+  },
+  
+  "hierarchy": {
+    "regulatory_structure": {
+      "Title_21": {
+        "Chapter_I": {
+          "Subchapter_J": {
+            "Part_1002": ["Product Reports", "Supplemental Reports", "Annual Reports"],
+            "Part_1010": ["Certification", "Identification", "Variances"],
+            "Part_1040": ["Laser Products (1040.10)", "Specific Purpose Lasers (1040.11)"]
+          }
+        }
+      }
+    }
+  }
+}

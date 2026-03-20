@@ -1,0 +1,67 @@
+{
+  "course": "course-1",
+  "filename": "safety-controls.pdf",
+  "total_pages": 1,
+  "total_word_count": 210,
+  "extraction_method": "pdfplumber",
+  "pages": [
+    {
+      "page_number": 1,
+      "course": "course-1",
+      "text_content": "LASER SAFETY TRAINING ACKNOWLEDGMENT\nThe following material has been presented to attending laser safety officers, operations\nmanagers, technicians, and all personnel working with lasers for the purpose of providing\nquality laser safety training for the operation, maintenance and service related the safe use\nof lasers and the regulations to which (insert Company Name) adheres to. The following\ninformation was included in your Laser Safety Training:\nTitle Description of Materials\nIntro Includes laser definitions,\nacknowledgement of training, safety\ndisclaimer\nArticles about Laser Safety Informative articles relating to laser safety\nLaser Biological Hazards Information about biological hazards\nrelated to lasers\nOutdoor Laser Safety Includes guidelines/forms for safe use of\nlasers outdoors\nGoverning Agency Contact Information Contacts for Federal, State and Local\ngoverning agencies\nReports/Record Keeping Regulatory reporting and record keeping\nStandards and Regulations Review of national, international regulations\nand where to purchase standards\nTraining Material helpful for laser safety training\nOn Site Training Observation/Evaluation Trainees are observed and evaluated in the\nfield and/or onsite\nThis document is to be signed and will serve as acknowledgement of receipt of Laser Safety\nTraining provided by (insert Company Name) and that the material has been reviewed and\nunderstood.\n______________________________________ _______________________________\nSignature Date\n_______________________________________ _______________________________\nPrint name Title\nOrganization for which training was conducted:\n______________________________________\nEmail:____________________________________________________________________",
+      "tables": [
+        [
+          [
+            "Title",
+            "Description of Materials"
+          ],
+          [
+            "Intro",
+            "Includes laser definitions,\nacknowledgement of training, safety\ndisclaimer"
+          ],
+          [
+            "Articles about Laser Safety",
+            "Informative articles relating to laser safety"
+          ],
+          [
+            "Laser Biological Hazards",
+            "Information about biological hazards\nrelated to lasers"
+          ],
+          [
+            "Outdoor Laser Safety",
+            "Includes guidelines/forms for safe use of\nlasers outdoors"
+          ],
+          [
+            "Governing Agency Contact Information",
+            "Contacts for Federal, State and Local\ngoverning agencies"
+          ],
+          [
+            "Reports/Record Keeping",
+            "Regulatory reporting and record keeping"
+          ],
+          [
+            "Standards and Regulations",
+            "Review of national, international regulations\nand where to purchase standards"
+          ],
+          [
+            "Training",
+            "Material helpful for laser safety training"
+          ],
+          [
+            "On Site Training Observation/Evaluation",
+            "Trainees are observed and evaluated in the\nfield and/or onsite"
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ],
+      "dimensions": {
+        "width": 612,
+        "height": 792
+      },
+      "word_count": 210
+    }
+  ]
+}

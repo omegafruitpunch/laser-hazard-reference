@@ -1,0 +1,173 @@
+{
+  "state": "Massachusetts",
+  "regulatory_authority": "Massachusetts Department of Public Health",
+  "document_type": "Code of Massachusetts Regulations",
+  "citation": "105 CMR 121.000",
+  "title": "Regulations for the Control of Lasers",
+  "legal_authority": "M.G.L. c. 111, §§ 5I, 5N, 5O, and 5P",
+  "extracted_date": "2026-03-19",
+  "applicability": {
+    "description": "Applies to all persons who receive, possess, use, transfer, own, acquire, operate, maintain, repair or service a laser",
+    "exclusions": "Federal government agencies"
+  },
+  "key_definitions": {
+    "ANSI": "American National Standards Institute",
+    "Annual": "Period not exceeding 365 days (366 in leap year)",
+    "Applicant": "Includes shareholders 5%+, officers, directors, partners, trustees",
+    "Health_Care_Laser_Facility": "Facility using laser for diagnostic, therapeutic or medical research",
+    "Inspection": "Official examination including tests, surveys, monitoring",
+    "Laser": "Light Amplification by Stimulated Emission of Radiation",
+    "Laser_Classification": "Classification by ANSI Z136 series",
+    "Laser_Facility": "Location with one or more lasers under same administrative control",
+    "Laser_Safety_Officer": "Individual designated by employer to perform LSO duties",
+    "Mobile_Laser": "Laser unit transported to site for operations",
+    "Registrant": "Person registered with Radiation Control Program"
+  },
+  "general_requirements": {
+    "121_005_all_lasers": {
+      "description": "All persons installing, operating, using, maintaining, repairing or servicing lasers",
+      "standard": "ANSI Z136.1 (most recent published version)",
+      "responsibility": "Owner and operator ensure facility meets ANSI Z136.1"
+    },
+    "121_006_optical_fiber": {
+      "description": "Optical fiber communication systems with laser or LED sources",
+      "standard": "ANSI Z136.2"
+    },
+    "121_007_health_care": {
+      "description": "Lasers in health care facilities for diagnostic/therapeutic/medical research",
+      "standard": "ANSI Z136.3"
+    }
+  },
+  "entertainment_laser_requirements": {
+    "section": "121.008",
+    "class_requirement": "Class 3B or Class 4 ANSI classification",
+    "requirements": [
+      "Laser meets design and labeling requirements per ANSI Z136.1",
+      "Laser radiation cannot exceed Class 1 limits in audience areas",
+      "Mirror balls/flat mirrors require scanning safeguards",
+      "Performers viewing beam: cannot exceed Class 1; when not viewing: cannot exceed Class 2",
+      "Unattended lasers (Class 2+): 20 feet above OR 8 feet side/below audience floor",
+      "Continuous operator control (Class 2+): 10 feet above OR 8 feet side/below audience floor",
+      "Unauthorized interference prevention controls required",
+      "Designated laser safety officer responsible for shutdown if unsafe",
+      "FDA variance required per 21 CFR Ch. I, Subchapter J, Part 1040",
+      "FAA notification copy submitted to Radiation Control Program"
+    ]
+  },
+  "registration": {
+    "facility_definition": "Facility with Class 3B or Class 4 lasers under same administrative control",
+    "exemption": "Lasers in transit or storage incident thereto",
+    "application": {
+      "timing": "Prior to operation",
+      "form": "Furnished by Radiation Control Program",
+      "requirement": "Designate Laser Safety Officer"
+    },
+    "certificate": {
+      "posting": "Current certificate or legible copy posted conspicuously",
+      "modification": "Director may incorporate additional requirements for public protection"
+    },
+    "renewal": {
+      "grace_period": "Application filed 30+ days prior to expiration extends validity until determination"
+    },
+    "change_notification": {
+      "requirement": "Notify in writing before changes rendering application info inaccurate",
+      "disposition": "Include recipient when disposing of laser device"
+    }
+  },
+  "vendor_requirements": {
+    "trigger": "Sell, lease, transfer, lend, dispose, assemble, or install Class 3B or Class 4 laser",
+    "notification_time": "Within 15 days",
+    "required_info": [
+      "Name and address of recipient",
+      "Manufacturer, model, serial number, class of each device",
+      "Date of transfer"
+    ]
+  },
+  "state_laser_facilities_temporary_use": {
+    "notice_requirement": "10 working days before use in Commonwealth",
+    "required_info": [
+      "Manufacturer, model, serial number, class",
+      "Nature, duration, scope of use",
+      "Exact location(s)",
+      "States where registered (if applicable)"
+    ],
+    "compliance_requirements": [
+      "Comply with all applicable Radiation Control Program regulations",
+      "Register laser(s) with Radiation Control Program",
+      "Submit required registration fee"
+    ],
+    "inspection": "Operational inspection may be required at Director's discretion"
+  },
+  "entertainment_additional_requirements": {
+    "notification_time": "Within 10 days of first scheduled performance",
+    "required_info": [
+      "Name, address, phone of laser owner",
+      "Name, address, phone of laser safety officer",
+      "Name, address, phone of laser operator(s)",
+      "Name, address, phone of facility(s)",
+      "Name, address, phone of individual in charge of performance",
+      "Date(s) and times of performances",
+      "Length of time laser in operation",
+      "Class of laser and manufacturer name",
+      "Sketches describing design/layout of show",
+      "FDA variance and accession number and date",
+      "Copy of FAA notification (if applicable)"
+    ]
+  },
+  "record_keeping": {
+    "class_3b_4_records": "Receipt, transfer, and disposal records for all Class 3B and Class 4 lasers",
+    "additional_requirements": "As specified elsewhere in 105 CMR 121.000",
+    "ansi_requirements": "Plus ANSI Z136.1, Z136.2, Z136.3 recordkeeping requirements"
+  },
+  "inspection_rights": [
+    "Registrant shall afford opportunity to inspect laser devices and premises",
+    "Records maintained pursuant to regulations available for inspection upon reasonable notice"
+  ],
+  "waiver_provisions": {
+    "authority": "Commissioner or designee may waive requirements",
+    "findings_required": [
+      "Compliance would cause undue hardship",
+      "Substantial compliance with spirit of requirement",
+      "Compliance does not jeopardize health or safety"
+    ],
+    "documentation": "Written documentation supporting request required"
+  },
+  "enforcement": {
+    "purpose": "Promote and protect health and safety of public and employees",
+    "civil_penalties": {
+      "maximum": "$500 per violation",
+      "assessment": "Whether or not violation was willful",
+      "factors": [
+        "Willfulness of violation",
+        "Actual and potential danger to public health/environment",
+        "Actual or potential costs/damage/injury",
+        "Cost of enforcement",
+        "Reasonable efforts to prevent/comply/remedy",
+        "Prior compliance history",
+        "Deterrence likelihood",
+        "Financial condition of violator"
+      ]
+    },
+    "grounds_for_suspension": [
+      "Public health, safety, or environment threatened by delay"
+    ],
+    "grounds_for_denial_revocation": [
+      "Failed to submit required information",
+      "Failed to meet registration requirements",
+      "Not suitable/responsible to operate facility",
+      "Fraud, misrepresentation, false information",
+      "Failed to pay registration fee or civil penalties",
+      "Failed to allow inspections or impeded enforcement",
+      "Criminal conviction relating to fitness",
+      "Prior suspension/denial/revocation in other jurisdiction",
+      "Operated after certificate expiration",
+      "Failed to remedy cited violation",
+      "Falsification of test results",
+      "Endangered public health, safety, or environment",
+      "Used laser for purposes other than registration"
+    ]
+  },
+  "contact_info": {
+    "address": "Radiation Control Program, State Laboratory, 305 South Street, Jamaica Plain, MA 02130"
+  }
+}

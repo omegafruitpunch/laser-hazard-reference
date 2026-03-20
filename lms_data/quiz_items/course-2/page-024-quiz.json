@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 24,
+  "quiz_items": [
+    {
+      "id": "C2-P24-Q1",
+      "type": "scenario",
+      "difficulty": "advanced",
+      "question": "A laser show manufacturer with a Class IIIb variance wants to add Class IV laser effects to their show. What must they do?",
+      "options": [
+        "Simply update their Annual Report",
+        "Amend their variance to cover Class IV levels",
+        "Nothing, the existing variance automatically covers all classes",
+        "Discontinue the existing variance and apply for a new one"
+      ],
+      "correct_answer": 1,
+      "explanation": "When planning Class IV shows but only having a Class IIIb variance, or when adding effects not previously included, the variance must be amended to address the new safety conditions.",
+      "learning_objective": "Know when to amend variances",
+      "regulatory_reference": "21 CFR 1010.4(b)(2), Appendix B"
+    },
+    {
+      "id": "C2-P24-Q2",
+      "type": "multiple_select",
+      "difficulty": "advanced",
+      "question": "For laser light shows, what reporting is required? (Select all that apply)",
+      "options": [
+        "General reporting guide for projectors/projection systems",
+        "Light show reporting guide for effects",
+        "Notification letter with show schedules and locations",
+        "Weekly sales reports"
+      ],
+      "correct_answer": [0, 1, 2],
+      "explanation": "Three reporting methods: (1) General reporting guide for projectors, (2) Light show reporting guide for effects, and (3) Notification letter with specific dates, locations, and effects for each show.",
+      "learning_objective": "Understand laser show reporting requirements",
+      "regulatory_reference": "Appendix B - Reporting Requirements"
+    }
+  ]
+}

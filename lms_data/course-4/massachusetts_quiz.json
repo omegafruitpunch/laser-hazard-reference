@@ -1,0 +1,213 @@
+{
+  "state": "Massachusetts",
+  "quiz_title": "Massachusetts Laser Safety Regulations Assessment",
+  "total_questions": 15,
+  "passing_score": 80,
+  "questions": [
+    {
+      "id": "MA-Q1",
+      "type": "multiple_choice",
+      "difficulty": "basic",
+      "question": "Which agency administers laser regulations in Massachusetts?",
+      "options": [
+        "Massachusetts Department of Environmental Protection",
+        "Massachusetts Department of Public Health - Radiation Control Program",
+        "Massachusetts Department of Labor and Workforce Development",
+        "Massachusetts Emergency Management Agency"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Massachusetts Department of Public Health's Radiation Control Program administers 105 CMR 121.000 laser regulations."
+    },
+    {
+      "id": "MA-Q2",
+      "type": "multiple_choice",
+      "difficulty": "basic",
+      "question": "What is the CMR citation for Massachusetts laser regulations?",
+      "options": [
+        "105 CMR 120.000",
+        "105 CMR 121.000",
+        "105 CMR 122.000",
+        "110 CMR 121.000"
+      ],
+      "correct_answer": 1,
+      "explanation": "Massachusetts laser regulations are codified as 105 CMR 121.000 - Regulations for the Control of Lasers."
+    },
+    {
+      "id": "MA-Q3",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the advance notice requirement for temporary laser use in Massachusetts?",
+      "options": [
+        "5 working days",
+        "10 working days",
+        "15 working days",
+        "30 working days"
+      ],
+      "correct_answer": 1,
+      "explanation": "Section 121.022 requires 10 working days advance written notice before bringing Class 3B or Class 4 lasers into Massachusetts for temporary use."
+    },
+    {
+      "id": "MA-Q4",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What laser classes require registration in Massachusetts?",
+      "options": [
+        "Class 2 and above",
+        "Class 3A and above",
+        "Class 3B and Class 4 only",
+        "All laser classes"
+      ],
+      "correct_answer": 2,
+      "explanation": "105 CMR 121.012 through 121.020 require registration for facilities utilizing Class 3B or Class 4 lasers under the same administrative control."
+    },
+    {
+      "id": "MA-Q5",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "How long do vendors have to notify the Radiation Control Program after transferring a laser device?",
+      "options": [
+        "5 days",
+        "10 days",
+        "15 days",
+        "30 days"
+      ],
+      "correct_answer": 2,
+      "explanation": "Vendors must notify the Radiation Control Program within 15 days of transferring a Class 3B or Class 4 laser device."
+    },
+    {
+      "id": "MA-Q6",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the maximum civil penalty per violation in Massachusetts?",
+      "options": [
+        "$100",
+        "$250",
+        "$500",
+        "$1,000"
+      ],
+      "correct_answer": 2,
+      "explanation": "Section 121.027 allows civil penalties not exceeding $500 per violation, whether or not the violation was willful."
+    },
+    {
+      "id": "MA-Q7",
+      "type": "true_false",
+      "difficulty": "basic",
+      "question": "Massachusetts regulations apply to federal government agencies.",
+      "options": ["True", "False"],
+      "correct_answer": 1,
+      "explanation": "False. 105 CMR 121.000 specifically excludes federal government agencies from the definition of 'person' subject to these regulations."
+    },
+    {
+      "id": "MA-Q8",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "For entertainment lasers, what is the minimum height requirement above the audience for unattended Class 2+ lasers?",
+      "options": [
+        "6 feet",
+        "10 feet",
+        "20 feet",
+        "30 feet"
+      ],
+      "correct_answer": 2,
+      "explanation": "Section 121.008 requires unattended lasers with Class 2+ radiation to be at least 20 feet above the audience floor, or 8 feet laterally."
+    },
+    {
+      "id": "MA-Q9",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "What is the lateral separation requirement for attended entertainment lasers with Class 2+ radiation?",
+      "options": [
+        "4 feet",
+        "6 feet",
+        "8 feet",
+        "10 feet"
+      ],
+      "correct_answer": 2,
+      "explanation": "Section 121.008 requires 8 feet lateral separation (side or below) for attended entertainment lasers with Class 2+ radiation limits."
+    },
+    {
+      "id": "MA-Q10",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which ANSI standards are referenced in Massachusetts regulations?",
+      "options": [
+        "Z136.1 only",
+        "Z136.1 and Z136.2",
+        "Z136.1, Z136.2, and Z136.3",
+        "All Z136 series standards"
+      ],
+      "correct_answer": 2,
+      "explanation": "105 CMR 121 references ANSI Z136.1 (general), Z136.2 (optical fiber), and Z136.3 (health care) standards."
+    },
+    {
+      "id": "MA-Q11",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "What information must be included in entertainment laser advance notification?",
+      "options": [
+        "Only date and location",
+        "Date, location, and laser class only",
+        "Owner info, LSO info, operator info, dates, class, sketches, FDA variance, FAA notification",
+        "Only FDA variance number"
+      ],
+      "correct_answer": 2,
+      "explanation": "Section 121.023 requires extensive information including owner, LSO, operators, dates, class, sketches, FDA variance number, and FAA notification (if applicable)."
+    },
+    {
+      "id": "MA-Q12",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What must be conspicuously posted at each registered facility?",
+      "options": [
+        "Only the ANSI standards",
+        "Emergency contact list only",
+        "Current certificate of registration or legible copy",
+        "Laser operation manual"
+      ],
+      "correct_answer": 2,
+      "explanation": "Section 121.017 requires a current certificate of registration or legible copy to be posted conspicuously at each registered facility."
+    },
+    {
+      "id": "MA-Q13",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "Who can request a waiver of regulatory requirements in Massachusetts?",
+      "options": [
+        "Any laser operator",
+        "Only the facility owner",
+        "The Commissioner or his/her designee may grant waivers upon finding undue hardship",
+        "No waivers are permitted"
+      ],
+      "correct_answer": 2,
+      "explanation": "Section 121.011 allows the Commissioner or designee to waive requirements upon finding undue hardship, substantial compliance with spirit, and no health/safety jeopardy."
+    },
+    {
+      "id": "MA-Q14",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What must accompany a request for waiver?",
+      "options": [
+        "Payment of $100 fee",
+        "Written documentation supporting the request",
+        "Third-party audit report",
+        "Court order"
+      ],
+      "correct_answer": 1,
+      "explanation": "Section 121.011 requires written documentation supporting the waiver request, including justification for undue hardship."
+    },
+    {
+      "id": "MA-Q15",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "What is NOT grounds for denial or revocation of a certificate of registration?",
+      "options": [
+        "Failure to pay registration fee",
+        "Falsification of test results",
+        "Operating on weekends",
+        "Endangering public health or safety"
+      ],
+      "correct_answer": 2,
+      "explanation": "Operating on weekends is not grounds for denial or revocation. All other options are specifically listed grounds in Section 121.027."
+    }
+  ]
+}

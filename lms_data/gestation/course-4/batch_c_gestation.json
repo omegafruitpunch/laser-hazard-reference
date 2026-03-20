@@ -1,0 +1,168 @@
+{
+  "batch": "C",
+  "course": 4,
+  "agent": "PDF Elite Processor Agent #12",
+  "processed_states": ["nevada", "new-york", "texas", "washington"],
+  "timestamp": "2026-03-19T15:46:00-07:00",
+  "gestation_analysis": {
+    "nevada": {
+      "state": "Nevada",
+      "regulatory_body": "Radiation Control Program, Division of Public and Behavioral Health",
+      "key_contact": {
+        "name": "Karen Beckley",
+        "title": "Manager, Radiation Control Program",
+        "phone": "(775) 687-7550",
+        "email": "kbeckley@health.nv.gov",
+        "address": "675 Fairview Drive, Suite 218, Carson City, NV 89701"
+      },
+      "regulatory_summary": "Nevada requires advance notification for laser operations. Part of comprehensive state laser safety contacts directory.",
+      "key_requirements": [
+        "Advance notification required for laser operations",
+        "Contact Radiation Control Program before installation/use"
+      ],
+      "inspections": false,
+      "pending_legislation": false,
+      "regulatory_tier": "notification_required",
+      "source_pages": 16,
+      "content_type": "state_contacts_directory"
+    },
+    "new-york": {
+      "state": "New York",
+      "regulatory_body": "NYS Dept. of Labor Radiological Health Unit",
+      "key_contact": {
+        "name": "Kirk Fisher",
+        "title": "Radiophysicist",
+        "phone": "(518) 457-1202",
+        "fax": "(518) 485-8530",
+        "address": "State Campus Building 12 Room 169 Albany, NY 12240"
+      },
+      "regulatory_summary": "New York has Industrial Code Rule 50 under Title 12 (12 NYCRR Part 50), amended 3/2/94. State requires training certification for laser operators.",
+      "key_requirements": [
+        "Industrial Code Rule 50 compliance required",
+        "Class A Certificate for low intensity lasers",
+        "Class B Certificate for low and high intensity lasers",
+        "Training from approved providers mandatory"
+      ],
+      "training_providers": [
+        {
+          "name": "Tri-Cities Laborers' Training Program",
+          "contact": "Joseph A. Zappone / Peter Nardolillo",
+          "location": "Glenmont, NY",
+          "phone": "(518) 426-0290",
+          "certification": "Class A"
+        },
+        {
+          "name": "Institute of Design & Construction",
+          "contact": "John Anselmo",
+          "location": "Brooklyn, NY",
+          "phone": "(718) 855-3661",
+          "certification": "Class A"
+        },
+        {
+          "name": "NY District Council of Carpenters Labor Technical College",
+          "contact": "Martin Daly",
+          "location": "New York, NY",
+          "phone": "(212) 727-2224",
+          "certification": "Class A"
+        },
+        {
+          "name": "Rarefied Media Inc.",
+          "contact": "Norman Ballard",
+          "location": "New York, NY",
+          "phone": "(212) 874-1431",
+          "certification": "Class B"
+        },
+        {
+          "name": "Hudson Valley Community College",
+          "contact": "Theodore Marotta",
+          "location": "Troy, NY",
+          "phone": "(518) 283-1100",
+          "certification": "Class B"
+        },
+        {
+          "name": "LIA Laser Institute",
+          "website": "lia.org",
+          "email": "lia@lia.org",
+          "phone": "(407) 380-1553",
+          "certification": "Class B"
+        }
+      ],
+      "inspections": true,
+      "pending_legislation": false,
+      "regulatory_tier": "comprehensive_regulation",
+      "source_pages": 2,
+      "content_type": "training_requirements"
+    },
+    "texas": {
+      "state": "Texas",
+      "regulatory_body": "Department of State Health Services Radiation Safety Licensing Branch",
+      "key_contact": {
+        "name": "Shannon Dove-Edson",
+        "title": "Program Manager, Laser Registration Program",
+        "phone": "(512) 834-6688",
+        "fax": "(512) 834-6716",
+        "email": "shannon.dove-edson@dshs.state.tx.us",
+        "address": "1100 W. 49th Street, Mail Code 2835 Austin, TX 78756-3189"
+      },
+      "regulatory_summary": "Texas has extensive laser regulations including specific requirements for laser hair removal devices and intense-pulsed light devices. ILDA comments indicate significant industry engagement regarding light show regulations.",
+      "key_requirements": [
+        "25 TAC 289.301 - Registration and Radiation Safety Requirements for Lasers and Intense-Pulsed Light Devices",
+        "25 TAC 289.302 - Registration and Radiation Safety Requirements for Laser Hair Removal Devices",
+        "Registration required for laser devices",
+        "Routine inspections conducted"
+      ],
+      "special_notes": {
+        "light_shows": "ILDA comments indicate discussions about exempting or modifying requirements for laser light shows",
+        "out_of_state": "Requirements for out-of-state operators under review",
+        "fda_alignment": "Texas considers piggybacking off FDA variance requirements"
+      },
+      "inspections": true,
+      "pending_legislation": false,
+      "regulatory_tier": "comprehensive_regulation",
+      "source_pages": 14,
+      "content_type": "regulatory_comments_and_requirements",
+      "note": "Original file was DOCX format containing ILDA regulatory comments"
+    },
+    "washington": {
+      "state": "Washington",
+      "regulatory_body": "X-Ray Control Department of Health/Radiation Protection",
+      "key_contact": {
+        "name": "David B. Jansen",
+        "title": "Director",
+        "phone": "(360) 236-3210",
+        "fax": "(360) 236-2266",
+        "email": "radioiationinfo@doh.wa.gov",
+        "address": "P.O. Box 47827 Olympia, WA 98504-7827"
+      },
+      "regulatory_summary": "Washington follows State rules Ch. 296-62-09005 WAC. Requires advance written notification for light shows.",
+      "key_requirements": [
+        "Compliance with Ch. 296-62-09005 WAC",
+        "Advance written notification for laser light shows",
+        "Contact Radiation Protection office for registration requirements"
+      ],
+      "inspections": false,
+      "pending_legislation": false,
+      "regulatory_tier": "notification_required",
+      "source_pages": 16,
+      "content_type": "state_contacts_directory"
+    }
+  },
+  "comparative_analysis": {
+    "inspection_states": ["new-york", "texas"],
+    "notification_only_states": ["nevada", "washington"],
+    "comprehensive_regulation": ["new-york", "texas"],
+    "training_required": ["new-york"],
+    "light_show_specific": ["washington", "texas"]
+  },
+  "content_summary": {
+    "total_pages_processed": 48,
+    "total_states_covered": 4,
+    "primary_regulatory_themes": [
+      "Registration requirements",
+      "Notification protocols",
+      "Training certification",
+      "Inspection programs",
+      "Laser light show regulations"
+    ]
+  }
+}

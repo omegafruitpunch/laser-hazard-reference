@@ -1,0 +1,375 @@
+{
+  "component_id": "power_measurement_visualizer",
+  "name": "SAE Power Measurement Visualizer",
+  "type": "interactive_calculator",
+  "description": "Interactive visualizer for SAE measurement zone calculations with real-time graphing",
+  "version": "1.0.0",
+  "calculators": [
+    {
+      "id": "nohd_calculator",
+      "name": "NOHD Calculator",
+      "description": "Calculate Nominal Ocular Hazard Distance",
+      "formula": "NOHD = (32.8 / divergence) * sqrt((1273.2 * power) / mpe)",
+      "inputs": [
+        {
+          "id": "power",
+          "label": "Laser Power",
+          "unit": "W",
+          "default": 25,
+          "min": 0.001,
+          "max": 1000,
+          "step": 0.1
+        },
+        {
+          "id": "divergence",
+          "label": "Beam Divergence",
+          "unit": "mrad",
+          "default": 1.5,
+          "min": 0.1,
+          "max": 10,
+          "step": 0.1
+        },
+        {
+          "id": "mpe",
+          "label": "MPE Value",
+          "unit": "mW/cm²",
+          "default": 2.6,
+          "options": [
+            {"value": 2.6, "label": "Visible (400-700nm) - 2.6"},
+            {"value": 5.187, "label": "850nm (CA=1.995) - 5.187"},
+            {"value": 12.75, "label": "1064nm - 12.75"},
+            {"value": 4000, "label": "1540nm - 4000"}
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "id": "nohd",
+          "label": "NOHD",
+          "unit": "feet",
+          "formula": "(32.8 / ${divergence}) * Math.sqrt((1273.2 * ${power}) / ${mpe})"
+        },
+        {
+          "id": "nohd_meters",
+          "label": "NOHD",
+          "unit": "meters",
+          "formula": "((32.8 / ${divergence}) * Math.sqrt((1273.2 * ${power}) / ${mpe})) * 0.3048"
+        },
+        {
+          "id": "nohd_nm",
+          "label": "NOHD",
+          "unit": "nautical miles",
+          "formula": "((32.8 / ${divergence}) * Math.sqrt((1273.2 * ${power}) / ${mpe})) / 6076"
+        }
+      ],
+      "visualization": {
+        "type": "distance_arc",
+        "show_beam_spread": true,
+        "show_hazard_zone": true,
+        "color_coding": {
+          "hazard": "#FF0000",
+          "safe": "#00FF00",
+          "beam": "#FFFF00"
+        }
+      }
+    },
+    {
+      "id": "visual_interference_calculator",
+      "name": "Visual Interference Zone Calculator",
+      "description": "Calculate SZED, CZED, and LFED",
+      "formula": "Based on visually corrected power",
+      "inputs": [
+        {
+          "id": "vcp",
+          "label": "Visually Corrected Power",
+          "unit": "W",
+          "default": 25,
+          "min": 0.001,
+          "max": 1000,
+          "step": 0.1,
+          "help_text": "Enter the VCP from your calculations"
+        },
+        {
+          "id": "divergence",
+          "label": "Beam Divergence",
+          "unit": "mrad",
+          "default": 1.5,
+          "min": 0.1,
+          "max": 10,
+          "step": 0.1
+        }
+      ],
+      "outputs": [
+        {
+          "id": "szed",
+          "label": "SZED (Sensitive Zone)",
+          "unit": "feet",
+          "formula": "(32.8 / ${divergence}) * Math.sqrt((12732 * ${vcp}) / 0.1)",
+          "description": "Flashblindness hazard distance"
+        },
+        {
+          "id": "czed",
+          "label": "CZED (Critical Zone)",
+          "unit": "feet",
+          "formula": "((32.8 / ${divergence}) * Math.sqrt((12732 * ${vcp}) / 0.1)) * 4.47",
+          "description": "Glare hazard distance"
+        },
+        {
+          "id": "lfed",
+          "label": "LFED (Laser-Free Zone)",
+          "unit": "feet",
+          "formula": "((32.8 / ${divergence}) * Math.sqrt((12732 * ${vcp}) / 0.1)) * 44.7",
+          "description": "Distraction hazard distance"
+        }
+      ],
+      "visualization": {
+        "type": "concentric_zones",
+        "zones": [
+          {"id": "szed", "label": "SZED", "color": "#FF0000", "description": "Flashblindness"},
+          {"id": "czed", "label": "CZED", "color": "#FF8800", "description": "Glare"},
+          {"id": "lfed", "label": "LFED", "color": "#FFFF00", "description": "Distraction"}
+        ]
+      }
+    },
+    {
+      "id": "vcf_calculator",
+      "name": "Visual Correction Factor Calculator",
+      "description": "Calculate visually corrected power for multi-wavelength lasers",
+      "inputs": [
+        {
+          "id": "wavelength_1",
+          "label": "Wavelength 1",
+          "unit": "nm",
+          "default": 638,
+          "type": "wavelength_select"
+        },
+        {
+          "id": "power_1",
+          "label": "Power at Wavelength 1",
+          "unit": "W",
+          "default": 5,
+          "min": 0,
+          "max": 1000,
+          "step": 0.1
+        },
+        {
+          "id": "wavelength_2",
+          "label": "Wavelength 2",
+          "unit": "nm",
+          "default": 520,
+          "type": "wavelength_select"
+        },
+        {
+          "id": "power_2",
+          "label": "Power at Wavelength 2",
+          "unit": "W",
+          "default": 3,
+          "min": 0,
+          "max": 1000,
+          "step": 0.1
+        },
+        {
+          "id": "wavelength_3",
+          "label": "Wavelength 3",
+          "unit": "nm",
+          "default": 445,
+          "type": "wavelength_select"
+        },
+        {
+          "id": "power_3",
+          "label": "Power at Wavelength 3",
+          "unit": "W",
+          "default": 8,
+          "min": 0,
+          "max": 1000,
+          "step": 0.1
+        }
+      ],
+      "vcf_table": {
+        "400": 0.0004,
+        "405": 0.0008,
+        "410": 0.0012,
+        "415": 0.0026,
+        "420": 0.0040,
+        "425": 0.0078,
+        "430": 0.0116,
+        "435": 0.0173,
+        "440": 0.0230,
+        "445": 0.0380,
+        "450": 0.0380,
+        "455": 0.0490,
+        "460": 0.0599,
+        "465": 0.0754,
+        "470": 0.0909,
+        "475": 0.1150,
+        "480": 0.1391,
+        "485": 0.1735,
+        "490": 0.2079,
+        "495": 0.2653,
+        "500": 0.3226,
+        "505": 0.4126,
+        "510": 0.5025,
+        "515": 0.6059,
+        "520": 0.7092,
+        "525": 0.7857,
+        "530": 0.8621,
+        "532": 0.8621,
+        "535": 0.9073,
+        "540": 0.9524,
+        "545": 0.9713,
+        "550": 0.9901,
+        "555": 1.0000,
+        "560": 0.9901,
+        "565": 0.9713,
+        "570": 0.9524,
+        "575": 0.9110,
+        "580": 0.8696,
+        "585": 0.8136,
+        "590": 0.7576,
+        "595": 0.6953,
+        "600": 0.6329,
+        "605": 0.5677,
+        "610": 0.5025,
+        "615": 0.4421,
+        "620": 0.3817,
+        "625": 0.3235,
+        "630": 0.2653,
+        "635": 0.2202,
+        "638": 0.2202,
+        "640": 0.1751,
+        "645": 0.1411,
+        "650": 0.1070,
+        "655": 0.0840,
+        "660": 0.0610,
+        "665": 0.0466,
+        "670": 0.0321,
+        "675": 0.0246,
+        "680": 0.0170,
+        "685": 0.0126,
+        "690": 0.0082,
+        "695": 0.0062,
+        "700": 0.0041
+      },
+      "outputs": [
+        {
+          "id": "pcp",
+          "label": "Pre-corrected Power (PCP)",
+          "unit": "W",
+          "formula": "${power_1} + ${power_2} + ${power_3}"
+        },
+        {
+          "id": "vcf_1",
+          "label": "VCF for λ1",
+          "formula": "lookup_vcf(${wavelength_1})"
+        },
+        {
+          "id": "vcf_2",
+          "label": "VCF for λ2",
+          "formula": "lookup_vcf(${wavelength_2})"
+        },
+        {
+          "id": "vcf_3",
+          "label": "VCF for λ3",
+          "formula": "lookup_vcf(${wavelength_3})"
+        },
+        {
+          "id": "vcp_1",
+          "label": "VCP contribution λ1",
+          "unit": "W",
+          "formula": "${power_1} * lookup_vcf(${wavelength_1})"
+        },
+        {
+          "id": "vcp_2",
+          "label": "VCP contribution λ2",
+          "unit": "W",
+          "formula": "${power_2} * lookup_vcf(${wavelength_2})"
+        },
+        {
+          "id": "vcp_3",
+          "label": "VCP contribution λ3",
+          "unit": "W",
+          "formula": "${power_3} * lookup_vcf(${wavelength_3})"
+        },
+        {
+          "id": "vcp_total",
+          "label": "Total Visually Corrected Power",
+          "unit": "W",
+          "formula": "(${power_1} * lookup_vcf(${wavelength_1})) + (${power_2} * lookup_vcf(${wavelength_2})) + (${power_3} * lookup_vcf(${wavelength_3}))"
+        },
+        {
+          "id": "overall_vcf",
+          "label": "Overall VCF",
+          "formula": "((${power_1} * lookup_vcf(${wavelength_1})) + (${power_2} * lookup_vcf(${wavelength_2})) + (${power_3} * lookup_vcf(${wavelength_3}))) / (${power_1} + ${power_2} + ${power_3})"
+        }
+      ],
+      "visualization": {
+        "type": "bar_chart",
+        "bars": [
+          {"label": "Red", "value": "power_1", "color": "#FF0000"},
+          {"label": "Green", "value": "power_2", "color": "#00FF00"},
+          {"label": "Blue", "value": "power_3", "color": "#0000FF"},
+          {"label": "Total Actual", "value": "pcp", "color": "#888888"},
+          {"label": "Visually Corrected", "value": "vcp_total", "color": "#FFFFFF"}
+        ]
+      }
+    }
+  ],
+  "visualization_features": {
+    "airspace_map_overlay": true,
+    "beam_angle_projection": true,
+    "airport_proximity_warning": true,
+    "flight_zone_coloring": true,
+    "3d_visualization": false,
+    "export_to_form_7140": true
+  },
+  "examples": [
+    {
+      "name": "5mW Green Pointer",
+      "description": "Standard laser pointer",
+      "values": {
+        "power": 0.005,
+        "divergence": 1.0,
+        "mpe": 2.6,
+        "vcp": 0.005
+      },
+      "expected_nohd": 5,
+      "expected_szed": 368,
+      "expected_czed": 1645,
+      "expected_lfed": 16451
+    },
+    {
+      "name": "25W RGB Show Laser",
+      "description": "Typical outdoor show laser",
+      "values": {
+        "power": 25,
+        "divergence": 1.5,
+        "mpe": 2.6,
+        "vcp": 15
+      },
+      "expected_nohd": 2421,
+      "expected_szed": 38618,
+      "expected_czed": 172622,
+      "expected_lfed": 1726213
+    },
+    {
+      "name": "100W High-Power System",
+      "description": "Large-scale outdoor system",
+      "values": {
+        "power": 100,
+        "divergence": 2.0,
+        "mpe": 2.6,
+        "vcp": 70
+      },
+      "expected_nohd": 3526,
+      "expected_szed": 74933,
+      "expected_czed": 334951,
+      "expected_lfed": 3349530
+    }
+  ],
+  "help_text": {
+    "no_hd": "The Nominal Ocular Hazard Distance is the distance from the laser source where the beam irradiance falls below the Maximum Permissible Exposure (MPE) for human eyes.",
+    "szed": "The Sensitive Zone Exposure Distance is where beam irradiance falls below 100 µW/cm². Within this zone, flashblindness and afterimages may occur.",
+    "czed": "The Critical Zone Exposure Distance is where beam irradiance falls below 5 µW/cm². Within this zone, glare may obscure vision.",
+    "lfed": "The Laser-Free Exposure Distance is where beam irradiance falls below 50 nW/cm². Beyond this, distraction is unlikely."
+  }
+}

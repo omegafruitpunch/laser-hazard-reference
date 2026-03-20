@@ -1,0 +1,57 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 6,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Human access determination for laser radiation",
+      "Protective housing requirements",
+      "Laser product classification principles",
+      "Class determination methodology"
+    ],
+    "key_terms": [
+      {
+        "term": "Human Access",
+        "definition": "Laser radiation that can be intercepted by body parts or reflected through openings"
+      },
+      {
+        "term": "Protective Housing",
+        "definition": "Enclosure containing laser radiation not necessary for product function"
+      },
+      {
+        "term": "Operation",
+        "definition": "Functions by which product accomplishes intended purpose"
+      },
+      {
+        "term": "Class I Limits",
+        "definition": "Emission limits for inherently safe devices"
+      },
+      {
+        "term": "Use-Factor Data",
+        "definition": "Statistical data on emission patterns for classification"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.10(b)(15) - Human access definition",
+      "21 CFR 1040.10(b)(27) - Operation definition",
+      "21 CFR 1040.10(c) - Classification requirements",
+      "21 CFR 1040.10(f)(1) - Protective housing requirement",
+      "21 CFR 1040.10(d)(Tables I-V) - Class limit expressions"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Determine when laser radiation is considered accessible",
+      "Understand protective housing requirements",
+      "Apply classification principles to laser products",
+      "Identify when Class I limits are exceeded"
+    ],
+    "prerequisites": [
+      "Understanding of laser physics",
+      "Basic radiation measurement concepts"
+    ],
+    "estimated_study_time_minutes": 30,
+    "content_type": "technical_requirements",
+    "has_tables": false
+  }
+}

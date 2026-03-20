@@ -1,0 +1,7 @@
+{
+  "id": "ocular-hazards_q003",
+  "type": "true_false",
+  "question": "The blink reflex provides adequate protection against Class 3B lasers.",
+  "correct": false,
+  "explanation": "The blink reflex (0.25 seconds) only provides protection for Class 2 lasers (<1 mW). Class 3B lasers can cause injury faster than the blink reflex can respond."
+}

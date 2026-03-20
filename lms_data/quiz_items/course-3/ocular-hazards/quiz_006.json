@@ -1,0 +1,13 @@
+{
+  "id": "ocular-hazards_q006",
+  "type": "multiple_choice",
+  "question": "Why are near-infrared lasers (700-1400 nm) particularly dangerous?",
+  "options": [
+    "They have very high power",
+    "They are invisible and focus on retina without triggering blink reflex",
+    "They cause immediate pain",
+    "They are not regulated"
+  ],
+  "correct": 1,
+  "explanation": "Near-infrared lasers are invisible (no blink reflex protection) and, like visible light, focus on the retina. Victims may not realize exposure occurred."
+}

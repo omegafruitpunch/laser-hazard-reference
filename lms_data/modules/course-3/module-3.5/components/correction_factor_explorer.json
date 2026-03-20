@@ -1,0 +1,271 @@
+{
+  "component_id": "correction_factor_explorer",
+  "name": "Correction Factor Explorer",
+  "version": "1.0.0",
+  "type": "interactive_visualization",
+  "description": "Interactive exploration of CA, CB, CC, CE, and CP correction factors with visualizations",
+  "pedagogical_approach": {
+    "concept_first": true,
+    "visual_learning": true,
+    "interactive_exploration": true,
+    "real_time_calculation": true
+  },
+  "factors": {
+    "ca": {
+      "id": "ca",
+      "name": "CA",
+      "full_name": "Wavelength Correction Factor (Retinal)",
+      "description": "Accounts for reduced retinal sensitivity at longer wavelengths in the near-infrared",
+      "applies_to": "700-1400 nm (retinal hazard region)",
+      "why_needed": "The retina is less sensitive to longer near-IR wavelengths, allowing proportionally higher exposure limits",
+      "formula_display": {
+        "primary": "CA = 10^[0.002(λ - 700)] for 700-1050 nm",
+        "secondary": "CA = 5.0 for 1050-1400 nm"
+      },
+      "visualization": {
+        "type": "line_chart",
+        "x_axis": {
+          "label": "Wavelength (nm)",
+          "min": 700,
+          "max": 1400,
+          "tick_interval": 100
+        },
+        "y_axis": {
+          "label": "CA Factor",
+          "min": 1,
+          "max": 5.5,
+          "tick_interval": 0.5
+        },
+        "highlight_regions": [
+          {"x_min": 700, "x_max": 1050, "label": "Logarithmic region", "color": "rgba(59, 130, 246, 0.1)"},
+          {"x_min": 1050, "x_max": 1400, "label": "Constant region", "color": "rgba(34, 197, 94, 0.1)"}
+        ],
+        "interactive_marker": {
+          "enabled": true,
+          "show_value": true,
+          "snap_to_grid": false
+        }
+      },
+      "key_values": [
+        {"wavelength": 700, "value": 1.0, "note": "Visible boundary"},
+        {"wavelength": 800, "value": 1.58, "note": "Common diode wavelength"},
+        {"wavelength": 900, "value": 2.51, "note": "Rapid increase"},
+        {"wavelength": 980, "value": 3.98, "note": "Common pump wavelength"},
+        {"wavelength": 1064, "value": 5.0, "note": "Nd:YAG maximum"},
+        {"wavelength": 1400, "value": 5.0, "note": "Near-IR boundary"}
+      ],
+      "worked_example": {
+        "title": "Calculating CA for 850 nm",
+        "steps": [
+          "Identify: 850 nm is in 700-1050 nm range",
+          "Formula: CA = 10^[0.002(850 - 700)]",
+          "Calculate: CA = 10^[0.002 × 150]",
+          "Simplify: CA = 10^0.3",
+          "Result: CA = 1.995 ≈ 2.0"
+        ],
+        "interpretation": "An 850 nm laser allows 2× the MPE of a visible laser"
+      }
+    },
+    "cb": {
+      "id": "cb",
+      "name": "CB",
+      "full_name": "Source Size Correction Factor",
+      "description": "Accounts for extended sources where energy is spread over a larger retinal area",
+      "applies_to": "Extended sources with angular size > 1.5 mrad",
+      "why_needed": "Larger apparent sources spread the same energy over more retinal area, reducing peak irradiance",
+      "formula_display": {
+        "primary": "CB = α / α_min for α_min ≤ α ≤ α_max",
+        "secondary": "CB = α_max / α_min for α > α_max",
+        "where": "α_min = 1.5 mrad, α_max = 100 mrad"
+      },
+      "visualization": {
+        "type": "line_chart",
+        "x_axis": {
+          "label": "Source Angular Size α (mrad)",
+          "min": 0,
+          "max": 120,
+          "tick_interval": 10
+        },
+        "y_axis": {
+          "label": "CB Factor",
+          "min": 1,
+          "max": 70,
+          "tick_interval": 10
+        },
+        "segments": [
+          {"x_min": 0, "x_max": 1.5, "type": "constant", "y": 1, "label": "No correction"},
+          {"x_min": 1.5, "x_max": 100, "type": "linear", "label": "Linear increase"},
+          {"x_min": 100, "x_max": 120, "type": "constant", "y": 66.7, "label": "Maximum"}
+        ],
+        "interactive_marker": {
+          "enabled": true,
+          "show_value": true
+        }
+      },
+      "examples": [
+        {"alpha": 1.0, "cb": 1.0, "note": "Point source - no CB"},
+        {"alpha": 5, "cb": 3.33, "note": "Moderate extension"},
+        {"alpha": 15, "cb": 10, "note": "Large source"},
+        {"alpha": 100, "cb": 66.7, "note": "Maximum CB"}
+      ],
+      "visual_demonstration": {
+        "type": "retinal_spot_comparison",
+        "show_small_source": true,
+        "show_large_source": true,
+        "illustrate_energy_distribution": true
+      }
+    },
+    "cc": {
+      "id": "cc",
+      "name": "CC",
+      "full_name": "Wavelength Correction Factor (IR)",
+      "description": "Accounts for varying absorption in the mid-to-far infrared region",
+      "applies_to": "1400 nm to 1 mm",
+      "why_needed": "Water absorption varies significantly in this range, affecting tissue penetration",
+      "formula_display": {
+        "1400-1500": "CC = 1.0",
+        "1500-1800": "CC = 10^[0.018(λ - 1400)]",
+        "1800-2600": "CC = 8.0",
+        "2600-1000μm": "CC = 10^[0.040(λ - 2600)]"
+      },
+      "visualization": {
+        "type": "line_chart",
+        "x_axis": {
+          "label": "Wavelength (nm)",
+          "min": 1400,
+          "max": 3000,
+          "tick_interval": 200
+        },
+        "y_axis": {
+          "label": "CC Factor",
+          "min": 0,
+          "max": 10,
+          "tick_interval": 1
+        },
+        "segments": [
+          {"x_min": 1400, "x_max": 1500, "type": "constant", "y": 1},
+          {"x_min": 1500, "x_max": 1800, "type": "exponential", "formula": "10^[0.018(x-1400)]"},
+          {"x_min": 1800, "x_max": 2600, "type": "constant", "y": 8},
+          {"x_min": 2600, "x_max": 3000, "type": "exponential", "formula": "10^[0.040(x-2600)]"}
+        ],
+        "highlight_peaks": [
+          {"wavelength": 2940, "label": "Er:YAG", "value": 16}
+        ]
+      }
+    },
+    "ce": {
+      "id": "ce",
+      "name": "CE",
+      "full_name": "Multiple Pulse Correction Factor",
+      "description": "Reduces per-pulse MPE for repetitive exposures to prevent cumulative damage",
+      "applies_to": "Repetitive pulse exposures",
+      "why_needed": "Multiple pulses can accumulate thermal or photochemical damage even if each pulse is below the single-pulse limit",
+      "formula_display": {
+        "primary": "MPE_pulse = MPE_single × n^-0.25",
+        "where": "n = number of pulses in exposure duration"
+      },
+      "visualization": {
+        "type": "log_log_chart",
+        "x_axis": {
+          "label": "Number of Pulses (n)",
+          "min": 1,
+          "max": 1000000,
+          "log_scale": true
+        },
+        "y_axis": {
+          "label": "Reduction Factor (n^-0.25)",
+          "min": 0.01,
+          "max": 1,
+          "log_scale": true
+        },
+        "reference_lines": [
+          {"n": 1, "factor": 1, "label": "Single pulse"},
+          {"n": 10, "factor": 0.56, "label": "10 pulses"},
+          {"n": 100, "factor": 0.32, "label": "100 pulses"},
+          {"n": 1000, "factor": 0.18, "label": "1000 pulses"},
+          {"n": 10000, "factor": 0.10, "label": "10k pulses"}
+        ]
+      },
+      "examples": [
+        {
+          "n": 10,
+          "factor": 0.56,
+          "example": "Each pulse limited to 56% of single-pulse MPE"
+        },
+        {
+          "n": 100,
+          "factor": 0.32,
+          "example": "Each pulse limited to 32% of single-pulse MPE"
+        },
+        {
+          "n": 10000,
+          "factor": 0.1,
+          "example": "Each pulse limited to 10% of single-pulse MPE"
+        }
+      ],
+      "worked_example": {
+        "title": "1000 pulses in 1 second",
+        "given": "Single-pulse MPE = 1 μJ/cm², n = 1000",
+        "steps": [
+          "Formula: MPE_pulse = 1 μJ/cm² × 1000^-0.25",
+          "Calculate: 1000^-0.25 = 0.178",
+          "Result: MPE_pulse = 0.178 μJ/cm²"
+        ],
+        "interpretation": "Each of the 1000 pulses must stay below 0.178 μJ/cm²"
+      }
+    },
+    "cp": {
+      "id": "cp",
+      "name": "CP",
+      "full_name": "Extended Source Factor (Additional)",
+      "description": "Additional adjustment for very large sources",
+      "applies_to": "Very extended sources in specific conditions",
+      "why_needed": "Provides additional adjustment beyond CB for special viewing geometries",
+      "formula_display": {
+        "note": "Rarely used - consult IEC 60825-1 Table A.1 for specific conditions"
+      }
+    }
+  },
+  "comparison_view": {
+    "enabled": true,
+    "title": "Factor Comparison",
+    "description": "Compare all correction factors side by side",
+    "table_columns": ["Factor", "Applies To", "Range", "Typical Use"],
+    "data": [
+      {"factor": "CA", "applies": "700-1400 nm", "range": "1.0 to 5.0", "use": "Near-IR retinal corrections"},
+      {"factor": "CB", "applies": "Extended sources", "range": "1.0 to 66.7", "use": "Diffuse reflections"},
+      {"factor": "CC", "applies": "1400 nm - 1 mm", "range": "1.0 to variable", "use": "Mid/far-IR corrections"},
+      {"factor": "CE", "applies": "Repetitive pulses", "range": "0.01 to 1.0", "use": "Multi-pulse exposures"},
+      {"factor": "CP", "applies": "Very large sources", "range": "Special", "use": "Rare - consult standard"}
+    ]
+  },
+  "practice_mode": {
+    "enabled": true,
+    "exercises": [
+      {
+        "id": "ca_practice_1",
+        "factor": "ca",
+        "question": "Calculate CA for 980 nm",
+        "hint": "Use CA = 10^[0.002(λ - 700)]",
+        "expected": 3.98,
+        "tolerance": 0.1
+      },
+      {
+        "id": "cb_practice_1",
+        "factor": "cb",
+        "question": "Calculate CB for α = 10 mrad",
+        "hint": "Use CB = α / 1.5 for α ≤ 100",
+        "expected": 6.67,
+        "tolerance": 0.1
+      },
+      {
+        "id": "ce_practice_1",
+        "factor": "ce",
+        "question": "Calculate the reduction factor for 100 pulses",
+        "hint": "Use n^-0.25",
+        "expected": 0.316,
+        "tolerance": 0.01
+      }
+    ]
+  }
+}

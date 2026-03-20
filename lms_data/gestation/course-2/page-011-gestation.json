@@ -1,0 +1,54 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 11,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Redundant and fail-safe interlock requirements",
+      "Defeatable safety interlocks",
+      "Remote interlock connectors",
+      "Snap-action switch limitations"
+    ],
+    "key_terms": [
+      {
+        "term": "Redundant Interlock",
+        "definition": "Multiple independent interlock systems for Class IIIb/IV"
+      },
+      {
+        "term": "Fail-Safe Interlock",
+        "definition": "Prevents opening or cannot fail in permissive mode"
+      },
+      {
+        "term": "Defeatable Interlock",
+        "definition": "Interlock that can be intentionally bypassed with indication"
+      },
+      {
+        "term": "Remote Interlock Connector",
+        "definition": "Required on Class IIIb/IV for external safety device connection"
+      },
+      {
+        "term": "130 Volts RMS",
+        "definition": "Maximum electrical potential allowed across remote connector"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.10(f)(2) - Safety interlock details",
+      "21 CFR 1040.10(f)(3) - Remote interlock connector"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Design redundant/fail-safe interlock systems",
+      "Implement defeatable interlocks properly",
+      "Specify remote interlock connectors",
+      "Avoid prohibited switch types"
+    ],
+    "prerequisites": [
+      "Electrical engineering basics",
+      "Page 10 content"
+    ],
+    "estimated_study_time_minutes": 30,
+    "content_type": "technical_requirements",
+    "has_tables": false
+  }
+}

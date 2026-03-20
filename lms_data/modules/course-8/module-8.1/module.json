@@ -1,0 +1,96 @@
+{
+  "module_id": "8.1",
+  "course_id": "8",
+  "title": "Module 8.1: ANSI Z136 Series Overview",
+  "subtitle": "Navigate the Foundation of Laser Safety Standards",
+  "description": "Master the ANSI Z136 series standards structure, understand the relationship between different Z136 documents, and learn to navigate the primary laser safety standard (Z136.1) with interactive tools and progressive disclosure learning.",
+  "version": "1.0.0",
+  "estimated_duration_minutes": 45,
+  "difficulty": "intermediate",
+  "prerequisites": ["1.1", "1.2", "1.3"],
+  "learning_objectives": [
+    {
+      "id": "8.1.1",
+      "objective": "Navigate the ANSI Z136 series document structure and identify which standard applies to specific applications",
+      "blooms_level": "Application",
+      "assessment_method": "Standards selection scenarios"
+    },
+    {
+      "id": "8.1.2",
+      "objective": "Understand the relationship between ANSI Z136.1 (foundation) and application-specific standards (Z136.3, Z136.10, etc.)",
+      "blooms_level": "Comprehension",
+      "assessment_method": "Hierarchy visualization exercise"
+    },
+    {
+      "id": "8.1.3",
+      "objective": "Locate and interpret key sections of ANSI Z136.1 including MPE tables, control measures, and LSO responsibilities",
+      "blooms_level": "Application",
+      "assessment_method": "Interactive Z136.1 navigator tasks"
+    },
+    {
+      "id": "8.1.4",
+      "objective": "Explain the relationship between ANSI Z136 standards and regulatory requirements (FDA, OSHA)",
+      "blooms_level": "Analysis",
+      "assessment_method": "Compliance framework analysis"
+    }
+  ],
+  "interactive_components": [
+    {
+      "id": "standards_hierarchy_visualizer",
+      "name": "Standards Hierarchy Visualizer",
+      "type": "interactive_diagram",
+      "file": "components/standards_hierarchy.json",
+      "description": "Interactive visualization showing relationships between all ANSI Z136 standards"
+    },
+    {
+      "id": "z136_navigator",
+      "name": "Z136.1 Navigator",
+      "type": "interactive_document",
+      "file": "components/z136_navigator.json",
+      "description": "Progressive disclosure exploration of ANSI Z136.1 key sections"
+    },
+    {
+      "id": "standard_selector",
+      "name": "Standard Selection Challenge",
+      "type": "decision_tree",
+      "file": "components/standard_selector.json",
+      "description": "Scenario-based selection of appropriate Z136 standard"
+    },
+    {
+      "id": "mpe_table_guide",
+      "name": "MPE Table Interactive Guide",
+      "type": "interactive_table",
+      "file": "components/mpe_table_guide.json",
+      "description": "Guided navigation of ANSI Z136.1 Tables 5a/5b"
+    }
+  ],
+  "content_files": {
+    "lessons": "lessons.json",
+    "quiz": "quiz.json"
+  },
+  "assessment": {
+    "quiz_file": "quiz.json",
+    "passing_score": 80,
+    "attempts_allowed": 3
+  },
+  "badge": {
+    "id": "z136_navigator",
+    "name": "ANSI Z136 Navigator",
+    "icon": "📋",
+    "description": "Mastered ANSI Z136 series structure and navigation"
+  },
+  "standards_reference": [
+    "ANSI Z136.1-2022 Safe Use of Lasers",
+    "ANSI Z136.3-2018 Safe Use of Lasers in Health Care",
+    "ANSI Z136.10-2022 Safe Use of Lasers in Entertainment",
+    "ANSI Z136.8-2022 Safe Use of Lasers in Research"
+  ],
+  "keywords": ["ANSI Z136", "laser safety standards", "MPE tables", "LSO responsibilities", "control measures"],
+  "research_alignment": {
+    "adult_learning": "Task-oriented navigation of reference documents",
+    "brilliant_patterns": ["Progressive disclosure", "Interactive hierarchy", "Visual cross-referencing"],
+    "retention_strategy": "Reference-based learning with immediate application"
+  },
+  "created_at": "2026-03-19T15:46:00Z",
+  "updated_at": "2026-03-19T15:46:00Z"
+}

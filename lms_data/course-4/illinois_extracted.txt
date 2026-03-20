@@ -1,0 +1,2254 @@
+
+=== PAGE 1 ===
+TITLE 32:  ENERGY 
+CHAPTER II:  ILLINOIS EMERGENCY MANAGEMENT AGENCY 
+SUBCHAPTER b:  RADIATION PROTECTION 
+ 
+PART 315 
+STANDARDS FOR PROTECTION AGAINST LASER RADIATION 
+ 
+Section 
+315.10 
+Purpose  
+315.20 
+Scope  
+315.30 
+Incorporations by Reference  
+315.40 
+Definitions  
+315.50 
+Exemptions  
+315.60 
+Registration  
+315.70 
+Amendments and Changes in Status  
+315.80 
+Registration Requirements for Out-of-State Laser Facilities  
+315.90 
+Laser Safety Officer Qualifications, Duties and Responsibilities  
+315.100 
+General Operator Requirements  
+315.110 
+Additional Requirements for Infrared Laser Systems  
+315.120 
+Additional Requirements for Optical Fiber Communications Systems  
+315.130 
+Additional Requirements for Medical Laser Applications  
+315.140 
+Additional Requirements for Entertainment Laser Light Show  
+315.150 
+Caution Signs, Labels and Postings  
+315.160 
+Notifications and Reports  
+315.170 
+Records/Information  
+315.180 
+Inspections and Investigations  
+315.APPENDIX A 
+Sample Standard Operating Procedures  
+315.TABLE A 
+MPE for Ocular Exposure (Intrabeam Viewing)  
+315.TABLE B 
+MPE for Skin Exposure  
+315.TABLE C 
+Parameters and Correction Factors  
+315.TABLE D 
+Limiting Apertures for Hazard Evaluation and AEL Determination  
+315.TABLE E 
+Measurement Apertures for Classification  
+315.ILLUSTRATION A 
+Sample Warning Sign for Class 3b Laser Facilities  
+315.ILLUSTRATION B 
+Sample Warning Sign for Class 4 Laser Facilities  
+ 
+AUTHORITY:  Implementing and authorized by the Laser System Act of 1997 [420 ILCS 56].  
+ 
+SOURCE:  Adopted at 25 Ill. Reg. 6920, effective May 17, 2001; recodified from the 
+Department of Nuclear Safety to the Illinois Emergency Management Agency at 27 Ill. Reg. 
+13641.  
+ 
+Note:  In this Part, unless the context clearly states otherwise, superscript numbers or letters are 
+denoted by parentheses, subscripts are denoted by brackets,  +sMu@sLambda is  used in place 
+of the Greek symbol Lambda, and Alpha is used in place of the greek symbol Alpha. 
+ 
+Section 315.10  Purpose  
+
+=== PAGE 2 ===
+ 
+This Part establishes standards for protection against laser radiation and is issued pursuant to the 
+Laser System Act of 1997 [420 ILCS 56].  
+ 
+Section 315.20  Scope  
+ 
+a) 
+Except as otherwise specifically exempted, this Part applies to any location or 
+facility where laser systems are produced, stored, disposed of, or used for any 
+purpose [420 ILCS 56/15].  
+ 
+b) 
+This Part is not intended to restrict or limit in any way the use of laser radiation, 
+of any type, that may be intentionally administered to an individual for diagnostic, 
+therapeutic, or medical or dental research purposes by or under the direction of a 
+practitioner licensed to practice a treatment of human ailments by virtue of the 
+Medical Practice Act of 1987 [225 ILCS 60], the Illinois Dental Practice Act [225 
+ILCS 25], the Podiatric Medical Practice Act of 1987 [225 ILCS 100] or the non-
+human use of lasers by veterinarians by virtue of the Veterinary Medicine and 
+Surgery Practice Act of 1994 [225 ILCS 115].  
+ 
+Section 315.30  Incorporations by Reference  
+ 
+All rules, standards and guidelines of agencies of the United States or nationally recognized 
+organizations or associations that are incorporated by reference in this Part are incorporated as of 
+the date specified in the reference and do not include any later amendments or editions.  Copies 
+of these rules, standards and guidelines that have been incorporated by reference are available for 
+public inspection at the Department of Nuclear Safety, 1035 Outer Park Drive, Springfield, 
+Illinois.  
+ 
+AGENCY NOTE:  In this Part, the Department has incorporated by reference Title 21 of the 
+Code of Federal Regulations, 21 CFR 1040, 2000 edition, published April 1, 2000; the American 
+National Standard for Safe Use of Lasers, ANSI Z136.1-2000, effective June 28, 2000; the 
+American National Standard for the Safe Use of Optical Fiber Communication Systems Utilizing 
+Laser Diode and LED Sources, ANSI Z136.2, effective August 12, 1997; and the American 
+National Standard for Safe Use of Lasers in Health Care Facilities, ANSI Z136.3, effective 
+February 7, 1996.  
+ 
+Section 315.40  Definitions  
+ 
+As used in this Part, the following definitions apply:  
+ 
+ 
+"Act" means the Laser System Act of 1997 [420 ILCS 56].  
+ 
+ 
+"ANSI" means the American National Standards Institute, 11 West 42nd Street, 
+New York, New York 10036.  
+ 
+ 
+"Aperture" means any opening in a protective housing through which laser 
+
+=== PAGE 3 ===
+radiation can pass.  
+ 
+ 
+"Attenuation" means the decrease in the radiant power of any optical beam as it 
+passes through an absorbing and/or scattering medium.  
+ 
+ 
+"Certified laser system" means that the system is certified by a manufacturer 
+pursuant to the requirements of 21 CFR 1010.2.  
+ 
+ 
+"Class 1 laser" means any laser that meets the criteria of a Class 1 laser, as 
+defined in 21 CFR 1040.  
+ 
+ 
+"Class 2 laser" means any laser that meets the criteria of a Class 2 laser, as 
+defined in 21 CFR 1040.  
+ 
+ 
+"Class 2a laser" means any laser that meets the criteria of a Class 2a laser, as 
+defined in 21 CFR 1040.  
+ 
+ 
+"Class 3 laser" means any laser that meets the criteria of a Class 3 laser, as 
+defined in 21 CFR 1040.  Class 3 lasers are separately designated as Class 3a or 
+Class 3b.  
+ 
+ 
+"Class 4 laser" means any laser that meets the criteria of a Class 4 laser, as 
+defined in 21 CFR 1040.  
+ 
+ 
+"Controlled area" means any area where the occupancy and access of those within 
+is subject to control and supervision by the registrant for the purpose of protection 
+from laser radiation hazards.  
+ 
+ 
+"Department" means Department of Nuclear Safety.  
+ 
+ 
+"Director" means the Director of the Department of Nuclear Safety.  
+ 
+ 
+"Embedded laser" means an enclosed laser with an assigned class number higher 
+than the inherent capability of the laser system in which it is incorporated, where 
+the system's lower classification (Class 1, 2, 3a or 3b) is appropriate due to the 
+engineering features limiting accessible emission.  
+ 
+ 
+"Enclosed laser" means a laser that is contained within a protective housing of 
+itself or of the laser or laser system in which it is incorporated.  
+ 
+ 
+"Energy" means the capacity for doing work.  Energy content is commonly used 
+to characterize the output from pulsed lasers and is generally expressed in joules 
+(J).  
+ 
+ 
+"Facility" means a laser installation.  
+ 
+
+=== PAGE 4 ===
+ 
+"FDA" means the Food and Drug Administration of the United States Department 
+of Health and Human Services.  
+ 
+ 
+"Fire-resistant material" means a material that is not combustible when used for 
+its intended purpose in conjunction with a laser system.  
+ 
+ 
+"Incident" means an event or occurrence that results in a real or suspected 
+intentional or accidental exposure to laser radiation that caused or has the 
+potential to cause biological damage.  
+ 
+ 
+"Irradiance" means the radiant power incident on an element of a surface divided 
+by the area of that element, expressed in watts per square centimeter (W cm-2). 
+ 
+ 
+"Joule" (J) means a unit of energy: 1 joule = 1 watt second.  
+ 
+ 
+"Laser" means any device that can produce or amplify electromagnetic radiation 
+at wavelengths greater than 180 nanometers but less than 1 millimeter, primarily 
+by the process of controlled stimulated emission.  
+ 
+ 
+"Laser installation" means a location or facility where laser systems are 
+produced, stored, disposed of or used for any purpose [420 ILCS 56/15].  
+ 
+ 
+"Laser radiation" means an electromagnetic radiation emitted from a laser 
+system and includes all reflected radiation, any secondary radiation or other 
+forms of energy resulting from the primary laser beam [420 ILCS 56/15].  
+ 
+ 
+"Laser safety officer" means any individual, qualified by training and experience 
+in the evaluation and control of laser hazards, who is designated by the registrant 
+to have the authority and responsibility to establish and administer the laser 
+radiation protection program for a particular laser installation.  
+ 
+ 
+"Laser system" means a device, machine, equipment or other apparatus that 
+applies a source of energy to a gas, liquid, crystal, or other solid substances or 
+combination thereof in a manner that electromagnetic radiations of a relatively 
+uniform wave length are amplified and emitted in a cohesive beam capable of 
+transmitting the energy developed in a manner that may be harmful to living 
+tissues, including but not limited to electromagnetic waves in the range of visible, 
+infrared or ultraviolet light.  Such systems in schools, colleges, occupational 
+schools, and State colleges and other State institutions are also included in the 
+definition of "laser systems". [420 ILCS 56/15]  
+ 
+ 
+"Maintenance" means the performance of those adjustments or procedures by the 
+user to keep equipment in its intended operating condition.  Maintenance does not 
+include operation or service as defined in this Section.  
+ 
+ 
+"Maximum permissible exposure" (MPE) means that level of laser radiation to 
+
+=== PAGE 5 ===
+which persons may be exposed without adverse biological change in the eye or 
+skin.  
+ 
+ 
+"Medical laser" means a laser system that is a medical device, as defined in 21 
+USC 321(h), and is manufactured, designed or intended for laser irradiation of 
+any part of the human body for the purpose of diagnosis, surgery or therapy (see 
+21 CFR 1040.10(b)).  
+ 
+ 
+"Operation" means the performance of tasks required for the equipment to 
+perform its intended functions.  It does not include maintenance or service tasks 
+as defined in this Section.  
+ 
+ 
+"Operator" is an individual, group of individuals, partnership, firm, corporation, 
+or association conducting the business or activities carried on within a laser 
+installation [420 ILCS 56/15].  
+ 
+ 
+"Optical density" (OD) means a logarithmic expression of the optical attenuation 
+afforded by a material.  
+ 
+incident power 
+OD = log10 
+transmitted power 
+ 
+ 
+"Optical fiber communications system" (OFCS) means a system consisting of one 
+or more laser transmitters, each of which is coupled to an individual optical fiber 
+and is used for the transmission of information, e.g., voice or data.  
+ 
+ 
+"Person" means any individual, corporation, limited liability company, 
+partnership, firm, association, trust, estate, public or private institution, group, 
+agency, political subdivision of this State, any other state or political subdivision 
+or agency thereof and any legal successor, representative, agent or agency of the 
+foregoing.  
+ 
+ 
+"Protective housing" means those portions of a laser system that are designed to 
+prevent human access to laser radiation above the applicable MPE level.  
+ 
+ 
+"Pulse duration" means the time increment measured between the half-peak 
+power points at the leading and trailing edges of a pulse.  
+ 
+ 
+"Radiant energy" means energy emitted, transferred or received in the form of 
+laser radiation, expressed in joules (J).  
+ 
+ 
+"Radiant exposure" means the radiant energy incident on an element of a surface 
+divided by the area of that element, expressed in joules per square centimeter (J 
+cm-2) 
+ 
+ 
+"Radiant power" means power emitted, transferred or received in the form of laser 
+
+=== PAGE 6 ===
+radiation expressed in watts (W).  Radiant power also means output power.  
+ 
+ 
+"Registrant" means any person who registers a laser installation with the 
+Department pursuant to this Part.  
+ 
+ 
+"Scanning laser" means a laser having a time-varying direction, origin or pattern 
+of propagation with respect to a stationary frame of reference.  
+ 
+ 
+"Service" means the performance of adjustments, repairs or procedures required 
+to return equipment to its intended state.  These adjustments and procedures 
+usually require specialized training and/or tools.  Service does not include 
+operation or maintenance as defined in this Section.  
+ 
+ 
+"Watt" (W) means the unit of radiant power, 1 watt = 1 joule per second (J sec1) 
+ 
+Section 315.50  Exemptions  
+ 
+The following are exempt from the requirements of this Part:  
+ 
+a) 
+All certified Class 1, Class 2, Class 2a and Class 3a lasers or laser systems, 
+provided that the laser is maintained as a certified Class 1, Class 2, Class 2a or 
+Class 3a laser system throughout its useful life.  
+ 
+b) 
+Laser systems containing embedded Class 3b or Class 4 lasers, where the laser 
+system's lower classification is appropriate due to engineering features limiting 
+accessible emission.  
+ 
+c) 
+A laser system being transported on railroad cars, motor vehicles, aircraft, or 
+vessels in conformity with rules adopted by an agency having jurisdiction over 
+safety during transportation, or laser systems that have been installed on aircraft, 
+munitions, or other equipment that is subject to the regulations of, and approved 
+by an appropriate agency of, the federal government [420 ILCS 56/25(2)].  
+ 
+d) 
+Laser systems that are inoperable due to the absence or failure of components 
+necessary for operation.  Laser systems that are not in operation due to 
+disconnection from an electrical supply shall be considered operable.  
+ 
+Section 315.60  Registration  
+ 
+a) 
+Installation Registration  
+ 
+1) 
+Any operator of a laser installation shall register the laser installation with 
+the Department.  The operator shall register the installation before the 
+installation is placed in operation on a form prescribed by the Department, 
+which shall include, but not be limited to:  
+ 
+
+=== PAGE 7 ===
+A) 
+The operator's name;  
+ 
+B) 
+The location of the laser installation;  
+ 
+C) 
+The classification number and room location of laser systems 
+possessed; and  
+ 
+D) 
+The name of the individual designated as the laser safety officer.  
+ 
+ 
+AGENCY NOTE:  Prior to designation of the laser safety officer, the 
+registrant should carefully review the requirements of Section 315.90 of 
+this Part.  
+ 
+2) 
+Installation registration, as specified in subsection (a) of this Section, shall 
+be required only at the time the laser installation is placed in operation.  
+ 
+3) 
+Laser systems that are located in a single building or in a group of 
+buildings that are contiguous to one another, and used by the same 
+operator, shall be treated as a single laser installation unless requested 
+otherwise in writing by the operator and approved by the Department.  
+ 
+b) 
+Laser System Registration  
+ 
+1) 
+Any operator of a laser installation where laser systems are located shall 
+register the systems annually on a form prescribed by the Department.  
+ 
+2) 
+The form shall include, but not be limited to, the manufacturer, model 
+serial number, output power, wavelength and class of each laser system.  
+ 
+3) 
+Any operator of a laser installation that possesses multiple laser systems of 
+the same manufacturer and model may register such laser systems on a 
+single form, provided that the operator includes a listing of serial numbers 
+for each laser system.  
+ 
+Section 315.70  Amendments and Changes in Status  
+ 
+a) 
+Operators of laser installations that have been registered pursuant to Section 
+315.60 of this Part shall notify the Department within 30 days after the installation 
+of new, used, relocated or reactivated laser systems.  
+ 
+b) 
+If any operator discontinues using a laser system, the operator shall notify the 
+Department within 30 days after the discontinuance.  The notification shall 
+include the date of discontinuance, including the name, address and telephone 
+number of the person who received the laser and the disposition of the laser 
+system.  
+ 
+
+=== PAGE 8 ===
+c) 
+Within 30 days after changing the operator of a laser installation, the new operator 
+shall notify the Department in writing or by telephone or other electronic means.  
+ 
+Section 315.80  Registration Requirements for Out-of-State Laser Facilities  
+ 
+a) 
+Whenever any Class 3b or Class 4 laser system is to be brought into this State, for 
+any temporary use, the person proposing to bring the laser system into this State 
+shall:  
+ 
+1) 
+Register the installation and laser systems in accordance with Section 
+315.60 of this Part.  
+ 
+2) 
+Give written notice to the Department at least 10 working days before the 
+laser system is to be used in this State.  The notice shall:  
+ 
+A) 
+Include the nature, duration and scope of use;  
+ 
+B) 
+Include the exact locations where the laser system is to be used; 
+and  
+ 
+C) 
+Comply with all applicable requirements of this Part.  
+ 
+b) 
+A pre-operational inspection by the Department of the out-of-state laser system 
+may be required within 24 hours prior to the laser system being used in this State.  
+ 
+Section 315.90  Laser Safety Officer Qualifications, Duties and Responsibilities  
+ 
+a) 
+Every operator of a laser installation shall ensure that the designated laser safety 
+officer has qualifications that include training, experience and familiarity in the 
+following areas:  
+ 
+1) 
+Fundamentals of laser operation;  
+ 
+2) 
+Familiarity with the type of laser equipment utilized at the facility;  
+ 
+3) 
+Biological effects of laser radiation on the eye and skin;  
+ 
+4) 
+Laser and laser system classification;  
+ 
+5) 
+Control measures;  
+ 
+6) 
+Nonradiation hazards of lasers;  
+ 
+7) 
+Medical surveillance practices (if applicable);  
+ 
+8) 
+Laser terminology; and  
+
+=== PAGE 9 ===
+ 
+9) 
+Maximum Permissible Exposure (MPE) levels for eye and skin for all 
+lasers and for all conditions of use of laser systems at the facility.  
+ 
+b) 
+Every operator of a laser installation shall ensure that the following specific duties 
+are carried out by the laser safety officer:  
+ 
+1) 
+Establish and implement a program of laser radiation safety for effective 
+compliance with the requirements of this Part.  
+ 
+2) 
+Ensure that instructions concerning hazards and safety practices are 
+provided to individuals who may be exposed to laser radiation and to 
+individuals who operate lasers.  
+ 
+3) 
+Permit, on behalf of the registrant, operation of lasers only by individuals 
+who have:  
+ 
+A) 
+Been trained in the safe use of the laser in accordance with Section 
+315.100 of this Part; and  
+ 
+B) 
+Received copies of and instruction in the registrant's operating and 
+emergency procedures.  
+ 
+ 
+AGENCY NOTE:  In facilities where more than one practitioner or 
+operator may use lasers, a laser safety committee should be formed to 
+oversee laser activity, establish use criteria and approve operating policies 
+and procedures.  
+ 
+4) 
+Ensure that all laser systems in operation meet the requirements of this 
+Part, and that prescribed control measures are in effect.  The laser safety 
+officer may recommend and approve substitute or alternative control 
+measures when the primary control measures are not feasible or practical. 
+Accordingly, if alternative control measures are instituted, those personnel 
+directly affected shall be provided appropriate training.  
+ 
+5) 
+Periodically audit the functionality of control measures in use.  
+ 
+Section 315.100  General Operator Requirements  
+ 
+a) 
+Administrative and Procedural Controls  
+ 
+1) 
+The registrant shall provide personnel operating lasers written operating 
+and safety procedures.  These procedures shall include restrictions 
+required for the safe operation of each laser and shall include the topics 
+listed in the laser safety program of subsection (a)(2) of this Section.  
+ 
+
+=== PAGE 10 ===
+ 
+AGENCY NOTE:  Sample standard operating procedures for the use of 
+laser systems are contained in Appendix A of this Part.  The Department 
+recommends these procedures be modified and adopted for each 
+registrant's specific use of lasers.  
+ 
+2) 
+The registrant shall provide for initial and annual in-service training in 
+laser safety for individuals using laser systems to ensure their awareness 
+of the registrant's laser safety practices and policies.  The in-service 
+training shall include the following topics:  
+ 
+A) 
+Operating and emergency procedures for the lasers;  
+ 
+B) 
+Use of laser protective devices, including selection and use of 
+protective eyewear;  
+ 
+C) 
+Clear warnings and precautions to avoid possible exposure to laser 
+radiation in excess of the MPE; and  
+ 
+D) 
+Requirements for safe operation of lasers as described in this Part.  
+ 
+3) 
+Personnel operating lasers shall be instructed in and able to demonstrate 
+competence with the registrant's operating and safety procedures.  
+ 
+4) 
+Alignment of laser optical systems (e.g., mirrors, lenses and beam 
+deflectors) shall be performed in a manner that assures that no one is 
+exposed to laser radiation above the MPE.  
+ 
+5) 
+A controlled area shall be established when exposure to laser radiation in 
+excess of the MPE limit is possible.  The controlled area shall meet the 
+following requirements:  
+ 
+A) 
+Be posted as required by Section 315.150 of this Part.  
+ 
+B) 
+Access shall be only by permission of the laser safety officer or a 
+trained designated representative.  
+ 
+6) 
+Unenclosed Beam Paths  
+ 
+A) 
+An evaluation of the expected beam path and the potential hazards 
+from reflective surfaces that may be encountered shall be 
+conducted before operating the laser.  All reflective surfaces shall 
+be excluded from the beam path at all points where the laser 
+radiation exceeds the MPE.  
+ 
+B) 
+If applicable, the stability of the laser platform shall be evaluated 
+to determine the constraints that shall be placed upon the beam 
+
+=== PAGE 11 ===
+traverse and the extent of the range of control.  
+ 
+C) 
+No laser shall be operated or made ready for operation until the 
+area along all points of the beam path where the laser radiation will 
+exceed the MPE is clear of individuals, unless the individuals are 
+wearing appropriate protective devices.  
+ 
+b) 
+Requirements for Safe Operation  
+ 
+1) 
+Operator Supervision  
+ 
+A) 
+The laser system shall be operated at all times under the direct 
+supervision or control of an experienced, trained operator who 
+shall maintain visual surveillance of conditions for safe use and 
+terminate laser emission in the event of malfunction or any other 
+condition of unsafe use.  
+ 
+B) 
+Unattended use of the laser system shall be permitted only when 
+the laser safety officer has implemented appropriate control 
+measures that provide adequate protection and laser safety training 
+to those who may enter the laser controlled area during times of 
+unattended use.  
+ 
+2) 
+Maximum Permissible Exposure (MPE)  
+ 
+A) 
+No individual shall be exposed to levels of laser radiation higher 
+than the MPE, as described in Tables A and B of this Part.  
+ 
+B) 
+In those cases where no MPE is known for particular wavelengths 
+and pulse durations, exposure to laser radiation shall be prohibited.  
+ 
+C) 
+Measurements and calculations performed to determine MPE 
+limits shall be made in a manner consistent with the criteria 
+contained in ANSI Z136.1-2000.  
+ 
+3) 
+The minimum laser radiant energy or laser power level required for the 
+application shall be used.  
+ 
+4) 
+All service procedures shall be performed by qualified personnel who are 
+trained in laser radiation protection.  
+ 
+5) 
+Protective eyewear, when specified by the laser safety officer, when 
+engineering or other procedural and administrative controls are inadequate 
+to eliminate potential exposure in excess of the applicable MPE, shall be 
+worn by all individuals with access to Class 3b and Class 4 levels of laser 
+radiation.  The protective eyewear devices shall meet the following 
+
+=== PAGE 12 ===
+requirements:  
+ 
+A) 
+Provide a comfortable and appropriate fit all around the area of the 
+eyes sufficient to protect the eyes from laser radiation.  
+ 
+B) 
+Be in proper condition to ensure the optical filters and holder 
+provide the required optical density or greater at the desired 
+wavelengths, and retain all protective properties during use of the 
+device.  
+ 
+C) 
+Be suitable for the specific wavelength of the laser and be of 
+optical density adequate for the energy of the laser.  
+ 
+D) 
+Have the optical density or densities and associated wavelengths 
+permanently labeled on the filters or otherwise permanently 
+identified.  
+ 
+E) 
+Be examined by the registrant's laser safety officer, or designee, at 
+intervals not to exceed 6 months, to ensure the reliability of the 
+protective filters and integrity of the protective filter frames.  
+ 
+F) 
+Eyewear not meeting the requirements of this subsection (b)(5) 
+shall not be utilized as protective eyewear.  
+ 
+6) 
+When there is a possibility of exposure to laser radiation that exceeds the 
+MPE limits for skin as specified in Table B of this Part, the registrant shall 
+require the appropriate use of protective gloves, clothing and shields.  
+ 
+7) 
+Laser products certified by a manufacturer to be compliant with the 
+requirements of 21 CFR 1040 applicable at the date of manufacture shall 
+be maintained in compliance with the requirements.  Certified laser 
+products that have been modified shall comply with this Part.  
+ 
+c) 
+Engineering Controls  
+ 
+1) 
+Each laser product shall have a protective housing that prevents, during 
+operation, human access to laser radiation that exceeds the limits of a 
+Class 1 laser (see 21 CFR 1040.10, Table I), wherever and whenever 
+human access is not necessary in order for the laser system to perform its 
+intended function.  
+ 
+2) 
+Safety Interlocks  
+ 
+A) 
+A safety interlock, which ensures that laser radiation is not 
+accessible above MPE limits, shall be provided for any portion of 
+the protective housing that, by design, can be removed or displaced 
+
+=== PAGE 13 ===
+without the use of tools during normal operation or maintenance.  
+ 
+B) 
+Adjustment during operation, service, testing or maintenance of a 
+laser containing interlocks shall not cause the interlocks to become 
+inoperative or the laser radiation to exceed MPE limits outside the 
+protective housing except where a controlled area, as specified in 
+subsection (a)(5) of this Section, is established.  
+ 
+C) 
+For pulsed lasers, interlocks shall prevent firing of the laser.  
+ 
+D) 
+For continuous wave lasers, the interlocks shall turn off the power 
+supply or interrupt the beam.  
+ 
+E) 
+An interlock shall not allow access to laser radiation in excess of 
+MPE limits when the interlock is closed.  
+ 
+F) 
+Multiple safety interlocks, or a means to preclude removal or 
+displacement of the interlocked portion of the protective housing 
+upon failure, shall be provided if failure of a single interlock would 
+allow human access to levels of Class 3b or Class 4 laser radiation.  
+ 
+3) 
+Viewing Optics and Windows  
+ 
+A) 
+All viewing ports, viewing optics or display screens included as an 
+integral part of an enclosed laser or laser system shall incorporate 
+suitable means to attenuate the laser radiation transmitted through 
+the port to less than the MPE during maintenance or operation of 
+the laser.  
+ 
+B) 
+When optical systems such as lenses, telescopes and microscopes 
+are used that were not supplied as part of a certified laser product, 
+the laser safety officer shall determine the potential hazard and 
+specify administrative procedures and the use of controls such as 
+interlocks or filters.  
+ 
+4) 
+Warning Systems  
+ 
+A) 
+Each laser system shall provide visual or aural indication during 
+the emission of accessible laser radiation.  
+ 
+B) 
+Any visual indicator shall be clearly visible through protective 
+eyewear designed specifically for the wavelengths of the emitted 
+laser radiation.  
+ 
+C) 
+Visual indicators shall be positioned so that viewing does not result 
+in exposure to laser radiation in excess of the MPE.  
+
+=== PAGE 14 ===
+ 
+D) 
+An indication shall be provided prior to emission of the radiation 
+to allow appropriate action to avoid exposure.  
+ 
+5) 
+Additional Requirements for Indoor Class 4 Laser Controlled Areas  
+ 
+A) 
+Latches, interlocks or other appropriate means shall be used to 
+restrict access to controlled areas.  
+ 
+B) 
+Measures shall be designed to allow both rapid exit by the laser 
+personnel at all times and entrance to the controlled area in an 
+emergency condition.  
+ 
+C) 
+For emergency conditions, a control-disconnect switch or 
+equivalent device (panic button) shall be available for deactivating 
+the laser or closing the shutter.  
+ 
+D) 
+During tests requiring continuous operation, the laser safety officer 
+or a trained designated representative shall be permitted to 
+momentarily override the safety interlocks to allow access to other 
+authorized personnel if it is clearly evident that:  
+ 
+i) 
+There is no optical radiation hazard at the point of entry; 
+and  
+ 
+ii) 
+The necessary protective devices are being worn by the 
+entering personnel.  
+ 
+E) 
+Optical paths (e.g., windows) from an indoor facility shall be 
+controlled in such a manner as to reduce the transmitted values of 
+the laser radiation to levels at or below the MPE.  When the laser 
+beam must exit the indoor controlled area (as in the case of exterior 
+atmospheric beam paths), the operator shall be responsible for 
+ensuring that the beam path is limited to controlled air space or 
+controlled ground space when the beam irradiance or radiant 
+exposure is above the appropriate MPE.  
+ 
+Section 315.110  Additional Requirements for Infrared Laser Systems  
+ 
+a) 
+The beam from an infrared laser (wavelength greater than 710 nanometers) shall 
+be terminated in fire-resistant material where necessary.  
+ 
+b) 
+Periodic inspection of fire-resistant material shall be made to assure that the 
+material has not degraded with use.  Degraded material that could create a fire or 
+reflection hazard shall be replaced prior to further operation of the laser.  
+ 
+
+=== PAGE 15 ===
+Section 315.120  Additional Requirements for Optical Fiber Communications Systems  
+ 
+a) 
+Laser communication systems that employ optical cables shall be considered 
+enclosed systems with the optical cable forming part of the protective housing.  
+ 
+b) 
+Disconnection of a connector resulting in access to radiation in excess of the 
+applicable MPE shall take place only in a controlled area.  
+ 
+1) 
+The use of a tool shall be required for the disconnection of a connector for 
+service and maintenance purposes when the connector is not within a 
+protective housing.  
+ 
+2) 
+All connectors shall bear the appropriate label specified in Section 
+315.150 of this Part.  
+ 
+Section 315.130  Additional Requirements for Medical Laser Applications  
+ 
+a) 
+Medical lasers used for human irradiation shall be calibrated in accordance with 
+the manufacturer's specified calibration procedure at intervals not to exceed those 
+specified by the manufacturer.  Calibration records shall be maintained at the 
+facility for inspection by the Department.  
+ 
+b) 
+Each medical laser shall incorporate a means for measurement of the level of laser 
+radiation intended for human irradiation, with an error in measurement of no 
+greater than plus or minus 20 percent, when calibrated in accordance with the 
+laser manufacturer's calibration procedure.  
+ 
+c) 
+Any footswitch that is used to control patient exposure to laser radiation shall 
+have a guard mechanism to prevent inadvertent exposure.  
+ 
+d) 
+The operator shall ensure that medical lasers shall not be used for human 
+irradiation unless all applicable requirements of this Part are met.  
+ 
+Section 315.140  Additional Requirements for Entertainment Laser Light Show  
+ 
+a) 
+The operator shall notify the Department in writing or facsimile, at least 10 
+working days in advance of the proposed laser light show, and shall include the 
+following information:  
+ 
+1) 
+Name, address and telephone number of:  
+ 
+A) 
+Laser registrant;  
+ 
+B) 
+Laser safety officer;  
+ 
+C) 
+Individual in charge of the laser light show;  
+
+=== PAGE 16 ===
+ 
+2) 
+The location, time and date of the show;  
+ 
+3) 
+Documentation that a variance has been obtained in accordance with 21 
+CFR 1040.11;  
+ 
+4) 
+For outdoor performances, a copy of the notification to the Federal 
+Aviation Administration;  
+ 
+5) 
+Manufacturer, class, wavelength and output power of the laser systems to 
+be used; and  
+ 
+6) 
+Sketches showing the location of the laser systems, operators, performers, 
+laser beam paths, viewing screens, walls, mirror balls and other reflective 
+or diffusive surfaces that may be struck by the laser beam.  
+ 
+b) 
+The operator shall also supply additional information as may be required by the 
+Department for the evaluation of the safety of the proposed laser light show.  
+ 
+c) 
+Requirements for Safe Operations  
+ 
+1) 
+Laser radiation emissions outside the spectral range of 400 to 700 
+nanometers shall not exceed the limits of a Class 1 laser.  
+ 
+2) 
+Levels of laser radiation where the audience is located, and where 
+operators, performers and employees are located if the laser radiation is 
+intended to be viewed by them, shall not exceed the limits of a Class 1 
+laser.  
+ 
+3) 
+Operators, performers and employees shall be able to perform their 
+functions without being exposed to laser radiation exceeding the limits of 
+a Class 2 laser when the laser radiation is not intended to be viewed by 
+them.  
+ 
+4) 
+Areas where levels of laser radiation exceed the limits of a Class 2 laser 
+shall be identified by posting of warning signs and through use of barriers 
+or guards to prevent individuals from entering these areas.  
+ 
+5) 
+Scanning lasers shall not, as a result of scan failure or any other failure 
+causing a change in either angular velocity or amplitude, permit audience 
+exposure to laser radiation in excess of the limits of a Class 1 laser.  
+ 
+6) 
+Where a mirror ball is used with a scanning laser, the conditions of 
+subsections (c)(1) and (c)(2) of this Section shall be met with the mirror 
+ball stationary or during any failure mode resulting in a change in 
+rotational speed of the mirror ball.  
+
+=== PAGE 17 ===
+ 
+7) 
+Laser light shows shall be, at all times, under the direct and personal 
+supervision of the laser operator, except:  
+ 
+A) 
+In cases where the maximum laser output power level is less than 5 
+milliwatts (all spectral lines);  
+ 
+B) 
+When the laser beam path is located at least 6 meters above any 
+surface upon which an individual in the audience is permitted to 
+stand; or  
+ 
+C) 
+When the laser beam path is located at least 2.5 meters in lateral 
+separation from any position where an individual in the audience is 
+permitted during the performance.  
+ 
+8) 
+Laser radiation levels shall not exceed the limits of a Class 2 laser at any 
+point less than 3 meters above any surface upon which any individual in 
+the audience is permitted to stand, and 2.5 meters in lateral separation 
+from any position where an individual in the audience is permitted, unless 
+physical barriers are present that prevent human access to these levels.  
+ 
+9) 
+All safety devices and procedures necessary to comply with this Part shall 
+be functionally tested and evaluated after setup and prior to the laser light 
+show to ensure compliance.  
+ 
+10) 
+The laser system, when not in use, shall be secured against unauthorized 
+operation or tampering.  
+ 
+11) 
+Laser alignment procedures shall be performed with the laser output 
+power reduced to the lowest practicable level, and protective eyewear 
+shall be worn where necessary to prevent exposure to laser radiation levels 
+exceeding the MPE.  Unless specifically authorized by the laser safety 
+officer, only individuals required to perform the alignment shall be present 
+during these procedures.  
+ 
+12) 
+The operator shall ensure that no laser light show is conducted except as 
+specifically authorized in a variance issued in accordance with 21 CFR 
+1040.11 and applicable requirements of this Part.  
+ 
+Section 315.150  Caution Signs, Labels and Postings  
+ 
+a) 
+Except as otherwise authorized by the Department, signs and labels prescribed by 
+this Section shall use the design and colors specified in Illustration A or B of this 
+Part.  
+ 
+b) 
+Controlled areas shall be conspicuously posted with appropriate sign or signs as 
+
+=== PAGE 18 ===
+specified in subsection (c) of this Section.  
+ 
+c) 
+Labeling and Posting Laser Systems and Laser Facilities  
+ 
+1) 
+Class 3b lasers shall have a label and facilities shall be posted with signs 
+with the warning specified in Illustration A of this Part and including the 
+following wording:  
+ 
+(Position 1 on the logotype) 
+ 
+"LASER RADIATION - AVOID DIRECT EXPOSURE TO BEAM" 
+ 
+(Position 3 on the logotype) 
+ 
+"CLASS 3b LASER" 
+ 
+2) 
+Class 4 lasers shall have a label and facilities shall be posted with signs 
+with the warning specified in Illustration B of this Part and including the 
+following wording:  
+ 
+(Position 1 on the logotype) 
+ 
+"LASER RADIATION - AVOID EYE OR SKIN EXPOSURE TO 
+DIRECT OR SCATTERED RADIATION" 
+ 
+(Position 3 on the logotype) 
+ 
+"CLASS 4 LASER" 
+ 
+3) 
+Each laser, except lasers used in the practice of medicine, shall have labels 
+in close proximity to each aperture through which is emitted accessible 
+laser radiation in excess of the MPE with the following wording as 
+applicable:  
+ 
+A) 
+"AVOID EXPOSURE - Laser radiation is emitted from this 
+aperture", if the radiation emitted through such aperture is laser 
+radiation.  
+ 
+B) 
+"AVOID EXPOSURE - Hazardous electromagnetic radiation is 
+emitted from this aperture", if the radiation emitted through such 
+aperture is electromagnetic radiation.  
+ 
+C) 
+"AVOID EXPOSURE - Hazardous x-rays are emitted from this 
+aperture", if the radiation emitted through such aperture is x-ray 
+radiation.  
+ 
+
+=== PAGE 19 ===
+4) 
+Each label specified in this subsection (c) shall state, at position 2 on the 
+required warning logotype, the maximum output of laser radiation, the 
+pulse duration when appropriate, and the laser medium or emitted 
+wavelengths.  
+ 
+5) 
+Each noninterlocked or defeatably interlocked portion of the protective 
+housing or enclosure that is designed to be displaced or removed during 
+normal operation, maintenance or servicing and that would permit human 
+access to laser radiation shall have labels as follows:  
+ 
+A) 
+For Class 3b laser radiation, the wording:  "DANGER - Laser 
+radiation when open, AVOID DIRECT EXPOSURE TO BEAM".  
+ 
+B) 
+For Class 4 laser radiation, the wording:  "DANGER - Laser 
+radiation when open, AVOID EYE OR SKIN EXPOSURE TO 
+DIRECT OR SCATTERED RADIATION".  
+ 
+C) 
+For protective housings or enclosures that provide a defeatable 
+interlock, the phrase "and interlock defeated" shall be inserted after 
+the word "open" on the labels specified in subsections (c)(5)(A) 
+and (B) of this Section.  
+ 
+6) 
+The word "invisible" shall precede the word "laser" on labels and signs 
+required by this Part for wavelengths of laser radiation that are outside of 
+the range of 400 to 710 nanometers.  
+ 
+7) 
+The words "visible and invisible" shall precede the word "laser" on labels 
+and signs required by this Part for wavelengths of laser radiation that are 
+both within and outside the range of 400 to 710 nanometers.  For laser 
+products emitting only visible wavelengths, the phrase "laser light" may 
+be used in lieu of "laser radiation".  
+ 
+8) 
+All labels placed on lasers or signs posted in laser facilities shall be 
+positioned so as to make unnecessary, during reading, human exposure to 
+laser radiation in excess of the MPE.  
+ 
+9) 
+Labels and signs required by this Part shall be clearly visible, legible and 
+permanently attached to the laser or facility.  
+ 
+ 
+AGENCY NOTE:  With respect to laser systems only, the labeling requirements 
+found in 21 CFR 1040, and labels otherwise approved by the FDA, may be used 
+in lieu of subsection (c) of this Section.  
+ 
+Section 315.160  Notifications and Reports  
+ 
+a) 
+Each registrant shall notify the Department immediately of any incident involving 
+
+=== PAGE 20 ===
+exposure to laser radiation that has or may have caused accidental injury to an 
+individual in the course of use, handling, operation, manufacture or discharge of 
+a laser system [420 ILCS 56/40], including:  
+ 
+1) 
+An exposure to an individual of greater than 100 times the MPE;  
+ 
+2) 
+An exposure to an individual that involves the partial or total loss of sight 
+in either eye; or  
+ 
+3) 
+An exposure to an individual that involves perforation of the skin or other 
+serious injury exclusive of eye injury.  
+ 
+b) 
+Each registrant shall notify the Department within 24 hours of any incident 
+involving exposure to laser radiation that has or may have caused:  
+ 
+1) 
+An exposure to an individual of greater than 5 times the MPE; or  
+ 
+2) 
+An exposure to an individual that involves second or third degree burns to 
+the skin.  
+ 
+c) 
+Each registrant shall make a report in writing within 30 days to the Department of 
+any incident for which notification is required by subsection (a) or (b) of this 
+Section.  
+ 
+d) 
+Each report filed with the Department pursuant to this Section shall include the 
+full name of each individual exposed to laser radiation, including estimates of 
+each individual's exposure, levels of laser radiation involved, the cause of the 
+exposure, a description of any injuries, and corrective steps taken or planned to be 
+taken to assure against a recurrence.  
+ 
+e) 
+When a registrant is required pursuant to this Section to report to the Department 
+any exposure of an individual to laser radiation, the registrant shall also provide to 
+the individual a report on that exposure data. The report to the individual shall be 
+transmitted at a time not later than the date of transmittal to the Department.  
+ 
+Section 315.170  Records/Information  
+ 
+a) 
+Each registrant shall maintain, for a period of 5 years, records that shall be kept 
+current and available for inspection by the Department, showing:  
+ 
+1) 
+A listing of all individuals who have been authorized by the registrant to 
+operate lasers.  
+ 
+2) 
+The results of all inspections of protective eyewear required by Section 
+315.100 of this Part.  
+ 
+
+=== PAGE 21 ===
+3) 
+The results of all instrument calibrations required by Section 315.130 of 
+this Part.  
+ 
+4) 
+The reports of incidents as described under Section 315.160 of this Part.  
+ 
+b) 
+Each operator shall make records maintained pursuant to this Part available to the 
+Department for review and copying.  
+ 
+Section 315.180  Inspections and Investigations  
+ 
+a) 
+The Department is authorized to enter upon, inspect, and investigate the premises 
+and operations of all laser systems of this State, whether or not the systems are 
+required to be registered by the Act [420 ILCS 56/35].  
+ 
+b) 
+Each operator of a laser installation shall afford the Department the opportunity to 
+enter upon, inspect and investigate the laser installation at all reasonable times.  
+
+=== PAGE 22 ===
+Section 315.APPENDIX A   Sample Standard Operating Procedures  
+ 
+Standard Operating Procedures (SOPs) are governed by institutional policy and are developed, 
+modified and maintained in accordance with the needs of individual facilities. Information 
+relative to safety incorporated into these SOPs is gathered from a wide range of resources, 
+including, but not limited to, the laser system manufacturer or distributor. This Appendix A 
+contains examples of SOPs for issues associated with the use of laser systems. It is recognized 
+that the safety needs of installations with multiple laser systems may be different from those 
+facilities with a single laser system.  The samples that follow cannot cover all situations or 
+procedures; they are only intended as models that should be used to accommodate specific 
+requirements.  Typically, the Laser Safety Officer shall have the responsibility to see that SOPs 
+are followed.  
+ 
+It is reasonable to expect that the manufacturer of the laser system shall supply safety 
+information that can serve as the cornerstone for the generation of the SOPs.  It is incumbent 
+upon the operator to demand the information from the manufacturer.  The availability of safety 
+related information is facilitated by the FDA requirement that the manufacturer of laser products 
+provide the user with adequate instructions for the safe operation and maintenance of all laser 
+products.  
+ 
+SAMPLE 1:  Controlled Access to the Laser Room  
+ 
+Purpose:  To define the area in which control measures shall be applied and to describe the 
+control measures necessary in order to maintain a safe environment for use of the laser system.  
+ 
+Policy:  Class 3b and Class 4 lasers shall be operated in areas where traffic flow and compliance 
+with all safety procedures can be monitored.  
+ 
+Procedure:  
+ 
+1) 
+Appropriate warning signs shall be posted at eye level on all doors that access a 
+room where a laser is to be operated.  These signs shall state all required 
+information and shall be removed when the laser is not in use.  
+ 
+2) 
+Safety goggles labeled with the appropriate wavelength and optical density shall 
+be available at the entry where each door sign is posted.  
+ 
+3) 
+Glass windows shall be covered with shades or filters of appropriate optical 
+density whenever a fiberoptic laser system is operational.  
+ 
+4) 
+All safety procedures shall be followed during service, maintenance and 
+demonstrations.  
+ 
+5) 
+No one shall be allowed into a laser room unless properly authorized and 
+protected.  
+ 
+
+=== PAGE 23 ===
+6) 
+The laser shall not be activated when it is necessary to open the door, if the 
+controlled area extends to the doorway.  
+ 
+7) 
+Laser keys shall be kept in a secured area and signed out only by those authorized 
+to do so.  
+ 
+SAMPLE 2:  Ocular Safety  
+ 
+Purpose:  To prevent ocular injuries to personnel working with Class 3b and Class 4 lasers.  
+ 
+Policy:  Within the controlled area, all personnel shall adhere to appropriate eye protection 
+procedures during all laser applications.  
+ 
+NOTE:  Under some conditions, the controlled area may include the entire room in which the 
+laser procedure is performed.  Under those conditions, the ocular safety procedures listed in this 
+Sample 2 apply to the entire room.  In health care facilities, ocular safety procedures shall also 
+apply to the patient receiving laser treatment.  
+ 
+All personnel involved in maintenance and demonstrations of laser systems shall follow all 
+ocular safety procedures whenever a laser is in operation in the facility.  
+ 
+Procedure:  
+ 
+1) 
+Appropriate eyewear shall be worn by everyone in the controlled area while the 
+laser is in operation.  Appropriate eyewear consists of glasses or goggles of 
+sufficient optical density to prevent ocular damage at the laser wavelength in use. 
+Exception to this is the operator looking through an attached microscope with a 
+lens that has the appropriate optical density for the laser in use.  
+ 
+2) 
+Prior to use, the operator and ancillary personnel shall be responsible for selecting 
+and examining eyewear for comfort, proper fit, and presence of labels describing 
+both wavelength and proper optical density.  
+ 
+3) 
+If eyewear is damaged, it shall not be worn and a report shall be made to the laser 
+safety officer.  
+ 
+4) 
+Contact lenses are not acceptable as protective eyewear.  Prescription lens wearers 
+shall use appropriate laser safety eyewear.  
+ 
+5) 
+All goggles shall have side shields to protect from peripheral injury and impact.  
+ 
+6) 
+Any articulated arm that is not shuttered shall be capped when not connected to 
+the hand piece or the operating microscope.  
+ 
+7) 
+The laser system shall be placed in standby mode when delivery optics are moved 
+away from the target.  
+
+=== PAGE 24 ===
+ 
+8) 
+In health care facilities, patients shall be fitted with appropriately labeled 
+eyewear, or have their eyes covered with wet cloth pads or towels.  Metal or dry 
+materials shall be placed on the patient's face or eyes only when indicated.  
+ 
+SAMPLE 3:  Handling of Laser Fiber Delivery Systems in Health Care Facilities  
+ 
+Purpose:  To promote safe and proper handling of laser fiber delivery systems and to limit the 
+potential for fiber breakage, damage and reduced efficiency during clinical laser procedures.  
+ 
+Policy:  Personnel handling laser fibers shall assure compliance with all safety procedures and 
+shall consider the fiber an extension of the laser system, governed by applicable standards and 
+regulations.  
+ 
+Procedure:  
+ 
+1) 
+Appropriate eye safety filters shall be used with endo/microscopes.  
+ 
+2) 
+Laser room windows shall be covered completely with appropriate filters, if 
+necessary.  
+ 
+3) 
+Fibers and associated equipment shall be positioned to allow for safe traffic 
+patterns in the room.  
+ 
+4) 
+The fiber shall be examined for breaks or damage of the distal tip, the proximal 
+connector and the catheter sheath.  Fiber shall be calibrated in accordance with 
+manufacturer's directions.  If deficiencies or damage are noted, another fiber shall 
+be obtained.  
+ 
+5) 
+Do not use clamps or other instruments to secure fiber in the operative site.  
+ 
+6) 
+Always use coaxial cooling that is appropriate to the procedure.  Never use gas to 
+purge a fiber in the intrauterine cavity.  
+ 
+7) 
+Never operate the laser unless the aiming beam (if used) and the tip of the fiber 
+beyond the end of the endoscope are both visible.  
+ 
+8) 
+Monitor the fiber for distortion of the beam, decreased power transmission and 
+accumulation of debris on the tip.  
+ 
+9) 
+Never reuse a disposable fiber without manufacturer's directions.  
+ 
+10) 
+Always put the laser in standby when not aimed at a target.  
+ 
+SAMPLE 4:  Non-Beam Hazards in Health Care Facilities  
+ 
+
+=== PAGE 25 ===
+Purpose:  To recognize and effectively deal with a variety of potential non-beam hazards that 
+may be present during laser procedures.  
+ 
+Policy:  Non-beam hazards are the purview of safety and industrial hygiene personnel, who will 
+effect the appropriate hazard evaluation and control.  
+ 
+Procedure:  
+ 
+I. 
+Fire  
+ 
+1) 
+Never use alcohol in the operative field.  Fibers may be rinsed in hydrogen 
+peroxide or saline intraoperatively.  
+ 
+2) 
+Never place a hot fiber directly on paper drapes.  Wait until tip is cool 
+before contact is made with flammable material.  
+ 
+3) 
+Use fire-retardant drapes, damp packs or pads.  Fill pelvic cavity with 
+Ringer's, saline or other appropriate solution during surgery.  
+ 
+4) 
+Put laser system in standby mode when procedure is interrupted or 
+terminated.  
+ 
+5) 
+Avoid high levels of oxygen in the operative field.  
+ 
+6) 
+Avoid laser beam exposure of the sheaths of flexible fiber endoscopes, 
+since many of the sheaths are flammable.  
+ 
+II. 
+Plume Management  
+ 
+1) 
+Remove laser generated airborne contaminants from the laser target area 
+to reduce the transmission of potentially hazardous particles.  
+ 
+2) 
+Position smoke evacuator in the operating room whenever a plume is 
+anticipated.  
+ 
+3) 
+Check operation of the plume management system prior to the beginning 
+of a procedure.  
+ 
+4) 
+Check the plume filter monitor and, if needed, install a clean filter.  
+ 
+5) 
+In-line filters with minimum 0.3 μm filtration shall be placed between wall 
+suction and the fluid canister for:  
+ 
+a) 
+Suction line not connected to evacuator  
+ 
+b) 
+Procedures producing minimal plume  
+
+=== PAGE 26 ===
+ 
+c) 
+Failure of evacuator before or during operation  
+ 
+6) 
+Distal collection port shall be no more than 2 cm from impact site when 
+practical.  
+ 
+7) 
+All tubing, connectors, adaptors and wands will be changed between 
+patients and disposed of according to biohazard procedures.  
+ 
+III. 
+Electrical Shock  
+ 
+1) 
+During service or maintenance, precautions shall be taken against 
+electrical shock that may be fatal.  
+ 
+2) 
+Medical lasers shall be installed and operated in conformity with the 
+National Electrical Code.  
+ 
+SAMPLE 5:  Work Practices for Optical Fiber Communications Systems (OFCS)  
+ 
+Purpose:  To recognize and effectively deal with a variety of potential hazards that may be 
+present when working on an OFCS.  
+ 
+Policy:  Engineering controls shall not take the place of good work practices. Good work 
+practices are essential to operating, servicing and maintaining OFCS, especially with higher 
+power systems that utilize Class 3b and Class 4 lasers.  
+ 
+Procedure:  The following presents some basic guidelines when working on any OFCS.  
+ 
+1) 
+Trained Personnel.  Only authorized, trained personnel shall be permitted to 
+install or perform service on OFCS containing Class 3b or Class 4 lasers.  
+ 
+2) 
+Unterminated Fibers  
+ 
+a) 
+Do not view the end of a fiber with unprotected eye.  Fiber should only be 
+viewed with an indirect image converter or with a filtered optical 
+instrument or optical density (OD) sufficient to reduce the exposure to 
+levels below the appropriate MPE.  
+ 
+b) 
+Always cover the ends of unterminated fibers with a splice protector, tape 
+or end caps.  
+ 
+3) 
+Splicing.  Splicing on ribbon cables, fixed array cables or OFCS containing Class 
+3b or Class 4 lasers shall be de-energized or viewing systems incorporating 
+personal protection shall be employed.  
+ 
+4) 
+Installation and Testing.  The laser source shall be first to be disconnected and last 
+
+=== PAGE 27 ===
+to be connected when installing and/or testing an OFCS.  
+ 
+5) 
+Modifications.  No modifications shall be made to the OFCS or associated 
+equipment without management or supervision authorizations.  Such 
+modifications may alter the service group classification of the OFCS.  
+ 
+6) 
+Labels.  Any damaged or missing optical safety labels shall be reported 
+immediately to the supervisor.  
+ 
+7) 
+Other Hazards  
+ 
+a) 
+Use of protective guards or shields shall be used during splicing and 
+cleaving operation to prevent direct injury from small lengths or particles 
+of fiber.  Proper disposal of fiber pieces avoids subsequent embedding in 
+clothing or skin.  
+ 
+b) 
+Optical photocuring may present a UV or light source hazard. Protective 
+filter lenses of the appropriate optical density shall be worn if viewing of 
+the light source is probable.  
+ 
+AGENCY NOTE:  Reproduced with permission from the American National Standard Z136.1-
+2000 (or American National Standards Z136.2-1997 or Z136.3-1996, as applicable).  Copyright 
+Laser Institute of America, Orlando, Florida.  The complete standard may be obtained by 
+contacting the Laser Institute of America, P.O. Box 781029, Orlando FL 32878-1029, telephone: 
+407-380-1553, fax: 407-380-5588, e-mail: lia@laserinstitute.org. 
+
+=== PAGE 28 ===
+Section 315.ILLUSTRATION A   Sample Warning Sign for Class 3b Laser Facilities  
+ 
+ 
+ 
+ 
+ 
+
+=== PAGE 29 ===
+Section 315.ILLUSTRATION B   Sample Warning Sign for Class 4 Laser Facilities  
+ 
+ 
+ 
+ 
+
+=== PAGE 30 ===
+Section 315.TABLE A   MPE for Ocular Exposure (Intrabeam Viewing) 
+ 
+Ultraviolet 
+ 
+MPE 
+Wavelength  
+(μ m) 
+Exposure 
+Duration, ts
+(J cm-2) 
+(W cm-2) 
+0.180 to 0.302 
+10-9 to 3 x 104
+3 x 10-3
+ 
+0.303 
+10-9 to 3 x 104
+4 x 10-3
+ 
+0.304 
+10-9 to 3 x 104
+6 x 10-3
+ 
+0.305 
+10-9 to 3 x 104
+10 x 10-3
+ 
+0.306 
+10-9 to 3 x 104
+16 x 10-3
+ 
+0.307 
+10-9 to 3 x 104
+25 x 10-3
+ 
+0.308 
+10-9 to 3 x 104
+40 x 10-3
+ 
+0.309 
+10-9 to 3 x 104
+63 x 10-3
+ 
+0.310 
+10-9 to 3 x 104
+0.1 
+ 
+0.311 
+10-9 to 3 x 104
+0.16 
+ 
+0.312 
+10-9 to 3 x 104
+0.25 
+ 
+0.313 
+10-9 to 3 x 104
+0.40 
+ 
+0.314 
+10-9 to 3 x 104
+0.63 
+ 
+0.315 to 0.400 
+10-9 to 10 
+0.56 t¼ 
+ 
+0.315 to 0.400 
+10 x 3 x 104
+1.0 
+ 
+ 
+NOTE:  To calculate MPE, use the J cm-2 value shown or 0.56 t¼, whichever is lower. 
+
+=== PAGE 31 ===
+Visible and Near Infrared 
+ 
+MPE 
+Wavelength  
+(μ m) 
+Exposure 
+Duration, ts
+(J cm-2) 
+(W cm-2) 
+0.400 to 0.700 
+10-9 to 18 x 10-6
+0.5 x 10-6
+ 
+0.400 to 0.700 
+18 x 10-6 to 10 
+1.8 t¾ x 10-3
+ 
+0.400 to 0.550 
+10 to 104
+10 x 10-3
+ 
+0.550 to 0.700 
+10 to T1
+1.8 t¾ x 10-3
+ 
+0.550 to 0.700 
+T1 to 104
+10CB to 10-3
+ 
+0.400 to 0.700 
+104 to 3 x 104
+ 
+CB x 10-6
+0.700 to 1.050 
+10-9 to 18 x 10-6
+0.5CA x 10-6
+ 
+0.700 to 1.050 
+18 x 10-6 to 103
+1.8CA t¾ x 10-3
+ 
+0.700 to 1.050 
+103 to 3 x 104
+ 
+320CA x 10-6
+1.050 to 1.400 
+10-9 to 50 x 10-6
+5Cc x 10-6
+ 
+1.050 to 1.400 
+50 x 10-6 to 103
+9.0Cc t¾ x 10-3
+ 
+1.050 to 1.400 
+103 to 3 x 104
+ 
+1.6Cc x 10-3
+ 
+NOTES: 
+1. 
+See Section 315.Tables D & E for limiting apertures (see ANSI Z136.1 
+pg. 44). 
+ 
+2. 
+For multiple pulses, apply correction factor Cp given in Section 
+315.Table C. 
+ 
+3. 
+For information on correction factors T1, CB, CA, Cp and Cc, see Section 
+315.Table C. 
+ 
+
+=== PAGE 32 ===
+Far Infrared 
+ 
+MPE 
+Wavelength  
+(μ m) 
+Exposure 
+Duration, ts
+(J cm-2) 
+(W cm-2) 
+1.400 to 1.500 
+10-9 to 10-3
+0.1 
+ 
+1.400 to 1.500 
+10-3 to 10 
+0.56 t¼  
+ 
+1.400 to 1.500 
+10 to 3 x 104
+ 
+0.1 
+1.500 to 1.800 
+10-9 to 10 
+1.0 
+ 
+1.500 to 1.800 
+10 to 3 x 104
+ 
+0.1 
+1.800 to 2.600 
+10-9 to 10-3
+0.1 
+ 
+1.800 to 2.600 
+10-3 to 10 
+0.56 t¼  
+ 
+1.800 to 2.600 
+10 to 3 x 104
+ 
+0.1 
+2.600 to 103
+10-9 to 10-7
+10 x 10-3
+ 
+2.600 to 103
+10-7 to 10 
+0.56 t¼ 
+ 
+2.600 to 103
+10 to 3 x 104
+ 
+0.1 
+ 
+NOTES: 
+1. 
+See Section 315.Tables D & E for limiting apertures (see ANSI Z136.1 pg. 
+44). 
+ 
+2. 
+For multiple pulses, apply correction factor Cp given in Section 315.Table 
+C. 
+ 
+ 
+GENERAL 
+NOTES: 
+ 
+ 
+1. 
+ 
+ 
+The MPE for diffuse reflections at wave lengths between 0.400 and 1.400 
+μm is obtained by multiplying the corresponding MPEs above by CE (see 
+Section 315.Table C for correction factors and T1). 
+ 
+2. 
+For repeated (pulsed) exposures, see ANSI Z136.1. 
+ 
+3. 
+For purposes of this Section 315.Table A, the following abbreviations or 
+symbols are used: 
+ 
+μm 
+= micrometers 
+ 
+ts
+= time in seconds 
+ 
+J 
+= joules 
+ 
+W 
+= watts 
+ 
+cm 
+= centimeters 
+ 
+
+=== PAGE 33 ===
+Section 315.TABLE B   MPE for Skin Exposure 
+ 
+Ultraviolet 
+ 
+MPE 
+Wavelength  
+(μm) 
+Exposure 
+Duration, ts
+(J cm-2) 
+(W cm-2) 
+0.180 to 0.302 
+10-9 to 3 x 104
+3 x 10-3
+ 
+0.303 
+10-9 to 3 x 104
+4 x 10-3
+ 
+0.304 
+10-9 to 3 x 104
+6 x 10-3
+ 
+0.305 
+10-9 to 3 x 104
+1.0 x 10-2
+ 
+0.306 
+10-9 to 3 x 104
+1.6 x 10-2
+ 
+0.307 
+10-9 to 3 x 104
+2.5 x 10-2
+ 
+0.308 
+10-9 to 3 x 104
+4.0 x 10-2
+ 
+0.309 
+10-9 to 3 x 104
+6.3 x 10-2
+ 
+0.310 
+10-9 to 3 x 104
+1.0 x 10-1
+ 
+0.311 
+10-9 to 3 x 104
+1.6 x 10-1
+ 
+0.312 
+10-9 to 3 x 104
+2.5 x 10-1
+ 
+0.313 
+10-9 to 3 x 104
+4.0 x 10-1
+ 
+0.314 
+10-9 to 3 x 104
+6.3 x 10-1
+ 
+0.315 to 0.400 
+10-9 to 10 
+0.56 t¼ 
+ 
+0.315 to 0.400 
+10 x 103
+1 
+ 
+0.315 to 0.400 
+103 to 3 x 104
+ 
+1 x 10-3
+ 
+NOTES: 
+1. To calculate MPE, use the J cm-2 value shown or 0.56 t¼, 
+whichever is lower. 
+ 
+2. 3.5 mm limiting aperture (see Section 315.Table D). 
+ 
+
+=== PAGE 34 ===
+Visible and Near Infrared 
+ 
+MPE 
+Wavelength  
+(μm) 
+Exposure 
+Duration, ts
+(J cm-2) 
+(W cm-2) 
+0.400 to 1.400 
+10-9 to 10-7
+2CA x 10-2
+ 
+ 
+10-7 to 10 
+1.1CA t¼ 
+ 
+ 
+10 to 3 x 104
+ 
+0.2CA
+ 
+NOTE: 
+3.5 mm limiting aperture (see Section 315.Table D). 
+ 
+
+=== PAGE 35 ===
+Far Infrared 
+ 
+MPE 
+Wavelength  
+(μm) 
+Exposure 
+Duration, ts
+(J cm-2) 
+(W cm-2) 
+1.400 to 103
+10-9 to 10-7
+10-2
+ 
+ 
+10-7 to 10 
+0.56 t¼  
+ 
+ 
+>10 
+ 
+0.1 
+ 
+NOTE: 
+See Section 315.Table D for limiting apertures. 
+ 
+ 
+GENERAL 
+NOTE: 
+ 
+1. 
+ 
+For purposes of this Table, the following abbreviations are 
+used: 
+ 
+μm 
+= 
+micrometers 
+ 
+ts
+= 
+time in seconds 
+ 
+J 
+= 
+joules 
+ 
+W 
+= 
+watts 
+ 
+cm 
+= 
+centimeters 
+ 
+mm 
+= 
+millimeter 
+ 
+
+=== PAGE 36 ===
+Section 315.TABLE C   Parameters and Correction Factors 
+ 
+Correction Factor 
+Wavelength 
+(μm) 
+T1 = 10 x 1020λ-0.550
+0.550 to 0.700 
+CB = 1.0 
+0.400 to 0.500 
+CB = 1015 λ-0.550
+0.550 to 0.700 
+CA = 1.0 
+0.400 to 0.700 
+CA = 102 λ-0.700
+0.700 to 1.050 
+CA = 5.0 
+1.050 to 1.400 
+Cp = n-14
+0.400 to 1000 
+CE = 1.0 α < αmin
+0.400 to 1.400 
+CE = α/αmin
+0.400 to 1.400 
+Where: αmin < α <α max
+ 
+CE = α2/(α max x αmin)  
+0.400 to 1.400 
+Where: α > αmax
+ 
+Cc = 1.0 
+1.050 to 1.150 
+Cc = 1018 λ -1.150
+1.150 to 1.200 
+Cc = 8 
+1.200 to 1.400 
+ 
+NOTES: 1. 
+For pulse repetition frequencies below 55 kHz (0.4 to 
+1.05 μm) and below 20 kHz (1.05 to 1.4 μm) see ANSI 
+A136.1. 
+ 
+2. 
+For wavelengths between 0.400 and 1.400 μm: 
+ 
+αmin
+= 
+1.5 mrad for t ≤ 0.7 s 
+ 
+αmin
+= 
+2 t¾ mrad for 0.7 s < t <10 s 
+ 
+αmin
+= 
+11 mrad for t < 10 s 
+ 
+αmax
+= 
+100 mrad 
+ 
+3. 
+For purposes of this Section 315.Table C, the following 
+abbreviations or symbols are used: 
+ 
+λ 
+= 
+wavelength in μm 
+ 
+n 
+= 
+number of pulses 
+ 
+α 
+= 
+angular subtense (mrad) 
+ 
+t 
+= 
+time 
+ 
+ts
+= 
+time in seconds 
+ 
+s 
+= 
+seconds 
+ 
+μm 
+= 
+micrometers 
+ 
+Min 
+= 
+minimum 
+ 
+Max 
+= 
+maximum 
+ 
+mrads 
+= 
+milliradians 
+ 
+kHz 
+= 
+kilohertz 
+ 
+
+=== PAGE 37 ===
+Section 315.TABLE D   Limiting Apertures for Hazards Evaluation and AEL 
+Determination 
+ 
+Aperture Diameter (mm) 
+Spectral Region 
+(μm) 
+Duration 
+(s) 
+Eye 
+Skin 
+0.180 to 0.400 
+10-9 to 0.25 
+1.0 
+3.5 
+ 
+0.25 to 3 x 104
+3.5 
+3.5 
+0.400 to 1.400 
+10-9 to 3 x 104
+7.0 
+3.5 
+1.400 to 102
+10-9 to 0.3 
+1.0 
+3.5 
+ 
+0.3 to 10 
+1.5 t3/8
+3.5 
+ 
+10 to 3 x 104
+3.5 
+3.5 
+102 to 103
+10-9 to 3 x 104
+11.0 
+11.0 
+ 
+NOTES: 
+1. 
+Under normal conditions these exposure durations would not be used for 
+hazard evaluation (see ANSI Z136.1 (Table 8)). 
+ 
+2. 
+For purposes of this Section 315.Table D, the following abbreviations or 
+symbols are used: 
+ 
+μm 
+= 
+micrometers 
+ 
+s 
+= 
+seconds 
+ 
+mm 
+= 
+millimeters 
+ 
+ts
+= 
+time in seconds 
+ 
+
+=== PAGE 38 ===
+Section 315.TABLE E   Measurement Apertures for Classification 
+ 
+Spectral Region 
+(μm) 
+Duration 
+(s) 
+Aperture Diameter 
+(mm) 
+0.180 to 0.302 
+10-9 to 0.25 
+1.0 
+ 
+0.25 to 3 x 104
+3.5 
+0.302 to 2.8 
+10-9 to 3 x 104
+50.0 
+2.8 to 102
+10-9 to 0.3 
+1.0 
+ 
+0.3 to 10 
+1.5 t3/8  
+ 
+10 to 3 x 104
+3.5 
+102 to 103
+10-9 to 3 x 104
+11.0 
+ 
+ 
+ 
+NOTES: 
+1. 
+These apertures are used for the measurement of optical power or energy for 
+purposes of laser classification 
+ 
+ 
+ 
+ 
+2. 
+When the laser output is intended to be viewed with optics (excluding 
+ordinary eyeglasses) or the laser safety officer determines that there is 
+reasonable probability of accidental viewing with optics, a 50 mm aperture is 
+used if the following conditions are met. 
+ 
+ 
+ 
+ 
+A) Viewing with optics presents a more severe hazard than unaided viewing. 
+ 
+ 
+ 
+ 
+B) The viewing time is sufficient to constitute a hazard. 
+ 
+ 
+ 
+ 
+3. 
+Under normal conditions these exposure durations would not be used for 
+classification (see ANSI Z136.1 (Table 9)).  
+ 
+ 
+ 
+ 
+4. 
+For purposes of this Section 315.Table E, the following abbreviations or 
+symbols are used: 
+ 
+μm 
+= 
+micrometers 
+ 
+s 
+= 
+seconds 
+ 
+mm 
+= 
+millimeters 
+ 
+ts
+= 
+time in seconds 
+ 
+ 

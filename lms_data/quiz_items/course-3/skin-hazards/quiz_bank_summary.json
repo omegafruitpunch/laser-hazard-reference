@@ -1,0 +1,31 @@
+{
+  "source_pdf": "skin-hazards.pdf",
+  "topic": "Skin Hazards of Laser Radiation",
+  "total_questions": 10,
+  "question_types": [
+    "multiple_choice",
+    "true_false",
+    "matching",
+    "scenario",
+    "multiple_select",
+    "fill_blank"
+  ],
+  "difficulty_distribution": {
+    "basic": 1,
+    "intermediate": 6,
+    "advanced": 3
+  },
+  "questions": [
+    "skin-hazards_q001",
+    "skin-hazards_q002",
+    "skin-hazards_q003",
+    "skin-hazards_q004",
+    "skin-hazards_q005",
+    "skin-hazards_q006",
+    "skin-hazards_q007",
+    "skin-hazards_q008",
+    "skin-hazards_q009",
+    "skin-hazards_q010"
+  ],
+  "created_at": "2026-03-19T17:25:44.124250"
+}

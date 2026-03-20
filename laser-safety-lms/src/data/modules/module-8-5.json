@@ -1,0 +1,66 @@
+{
+  "id": "module-8-5",
+  "courseId": "course-8",
+  "title": "Certification Preparation & Professional Standards",
+  "description": "Preparing for CLSO and CMLSO certification examinations with focus on standards knowledge and professional practice.",
+  "order": 5,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "Professional Certification Path",
+      "content": "The Certified Laser Safety Officer (CLSO) and Certified Medical Laser Safety Officer (CMLSO) credentials demonstrate professional competency in laser safety. This module prepares you for certification examinations with focus on standards-based knowledge that forms the core of certification testing.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "Certification Exam Domains",
+      "content": "## CLSO Examination Domains\n\n**Fundamentals (15%)**\n- Laser physics and properties\n- Laser classification system\n- Bioeffects of laser radiation\n\n**MPE and Hazard Analysis (20%)**\n- Maximum Permissible Exposure calculations\n- NOHD and NHZ calculations\n- Exposure duration considerations\n\n**Control Measures (20%)**\n- Engineering controls\n- Administrative controls\n- PPE selection and use\n\n**Standards and Regulations (20%)**\n- ANSI Z136 series requirements\n- FDA/CDRH regulations (21 CFR 1040)\n- State and local regulations\n\n**LSO Responsibilities (15%)**\n- Authority and duties\n- Training program development\n- Incident investigation\n\n**Medical Surveillance (10%)**\n- Pre-placement examinations\n- Post-exposure evaluation\n\n## CMLSO Additional Focus\n- Tissue interactions and medical applications\n- Operating room safety protocols\n- Patient and staff protection\n- Medical laser equipment characteristics",
+      "component": "KnowledgeGapAnalyzer",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "Practice Examination",
+      "content": "Test your knowledge with practice questions covering all certification domains. Review explanations for both correct and incorrect answers to deepen your understanding of standards requirements and professional practice.",
+      "component": "CertificationExamSimulator",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Final Assessment",
+      "quizId": "quiz-8-5",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "Certification Study Guide",
+      "path": "/docs/course-8-standards/certification-study-guide.pdf"
+    },
+    {
+      "type": "interactive",
+      "title": "Knowledge Gap Analyzer",
+      "component": "KnowledgeGapAnalyzer"
+    },
+    {
+      "type": "interactive",
+      "title": "Certification Exam Simulator",
+      "component": "CertificationExamSimulator"
+    },
+    {
+      "type": "interactive",
+      "title": "Study Plan Generator",
+      "component": "StudyPlanGenerator"
+    }
+  ],
+  "keyTakeaways": [
+    "CLSO exam covers 7 domains with emphasis on MPE, controls, and standards",
+    "ANSI Z136.1 is the foundation standard referenced throughout certification exams",
+    "Understanding the 'why' behind requirements is as important as knowing the requirements",
+    "Professional certification demonstrates competency to employers and regulatory authorities"
+  ],
+  "prerequisites": ["module-8-4"],
+  "difficulty": "advanced"
+}

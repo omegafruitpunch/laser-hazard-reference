@@ -1,0 +1,169 @@
+{
+  "source_pdf": "skin-hazards.pdf",
+  "topic": "Skin Hazards of Laser Radiation",
+  "nodes": [
+    {
+      "id": "skin",
+      "label": "Skin",
+      "type": "organ",
+      "description": "Largest organ, susceptible to laser damage"
+    },
+    {
+      "id": "epidermis",
+      "label": "Epidermis",
+      "type": "layer",
+      "description": "Outer layer, contains melanin"
+    },
+    {
+      "id": "dermis",
+      "label": "Dermis",
+      "type": "layer",
+      "description": "Contains blood vessels and collagen"
+    },
+    {
+      "id": "melanin",
+      "label": "Melanin",
+      "type": "protective_pigment"
+    },
+    {
+      "id": "thermal",
+      "label": "Thermal Damage",
+      "type": "mechanism"
+    },
+    {
+      "id": "photochemical",
+      "label": "Photochemical Damage",
+      "type": "mechanism"
+    },
+    {
+      "id": "uv",
+      "label": "Ultraviolet",
+      "type": "wavelength_range",
+      "range": "100-400 nm"
+    },
+    {
+      "id": "visible",
+      "label": "Visible Light",
+      "type": "wavelength_range",
+      "range": "400-700 nm"
+    },
+    {
+      "id": "infrared",
+      "label": "Infrared",
+      "type": "wavelength_range",
+      "range": ">700 nm"
+    },
+    {
+      "id": "erythema",
+      "label": "Erythema",
+      "type": "injury_effect"
+    },
+    {
+      "id": "blister",
+      "label": "Blister Formation",
+      "type": "injury_effect"
+    },
+    {
+      "id": "sunburn",
+      "label": "Sunburn",
+      "type": "injury_effect"
+    },
+    {
+      "id": "mpe",
+      "label": "Maximum Permissible Exposure",
+      "type": "safety_parameter"
+    },
+    {
+      "id": "fitzpatrick",
+      "label": "Fitzpatrick Scale",
+      "type": "classification"
+    },
+    {
+      "id": "ppe",
+      "label": "Personal Protective Equipment",
+      "type": "safety_measure"
+    }
+  ],
+  "edges": [
+    {
+      "source": "skin",
+      "target": "epidermis",
+      "relation": "contains"
+    },
+    {
+      "source": "skin",
+      "target": "dermis",
+      "relation": "contains"
+    },
+    {
+      "source": "epidermis",
+      "target": "melanin",
+      "relation": "contains"
+    },
+    {
+      "source": "melanin",
+      "target": "uv",
+      "relation": "absorbs"
+    },
+    {
+      "source": "melanin",
+      "target": "visible",
+      "relation": "absorbs"
+    },
+    {
+      "source": "uv",
+      "target": "photochemical",
+      "relation": "causes"
+    },
+    {
+      "source": "uv",
+      "target": "sunburn",
+      "relation": "causes"
+    },
+    {
+      "source": "uv",
+      "target": "erythema",
+      "relation": "causes"
+    },
+    {
+      "source": "visible",
+      "target": "thermal",
+      "relation": "causes"
+    },
+    {
+      "source": "infrared",
+      "target": "thermal",
+      "relation": "causes"
+    },
+    {
+      "source": "thermal",
+      "target": "erythema",
+      "relation": "produces"
+    },
+    {
+      "source": "thermal",
+      "target": "blister",
+      "relation": "produces"
+    },
+    {
+      "source": "mpe",
+      "target": "skin",
+      "relation": "protects"
+    },
+    {
+      "source": "ppe",
+      "target": "skin",
+      "relation": "protects"
+    },
+    {
+      "source": "fitzpatrick",
+      "target": "melanin",
+      "relation": "classifies"
+    }
+  ],
+  "metadata": {
+    "node_count": 15,
+    "edge_count": 15,
+    "created_at": "2026-03-19T17:25:44.124384"
+  }
+}

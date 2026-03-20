@@ -1,0 +1,322 @@
+{
+  "quiz_items": {
+    "standard_application": [
+      {
+        "id": "C8-SA-001",
+        "type": "multiple_choice",
+        "difficulty": "intermediate",
+        "question": "Which standard specifically addresses intentional audience exposure to laser radiation in entertainment settings?",
+        "options": [
+          "ANSI Z136.1",
+          "ANSI Z136.2",
+          "ANSI Z136.10",
+          "ANSI Z136.3"
+        ],
+        "correct_answer": 2,
+        "explanation": "ANSI Z136.10 is the specific standard for entertainment applications involving intentional audience exposure. Z136.1 covers general laser safety, Z136.2 covers fiber optic systems, and Z136.3 covers healthcare facilities.",
+        "source_pdf": "ansi-z136.pdf",
+        "blooms_level": "remember",
+        "topic": "Standards Hierarchy"
+      },
+      {
+        "id": "C8-SA-002",
+        "type": "multiple_choice",
+        "difficulty": "advanced",
+        "question": "A touring laser show using Class IV lasers performs in multiple states. Which regulatory notification requirements apply?",
+        "options": [
+          "Only FDA variance required",
+          "FDA variance + FAA notification only",
+          "FDA variance + state radiation control offices for each state",
+          "Local venue permits only"
+        ],
+        "correct_answer": 2,
+        "explanation": "Touring shows require FDA variance for Class IV lasers PLUS notification to each state's radiation control office. FAA notification is only for outdoor shows.",
+        "source_pdf": "ansi-e146.pdf",
+        "blooms_level": "analyze",
+        "topic": "Regulatory Compliance"
+      },
+      {
+        "id": "C8-SA-003",
+        "type": "true_false",
+        "difficulty": "beginner",
+        "question": "The ESTA Technical Standards Program is accredited by ANSI to develop consensus-based standards.",
+        "correct_answer": true,
+        "explanation": "ESTA's Technical Standards Program is indeed ANSI-accredited and develops standards through an open consensus process.",
+        "source_pdf": "esta-standards.pdf",
+        "blooms_level": "remember",
+        "topic": "Standards Development"
+      },
+      {
+        "id": "C8-SA-004",
+        "type": "multiple_choice",
+        "difficulty": "intermediate",
+        "question": "Which organization is responsible for the 21 CFR 1040 laser performance standard?",
+        "options": [
+          "ANSI",
+          "FDA",
+          "OSHA",
+          "ESTA"
+        ],
+        "correct_answer": 1,
+        "explanation": "The FDA (Food and Drug Administration) Center for Devices and Radiological Health enforces 21 CFR 1040, the federal laser product performance standard.",
+        "source_pdf": "ansi-e146.pdf",
+        "blooms_level": "remember",
+        "topic": "Regulatory Framework"
+      },
+      {
+        "id": "C8-SA-005",
+        "type": "multiple_choice",
+        "difficulty": "advanced",
+        "question": "A laser installation requires variances from FDA performance standards. What is this document called?",
+        "options": [
+          "Exemption certificate",
+          "Variance",
+          "Waiver",
+          "Deviation permit"
+        ],
+        "correct_answer": 1,
+        "explanation": "FDA issues 'variances' - permission to deviate from standard requirements when alternate steps assure safety. This is the correct regulatory term.",
+        "source_pdf": "ansi-e146.pdf",
+        "blooms_level": "understand",
+        "topic": "FDA Regulations"
+      }
+    ],
+    "compliance_determination": [
+      {
+        "id": "C8-CD-001",
+        "type": "multiple_choice",
+        "difficulty": "intermediate",
+        "question": "What is the minimum vertical separation distance for a SUPERVISED laser installation above audience areas?",
+        "options": [
+          "1.5 meters",
+          "2.5 meters",
+          "3 meters",
+          "6 meters"
+        ],
+        "correct_answer": 2,
+        "explanation": "For supervised installations, beams must be at least 3 meters above audience areas. Unsupervised installations require 6 meters.",
+        "source_pdf": "ansi-z136.pdf",
+        "blooms_level": "remember",
+        "topic": "Separation Distances"
+      },
+      {
+        "id": "C8-CD-002",
+        "type": "multiple_choice",
+        "difficulty": "intermediate",
+        "question": "A Class IIIb laser is being used for an indoor entertainment show. What FDA requirement applies?",
+        "options": [
+          "No special requirements",
+          "FAA notification only",
+          "Approved variance required before performance",
+          "State permit only"
+        ],
+        "correct_answer": 2,
+        "explanation": "Class IIIb and Class IV lasers used in entertainment require an approved FDA variance before performance, effective September 20, 1985.",
+        "source_pdf": "ansi-e146.pdf",
+        "blooms_level": "apply",
+        "topic": "FDA Variance Requirements"
+      },
+      {
+        "id": "C8-CD-003",
+        "type": "multiple_choice",
+        "difficulty": "advanced",
+        "question": "For an outdoor laser show with 8W laser power, what FAA notification is required?",
+        "options": [
+          "No notification needed",
+          "Phone notification 24 hours prior",
+          "Written notification 2-4 weeks in advance",
+          "FAA will object regardless"
+        ],
+        "correct_answer": 2,
+        "explanation": "Class IV lasers between 0.5-12W for outdoor shows require written FAA notification 2-4 weeks in advance. Lasers >12W typically face FAA objection.",
+        "source_pdf": "ansi-e146.pdf",
+        "blooms_level": "apply",
+        "topic": "FAA Requirements"
+      },
+      {
+        "id": "C8-CD-004",
+        "type": "multiple_select",
+        "difficulty": "advanced",
+        "question": "Which of the following are required criteria for FDA variance approval for audience scanning? (Select all that apply)",
+        "options": [
+          "Radiation cannot exceed Class I limits at audience locations",
+          "Scanning safeguards for reflected beams",
+          "Laser manufacturer must be ISO 9001 certified",
+          "Designated Laser Safety Officer with shutdown authority",
+          "Minimum 10mW power restriction"
+        ],
+        "correct_answers": [0, 1, 3],
+        "explanation": "FDA variance criteria include: Class I limits at audience, scanning safeguards for reflections, and designated LSO. ISO 9001 certification and arbitrary power restrictions are not FDA requirements.",
+        "source_pdf": "ansi-e146.pdf",
+        "blooms_level": "analyze",
+        "topic": "Variance Criteria"
+      },
+      {
+        "id": "C8-CD-005",
+        "type": "multiple_choice",
+        "difficulty": "intermediate",
+        "question": "How far in advance must FDA be notified of a laser light show?",
+        "options": [
+          "24 hours",
+          "1 week",
+          "1 month",
+          "3 months"
+        ],
+        "correct_answer": 2,
+        "explanation": "FDA requires written notification at least 1 month in advance of a show. For last-minute scheduling, phone notification should be followed by written confirmation.",
+        "source_pdf": "ansi-e146.pdf",
+        "blooms_level": "remember",
+        "topic": "Notification Requirements"
+      },
+      {
+        "id": "C8-CD-006",
+        "type": "true_false",
+        "difficulty": "intermediate",
+        "question": "Maximum Permissible Exposure (MPE) levels for employees can be based on the eye aversion response time of 0.25 seconds if specific safety training is provided.",
+        "correct_answer": true,
+        "explanation": "Unlike the general public, trained employees can use the 0.25-second aversion response time for continuous wave (CW) beams during setting up procedures.",
+        "source_pdf": "ansi-z136.pdf",
+        "blooms_level": "understand",
+        "topic": "MPE Requirements"
+      }
+    ],
+    "reference_lookup": [
+      {
+        "id": "C8-RL-001",
+        "type": "multiple_choice",
+        "difficulty": "intermediate",
+        "question": "Where can you find the Maximum Permissible Exposure (MPE) values for various exposure situations?",
+        "options": [
+          "ANSI Z136.1 Table 5a/5b",
+          "FDA Form 3632",
+          "ESTA E1.30-11",
+          "FAA Order 7400.2"
+        ],
+        "correct_answer": 0,
+        "explanation": "ANSI Z136.1 Tables 5a and 5b provide comprehensive MPE values for eye and skin across all wavelengths and pulse durations.",
+        "source_pdf": "ansi-z136.pdf",
+        "blooms_level": "remember",
+        "topic": "Reference Materials"
+      },
+      {
+        "id": "C8-RL-002",
+        "type": "multiple_choice",
+        "difficulty": "advanced",
+        "question": "A laser safety incident occurs during a show. Which authorities must be notified?",
+        "options": [
+          "FDA only",
+          "Local authority only",
+          "Local authority AND FDA",
+          "No notification required if no injury"
+        ],
+        "correct_answer": 2,
+        "explanation": "Accidents or alleged accidents involving Class III or IV lasers must be reported to BOTH the local authority AND FDA, regardless of whether actual injuries occurred.",
+        "source_pdf": "ansi-e146.pdf",
+        "blooms_level": "apply",
+        "topic": "Incident Reporting"
+      },
+      {
+        "id": "C8-RL-003",
+        "type": "multiple_choice",
+        "difficulty": "beginner",
+        "question": "What is the correct ACN Packet Identifier hexadecimal sequence for TCP operation per ANSI E1.30-11?",
+        "options": [
+          "41 53 43 2d 45 31 2e 31 37 00 00 00",
+          "45 31 2e 31 37 00 00 00 41 53 43 2d",
+          "FF FF FF FF 00 00 00 00 41 53 43 2d",
+          "00 00 00 00 45 31 2e 31 37 41 53 43"
+        ],
+        "correct_answer": 0,
+        "explanation": "The ACN Packet Identifier is the ASCII string 'ASC-E1.17' followed by three null bytes, which in hex is: 41 53 43 2d 45 31 2e 31 37 00 00 00",
+        "source_pdf": "esta-standards.pdf",
+        "blooms_level": "remember",
+        "topic": "Technical Standards"
+      },
+      {
+        "id": "C8-RL-004",
+        "type": "multiple_choice",
+        "difficulty": "intermediate",
+        "question": "Which FDA office handles variance applications for laser light shows?",
+        "options": [
+          "Office of Compliance HFZ-312, CDRH",
+          "Center for Drug Evaluation",
+          "Office of Emergency Operations",
+          "Center for Biologics"
+        ],
+        "correct_answer": 0,
+        "explanation": "The Office of Compliance HFZ-312 within the Center for Devices and Radiological Health (CDRH) handles laser show variance applications.",
+        "source_pdf": "ansi-e146.pdf",
+        "blooms_level": "remember",
+        "topic": "Regulatory Contacts"
+      },
+      {
+        "id": "C8-RL-005",
+        "type": "multiple_choice",
+        "difficulty": "advanced",
+        "question": "A venue needs to verify compliance with laser safety standards. Which document establishes the consensus process for ESTA standards?",
+        "options": [
+          "ANSI Essential Requirements",
+          "ISO 17025",
+          "NFPA 70",
+          "OSHA 1910"
+        ],
+        "correct_answer": 0,
+        "explanation": "ESTA standards are developed following ANSI Essential Requirements for due process and consensus. ESTA is ANSI-accredited for this process.",
+        "source_pdf": "esta-standards.pdf",
+        "blooms_level": "understand",
+        "topic": "Standards Development Process"
+      }
+    ],
+    "calculation_application": [
+      {
+        "id": "C8-CA-001",
+        "type": "multiple_choice",
+        "difficulty": "advanced",
+        "question": "A scanned laser effect has a failure mode that creates a static beam. What is the minimum acceptable shutdown time for a scan failure detection system?",
+        "options": [
+          "1 second",
+          "100 milliseconds",
+          "A few milliseconds",
+          "0.25 seconds"
+        ],
+        "correct_answer": 2,
+        "explanation": "Scan-failure detection systems should effect automatic shutdown in the shortest reasonably practicable time - shutdown speeds of no more than a few milliseconds should be readily achievable.",
+        "source_pdf": "ansi-z136.pdf",
+        "blooms_level": "apply",
+        "topic": "Safety Systems"
+      },
+      {
+        "id": "C8-CA-002",
+        "type": "multiple_choice",
+        "difficulty": "intermediate",
+        "question": "What is the maximum civil penalty for operating a laser light show without an approved FDA variance?",
+        "options": [
+          "$10,000",
+          "$50,000",
+          "$100,000",
+          "$300,000"
+        ],
+        "correct_answer": 3,
+        "explanation": "Operating without an approved FDA variance or violating laser safety standards may result in civil penalties up to $300,000 under Section 360C of the Radiation Control for Health and Safety Act.",
+        "source_pdf": "ansi-e146.pdf",
+        "blooms_level": "remember",
+        "topic": "Penalties"
+      }
+    ]
+  },
+  "metadata": {
+    "total_items": 15,
+    "by_difficulty": {
+      "beginner": 3,
+      "intermediate": 8,
+      "advanced": 4
+    },
+    "by_type": {
+      "multiple_choice": 12,
+      "true_false": 2,
+      "multiple_select": 1
+    },
+    "generated_by": "PDF Elite Processor Agent #19",
+    "timestamp": "2026-03-19T15:46:00Z"
+  }
+}

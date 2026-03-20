@@ -1,0 +1,131 @@
+{
+  "course": "Course 8: Entertainment Technology Standards",
+  "pdfs_processed": [
+    {
+      "filename": "ansi-z136.pdf",
+      "actual_title": "Safety of Display Lasers",
+      "source": "UK Trade Organizations (PLASA, HSE)",
+      "edition": "1st Edition - April 2016",
+      "pages": 35,
+      "key_topics": [
+        "Laser beam hazards and control measures",
+        "Maximum Permissible Exposure (MPE) requirements",
+        "Roles and responsibilities (LSO, Installer, Operator)",
+        "Show planning and system design",
+        "Installation and alignment procedures",
+        "Pre-show and operational safety checks",
+        "Emergency procedures"
+      ]
+    },
+    {
+      "filename": "ansi-e146.pdf",
+      "actual_title": "Laser Light Show Safety",
+      "source": "FDA (HHS Publication FDA 86-8262)",
+      "edition": "Revised May 1986",
+      "pages": 34,
+      "key_topics": [
+        "FDA laser classification system (Class I-IV)",
+        "Variance requirements for Class IIIb/IV lasers",
+        "Laser hazard fundamentals",
+        "Government requirements and regulations",
+        "Individual responsibilities for manufacturers/operators",
+        "FAA notification for outdoor shows",
+        "State and local compliance requirements"
+      ]
+    },
+    {
+      "filename": "esta-standards.pdf",
+      "actual_title": "ANSI E1.30-11 - ACN Root Layer Protocol Operation on TCP",
+      "source": "ESTA Technical Standards Program",
+      "edition": "2019",
+      "pages": 10,
+      "key_topics": [
+        "ESTA Technical Standards Program overview",
+        "ANSI-accredited consensus process",
+        "ACN (Architecture for Control Networks) protocol",
+        "Control Protocols Working Group",
+        "Industry standards development process"
+      ]
+    }
+  ],
+  "industry_standards_covered": [
+    {
+      "standard": "ANSI Z136 Series",
+      "description": "US laser safety standards - general laser safety, fiber optic systems, healthcare, R&D",
+      "relevance": "Foundation for laser safety in entertainment"
+    },
+    {
+      "standard": "FDA 21 CFR 1040",
+      "description": "Federal laser product performance standard",
+      "relevance": "Legal requirements for laser products and variances"
+    },
+    {
+      "standard": "ESTA/ANSI E1.46",
+      "description": "Entertainment laser safety standard",
+      "relevance": "Specific guidance for audience scanning and operator qualifications"
+    },
+    {
+      "standard": "IEC 60825",
+      "description": "International laser safety standard",
+      "relevance": "Classification and safety requirements harmonization"
+    }
+  ],
+  "critical_safety_concepts": [
+    {
+      "concept": "Maximum Permissible Exposure (MPE)",
+      "description": "Maximum laser exposure level considered safe for eye/skin",
+      "application": "Must be calculated for audience, performers, and workers"
+    },
+    {
+      "concept": "Laser Classification",
+      "description": "Class I (safe) through Class IV (high hazard)",
+      "application": "Determines control measures and regulatory requirements"
+    },
+    {
+      "concept": "FDA Variance",
+      "description": "Permission to deviate from performance standards with alternate safety measures",
+      "application": "Required for Class IIIb/IV lasers in entertainment"
+    },
+    {
+      "concept": "Laser Safety Officer (LSO)",
+      "description": "Person responsible for laser risk evaluation and safety implementation",
+      "application": "Must have executive authority for all installations"
+    },
+    {
+      "concept": "Scan Failure Detection",
+      "description": "Systems that automatically terminate emission upon scanner fault",
+      "application": "Critical safety control for audience scanning"
+    }
+  ],
+  "compliance_requirements": {
+    "federal": [
+      "FDA variance required for Class IIIb/IV lasers",
+      "30-day advance notification to FDA for shows",
+      "FAA notification for outdoor shows (2-4 weeks advance)"
+    ],
+    "state_local": [
+      "State radiation control office notification",
+      "Local permits and licenses",
+      "Facility manager coordination"
+    ],
+    "operational": [
+      "Written safety procedures and SOPs",
+      "Pre-show safety checks and documentation",
+      "Emergency stop (E-stop) testing",
+      "MPE compliance verification measurements",
+      "Competency requirements for operators"
+    ]
+  },
+  "separation_distances": {
+    "supervised_installations": {
+      "vertical": "3m minimum above audience",
+      "horizontal": "2.5m minimum from audience"
+    },
+    "unsupervised_installations": {
+      "vertical": "6m minimum above audience",
+      "horizontal": "2.5m minimum from audience"
+    }
+  },
+  "extraction_timestamp": "2026-03-19T15:46:00Z",
+  "processing_agent": "PDF Elite Processor Agent #19"
+}

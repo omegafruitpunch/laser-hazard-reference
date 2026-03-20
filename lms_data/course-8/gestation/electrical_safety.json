@@ -1,0 +1,73 @@
+{
+  "source": "electrical-safety-standards.pdf",
+  "agent_id": "GESTATION-ES-001",
+  "pages_processed": [
+    {
+      "page": 1,
+      "topic": "OSHA, FDA, and ANSI Requirements Overview",
+      "key_concepts": [
+        "OSHA General Duty Clause 29 CFR 1910",
+        "ANSI Z136.1-2014 compliance",
+        "FDA 21 CFR 1040 requirements",
+        "Laser interlock requirements",
+        "Federal performance standards"
+      ],
+      "regulatory_frameworks": [
+        {
+          "name": "OSHA",
+          "reference": "29 CFR 1910 General Duty Clause",
+          "focus": "Workplace safety enforcement"
+        },
+        {
+          "name": "FDA CDRH",
+          "reference": "21 CFR 1000-1050",
+          "focus": "Manufacturing standards"
+        },
+        {
+          "name": "ANSI",
+          "reference": "Z136.1-2014",
+          "focus": "Industry best practices"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "topic": "In-House Manufacturing and Interlock Requirements",
+      "key_concepts": [
+        "FLPPS (Federal Laser Product Performance Standard)",
+        "In-house laser construction requirements",
+        "End user interlocking requirements",
+        "Laser Safety Officer responsibilities",
+        "Commercial vs in-house compliance gaps"
+      ],
+      "critical_insights": [
+        "Manufacturers must provide external interlocks on Class 3B and 4 lasers",
+        "No federal mandate for end users to actually use interlocks",
+        "Interlock connectors often shipped in shorted state",
+        "ANSI Z136.1 adoption effectively adopts FLPPS",
+        "LSO must monitor and enforce laser safety for in-house builds"
+      ]
+    }
+  ],
+  "digest_summary": {
+    "document_type": "Electrical Safety Standards Summary",
+    "regulatory_overlaps": {
+      "OSHA_enforces": "ANSI Z136.1 through General Duty Clause",
+      "FDA_mandates": "21 CFR 1040 for manufacturers",
+      "ANSI_provides": "Industry standard best practices"
+    },
+    "key_requirements": [
+      "All Class 3B and Class 4 lasers must have external interlocks",
+      "21CFR1040.10 specifies housing interlocks and labeling",
+      "21CFR1040.11 covers specific use laser products",
+      "In-house lasers should meet FLPPS intent",
+      "Sections 4.3.1-4.3.14 of ANSI Z136.1 mirror FLPPS requirements"
+    ],
+    "compliance_gaps": [
+      "No federal mandate requiring end users to utilize provided interlocks",
+      "Interlock connectors often shipped shorted (disabled)",
+      "DIY laser construction creates safety enforcement challenges",
+      "Gap between manufacturer requirements and user implementation"
+    ]
+  }
+}

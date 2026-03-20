@@ -1,0 +1,313 @@
+{
+  "component_id": "eyewear_selection_wizard",
+  "name": "Eyewear Selection Wizard",
+  "version": "1.0.0",
+  "type": "decision_wizard",
+  "description": "Multi-step wizard for selecting appropriate laser protective eyewear",
+  "pedagogical_approach": {
+    "guided_decision_making": true,
+    "step_by_step_process": true,
+    "explain_recommendations": true,
+    "compare_alternatives": true
+  },
+  "wizard_steps": [
+    {
+      "step": 1,
+      "id": "laser_parameters",
+      "title": "Laser Parameters",
+      "description": "Enter the laser specifications",
+      "fields": [
+        {
+          "id": "wavelength",
+          "label": "Wavelength",
+          "type": "slider_with_presets",
+          "unit": "nm",
+          "min": 180,
+          "max": 11000,
+          "presets": [
+            {"value": 193, "label": "ArF", "description": "Excimer (UV)"},
+            {"value": 248, "label": "KrF", "description": "Excimer (UV)"},
+            {"value": 308, "label": "XeCl", "description": "Excimer (UV)"},
+            {"value": 351, "label": "XeF", "description": "Excimer (UV)"},
+            {"value": 355, "label": "Triple Nd:YAG", "description": "Solid state (UV)"},
+            {"value": 405, "label": "Diode", "description": "Violet diode"},
+            {"value": 488, "label": "Ar⁺", "description": "Argon ion (blue)"},
+            {"value": 514, "label": "Ar⁺", "description": "Argon ion (green)"},
+            {"value": 532, "label": "DPSS", "description": "Frequency-doubled Nd:YAG"},
+            {"value": 632.8, "label": "HeNe", "description": "Helium-Neon (red)"},
+            {"value": 694, "label": "Ruby", "description": "Ruby laser"},
+            {"value": 755, "label": "Alex", "description": "Alexandrite"},
+            {"value": 800, "label": "Diode", "description": "Diode array"},
+            {"value": 810, "label": "Diode", "description": "Common diode"},
+            {"value": 830, "label": "Diode", "description": "Laser diode"},
+            {"value": 980, "label": "Diode", "description": "Pump diode"},
+            {"value": 1064, "label": "Nd:YAG", "description": "Most common solid state"},
+            {"value": 1320, "label": "Nd:YAG", "description": "Long pulse"},
+            {"value": 1550, "label": "Er:Glass", "description": "Eye-safe"},
+            {"value": 2940, "label": "Er:YAG", "description": "Mid-IR"},
+            {"value": 10600, "label": "CO₂", "description": "Far-IR"}
+          ],
+          "visual": "spectrum_indicator"
+        },
+        {
+          "id": "power",
+          "label": "Power/Energy",
+          "type": "number_with_unit",
+          "unit_options": ["mW", "W", "mJ", "J"],
+          "default": 100,
+          "default_unit": "mW",
+          "help_text": "For CW: use power (W or mW). For pulsed: use energy per pulse (J or mJ)"
+        },
+        {
+          "id": "beam_diameter",
+          "label": "Beam Diameter at Eye",
+          "type": "number_with_unit",
+          "unit": "mm",
+          "default": 7,
+          "min": 0.1,
+          "max": 50,
+          "help_text": "Use 7 mm for worst-case (fully dilated pupil)"
+        }
+      ],
+      "validation": {
+        "required": ["wavelength", "power"]
+      }
+    },
+    {
+      "step": 2,
+      "id": "application_context",
+      "title": "Application Context",
+      "description": "How will the eyewear be used?",
+      "fields": [
+        {
+          "id": "task_type",
+          "label": "Primary Task",
+          "type": "radio_card",
+          "options": [
+            {
+              "id": "alignment",
+              "label": "Beam Alignment",
+              "description": "Intentional beam viewing to position optics",
+              "icon": "crosshair",
+              "typical_od": "Lower (2-4)",
+              "vlt_priority": "High"
+            },
+            {
+              "id": "operation",
+              "label": "Normal Operation",
+              "description": "Working near laser during normal use",
+              "icon": "play",
+              "typical_od": "Medium-High (4-6)",
+              "vlt_priority": "Medium"
+            },
+            {
+              "id": "maintenance",
+              "label": "Service/Maintenance",
+              "description": "Servicing laser equipment",
+              "icon": "tool",
+              "typical_od": "High (6-8)",
+              "vlt_priority": "Low-Medium"
+            },
+            {
+              "id": "emergency",
+              "label": "Emergency/Escape",
+              "description": "Emergency response or quick exit",
+              "icon": "alert",
+              "typical_od": "Very High (7+)",
+              "vlt_priority": "Low"
+            }
+          ]
+        },
+        {
+          "id": "exposure_duration",
+          "label": "Expected Exposure Duration",
+          "type": "radio_button",
+          "options": [
+            {"id": "accidental", "label": "Accidental only (<0.25s)", "description": "Blink reflex time"},
+            {"id": "brief", "label": "Brief (0.25-10s)", "description": "Momentary viewing"},
+            {"id": "extended", "label": "Extended (>10s)", "description": "Prolonged exposure possible"}
+          ],
+          "default": "accidental"
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "id": "visibility_requirements",
+      "title": "Visibility Requirements",
+      "description": "How important is visibility through the eyewear?",
+      "fields": [
+        {
+          "id": "vlt_importance",
+          "label": "Visibility Priority",
+          "type": "slider",
+          "min": 1,
+          "max": 5,
+          "labels": {
+            "1": "Maximum protection only",
+            "3": "Balanced",
+            "5": "Maximum visibility needed"
+          },
+          "help_text": "Higher values prioritize seeing through the eyewear"
+        },
+        {
+          "id": "other_wavelengths",
+          "label": "Other Wavelengths in Area",
+          "type": "multiselect",
+          "options": [
+            {"value": "none", "label": "None - single wavelength only"},
+            {"value": "visible", "label": "Other visible lasers"},
+            {"value": "uv", "label": "UV sources"},
+            {"value": "ir", "label": "Other IR lasers"}
+          ],
+          "help_text": "Select if multi-wavelength protection is needed"
+        },
+        {
+          "id": "prescription",
+          "label": "Prescription Required",
+          "type": "toggle",
+          "default": false
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "id": "results",
+      "title": "Recommended Eyewear",
+      "description": "Based on your inputs, here are the recommendations",
+      "type": "results_display"
+    }
+  ],
+  "calculation_engine": {
+    "od_calculation": {
+      "reference_component": "od_calculator",
+      "inputs_from_wizard": ["wavelength", "power", "beam_diameter", "exposure_duration"]
+    },
+    "recommendation_logic": {
+      "minimum_od": "calculated_od_rounded_up",
+      "vlt_target": {
+        "depends_on": "vlt_importance",
+        "mapping": {
+          "1": {"min_vlt": 0, "max_vlt": 15, "label": "Protection Priority"},
+          "2": {"min_vlt": 10, "max_vlt": 30, "label": "Protection Preferred"},
+          "3": {"min_vlt": 20, "max_vlt": 50, "label": "Balanced"},
+          "4": {"min_vlt": 40, "max_vlt": 70, "label": "Visibility Preferred"},
+          "5": {"min_vlt": 60, "max_vlt": 100, "label": "Visibility Priority"}
+        }
+      },
+      "filter_type": {
+        "single_wavelength": "narrowband",
+        "multiple_wavelengths": "multi-line or broadband",
+        "wide_range": "broadband"
+      }
+    }
+  },
+  "recommendation_templates": {
+    "narrowband": {
+      "title": "Narrowband Eyewear",
+      "description": "Maximum OD at your specific wavelength with good visibility at other wavelengths",
+      "advantages": ["Highest OD at target wavelength", "Good visibility elsewhere", "Lower cost"],
+      "disadvantages": ["Only protects one wavelength", "Must switch for different lasers"],
+      "typical_specs": {
+        "od_range": "5-8",
+        "vlt_range": "30-60%"
+      }
+    },
+    "broadband": {
+      "title": "Broadband Eyewear",
+      "description": "Protection across a range of wavelengths",
+      "advantages": ["One pair for multiple lasers", "Convenience", "No switching needed"],
+      "disadvantages": ["Lower peak OD", "Reduced VLT", "Higher cost"],
+      "typical_specs": {
+        "od_range": "4-6",
+        "vlt_range": "10-30%"
+      }
+    },
+    "multi_line": {
+      "title": "Multi-Line Eyewear",
+      "description": "Specific protection at multiple discrete wavelengths",
+      "advantages": ["Optimized for specific wavelengths", "Better VLT than broadband", "No switching"],
+      "disadvantages": ["Limited to specified wavelengths", " gaps between protected lines"],
+      "typical_specs": {
+        "od_range": "5-7",
+        "vlt_range": "20-40%"
+      }
+    }
+  },
+  "sample_eyewear_database": [
+    {
+      "id": "sample_1",
+      "type": "narrowband",
+      "wavelength": 532,
+      "od": 7,
+      "vlt": 40,
+      "color": "amber",
+      "use_case": "532 nm alignment and operation"
+    },
+    {
+      "id": "sample_2",
+      "type": "narrowband",
+      "wavelength": 1064,
+      "od": 7,
+      "vlt": 25,
+      "color": "green",
+      "use_case": "Nd:YAG laser protection"
+    },
+    {
+      "id": "sample_3",
+      "type": "multi_line",
+      "wavelengths": [532, 1064],
+      "od": "5+ @ both",
+      "vlt": 15,
+      "color": "orange",
+      "use_case": "Frequency-doubled Nd:YAG labs"
+    },
+    {
+      "id": "sample_4",
+      "type": "broadband",
+      "range": "190-540 nm",
+      "od": 6,
+      "vlt": 35,
+      "color": "yellow",
+      "use_case": "UV and visible blue-green protection"
+    },
+    {
+      "id": "sample_5",
+      "type": "broadband",
+      "range": "800-1700 nm",
+      "od": 5,
+      "vlt": 20,
+      "color": "blue",
+      "use_case": "Near-IR diode and Nd:YAG"
+    }
+  ],
+  "output_sections": {
+    "required_od": {
+      "title": "Calculated Requirements",
+      "display": {
+        "actual_irradiance": true,
+        "mpe_used": true,
+        "minimum_od": true,
+        "recommended_od": true
+      }
+    },
+    "recommendations": {
+      "title": "Recommended Eyewear Options",
+      "display_type": "comparison_cards",
+      "max_recommendations": 3
+    },
+    "specifications_table": {
+      "title": "Specification Summary",
+      "columns": ["Parameter", "Your Requirement", "Recommended"]
+    },
+    "safety_notes": {
+      "title": "Important Safety Notes",
+      "content": [
+        "Always verify eyewear markings match your laser wavelength",
+        "Inspect eyewear before each use for damage",
+        "Eyewear is the last line of defense - use engineering controls first",
+        "Replace eyewear if exposed to laser damage threshold"
+      ]
+    }
+  }
+}

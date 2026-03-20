@@ -1,0 +1,226 @@
+{
+  "module_id": "8.1",
+  "lessons": [
+    {
+      "lesson_id": "8.1.1",
+      "title": "The ANSI Z136 Series Landscape",
+      "type": "concept_introduction",
+      "duration_minutes": 8,
+      "content": {
+        "opening_hook": {
+          "type": "scenario",
+          "text": "You're setting up a laser system for a university research lab. Do you need ANSI Z136.1, Z136.3, or Z136.8? Understanding the Z136 family will help you choose correctly.",
+          "visual": "standards_family_tree"
+        },
+        "core_concept": {
+          "title": "The ANSI Z136 Standards Family",
+          "text": "The ANSI Z136 series is a comprehensive set of laser safety standards, with Z136.1 as the foundational document and application-specific standards for specialized environments.",
+          "key_points": [
+            "Z136.1: Foundation standard - Safe Use of Lasers (all applications)",
+            "Z136.3: Health Care Facilities (medical lasers)",
+            "Z136.10: Entertainment (audience scanning, shows)",
+            "Z136.8: Research, Development, and Testing",
+            "All application standards reference and supplement Z136.1"
+          ]
+        },
+        "interactive_visualization": {
+          "type": "standards_hierarchy",
+          "description": "Interactive tree showing all Z136 standards",
+          "levels": [
+            {
+              "level": 0,
+              "name": "ANSI Z136.1",
+              "description": "Safe Use of Lasers - Foundation",
+              "color": "#e94560"
+            },
+            {
+              "level": 1,
+              "standards": [
+                {"id": "z136.3", "name": "Z136.3", "application": "Health Care"},
+                {"id": "z136.8", "name": "Z136.8", "application": "Research"},
+                {"id": "z136.10", "name": "Z136.10", "application": "Entertainment"},
+                {"id": "z136.4", "name": "Z136.4", "application": "Manufacturing"},
+                {"id": "z136.6", "name": "Z136.6", "application": "Outdoor"},
+                {"id": "z136.9", "name": "Z136.9", "application": "Defense"}
+              ]
+            }
+          ],
+          "interactions": [
+            "Click to expand each standard",
+            "Hover to see scope summary",
+            "Drag to reposition for comparison"
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "8.1.2",
+      "title": "Z136.1 Navigator: Key Sections",
+      "type": "interactive_exploration",
+      "duration_minutes": 12,
+      "content": {
+        "structure": {
+          "title": "ANSI Z136.1-2022 Organization",
+          "sections": [
+            {
+              "section": "Section 1-3",
+              "title": "Scope, Definitions, LSO Responsibilities",
+              "key_content": ["Definitions of laser terms", "LSO authority and duties", "Training requirements"],
+              "progressive_reveal": true
+            },
+            {
+              "section": "Section 4",
+              "title": "Hazard Evaluation",
+              "key_content": ["MPE Tables 5a/5b", "NOHD calculations", "Bioeffects (Section 4.2)"],
+              "progressive_reveal": true
+            },
+            {
+              "section": "Section 5",
+              "title": "Control Measures",
+              "key_content": ["Engineering controls", "Administrative controls", "PPE requirements"],
+              "progressive_reveal": true
+            },
+            {
+              "section": "Section 6-7",
+              "title": "Medical Surveillance & Non-Beam Hazards",
+              "key_content": ["Eye exam requirements", "Chemical hazards", "Electrical safety"],
+              "progressive_reveal": true
+            }
+          ]
+        },
+        "interactive_navigator": {
+          "type": "layered_document",
+          "features": [
+            "Progressive disclosure - click to drill down",
+            "Search function for key terms",
+            "Cross-reference links to related sections",
+            "Quick-reference cards for each section"
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "8.1.3",
+      "title": "MPE Tables: Interactive Guide",
+      "type": "interactive_calculation",
+      "duration_minutes": 10,
+      "content": {
+        "introduction": {
+          "title": "Navigating Tables 5a and 5b",
+          "text": "The MPE tables are the heart of laser safety calculations. Learn to navigate them efficiently with this interactive guide."
+        },
+        "table_guide": {
+          "table_5a": {
+            "description": "MPE for Direct Ocular Exposure",
+            "wavelength_regions": [
+              {"region": "UV (180-400nm)", "formula": "3×10⁻³ J/cm²"},
+              {"region": "Visible (400-700nm)", "formula": "1.8×t⁰·⁷⁵ mW/cm²"},
+              {"region": "Near-IR (700-1400nm)", "formula": "1.8×t⁰·⁷⁵ mW/cm²"},
+              {"region": "Far-IR (>1400nm)", "formula": "0.1 W/cm²"}
+            ]
+          },
+          "table_5b": {
+            "description": "MPE for Skin Exposure",
+            "note": "Generally less restrictive than eye MPE"
+          }
+        },
+        "interactive_walkthrough": {
+          "steps": [
+            {
+              "step": 1,
+              "instruction": "Select wavelength region",
+              "input": "wavelength_slider",
+              "range": [180, 1500],
+              "unit": "nm"
+            },
+            {
+              "step": 2,
+              "instruction": "Select exposure duration",
+              "input": "duration_selector",
+              "options": ["0.25s (blink)", "1s", "10s", ">100s"]
+            },
+            {
+              "step": 3,
+              "instruction": "View applicable MPE formula",
+              "output": "formula_display"
+            },
+            {
+              "step": 4,
+              "instruction": "Calculate MPE value",
+              "input": "calculator",
+              "output": "mpe_value_with_units"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "8.1.4",
+      "title": "Standards Selection Challenge",
+      "type": "guided_practice",
+      "duration_minutes": 10,
+      "content": {
+        "title": "Choose the Right Standard",
+        "description": "Apply your knowledge to select the appropriate standard for each scenario.",
+        "scenarios": [
+          {
+            "id": "s1",
+            "scenario": "A hospital is installing surgical lasers in three ORs.",
+            "correct_answer": "ANSI Z136.3",
+            "explanation": "Z136.3 specifically covers laser use in health care facilities.",
+            "hint": "Consider the application environment - medical setting"
+          },
+          {
+            "id": "s2",
+            "scenario": "A music festival wants to add audience scanning laser effects.",
+            "correct_answer": "ANSI Z136.10 (and E1.46)",
+            "explanation": "Z136.10 covers entertainment applications with intentional audience exposure.",
+            "hint": "This involves audience scanning at a public event"
+          },
+          {
+            "id": "s3",
+            "scenario": "A university physics lab uses Class 4 lasers for spectroscopy research.",
+            "correct_answer": "ANSI Z136.8",
+            "explanation": "Z136.8 covers research, development, and testing environments.",
+            "hint": "Research environment with non-production laser use"
+          },
+          {
+            "id": "s4",
+            "scenario": "A manufacturing plant uses lasers for welding and cutting.",
+            "correct_answer": "ANSI Z136.1 (and Z136.9 for some defense apps)",
+            "explanation": "General industrial use falls under Z136.1 foundation standard.",
+            "hint": "Industrial manufacturing application"
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "8.1.5",
+      "title": "ANSI, FDA, and OSHA Relationships",
+      "type": "concept_integration",
+      "duration_minutes": 5,
+      "content": {
+        "title": "Standards and Regulations: How They Connect",
+        "visualization": {
+          "type": "relationship_map",
+          "entities": [
+            {"name": "ANSI Z136.1", "type": "voluntary_standard", "color": "#4CAF50"},
+            {"name": "FDA 21 CFR 1040", "type": "federal_regulation", "color": "#f44336"},
+            {"name": "OSHA", "type": "enforcement_agency", "color": "#ff9800"}
+          ],
+          "relationships": [
+            {"from": "ANSI Z136.1", "to": "OSHA", "label": "Recognized as minimum practice"},
+            {"from": "FDA 21 CFR 1040", "to": "ANSI Z136.1", "label": "Separate but complementary"},
+            {"from": "OSHA", "to": "ANSI Z136.1", "label": "Uses for citations"}
+          ]
+        },
+        "key_insights": [
+          "ANSI standards are voluntary consensus standards",
+          "OSHA can cite ANSI Z136.1 as the minimum standard of care",
+          "FDA regulates laser products; ANSI addresses safe use",
+          "Compliance with ANSI Z136 demonstrates due diligence"
+        ]
+      }
+    }
+  ]
+}

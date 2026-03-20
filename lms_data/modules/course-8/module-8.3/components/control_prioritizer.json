@@ -1,0 +1,92 @@
+{
+  "component_id": "control_prioritizer",
+  "name": "Control Measure Prioritizer",
+  "type": "interactive_exercise",
+  "description": "Hierarchy of controls exercise with scenario-based prioritization",
+  "hierarchy": {
+    "levels": [
+      {
+        "level": 1,
+        "name": "Elimination/Substitution",
+        "description": "Remove the hazard entirely or substitute with a safer alternative",
+        "examples": ["Use lower power laser", "Change beam path away from occupied areas", "Use non-laser alternative"],
+        "effectiveness": "Most Effective",
+        "color": "#4CAF50",
+        "icon": "✓"
+      },
+      {
+        "level": 2,
+        "name": "Engineering Controls",
+        "description": "Isolate people from the hazard through physical means",
+        "examples": ["Safety interlocks", "Enclosures", "Scan failure detection", "Beam stops/shutters", "Remote interlock"],
+        "effectiveness": "Very High",
+        "color": "#8BC34A",
+        "icon": "⚙"
+      },
+      {
+        "level": 3,
+        "name": "Administrative Controls",
+        "description": "Change the way people work through procedures and training",
+        "examples": ["Standard Operating Procedures (SOPs)", "Training programs", "Warning signs and labels", "Scheduling/limiting access", "Maintenance procedures"],
+        "effectiveness": "Medium",
+        "color": "#FFC107",
+        "icon": "📋"
+      },
+      {
+        "level": 4,
+        "name": "Personal Protective Equipment (PPE)",
+        "description": "Protect the individual with specialized equipment",
+        "examples": ["Safety eyewear (with appropriate OD)", "Protective clothing", "Skin protection"],
+        "effectiveness": "Least Effective - Last Resort",
+        "color": "#FF9800",
+        "icon": "🥽"
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "ex1",
+      "title": "Class 4 Research Laser",
+      "scenario": "A university lab uses a Class 4 laser for spectroscopy research. Graduate students operate the equipment.",
+      "available_controls": [
+        {"id": "c1", "name": "Install interlocked enclosure", "level": 2},
+        {"id": "c2", "name": "Provide safety eyewear", "level": 4},
+        {"id": "c3", "name": "Create SOP for operation", "level": 3},
+        {"id": "c4", "name": "Implement beam shutter", "level": 2},
+        {"id": "c5", "name": "Training for all users", "level": 3}
+      ],
+      "correct_priority": ["c1", "c4", "c3", "c5", "c2"]
+    },
+    {
+      "id": "ex2",
+      "title": "Entertainment Laser Show",
+      "scenario": "A music venue wants to add laser effects that may enter the audience area.",
+      "available_controls": [
+        {"id": "c1", "name": "Position beams above 3m height", "level": 1},
+        {"id": "c2", "name": "Scan failure detection system", "level": 2},
+        {"id": "c3", "name": "Operator training", "level": 3},
+        {"id": "c4", "name": "Emergency stop at console", "level": 2},
+        {"id": "c5", "name": "Audience safety briefings", "level": 3}
+      ],
+      "correct_priority": ["c1", "c2", "c4", "c3", "c5"]
+    },
+    {
+      "id": "ex3",
+      "title": "Medical Laser Suite",
+      "scenario": "A hospital is installing surgical lasers in operating rooms.",
+      "available_controls": [
+        {"id": "c1", "name": "Door interlocks", "level": 2},
+        {"id": "c2", "name": "Warning lights", "level": 3},
+        {"id": "c3", "name": "Staff protective eyewear", "level": 4},
+        {"id": "c4", "name": "Window coverings", "level": 2},
+        {"id": "c5", "name": "Use lower power when possible", "level": 1}
+      ],
+      "correct_priority": ["c5", "c1", "c4", "c2", "c3"]
+    }
+  ],
+  "scoring": {
+    "points_per_correct_placement": 10,
+    "bonus_for_perfect": 20,
+    "feedback_levels": ["Excellent", "Good", "Review needed"]
+  }
+}

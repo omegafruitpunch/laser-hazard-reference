@@ -1,0 +1,105 @@
+{
+  "course_id": "course-7",
+  "title": "Event Safety",
+  "batch": "B",
+  "description": "Comprehensive event safety training covering emergency response procedures, weather protocols, and insurance/liability requirements for live entertainment events.",
+  "processing_status": "complete",
+  "processing_agent": "PDF Elite Processor Agent #18",
+  "completion_date": "2026-03-19",
+  "source_pdfs": [
+    {
+      "filename": "emergency-response.pdf",
+      "status": "processed",
+      "notes": "File was DOCX format containing Emergency Stop Button Checklist; emergency response content extracted from Event Safety Guide Chapter 3"
+    },
+    {
+      "filename": "weather-protocols.pdf",
+      "status": "processed",
+      "pages": 2,
+      "content_type": "Weather Decision Trigger Charts and Production Response Matrix"
+    },
+    {
+      "filename": "insurance-liability.pdf",
+      "status": "processed_with_limitations",
+      "pages": 5,
+      "notes": "Scanned FDA Form 3649 without OCR text layer; content synthesized from Event Safety Guide liability sections and ANSI ES1.9 standards"
+    }
+  ],
+  "modules": [
+    {
+      "module_id": "course-7-module-1",
+      "title": "Emergency Response Procedures",
+      "file": "modules/module-emergency-response.json",
+      "topics": ["NIMS", "ICS", "Major Incident Planning", "Emergency Service Coordination"]
+    },
+    {
+      "module_id": "course-7-module-2",
+      "title": "Weather Protocols and Decision Triggers",
+      "file": "modules/module-weather-protocols.json",
+      "topics": ["Weather Thresholds", "Alert Methods", "Evacuation Procedures", "Production Area Responses"]
+    },
+    {
+      "module_id": "course-7-module-3",
+      "title": "Insurance and Liability Requirements",
+      "file": "modules/module-insurance-liability.json",
+      "topics": ["Organizer Liability", "Mutual Aid Programs", "Safety Coordinator Role", "Risk Documentation"]
+    }
+  ],
+  "quizzes": [
+    {
+      "quiz_id": "course-7-quiz-1",
+      "title": "Emergency Response Procedures Assessment",
+      "file": "quizzes/quiz-emergency-response.json",
+      "questions": 10,
+      "passing_score": 80
+    },
+    {
+      "quiz_id": "course-7-quiz-2",
+      "title": "Weather Protocols Assessment",
+      "file": "quizzes/quiz-weather-protocols.json",
+      "questions": 10,
+      "passing_score": 80
+    },
+    {
+      "quiz_id": "course-7-quiz-3",
+      "title": "Insurance and Liability Assessment",
+      "file": "quizzes/quiz-insurance-liability.json",
+      "questions": 10,
+      "passing_score": 80
+    }
+  ],
+  "knowledge_graphs": [
+    {
+      "graph_id": "course-7-kg-1",
+      "title": "Emergency Response Knowledge Graph",
+      "file": "knowledge-graph/emergency-response-kg.json",
+      "nodes": 15,
+      "edges": 13
+    }
+  ],
+  "gestation_files": [
+    {
+      "gestation_id": "course-7-gestation-1",
+      "type": "emergency_analysis",
+      "file": "gestation-emergency-analysis.json"
+    },
+    {
+      "gestation_id": "course-7-gestation-2",
+      "type": "liability_analysis",
+      "file": "gestation-liability-analysis.json"
+    }
+  ],
+  "output_directory": "lms_data/course-7-event-safety/",
+  "file_manifest": [
+    "course-manifest.json",
+    "modules/module-emergency-response.json",
+    "modules/module-weather-protocols.json",
+    "modules/module-insurance-liability.json",
+    "quizzes/quiz-emergency-response.json",
+    "quizzes/quiz-weather-protocols.json",
+    "quizzes/quiz-insurance-liability.json",
+    "knowledge-graph/emergency-response-kg.json",
+    "gestation-emergency-analysis.json",
+    "gestation-liability-analysis.json"
+  ]
+}

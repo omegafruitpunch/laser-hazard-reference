@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 17,
+  "quiz_items": [
+    {
+      "id": "C2-P17-Q1",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "When must a Laser Product Report be submitted to CDRH?",
+      "options": [
+        "Within 30 days after first sale",
+        "Within 90 days of manufacturing",
+        "Prior to introduction of the certified product into commerce",
+        "Annually with the Annual Report"
+      ],
+      "correct_answer": 2,
+      "explanation": "Manufacturers must submit the Product Report prior to introduction into commerce. CDRH considers delivery to prospective purchasers or trade show exhibition as introduction into commerce.",
+      "learning_objective": "Know reporting timelines",
+      "regulatory_reference": "21 CFR 1002.10"
+    },
+    {
+      "id": "C2-P17-Q2",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What must be included in a Laser Product Report?",
+      "options": [
+        "Only the product name and model number",
+        "Product and labeling description, compliance method, testing program, life testing, and test equipment",
+        "Only test results",
+        "Marketing plan and projected sales"
+      ],
+      "correct_answer": 1,
+      "explanation": "Laser Product Reports describe: reported product and labeling, manner of compliance with standard, testing program, life testing, and test equipment used.",
+      "learning_objective": "Understand report content requirements",
+      "regulatory_reference": "21 CFR 1002.10, 1002.7(b)"
+    }
+  ]
+}

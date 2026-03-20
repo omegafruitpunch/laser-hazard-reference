@@ -1,0 +1,172 @@
+{
+  "version": "1.0.0",
+  "description": "Recommended learning paths for laser safety certification",
+  "generated_at": "2024-01-01T00:00:00Z",
+  "paths": [
+    {
+      "id": "clso-fundamentals",
+      "title": "Certified Laser Safety Officer - Fundamentals",
+      "description": "Core certification path for entry-level laser safety officers",
+      "target_audience": "New LSOs, laser operators, venue safety personnel",
+      "estimated_hours": 8,
+      "prerequisites": [],
+      "certification": "CLSO-Fundamentals",
+      "courses": [
+        {
+          "course_id": "course-1",
+          "required": true,
+          "order": 1
+        },
+        {
+          "course_id": "course-2",
+          "required": true,
+          "order": 2
+        },
+        {
+          "course_id": "course-3",
+          "required": true,
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "clso-advanced",
+      "title": "Certified Laser Safety Officer - Advanced",
+      "description": "Advanced certification for experienced LSOs managing complex operations",
+      "target_audience": "Experienced LSOs, safety managers, consultants",
+      "estimated_hours": 16,
+      "prerequisites": ["clso-fundamentals"],
+      "certification": "CLSO-Advanced",
+      "courses": [
+        {
+          "course_id": "course-4",
+          "required": true,
+          "order": 1
+        },
+        {
+          "course_id": "course-5",
+          "required": true,
+          "order": 2
+        },
+        {
+          "course_id": "course-6",
+          "required": true,
+          "order": 3
+        },
+        {
+          "course_id": "course-7",
+          "required": true,
+          "order": 4
+        },
+        {
+          "course_id": "course-8",
+          "required": true,
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "entertainment-specialist",
+      "title": "Entertainment Laser Safety Specialist",
+      "description": "Specialized path for laser show operators and entertainment professionals",
+      "target_audience": "Laser show operators, production managers, tour managers",
+      "estimated_hours": 12,
+      "prerequisites": [],
+      "certification": "Entertainment Laser Specialist",
+      "courses": [
+        {
+          "course_id": "course-1",
+          "required": true,
+          "order": 1
+        },
+        {
+          "course_id": "course-2",
+          "required": true,
+          "order": 2
+        },
+        {
+          "course_id": "course-6",
+          "required": true,
+          "order": 3
+        },
+        {
+          "course_id": "course-7",
+          "required": true,
+          "order": 4
+        },
+        {
+          "course_id": "course-8",
+          "required": true,
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "regulatory-compliance",
+      "title": "Regulatory Compliance Specialist",
+      "description": "Focus on regulatory requirements across multiple jurisdictions",
+      "target_audience": "Compliance officers, legal staff, regulatory affairs",
+      "estimated_hours": 10,
+      "prerequisites": [],
+      "certification": "Regulatory Compliance Specialist",
+      "courses": [
+        {
+          "course_id": "course-1",
+          "required": true,
+          "order": 1
+        },
+        {
+          "course_id": "course-2",
+          "required": true,
+          "order": 2
+        },
+        {
+          "course_id": "course-4",
+          "required": true,
+          "order": 3
+        },
+        {
+          "course_id": "course-5",
+          "required": true,
+          "order": 4
+        },
+        {
+          "course_id": "course-8",
+          "required": true,
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "outdoor-operations",
+      "title": "Outdoor Laser Operations Specialist",
+      "description": "Specialized training for outdoor laser shows and airspace coordination",
+      "target_audience": "Outdoor show operators, festival safety staff",
+      "estimated_hours": 6,
+      "prerequisites": ["clso-fundamentals"],
+      "certification": "Outdoor Operations Specialist",
+      "courses": [
+        {
+          "course_id": "course-6",
+          "required": true,
+          "order": 1
+        },
+        {
+          "course_id": "course-7",
+          "required": true,
+          "order": 2
+        }
+      ]
+    }
+  ],
+  "skills_matrix": {
+    "hazard_identification": ["course-1", "course-3"],
+    "risk_assessment": ["course-1", "course-3", "course-7"],
+    "control_implementation": ["course-1", "course-7", "course-8"],
+    "regulatory_compliance": ["course-2", "course-4", "course-5"],
+    "calculation_methods": ["course-1", "course-3", "course-6"],
+    "emergency_response": ["course-7"],
+    "documentation": ["course-2", "course-8"],
+    "training_delivery": ["course-1", "course-8"]
+  }
+}

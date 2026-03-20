@@ -1,0 +1,56 @@
+{
+  "id": "module-1-2",
+  "courseId": "course-1",
+  "title": "Laser Classification System",
+  "description": "Understanding Class 1 through Class 4 laser classifications and what each means for safety requirements.",
+  "order": 2,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "Classification Preview",
+      "content": "Laser classification is the foundation of laser safety. Each class has specific hazard characteristics and corresponding control requirements. Think about how you would categorize different types of lasers you've encountered.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "Understanding Laser Classes",
+      "content": "The laser classification system categorizes lasers based on their accessible emission limits (AEL) and the hazards they present.\n\n## Class 1: Inherently Safe\n- Safe under all normal operating conditions\n- May contain Class 3B or 4 lasers fully enclosed\n- No hazard during normal use\n\n## Class 2: Low Power Visible\n- Visible lasers (400-700nm) up to 1mW\n- Blink reflex provides adequate protection\n- Hazardous only with intentional prolonged viewing\n\n## Class 3R: Reduced Risk\n- Visible lasers up to 5x Class 2 AEL\n- Low risk normally safe with aversion response\n- Direct viewing potentially hazardous\n\n## Class 3B: Direct Viewing Hazard\n- Continuous wave up to 0.5W\n- Direct beam viewing always hazardous\n- Diffuse reflections generally safe\n\n## Class 4: High Power\n- All lasers above Class 3B limits\n- Eye and skin hazard from direct and diffused reflections\n- Fire and ignition hazard\n- Comprehensive controls required",
+      "component": "ClassificationPyramid",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "Classification Practice",
+      "content": "Classify the following laser systems:\n\n1. 5mW red laser pointer used for presentations\n2. 10W RGB laser projector for entertainment\n3. Enclosed CD player laser\n4. 500mW CW laboratory laser at 532nm\n5. 50W laser cutting system",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-1-2",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "Laser Classification Guide",
+      "path": "/docs/course-1-fundamentals/laser-classification.pdf"
+    },
+    {
+      "type": "interactive",
+      "title": "Classification Sorting Game",
+      "component": "ClassificationSortingGame"
+    }
+  ],
+  "keyTakeaways": [
+    "Class 1: Safe under all normal conditions — inherently safe or fully enclosed",
+    "Class 2: Low power visible lasers — blink reflex provides adequate protection",
+    "Class 3R/3B: Medium power — direct viewing hazardous without controls",
+    "Class 4: High power — hazardous to eye and skin, diffuse reflections dangerous"
+  ],
+  "nextModule": "module-1-3",
+  "prerequisites": ["module-1-1"],
+  "difficulty": "beginner"
+}

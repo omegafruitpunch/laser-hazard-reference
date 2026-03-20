@@ -1,0 +1,200 @@
+TO CONTROL THE RADIATION HAZARDS OF LASERS, LASER SYSTEMS AND OPTICAL FIBER COMMUNICATION SYSTEMS UTILIZING LASER DIODE OR LIGHT EMITTING DIODE SOURCES
+General Requirements for All Lasers and Laser Systems
+Special Requirements for Optical Fiber Communication Systems Utilizing Laser Diode or Light
+                 Emitting Diode (ALED@) Sources
+Special Requirements for Lasers in Health Care Facilities
+Special Requirements for Entertainment Laser Facilities
+Compliance with Other Laws and Regulations
+REGISTRATION OF LASER FACILITIES
+Application for Registration
+Certificate of Registration
+Expiration of Notice of Registration
+Renewal of Notice of Registration
+ADDITIONAL NOTIFICATION REQUIREMENTS
+State Laser Facilities
+Additional Requirements for Lasers Used in Entertainment
+Additional Requirements
+Enforcement Policy and Procedures
+Public Disclosure of Enforcement Actions
+Except as otherwise specifically provided, 105 CMR 121.000 applies to all persons who receive, possess, use, transfer, own, acquire, operate, maintain, repair or service a laser, laser system or optical fiber communication system utilizing laser diode or light emitting diode sources.
+The authority for the Department of Public Health to promulgate 105 CMR 121.000 is found in: M.G.L. c.
+5I, 5N, 5O,  and  5P.
+105 CMR 121.000 shall be known and may be cited as the Regulations for the Control of Lasers.
+As used in 105 CMR 121.000, these terms have the definitions set forth below, unless otherwise specifically provided.
+ANSI mean the American National Standards Institute, a non-profit organization which prepares and publishes various standards including those for laser safety.
+Annual means a period of time that does not exceed 365 days except in a leap year in which case the period of time does not exceed 366 days.
+Applicant means any person who applies to the Department for a certificate of registration to operate a laser facility.  In the case of an applicant which is not a natural person, the term "applicant" shall also mean a shareholder owning 5% or more; any officer and any director of any corporate applicant; any limited partner owning 5% or more and any general partner of any partnership applicant; any trustees or any trust applicant; any sole proprietor of any applicant which is a sole proprietorship; any mortgagee in possession; and any executor or administrator of any applicant.
+CFR means Code of Federal Regulations.
+CMR means Code of Massachusetts Regulations.
+Commissioner means the Commissioner of the Massachusetts Department of Public Health.
+Department means the Department of Public Health.
+Health Care Laser Facility means a facility that utilizes a laser or laser system for diagnostic, therapeutic or medical research purposes.
+Inspection means an official examination or observation including but not limited to, tests, surveys, and monitoring to determine compliance with rules, regulations, orders, requirements, and conditions of the Radiation Control Program.
+Laser means a device which produces an intense, coherent, directional beam of light by stimulated electronic or molecular transitions to lower energy levels. The word laser is an acronym for Light Amplification by Stimulated Emission of Radiation.
+Laser Classification means the classification assigned to certain types of lasers by the American National Standards Institute (ANSI) in their publications (Z136 series) providing health and safety standards for lasers.
+Laser Facility means the location at which one or more lasers or laser systems are installed and/or located within one building, vehicle, or under one roof and are under the same administrative control.
+Laser Safety Officer means an individual who has been designated by his/her employer to perform the duties of a laser safety officer.
+Laser System means an assembly of electrical, mechanical, and optical components which includes a laser.
+Mobile Laser means a  laser unit that is transported to a site for the purpose of performing laser operations. The term mobile laser also includes laser units used in mobile vans.
+Person means any individual, corporation, partnership, firm, association, trust, estate, public or private institution, group, agency of the commonwealth other than the department, any political subdivision of the commonwealth, any other state or political subdivision or agency thereof, and any legal successor, representative, agent, or agency of the foregoing, but not including federal government agencies.
+Physician  means an individual registered by the Board of Registration in Medicine under M.G.L. c.
+2 as a qualified physician.
+Radiation Control Program means the Radiation Control Program of the Massachusetts Department of Public Health.
+Registrant means any person who is registered with the Radiation Control Program and is legally obligated to register with the Radiation Control Program pursuant to 105 CMR 121.000.
+Registration means registration with the Radiation Control Program in accordance with 105 CMR 121.000 adopted by the  Department.
+Vendor means a supplier of products or services to be used by a registrant or registered facility or activity.
+Worker means an individual engaged in work under a registration issued by the Radiation Control Program and controlled by a registrant, but does not include the registrant.
+121.005:   General Requirements for All Lasers and Laser Systems
+Unless otherwise provided herein, all persons installing, operating, using, maintaining, repairing or servicing a laser or laser system shall do so in accordance with the requirements set forth in the most recent published version of the publication published by ANSI entitled American National Standard for Safe Use of Lasers and known and referred to as AANSI Z136.1@. In addition, the owner and operator of the laser facility in which such laser or laser system is installed or operated shall also be responsible for ensuring that the laser facility and the operation of the facility meets the requirements of said ANSI Z136.1.
+Copies of all of the ANSI publications referred to in 105 CMR 121.000 can be obtained from:
+The Laser Institute of America
+12424 Research Parkway, Suite 125
+Special Requirements for Optical Fiber Communication Systems Utilizing Laser Diode or Light
+                 Emitting Diode (ALED@) Sources
+All persons installing, operating, using, maintaining, repairing or servicing an optical fiber communication system utilizing laser diode or light emitting diode (ALED@) sources shall do so in accordance with the requirements set forth in the most recently published version of the publication published by ANSI entitled American National Standard for Safe Use of Optical Fiber Communication Systems Utilizing Laser Diodes And LED Sources and known and referred to as AANSI Z136.2@. In addition, the owner and operator of the laser facility in which such laser or laser system is installed or operated shall also be responsible for ensuring that the laser facility and the operation of the facility meets the requirements of said ANSI Z136.2.
+121.007:   Special  Requirements for Lasers in Health Care Facilities
+All persons installing, operating, using, maintaining, repairing or servicing a laser or laser system which is installed in a health care laser facility and which is used or installed to be used for diagnostic, therapeutic or medical research shall do so in accordance with the requirements set forth in the most recent published version of the publication published by ANSI entitled American National Standard for Safe Use of  Lasers In Health Care Facilities and known and referred to as AANSI Z136.3@. In addition, the owner and operator of the health care laser facility in which such laser or laser system is installed or operated shall also be responsible for ensuring that the laser facility and the operation of the facility meets the requirements of said ANSI Z136.3.
+Special Requirements for Entertainment Laser Facilities
+Laser facilities utilizing a laser with a Class 3B or Class 4 ANSI laser classification in performances, or  for demonstration or entertainment purposes, shall assure that:
+the laser meets all the design and labeling requirements of its class as established by ANSI Z136.1; 
+laser radiation cannot exceed Class 1 limits, as established by ANSI Z136.1, in any areas where the audience is located; 
+if devices, like mirror balls or flat mirrors, are used to reflect the beam, scanning safeguards or other measures are required to make sure that laser radiation above Class 1 limits, as established by ANSI Z136.1, will not accidentally go into the audience; 
+performers cannot be exposed to radiation above Class 1 limits, as established by ANSI Z136.1, if they must view the laser beam in the course of a performance. When they do have to view the laser beam, performers cannot be exposed to radiation above Class 2 limits, as established by ANSI Z136.1; 
+if the laser is not under the continuous control of an operator, laser radiation above Class
+2 limits, as established by ANSI Z136.1, must be restricted so that it comes no closer than 20 feet above, or eight feet on the sides or below the floor where the audience would be; 
+if the laser is under the continuos control of an operator, laser radiation above Class 2 limits, as established by ANSI Z136.1, can come no closer than ten feet above or eight feet on the sides or below the floor where the audience would be;
+appropriate controls must be taken to make sure that unauthorized persons cannot interfere with the safe operation of the laser. A person must be designated as the laser safety officer who will be responsible for shutting down the laser should any unsafe conditions occur; 
+a variance has been granted by the United States Food and Drug Administration to the requirements of  21 CFR Ch. I, Subchapter J, Part 1040; and,
+a copy must be submitted to the Radiation Control Program of any notification the registrant is required to submit to the Federal Aviation Administration, under its regulations.
+Compliance with Other Laws and Regulations
+The laser facility shall be in compliance with all applicable federal, state, and local laws and regulations.
+Each registrant shall maintain records showing the receipt, transfer, and disposal of  all lasers with a Class 3B or Class 4 ANSI laser classification. Additional record requirements are specified elsewhere in 105 CMR 121.000. These requirements are imposed in addition to any recordkeeping and record retention requirement set forth in ANSI Z136.1, ANSI Z136.2, ANSI Z136.3, or any other applicable law or regulation.
+The Commissioner or his/her designee may waive the applicability of one or more of the requirements imposed on the facility by 105 CMR 121.000 upon the finding that:
+compliance would cause undue hardship to the facility;
+the facility is in substantial compliance with the spirit of the requirement; and,
+compliance does not jeopardize the health or safety of patients, employees or the public.
+The facility shall provide the Commissioner or his/her designee written documentation supporting its request for a waiver.
+105 CMR 121.012 through 121.020 provides for the registration of laser facilities.  For the purposes of registration, a laser facility is a facility that utilizes one or more lasers or laser systems with a Class 3B or Class 4 ANSI laser classification.
+In addition to the requirements of registration, all registrants are subject to the applicable provisions of other parts of 105 CMR 121.000.
+As used in 105 CMR 121.012 through 121.020, "laser facility" means the location at which one or more Class 3B or Class 4 lasers or laser systems are installed and/or located within one building, vehicle, or under one roof and are under the same administrative control.
+Lasers and laser systems, while in transit or storage incident thereto, are exempt from the requirements of 105 CMR 121.012.
+Application for Registration
+Each person who owns or possesses and administratively controls a laser facility, unless specifically exempted in 105 CMR 121.014 shall:
+Apply for registration of such facility with the Radiation Control Program prior to the operation of a laser facility.  Application for registration shall be completed on forms furnished by the Radiation Control Program and shall contain all the information required by the form and accompanying instructions.
+Designate an individual to serve as the Laser Safety Officer.
+Certificate of Registration
+No person shall maintain a laser facility that is required by 105 CMR 121.000 to be registered unless such a person has obtained a valid certificate of registration for such facility.
+A person who applies for registration and whose application meets the requirements of 105 CMR 121.000, shall, upon payment of the required fee, be issued a certificate of registration effective on the date stated on such certificate.
+A current certificate of registration or a legible copy thereof shall be posted conspicuously at each registered facility.
+The Director of the Radiation Control Program may incorporate in the certificate of registration, at the time of  issuance or thereafter, any such additional requirements and conditions with respect to the registrant's receipt, possession, use, and transfer of laser devices as said Director finds appropriate and necessary for the protection of the general public or individuals against laser hazards.
+Expiration of Notice of Registration
+Each certificate of registration shall expire on the date stated therein.
+Renewal of Notice of Registration
+Applications for renewal of registration shall be filed in the same manner as new applications in accordance with 105 CMR 121.015.
+In any case in which a registrant, not less than 30 days prior to the expiration of his existing certificate of registration, has filed an application in proper form for renewal, such existing certificate of registration shall not expire until the application status has been finally determined by the Radiation Control Program.
+The registrant shall notify the Radiation Control Program in writing before making any change which would render the information contained in the application for registration and/or the certificate of registration no longer accurate. In the case of disposition of an laser device, such notification should specify the recipient of the system.
+Registration with the Radiation Control Program does not constitute approval of the registrant=s activities by the Radiation Control Program. No person shall state or imply that any activity under such registration has been approved by the Radiation Control Program.
+Any person who sells, leases, transfers, lends, disposes, assembles, or installs a laser device containing a laser with a Class 3B or Class 4 ANSI laser classification in this Commonwealth shall notify the Radiation Control Program within 15 days of:
+The name and address of persons who have received these laser devices;
+The manufacturer, model, serial number, and class of each laser device transferred; and,
+The date of transfer of each laser device.
+State Laser Facilities
+Whenever any laser device containing a laser with a Class 3B or Class 4 ANSI laser classification is to be brought into the Commonwealth, for any temporary use, the person proposing to bring such a laser device  into the Commonwealth shall give written notice to the Radiation Control Program at least ten working days before such machine is to be used in the Commonwealth.  The notice shall include:
+The manufacturer, model, serial number, and class of each laser device;
+The nature, duration, and scope of use;
+The exact location(s) where the laser device is to be used;
+States in which this machine is registered, if applicable.
+The person referred to in 105 CMR 121.022(A) shall:
+Comply with all applicable regulations of the Radiation Control Program;
+Register the laser(s) with the Radiation Control Program; and,
+Submit payment of the required fee for registration.
+operational inspection may be required at the discretion of the Director of the Radiation Control Program.
+Additional Requirements for Laser Devices Used in Entertainment
+In addition to the registration provisions of 105 CMR 121.012 through 121.020, the applicant or registrant shall provide the Radiation Control Program with the following information within ten days of the first scheduled performance in Massachusetts:
+Name, address, and phone number of laser owner; 
+Name, address, and phone number of laser safety officer;
+Name, address, and phone number of laser operator(s); 
+Name, address, and phone number of the facility(s) in which the laser will be used;
+Name, address, and phone number of the individual in charge of the performance;
+Date(s) and times of performances;
+Length of time laser will be in operation;
+Class of laser and name of manufacturer;
+Sketches to describe the design or layout of the show; and,
+FDA variance and accession number and date of variance approval.
+Copy of the FAA notification, if applicable.
+Each registrant shall afford the Radiation Control Program at all reasonable times opportunity to inspect laser devices and the premises and facilities wherein such laser devices are located.
+Each registrant shall make available to the Radiation Control Program for inspection, upon reasonable notice, records maintained pursuant to 105 CMR 121.000.
+Additional Requirements
+The Radiation Control Program may, by rule, regulation, or order, impose upon any  registrant such requirements in addition to those established in 105 CMR 121.000 as it deems appropriate or necessary to minimize danger to public health and safety or property.
+All communications and reports concerning 105 CMR 121.000, and applications filed thereunder, should be addressed to the Radiation Control Program at its office located at 305 South Street, Jamaica Plain, MA, 02130.
+Enforcement Policy and Procedures
+Enforcement Policy.  The purpose of the enforcement program of the Radiation Control Program is to promote and protect the health and safety of the public and employees of laser facilities by:
+Ensuring compliance with regulations and conditions of the registration;
+Obtaining prompt correction of violations and adverse quality conditions which may affect safety;
+Deterring future violations and occurrences of conditions adverse to safety; and,
+Encouraging improvement of  registrant and vendor performance, and by example, that of industry, including the prompt identification of potential safety problems.
+Consistent with the purpose of this program, prompt and vigorous enforcement action will be taken when dealing with all persons who do not comply with regulations.  In no case will registrants  who do not achieve and maintain adequate levels of protection be permitted to utilize laser devices.
+Grounds for Suspension of A Certificate of Registration or Issuance of an Order to Immediately Cease Activity.  The Department may summarily suspend a certificate of registration, or order immediate cessation of an activity, without a prior  hearing and with or without an opportunity to correct violations, whenever the Department finds that public health, safety or the environment would be threatened by delay in issuance of an order.  A facility or person may not operate during the period of a suspension of its/his certificate of registration and may not conduct a prohibited activity after notification of an order requiring the immediate cessation of an activity.  However, upon request by the registrant, a hearing shall be provided promptly after the issuance of such suspension order in accordance with the provisions of 105
+CMR 121.027(E)(4)(a).
+Grounds for Denial, Modification, Limitation, Revocation or Refusal to Renew A  Certificate of Registration.
+Specific Grounds.  The Department may issue an order denying, revoking, modifying, limiting, or refusing to renew a certificate of registration sought or issued under 105 CMR 121.000 for any one of the following reasons:
+The applicant, registrant has failed to submit the information required for  registration under 105 CMR 121.000.
+The applicant failed to meet the requirements for registration as specified in 105
+The applicant or registrant is not suitable and responsible to operate a facility as required or provide the service as registered.
+The applicant or registrant has obtained or attempted to obtain or maintain a certificate of registration  by fraud, misrepresentation, or by the submission of incorrect, false or misleading information.
+The applicant or registrant has failed to pay the registration fee.
+The applicant or  registrant has failed to pay civil  penalties levied in accordance with 105 CMR 121.000.
+The applicant or registrant has:
+failed to allow duly authorized agents of the Radiation Control Program to conduct inspections; or
+attempted to impede the work of duly authorized representatives of the Radiation Control Program or the enforcement of any provision of  105 CMR 121.000.
+The applicant or registrant has been convicted of, pleaded guilty to, or has, in a judicial proceeding, admitted facts sufficient for a finding that he/she is guilty of, any criminal violation relating directly or indirectly to his/her fitness to be registered under 105 CMR 121.000. 
+The applicant or registrant has been the subject of proceedings which resulted in the suspension, denial, modification, limitation, or revocation of a similar certificate of registration or refusal of renewal of a similar certificate of registration.
+The applicant or registrant has been the subject of proceedings which were ultimately resolved by settlement agreement but which were initiated to suspend, deny, modify, limit, or revoke or refuse renewal of a license, unless the Settlement Agreement contained provisions which either:
+stated that the  applicant or registrant was not guilty of the violations he/she/it was charged with or
+provided that the charges or violations that were the subject of the Settlement Agreement or the Settlement Agreement itself cannot be used in whole or in part as the basis for any future registration or enforcement action by the Department. 
+The applicant or registrant has been sanctioned and/or disciplined in any manner by a registering or licensing authority in another jurisdiction for substantially one or more of the same reasons set forth herein.
+The applicant or registrant operated a facility after the expiration of the certificate of registration.
+The applicant or registrant has failed to remedy or correct a cited violation by the date specified in the written notice from the Department under 105 CMR 121.000 or by the date specified in the plan of correction accepted or modified by the Department, unless the applicant or registrant demonstrates to the satisfaction of the Department that such failure was not due to neglect of duty and occurred despite his/her good faith attempt to make corrections by the specified time.
+The applicant or registrant has engaged in or aided in the falsification of test results. 
+The applicant or registrant receives, possesses, uses, transfers, owns or operates or uses a laser device in a manner which endangers public health, safety, or the environment.
+(p)  The applicant or registrant uses a registered laser for purposes other than those set forth in its application or certificate of registration.
+Other Grounds The Department reserves the right to deny, modify, limit revoke or refuse to review a certificate of registration for any other sufficient reason not listed in 105
+CMR 121.016(C)(1) if it reasonably considers such action necessary to protect the public health, safety or the environment.  In addition, nothing herein shall be deemed to limit the Department's authority to establish or recognize further general or specific grounds for discipline through rulemaking, adjudication, the issuance of polices or advisories or other similar means.
+If the Department determines, after a notice has been issued and an opportunity for a hearing has been provided, that a  registrant, vendor, or other person  has not complied with an order issued pursuant to  M.G.L. c. 111 ' 5I or with any applicable rule, regulation, or certificate of registration adopted or issued thereunder, the Department, in lieu of, or in addition to suspending, denying, modifying, limiting, revoking, or refusing renewal of a license or certificate of registration, may assess civil penalties in an amount not exceeding $500 per violation.  Such civil penalty may be assessed whether or not the violation was willful.
+Payment of civil penalties imposed under M.G.L. c. 111, ' 5I shall be made by check, draft, or money order payable to the Commonwealth of Massachusetts, and mailed to:  Radiation Control Program, State Laboratory, 305 South Street, Jamaica Plain, MA  02130.
+Factors in Determining the Amount of Penalty.  In determining the amount of the civil penalty, the Department shall consider the following:
+The willfulness of the violation;
+The actual and potential danger to the public health or the environment;
+The actual or potential costs of such danger to the public health or the environment;
+The actual or potential damage or injury to the public health or environment;
+The actual and potential cost of such damage or injury;
+The actual or potential cost to the Commonwealth of enforcing provisions of 105
+Whether the person being assessed the civil penalty did everything reasonable to prevent failure to, to come into compliance promptly, and to remedy and mitigate whatever harm might have been done as a result of the failure to comply;
+Whether the person being assessed the civil penalty has previously failed to comply with any order issued pursuant to M.G.L. c. 111, ' 5I or any rule or regulation adopted hereunder;
+Whether imposition of a civil penalty is likely to deter future non-compliance;
+The financial condition of the person being assessed the civil penalty; and,
+Enforcement Procedures.
+Notice of Violation.  Whenever the Radiation Control Program finds upon inspection, investigation of a complaint or through information in its possession that an applicant or registrant is not in compliance with provisions of M.G.L. c. 111, '5I or 5N or a regulation promulgated thereunder, the Radiation Control Program shall notify the applicant or registrant of such violation or deficiency.  The notice shall include a statement of the violations or deficiencies found, the provision of the law relied upon, and a reasonable period of time for correction.  A violation or deficiency may result in denial, suspension, revocation or refusal to renew a certificate of registration; a modification or limitation of a certificate of registration; a cease and desist order; and/or the imposition of a civil penalty and/or criminal sanctions. Nothing in 105 CMR 121.027, however, shall be deemed to limit the Department=s right to immediately suspend a certificate of registration or to issue an order to immediately cease an activity in accordance with 105 CMR 121.027(B).
+The applicant or registrant shall within ten days of receipt of the notice, file with the Radiation Control Program a written plan of correction.  The plan shall clearly identify the licensee or registrant, state the date, reference the violation or deficiency cited, state specific corrective action(s) and timetable(s) and date(s) for completion for each deficiency cited, and shall be signed by either the applicant or registrant or his/her designee.
+The Radiation Control Program may re-inspect a facility in order to determine whether the corrections have been made. If upon review of plan of correction and/or reinspection the Radiation Control Program finds that the applicant or registrant is in compliance with 105 CMR 121.000 and/or that the applicant or registrant has submitted an acceptable plan of correction, the Radiation Control Program shall notify the applicant or registrant of its findings of compliance and/or its acceptance or modification of the plan of correction.
+If upon review of plan of correction and/or reinspection the Radiation Control Program finds the plan of correction is unacceptable, the Radiation Control Program may request that the applicant or registrant amend and resubmit the plan of correction with five days of the date of notice or such other time as the Radiation Control Program may specify for resubmission.
+If upon review of the plan of correction and/or reinspection the Radiation Control Program determines that an applicant or registrant remains non-compliant with applicable laws and regulations , the Department may initiate enforcement procedures as set forth below.
+Notice of Department's Intent to Issue an Order.
+Prior to the Department issuing an order to modify, limit, deny, revoke or refuse to renew a certificate of registration to require a person to cease and desist any activity, and/or to impose civil penalties, the applicant or registrant shall be notified in writing of the grounds for the Department's action, the provision(s) of law relied upon, the amount of any civil penalty, and his/her right to request an adjudicatory proceeding and/or judicial review.
+If a certificate of registration is to be denied, modified, limited, revoked or refused renewal or if an activity is to be ceased or a civil penalty imposed by the Department, then the aggrieved applicant or registrant may request an adjudicatory hearing within 21 days of receipt of notification of the Department's Intent to Issue an Order.  Said request shall be filed in accordance with Standard Adjudicatory Rules of Practice and Procedures, 801 CMR 1.01 et seq. 
+Administrative Hearings:  Procedure.
+Suspension of a Certificate of Registration or Issuance of an Order to Immediately Cease an Activity
+The Department will give the registrant written notice stating the reason(s) for the suspension or issuance of an order to immediately cease an activity and the provisions of law relied upon.  The suspension or order to immediately cease an activity shall take effect immediately upon issuance of the notice.
+The Department will provide for a hearing pursuant to 80l CMR 1.01 et seq. promptly after the issuance of an order of suspension or an order to immediately cease an activity.
+In cases of suspension of a certificate of registration or issuance of an order to immediately cease an activity, the Hearing Officer shall determine whether the Department has proved by a preponderance of the evidence that there existed, immediately prior to or at the time of the suspension or cease and desist order, a threat to public health, safety or the environment.
+In the event that the Department determines that the violation of state law or of 105 CMR 121.000 which posed a threat is corrected prior to the decision of the Hearing Officer, the Department may lift the suspension by giving written notice to the registrant.
+Denial, Modification, Limitation, Revocation, or Refusal to Renew a Certificate of Registration Based on Failure to File Reports:  No hearing shall be afforded where denial, modification, limitation, revocation, suspension or refusal to review is based solely upon failure of the registrant to file timely reports, schedules or applications, or to pay lawfully prescribed fees as required by any law or regulation.
+Denial, Modification, Limitation, Revocation or Refusal to Renew a Certificate of Registration; Orders to Cease an Activity; Civil Penalties:
+All adjudicatory proceedings will be conducted in accordance with M.G.L. c.
+30A and the Standard Adjudicatory Rules of Practice and Procedure, 801 CMR 1.01 et seq.
+Except for circumstances specified in 105 CMR 121.027(E)(4)(b), if the Department determines that a certificate of registration should be denied, modified, limited, revoked, or refused renewal, and/or that a facility should cease an activity, and/or that a civil penalty should be imposed, and if the Department notifies the applicant or registrant of its intended action, upon receipt of a Notice of Claim for an Adjudicatory Proceeding, the Department shall initiate a hearing pursuant to 801
+The Hearing Officer will determine whether the Department has proved by a preponderance of the evidence that the certificate of registration should be denied, modified, limited, revoked or refused renewal; that an activity should be ceased; and/or that a civil penalty be imposed based on relevant facts as they existed at or prior to the time the Department initiated the hearing procedure.
+If the Hearing Officer finds any single ground for denial, modification, limitation, revocation, suspension, or refusal to renew a certificate of  registration; for a cessation of an activity; and/or for imposition of a civil penalty, then the Hearing Officer will render a recommended decision affirming the issuance of the Department's Order.
+Public Health Council and Judicial Review:
+The recommended decision of a Hearing Officer in any adjudicatory proceeding conducted under 105 CMR 121.000 shall be reviewed by the Commissioner and the Public Health Council.  Their decision upon this review shall constitute a final Radiation Control Program decision in an adjudicatory proceeding subject to judicial review pursuant to M.G.L. c. 30A ' 14.
+Any applicant, licensee or registrant that fails to exercise its right to an adjudicatory proceeding under 105 CMR 121.000 waives both its right to administrative review by the Commissioner and the Public Health Council and its right to judicial review pursuant to M.G.L. c. 30A ' 14.

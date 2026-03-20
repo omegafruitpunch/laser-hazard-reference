@@ -1,0 +1,166 @@
+{
+  "module_id": "8.3",
+  "quiz_title": "Module 8.3: ESTA Standards & Documentation Assessment",
+  "description": "Test your knowledge of ESTA standards, ACN protocols, and documentation requirements",
+  "passing_score": 80,
+  "time_limit_minutes": 20,
+  "attempts_allowed": 3,
+  "questions": [
+    {
+      "id": "8.3-Q1",
+      "type": "multiple_choice",
+      "text": "What does ACN stand for in ESTA standards?",
+      "options": [
+        "Advanced Control Network",
+        "Architecture for Control Networks",
+        "Automated Control Node",
+        "Audio Control Network"
+      ],
+      "correct_answer": 1,
+      "points": 5,
+      "explanation": "ACN stands for Architecture for Control Networks, defined in ANSI E1.17."
+    },
+    {
+      "id": "8.3-Q2",
+      "type": "multiple_choice",
+      "text": "Which ESTA standard covers ACN operation over TCP?",
+      "options": [
+        "E1.17",
+        "E1.31",
+        "E1.30-11",
+        "E1.46"
+      ],
+      "correct_answer": 2,
+      "points": 5,
+      "explanation": "ANSI E1.30-11 covers ACN Root Layer Protocol operation on TCP transport."
+    },
+    {
+      "id": "8.3-Q3",
+      "type": "multiple_choice",
+      "text": "In the hierarchy of controls, which is the most effective?",
+      "options": [
+        "Personal Protective Equipment (PPE)",
+        "Administrative Controls",
+        "Engineering Controls",
+        "Elimination/Substitution"
+      ],
+      "correct_answer": 3,
+      "points": 5,
+      "explanation": "Elimination or substitution of the hazard is the most effective control in the hierarchy."
+    },
+    {
+      "id": "8.3-Q4",
+      "type": "multiple_select",
+      "text": "Which of the following are Engineering Controls? (Select all)",
+      "options": [
+        "Safety interlocks",
+        "Safety eyewear",
+        "Enclosures",
+        "Training procedures"
+      ],
+      "correct_answer": [0, 2],
+      "points": 5,
+      "explanation": "Interlocks and enclosures are engineering controls. Eyewear is PPE, and training is administrative."
+    },
+    {
+      "id": "8.3-Q5",
+      "type": "true_false",
+      "text": "ESTA standards are developed through an ANSI-accredited consensus process.",
+      "correct_answer": true,
+      "points": 5,
+      "explanation": "ESTA develops standards through the ANSI-accredited Technical Standards Program using consensus procedures."
+    },
+    {
+      "id": "8.3-Q6",
+      "type": "multiple_choice",
+      "text": "What is the purpose of DDL in ACN?",
+      "options": [
+        "Direct Data Link",
+        "Device Description Language",
+        "Digital Data Layer",
+        "Distributed Device List"
+      ],
+      "correct_answer": 1,
+      "points": 5,
+      "explanation": "DDL (Device Description Language) in ACN allows devices to describe their capabilities for automatic configuration."
+    },
+    {
+      "id": "8.3-Q7",
+      "type": "multiple_select",
+      "text": "Which documents are typically required for laser installation hand-over? (Select all)",
+      "options": [
+        "Equipment specifications",
+        "Operating procedures",
+        "Marketing brochures",
+        "Safety system descriptions"
+      ],
+      "correct_answer": [0, 1, 3],
+      "points": 5,
+      "explanation": "Hand-over documentation includes equipment specs, operating procedures, and safety system descriptions - not marketing materials."
+    },
+    {
+      "id": "8.3-Q8",
+      "type": "multiple_choice",
+      "text": "Which hierarchy level do safety procedures and training belong to?",
+      "options": [
+        "Elimination",
+        "Engineering Controls",
+        "Administrative Controls",
+        "PPE"
+      ],
+      "correct_answer": 2,
+      "points": 5,
+      "explanation": "Procedures and training are Administrative Controls, which change how people work rather than isolating the hazard."
+    },
+    {
+      "id": "8.3-Q9",
+      "type": "multiple_choice",
+      "text": "What does sACN (E1.31) provide?",
+      "options": [
+        "Secure ACN encryption",
+        "Simplified/streaming ACN over UDP",
+        "Serial ACN connection",
+        "System ACN management"
+      ],
+      "correct_answer": 1,
+      "points": 5,
+      "explanation": "E1.31 (sACN) provides a lightweight, streaming protocol for ACN over UDP, simpler than full ACN."
+    },
+    {
+      "id": "8.3-Q10",
+      "type": "true_false",
+      "text": "In the control hierarchy, PPE is preferred over engineering controls when both are options.",
+      "correct_answer": false,
+      "points": 5,
+      "explanation": "Engineering controls are always preferred over PPE. PPE is the last resort in the hierarchy."
+    },
+    {
+      "id": "8.3-Q11",
+      "type": "multiple_select",
+      "text": "Which information should be included in a Risk Assessment? (Select all)",
+      "options": [
+        "Hazard identification",
+        "Control measures",
+        "Profit projections",
+        "Risk level evaluation"
+      ],
+      "correct_answer": [0, 1, 3],
+      "points": 5,
+      "explanation": "Risk assessments include hazard identification, control measures, and risk evaluation - not financial projections."
+    },
+    {
+      "id": "8.3-Q12",
+      "type": "multiple_choice",
+      "text": "What transport protocols can ACN use?",
+      "options": [
+        "UDP only",
+        "TCP only",
+        "UDP (E1.17) or TCP (E1.30)",
+        "HTTP only"
+      ],
+      "correct_answer": 2,
+      "points": 5,
+      "explanation": "ACN can operate over UDP (original E1.17) or TCP (E1.30-11) depending on reliability requirements."
+    }
+  ]
+}

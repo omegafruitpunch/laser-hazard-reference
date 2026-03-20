@@ -1,0 +1,56 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 9,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Operation vs Maintenance vs Service definitions",
+      "Collateral radiation limits",
+      "Multiple wavelength emission calculations",
+      "Classification timing considerations"
+    ],
+    "key_terms": [
+      {
+        "term": "Maintenance",
+        "definition": "User-performed functions to assure performance (cleaning, replenishment)"
+      },
+      {
+        "term": "Service",
+        "definition": "Repair functions, often requiring specially trained personnel"
+      },
+      {
+        "term": "Collateral Radiation",
+        "definition": "Optical, electromagnetic, or X radiation accompanying laser operation"
+      },
+      {
+        "term": "Table VI",
+        "definition": "Collateral radiation limits (0.5 mR/hr for X-ray)"
+      },
+      {
+        "term": "Emission Duration Range",
+        "definition": "1 nanosecond (10^-9 sec) to >10^4 seconds"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.10(b)(24) - Maintenance definition",
+      "21 CFR 1040.10(b)(38) - Service definition",
+      "21 CFR 1040.10(b)(12) - Collateral radiation definition",
+      "21 CFR 1040.10(d)(Table VI) - Collateral radiation limits",
+      "21 CFR 1040.10(d)(1)(2)(3) - Multiple wavelength provisions"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Distinguish operation, maintenance, and service activities",
+      "Calculate collateral radiation compliance",
+      "Apply multi-wavelength emission rules",
+      "Understand how access timing affects classification"
+    ],
+    "prerequisites": [
+      "Pages 6-8 content"
+    ],
+    "estimated_study_time_minutes": 25,
+    "content_type": "definitions_and_requirements",
+    "has_tables": false
+  }
+}

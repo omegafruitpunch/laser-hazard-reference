@@ -1,0 +1,56 @@
+{
+  "id": "module-8-2",
+  "courseId": "course-8",
+  "title": "ANSI E1.46 Entertainment Laser Standard",
+  "description": "The definitive entertainment laser safety standard — requirements for shows, installations, and audience scanning.",
+  "order": 2,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "Entertainment-Specific Requirements",
+      "content": "ANSI E1.46 is the entertainment industry standard for laser safety, developed by ESTA (Entertainment Services and Technology Association). It addresses unique entertainment scenarios including audience scanning, temporary installations, and coordination with other production elements.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "E1.46 Core Requirements",
+      "content": "ANSI E1.46 establishes minimum safety requirements for laser systems used in entertainment. Key provisions include:\n\n## Minimum Separation Distances\n- **3 meters vertical** separation from beam to audience (supervised venues)\n- **2.5 meters horizontal** separation from beam to audience\n- Enhanced barriers required for unsupervised venues\n\n## Scan Failure Safety Systems\n- Required response time: **few milliseconds**\n- Must terminate laser emission upon scanner malfunction\n- Redundant monitoring recommended for audience-scanning applications\n\n## Documentation Requirements\n- Risk assessment for each installation\n- MPE calculations for all accessible areas\n- Hand-over documentation to venue/operators\n- Emergency procedures\n\n## Personnel Requirements\n- Designated Laser Safety Officer with executive authority\n- Operators trained on specific equipment and safety procedures\n- Competency verification before independent operation",
+      "component": "E146ComplianceChecker",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "Compliance Scenarios",
+      "content": "Evaluate the following scenarios against E1.46 requirements:\n\n**Scenario 1**: A nightclub wants to install permanent laser effects with beams scanning across the dance floor at 2.5m height.\n\n**Scenario 2**: An outdoor festival requires temporary laser installation with beams visible above the crowd.\n\n**Scenario 3**: A theater production needs laser effects that occasionally illuminate performers on stage.\n\nFor each scenario, identify the applicable E1.46 requirements and any compliance issues.",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-8-2",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "ANSI E1.46 Standard Summary",
+      "path": "/docs/course-8-standards/e1-46-summary.pdf"
+    },
+    {
+      "type": "interactive",
+      "title": "E1.46 Compliance Checker",
+      "component": "E146ComplianceChecker"
+    }
+  ],
+  "keyTakeaways": [
+    "E1.46 requires minimum 3m vertical and 2.5m horizontal separation from beams to audience",
+    "Scan failure detection must respond within a few milliseconds",
+    "Documentation must include risk assessment, MPE calculations, and hand-over materials",
+    "LSO must have executive authority, not merely advisory role"
+  ],
+  "nextModule": "module-8-3",
+  "prerequisites": ["module-8-1"],
+  "difficulty": "advanced"
+}

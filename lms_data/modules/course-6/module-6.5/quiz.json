@@ -1,0 +1,232 @@
+{
+  "quiz_id": "quiz_6_5",
+  "module_id": "6.5",
+  "title": "Module 6.5: International Outdoor Standards - Assessment",
+  "description": "Assessment of knowledge for international outdoor laser safety standards",
+  "version": "1.0.0",
+  "time_limit_minutes": 50,
+  "passing_score": 85,
+  "attempts_allowed": 3,
+  "randomize_questions": true,
+  "randomize_options": true,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Knowledge",
+      "learning_objective": "6.5.1",
+      "text": "Which international standard provides guidance specifically for laser emitters and flight safety?",
+      "options": [
+        {"id": "a", "text": "ICAO Annex 14", "correct": false},
+        {"id": "b", "text": "ICAO Doc 9817", "correct": true},
+        {"id": "c", "text": "IEC 60825-1", "correct": false},
+        {"id": "d", "text": "SAE ARP5290", "correct": false}
+      ],
+      "explanation": "ICAO Doc 9817 is specifically titled 'Manual on Laser Emitters and Flight Safety' and provides international guidance on this topic."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Application",
+      "learning_objective": "6.5.2",
+      "text": "Calculate the NOHD for a 40W CW visible laser with 1.5 mrad divergence. Use MPE = 2.6 mW/cm².",
+      "options": [
+        {"id": "a", "text": "1,531 feet", "correct": false},
+        {"id": "b", "text": "3,062 feet", "correct": true},
+        {"id": "c", "text": "4,593 feet", "correct": false},
+        {"id": "d", "text": "6,124 feet", "correct": false}
+      ],
+      "explanation": "NOHD = (32.8/1.5) × √(1273.2 × 40 / 2.6) = 21.87 × √19588 = 21.87 × 140 = 3,062 feet"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "learning_objective": "6.5.1",
+      "text": "What is the primary difference between the FAA and EASA regulatory approaches?",
+      "options": [
+        {"id": "a", "text": "Different MPE values", "correct": false},
+        {"id": "b", "text": "Different flight zone definitions", "correct": false},
+        {"id": "c", "text": "FAA is prescriptive, EASA is performance-based", "correct": true},
+        {"id": "d", "text": "Different enforcement mechanisms", "correct": false}
+      ],
+      "explanation": "The FAA uses a prescriptive approach with specific requirements, while EASA uses a performance-based approach emphasizing operator risk assessment."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Application",
+      "learning_objective": "6.5.4",
+      "text": "A laser emits 10W at 520nm (green). What is the Visually Corrected Power? (VCF for 520nm = 0.7092)",
+      "options": [
+        {"id": "a", "text": "7.092W", "correct": true},
+        {"id": "b", "text": "10W", "correct": false},
+        {"id": "c", "text": "14.096W", "correct": false},
+        {"id": "d", "text": "4.098W", "correct": false}
+      ],
+      "explanation": "VCP = Power × VCF = 10W × 0.7092 = 7.092W. The green laser appears less bright than its actual power would suggest."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Knowledge",
+      "learning_objective": "6.5.3",
+      "text": "Which UK legislation specifically addresses aiming lasers at aircraft?",
+      "options": [
+        {"id": "a", "text": "Health and Safety at Work Act", "correct": false},
+        {"id": "b", "text": "Civil Aviation Act", "correct": false},
+        {"id": "c", "text": "Laser Misuse Act 2018", "correct": true},
+        {"id": "d", "text": "Air Navigation Order", "correct": false}
+      ],
+      "explanation": "The UK Laser Misuse Act 2018 specifically makes it an offense to shine a laser at aircraft, with penalties up to 5 years imprisonment."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Application",
+      "learning_objective": "6.5.2",
+      "text": "If the SZED is 10,000 feet, what is the LFED?",
+      "options": [
+        {"id": "a", "text": "22,350 feet", "correct": false},
+        {"id": "b", "text": "44,700 feet", "correct": false},
+        {"id": "c", "text": "447,000 feet", "correct": true},
+        {"id": "d", "text": "4,470,000 feet", "correct": false}
+      ],
+      "explanation": "LFED = SZED × 44.7 = 10,000 × 44.7 = 447,000 feet (approximately 74.5 nautical miles)."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "learning_objective": "6.5.1",
+      "text": "What is the maximum irradiance allowed in the Critical Flight Zone (CFZ)?",
+      "options": [
+        {"id": "a", "text": "50 nW/cm²", "correct": false},
+        {"id": "b", "text": "5 µW/cm²", "correct": true},
+        {"id": "c", "text": "100 µW/cm²", "correct": false},
+        {"id": "d", "text": "2.6 mW/cm²", "correct": false}
+      ],
+      "explanation": "The CFZ limit is 5 µW/cm². The LFZ is 50 nW/cm² and the SFZ is 100 µW/cm²."
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Analysis",
+      "learning_objective": "6.5.2",
+      "text": "An RGB laser has 8W red (638nm), 4W green (520nm), and 10W blue (445nm). What is the overall VCF?",
+      "options": [
+        {"id": "a", "text": "0.2427", "correct": true},
+        {"id": "b", "text": "0.4435", "correct": false},
+        {"id": "c", "text": "0.7092", "correct": false},
+        {"id": "d", "text": "1.0", "correct": false}
+      ],
+      "explanation": "PCP = 22W. VCP = (8×0.2653) + (4×0.7092) + (10×0.0380) = 5.3392W. VCF = 5.3392/22 = 0.2427"
+    },
+    {
+      "id": "q9",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Knowledge",
+      "learning_objective": "6.5.3",
+      "text": "Which country requires a minimum of £5M public liability insurance for outdoor laser operations?",
+      "options": [
+        {"id": "a", "text": "United States", "correct": false},
+        {"id": "b", "text": "Germany", "correct": false},
+        {"id": "c", "text": "United Kingdom", "correct": true},
+        {"id": "d", "text": "Canada", "correct": false}
+      ],
+      "explanation": "The UK CAA requires a minimum of £5M public liability insurance for outdoor laser operations under CAP 736."
+    },
+    {
+      "id": "q10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Application",
+      "learning_objective": "6.5.2",
+      "text": "Calculate the CA correction factor for a laser at 850nm.",
+      "options": [
+        {"id": "a", "text": "1.0", "correct": false},
+        {"id": "b", "text": "1.5", "correct": false},
+        {"id": "c", "text": "1.995", "correct": true},
+        {"id": "d", "text": "2.5", "correct": false}
+      ],
+      "explanation": "CA = 10^(0.002 × (850-700)) = 10^(0.002 × 150) = 10^0.3 = 1.995"
+    },
+    {
+      "id": "q11",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "blooms_level": "Analysis",
+      "learning_objective": "6.5.1",
+      "text": "Which of the following are SAE Aerospace Standards referenced in FAA AC 70-1B? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "ARP5290 - Beam Divergence Measurements", "correct": true},
+        {"id": "b", "text": "ARP5293A - Safety Considerations for Lasers in Airspace", "correct": true},
+        {"id": "c", "text": "AS6029B - Performance Criteria for Control Measures", "correct": true},
+        {"id": "d", "text": "AS9001 - Quality Management Systems", "correct": false},
+        {"id": "e", "text": "ARP5535 - Observers for Laser Safety", "correct": true},
+        {"id": "f", "text": "AS4970 - Human Factors Considerations", "correct": true}
+      ],
+      "explanation": "The SAE standards referenced are ARP5290, ARP5293A, ARP5535, AS4970, and AS6029B. AS9001 is a quality management standard, not a laser safety standard."
+    },
+    {
+      "id": "q12",
+      "type": "true_false",
+      "difficulty": "easy",
+      "blooms_level": "Knowledge",
+      "learning_objective": "6.5.1",
+      "text": "ICAO standards are legally binding on all member states.",
+      "correct_answer": false,
+      "explanation": "ICAO provides guidance and recommended practices, but they are not legally binding unless adopted into national law by each member state."
+    },
+    {
+      "id": "q13",
+      "type": "fill_in_blank",
+      "difficulty": "medium",
+      "blooms_level": "Knowledge",
+      "learning_objective": "6.5.3",
+      "text": "The FAA's prescriptive outdoor laser guidance is found in Advisory Circular ______.",
+      "correct_answer": "70-1B",
+      "acceptable_answers": ["70-1B", "AC 70-1B", "70-1", "AC70-1B"],
+      "explanation": "FAA AC 70-1B is the primary guidance document for outdoor laser operations in the United States."
+    },
+    {
+      "id": "q14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Synthesis",
+      "learning_objective": "6.5.4",
+      "text": "A laser show tour will visit Germany, France, and the UK. Which regulatory requirement is MOST RESTRICTIVE?",
+      "options": [
+        {"id": "a", "text": "FAA notification timeline", "correct": false},
+        {"id": "b", "text": "German BGV B2 compliance", "correct": false},
+        {"id": "c", "text": "UK £5M insurance requirement", "correct": true},
+        {"id": "d", "text": "French prefecture approval", "correct": false}
+      ],
+      "explanation": "While all are important, the UK's £5M insurance requirement and mandatory CAA-registered LSO are typically the most restrictive requirements for international tours."
+    },
+    {
+      "id": "q15",
+      "type": "matching",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "learning_objective": "6.5.1",
+      "text": "Match the regulatory body with its jurisdiction:",
+      "pairs": [
+        {"body": "FAA", "jurisdiction": "United States"},
+        {"body": "EASA", "jurisdiction": "European Union"},
+        {"body": "CAA UK", "jurisdiction": "United Kingdom"},
+        {"body": "CASA", "jurisdiction": "Australia"}
+      ],
+      "explanation": "Understanding which regulatory body has jurisdiction is essential for international operations."
+    }
+  ]
+}

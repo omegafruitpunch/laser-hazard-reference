@@ -1,0 +1,162 @@
+{
+  "course_id": "course-2",
+  "course_title": "FDA Compliance",
+  "version": "1.0",
+  "created_by": "Module Builder Agent C2-A",
+  "created_date": "2026-03-19",
+  "last_updated": "2026-03-19",
+  
+  "modules": [
+    {
+      "module_id": "course-2-module-2.1",
+      "module_number": "2.1",
+      "title": "FDA Regulatory Framework",
+      "description": "Comprehensive overview of FDA laser product regulations, reporting requirements, and the CDRH organizational structure",
+      "path": "module-2.1/",
+      "files": {
+        "structure": "module-2.1/module-structure.json",
+        "content": "module-2.1/lesson-content.json"
+      },
+      "learning_objectives": [
+        "Navigate the FDA laser product regulatory structure under 21 CFR",
+        "Understand the relationship between CDRH, FDA, and regulatory enforcement",
+        "Identify key reporting requirements: Product Reports, Supplemental Reports, and Annual Reports",
+        "Recognize the historical evolution of FDA laser regulations",
+        "Apply compliance timelines to real-world scenarios"
+      ],
+      "interactive_components": [
+        {
+          "name": "Regulatory Timeline",
+          "type": "interactive_timeline",
+          "description": "Interactive timeline of FDA laser regulation milestones from 1960-2023"
+        },
+        {
+          "name": "Form Selection Wizard",
+          "type": "decision_tree",
+          "description": "Interactive tool to determine which FDA form to use based on situation"
+        }
+      ],
+      "duration_minutes": 35,
+      "difficulty": "intermediate",
+      "prerequisites": ["Basic laser safety fundamentals"]
+    },
+    {
+      "module_id": "course-2-module-2.2",
+      "module_number": "2.2",
+      "title": "Laser Product Classification (FDA)",
+      "description": "Detailed exploration of FDA laser product classes, accessible emission limits, and classification procedures",
+      "path": "module-2.2/",
+      "files": {
+        "structure": "module-2.2/module-structure.json",
+        "content": "module-2.2/lesson-content.json"
+      },
+      "learning_objectives": [
+        "Distinguish between FDA laser product classes (I, IIa, II, IIIa, IIIb, IV)",
+        "Calculate accessible emission limits (AELs) for classification",
+        "Apply measurement parameters per 21 CFR 1040.10(e)",
+        "Identify required controls, indicators, and warnings for each class",
+        "Determine classification based on laser specifications"
+      ],
+      "interactive_components": [
+        {
+          "name": "Classification Flowchart",
+          "type": "decision_tree",
+          "description": "Interactive decision tree for determining FDA laser classification"
+        },
+        {
+          "name": "AEL Calculator",
+          "type": "interactive_calculator",
+          "description": "Calculator for accessible emission limits based on wavelength and duration"
+        },
+        {
+          "name": "Requirements Matrix",
+          "type": "interactive_table",
+          "description": "Side-by-side comparison of requirements for each FDA laser class"
+        }
+      ],
+      "duration_minutes": 40,
+      "difficulty": "intermediate",
+      "prerequisites": ["Module 2.1: FDA Regulatory Framework"]
+    },
+    {
+      "module_id": "course-2-module-2.3",
+      "module_number": "2.3",
+      "title": "Laser Notices & Harmonization",
+      "description": "Understanding FDA Laser Notices, FDA-IEC harmonization, and Laser Notice No. 50 compliance",
+      "path": "module-2.3/",
+      "files": {
+        "structure": "module-2.3/module-structure.json",
+        "content": "module-2.3/lesson-content.json"
+      },
+      "learning_objectives": [
+        "Understand the purpose and legal status of FDA Laser Notices",
+        "Navigate the harmonization between FDA and IEC 60825-1 standards",
+        "Identify which FDA requirements are harmonized vs. unique",
+        "Apply Laser Notice No. 50 for IEC-conforming products",
+        "Use the correct certification statements for harmonized products"
+      ],
+      "interactive_components": [
+        {
+          "name": "Harmonization Comparison",
+          "type": "side_by_side_table",
+          "description": "Interactive comparison of FDA vs IEC requirements with harmonization status"
+        },
+        {
+          "name": "Certification Statement Builder",
+          "type": "interactive_form",
+          "description": "Tool to generate correct certification statements based on compliance pathway"
+        }
+      ],
+      "duration_minutes": 35,
+      "difficulty": "advanced",
+      "prerequisites": [
+        "Module 2.1: FDA Regulatory Framework",
+        "Module 2.2: Laser Product Classification (FDA)"
+      ]
+    }
+  ],
+  
+  "total_modules": 3,
+  "total_duration_minutes": 110,
+  "total_interactive_components": 7,
+  
+  "assessment_summary": {
+    "total_quiz_questions": 15,
+    "mastery_badges": [
+      "FDA Framework Navigator",
+      "Classification Expert",
+      "Harmonization Specialist"
+    ]
+  },
+  
+  "pedagogical_approach": {
+    "design_framework": "Brilliant.org 4-Phase Structure",
+    "learning_theory": "Malcolm Knowles' Adult Learning Theory (Andragogy)",
+    "key_patterns": [
+      "Progressive disclosure for complex regulatory content",
+      "Branching scenarios for compliance decision-making",
+      "Interactive calculation tools for technical content",
+      "Case studies from real FDA actions",
+      "Immediate feedback on all assessments"
+    ],
+    "session_lengths": "5-10 minute microlearning modules per lesson",
+    "accessibility": "WCAG 2.1 AA compliant design patterns"
+  },
+  
+  "research_inputs": [
+    "lms_data/research_findings/adult_learning_theory.md",
+    "lms_data/research_findings/brilliant_org_patterns.md",
+    "lms_data/research_findings/interactive_design_patterns.md",
+    "lms_data/research_findings/laser_safety_pedagogy.md"
+  ],
+  
+  "content_inputs": [
+    "lms_data/extracted_content/course-2/fda-forms_extracted.json",
+    "lms_data/extracted_content/course-2/laser-notice-50_extracted.json",
+    "lms_data/extracted_content/course-2/extracted_content.json",
+    "lms_data/knowledge_graphs/course-2/fda-forms_knowledge_graph.json",
+    "lms_data/knowledge_graphs/course-2/laser-notice-50_knowledge_graph.json",
+    "lms_data/quiz_banks/course-2/fda-forms_quiz.json",
+    "lms_data/quiz_banks/course-2/laser-notice-50_quiz.json"
+  ]
+}

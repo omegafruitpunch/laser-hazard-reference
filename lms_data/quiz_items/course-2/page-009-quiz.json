@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 9,
+  "quiz_items": [
+    {
+      "id": "C2-P9-Q1",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the X-ray collateral radiation limit for laser products?",
+      "options": [
+        "0.1 milliroentgen per hour",
+        "0.5 milliroentgen per hour",
+        "1.0 milliroentgen per hour",
+        "5.0 milliroentgen per hour"
+      ],
+      "correct_answer": 1,
+      "explanation": "Limits for collateral X-ray radiation are 0.5 milliroentgen in an hour averaged over an area of 10 cm² parallel to the product surface with no dimension greater than 5 cm.",
+      "learning_objective": "Know collateral radiation limits",
+      "regulatory_reference": "21 CFR 1040.10(d)(Table VI)"
+    },
+    {
+      "id": "C2-P9-Q2",
+      "type": "scenario",
+      "difficulty": "intermediate",
+      "question": "A user performs routine cleaning of a laser product's exterior. Under 21 CFR 1040.10, this activity would be classified as:",
+      "options": [
+        "Operation",
+        "Maintenance",
+        "Service",
+        "Not classified"
+      ],
+      "correct_answer": 1,
+      "explanation": "Maintenance consists of functions performed by the user to assure performance, including cleaning and replenishment of expendables.",
+      "learning_objective": "Distinguish operation, maintenance, and service",
+      "regulatory_reference": "21 CFR 1040.10(b)(24)"
+    }
+  ]
+}

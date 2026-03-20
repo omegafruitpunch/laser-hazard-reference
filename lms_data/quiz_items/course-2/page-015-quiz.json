@@ -1,0 +1,33 @@
+{
+  "course": "course-2",
+  "page_number": 15,
+  "quiz_items": [
+    {
+      "id": "C2-P15-Q1",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "What accuracy is required for the radiation measurement system in Class IIIb/IV medical laser products?",
+      "options": [
+        "±5%",
+        "±10%",
+        "±20%",
+        "±50%"
+      ],
+      "correct_answer": 2,
+      "explanation": "Class IIIa, IIIb, and IV medical laser products must contain means for measuring delivered exposure accurate within ±20 percent, with recalibration procedures in the manual.",
+      "learning_objective": "Apply medical laser requirements",
+      "regulatory_reference": "21 CFR 1040.11(a)"
+    },
+    {
+      "id": "C2-P15-Q2",
+      "type": "true_false",
+      "difficulty": "intermediate",
+      "question": "Demonstration laser products are permitted to exceed Class IIIa limits if they have proper warning labels.",
+      "options": ["True", "False"],
+      "correct_answer": 1,
+      "explanation": "False. Demonstration laser products are restricted to Class IIIa with Class I limits for short pulses and invisible wavelengths. Class IIIb/IV demonstration products require an approved variance.",
+      "learning_objective": "Understand demonstration product limits",
+      "regulatory_reference": "21 CFR 1040.11(c), Laser Notice #50"
+    }
+  ]
+}

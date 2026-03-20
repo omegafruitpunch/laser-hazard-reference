@@ -1,0 +1,73 @@
+{
+  "module_id": "6.6",
+  "course_id": "6",
+  "title": "Module 6.6: NOTAM Procedures & Emergency Protocols",
+  "description": "Complete guide to Notice to Air Missions procedures, emergency response protocols, and coordination with aviation authorities",
+  "version": "1.0.0",
+  "estimated_duration_minutes": 80,
+  "difficulty": "advanced",
+  "prerequisites": ["6.4", "6.5"],
+  "learning_objectives": [
+    {
+      "id": "6.6.1",
+      "objective": "Complete FAA Form 7140-1 accurately for outdoor laser operations",
+      "blooms_level": "Application",
+      "assessment_method": "Form completion exercise"
+    },
+    {
+      "id": "6.6.2",
+      "objective": "Interpret and issue proper NOTAMs for laser operations",
+      "blooms_level": "Comprehension",
+      "assessment_method": "NOTAM interpretation quiz"
+    },
+    {
+      "id": "6.6.3",
+      "objective": "Execute emergency shutdown procedures during aircraft incursion",
+      "blooms_level": "Application",
+      "assessment_method": "Emergency response simulator"
+    },
+    {
+      "id": "6.6.4",
+      "objective": "Coordinate with ATC and law enforcement during laser incidents",
+      "blooms_level": "Synthesis",
+      "assessment_method": "Multi-agency coordination scenario"
+    }
+  ],
+  "interactive_components": [
+    {
+      "id": "form_7140_walkthrough",
+      "name": "FAA Form 7140-1 Interactive Walkthrough",
+      "type": "form_guide",
+      "file": "components/form_7140_walkthrough.json"
+    },
+    {
+      "id": "emergency_response_simulator",
+      "name": "Emergency Response Simulator",
+      "type": "scenario_simulator",
+      "file": "components/emergency_response_simulator.json"
+    },
+    {
+      "id": "notam_interpreter",
+      "name": "NOTAM Decoder Tool",
+      "type": "decoder_tool",
+      "file": "components/notam_interpreter.json"
+    },
+    {
+      "id": "coordination_scenario",
+      "name": "Multi-Agency Coordination Scenario",
+      "type": "roleplay_simulator",
+      "file": "components/coordination_scenario.json"
+    }
+  ],
+  "content_files": {
+    "lesson": "content.md",
+    "workbook": "workbook.md"
+  },
+  "assessment": {
+    "quiz_file": "quiz.json",
+    "passing_score": 90,
+    "attempts_allowed": 3
+  },
+  "created_at": "2026-03-19T15:40:00Z",
+  "updated_at": "2026-03-19T15:40:00Z"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "authority-hierarchies",
+  "title": "Authority Hierarchies: Federal vs State Jurisdiction",
+  "source": "state-federal-jurisdiction.pdf",
+  "content": "Federal OSHA Authority:\n\nFederal OSHA operates under the General Duty Clause of 29 CFR 1910. They do not have specific laser interlock requirements but enforce industry best practices. When violations are found, they reference ANSI Z136.1-2014 and may refer to FDA codes under 21 CFR 1040.\n\nState OSHA Authority:\n\nState OSHA programs may or may not specifically address Laser Interlocks - it depends on the individual state. Some states have adopted specific laser safety requirements while others follow federal OSHA guidelines.\n\nFDA CDRH Authority:\n\nThe Center for Devices and Radiological Health (CDRH) has federal mandate over laser product manufacturing standards. Their authority covers:\n- Performance standards for laser products (21 CFR 1040.10)\n- Specific use laser products (21 CFR 1040.11)\n- Import/export requirements\n- Records and reporting requirements\n\nAuthority Overlap:\n\n- FDA regulates MANUFACTURERS of laser products\n- OSHA regulates EMPLOYERS using laser products in the workplace\n- ANSI provides the standards that both reference",
+  "plain_language_summary": "Think of it this way: FDA makes sure laser PRODUCTS are built safely. OSHA makes sure laser USERS work safely. States can add their own rules on top.",
+  "authority_matrix": {
+    "Federal_OSHA": {
+      "authority": "Workplace safety for most private employers",
+      "legal_basis": "General Duty Clause of 29 CFR 1910",
+      "laser_specific": "No specific laser regulations - enforces via 'best practices'",
+      "references": ["ANSI Z136.1-2014", "May refer to FDA 21 CFR 1040"],
+      "covers": "Most private sector employers in 29 states"
+    },
+    "State_OSHA": {
+      "authority": "Workplace safety (state-specific programs)",
+      "legal_basis": "State-approved OSHA plans",
+      "laser_specific": "Varies by state - some have specific laser requirements",
+      "examples": "Some states require stricter interlock usage than federal",
+      "covers": "22 states/territories with state-run programs"
+    },
+    "FDA_CDRH": {
+      "authority": "Laser product manufacturing standards",
+      "legal_basis": "21 CFR 1040 (FLPPS)",
+      "laser_specific": "Detailed performance standards for all laser products",
+      "covers": ["Product design", "Labeling", "Interlocks", "Classification"],
+      "enforcement": "Products cannot be legally sold without compliance"
+    },
+    "ANSI": {
+      "role": "Provides voluntary consensus standards",
+      "standards": ["Z136.1 (general)", "Z136.2 (optical fiber)", "Z136.3 (healthcare)", "Z136.8 (entertainment)"],
+      "becomes_mandatory_when": "Referenced by OSHA regulations",
+      "importance": "Provides specific guidance that OSHA uses for enforcement"
+    }
+  },
+  "state_vs_federal": {
+    "key_point": "State OSHA programs can be MORE strict than federal, but not less",
+    "what_this_means": "If you operate in multiple states, you must know each state's requirements",
+    "examples": {
+      "stricter_states": "Some states have specific laser interlock requirements",
+      "federal_alike": "Many states follow federal OSHA guidelines exactly"
+    }
+  },
+  "practical_implications": {
+    "manufacturers": "Must comply with FDA + OSHA workplace safety for employees",
+    "employers": "Must follow OSHA (state or federal) + ANSI best practices",
+    "users": "Should verify product FDA compliance + follow employer OSHA program"
+  },
+  "key_concepts": ["Federal OSHA", "State OSHA", "FDA CDRH", "General Duty Clause", "Manufacturer vs Employer jurisdiction"],
+  "authority_level": "federal",
+  "difficulty": "intermediate"
+}

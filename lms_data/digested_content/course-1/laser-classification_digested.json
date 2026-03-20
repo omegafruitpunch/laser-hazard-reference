@@ -1,0 +1,133 @@
+{
+  "pdf_name": "laser-classification.pdf",
+  "course": "course-1-fundamentals",
+  "title": "American National Standard Z136.1-2000 - Laser Definitions",
+  "source": "ANSI Z136.1-2000, Laser Institute of America",
+  "total_pages": 10,
+  "document_type": "technical_standard_definitions",
+  "digest_date": "2026-03-19",
+  "pages_analysis": [
+    {
+      "page_num": 1,
+      "section": "definitions_a",
+      "summary": "Technical definitions from ANSI Z136.1-2000 standard covering terms from absorption to coherent. Key definitions include accessible emission limit (AEL), aversion response (0.25s blink reflex), beam characteristics, and correction factors (CA, CB, CC, CE, CP).",
+      "core_concepts": ["Absorption definition", "AEL (Accessible Emission Limit)", "Aversion response timing", "Beam characteristics", "Correction factors"],
+      "key_terms": ["absorption", "AEL", "alpha max", "alpha min", "aperture", "aversion response", "beam divergence", "blink reflex", "CA", "CB", "CC", "CE", "CP", "collecting optics"],
+      "difficulty": "advanced",
+      "learning_objectives": ["Define AEL and its significance", "Explain aversion response timing", "Identify different correction factors and their applications"],
+      "prerequisites": ["Basic laser physics", "Understanding of MPE concepts"]
+    },
+    {
+      "page_num": 2,
+      "section": "definitions_c",
+      "summary": "Continuation of C-term definitions including continuous wave (CW) definition (>0.25s = CW), controlled areas, cornea anatomy, critical frequency (55kHz for 0.4-1.05µm, 20kHz for 1.05-1.4µm), and coherence definition.",
+      "core_concepts": ["Continuous wave definition", "Controlled area concept", "Cornea function", "Critical frequency values", "Coherence technical definition"],
+      "key_terms": ["continuous wave (CW)", "controlled area", "cornea", "critical frequency", "coherent", "collateral radiation", "cryogenics"],
+      "difficulty": "advanced",
+      "learning_objectives": ["Define CW operation threshold", "Understand controlled area requirements", "Identify critical frequency values by wavelength"],
+      "prerequisites": ["Understanding of laser operation modes"]
+    },
+    {
+      "page_num": 3,
+      "section": "definitions_d_e",
+      "summary": "D and E definitions covering dermatology, diffuse reflection, diopter, divergence definition (63.2% energy cone), effective energy/power, electromagnetic radiation spectrum, embedded vs enclosed lasers, and extended source criteria.",
+      "core_concepts": ["Divergence measurement (1-1/e)", "Diffuse reflection", "Electromagnetic spectrum", "Embedded vs enclosed lasers", "Extended source definition"],
+      "key_terms": ["diffuse reflection", "diopter", "divergence", "effective energy", "electromagnetic radiation", "embedded laser", "enclosed laser", "extended source", "erythema"],
+      "difficulty": "advanced",
+      "learning_objectives": ["Calculate divergence using 63.2% criterion", "Distinguish embedded from enclosed lasers", "Identify extended source criteria (αmin)"],
+      "prerequisites": ["Trigonometry basics", "Laser classification knowledge"]
+    },
+    {
+      "page_num": 4,
+      "section": "definitions_f_i",
+      "summary": "F through I definitions including fail-safe interlock, focal length/point, infrared spectral regions (0.7µm to 1mm), installation, integrated radiance, intrabeam viewing, ionizing radiation distinction, and irradiance (power density).",
+      "core_concepts": ["Fail-safe interlock design", "Focal optics", "Infrared spectral classification", "Integrated radiance", "Intrabeam viewing hazards", "Irradiance calculation"],
+      "key_terms": ["fail-safe interlock", "focal length", "fundus", "infrared radiation", "installation", "integrated radiance", "intrabeam viewing", "iris", "irradiance", "ionizing radiation"],
+      "difficulty": "advanced",
+      "learning_objectives": ["Design fail-safe interlock systems", "Calculate integrated radiance", "Identify infrared wavelength ranges", "Understand intrabeam viewing"],
+      "prerequisites": ["Optics fundamentals"]
+    },
+    {
+      "page_num": 5,
+      "section": "definitions_l_m",
+      "summary": "L and M definitions including laser barrier, laser diode, laser pointer (Class II or IIIa, <5mW), laser safety officer (LSO) authority, lesion, limiting angular subtense (αmin = 1.5 mrad), limiting aperture, and maximum permissible exposure (MPE) definition.",
+      "core_concepts": ["Laser barrier applications", "Laser pointer specifications", "LSO authority and role", "Limiting angular subtense (αmin)", "MPE definition and criteria"],
+      "key_terms": ["laser barrier", "laser diode", "laser pointer", "laser safety officer (LSO)", "limiting angular subtense", "limiting aperture", "macula", "maintenance", "maximum permissible exposure (MPE)"],
+      "difficulty": "advanced",
+      "learning_objectives": ["Define LSO responsibilities", "Identify laser pointer power limits", "Understand αmin significance", "Explain MPE concept"],
+      "prerequisites": ["Understanding of laser hazards"]
+    },
+    {
+      "page_num": 6,
+      "section": "definitions_m_n_o",
+      "summary": "M, N, O definitions covering metric prefixes (cm, mm, µm, nm), minimum viewing distance (10cm), nominal hazard zone (NHZ), nominal ocular hazard distance (NOHD), non-beam hazards, ocular fundus, optically aided viewing, and optical density (Dλ = -log10 τλ).",
+      "core_concepts": ["Metric unit conversions", "Minimum viewing distance assumption", "NHZ and NOHD definitions", "Non-beam hazard categories", "Optical density calculation", "Optically aided viewing hazards"],
+      "key_terms": ["nanometer", "nominal hazard zone (NHZ)", "nominal ocular hazard distance (NOHD)", "non-beam hazard", "ocular fundus", "optical density", "optically aided viewing", "ophthalmoscope"],
+      "difficulty": "advanced",
+      "learning_objectives": ["Convert between metric units", "Calculate optical density from transmittance", "Distinguish NHZ from NOHD", "Identify non-beam hazards"],
+      "prerequisites": ["Logarithm mathematics", "Laser safety fundamentals"]
+    },
+    {
+      "page_num": 7,
+      "section": "definitions_p_r_start",
+      "summary": "P and R definitions including protective housing, pulse duration, pulse-repetition frequency (PRF), pulsed laser (<0.25s), Q-switch operation (10-250ns), radiance, radiant energy/exposure/flux/intensity/power, and radiometry scope.",
+      "core_concepts": ["Protective housing requirements", "Pulse timing definitions", "Pulsed vs CW distinction", "Q-switch mechanism", "Radiometric quantities", "Radiometry scope"],
+      "key_terms": ["protective housing", "pulse duration", "PRF", "pulsed laser", "Q-switch", "radiance", "radiant energy", "radiant exposure", "radiant flux", "radiant intensity"],
+      "difficulty": "advanced",
+      "learning_objectives": ["Define pulse timing parameters", "Explain Q-switch operation", "Differentiate radiometric quantities", "Understand protective housing"],
+      "prerequisites": ["Physics of pulsed lasers"]
+    },
+    {
+      "page_num": 8,
+      "section": "definitions_r_s",
+      "summary": "R and S definitions covering Rayleigh scattering, reflectance/reflection/refraction, refractive index, repetitive pulse laser, retinal hazard region (0.4-1.4µm), scanning laser, scintillation, secured enclosure, small source (≤αmin), and small-source viewing.",
+      "core_concepts": ["Reflection types and mechanisms", "Retinal hazard spectral region", "Scanning laser definition", "Secured enclosure requirements", "Small source criteria", "Source viewing classification"],
+      "key_terms": ["reflectance", "refraction", "refractive index", "retina", "retinal hazard region", "scanning laser", "scintillation", "secured enclosure", "small source", "small-source viewing", "solid angle"],
+      "difficulty": "advanced",
+      "learning_objectives": ["Identify retinal hazard wavelength range", "Distinguish small from extended sources", "Define scanning laser characteristics", "Understand secured enclosure standards"],
+      "prerequisites": ["Optics and wave physics"]
+    },
+    {
+      "page_num": 9,
+      "section": "definitions_s_t",
+      "summary": "S and T definitions including spectator, specular reflection, steradian (4π around any point), standard operating procedure (SOP), T1/T2 exposure duration thresholds, threshold limit (TL) for protective devices, tmin (thermal confinement duration: 18µs for 0.4-1.05µm, 50µs for 1.05-1.4µm), and transmission/transmittance.",
+      "core_concepts": ["Specular vs diffuse reflection", "Steradian geometry", "SOP requirements", "T1/T2 thresholds", "Threshold limit for protection", "Thermal confinement timing"],
+      "key_terms": ["spectator", "specular reflection", "steradian", "SOP", "T1", "T2", "threshold limit (TL)", "tmin", "transmittance", "transmission"],
+      "difficulty": "advanced",
+      "learning_objectives": ["Calculate solid angles in steradians", "Distinguish specular from diffuse reflection", "Understand thermal confinement timing", "Apply threshold limits for protection"],
+      "prerequisites": ["Solid geometry", "Thermal physics"]
+    },
+    {
+      "page_num": 10,
+      "section": "definitions_t_u_v_w",
+      "summary": "Final definitions covering uncontrolled area, viewing window, visible radiation (0.4-0.7µm), watt (1W = 1J/s), wavelength definition, and work practices. Standard concludes with complete technical vocabulary.",
+      "core_concepts": ["Controlled vs uncontrolled areas", "Viewing window specifications", "Visible spectrum boundaries", "Power-energy relationship", "Wavelength definition", "Work practice documentation"],
+      "key_terms": ["uncontrolled area", "viewing window", "visible radiation", "watt", "wavelength", "work practices"],
+      "difficulty": "intermediate",
+      "learning_objectives": ["Distinguish controlled from uncontrolled areas", "Identify visible wavelength range", "Understand watt-joule relationship"],
+      "prerequisites": ["Basic physics"]
+    }
+  ],
+  "key_concepts_summary": {
+    "critical_values": [
+      {"parameter": "Aversion response time", "value": "0.25 seconds", "significance": "Maximum assumed eye exposure before blink reflex"},
+      {"parameter": "Alpha min (αmin)", "value": "1.5 mrad", "significance": "Limit between small and extended sources"},
+      {"parameter": "Alpha max (αmax)", "value": "100 mrad", "significance": "Extended source MPE angular limit"},
+      {"parameter": "CW threshold", "value": ">0.25 seconds", "significance": "Duration above which laser is considered continuous wave"},
+      {"parameter": "Critical frequency (0.4-1.05µm)", "value": "55 kHz", "significance": "PRF above which pulsed output is treated as CW"},
+      {"parameter": "Critical frequency (1.05-1.4µm)", "value": "20 kHz", "significance": "PRF above which pulsed output is treated as CW"},
+      {"parameter": "tmin (0.4-1.05µm)", "value": "18 µs", "significance": "Thermal confinement duration"},
+      {"parameter": "tmin (1.05-1.4µm)", "value": "50 µs", "significance": "Thermal confinement duration"},
+      {"parameter": "Minimum viewing distance", "value": "10 cm", "significance": "Assumed closest eye focus for diffuse sources"},
+      {"parameter": "Retinal hazard region", "value": "0.4-1.4 µm", "significance": "Wavelengths that reach and can damage retina"},
+      {"parameter": "Visible radiation", "value": "0.4-0.7 µm", "significance": "Human eye detectable wavelengths"},
+      {"parameter": "Infrared radiation", "value": "0.7 µm - 1 mm", "significance": "Infrared spectral range"},
+      {"parameter": "Divergence energy criterion", "value": "63.2% (1-1/e)", "significance": "Cone angle containing majority of beam energy"}
+    ],
+    "formula_relationships": [
+      {"formula": "Dλ = -log10(τλ)", "description": "Optical density from transmittance"},
+      {"formula": "1 W = 1 J/s", "description": "Power-energy relationship"},
+      {"formula": "4π steradians", "description": "Solid angle surrounding a point"}
+    ]
+  }
+}

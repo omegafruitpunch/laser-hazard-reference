@@ -1,0 +1,28 @@
+{
+  "page_num": 2,
+  "source_pdf": "ocular-hazards.pdf",
+  "digestion": {
+    "summary": "RETINAL HAZARD REGION (400-1400 nm)\n\nThe wavelength range from 400 nm to 1400 nm is called the \"retinal hazard region\"\nbecause light in this range transmits through the ocular media and focuses on \nth...",
+    "key_concepts": [
+      "retinal hazard region",
+      "photochemical damage",
+      "thermal damage"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "RETINAL HAZARD REGION (400-1400 nm)\n\nThe wavelength range from 400 nm to 1400 nm is called the \"retinal hazard region\"\nbecause light in this range transmits through the ocular media and focuses on \nthe retina.\n\nMECHANISMS OF RETINAL INJURY:\n\nPhotochemical Damage: Occurs primarily from short wavelengths (400-550 nm). \nBlue light hazard is a photochemical process where high-energy photons trigger \nchemical reactions in retinal cells. Accumulates over time with repeated exposure.\n\nThermal Damage: Caused by absorption of laser energy converting to heat. \nTemperature rise of just 10°C can denature proteins and destroy retinal tissue.\nMore significant for longer exposures and higher powers.\n\nMechanical Damage: Short pulse lasers (nanoseconds to femtoseconds) can cause \nmicrocavitation and shock waves due to rapid thermal expansion of tissue.\n\nVISIBLE LIGHT (400-700 nm):\n- Retinal injuries from visible lasers are immediately apparent\n- Blink reflex (0.25 second) may provide some protection for Class 2 lasers\n- Damage typically occurs to fovea (central vision) when eye tracks bright light\n",
+    "analogies": [
+      "The eye's focusing capability is like a magnifying glass concentrating sunlight - it amplifies laser power by 100,000x at the retina.",
+      "Laser skin burns are similar to thermal burns but can be more precisely localized."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Always wear appropriate laser eyewear when working with Class 3B or Class 4 lasers.",
+      "Use protective gloves and long sleeves when operating high-power lasers."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.118358"
+}

@@ -1,0 +1,72 @@
+{
+  "module_id": "course-7-module-3",
+  "title": "Insurance and Liability Requirements",
+  "course": "Course 7: Event Safety",
+  "source_pdf": "insurance-liability.pdf",
+  "learning_objectives": [
+    "Understand event organizer liability obligations",
+    "Identify key insurance coverage types for events",
+    "Recognize mutual aid program benefits and liabilities",
+    "Apply risk transfer and indemnification principles"
+  ],
+  "content": {
+    "introduction": {
+      "title": "Event Insurance and Liability Management",
+      "text": "The event organizer is the individual or organization who promotes and manages an event. This role comes with many obligations and liabilities. It is the organizer's burden to discover what those obligations are and the organizer's exposure to liability, keeping in mind those obligations and liabilities can change event to event, even if an event is replicated at a later date in the same location."
+    },
+    "sections": [
+      {
+        "section_id": "insurance-1",
+        "title": "Organizer Liability Considerations",
+        "content": "Organizers should consider obtaining legal and insurance advice early in the planning stage. Items that warrant consideration include: Liability for injuries; Liability for acts or omissions; Liability for financial obligations incurred in responding to major emergencies occasioned by the event; and Potential liability for the resultant effects of the event on normal emergency operations. Planning for the reasonably foreseeable risks and hazards associated with an event is essential to the event's success."
+      },
+      {
+        "section_id": "insurance-2",
+        "title": "Mutual Aid Programs",
+        "content": "One way in which agencies work together is by adopting a mutual aid program. This program allows neighboring communities to pool resources and share liability for damages or loss of equipment. If one community needs a particular piece of equipment, it may borrow it from a neighboring community. The equipment will become an asset of the borrowing community and will be covered under their insurance until it is released and returns to its home organization. It is important that those involved in planning the event know the agreements established between neighboring communities and the assets that are available to assist in responding to any unforeseen incidents."
+      },
+      {
+        "section_id": "insurance-3",
+        "title": "Safety Coordinator and Liability",
+        "content": "Event organizers will likely need competent help in creating and applying the provisions of health and safety policies. A competent person is someone who has sufficient training, expertise, experience or knowledge and other qualities that enable that person to devise and apply protective measures. It is recommended the organizer appoint a suitably competent safety coordinator to help the organizer comply with health and safety legislation. The safety coordinator should report directly to the organizer to eliminate the filtering of information by third parties."
+      },
+      {
+        "section_id": "insurance-4",
+        "title": "Multi-Agency Liability",
+        "content": "A major incident will normally require a multi-agency approach in which the event organizer, law enforcement, ambulance service, fire authority, local authority, local emergency planning officer, stewards and first responders may play a part. It is important to have a clear demarcation of duties that are agreed to and understood at the event planning stage. Once finalized, joint emergency procedures should be issued in writing to all relevant parties. Experience has shown that a multi-agency approach to all planning will share the ownership of problems and lead to effective solutions."
+      },
+      {
+        "section_id": "insurance-5",
+        "title": "Documentation and Record Keeping",
+        "content": "Keeping and retaining records of meetings and decisions is important. Each organization concerned with the event should give a clear undertaking as to their role and committed resources if a major incident happens. This will be in the form of a statement of intent. The person leading the planning team must be competent to do so and have a broad appreciation of the issues. This person does not necessarily have to be the event organizer or one of their workers. However, they will be accountable for the plan's effectiveness."
+      },
+      {
+        "section_id": "insurance-6",
+        "title": "Standard of Care and Legal Disclaimer",
+        "content": "Standards and guidelines provide operational best practices but do not replace the need for event organizers to consult with local authorities and emergency services, or to follow all applicable laws and regulations. Anyone using safety guidelines should rely on his or her own independent judgment, or, as appropriate, seek the advice of a competent professional in determining the exercise of reasonable care in any given circumstance. Standards organizations disclaim liability for any personal injury, property or other damages of any kind which may directly or indirectly result from the use of or reliance on safety guides."
+      }
+    ],
+    "key_takeaways": [
+      "Organizers must obtain legal and insurance advice early in planning",
+      "Liability extends beyond injuries to include acts, omissions, and emergency response costs",
+      "Mutual aid programs allow resource sharing but require clear liability agreements",
+      "Clear documentation of roles and responsibilities protects all parties",
+      "Multi-agency coordination shares problem ownership and leads to effective solutions"
+    ],
+    "insurance_types": [
+      "General Liability Insurance",
+      "Event Cancellation Insurance",
+      "Property Insurance",
+      "Workers' Compensation",
+      "Equipment/Floater Insurance",
+      "Excess/Umbrella Coverage"
+    ],
+    "note": "Source insurance-liability.pdf was a scanned FDA form without extractable text. Content synthesized from Event Safety Guide liability sections and ANSI ES1.9 standards."
+  },
+  "metadata": {
+    "version": "1.0",
+    "extracted_from": "insurance-liability.pdf (scanned form - content synthesized from related sources)",
+    "processing_agent": "PDF Elite Processor Agent #18",
+    "extraction_date": "2026-03-19"
+  }
+}

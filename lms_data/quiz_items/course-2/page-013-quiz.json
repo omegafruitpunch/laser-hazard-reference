@@ -1,0 +1,32 @@
+{
+  "course": "course-2",
+  "page_number": 13,
+  "quiz_items": [
+    {
+      "id": "C2-P13-Q1",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "At what irradiance level does a Class IIIa product require a DANGER logotype instead of CAUTION?",
+      "options": [
+        "1.0 mW/cm²",
+        "2.5 mW/cm²",
+        "5.0 mW/cm²",
+        "10.0 mW/cm²"
+      ],
+      "correct_answer": 1,
+      "explanation": "CAUTION logotype is for Class IIIa ≤2.5 mW/cm². DANGER is required for Class IIIa >2.5 mW/cm² and all Class IIIb/IV products.",
+      "learning_objective": "Apply warning label requirements",
+      "regulatory_reference": "21 CFR 1040.10(g)(1)-(4)"
+    },
+    {
+      "id": "C2-P13-Q2",
+      "type": "fill_in_blank",
+      "difficulty": "intermediate",
+      "question": "The certification label must state that the product complies with 21 CFR Chapter 1, ______ or specifically 21 CFR ______ and ______.",
+      "correct_answer": "Subchapter J, 1040.10, 1040.11",
+      "explanation": "The certification label must reference the regulations complied with. Minimum suitable statements: 'Complies with 21 CFR Chapter 1, Subchapter J' or 'Complies with 21 CFR 1040.10 and 1040.11.'",
+      "learning_objective": "Know certification labeling requirements",
+      "regulatory_reference": "21 CFR 1010.2, 1040.10(g)"
+    }
+  ]
+}

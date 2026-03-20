@@ -1,0 +1,51 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 10,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Performance requirements for protective housings",
+      "Safety interlock requirements",
+      "Laser Notice #37 for industrial workstations",
+      "Contiguous protective housing design"
+    ],
+    "key_terms": [
+      {
+        "term": "Protective Housing Requirements",
+        "definition": "Must contain all radiation above Class I where human access not necessary"
+      },
+      {
+        "term": "Safety Interlocks",
+        "definition": "Devices preventing access to Class I+ radiation when housing opened"
+      },
+      {
+        "term": "Laser Notice #37",
+        "definition": "Guidance for industrial workstations large enough for person entry"
+      },
+      {
+        "term": "Fail-Safe Design",
+        "definition": "System fails to safe state, preventing radiation exposure"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.10(f)(1) - Protective housing",
+      "21 CFR 1040.10(f)(2) - Safety interlocks",
+      "Laser Notice #37 (October 21, 1985)"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Design compliant protective housings",
+      "Implement required safety interlocks",
+      "Understand industrial workstation special requirements",
+      "Identify common protective housing failures"
+    ],
+    "prerequisites": [
+      "Understanding of mechanical design",
+      "Pages 6-9 content"
+    ],
+    "estimated_study_time_minutes": 25,
+    "content_type": "performance_requirements",
+    "has_tables": false
+  }
+}

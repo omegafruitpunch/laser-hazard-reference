@@ -1,0 +1,636 @@
+{
+  "document": "lso-role.pdf",
+  "title": "Safety of Display Lasers - Guidance Document",
+  "type": "Comprehensive Safety Guide",
+  "edition": "1st Edition - April 2016",
+  "total_pages": 35,
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Laser Beam Hazards: How to Reduce Their Risk",
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "Managing Laser Safety",
+      "pages": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "Show Planning and System Design",
+      "pages": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "Installation and Alignment",
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "Pre Show Checks",
+      "pages": [
+        19,
+        20
+      ]
+    },
+    {
+      "chapter": 6,
+      "title": "Operation",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "chapter": 7,
+      "title": "Post Show",
+      "pages": [
+        21
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "page_num": 1,
+      "section": "Cover",
+      "core_concepts": [
+        "Document title and edition information"
+      ],
+      "key_terms": {
+        "Display Lasers": "Lasers used for entertainment and display purposes"
+      },
+      "difficulty": "beginner",
+      "learning_objectives": [
+        "Identify the document as official UK guidance"
+      ]
+    },
+    {
+      "page_num": 2,
+      "section": "Foreword - HSE",
+      "core_concepts": [
+        "Guidance produced by UK trade organizations",
+        "Based on HSE HS(G)95 (now withdrawn)"
+      ],
+      "key_terms": {
+        "HSE": "Health and Safety Executive",
+        "HS(G)95": "Previous radiation safety guidance"
+      },
+      "difficulty": "beginner",
+      "learning_objectives": [
+        "Understand the regulatory context of the guidance"
+      ]
+    },
+    {
+      "page_num": 3,
+      "section": "Acknowledgements",
+      "core_concepts": [
+        "Contributing organizations to the guidance"
+      ],
+      "key_terms": {
+        "PLASA": "Professional Lighting and Sound Association"
+      },
+      "difficulty": "beginner",
+      "learning_objectives": [
+        "Recognize industry stakeholders"
+      ]
+    },
+    {
+      "page_num": 4,
+      "section": "Index",
+      "core_concepts": [
+        "Document structure overview"
+      ],
+      "key_terms": {},
+      "difficulty": "beginner",
+      "learning_objectives": [
+        "Navigate the document structure"
+      ]
+    },
+    {
+      "page_num": 5,
+      "section": "Introduction",
+      "core_concepts": [
+        "Purpose and scope of the guidance",
+        "Target audience: all involved in laser displays",
+        "Four main laser beam hazards: eye damage, skin burns, ignition, distraction"
+      ],
+      "key_terms": {
+        "MPE": "Maximum Permissible Exposure",
+        "AEL": "Accessible Emission Limit"
+      },
+      "difficulty": "beginner",
+      "learning_objectives": [
+        "Identify the four main laser beam hazards",
+        "Understand when guidance becomes mandatory"
+      ]
+    },
+    {
+      "page_num": 6,
+      "section": "Chapter 1 - Laser Beam Hazards - Optical",
+      "core_concepts": [
+        "High radiant powers in entertainment lasers (200mW to 40W+)",
+        "MPE levels set by international bodies",
+        "Non-visible wavelengths are more hazardous",
+        "Scanning failure safety systems required"
+      ],
+      "key_terms": {
+        "Class 3B": "Medium/High power lasers - direct viewing hazardous",
+        "Class 4": "High power lasers - eye, skin and fire hazard",
+        "MPE": "Maximum Permissible Exposure - maximum safe exposure level"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Understand laser classification system",
+        "Identify optical hazards from display lasers"
+      ],
+      "prerequisites": [
+        "Basic understanding of laser power measurements"
+      ]
+    },
+    {
+      "page_num": 7,
+      "section": "Chapter 1 - Skin Burns, Fire Risks, Reflected Beams",
+      "core_concepts": [
+        "Skin burn and fire risks above 500mW",
+        "UV radiation additional skin exposure risk",
+        "Reflected beams equally hazardous as direct beams",
+        "Q-switched/pulsed lasers should not be used for audience exposure"
+      ],
+      "key_terms": {
+        "Specular Reflection": "Mirror-like reflection",
+        "Diffuse Reflection": "Scattered reflection from matte surfaces",
+        "Q-switched": "Laser producing short, intense pulses"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Identify skin and fire hazards",
+        "Understand differences between specular and diffuse reflection"
+      ]
+    },
+    {
+      "page_num": 8,
+      "section": "Chapter 1 - Other Laser Beam Hazards",
+      "core_concepts": [
+        "Equipment must be secured against displacement",
+        "Outdoor displays risk: distraction to motorists and pilots",
+        "CAA notification required for outdoor displays",
+        "Air Navigation Order compliance"
+      ],
+      "key_terms": {
+        "CAA": "Civil Aviation Authority",
+        "CAP 736": "CAA policy for outdoor laser operations"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Understand outdoor display risks",
+        "Know when CAA notification is required"
+      ]
+    },
+    {
+      "page_num": 9,
+      "section": "Chapter 2 - Managing Laser Safety - Roles",
+      "core_concepts": [
+        "Plan-Do-Check-Act methodology",
+        "Key roles: Client, Organiser, Venue, Installer, Supplier, LSO",
+        "LSO has executive responsibility for laser safety"
+      ],
+      "key_terms": {
+        "LSO": "Laser Safety Officer - executive responsibility",
+        "LSA": "Laser Safety Adviser - advisory only, no executive mandate"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Differentiate between LSO and LSA roles",
+        "Identify responsibilities of each role"
+      ]
+    },
+    {
+      "page_num": 10,
+      "section": "Chapter 2 - Operator Responsibilities",
+      "core_concepts": [
+        "Operators must be competent and understand safety procedures",
+        "Daily/weekly alignment checks required",
+        "Emergency shutdown procedures must be understood by all"
+      ],
+      "key_terms": {
+        "Competency": "Sufficient skills, knowledge and experience"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Understand operator competency requirements",
+        "Know what documentation is required at hand-over"
+      ]
+    },
+    {
+      "page_num": 11,
+      "section": "Chapter 2 - Liaising, Competency, Emergencies",
+      "core_concepts": [
+        "Local authority licensing requirements",
+        "E-stop testing before each performance",
+        "Eye injury response procedures",
+        "Amsler Grid for retinal assessment"
+      ],
+      "key_terms": {
+        "E-stop": "Emergency Stop button",
+        "SRCS": "Safety Related Control Systems"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Understand emergency procedures",
+        "Know eye injury response protocol"
+      ]
+    },
+    {
+      "page_num": 12,
+      "section": "Chapter 3 - Show Planning",
+      "core_concepts": [
+        "Laser displays created by galvanometer-mounted mirrors",
+        "Scanning frequency is key determinant of injury threshold",
+        "Safe programming techniques required",
+        "Installations with audience exposure must never be left unattended"
+      ],
+      "key_terms": {
+        "Galvanometer": "Scanner device with oscillating mirror",
+        "Scan-failure detection": "Automatic shutdown on scanner failure"
+      },
+      "difficulty": "advanced",
+      "learning_objectives": [
+        "Understand how scanning affects safety",
+        "Identify safe programming techniques"
+      ]
+    },
+    {
+      "page_num": 13,
+      "section": "Chapter 3 - Creative Brief and Location Assessment",
+      "core_concepts": [
+        "Personal exposure risks from fault conditions",
+        "Specular behavior assumed when in doubt",
+        "On-site verification of calculations required"
+      ],
+      "key_terms": {},
+      "difficulty": "advanced",
+      "learning_objectives": [
+        "Assess venue for laser hazards",
+        "Understand importance of on-site verification"
+      ]
+    },
+    {
+      "page_num": 14,
+      "section": "Chapter 3 - How Will It Be Done",
+      "core_concepts": [
+        "Hazardous accessible beams must be identified",
+        "Hand-over documentation requirements",
+        "Operator competency and training requirements"
+      ],
+      "key_terms": {},
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Know what must be included in hand-over documentation"
+      ]
+    },
+    {
+      "page_num": 15,
+      "section": "Chapter 3 - MPE Selection Table",
+      "core_concepts": [
+        "MPE selection based on audience/employee/performer",
+        "10 second minimum exposure for audience",
+        "0.25 second aversion response for employees with training"
+      ],
+      "key_terms": {
+        "Aversion Response": "Blink reflex and head movement (0.25 sec)"
+      },
+      "difficulty": "advanced",
+      "learning_objectives": [
+        "Apply appropriate MPE values for different exposure situations",
+        "Understand time base selection criteria"
+      ]
+    },
+    {
+      "page_num": 16,
+      "section": "Chapter 4 - Installation",
+      "core_concepts": [
+        "Control of Artificial Optical Radiation at Work Regulations 2010",
+        "Separation distances: 3m vertical, 2.5m lateral for supervised",
+        "6m vertical for unsupervised installations"
+      ],
+      "key_terms": {
+        "Separation Distances": "Minimum safe distances from audience"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Apply correct separation distances",
+        "Understand Control of Artificial Optical Radiation regulations"
+      ]
+    },
+    {
+      "page_num": 17,
+      "section": "Chapter 4 - Separation Distance Diagrams",
+      "core_concepts": [
+        "Visual diagrams of separation distances",
+        "Monitored vs unmonitored installation requirements"
+      ],
+      "key_terms": {},
+      "difficulty": "beginner",
+      "learning_objectives": [
+        "Visualize separation distance requirements"
+      ]
+    },
+    {
+      "page_num": 18,
+      "section": "Chapter 4 - Alignment and Programming",
+      "core_concepts": [
+        "Beams reduced below MPE during alignment",
+        "Access restricted to alignment personnel only",
+        "Changes require LSO agreement",
+        "Programming ideally done prior to installation"
+      ],
+      "key_terms": {},
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Follow safe alignment procedures",
+        "Understand programming safety requirements"
+      ]
+    },
+    {
+      "page_num": 19,
+      "section": "Chapter 5 - Pre Show Checks",
+      "core_concepts": [
+        "Visual and physical checks required",
+        "Daily alignment checks",
+        "E-stop must be tested before each performance",
+        "Scan failure safety systems must be demonstrated"
+      ],
+      "key_terms": {},
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Complete pre-show safety checklist",
+        "Test emergency systems"
+      ]
+    },
+    {
+      "page_num": 20,
+      "section": "Chapter 5 - Sign Off",
+      "core_concepts": [
+        "Documentation of hand-over stages",
+        "Installer confirms installation is safe",
+        "Organiser/venue confirms understanding"
+      ],
+      "key_terms": {},
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Understand sign-off responsibilities"
+      ]
+    },
+    {
+      "page_num": 21,
+      "section": "Chapters 6-7 - Operation and Post Show",
+      "core_concepts": [
+        "Monitoring during show",
+        "Vigilance for equipment failure or audience unruliness",
+        "Post-show incident recording",
+        "Dismantling safety considerations"
+      ],
+      "key_terms": {},
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Monitor laser shows effectively",
+        "Complete post-show documentation"
+      ]
+    },
+    {
+      "page_num": 22,
+      "section": "Appendix A - Glossary (Part 1)",
+      "core_concepts": [
+        "MPE values for different time bases",
+        "Simplified MPE of 10 W/m2 (1 mW/cm2) for 400-700nm"
+      ],
+      "key_terms": {
+        "MPE 0.25s": "2.54 mW/cm2",
+        "MPE 10s": "1.01 mW/cm2",
+        "Skin MPE": "200 mW/cm2"
+      },
+      "difficulty": "advanced",
+      "learning_objectives": [
+        "Calculate appropriate MPE values",
+        "Apply safety factors for children"
+      ]
+    },
+    {
+      "page_num": 23,
+      "section": "Appendix A - Glossary (Part 2)",
+      "core_concepts": [
+        "Key laser terminology definitions"
+      ],
+      "key_terms": {
+        "Aversion Response": "0.25 second blink/head movement",
+        "Beam Divergence": "Angle of beam spread in radians",
+        "Collimated Light": "Parallel light rays"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Define key laser safety terms"
+      ]
+    },
+    {
+      "page_num": 24,
+      "section": "Appendix A - Glossary (Part 3)",
+      "core_concepts": [
+        "Display laser product definitions"
+      ],
+      "key_terms": {
+        "Effects Head": "Optical processing components",
+        "Scanning": "Time-varying beam direction"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Understand display laser equipment terminology"
+      ]
+    },
+    {
+      "page_num": 25,
+      "section": "Appendix A - Glossary (Part 4)",
+      "core_concepts": [
+        "Laser system and safety component definitions"
+      ],
+      "key_terms": {
+        "NOHD": "Nominal Ocular Hazard Distance",
+        "Q-Switch": "Device for short intense pulses"
+      },
+      "difficulty": "advanced",
+      "learning_objectives": [
+        "Define technical laser components"
+      ]
+    },
+    {
+      "page_num": 26,
+      "section": "Appendix A - Glossary (Part 5)",
+      "core_concepts": [
+        "Scanner and safety enclosure definitions"
+      ],
+      "key_terms": {
+        "Scanner": "Galvanometer with oscillating mirror",
+        "Zero Diffracted Order": "Highest power reflected beam from grating"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Understand scanning system terminology"
+      ]
+    },
+    {
+      "page_num": 27,
+      "section": "Appendix B - Types of Lasers",
+      "core_concepts": [
+        "OPSL: Optically Pumped Semiconductor Laser",
+        "DPSS: Diode Pumped Solid State",
+        "Gas lasers: Water-cooled, less common now"
+      ],
+      "key_terms": {
+        "OPSL": "1W-12W, good beam profile, 460-639nm",
+        "DPSS": "200mW-10W, 532nm green",
+        "Diode": "1mW-2W each, arrays up to 30W+"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Identify different laser types used in displays"
+      ]
+    },
+    {
+      "page_num": 28,
+      "section": "Appendix C - Laser Classification",
+      "core_concepts": [
+        "Class 1: Safe under normal conditions",
+        "Class 2: Low power, blink reflex protection",
+        "Class 3R: Low/Medium power, up to 5x Class 1/2 AEL",
+        "Class 3B: Direct viewing always hazardous",
+        "Class 4: High power, all reflections hazardous"
+      ],
+      "key_terms": {
+        "Class 2 AEL": "1mW continuous wave",
+        "Class 3B AEL": "500mW continuous wave"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Classify lasers according to BS EN 60825",
+        "Understand Accessible Emission Limits"
+      ]
+    },
+    {
+      "page_num": 29,
+      "section": "Appendix D - Case Study 1: Outdoor Music Festival",
+      "core_concepts": [
+        "4x10W laser systems outdoor festival setup",
+        "MPE measurement and verification process",
+        "Decision to disconnect misaligned laser"
+      ],
+      "key_terms": {},
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Apply safety procedures in real-world scenario",
+        "Make go/no-go decisions"
+      ]
+    },
+    {
+      "page_num": 30,
+      "section": "Appendix D - Case Study 2: Indoor Corporate Event",
+      "core_concepts": [
+        "Indoor arena with performers",
+        "Communication failures between organizer and supplier",
+        "Adaptation to last-minute changes"
+      ],
+      "key_terms": {},
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Identify communication importance",
+        "Handle changes during events"
+      ]
+    },
+    {
+      "page_num": 31,
+      "section": "Appendix D - Case Study 3: Nightclub Installation",
+      "core_concepts": [
+        "Permanent installation design considerations",
+        "Beam termination vs audience scanning decision",
+        "LSO appointment for permanent installations"
+      ],
+      "key_terms": {},
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Design safe permanent installations"
+      ]
+    },
+    {
+      "page_num": 32,
+      "section": "Appendix D - Case Study 4: Mobile Disco",
+      "core_concepts": [
+        "Low power (500mW) mobile DJ setup",
+        "Simple safety rules for small venues",
+        "Refusing unsafe client requests"
+      ],
+      "key_terms": {},
+      "difficulty": "beginner",
+      "learning_objectives": [
+        "Apply basic safety for small venues"
+      ]
+    },
+    {
+      "page_num": 33,
+      "section": "Appendix E - Contacts",
+      "core_concepts": [
+        "CAA contact information",
+        "Local authority finder",
+        "BSI standards purchase"
+      ],
+      "key_terms": {},
+      "difficulty": "beginner",
+      "learning_objectives": [
+        "Know where to find regulatory contacts"
+      ]
+    },
+    {
+      "page_num": 34,
+      "section": "Appendix F - Amsler Grid",
+      "core_concepts": [
+        "Self-test for retinal damage",
+        "6-step testing procedure"
+      ],
+      "key_terms": {
+        "Amsler Grid": "Visual field test grid"
+      },
+      "difficulty": "beginner",
+      "learning_objectives": [
+        "Perform Amsler Grid test"
+      ]
+    },
+    {
+      "page_num": 35,
+      "section": "Appendix G - Bibliography",
+      "core_concepts": [
+        "Relevant UK legislation and standards",
+        "European directives"
+      ],
+      "key_terms": {
+        "Control of Artificial Optical Radiation at Work Regulations 2010": "UK laser worker protection law"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Identify applicable legislation"
+      ]
+    }
+  ]
+}

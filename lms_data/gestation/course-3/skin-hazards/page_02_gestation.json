@@ -1,0 +1,27 @@
+{
+  "page_num": 2,
+  "source_pdf": "skin-hazards.pdf",
+  "digestion": {
+    "summary": "MECHANISMS OF LASER SKIN INJURY\n\nTHERMAL EFFECTS:\nMost common mechanism for infrared and visible lasers.\n- Protein denaturation at 45-50°C\n- Cell death at temperatures >60°C\n- Coagulation necrosis\n- C...",
+    "key_concepts": [
+      "thermal effects",
+      "photochemical effects",
+      "DNA damage"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "MECHANISMS OF LASER SKIN INJURY\n\nTHERMAL EFFECTS:\nMost common mechanism for infrared and visible lasers.\n- Protein denaturation at 45-50°C\n- Cell death at temperatures >60°C\n- Coagulation necrosis\n- Collagen shrinkage in dermis\n- Vaporization at very high energies\n\nPHOTOCHEMICAL EFFECTS:\nPredominant for UV wavelengths.\n- DNA absorption at 250-260 nm\n- Pyrimidine dimer formation\n- Direct molecular bond breaking\n- Free radical generation\n- Photosensitization reactions\n\nPHOTOACOUSTIC/MECHANICAL EFFECTS:\nFrom short-pulse lasers.\n- Stress confinement (pulse shorter than thermal relaxation)\n- Shock wave generation\n- Tissue fragmentation\n- Can cause injury beyond thermal damage zone\n\nELECTROMECHANICAL EFFECTS:\nFrom very short pulses (femtoseconds).\n- Plasma formation\n- Dielectric breakdown\n- Cavitation bubble formation\n",
+    "analogies": [
+      "Laser skin burns are similar to thermal burns but can be more precisely localized."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Use protective gloves and long sleeves when operating high-power lasers.",
+      "UV laser exposure has cumulative effects similar to sun damage - use full coverage PPE."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.121947"
+}

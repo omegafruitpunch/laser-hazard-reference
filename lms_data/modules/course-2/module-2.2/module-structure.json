@@ -1,0 +1,228 @@
+{
+  "module_id": "course-2-module-2.2",
+  "module_number": "2.2",
+  "title": "Laser Product Classification (FDA)",
+  "course": "Course 2: FDA Compliance",
+  "version": "1.0",
+  "created_by": "Module Builder Agent C2-A",
+  "created_date": "2026-03-19",
+  
+  "learning_objectives": [
+    "Distinguish between FDA laser product classes (I, IIa, II, IIIa, IIIb, IV)",
+    "Calculate accessible emission limits (AELs) for classification",
+    "Apply measurement parameters per 21 CFR 1040.10(e)",
+    "Identify required controls, indicators, and warnings for each class",
+    "Determine classification based on laser specifications"
+  ],
+  
+  "module_structure": {
+    "total_lessons": 4,
+    "estimated_duration_minutes": 40,
+    "difficulty_level": "intermediate",
+    "prerequisites": [
+      "Module 2.1: FDA Regulatory Framework",
+      "Understanding of basic laser parameters (power, wavelength, divergence)"
+    ]
+  },
+  
+  "lessons": [
+    {
+      "lesson_id": "2.2.1",
+      "title": "Understanding FDA Classes",
+      "duration_minutes": 10,
+      "type": "conceptual",
+      "components": ["classification_pyramid", "class_comparison", "misconception_check"]
+    },
+    {
+      "lesson_id": "2.2.2",
+      "title": "Accessible Emission Limits",
+      "duration_minutes": 10,
+      "type": "technical",
+      "components": ["ael_calculator", "measurement_parameters", "wavelength_factors"]
+    },
+    {
+      "lesson_id": "2.2.3",
+      "title": "Classification Decision Tree",
+      "duration_minutes": 10,
+      "type": "procedural",
+      "components": ["interactive_flowchart", "classification_wizard", "practice_cases"]
+    },
+    {
+      "lesson_id": "2.2.4",
+      "title": "Requirements by Class",
+      "duration_minutes": 10,
+      "type": "application",
+      "components": ["requirements_matrix", "drag_drop_exercise", "mastery_assessment"]
+    }
+  ],
+  
+  "interactive_components": {
+    "classification_flowchart": {
+      "id": "classification_wizard",
+      "type": "decision_tree",
+      "title": "FDA Laser Classification Wizard",
+      "description": "Interactive decision tree to determine the FDA classification of any laser product",
+      "decision_nodes": [
+        {
+          "id": "start",
+          "question": "What is the wavelength of the laser?",
+          "type": "wavelength_selection",
+          "options": [
+            {"label": "UV (180-400 nm)", "next": "uv_duration"},
+            {"label": "Visible (400-710 nm)", "next": "visible_duration"},
+            {"label": "IR-A (710-1400 nm)", "next": "ira_duration"},
+            {"label": "IR-B/C (1400 nm - 1 mm)", "next": "irbc_duration"}
+          ]
+        },
+        {
+          "id": "visible_duration",
+          "question": "What is the exposure duration?",
+          "type": "duration_selection",
+          "branches": [
+            {"condition": "t > 0.25s", "next": "class_2_check"},
+            {"condition": "t <= 0.25s", "next": "class_1_check"}
+          ]
+        },
+        {
+          "id": "class_2_check",
+          "question": "For visible, long-duration emissions:",
+          "type": "power_check",
+          "formula": "P <= 1 mW (continuous)",
+          "yes_result": "Class II",
+          "no_next": "class_3_check"
+        },
+        {
+          "id": "class_3_check",
+          "question": "Check Class IIIa limit:",
+          "type": "power_check",
+          "formula": "P <= 5 mW (total collectable radiant power)",
+          "yes_result": "Class IIIa",
+          "no_next": "class_3b_check"
+        },
+        {
+          "id": "class_3b_check",
+          "question": "Check Class IIIb limit:",
+          "type": "power_check", 
+          "formula": "P <= 500 mW (visible) or check AEL tables",
+          "yes_result": "Class IIIb",
+          "no_result": "Class IV"
+        }
+      ]
+    },
+    
+    "ael_calculator": {
+      "id": "ael_calculator",
+      "type": "interactive_calculator",
+      "title": "Accessible Emission Limit Calculator",
+      "description": "Calculate AELs based on wavelength and emission duration",
+      "inputs": [
+        {"name": "wavelength", "label": "Wavelength (nm)", "type": "number", "min": 180, "max": 1000000},
+        {"name": "duration", "label": "Emission Duration (seconds)", "type": "number", "min": 0.000000001, "max": 100000},
+        {"name": "beam_diameter", "label": "Beam Diameter at Aperture (mm)", "type": "number", "default": 1}
+      ],
+      "outputs": [
+        {"name": "class_1_ael", "label": "Class I AEL"},
+        {"name": "class_2_ael", "label": "Class II AEL (visible only)"},
+        {"name": "class_3a_ael", "label": "Class IIIa AEL"},
+        {"name": "recommended_class", "label": "Recommended Classification"}
+      ]
+    },
+    
+    "requirements_matrix": {
+      "id": "requirements_matrix",
+      "type": "interactive_table",
+      "title": "FDA Requirements by Laser Class",
+      "description": "Side-by-side comparison of requirements for each FDA laser class",
+      "columns": ["Requirement", "Class I", "Class IIa", "Class II", "Class IIIa", "Class IIIb", "Class IV"],
+      "rows": [
+        {
+          "requirement": "Protective Housing",
+          "class_1": "Required",
+          "class_2a": "Required",
+          "class_2": "Required",
+          "class_3a": "Required",
+          "class_3b": "Required",
+          "class_4": "Required"
+        },
+        {
+          "requirement": "Safety Interlocks",
+          "class_1": "Conditional",
+          "class_2a": "Conditional",
+          "class_2": "Conditional",
+          "class_3a": "Conditional",
+          "class_3b": "Required + Fail-safe",
+          "class_4": "Required + Fail-safe"
+        },
+        {
+          "requirement": "Remote Interlock Connector",
+          "class_1": "N/A",
+          "class_2a": "N/A",
+          "class_2": "N/A",
+          "class_3a": "N/A",
+          "class_3b": "Required",
+          "class_4": "Required"
+        },
+        {
+          "requirement": "Key Control",
+          "class_1": "N/A",
+          "class_2a": "N/A",
+          "class_2": "N/A",
+          "class_3a": "N/A",
+          "class_3b": "Required",
+          "class_4": "Required"
+        },
+        {
+          "requirement": "Emission Indicator",
+          "class_1": "N/A",
+          "class_2a": "N/A",
+          "class_2": "Required",
+          "class_3a": "Required",
+          "class_3b": "Required + Delay",
+          "class_4": "Required + Delay"
+        },
+        {
+          "requirement": "Beam Attenuator",
+          "class_1": "N/A",
+          "class_2a": "N/A",
+          "class_2": "Required",
+          "class_3a": "Required",
+          "class_3b": "Required",
+          "class_4": "Required"
+        },
+        {
+          "requirement": "Warning Logotype",
+          "class_1": "N/A",
+          "class_2a": "Statement only",
+          "class_2": "CAUTION",
+          "class_3a": "CAUTION or DANGER",
+          "class_3b": "DANGER",
+          "class_4": "DANGER"
+        },
+        {
+          "requirement": "Aperture Label",
+          "class_1": "N/A",
+          "class_2a": "N/A",
+          "class_2": "Required",
+          "class_3a": "Required",
+          "class_3b": "Required",
+          "class_4": "Required"
+        },
+        {
+          "requirement": "Manual Reset",
+          "class_1": "N/A",
+          "class_2a": "N/A",
+          "class_2": "N/A",
+          "class_3a": "N/A",
+          "class_3b": "N/A",
+          "class_4": "Required (post-1986)"
+        }
+      ]
+    }
+  },
+  
+  "assessment": {
+    "quiz_questions": 5,
+    "passing_score": 80,
+    "mastery_badge": "Classification Expert"
+  }
+}

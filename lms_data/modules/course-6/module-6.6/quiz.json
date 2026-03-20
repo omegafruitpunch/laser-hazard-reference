@@ -1,0 +1,232 @@
+{
+  "quiz_id": "quiz_6_6",
+  "module_id": "6.6",
+  "title": "Module 6.6: NOTAM Procedures & Emergency Protocols - Assessment",
+  "description": "Assessment of knowledge for NOTAM procedures and emergency response",
+  "version": "1.0.0",
+  "time_limit_minutes": 50,
+  "passing_score": 90,
+  "attempts_allowed": 3,
+  "randomize_questions": true,
+  "randomize_options": true,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Knowledge",
+      "learning_objective": "6.6.1",
+      "text": "What is the exposure limit for visible laser light in the Laser-Free Zone (LFZ)?",
+      "options": [
+        {"id": "a", "text": "5 µW/cm²", "correct": false},
+        {"id": "b", "text": "50 nW/cm²", "correct": true},
+        {"id": "c", "text": "100 µW/cm²", "correct": false},
+        {"id": "d", "text": "2.6 mW/cm²", "correct": false}
+      ],
+      "explanation": "The Laser-Free Zone limit is 50 nW/cm² (nanowatts per square centimeter), the most restrictive of the flight zones."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Application",
+      "learning_objective": "6.6.3",
+      "text": "How quickly must the emergency stop be activated after an observer reports an aircraft?",
+      "options": [
+        {"id": "a", "text": "Within 5 seconds", "correct": false},
+        {"id": "b", "text": "Within 2 seconds", "correct": true},
+        {"id": "c", "text": "Within 10 seconds", "correct": false},
+        {"id": "d", "text": "Immediately upon ATC confirmation", "correct": false}
+      ],
+      "explanation": "The emergency stop must be activated IMMEDIATELY - within 2 seconds is considered the maximum acceptable response time."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "learning_objective": "6.6.2",
+      "text": "What does 'LAS' mean in a NOTAM?",
+      "options": [
+        {"id": "a", "text": "Local Airport System", "correct": false},
+        {"id": "b", "text": "Laser Activity/System", "correct": false},
+        {"id": "c", "text": "Laser", "correct": true},
+        {"id": "d", "text": "Light Aircraft Separation", "correct": false}
+      ],
+      "explanation": "'LAS' in a NOTAM indicates laser activity. It is the keyword that alerts pilots to laser operations in the area."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Application",
+      "learning_objective": "6.6.1",
+      "text": "On FAA Form 7140-1, what value should be entered in Section 12b (MPE) for a continuous wave visible laser?",
+      "options": [
+        {"id": "a", "text": "0.25", "correct": false},
+        {"id": "b", "text": "1.0", "correct": false},
+        {"id": "c", "text": "2.6", "correct": true},
+        {"id": "d", "text": "5.0", "correct": false}
+      ],
+      "explanation": "For continuous wave visible lasers (400-700nm), the MPE value is 2.6 mW/cm² for 0.25 second exposure."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Knowledge",
+      "learning_objective": "6.6.4",
+      "text": "Who should be contacted FIRST if a pilot reports being illuminated by a laser during your show?",
+      "options": [
+        {"id": "a", "text": "Local law enforcement", "correct": false},
+        {"id": "b", "text": "FAA Administrator", "correct": false},
+        {"id": "c", "text": "Your insurance company", "correct": false},
+        {"id": "d", "text": "FAA and local ATC", "correct": true}
+      ],
+      "explanation": "The FAA and ATC should be contacted first for any laser illumination incident. They will coordinate with law enforcement if needed."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Application",
+      "learning_objective": "6.6.3",
+      "text": "During an emergency shutdown, in what order should actions be taken?",
+      "options": [
+        {"id": "a", "text": "Contact ATC, verify shutdown, document, assess restart", "correct": false},
+        {"id": "b", "text": "Activate emergency stop, verify all beams off, contact ATC, await all-clear", "correct": true},
+        {"id": "c", "text": "Document incident, shutdown equipment, notify promoter, contact FAA", "correct": false},
+        {"id": "d", "text": "Assess situation, contact supervisor, shutdown if approved, file report", "correct": false}
+      ],
+      "explanation": "The correct sequence is: immediate emergency stop, verify shutdown, contact ATC, await all-clear before any restart consideration."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "learning_objective": "6.6.1",
+      "text": "What is the formula for calculating CZED (Critical Zone Exposure Distance) from SZED?",
+      "options": [
+        {"id": "a", "text": "CZED = SZED × 2.23", "correct": false},
+        {"id": "b", "text": "CZED = SZED × 4.47", "correct": true},
+        {"id": "c", "text": "CZED = SZED × 10.0", "correct": false},
+        {"id": "d", "text": "CZED = SZED × 44.7", "correct": false}
+      ],
+      "explanation": "CZED = SZED × 4.47. The LFED is SZED × 44.7. These relationships are constant multipliers."
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Synthesis",
+      "learning_objective": "6.6.4",
+      "text": "A police helicopter is investigating a report and flies through your protected airspace. You did NOT illuminate them. What should you do?",
+      "options": [
+        {"id": "a", "text": "Continue the show - you're not involved", "correct": false},
+        {"id": "b", "text": "Immediately shutdown, verify beams are off, document the incursion", "correct": true},
+        {"id": "c", "text": "Contact police and explain you're authorized", "correct": false},
+        {"id": "d", "text": "Redirect beams away from the helicopter", "correct": false}
+      ],
+      "explanation": "Regardless of whether you caused the report, any aircraft incursion requires immediate shutdown to ensure safety and demonstrate responsibility."
+    },
+    {
+      "id": "q9",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Knowledge",
+      "learning_objective": "6.6.2",
+      "text": "How long should a NOTAM remain active after the laser operation concludes?",
+      "options": [
+        {"id": "a", "text": "Until the end of the day", "correct": false},
+        {"id": "b", "text": "Until explicitly cancelled", "correct": false},
+        {"id": "c", "text": "Only during actual operation times", "correct": true},
+        {"id": "d", "text": "24 hours after the last operation", "correct": false}
+      ],
+      "explanation": "NOTAMs are issued for specific date/time ranges and automatically expire. They should only be active during actual operation times."
+    },
+    {
+      "id": "q10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Analysis",
+      "learning_objective": "6.6.1",
+      "text": "If the NOHD calculation is LESS than the SZED for a visible laser, which distance determines the safety perimeter?",
+      "options": [
+        {"id": "a", "text": "NOHD - eye injury is the primary concern", "correct": true},
+        {"id": "b", "text": "SZED - visual interference takes precedence", "correct": false},
+        {"id": "c", "text": "The average of NOHD and SZED", "correct": false},
+        {"id": "d", "text": "The longer of the two distances", "correct": false}
+      ],
+      "explanation": "When NOHD < SZED, enter 'Less than NOHD' in SZED cells. The NOHD is always the primary safety distance for eye protection."
+    },
+    {
+      "id": "q11",
+      "type": "multiple_select",
+      "difficulty": "hard",
+      "blooms_level": "Evaluation",
+      "learning_objective": "6.6.3",
+      "text": "Which of the following are triggers for immediate emergency shutdown? (Select all that apply)",
+      "options": [
+        {"id": "a", "text": "Aircraft reported by observer", "correct": true},
+        {"id": "b", "text": "Scan-failure protection malfunction", "correct": true},
+        {"id": "c", "text": "Weather visibility drops to 2 miles", "correct": true},
+        {"id": "d", "text": "Promoter requests extended show", "correct": false},
+        {"id": "e", "text": "Lightning detected 8 miles away", "correct": true},
+        {"id": "f", "text": "Equipment making unusual noise", "correct": true}
+      ],
+      "explanation": "All of these except promoter request are valid shutdown triggers. Safety always takes priority over show continuation."
+    },
+    {
+      "id": "q12",
+      "type": "true_false",
+      "difficulty": "easy",
+      "blooms_level": "Knowledge",
+      "learning_objective": "6.6.2",
+      "text": "A NOTAM can be filed on the same day as the laser operation.",
+      "correct_answer": false,
+      "explanation": "NOTAMs should be filed at least 3 days in advance. Same-day filing is not acceptable for planned operations."
+    },
+    {
+      "id": "q13",
+      "type": "fill_in_blank",
+      "difficulty": "medium",
+      "blooms_level": "Application",
+      "learning_objective": "6.6.1",
+      "text": "The conversion factor used to calculate NOHD slant range in feet is ______.",
+      "correct_answer": "32.8",
+      "acceptable_answers": ["32.8", "32.8 feet", "thirty-two point eight"],
+      "explanation": "The constant 32.8 converts centimeters to feet and radians to milliradians in the NOHD formula."
+    },
+    {
+      "id": "q14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Synthesis",
+      "learning_objective": "6.6.4",
+      "text": "Following an emergency shutdown, when can you resume operations?",
+      "options": [
+        {"id": "a", "text": "Immediately when aircraft passes", "correct": false},
+        {"id": "b", "text": "After 5 minutes regardless of aircraft status", "correct": false},
+        {"id": "c", "text": "Only after all observers confirm airspace clear", "correct": true},
+        {"id": "d", "text": "When ATC gives verbal permission", "correct": false}
+      ],
+      "explanation": "All observers must confirm clear airspace before resuming. ATC notification is good practice but observer confirmation is mandatory."
+    },
+    {
+      "id": "q15",
+      "type": "matching",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "learning_objective": "6.6.1",
+      "text": "Match the protection distance with its description:",
+      "pairs": [
+        {"distance": "NOHD", "description": "Eye injury hazard distance"},
+        {"distance": "SZED", "description": "Flashblindness hazard distance"},
+        {"distance": "CZED", "description": "Glare hazard distance"},
+        {"distance": "LFED", "description": "Distraction hazard distance"}
+      ],
+      "explanation": "Understanding the four protection distances is fundamental to completing FAA Form 7140-1 correctly."
+    }
+  ]
+}

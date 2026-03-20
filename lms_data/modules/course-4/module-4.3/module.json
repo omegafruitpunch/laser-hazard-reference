@@ -1,0 +1,20 @@
+{
+  "module_id": "4.3",
+  "course_id": "course-4",
+  "title": "Module 4.3: Illinois & Massachusetts Regulations",
+  "subtitle": "Comprehensive State Regulatory Frameworks",
+  "description": "Explore the detailed laser safety regulations of Illinois and Massachusetts, including registration requirements, LSO qualifications, entertainment laser provisions, and enforcement mechanisms.",
+  "learning_objectives": [
+    "Identify the regulatory authorities and legal foundations for Illinois and Massachusetts laser regulations",
+    "Understand registration requirements, fees, and notification procedures for both states",
+    "Compare LSO qualification requirements between Illinois and Massachusetts",
+    "Apply entertainment laser show requirements for interstate operations",
+    "Analyze enforcement mechanisms and penalty structures"
+  ],
+  "duration_minutes": 45,
+  "difficulty": "intermediate",
+  "states_covered": ["illinois", "massachusetts"],
+  "prerequisites": ["module-4.1", "module-4.2"],
+  "version": "1.0.0",
+  "last_updated": "2026-03-19"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "ocular-hazards_q001",
+  "type": "multiple_choice",
+  "question": "Which wavelength range is known as the 'retinal hazard region'?",
+  "options": [
+    "100-280 nm",
+    "280-315 nm",
+    "400-1400 nm",
+    "1400 nm - 1 mm"
+  ],
+  "correct": 2,
+  "explanation": "The retinal hazard region (400-1400 nm) includes visible light and near-infrared wavelengths that transmit through the ocular media and focus on the retina."
+}

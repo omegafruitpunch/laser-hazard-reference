@@ -1,0 +1,252 @@
+{
+  "component_id": "mpe_table_navigator",
+  "name": "MPE Table Navigator",
+  "version": "1.0.0",
+  "type": "interactive_table",
+  "description": "Interactive MPE table with filtering, lookup, and visualization for eye and skin exposure limits",
+  "pedagogical_approach": {
+    "concept_first": true,
+    "progressive_disclosure": true,
+    "visual_guidance": true,
+    "contextual_help": true
+  },
+  "configuration": {
+    "initial_view": {
+      "exposure_type": "eye",
+      "wavelength_region": "visible",
+      "exposure_duration": "0.25"
+    },
+    "tabs": [
+      {
+        "id": "eye",
+        "label": "Eye MPE",
+        "description": "Maximum Permissible Exposure for ocular exposure",
+        "icon": "eye"
+      },
+      {
+        "id": "skin",
+        "label": "Skin MPE",
+        "description": "Maximum Permissible Exposure for skin exposure",
+        "icon": "hand"
+      },
+      {
+        "id": "comparison",
+        "label": "Eye vs Skin",
+        "description": "Compare eye and skin MPE values",
+        "icon": "scale"
+      }
+    ]
+  },
+  "data_tables": {
+    "eye_visible": {
+      "title": "Eye MPE - Visible Range (400-700 nm)",
+      "reference": "IEC 60825-1:2014 Table A.1, ANSI Z136.1-2022 Table 5a",
+      "exposure_durations": [
+        {"value": 1e-13, "label": "1 fs", "description": "Ultrashort pulse"},
+        {"value": 1e-9, "label": "1 ns", "description": "Q-switched pulse"},
+        {"value": 1e-6, "label": "1 μs", "description": "Short pulse"},
+        {"value": 1e-3, "label": "1 ms", "description": "Long pulse"},
+        {"value": 0.25, "label": "0.25 s", "description": "Blink reflex time"},
+        {"value": 10, "label": "10 s", "description": "Momentary viewing"},
+        {"value": 100, "label": "100 s", "description": "Extended viewing"},
+        {"value": 30000, "label": "8 hours", "description": "Occupational exposure"}
+      ],
+      "formulas": {
+        "point_source": {
+          "description": "Point source viewing (intrabeam)",
+          "formula": "MPE = 1.8 × t^0.75 × 10^-3 J/cm² (for 10^-13 to 10 s)",
+          "units": "J/cm²"
+        },
+        "extended_source": {
+          "description": "Extended source viewing (diffuse reflection)",
+          "formula": "MPE = 10 × 10^-3 J/cm² (for 10^-13 to 10 s)",
+          "units": "J/cm²"
+        },
+        "cw_long": {
+          "description": "CW exposure >10 seconds",
+          "formula": "MPE = 1.0 mW/cm² or 10 mJ/cm²",
+          "units": "mW/cm² or mJ/cm²"
+        }
+      },
+      "sample_values": [
+        {"duration": 0.25, "mpe": 0.64, "units": "mJ/cm²", "context": "Blink reflex protection"},
+        {"duration": 10, "mpe": 10, "units": "mJ/cm²", "context": "Momentary intentional viewing"},
+        {"duration": 30000, "mpe": 1.0, "units": "mW/cm²", "context": "Full workday exposure"}
+      ]
+    },
+    "eye_near_ir": {
+      "title": "Eye MPE - Near-Infrared (700-1400 nm)",
+      "reference": "IEC 60825-1:2014 Table A.1",
+      "correction_factors": {
+        "ca": {
+          "name": "CA",
+          "description": "Wavelength correction factor for retinal hazard",
+          "formula": "CA = 10^[0.002(λ-700)] for 700-1050 nm",
+          "formula_2": "CA = 5.0 for 1050-1400 nm",
+          "values": [
+            {"wavelength": 700, "ca": 1.0},
+            {"wavelength": 800, "ca": 1.58},
+            {"wavelength": 900, "ca": 2.51},
+            {"wavelength": 1064, "ca": 5.0},
+            {"wavelength": 1400, "ca": 5.0}
+          ]
+        }
+      },
+      "formulas": {
+        "base_mpe": "MPE = CA × (visible MPE)",
+        "explanation": "Near-IR MPE is the visible MPE multiplied by CA factor"
+      }
+    },
+    "eye_uv": {
+      "title": "Eye MPE - Ultraviolet (180-400 nm)",
+      "reference": "IEC 60825-1:2014 Table A.1",
+      "mechanism": "Photochemical damage to cornea",
+      "formulas": {
+        "uv_b_c": {
+          "range": "180-315 nm",
+          "formula": "MPE = 30 J/m² (for 8 hour exposure)",
+          "note": "Time-independent for short exposures"
+        },
+        "uv_a": {
+          "range": "315-400 nm",
+          "formula": "MPE = 10,000 × t^0.5 J/m² (for 10^-9 to 10 s)",
+          "formula_2": "MPE = 1.0 W/m² (for >10 s)"
+        }
+      }
+    },
+    "skin_all": {
+      "title": "Skin MPE - All Wavelengths",
+      "reference": "IEC 60825-1:2014 Table A.2",
+      "note": "Skin MPEs are significantly higher than eye MPEs for most wavelengths",
+      "regions": [
+        {
+          "wavelength": "UV (180-400 nm)",
+          "daily_limit": "3 mJ/cm² to 1.0 J/cm² (wavelength dependent)",
+          "note": "Erythemal action spectrum applies"
+        },
+        {
+          "wavelength": "Visible & IR (400-1400 nm)",
+          "cw_limit": "0.2 W/cm² (for 10 s to 8 hours)",
+          "note": "20× higher than eye MPE"
+        },
+        {
+          "wavelength": "Far-IR (>1400 nm)",
+          "limit": "Similar to visible range",
+          "note": "Surface heating effect"
+        }
+      ]
+    }
+  },
+  "interactive_features": {
+    "wavelength_selector": {
+      "type": "slider_with_spectrum",
+      "range": [180, 10000],
+      "default": 532,
+      "highlight_regions": [
+        {"name": "UV-C", "range": [180, 280], "color": "#8b5cf6"},
+        {"name": "UV-B", "range": [280, 315], "color": "#a855f7"},
+        {"name": "UV-A", "range": [315, 400], "color": "#c084fc"},
+        {"name": "Visible", "range": [400, 700], "color": "#22c55e"},
+        {"name": "Near-IR", "range": [700, 1400], "color": "#ef4444"},
+        {"name": "Mid-IR", "range": [1400, 3000], "color": "#f97316"},
+        {"name": "Far-IR", "range": [3000, 10000], "color": "#eab308"}
+      ]
+    },
+    "duration_selector": {
+      "type": "logarithmic_slider",
+      "range": [-13, 4.5],
+      "unit": "seconds",
+      "presets": [
+        {"value": 1e-13, "label": "1 fs", "description": "Femtosecond pulse"},
+        {"value": 1e-9, "label": "1 ns", "description": "Q-switched"},
+        {"value": 1e-6, "label": "1 μs", "description": "Microsecond pulse"},
+        {"value": 1e-3, "label": "1 ms", "description": "Millisecond pulse"},
+        {"value": 0.25, "label": "0.25 s", "description": "Blink reflex"},
+        {"value": 10, "label": "10 s", "description": "Momentary"},
+        {"value": 30000, "label": "8 hr", "description": "Workday"}
+      ]
+    },
+    "calculation_display": {
+      "show_formula": true,
+      "show_intermediate_steps": true,
+      "show_applied_correction_factors": true,
+      "visual_representation": "gauge_chart"
+    },
+    "hazard_comparison": {
+      "enabled": true,
+      "compare_eye_vs_skin": true,
+      "safety_factor_display": true
+    }
+  },
+  "teaching_elements": {
+    "concept_introduction": {
+      "title": "Understanding MPE",
+      "content": "Maximum Permissible Exposure (MPE) is the level of laser radiation to which a person may be exposed without hazardous effect. Think of it as a 'safety speed limit' - staying below this limit prevents injury.",
+      "visual": "mpe_concept_diagram"
+    },
+    "key_insights": [
+      {
+        "title": "Eye vs Skin MPE",
+        "content": "Eye MPEs are typically 10-20× more conservative than skin MPEs because the eye focuses light onto the retina, concentrating energy by up to 100,000×.",
+        "visual": "eye_focus_diagram"
+      },
+      {
+        "title": "Exposure Duration Matters",
+        "content": "Shorter exposures allow higher peak power. The MPE scales with time to account for thermal relaxation and biological repair mechanisms.",
+        "visual": "time_scaling_graph"
+      },
+      {
+        "title": "Wavelength Determines Target",
+        "content": "Different wavelengths affect different tissues. UV damages the cornea, visible/NIR damages the retina, and far-IR damages the cornea again.",
+        "visual": "wavelength_absorption_diagram"
+      }
+    ],
+    "worked_examples": [
+      {
+        "title": "Finding MPE for 532 nm, 10 second exposure",
+        "steps": [
+          "Identify wavelength region: 532 nm = visible (green)",
+          "Identify exposure type: Point source (direct viewing)",
+          "Select formula: MPE = 1.8 × t^0.75 × 10^-3 J/cm²",
+          "Calculate: 1.8 × 10^0.75 × 10^-3 = 1.8 × 5.62 × 10^-3",
+          "Result: 10.1 × 10^-3 J/cm² ≈ 10 mJ/cm²"
+        ],
+        "verification": "This matches the simplified value in the table for 10 seconds."
+      },
+      {
+        "title": "Finding MPE for 1064 nm, 0.25 second exposure",
+        "steps": [
+          "Identify wavelength: 1064 nm = Near-IR",
+          "Find CA factor: CA = 5.0 for 1050-1400 nm",
+          "Find base MPE: 0.64 mJ/cm² for visible at 0.25 s",
+          "Apply correction: MPE = 5.0 × 0.64 mJ/cm²",
+          "Result: 3.2 mJ/cm²"
+        ],
+        "verification": "Near-IR allows 5× the visible MPE because the eye is less sensitive to these wavelengths, but they still focus on the retina."
+      }
+    ]
+  },
+  "assessment_integration": {
+    "lookup_exercises": [
+      {
+        "id": "mpe_lookup_1",
+        "prompt": "Find the eye MPE for 650 nm (red laser) with 1 second exposure",
+        "correct_wavelength_region": "visible",
+        "correct_duration": 1,
+        "expected_answer": "2.8 mJ/cm²",
+        "tolerance": "10%",
+        "hints": [
+          "650 nm is in the visible spectrum",
+          "Use the point source formula for intrabeam viewing",
+          "MPE = 1.8 × t^0.75 × 10^-3 J/cm²"
+        ]
+      },
+      {
+        "id": "mpe_lookup_2",
+        "prompt": "What is the skin MPE for visible CW exposure during an 8-hour workday?",
+        "expected_answer": "0.2 W/cm²",
+        "comparison_note": "This is 20× higher than the eye MPE of 1.0 mW/cm²"
+      }
+    ]
+  }
+}

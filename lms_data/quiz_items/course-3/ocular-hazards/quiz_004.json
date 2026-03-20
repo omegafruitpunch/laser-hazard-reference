@@ -1,0 +1,13 @@
+{
+  "id": "ocular-hazards_q004",
+  "type": "multiple_choice",
+  "question": "Which eye structure is primarily affected by CO2 laser (10,600 nm) exposure?",
+  "options": [
+    "Retina",
+    "Lens",
+    "Cornea",
+    "Aqueous humor"
+  ],
+  "correct": 2,
+  "explanation": "The CO2 laser wavelength is strongly absorbed by water in the cornea, causing surface burns rather than retinal injury."
+}

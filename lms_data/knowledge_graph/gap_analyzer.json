@@ -1,0 +1,428 @@
+{
+  "version": "1.0",
+  "created_at": "2026-03-19T15:46:17Z",
+  "created_by": "Knowledge Graph Assembler Agent B",
+  "gap_analysis_types": {
+    "certification_gaps": {
+      "description": "Compare completed modules against certification requirements",
+      "methodology": "set_difference_analysis",
+      "outputs": ["missing_concepts", "missing_modules", "readiness_score"]
+    },
+    "prerequisite_gaps": {
+      "description": "Identify missing prerequisites for target concepts",
+      "methodology": "dependency_graph_traversal",
+      "outputs": ["missing_prerequisites", "prerequisite_chain", "blocking_concepts"]
+    },
+    "knowledge_depth_gaps": {
+      "description": "Assess depth of understanding across concept categories",
+      "methodology": "competency_assessment",
+      "outputs": ["weak_areas", "strength_areas", "learning_recommendations"]
+    },
+    "application_gaps": {
+      "description": "Identify gaps for specific industry applications",
+      "methodology": "application_mapping",
+      "outputs": ["required_concepts", "current_coverage", "gap_percentage"]
+    }
+  },
+  "certification_requirements": {
+    "clso": {
+      "name": "Certified Laser Safety Officer",
+      "governing_body": "Board of Laser Safety",
+      "required_concepts": [
+        "concept_001", "concept_002", "concept_003", "concept_005", "concept_006",
+        "concept_007", "concept_008", "concept_009", "concept_010", "concept_011",
+        "concept_012", "concept_013", "concept_014", "concept_016", "concept_017",
+        "concept_018", "concept_020", "concept_021", "concept_022", "concept_023",
+        "concept_025", "concept_026", "concept_027", "concept_028", "concept_029",
+        "concept_033", "concept_049", "concept_050", "concept_051", "concept_055",
+        "concept_056", "concept_057", "concept_068", "concept_069", "concept_070",
+        "concept_071", "concept_072", "concept_073"
+      ],
+      "required_modules": [
+        "course-1-module-1.3", "course-1-module-1.4", "course-1-module-1.5"
+      ],
+      "required_courses": ["course-1", "course-2", "course-3"],
+      "minimum_quiz_score": 75,
+      "practical_experience_months": 12,
+      "total_concept_count": 38,
+      "difficulty_distribution": {
+        "beginner": 10,
+        "intermediate": 20,
+        "advanced": 8
+      },
+      "topic_weights": {
+        "fundamentals": 0.20,
+        "bioeffects": 0.20,
+        "calculations": 0.20,
+        "controls": 0.20,
+        "regulations": 0.20
+      }
+    },
+    "cmlso": {
+      "name": "Certified Medical Laser Safety Officer",
+      "governing_body": "Board of Laser Safety",
+      "required_concepts": [
+        "concept_001", "concept_009", "concept_010", "concept_016", "concept_020",
+        "concept_021", "concept_022", "concept_023", "concept_025", "concept_026",
+        "concept_027", "concept_029", "concept_033", "concept_056", "concept_057",
+        "concept_058", "concept_059", "concept_068", "concept_070", "concept_072",
+        "concept_077"
+      ],
+      "required_modules": [
+        "course-1-module-1.3", "course-1-module-1.4"
+      ],
+      "required_courses": ["course-1", "course-2", "course-3"],
+      "minimum_quiz_score": 75,
+      "practical_experience_months": 6,
+      "total_concept_count": 21,
+      "difficulty_distribution": {
+        "beginner": 5,
+        "intermediate": 12,
+        "advanced": 4
+      },
+      "topic_weights": {
+        "fundamentals": 0.15,
+        "bioeffects": 0.35,
+        "medical_applications": 0.25,
+        "controls": 0.15,
+        "regulations": 0.10
+      },
+      "prerequisites": ["Clinical healthcare experience OR CLSO certification"]
+    },
+    "lso": {
+      "name": "Laser Safety Officer",
+      "governing_body": "Organization-specific",
+      "required_concepts": [
+        "concept_001", "concept_009", "concept_010", "concept_016", "concept_017",
+        "concept_018", "concept_026", "concept_027", "concept_029", "concept_068",
+        "concept_069", "concept_070", "concept_071"
+      ],
+      "required_modules": [
+        "course-1-module-1.4"
+      ],
+      "required_courses": ["course-1"],
+      "minimum_quiz_score": 70,
+      "practical_experience_months": 3,
+      "total_concept_count": 13,
+      "difficulty_distribution": {
+        "beginner": 5,
+        "intermediate": 7,
+        "advanced": 1
+      },
+      "topic_weights": {
+        "fundamentals": 0.30,
+        "responsibilities": 0.30,
+        "controls": 0.25,
+        "regulations": 0.15
+      }
+    },
+    "entertainment_technician": {
+      "name": "Entertainment Laser Technician",
+      "governing_body": "ILDA / Industry",
+      "required_concepts": [
+        "concept_001", "concept_002", "concept_009", "concept_010", "concept_017",
+        "concept_026", "concept_030", "concept_031", "concept_032", "concept_034",
+        "concept_036", "concept_037", "concept_038", "concept_042", "concept_044",
+        "concept_065", "concept_078"
+      ],
+      "required_modules": [
+        "course-1-module-1.3", "course-1-module-1.4", "course-1-module-1.5"
+      ],
+      "required_courses": ["course-1", "course-5", "course-6", "course-8"],
+      "minimum_quiz_score": 80,
+      "practical_experience_months": 6,
+      "total_concept_count": 17,
+      "difficulty_distribution": {
+        "beginner": 4,
+        "intermediate": 10,
+        "advanced": 3
+      },
+      "topic_weights": {
+        "fundamentals": 0.20,
+        "calculations": 0.20,
+        "entertainment_specific": 0.30,
+        "aviation": 0.20,
+        "international": 0.10
+      }
+    }
+  },
+  "gap_analysis_algorithm": {
+    "steps": [
+      {
+        "step": 1,
+        "name": "Collect Learner Data",
+        "inputs": ["completed_modules", "assessment_scores", "certification_goal"],
+        "outputs": ["learner_profile"]
+      },
+      {
+        "step": 2,
+        "name": "Map Completed Concepts",
+        "inputs": ["learner_profile", "module_concept_mapping"],
+        "outputs": ["mastered_concepts", "partial_concepts"]
+      },
+      {
+        "step": 3,
+        "name": "Identify Required Concepts",
+        "inputs": ["certification_goal", "certification_requirements"],
+        "outputs": ["required_concepts_list"]
+      },
+      {
+        "step": 4,
+        "name": "Calculate Concept Gaps",
+        "inputs": ["mastered_concepts", "required_concepts_list"],
+        "outputs": ["missing_concepts", "gap_percentage"]
+      },
+      {
+        "step": 5,
+        "name": "Analyze Prerequisite Chain",
+        "inputs": ["missing_concepts", "prerequisite_graph"],
+        "outputs": ["prerequisite_gaps", "learning_sequence"]
+      },
+      {
+        "step": 6,
+        "name": "Assess Knowledge Depth",
+        "inputs": ["mastered_concepts", "assessment_scores"],
+        "outputs": ["strength_areas", "weak_areas"]
+      },
+      {
+        "step": 7,
+        "name": "Generate Recommendations",
+        "inputs": ["gap_percentage", "prerequisite_gaps", "weak_areas"],
+        "outputs": ["priority_modules", "study_plan", "timeline"]
+      }
+    ]
+  },
+  "remedial_content": {
+    "concept_gaps": {
+      "fundamentals_missing": {
+        "trigger": "missing >30% of beginner concepts",
+        "remedial_modules": ["course-1-module-1.1", "course-1-module-1.2"],
+        "remedial_resources": ["laser_basics_refresher", "physics_primer"],
+        "estimated_hours": 4
+      },
+      "calculations_weak": {
+        "trigger": "NOHD/MPE assessment score <60%",
+        "remedial_modules": ["course-1-module-1.3"],
+        "remedial_resources": ["math_review", "calculation_worksheet"],
+        "estimated_hours": 6
+      },
+      "regulations_incomplete": {
+        "trigger": "missing >40% of regulation concepts",
+        "remedial_modules": ["course-2-all", "course-4-all"],
+        "remedial_resources": ["regulatory_summary_guide", "compliance_checklist"],
+        "estimated_hours": 8
+      },
+      "bioeffects_incomplete": {
+        "trigger": "missing >50% of biology concepts",
+        "remedial_modules": ["course-3-all"],
+        "remedial_resources": ["eye_anatomy_guide", "damage_mechanisms_summary"],
+        "estimated_hours": 6
+      }
+    },
+    "study_plans": {
+      "intensive_4_week": {
+        "description": "Intensive study for exam preparation",
+        "weekly_hours": 20,
+        "focus": ["gap_concepts", "practice_exams"],
+        "recommended_for": ["imminent_exam_date", "strong_background"]
+      },
+      "standard_12_week": {
+        "description": "Standard preparation timeline",
+        "weekly_hours": 8,
+        "focus": ["complete_coverage", "steady_progress"],
+        "recommended_for": ["most_learners", "working_professionals"]
+      },
+      "extended_24_week": {
+        "description": "Extended timeline for thorough understanding",
+        "weekly_hours": 4,
+        "focus": ["deep_learning", "practical_application"],
+        "recommended_for": ["beginners", "limited_time"]
+      }
+    }
+  },
+  "assessment_integration": {
+    "concept_mastery_criteria": {
+      "assessment_score_threshold": 80,
+      "practical_demonstration": true,
+      "time_since_completion_max_days": 90
+    },
+    "weakness_indicators": [
+      {
+        "indicator": "quiz_failure",
+        "threshold": "<70% on first attempt",
+        "action": "flag_concept_for_review"
+      },
+      {
+        "indicator": "multiple_attempts",
+        "threshold": ">3 attempts to pass",
+        "action": "suggest_prerequisite_review"
+      },
+      {
+        "indicator": "time_exceeded",
+        "threshold": ">2x estimated time",
+        "action": "offer_simplified_explanation"
+      },
+      {
+        "indicator": "related_failures",
+        "threshold": "failures in >3 related concepts",
+        "action": "recommend_foundational_review"
+      }
+    ]
+  },
+  "gap_report_template": {
+    "overview": {
+      "certification_target": "string",
+      "overall_readiness": "percentage",
+      "gap_summary": {
+        "total_required_concepts": "integer",
+        "mastered_concepts": "integer",
+        "missing_concepts": "integer",
+        "gap_percentage": "percentage"
+      }
+    },
+    "concept_gaps": {
+      "critical_gaps": ["concept_id"],
+      "important_gaps": ["concept_id"],
+      "minor_gaps": ["concept_id"]
+    },
+    "prerequisite_analysis": {
+      "blocking_prerequisites": ["concept_id"],
+      "recommended_sequence": ["concept_id"],
+      "dependency_depth": "integer"
+    },
+    "topic_breakdown": [
+      {
+        "topic": "string",
+        "coverage": "percentage",
+        "status": "strong|adequate|weak|missing"
+      }
+    ],
+    "recommended_actions": [
+      {
+        "priority": "critical|high|medium|low",
+        "action": "string",
+        "resources": ["string"],
+        "estimated_time": "hours"
+      }
+    ],
+    "timeline_estimate": {
+      "minimum_weeks": "integer",
+      "recommended_weeks": "integer",
+      "study_hours_per_week": "integer"
+    }
+  },
+  "api_endpoints": {
+    "analyze_gaps": {
+      "method": "POST",
+      "path": "/api/v1/gap-analysis",
+      "parameters": {
+        "learner_id": "string",
+        "certification_target": "clso|cmlso|lso|entertainment_technician",
+        "analysis_depth": "basic|detailed|comprehensive"
+      },
+      "response": {
+        "report": "gap_report_object",
+        "recommendations": ["recommendation_object"],
+        "study_plan": "study_plan_object"
+      }
+    },
+    "get_readiness_score": {
+      "method": "GET",
+      "path": "/api/v1/readiness/{learner_id}/{certification}",
+      "response": {
+        "certification": "string",
+        "overall_score": "float",
+        "topic_scores": "object",
+        "ready": "boolean",
+        "estimated_preparation_days": "integer"
+      }
+    },
+    "generate_study_plan": {
+      "method": "POST",
+      "path": "/api/v1/study-plan",
+      "parameters": {
+        "learner_id": "string",
+        "certification_target": "string",
+        "timeline_weeks": "integer",
+        "weekly_hours": "integer",
+        "focus_areas": ["string"]
+      },
+      "response": {
+        "plan_id": "string",
+        "weekly_schedule": ["week_object"],
+        "milestones": ["milestone_object"],
+        "resources": ["resource_object"]
+      }
+    }
+  },
+  "example_analysis": {
+    "learner_profile": {
+      "completed_modules": ["course-1-module-1.3", "course-1-module-1.4"],
+      "assessment_scores": {
+        "concept_001": 85,
+        "concept_002": 72,
+        "concept_009": 90,
+        "concept_010": 65
+      },
+      "certification_goal": "clso"
+    },
+    "analysis_result": {
+      "overview": {
+        "certification_target": "CLSO",
+        "overall_readiness": 35,
+        "gap_summary": {
+          "total_required_concepts": 38,
+          "mastered_concepts": 13,
+          "missing_concepts": 25,
+          "gap_percentage": 66
+        }
+      },
+      "concept_gaps": {
+        "critical_gaps": ["concept_010", "concept_033"],
+        "important_gaps": ["concept_020", "concept_021", "concept_029"],
+        "minor_gaps": ["concept_011", "concept_012"]
+      },
+      "prerequisite_analysis": {
+        "blocking_prerequisites": ["concept_010"],
+        "recommended_sequence": [
+          "concept_010",
+          "concept_033",
+          "concept_029",
+          "concept_020",
+          "concept_021"
+        ]
+      },
+      "topic_breakdown": [
+        {"topic": "Fundamentals", "coverage": 60, "status": "adequate"},
+        {"topic": "Calculations", "coverage": 45, "status": "weak"},
+        {"topic": "Bioeffects", "coverage": 10, "status": "missing"},
+        {"topic": "Regulations", "coverage": 20, "status": "weak"}
+      ],
+      "recommended_actions": [
+        {
+          "priority": "critical",
+          "action": "Complete Course 2: FDA Regulatory Compliance",
+          "resources": ["course-2-all-modules"],
+          "estimated_time": 16
+        },
+        {
+          "priority": "high",
+          "action": "Study Course 3: Biological Hazards",
+          "resources": ["course-3-all-modules", "eye_anatomy_guide"],
+          "estimated_time": 12
+        },
+        {
+          "priority": "high",
+          "action": "Review Laser Classification concepts",
+          "resources": ["classification_refresher"],
+          "estimated_time": 2
+        }
+      ],
+      "timeline_estimate": {
+        "minimum_weeks": 6,
+        "recommended_weeks": 10,
+        "study_hours_per_week": 8
+      }
+    }
+  }
+}

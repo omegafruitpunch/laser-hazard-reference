@@ -1,0 +1,233 @@
+{
+  "quiz_id": "course-2-quiz-2",
+  "module_id": "course-2-module-2",
+  "title": "FDA Laser Incident Reporting Quiz",
+  "description": "Test your knowledge of FDA laser incident reporting requirements",
+  "time_limit_minutes": 20,
+  "passing_score": 80,
+  "questions": [
+    {
+      "question_id": "q1",
+      "type": "multiple_choice",
+      "question": "What is the standard reporting timeline for death, serious injury, or malfunction involving laser products?",
+      "options": [
+        "5 days",
+        "10 days",
+        "30 days",
+        "90 days"
+      ],
+      "correct_answer": 2,
+      "explanation": "Death, serious injury, or malfunction reports must be submitted within 30 days using Form FDA 3500A through the MEDWATCH system.",
+      "category": "timeline",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "q2",
+      "type": "multiple_choice",
+      "question": "Which form is used for mandatory reporting by manufacturers and importers?",
+      "options": [
+        "Form FDA 3500",
+        "Form FDA 3500A",
+        "Form FDA 3636",
+        "Form FDA 3147"
+      ],
+      "correct_answer": 1,
+      "explanation": "Form FDA 3500A is used for mandatory reporting by manufacturers, importers, and user facilities. Form FDA 3500 is for voluntary reporting.",
+      "category": "forms",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "q3",
+      "type": "multiple_select",
+      "question": "Which of the following are considered reportable events for laser products?",
+      "options": [
+        "Death associated with laser product use",
+        "Serious injury requiring medical intervention",
+        "Malfunction that could cause death or serious injury if recurrent",
+        "Minor skin reddening with no medical treatment",
+        "Ocular injury from laser exposure exceeding MPE",
+        "Product cosmetic damage only"
+      ],
+      "correct_answers": [0, 1, 2, 4],
+      "explanation": "Reportable events include: death, serious injury (life-threatening, permanent impairment, or requiring intervention), malfunction with potential for serious harm, and ocular injuries exceeding MPE. Minor reddening and cosmetic-only damage are not reportable.",
+      "category": "regulation",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "q4",
+      "type": "scenario",
+      "question": "Scenario: A Class 4 laser used in an industrial setting malfunctions, emitting an uncontrolled beam that causes a retinal burn in an operator's eye. When must the manufacturer report this?",
+      "options": [
+        "Within 5 days",
+        "Within 30 days",
+        "Within 60 days",
+        "At the next annual report"
+      ],
+      "correct_answer": 1,
+      "explanation": "A retinal burn from laser exposure is a serious injury and must be reported within 30 days. The 5-day timeline is reserved for events requiring immediate action or death/serious injury with imminent hazard.",
+      "category": "timeline",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "q5",
+      "type": "true_false",
+      "question": "Healthcare professionals and consumers can voluntarily report laser product problems using the same MEDWATCH system as manufacturers.",
+      "correct_answer": true,
+      "explanation": "True. While manufacturers have mandatory reporting requirements, healthcare professionals and consumers can submit voluntary reports through the same MEDWATCH system using Form FDA 3500.",
+      "category": "procedure",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "q6",
+      "type": "multiple_choice",
+      "question": "What is the MEDWATCH fax number for submitting adverse event reports?",
+      "options": [
+        "1-800-FDA-1088",
+        "1-800-FDA-0178",
+        "1-888-FDA-REPORT",
+        "1-877-FDA-SAFETY"
+      ],
+      "correct_answer": 1,
+      "explanation": "The MEDWATCH fax number is 1-800-FDA-0178. The phone number 1-800-FDA-1088 is for general inquiries.",
+      "category": "contact",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "q7",
+      "type": "fill_in_blank",
+      "question": "Investigation records for laser product incidents must be maintained for ____ years from the date of report or 2 years beyond the expected life of the device, whichever is longer.",
+      "correct_answer": "10",
+      "explanation": "Investigation records must be maintained for 10 years from the date of the report, or 2 years beyond the expected life of the device, whichever is longer.",
+      "category": "record_keeping",
+      "difficulty": "hard"
+    },
+    {
+      "question_id": "q8",
+      "type": "multiple_select",
+      "question": "Select all laser-specific parameters that should be included in an incident report:",
+      "options": [
+        "Wavelength(s) of laser involved",
+        "Output power or energy",
+        "Exposure duration",
+        "Distance from source at time of exposure",
+        "Purchase price of the laser",
+        "Eye protection worn (if any)",
+        "Medical evaluation results"
+      ],
+      "correct_answers": [0, 1, 2, 3, 5, 6],
+      "explanation": "Laser incident reports should include: wavelength(s), output power/energy, exposure duration, distance from source, protective measures in place (including eye protection), and medical evaluation results. Purchase price is not relevant to safety reporting.",
+      "category": "procedure",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "q9",
+      "type": "scenario",
+      "question": "Scenario: A medical laser device experiences a software glitch causing incorrect power output, but no patient injury occurs. The manufacturer determines that recurrence could result in serious injury. Is this reportable?",
+      "options": [
+        "No, because no injury occurred",
+        "Yes, as a malfunction report within 30 days",
+        "Only if it happens again",
+        "Only in the annual report"
+      ],
+      "correct_answer": 1,
+      "explanation": "Malfunctions that would likely cause or contribute to death or serious injury if they recur are reportable within 30 days, regardless of whether an actual injury occurred in the specific incident.",
+      "category": "regulation",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "q10",
+      "type": "sequencing",
+      "question": "Put the manufacturer's investigation steps in the correct order after learning of a potential reportable event:",
+      "items": [
+        "Submit report within required timeframe",
+        "Evaluate event for reportability",
+        "Conduct internal investigation",
+        "Determine root cause",
+        "Implement corrective actions if needed"
+      ],
+      "correct_order": [1, 2, 3, 4, 0],
+      "explanation": "The correct sequence is: 1) Evaluate event for reportability, 2) Conduct internal investigation, 3) Determine root cause, 4) Implement corrective actions if needed, 5) Submit report within required timeframe.",
+      "category": "procedure",
+      "difficulty": "hard"
+    },
+    {
+      "question_id": "q11",
+      "type": "multiple_choice",
+      "question": "What does MPE stand for in laser safety reporting?",
+      "options": [
+        "Maximum Permissible Emission",
+        "Maximum Permissible Exposure",
+        "Minimum Protected Energy",
+        "Mandatory Protection Equipment"
+      ],
+      "correct_answer": 1,
+      "explanation": "MPE stands for Maximum Permissible Exposure, which is the safety threshold for laser exposure. Injuries from exposures exceeding the MPE are reportable events.",
+      "category": "terminology",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "q12",
+      "type": "multiple_choice",
+      "question": "When is a 5-day report (rather than 30-day) required for laser product events?",
+      "options": [
+        "For all Class 4 laser incidents",
+        "For death or serious injury requiring immediate action/imminent hazard",
+        "For medical laser devices only",
+        "For consumer laser products only"
+      ],
+      "correct_answer": 1,
+      "explanation": "5-day reports are required for death or serious injury events that require immediate action or present an imminent hazard. The standard timeline for most reportable events is 30 days.",
+      "category": "timeline",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "q13",
+      "type": "matching",
+      "question": "Match the form with its purpose:",
+      "pairs": [
+        {
+          "term": "Form FDA 3500",
+          "definition": "Voluntary reporting by healthcare professionals and consumers"
+        },
+        {
+          "term": "Form FDA 3500A",
+          "definition": "Mandatory reporting by manufacturers and importers"
+        }
+      ],
+      "category": "forms",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "q14",
+      "type": "scenario",
+      "question": "Scenario: Two months after submitting an initial incident report, new testing reveals a design flaw that caused the malfunction. What should the manufacturer do?",
+      "options": [
+        "Do nothing - the initial report is sufficient",
+        "Submit a supplemental report with the new information",
+        "Wait until the annual report to include the update",
+        "Contact the user directly but not FDA"
+      ],
+      "correct_answer": 1,
+      "explanation": "When new information becomes available after initial reporting (such as root cause analysis, corrective actions, or recall decisions), a supplemental report should be submitted to FDA.",
+      "category": "procedure",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "q15",
+      "type": "multiple_select",
+      "question": "Which of the following trigger requirements for supplemental reports?",
+      "options": [
+        "New information about device malfunction",
+        "Updated patient outcome",
+        "Additional similar events identified",
+        "Minor typographical corrections to original report",
+        "Recall initiated",
+        "Change in company contact information"
+      ],
+      "correct_answers": [0, 1, 2, 4],
+      "explanation": "Supplemental reports are required for: new malfunction information, updated patient outcomes, identification of additional similar events (trend analysis), and recalls initiated. Typographical corrections and contact information changes do not require supplemental reports.",
+      "category": "procedure",
+      "difficulty": "hard"
+    }
+  ]
+}

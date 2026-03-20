@@ -1,0 +1,102 @@
+{
+  "component_id": "scan_fail_calculator",
+  "name": "Scan Failure Response Calculator",
+  "type": "interactive_calculation",
+  "description": "Calculate required scan failure detection response times for safe operation",
+  "formula": {
+    "description": "The required response time depends on the exposure hazard and the MPE time base being used.",
+    "variables": [
+      {
+        "name": "exposure_scenario",
+        "label": "Exposure Scenario",
+        "type": "select",
+        "options": [
+          {"value": "audience", "label": "General Audience", "default_time_base": 10},
+          {"value": "trained", "label": "Trained Personnel (Supervised)", "default_time_base": 0.25},
+          {"value": "performer", "label": "Performers", "default_time_base": 0.25}
+        ]
+      },
+      {
+        "name": "beam_power",
+        "label": "Beam Power",
+        "type": "number",
+        "unit": "mW",
+        "min": 1,
+        "max": 50000
+      },
+      {
+        "name": "beam_diameter",
+        "label": "Beam Diameter at Exposure Point",
+        "type": "number",
+        "unit": "mm",
+        "min": 1,
+        "max": 100
+      },
+      {
+        "name": "mpe",
+        "label": "Applicable MPE",
+        "type": "calculated",
+        "formula": "based_on_wavelength_and_duration"
+      }
+    ]
+  },
+  "calculations": {
+    "irradiance": {
+      "formula": "E = P / A",
+      "description": "Calculate irradiance at exposure point",
+      "where": {
+        "E": "Irradiance (mW/cm²)",
+        "P": "Beam power (mW)",
+        "A": "Beam area (cm²)"
+      }
+    },
+    "safety_margin": {
+      "formula": "SM = MPE / E",
+      "description": "Safety margin - should be > 1 for safe operation"
+    },
+    "max_response_time": {
+      "description": "Maximum allowable response time for scan failure system",
+      "rule": "Must terminate beam before MPE is exceeded",
+      "typical_values": {
+        "safe": "< 5 milliseconds",
+        "acceptable": "< 10 milliseconds",
+        "unsafe": "> 10 milliseconds"
+      }
+    }
+  },
+  "visualization": {
+    "type": "timeline",
+    "show": [
+      "scanner_failure_occurs",
+      "detection_latency",
+      "processing_time",
+      "beam_termination",
+      "mpe_threshold"
+    ],
+    "color_coding": {
+      "safe": "#4CAF50",
+      "warning": "#FFC107",
+      "unsafe": "#f44336"
+    }
+  },
+  "examples": [
+    {
+      "name": "Typical Entertainment Setup",
+      "params": {
+        "power": "5000 mW",
+        "beam_diameter": "5 mm",
+        "exposure_scenario": "Audience"
+      },
+      "result": "Response must be < 5ms"
+    },
+    {
+      "name": "High-Power Installation",
+      "params": {
+        "power": "20000 mW",
+        "beam_diameter": "3 mm",
+        "exposure_scenario": "Audience"
+      },
+      "result": "Response must be < 2ms"
+    }
+  ]
+}

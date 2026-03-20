@@ -1,0 +1,121 @@
+{
+  "gestation_id": "course-7-gestation-1",
+  "type": "emergency_analysis",
+  "title": "Emergency Response Procedures - Per-Page Gestation",
+  "source_document": "emergency-response.pdf / Event Safety Guide Chapter 3",
+  "analysis_date": "2026-03-19",
+  "pages_analyzed": [
+    {
+      "page_ref": "ESA Guide p.26-27",
+      "topics": ["NIMS Introduction", "HSPD-5 Directive", "ICS Overview"],
+      "key_concepts": [
+        {
+          "concept": "NIMS Purpose",
+          "explanation": "Provides consistent nationwide template for incident management across all government levels and organizations",
+          "importance": "Critical for interoperability during multi-agency responses"
+        },
+        {
+          "concept": "ICS Structure",
+          "explanation": "Five-section structure: Command, Operations, Planning, Logistics, Finance/Administration",
+          "importance": "Creates clear chain of command and prevents duplication of efforts"
+        }
+      ],
+      "safety_implications": "Understanding NIMS/ICS is fundamental for event organizers to coordinate effectively with emergency services"
+    },
+    {
+      "page_ref": "ESA Guide p.28",
+      "topics": ["Major Incident Definition", "Minor vs Major Incidents"],
+      "key_concepts": [
+        {
+          "concept": "Major Incident Indicators",
+          "explanation": "Large casualties, involvement of many people, need for combined emergency resources",
+          "importance": "Determines level of response required"
+        },
+        {
+          "concept": "Escalation Risk",
+          "explanation": "Minor incidents can escalate to major if not properly managed",
+          "importance": "Highlights need for contingency planning at all levels"
+        }
+      ],
+      "safety_implications": "Clear incident classification enables appropriate resource allocation and response activation"
+    },
+    {
+      "page_ref": "ESA Guide p.29-30",
+      "topics": ["Major Incident Plan Preparation", "Planning Team Structure"],
+      "key_concepts": [
+        {
+          "concept": "Planning Team Composition",
+          "explanation": "Should include all agencies who will respond to emergencies; not too large",
+          "importance": "Ensures all stakeholders have input and understand their roles"
+        },
+        {
+          "concept": "Statement of Intent",
+          "explanation": "Each organization commits resources and defines their role",
+          "importance": "Creates accountability and prevents gaps in coverage"
+        }
+      ],
+      "safety_implications": "Collaborative planning prevents confusion during actual emergencies when time is critical"
+    },
+    {
+      "page_ref": "ESA Guide p.30-31",
+      "topics": ["Emergency Service Responsibilities", "Cordons"],
+      "key_concepts": [
+        {
+          "concept": "Police Role",
+          "explanation": "Coordinate on-site and off-site response once major incident declared",
+          "importance": "Provides unified command structure"
+        },
+        {
+          "concept": "Fire Department Role",
+          "explanation": "Responsible for fire-related on-site response",
+          "importance": "Technical rescue and fire suppression specialists"
+        },
+        {
+          "concept": "EMS Role",
+          "explanation": "Coordinate medical response, casualty distribution, hospital notification",
+          "importance": "Ensures timely medical care and resource allocation"
+        }
+      ],
+      "safety_implications": "Clear agency roles prevent conflict and ensure all aspects of emergency are addressed"
+    },
+    {
+      "page_ref": "ESA Guide p.31-32",
+      "topics": ["ICS Management Characteristics"],
+      "key_concepts": [
+        {
+          "concept": "Common Terminology",
+          "explanation": "Standardized language across all agencies",
+          "importance": "Prevents miscommunication during high-stress events"
+        },
+        {
+          "concept": "Modular Organization",
+          "explanation": "Organization expands/contracts based on incident needs",
+          "importance": "Scalable response appropriate to incident size"
+        },
+        {
+          "concept": "Unity of Command",
+          "explanation": "Each person reports to only one supervisor",
+          "importance": "Prevents conflicting orders and confusion"
+        }
+      ],
+      "safety_implications": "ICS characteristics are proven management tools that contribute to effective incident response"
+    }
+  ],
+  "cross_page_insights": [
+    "NIMS/ICS provides the framework that all subsequent emergency planning builds upon",
+    "The progression from planning to response follows a logical: Plan -> Train -> Exercise -> Respond cycle",
+    "Multi-agency coordination is a recurring theme across all emergency procedures",
+    "Documentation and clear communication are emphasized at every stage"
+  ],
+  "recommendations_for_lms": [
+    "Include interactive ICS organizational chart",
+    "Provide scenario-based training exercises",
+    "Link to FEMA training courses (IS-100, IS-200, IS-15.b)",
+    "Create role-playing simulations for command post operations"
+  ],
+  "metadata": {
+    "processing_agent": "PDF Elite Processor Agent #18 - Gestation Sub-Agent",
+    "confidence": "high",
+    "completeness": "full"
+  }
+}

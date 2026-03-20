@@ -1,0 +1,102 @@
+{
+  "state": "Georgia",
+  "document_type": "Federal Forms and State Guidelines Reference",
+  "extracted_date": "2026-03-19",
+  "key_regulations": {
+    "federal_requirements": {
+      "fda_variance": {
+        "description": "License to perform laser light shows in USA",
+        "form": "FDA Variance Application",
+        "submission": "FDA Division of Docket Management",
+        "url": "https://www.fda.gov/downloads/AboutFDA/ReportsManualsForms/Forms/UCM080788.pdf"
+      },
+      "product_report": {
+        "description": "Product report certifying laser shows/projectors compliance",
+        "submission_method": "Email to RadHealthCustomerService@fda.hhs.gov",
+        "form_url": "https://www.fda.gov/downloads/AboutFDA/ReportsManualsForms/Forms/UCM081634.pdf"
+      },
+      "annual_report": {
+        "description": "Required report of all laser activity (July 1 to June 30)",
+        "purpose": "Auto-renews basic variance",
+        "form_url": "https://www.fda.gov/downloads/AboutFDA/ReportsManualsForms/Forms/UCM081603.pdf"
+      },
+      "accident_report": {
+        "description": "Form used to report accident or incident to FDA",
+        "submission_method": "Email to RadHealthCustomerService@fda.hhs.gov",
+        "form_url": "https://www.fda.gov/downloads/AboutFDA/ReportsManualsForms/Forms/UCM236066.pdf"
+      }
+    },
+    "faa_requirements": {
+      "form_7140": {
+        "description": "Notice of Proposed Outdoor Operations",
+        "requirement": "Required for outdoor unterminated laser shows",
+        "submission_areas": [
+          {
+            "region": "Eastern",
+            "email": "9-ATO-ESA-OSG-Lasers-Searchlights@faa.gov"
+          },
+          {
+            "region": "Central",
+            "email": "9-ASW-Operations-Support-Lasers@faa.gov"
+          },
+          {
+            "region": "Western",
+            "email": "9-ATO-WSA-OSG-Lasers@faa.gov"
+          }
+        ]
+      }
+    }
+  },
+  "record_keeping_forms": [
+    {
+      "name": "Standard Operating Procedures",
+      "purpose": "Description of how laser shows are performed safely"
+    },
+    {
+      "name": "Quality Control Safety Checklist - Single Page",
+      "purpose": "Safety checklist completed at time of laser activity"
+    },
+    {
+      "name": "Quality Control Safety Checklist - Multiple Pages",
+      "purpose": "Extended safety checklist for laser activity"
+    },
+    {
+      "name": "Quality Control Safety Checklist Spreadsheet",
+      "purpose": "Completed each time there is laser activity"
+    },
+    {
+      "name": "Health and Safety Report with Risk Assessment",
+      "purpose": "Risk assessment with show info, laser descriptions, diagrams, proof of training, insurance"
+    },
+    {
+      "name": "Sample Operation Log Sheet",
+      "purpose": "Record of SOP followed"
+    },
+    {
+      "name": "Sample Outdoor Operation Log Sheet",
+      "purpose": "Record of SOPs followed for outdoor shows"
+    }
+  ],
+  "state_specific_links": {
+    "note": "Georgia defers to federal regulations; no separate state-specific registration identified in document",
+    "referenced_states": {
+      "Arizona": "https://azdhs.gov/licensing/radiation-regulatory/index.php/xray#nir-light-show",
+      "Florida": "http://www.floridahealth.gov/search/search.cgi?zoomquery=laser+shows",
+      "Illinois": "https://www2.illinois.gov/iema/NRS/RadSafety/Pages/Laser.aspx",
+      "New_York": "https://labor.ny.gov/workerprotection/safetyhealth/sh50.shtm",
+      "Massachusetts": "https://www.mass.gov/how-to/register-a-laser-device",
+      "Texas": "https://dshs.texas.gov/radiation/lasers/registration.aspx"
+    }
+  },
+  "city_fire_rescue_forms": [
+    "New York City - Theatrical Fog/Haze permit + Certificate of Fitness (COF)",
+    "Orlando, FL and/or Orange County Fire",
+    "Cleveland, OH",
+    "Las Vegas, NV: Clark County Fire",
+    "Portland, OR",
+    "Palm Springs, CA"
+  ],
+  "laser_safety_officer_requirements": {
+    "georgia_specific": "Follows federal guidelines; no additional state-specific requirements identified"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "course": "Course 3: Bio-Hazards",
+  "title": "Formula Components and Calculation Methods",
+  "source_pdfs": ["iec-60825-1.pdf", "mpe-tables.pdf"],
+  "formulas": [
+    {
+      "formula_id": "ael_calculation",
+      "name": "Accessible Emission Limit Calculation",
+      "components": {
+        "AEL": "Accessible Emission Limit - maximum permitted emission level",
+        "AE": "Accessible Emission - actual measured emission",
+        "comparison": "Product classified based on AE/AEL ratio"
+      },
+      "calculation_steps": [
+        "Measure AE through applicable aperture",
+        "Calculate AEL based on wavelength and exposure duration",
+        "Compute ratio AE/AEL",
+        "Determine class based on most restrictive ratio"
+      ],
+      "ratio_interpretation": {
+        "ratio_less_than_1": "AE < AEL, product meets class requirements",
+        "ratio_greater_than_1": "AE > AEL, product exceeds class requirements",
+        "critical_grouping": "Find grouping that maximizes AE/AEL ratio"
+      }
+    },
+    {
+      "formula_id": "alpha_calculation",
+      "name": "Angular Subtense Calculation",
+      "definition": "α = (αx + αy) / 2 - arithmetic mean of angular dimensions",
+      "parameters": {
+        "αx": "Angular dimension in x-direction (mrad)",
+        "αy": "Angular dimension in y-direction (mrad)",
+        "result": "Average angular subtense used for extended source evaluation"
+      },
+      "special_rules": {
+        "for_C6_determination": "α limited to αmax(t) for same duration t as AEL",
+        "for_C5_criteria": "α NOT limited by αmax for 'Unless α > 100 mrad' criterion",
+        "for_T2_calculation": "α limited to 100 mrad maximum"
+      }
+    },
+    {
+      "formula_id": "t2_calculation",
+      "name": "T2 Time Constant Calculation",
+      "formula": "T2 = 10 × 10^((α - 1.5)/98.5) seconds, for αmin ≤ α ≤ αmax",
+      "alternative": "T2 = 10 × 10^((α - αmin)/(αmax - αmin)) seconds",
+      "parameters": {
+        "α": "Angular subtense in mrad",
+        "result": "Time beyond which extended-source MPE becomes constant irradiance"
+      },
+      "boundary_conditions": {
+        "at_αmin": "T2 = 10 s",
+        "at_αmax": "T2 = 100 s"
+      }
+    },
+    {
+      "formula_id": "c5_correction",
+      "name": "C5 Pulse Repetition Correction Factor",
+      "description": "Reduces AEL for repetitive pulse trains to account for thermal additivity",
+      "formula": "C5 = N^(-0.25)",
+      "parameters": {
+        "N": "Number of pulses within T2 or time base, whichever is shorter",
+        "result": "Multiplicative factor applied to AELsingle"
+      },
+      "application_rules": [
+        "N counts pulses within evaluation duration",
+        "For pulse groups, N = number of groups",
+        "Does not apply when α > 100 mrad (unless criterion)",
+        "Thermal additivity basis: heat accumulation from multiple pulses"
+      ]
+    },
+    {
+      "formula_id": "c6_correction",
+      "name": "C6 Extended Source Correction Factor",
+      "description": "Adjusts AEL for extended sources based on angular subtense",
+      "piecewise_definition": {
+        "α ≤ 1.5 mrad": "C6 = 1.0 (small source)",
+        "1.5 mrad < α ≤ 100 mrad": "C6 = α / αmin = α / 1.5",
+        "α > 100 mrad": "C6 = αmax / αmin = 100 / 1.5 = 66.7"
+      },
+      "note": "C6 limited by αmax(t) for determination, but not for C5 criteria"
+    },
+    {
+      "formula_id": "optical_density",
+      "name": "Optical Density Calculation",
+      "definition": "Dλ = -log10(τλ)",
+      "parameters": {
+        "Dλ": "Optical density at wavelength λ",
+        "τλ": "Transmittance (fraction of light transmitted)",
+        "log10": "Base-10 logarithm"
+      },
+      "practical_examples": [
+        {
+          "transmittance": "0.5 (50%)",
+          "optical_density": "0.3",
+          "attenuation_db": "3 dB"
+        },
+        {
+          "transmittance": "0.1 (10%)",
+          "optical_density": "1.0",
+          "attenuation_db": "10 dB"
+        },
+        {
+          "transmittance": "0.01 (1%)",
+          "optical_density": "2.0",
+          "attenuation_db": "20 dB"
+        },
+        {
+          "transmittance": "0.000001 (0.0001%)",
+          "optical_density": "6.0",
+          "attenuation_db": "60 dB"
+        }
+      ],
+      "eyewear_selection": "Required OD = log10(E/MPE) where E is expected exposure"
+    },
+    {
+      "formula_id": "irradiance_power_density",
+      "name": "Irradiance and Power Density",
+      "definitions": {
+        "irradiance": "E = P / A (W/cm²)",
+        "radiant_exposure": "H = E × t = Q / A (J/cm²)",
+        "average_power": "P_avg = Q / t (W)"
+      },
+      "parameters": {
+        "P": "Power (W)",
+        "A": "Area (cm²)",
+        "t": "Time (s)",
+        "Q": "Energy (J)"
+      }
+    },
+    {
+      "formula_id": "no_hd_calculation",
+      "name": "Nominal Ocular Hazard Distance (NOHD)",
+      "formula": "NOHD = (1/φ) × √(4×P/(π×MPE)) - a/φ",
+      "parameters": {
+        "φ": "Beam divergence (radians)",
+        "P": "Laser power (W)",
+        "MPE": "Maximum Permissible Exposure (W/cm²)",
+        "a": "Beam exit diameter (cm)",
+        "result": "Distance beyond which irradiance < MPE"
+      },
+      "simplified": "For small apertures: NOHD ≈ (1/φ) × √(4×P/(π×MPE))"
+    },
+    {
+      "formula_id": "divergence_angle",
+      "name": "Beam Divergence",
+      "definition": "Angle containing 1 - 1/e (63.2%) of total radiant energy",
+      "formula": "φ = 2 × arctan((d2 - d1) / (2×L))",
+      "measurement": "Measure beam diameter at two distances, calculate angular spread"
+    },
+    {
+      "formula_id": "solid_angle",
+      "name": "Solid Angle Calculations",
+      "definition": "Ω = A / r² (steradians)",
+      "for_small_angles": "Ω ≈ π × (φ/2)² where φ is full-angle divergence",
+      "total_sphere": "4π steradians",
+      "hemisphere": "2π steradians"
+    }
+  ],
+  "unit_conversions": {
+    "length": {
+      "1 m": "100 cm = 1000 mm = 10^6 µm = 10^9 nm",
+      "visible_range": "400-700 nm = 0.4-0.7 µm"
+    },
+    "power_energy": {
+      "1 W": "1 J/s",
+      "1 mW": "10^-3 W = 10^-3 J/s"
+    },
+    "angle": {
+      "1 rad": "57.3°",
+      "1 mrad": "0.0573°",
+      "π rad": "180°"
+    }
+  }
+}

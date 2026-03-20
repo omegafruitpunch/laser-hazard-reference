@@ -1,0 +1,68 @@
+{
+  "id": "module-8-1",
+  "courseId": "course-8",
+  "title": "ANSI Z136 Laser Safety Standards",
+  "description": "The complete ANSI Z136 series — the authoritative US laser safety standard set governing all laser applications.",
+  "order": 1,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "The Gold Standard",
+      "content": "ANSI Z136 standards are the cornerstone of laser safety in the United States. Understanding this series is essential for any laser safety professional, as these standards inform federal regulations, insurance requirements, legal liability determinations, and industry best practices. This module provides comprehensive coverage of the Z136 series structure and requirements.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "ANSI Z136 Series Structure",
+      "content": "## Z136.1 — Safe Use of Lasers (Foundation Standard)\n- Defines Maximum Permissible Exposure (MPE) values\n- Establishes laser classification criteria (Class 1, 2, 3R, 3B, 4)\n- Specifies control measures for all laser classes\n- Defines Laser Safety Officer responsibilities and authority\n- Covers medical surveillance requirements\n\n## Specialized Application Standards\n\n**Z136.2** — Optical Fiber Communication Systems\n- Safe use of lasers in telecommunications\n- Fiber handling and termination safety\n\n**Z136.3** — Health Care\n- Medical laser applications in hospitals and clinics\n- Surgical team and patient protection\n- Operating room safety protocols\n\n**Z136.4** — Laser Safety Measurements\n- Measurement protocols for hazard evaluation\n- Calibration and instrumentation requirements\n\n**Z136.5** — Educational Institutions\n- University and school laboratory safety\n- Student training requirements\n\n**Z136.6** — Outdoor Use\n- FAA coordination procedures\n- Airspace analysis and beam termination\n- Outdoor event safety planning\n\n**Z136.7** — Protective Equipment\n- Eyewear selection and specifications\n- Optical Density (OD) requirements\n- Testing and certification of PPE\n\n**Z136.8** — Research, Development, and Testing\n- Alignment procedures for experimental setups\n- Beam control in laboratory environments\n- Temporary installation requirements\n\n**Z136.9** — Manufacturing Environments\n- Industrial laser applications\n- Production environment controls\n- Robotic laser system safety\n\n**Z136.10** — Entertainment\n- Works in conjunction with ANSI E1.46\n- Audience exposure considerations\n- Show design safety requirements",
+      "component": "StandardsHierarchyVisualizer",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "Standard Selection Exercise",
+      "content": "Match each scenario with the appropriate ANSI Z136 standard(s):\n\n**Scenario 1**: University research laboratory developing new laser-based sensing technology with graduate students.\n\n**Scenario 2**: Hospital surgical suite installing new laser equipment for ophthalmic procedures.\n\n**Scenario 3**: Outdoor music festival featuring laser light show effects visible for miles.\n\n**Scenario 4**: Telecommunications facility with high-power fiber amplifiers for long-haul networks.\n\n**Scenario 5**: High school physics demonstration using Class 2 laser pointers.\n\nConsider which standard(s) apply and whether multiple standards may be relevant.",
+      "component": "Z136Navigator",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-8-1",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "ANSI Z136 Standards Guide",
+      "path": "/docs/course-8-standards/ansi-z136.pdf"
+    },
+    {
+      "type": "pdf",
+      "title": "Z136 Series Quick Reference Card",
+      "path": "/docs/course-8-standards/z136-quick-reference.pdf"
+    },
+    {
+      "type": "interactive",
+      "title": "Standards Hierarchy Visualizer",
+      "component": "StandardsHierarchyVisualizer"
+    },
+    {
+      "type": "interactive",
+      "title": "Z136.1 Section Navigator",
+      "component": "Z136Navigator"
+    }
+  ],
+  "keyTakeaways": [
+    "ANSI Z136.1 is the foundation standard covering all laser uses and hazard evaluation",
+    "Z136.2 addresses optical fiber communication systems and telecommunications",
+    "Z136.3 provides healthcare-specific requirements including surgical applications",
+    "Z136.8 covers research and development environments with experimental lasers",
+    "Z136.10 works with ANSI E1.46 for entertainment laser applications"
+  ],
+  "nextModule": "module-8-2",
+  "prerequisites": [],
+  "difficulty": "advanced"
+}

@@ -1,0 +1,121 @@
+{
+  "source": "compliance-documentation.pdf",
+  "quiz_items": [
+    {
+      "id": "CD-Q001",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "topic": "FDA Reporting Requirements",
+      "question": "What is the purpose of Form FDA 3640?",
+      "options": [
+        "To apply for laser manufacturing license",
+        "To report radiation safety testing for laser light shows and displays",
+        "To request variance from safety standards",
+        "To certify laser operators"
+      ],
+      "correct_answer": 1,
+      "explanation": "Form FDA 3640 is the Reporting Guide for Laser Light Shows and Displays under 21 CFR 1002, used to submit radiation safety testing reports.",
+      "regulatory_reference": "21 CFR 1002.7"
+    },
+    {
+      "id": "CD-Q002",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "topic": "Accession Numbers",
+      "question": "What happens when CDRH assigns an accession number to a submitted report?",
+      "options": [
+        "The product is approved for sale",
+        "The report is entered into the database and acknowledged",
+        "The manufacturer is exempt from annual reporting",
+        "The product meets all safety standards"
+      ],
+      "correct_answer": 1,
+      "explanation": "An accession number indicates the report has been entered into CDRH database. It does NOT constitute product approval - CDRH does not approve reports or products.",
+      "regulatory_reference": "21 CFR 1002 - Foreword section"
+    },
+    {
+      "id": "CD-Q003",
+      "type": "true_false",
+      "difficulty": "intermediate",
+      "topic": "Compliance Responsibility",
+      "question": "CDRH approval of a report means the product complies with all applicable standards.",
+      "correct_answer": false,
+      "explanation": "False. CDRH explicitly states: WE DO NOT APPROVE THESE REPORTS OR THE PRODUCTS BEING REPORTED. It is the manufacturer's responsibility to certify compliance.",
+      "regulatory_reference": "Form FDA 3640 Foreword"
+    },
+    {
+      "id": "CD-Q004",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "topic": "Pre-Shipment Requirements",
+      "question": "When must a manufacturer submit the required report prior to shipping products?",
+      "options": [
+        "Within 30 days of first shipment",
+        "Before shipment in interstate commerce",
+        "Within 60 days of product registration",
+        "Annually with the first report"
+      ],
+      "correct_answer": 1,
+      "explanation": "21 CFR 1002 requires manufacturers to submit the report prior to shipment of products in interstate commerce, not after.",
+      "regulatory_reference": "21 CFR 1002, Form FDA 3640 Foreword"
+    },
+    {
+      "id": "CD-Q005",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "topic": "Report Supplements",
+      "question": "When should a manufacturer submit a supplement to an existing report?",
+      "options": [
+        "Only when requested by CDRH",
+        "When providing additional information about the model family",
+        "Every 6 months regardless of changes",
+        "Only for Class 4 lasers"
+      ],
+      "correct_answer": 1,
+      "explanation": "Manufacturers should reference the accession number when providing additional information about a model family in either a supplement or annual report.",
+      "regulatory_reference": "Form FDA 3640 Foreword"
+    },
+    {
+      "id": "CD-Q006",
+      "type": "multiple_select",
+      "difficulty": "advanced",
+      "topic": "Required Report Elements",
+      "question": "Which of the following must be included in a radiation safety report? (Select all that apply)",
+      "options": [
+        "Product identification and model information",
+        "Testing program and quality control procedures",
+        "Test results demonstrating compliance",
+        "Marketing plan for the product"
+      ],
+      "correct_answers": [0, 1, 2],
+      "explanation": "Reports must include product identification, testing/QA procedures, and test results. Marketing plans are not part of radiation safety reporting requirements.",
+      "regulatory_reference": "21 CFR 1002.7"
+    },
+    {
+      "id": "CD-Q007",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "topic": "Rejected Reports",
+      "question": "What happens if CDRH determines a report is incomplete or inadequate?",
+      "options": [
+        "It receives a provisional accession number",
+        "It is rejected and returned for completion",
+        "It is approved with conditions",
+        "The manufacturer receives a warning letter"
+      ],
+      "correct_answer": 1,
+      "explanation": "CDRH may reject incomplete reports and return them for completion. Rejected reports do not receive accession numbers and are not entered into the database.",
+      "regulatory_reference": "Form FDA 3640 Foreword"
+    },
+    {
+      "id": "CD-Q008",
+      "type": "fill_in_blank",
+      "difficulty": "intermediate",
+      "topic": "OMB Control",
+      "question": "Form FDA 3640 is approved under OMB Control Number _____ with expiration date July 31, 2020.",
+      "correct_answer": "0910-0025",
+      "explanation": "The form displays OMB Control Number 0910-0025, indicating compliance with the Paperwork Reduction Act.",
+      "regulatory_reference": "Form FDA 3640 Page 1"
+    }
+  ]
+}

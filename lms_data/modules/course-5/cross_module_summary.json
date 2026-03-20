@@ -1,0 +1,152 @@
+{
+  "course_id": "course-5",
+  "course_title": "International Regulations",
+  "summary_version": "1.0.0",
+  "generated_date": "2026-03-19",
+  "generated_by": "Module Builder Agent C5-A",
+  
+  "modules": [
+    {
+      "module_id": "course-5-module-5.1",
+      "title": "European Union Directives",
+      "duration_minutes": 18,
+      "key_topics": [
+        "EU Status A-F country classification",
+        "Directive 2006/25/EC",
+        "EN 60825-1 harmonized standard",
+        "CE marking requirements",
+        "Country-specific permits (Austria, Finland, Sweden, Switzerland)"
+      ],
+      "interactive_components": [
+        "EU Country Status Map",
+        "Directive Hierarchy Visualizer",
+        "Compliance Pathway Simulator"
+      ],
+      "badge": "eu_regulatory_navigator"
+    },
+    {
+      "module_id": "course-5-module-5.2",
+      "title": "UK Post-Brexit Regulations",
+      "duration_minutes": 16,
+      "key_topics": [
+        "UKCA vs CE marking",
+        "Safety of Display Lasers guidance",
+        "Role definitions and responsibilities",
+        "Safety zone separations",
+        "CAA CAP 736"
+      ],
+      "interactive_components": [
+        "UKCA vs CE Comparator",
+        "Safety Zone Visualizer",
+        "Roles & Responsibility Matcher"
+      ],
+      "badge": "uk_compliance_specialist"
+    },
+    {
+      "module_id": "course-5-module-5.3",
+      "title": "Canadian Regulations (REDA)",
+      "duration_minutes": 15,
+      "key_topics": [
+        "Radiation Emitting Devices Act",
+        "Health Canada vs Transport Canada",
+        "Indoor vs outdoor show requirements",
+        "Notice of Proposal process",
+        "Inspector powers and offences"
+      ],
+      "interactive_components": [
+        "REDA Compliance Flow",
+        "Indoor/Outdoor Decision Tree",
+        "Inspector Powers Simulator"
+      ],
+      "badge": "canada_compliance_expert"
+    }
+  ],
+  
+  "total_course_duration_minutes": 49,
+  "total_modules": 3,
+  "total_interactive_components": 9,
+  "total_quiz_questions": 20,
+  
+  "cross_cutting_themes": [
+    {
+      "theme": "MPE Limits",
+      "variations": {
+        "EU_general": "10 W/m² (1 mW/cm²)",
+        "Finland_special": "1 mW/cm²",
+        "UK_standard": "10 W/m² (1 mW/cm²)",
+        "UK_children": "1 W/m² (factor of 10 reduction)",
+        "Canada_indoor": "2.5 mW/cm²"
+      }
+    },
+    {
+      "theme": "Permit Requirements",
+      "variations": {
+        "EU_Status_A": "Permit required, permission typically granted",
+        "EU_Status_D": "No permit required",
+        "EU_Status_E": "Prohibited",
+        "UK": "No prior written permission if standards met",
+        "Canada_indoor": "No federal permit required",
+        "Canada_outdoor": "Transport Canada authorization required"
+      }
+    },
+    {
+      "theme": "Product Marking",
+      "variations": {
+        "EU": "CE marking required",
+        "UK": "UKCA marking required (GB), CE recognized temporarily",
+        "Canada": "REDA compliance (no specific marking)"
+      }
+    }
+  ],
+  
+  "compliance_comparison": {
+    "toughest_mpe": {
+      "jurisdiction": "Finland (special permits)",
+      "limit": "1 mW/cm²"
+    },
+    "most_permissive_status": {
+      "classification": "Status D",
+      "examples": ["Netherlands", "Belgium", "Italy", "Spain", "Canada"]
+    },
+    "strictest_prohibition": {
+      "jurisdiction": "France (indoor)",
+      "status": "Status E - not allowed"
+    },
+    "most_complex_pathway": {
+      "jurisdiction": "Switzerland",
+      "requirement": "Competence Level 2 certificate for audience exposure"
+    }
+  },
+  
+  "equipment_movement_checklist": {
+    "before_crossing_borders": [
+      "Verify conformity markings (CE for EU, UKCA for UK)",
+      "Check voltage and electrical standards compatibility",
+      "Ensure documentation in local language"
+    ],
+    "documentation_required": [
+      "Risk assessments (may need translation)",
+      "Insurance certificates for international coverage",
+      "Operator competency certification"
+    ],
+    "permit_considerations": [
+      "Each country requires separate permit assessment",
+      "Status classifications vary significantly",
+      "Some countries require local safety consultants"
+    ]
+  },
+  
+  "quick_reference": {
+    "status_a_countries": ["Austria", "Finland", "Germany", "Sweden", "Switzerland", "UK"],
+    "status_d_countries": ["Belgium", "Canada", "Czech Republic", "France (outdoor)", "Italy", "Netherlands", "Spain"],
+    "status_e_regions": ["France (indoor)"],
+    "dual_marking_possible": true,
+    "ukca_ce_same_standards": true
+  },
+  
+  "links": {
+    "quiz_bank": "lms_data/quiz_banks/course-5/course-5-quiz-supplemental.json",
+    "knowledge_graph": "lms_data/course-5/knowledge_graph/international_regulatory_graph.json",
+    "research_patterns": "lms_data/research_findings/brilliant_org_patterns.md"
+  }
+}

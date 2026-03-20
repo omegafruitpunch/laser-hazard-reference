@@ -1,0 +1,275 @@
+{
+  "module_id": "course-2-module-2.3",
+  "module_number": "2.3",
+  "title": "Laser Notices & Harmonization",
+  "course": "Course 2: FDA Compliance",
+  "version": "1.0",
+  "created_by": "Module Builder Agent C2-A",
+  "created_date": "2026-03-19",
+  
+  "learning_objectives": [
+    "Understand the purpose and legal status of FDA Laser Notices",
+    "Navigate the harmonization between FDA and IEC 60825-1 standards",
+    "Identify which FDA requirements are harmonized vs. unique",
+    "Apply Laser Notice No. 50 for IEC-conforming products",
+    "Use the correct certification statements for harmonized products"
+  ],
+  
+  "module_structure": {
+    "total_lessons": 4,
+    "estimated_duration_minutes": 35,
+    "difficulty_level": "advanced",
+    "prerequisites": [
+      "Module 2.1: FDA Regulatory Framework",
+      "Module 2.2: Laser Product Classification (FDA)",
+      "Understanding of IEC 60825-1 classification"
+    ]
+  },
+  
+  "lessons": [
+    {
+      "lesson_id": "2.3.1",
+      "title": "Laser Notices Explained",
+      "duration_minutes": 8,
+      "type": "conceptual",
+      "components": ["notice_overview", "legal_status_explainer", "key_notices_timeline"]
+    },
+    {
+      "lesson_id": "2.3.2",
+      "title": "FDA-IEC Harmonization",
+      "duration_minutes": 10,
+      "type": "comparative",
+      "components": ["harmonization_comparison", "affected_sections", "unaffected_sections"]
+    },
+    {
+      "lesson_id": "2.3.3",
+      "title": "Laser Notice No. 50",
+      "duration_minutes": 9,
+      "type": "procedural",
+      "components": ["ln50_walkthrough", "certification_statements", "compliance_checklist"]
+    },
+    {
+      "lesson_id": "2.3.4",
+      "title": "Harmonization in Practice",
+      "duration_minutes": 8,
+      "type": "application",
+      "components": ["case_scenarios", "compliance_verification", "mastery_badge"]
+    }
+  ],
+  
+  "interactive_components": {
+    "harmonization_comparison": {
+      "id": "fda_iec_comparison",
+      "type": "side_by_side_table",
+      "title": "FDA vs IEC 60825-1: Harmonization Matrix",
+      "description": "Interactive comparison showing which FDA sections are harmonized with IEC and which remain unique",
+      "display_mode": "interactive_table",
+      "filters": ["Show All", "Harmonized Only", "FDA-Unique Only"],
+      
+      "harmonized_sections": [
+        {
+          "fda_section": "1040.10(b)",
+          "fda_title": "Definitions",
+          "iec_equivalent": "IEC 60825-1 Clause 3",
+          "status": "harmonized",
+          "notes": "Most definitions accepted; some FDA-specific terms retained"
+        },
+        {
+          "fda_section": "1040.10(c)(1)",
+          "fda_title": "Classification",
+          "iec_equivalent": "IEC 60825-1 Clause 4",
+          "status": "harmonized",
+          "notes": "IEC classification system accepted; FDA retains Class IIa"
+        },
+        {
+          "fda_section": "1040.10(d)",
+          "fda_title": "Accessible Emission Limits",
+          "iec_equivalent": "IEC 60825-1 Tables 1-6",
+          "status": "harmonized",
+          "notes": "IEC AELs accepted for all classes"
+        },
+        {
+          "fda_section": "1040.10(e)",
+          "fda_title": "Tests for Compliance",
+          "iec_equivalent": "IEC 60825-1 Clause 8",
+          "status": "harmonized",
+          "notes": "IEC test methods accepted"
+        },
+        {
+          "fda_section": "1040.10(f)(1)",
+          "fda_title": "Protective Housing",
+          "iec_equivalent": "IEC 60825-1 4.2",
+          "status": "harmonized",
+          "notes": "IEC protective housing requirements accepted"
+        },
+        {
+          "fda_section": "1040.10(f)(2)",
+          "fda_title": "Safety Interlocks",
+          "iec_equivalent": "IEC 60825-1 4.3",
+          "status": "harmonized",
+          "notes": "IEC interlock requirements accepted"
+        },
+        {
+          "fda_section": "1040.10(f)(3)",
+          "fda_title": "Remote Interlock Connector",
+          "iec_equivalent": "IEC 60825-1 4.4",
+          "status": "harmonized",
+          "notes": "IEC requirements accepted"
+        },
+        {
+          "fda_section": "1040.10(f)(4)",
+          "fda_title": "Key Control",
+          "iec_equivalent": "IEC 60825-1 4.5",
+          "status": "harmonized",
+          "notes": "IEC key control requirements accepted"
+        },
+        {
+          "fda_section": "1040.10(f)(5)",
+          "fda_title": "Emission Indicator",
+          "iec_equivalent": "IEC 60825-1 4.6",
+          "status": "harmonized",
+          "notes": "IEC indicator requirements accepted"
+        },
+        {
+          "fda_section": "1040.10(f)(6)",
+          "fda_title": "Beam Attenuator",
+          "iec_equivalent": "IEC 60825-1 4.7",
+          "status": "harmonized",
+          "notes": "IEC attenuator requirements accepted"
+        },
+        {
+          "fda_section": "1040.10(f)(7)",
+          "fda_title": "Location of Controls",
+          "iec_equivalent": "IEC 60825-1 4.8",
+          "status": "harmonized",
+          "notes": "IEC control location requirements accepted"
+        },
+        {
+          "fda_section": "1040.10(f)(8)",
+          "fda_title": "Viewing Optics",
+          "iec_equivalent": "IEC 60825-1 4.9",
+          "status": "harmonized",
+          "notes": "IEC viewing optics requirements accepted"
+        },
+        {
+          "fda_section": "1040.10(f)(9)",
+          "fda_title": "Scanning Safeguard",
+          "iec_equivalent": "IEC 60825-1 4.10",
+          "status": "harmonized",
+          "notes": "IEC scanning safeguard requirements accepted"
+        },
+        {
+          "fda_section": "1040.10(g)",
+          "fda_title": "Labeling Requirements",
+          "iec_equivalent": "IEC 60825-1 Clause 5",
+          "status": "harmonized",
+          "notes": "IEC labeling accepted (with specific FDA certification statement)"
+        },
+        {
+          "fda_section": "1040.10(h)(1)",
+          "fda_title": "User Information",
+          "iec_equivalent": "IEC 60825-1 5.5",
+          "status": "harmonized",
+          "notes": "IEC user information requirements accepted"
+        },
+        {
+          "fda_section": "1040.11(a)",
+          "fda_title": "Medical Laser Products",
+          "iec_equivalent": "IEC 60601-2-22",
+          "status": "harmonized",
+          "notes": "Medical laser standard harmonized with IEC 60601-2-22"
+        }
+      ],
+      
+      "unaffected_sections": [
+        {
+          "fda_section": "1010.2",
+          "fda_title": "Certification",
+          "reason": "Beyond IEC scope - FDA administrative requirement",
+          "requirement": "MANDATORY - Cannot use IEC equivalent"
+        },
+        {
+          "fda_section": "1010.3",
+          "fda_title": "Identification",
+          "reason": "Beyond IEC scope - FDA traceability requirement",
+          "requirement": "MANDATORY - Cannot use IEC equivalent"
+        },
+        {
+          "fda_section": "1010.4",
+          "fda_title": "Variances",
+          "reason": "FDA administrative procedure",
+          "requirement": "MANDATORY - Must use FDA variance process"
+        },
+        {
+          "fda_section": "1040.10(a)",
+          "fda_title": "Applicability",
+          "reason": "Regulatory scope definition",
+          "requirement": "MANDATORY - FDA scope applies"
+        },
+        {
+          "fda_section": "1040.10(c)(2)",
+          "fda_title": "Removable Laser Systems",
+          "reason": "Specific FDA requirement",
+          "requirement": "MANDATORY - Cannot use IEC equivalent"
+        },
+        {
+          "fda_section": "1040.10(f)(10)",
+          "fda_title": "Manual Reset Mechanism",
+          "reason": "FDA-specific requirement (post-1986)",
+          "requirement": "MANDATORY for Class IV - Not in IEC"
+        },
+        {
+          "fda_section": "1040.10(h)(2)",
+          "fda_title": "Purchasing and Servicing Information",
+          "reason": "Beyond IEC scope",
+          "requirement": "MANDATORY - Cannot use IEC equivalent"
+        },
+        {
+          "fda_section": "1040.10(i)",
+          "fda_title": "Modification of Certified Product",
+          "reason": "FDA administrative requirement",
+          "requirement": "MANDATORY - Must follow FDA modification rules"
+        },
+        {
+          "fda_section": "1040.11(b)",
+          "fda_title": "Surveying/Leveling/Alignment Lasers",
+          "reason": "Specific FDA requirements",
+          "requirement": "MANDATORY - FDA-specific limits apply"
+        },
+        {
+          "fda_section": "1040.11(c)",
+          "fda_title": "Demonstration Laser Products",
+          "reason": "Specific FDA requirements",
+          "requirement": "MANDATORY - Variance required above Class IIIa"
+        }
+      ]
+    },
+    
+    "certification_statement_builder": {
+      "id": "cert_builder",
+      "type": "interactive_form",
+      "title": "Certification Statement Builder",
+      "description": "Generate the correct certification statement based on your product's compliance pathway",
+      "options": [
+        {
+          "condition": "Full FDA compliance (no IEC harmonization)",
+          "statement": "Complies with 21 CFR 1040.10 and 1040.11"
+        },
+        {
+          "condition": "IEC conformance under Laser Notice No. 50",
+          "statement": "Complies with FDA performance standards for laser products except for deviations pursuant to Laser Notice No. 50, dated June 24, 2007"
+        },
+        {
+          "condition": "IEC conformance (alternative wording)",
+          "statement": "Complies with 21 CFR 1040.10 and 1040.11 except for deviations pursuant to Laser Notice No. 50, dated June 24, 2007"
+        }
+      ]
+    }
+  },
+  
+  "assessment": {
+    "quiz_questions": 5,
+    "passing_score": 80,
+    "mastery_badge": "Harmonization Specialist"
+  }
+}

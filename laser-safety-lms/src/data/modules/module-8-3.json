@@ -1,0 +1,56 @@
+{
+  "id": "module-8-3",
+  "courseId": "course-8",
+  "title": "Control Hierarchy & Implementation",
+  "description": "The hierarchy of controls and practical implementation strategies for laser safety in entertainment environments.",
+  "order": 3,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "Hierarchy of Controls",
+      "content": "Effective laser safety follows the hierarchy of controls: Elimination/Substitution → Engineering Controls → Administrative Controls → Personal Protective Equipment. Understanding this hierarchy is essential for designing effective safety systems and passing certification examinations.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "Control Measure Categories",
+      "content": "## Level 1: Elimination / Substitution\n- Use lower power lasers when possible\n- Position beams away from occupied areas\n- Design shows to avoid audience exposure\n\n## Level 2: Engineering Controls\n- **Protective housings** - Enclose beam paths\n- **Safety interlocks** - Prevent access during operation\n- **Scan failure detection** - Stop emission if scanners fail\n- **Emergency stops** - Immediate shutdown capability\n- **Beam attenuators/shutters** - Control beam output\n- **Remote interlock connectors** - External safety integration\n\n## Level 3: Administrative Controls\n- **Standard Operating Procedures (SOPs)**\n- **Training programs** - Initial and refresher training\n- **Warning signs and labels**\n- **Access restriction** - Controlled areas\n- **Alignment procedures** - Safe maintenance protocols\n\n## Level 4: Personal Protective Equipment\n- **Protective eyewear** - Appropriate OD for wavelength and power\n- **Protective clothing** - For high-power applications\n- **Last resort** - Only when other controls insufficient",
+      "component": "ControlMeasurePrioritizer",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "Control Selection Exercise",
+      "content": "For each scenario below, identify the most appropriate control measures following the hierarchy:\n\n**Scenario A**: Class 4 laser in research laboratory with multiple users\n\n**Scenario B**: Entertainment venue with audience-scanning laser effects\n\n**Scenario C**: Medical laser suite in hospital operating room\n\n**Scenario D**: Industrial manufacturing with automated laser welding\n\nConsider which controls are most effective and why lower-level controls may be insufficient.",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-8-3",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "Control Measures Reference Guide",
+      "path": "/docs/course-8-standards/control-measures.pdf"
+    },
+    {
+      "type": "interactive",
+      "title": "Control Measure Prioritizer",
+      "component": "ControlMeasurePrioritizer"
+    }
+  ],
+  "keyTakeaways": [
+    "Elimination/substitution is always the most effective control level",
+    "Engineering controls physically isolate people from hazards",
+    "Administrative controls change how people work through procedures",
+    "PPE is the last line of defense, not a substitute for other controls"
+  ],
+  "nextModule": "module-8-4",
+  "prerequisites": ["module-8-2"],
+  "difficulty": "advanced"
+}

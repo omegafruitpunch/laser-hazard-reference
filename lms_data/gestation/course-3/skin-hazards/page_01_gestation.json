@@ -1,0 +1,30 @@
+{
+  "page_num": 1,
+  "source_pdf": "skin-hazards.pdf",
+  "digestion": {
+    "summary": "SKIN HAZARDS OF LASER RADIATION\n\nWhile ocular injuries receive the most attention in laser safety, significant \nskin hazards exist, particularly for:\n- High-power Class 4 lasers\n- Ultraviolet laser sy...",
+    "key_concepts": [
+      "skin structure",
+      "epidermis",
+      "dermis",
+      "melanin"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "SKIN HAZARDS OF LASER RADIATION\n\nWhile ocular injuries receive the most attention in laser safety, significant \nskin hazards exist, particularly for:\n- High-power Class 4 lasers\n- Ultraviolet laser systems\n- Medical laser procedures\n- Research and industrial laser operations\n\nSKIN STRUCTURE RELEVANT TO LASER HAZARDS:\n\nEpidermis (outer layer, 0.1-0.2 mm thick):\n- Stratum corneum: Dead cells, provides some UV protection\n- Basal layer: Contains melanocytes (melanin production)\n- Melanin absorbs UV and visible light, provides protection\n\nDermis (1-4 mm thick):\n- Contains blood vessels, nerves, hair follicles\n- Collagen and elastin fibers\n- Major site of thermal injury\n\nSubcutaneous Tissue:\n- Fat and connective tissue\n- Deep penetration possible with certain wavelengths\n\nLaser skin effects depend on wavelength, power density, exposure duration, \nand skin pigmentation.\n",
+    "analogies": [
+      "The eye's focusing capability is like a magnifying glass concentrating sunlight - it amplifies laser power by 100,000x at the retina.",
+      "Laser skin burns are similar to thermal burns but can be more precisely localized."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Always wear appropriate laser eyewear when working with Class 3B or Class 4 lasers.",
+      "Use protective gloves and long sleeves when operating high-power lasers.",
+      "UV laser exposure has cumulative effects similar to sun damage - use full coverage PPE."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.121790"
+}

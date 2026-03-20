@@ -1,0 +1,13 @@
+{
+  "id": "skin-hazards_q004",
+  "type": "multiple_choice",
+  "question": "According to the Fitzpatrick scale, which skin type is MOST vulnerable to laser injury?",
+  "options": [
+    "Type I - Always burns, never tans",
+    "Type III - Sometimes burns",
+    "Type V - Rarely burns",
+    "Type VI - Never burns"
+  ],
+  "correct": 0,
+  "explanation": "Type I skin (very fair, red hair) has minimal melanin protection and is most vulnerable to laser skin injury, particularly thermal and photochemical damage."
+}

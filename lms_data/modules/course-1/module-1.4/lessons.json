@@ -1,0 +1,293 @@
+{
+  "module_id": "course-1-module-1.4",
+  "lessons": [
+    {
+      "lesson_id": "1.4.1",
+      "title": "LSO Role Overview",
+      "type": "concept_introduction",
+      "duration_minutes": 2,
+      "content": {
+        "opening_hook": {
+          "type": "case_study",
+          "title": "The Missing LSO",
+          "scenario": "A laser installation proceeds without a designated LSO. During setup, an inexperienced technician accidentally misaligns a Class 4 laser, sending a beam into an occupied area. Who is responsible? What should have been in place?",
+          "question": "What critical role was missing in this scenario?",
+          "options": [
+            "A laser operator",
+            "A Laser Safety Officer (LSO)",
+            "A venue manager",
+            "An equipment technician"
+          ],
+          "correct_answer": 1,
+          "feedback": "Correct. The LSO is responsible for evaluating laser risks and implementing safety precautions. Their absence left a critical gap in safety oversight."
+        },
+        "core_concept": {
+          "title": "What is a Laser Safety Officer?",
+          "definition": "The LSO is an individual designated by the employer who has the authority and responsibility to monitor and enforce the control of laser hazards and to effect the knowledgeable evaluation and control of laser hazards.",
+          "key_principles": [
+            "LSO has EXECUTIVE authority, not just advisory",
+            "LSO must be designated by employer/facility management",
+            "LSO is responsible for overall laser safety program",
+            "ANSI Z136.1 requires LSO for Class 3B and Class 4 operations"
+          ]
+        },
+        "lso_vs_lsa": {
+          "title": "LSO vs LSA: Know the Difference",
+          "comparison": [
+            {
+              "aspect": "Authority",
+              "lso": "Executive - can stop work, enforce controls",
+              "lsa": "Advisory - provides recommendations only"
+            },
+            {
+              "aspect": "Responsibility",
+              "lso": "Accountable for laser safety program",
+              "lsa": "Consults on technical matters"
+            },
+            {
+              "aspect": "Mandate",
+              "lso": "Has power to implement controls",
+              "lsa": "No executive power"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "1.4.2",
+      "title": "LSO Responsibility Matrix",
+      "type": "interactive_checklist",
+      "duration_minutes": 3,
+      "content": {
+        "title": "Interactive LSO Responsibility Matrix",
+        "description": "Explore the key responsibilities of a Laser Safety Officer organized by category",
+        "categories": [
+          {
+            "name": "Hazard Evaluation",
+            "icon": "🔍",
+            "responsibilities": [
+              "Classify lasers and laser systems",
+              "Calculate NOHD and determine NHZ",
+              "Evaluate MPE for all exposure conditions",
+              "Assess potential for eye and skin exposure",
+              "Evaluate non-beam hazards (electrical, chemical, fire)"
+            ]
+          },
+          {
+            "name": "Control Measures",
+            "icon": "🛡️",
+            "responsibilities": [
+              "Approve and implement engineering controls",
+              "Specify required PPE (eyewear, clothing)",
+              "Establish administrative controls and SOPs",
+              "Ensure interlocks and safety systems function",
+              "Review and approve modifications to systems"
+            ]
+          },
+          {
+            "name": "Training & Authorization",
+            "icon": "📚",
+            "responsibilities": [
+              "Provide laser safety training to personnel",
+              "Maintain training records",
+              "Authorize personnel to work with lasers",
+              "Ensure competency verification",
+              "Coordinate refresher training"
+            ]
+          },
+          {
+            "name": "Incident Response",
+            "icon": "🚨",
+            "responsibilities": [
+              "Investigate laser incidents and accidents",
+              "Implement corrective actions",
+              "Report incidents to regulatory authorities",
+              "Conduct post-incident safety reviews",
+              "Maintain incident documentation"
+            ]
+          },
+          {
+            "name": "Program Administration",
+            "icon": "📋",
+            "responsibilities": [
+              "Develop and maintain laser safety manual",
+              "Conduct periodic safety audits",
+              "Ensure regulatory compliance (FDA, OSHA, state)",
+              "Maintain equipment inventory and documentation",
+              "Coordinate with medical surveillance providers"
+            ]
+          }
+        ],
+        "interactive_features": [
+          {
+            "type": "expandable_cards",
+            "description": "Click each category to reveal detailed responsibilities"
+          },
+          {
+            "type": "checklist_tracker",
+            "description": "Mark responsibilities as understood/completed"
+          },
+          {
+            "type": "frequency_indicator",
+            "description": "Shows how often each duty is performed (daily/weekly/monthly/annual)"
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "1.4.3",
+      "title": "LSO Competency Requirements",
+      "type": "interactive_assessment",
+      "duration_minutes": 3,
+      "content": {
+        "title": "What Makes a Competent LSO?",
+        "ansi_requirements": {
+          "source": "ANSI Z136.1 Section 4.2.1",
+          "text": "The LSO shall have the necessary training and experience to fulfill the duties of the LSO. The LSO should be knowledgeable in the following areas..."
+        },
+        "competency_areas": [
+          {
+            "area": "Laser Fundamentals",
+            "requirements": [
+              "Understanding of laser physics and operation",
+              "Knowledge of beam characteristics (divergence, coherence)",
+              "Familiarity with different laser types (CW, pulsed, Q-switched)"
+            ],
+            "evidence": "Technical training certificate or equivalent experience"
+          },
+          {
+            "area": "Bioeffects",
+            "requirements": [
+              "Understanding of ocular anatomy and laser interactions",
+              "Knowledge of skin exposure effects",
+              "Familiarity with damage mechanisms (thermal, photochemical)"
+            ],
+            "evidence": "Safety training or medical physics background"
+          },
+          {
+            "area": "Hazard Analysis",
+            "requirements": [
+              "Ability to perform MPE calculations",
+              "Proficiency in NOHD/NHZ calculations",
+              "Experience with hazard classification"
+            ],
+            "evidence": "Calculation exercises, certification exam"
+          },
+          {
+            "area": "Control Measures",
+            "requirements": [
+              "Knowledge of engineering controls",
+              "Understanding of PPE selection criteria",
+              "Familiarity with administrative controls"
+            ],
+            "evidence": "Practical assessment, facility audit"
+          },
+          {
+            "area": "Regulations",
+            "requirements": [
+              "Knowledge of ANSI Z136 series standards",
+              "Understanding of FDA 21 CFR 1040",
+              "Familiarity with state and local requirements"
+            ],
+            "evidence": "Certification (CLSO, CMLSO) or equivalent"
+          }
+        ],
+        "certification_pathway": {
+          "title": "Professional Certification Options",
+          "certifications": [
+            {
+              "name": "CLSO",
+              "full_name": "Certified Laser Safety Officer",
+              "provider": "Board of Laser Safety",
+              "focus": "General laser safety (ANSI Z136.1)",
+              "requirements": "Experience + Exam"
+            },
+            {
+              "name": "CMLSO",
+              "full_name": "Certified Medical Laser Safety Officer",
+              "provider": "Board of Laser Safety",
+              "focus": "Medical applications (ANSI Z136.3)",
+              "requirements": "Experience + Exam"
+            },
+            {
+              "name": "LIA LSO Course",
+              "full_name": "Laser Safety Officer Course",
+              "provider": "Laser Institute of America",
+              "focus": "Comprehensive LSO training",
+              "requirements": "Course completion"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "1.4.4",
+      "title": "Daily LSO Operations",
+      "type": "scenario_practice",
+      "duration_minutes": 2,
+      "content": {
+        "title": "A Day in the Life of an LSO",
+        "scenarios": [
+          {
+            "id": "morning_checks",
+            "title": "Morning: Pre-Show Checks",
+            "situation": "You arrive at a venue where a laser show will run tonight. What are your first actions?",
+            "decision_points": [
+              {
+                "question": "First priority upon arrival?",
+                "options": [
+                  "Start the laser show immediately",
+                  "Review installation and conduct safety checks",
+                  "Wait for the operator to arrive",
+                  "Set up the control console"
+                ],
+                "correct": 1,
+                "feedback": "Correct. The LSO must review the installation and verify all safety systems before operation."
+              },
+              {
+                "question": "What checks must be completed before the show?",
+                "options": [
+                  "Visual inspection only",
+                  "E-stop test, alignment check, and MPE verification",
+                  "Just turn everything on",
+                  "Ask the operator if it's safe"
+                ],
+                "correct": 1,
+                "feedback": "Correct. Pre-show checks include E-stop functionality, beam alignment verification, and MPE measurement confirmation."
+              }
+            ]
+          },
+          {
+            "id": "incident_response",
+            "title": "Emergency: Suspected Eye Exposure",
+            "situation": "During the show, an audience member reports seeing a bright flash and feels discomfort in their eye.",
+            "decision_points": [
+              {
+                "question": "Immediate action?",
+                "options": [
+                  "Ignore it - probably just dazzle",
+                  "Stop the laser show and assess the situation",
+                  "Continue the show and check later",
+                  "Give them eye drops"
+                ],
+                "correct": 1,
+                "feedback": "Correct. Any suspected eye exposure requires immediately stopping the show and investigating."
+              },
+              {
+                "question": "What information should be collected?",
+                "options": [
+                  "Just their name",
+                  "Laser details, exposure circumstances, timing, symptoms",
+                  "Nothing - it's not serious",
+                  "Only the laser power"
+                ],
+                "correct": 1,
+                "feedback": "Correct. Complete documentation including laser parameters, exposure conditions, and symptom timeline is essential for medical evaluation."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

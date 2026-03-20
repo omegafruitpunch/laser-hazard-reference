@@ -1,0 +1,286 @@
+{
+  "component_id": "show_security_checklist",
+  "name": "Show Security Checklist",
+  "type": "interactive_checklist",
+  "description": "Interactive pre-show security checklist with timeline and verification",
+  "version": "1.0.0",
+  "sections": [
+    {
+      "id": "t_minus_30_days",
+      "title": "T-30 Days: Administrative Preparation",
+      "description": "Complete these items 30 days before the show",
+      "timeframe": "30 days before",
+      "items": [
+        {
+          "id": "admin_1",
+          "text": "FAA Form 7140-1 submitted to appropriate Service Center",
+          "category": "regulatory",
+          "critical": true,
+          "verification_method": "confirmation_number"
+        },
+        {
+          "id": "admin_2",
+          "text": "FAA approval letter received and verified",
+          "category": "regulatory",
+          "critical": true,
+          "verification_method": "document_upload"
+        },
+        {
+          "id": "admin_3",
+          "text": "Local law enforcement notified of event",
+          "category": "coordination",
+          "critical": true,
+          "verification_method": "contact_confirmation"
+        },
+        {
+          "id": "admin_4",
+          "text": "Emergency services contact information confirmed",
+          "category": "safety",
+          "critical": true,
+          "verification_method": "contact_confirmation"
+        },
+        {
+          "id": "admin_5",
+          "text": "Weather monitoring service contracted/subscribed",
+          "category": "planning",
+          "critical": false,
+          "verification_method": "checkbox"
+        },
+        {
+          "id": "admin_6",
+          "text": "Insurance coverage verified for outdoor operations",
+          "category": "administrative",
+          "critical": true,
+          "verification_method": "document_upload"
+        },
+        {
+          "id": "admin_7",
+          "text": "Personnel certifications current (LSO, operators, observers)",
+          "category": "personnel",
+          "critical": true,
+          "verification_method": "document_upload"
+        }
+      ]
+    },
+    {
+      "id": "t_minus_7_days",
+      "title": "T-7 Days: Technical and Logistical Preparation",
+      "description": "Complete these items 7 days before the show",
+      "timeframe": "7 days before",
+      "items": [
+        {
+          "id": "tech_1",
+          "text": "All equipment inspected and tested",
+          "category": "equipment",
+          "critical": true,
+          "verification_method": "inspection_form"
+        },
+        {
+          "id": "tech_2",
+          "text": "Scan-failure protection systems tested",
+          "category": "safety",
+          "critical": true,
+          "verification_method": "test_log"
+        },
+        {
+          "id": "tech_3",
+          "text": "Emergency stop systems tested and verified",
+          "category": "safety",
+          "critical": true,
+          "verification_method": "test_log"
+        },
+        {
+          "id": "tech_4",
+          "text": "Communication equipment tested (radios, backups)",
+          "category": "equipment",
+          "critical": true,
+          "verification_method": "test_log"
+        },
+        {
+          "id": "tech_5",
+          "text": "Spare equipment and parts identified and packed",
+          "category": "equipment",
+          "critical": false,
+          "verification_method": "inventory_check"
+        },
+        {
+          "id": "logistics_1",
+          "text": "Site access credentials arranged for all personnel",
+          "category": "administrative",
+          "critical": true,
+          "verification_method": "checkbox"
+        },
+        {
+          "id": "logistics_2",
+          "text": "Parking and load-in plan confirmed",
+          "category": "logistics",
+          "critical": false,
+          "verification_method": "checkbox"
+        }
+      ]
+    },
+    {
+      "id": "t_minus_24_hours",
+      "title": "T-24 Hours: Final Preparations",
+      "description": "Complete these items 24 hours before the show",
+      "timeframe": "24 hours before",
+      "items": [
+        {
+          "id": "final_1",
+          "text": "Weather forecast reviewed - conditions acceptable",
+          "category": "weather",
+          "critical": true,
+          "verification_method": "weather_check"
+        },
+        {
+          "id": "final_2",
+          "text": "NOTAM verified active and correct",
+          "category": "regulatory",
+          "critical": true,
+          "verification_method": "notam_check"
+        },
+        {
+          "id": "final_3",
+          "text": "All personnel confirmed available and briefed",
+          "category": "personnel",
+          "critical": true,
+          "verification_method": "roster_check"
+        },
+        {
+          "id": "final_4",
+          "text": "Emergency contact tree verified",
+          "category": "safety",
+          "critical": true,
+          "verification_method": "contact_test"
+        },
+        {
+          "id": "final_5",
+          "text": "Site security plan reviewed with venue",
+          "category": "security",
+          "critical": true,
+          "verification_method": "checkbox"
+        }
+      ]
+    },
+    {
+      "id": "t_minus_4_hours",
+      "title": "T-4 Hours: On-Site Setup",
+      "description": "Complete these items during equipment setup",
+      "timeframe": "4 hours before",
+      "items": [
+        {
+          "id": "setup_1",
+          "text": "Equipment unloaded and secured against wind",
+          "category": "equipment",
+          "critical": true,
+          "verification_method": "visual_inspection"
+        },
+        {
+          "id": "setup_2",
+          "text": "Beam paths verified and termination points confirmed",
+          "category": "safety",
+          "critical": true,
+          "verification_method": "visual_inspection"
+        },
+        {
+          "id": "setup_3",
+          "text": "Laser projectors anchored and stable",
+          "category": "equipment",
+          "critical": true,
+          "verification_method": "physical_check"
+        },
+        {
+          "id": "setup_4",
+          "text": "Control area secured and access-controlled",
+          "category": "security",
+          "critical": true,
+          "verification_method": "visual_inspection"
+        },
+        {
+          "id": "setup_5",
+          "text": "Power connections inspected and secured",
+          "category": "equipment",
+          "critical": true,
+          "verification_method": "physical_check"
+        },
+        {
+          "id": "setup_6",
+          "text": "Backup power systems tested",
+          "category": "equipment",
+          "critical": false,
+          "verification_method": "test_log"
+        }
+      ]
+    },
+    {
+      "id": "t_minus_1_hour",
+      "title": "T-1 Hour: Final Checks",
+      "description": "Complete these final checks before show start",
+      "timeframe": "1 hour before",
+      "items": [
+        {
+          "id": "finalcheck_1",
+          "text": "360° sky scan completed - no aircraft visible",
+          "category": "safety",
+          "critical": true,
+          "verification_method": "observer_report"
+        },
+        {
+          "id": "finalcheck_2",
+          "text": "Weather conditions acceptable and stable",
+          "category": "weather",
+          "critical": true,
+          "verification_method": "weather_check"
+        },
+        {
+          "id": "finalcheck_3",
+          "text": "All observers in position with communication confirmed",
+          "category": "personnel",
+          "critical": true,
+          "verification_method": "radio_check"
+        },
+        {
+          "id": "finalcheck_4",
+          "text": "Emergency kill switches armed and tested",
+          "category": "safety",
+          "critical": true,
+          "verification_method": "test_log"
+        },
+        {
+          "id": "finalcheck_5",
+          "text": "FAA approval letter on-site and accessible",
+          "category": "regulatory",
+          "critical": true,
+          "verification_method": "document_check"
+        },
+        {
+          "id": "finalcheck_6",
+          "text": "Emergency contact numbers posted at control station",
+          "category": "safety",
+          "critical": true,
+          "verification_method": "visual_check"
+        },
+        {
+          "id": "finalcheck_7",
+          "text": "Go/No-Go decision made and documented",
+          "category": "decision",
+          "critical": true,
+          "verification_method": "decision_log"
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "critical_items_weight": 3,
+    "standard_items_weight": 1,
+    "passing_threshold": 95,
+    "critical_items_required": 100
+  },
+  "features": {
+    "save_progress": true,
+    "generate_report": true,
+    "team_collaboration": true,
+    "timestamp_completion": true,
+    "photo_upload": true
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "module_id": "8.2",
+  "lessons": [
+    {
+      "lesson_id": "8.2.1",
+      "title": "Introduction to ANSI E1.46",
+      "type": "concept_introduction",
+      "duration_minutes": 8,
+      "content": {
+        "opening_hook": {
+          "type": "scenario",
+          "text": "You're designing a laser light show where beams will intentionally enter the audience. How do you ensure this is done safely? ANSI E1.46 provides the specific guidance you need.",
+          "visual": "audience_scanning_concept"
+        },
+        "core_concept": {
+          "title": "What is ANSI E1.46?",
+          "text": "ANSI E1.46 is the entertainment industry's laser safety standard, developed by ESTA. It provides specific requirements for laser displays where intentional audience exposure may occur.",
+          "key_points": [
+            "Developed by ESTA (Entertainment Services and Technology Association)",
+            "Addresses intentional exposure scenarios unique to entertainment",
+            "Complements ANSI Z136.10 and FDA requirements",
+            "Covers installation, operation, and safety verification"
+          ]
+        },
+        "scope_comparison": {
+          "title": "E1.46 vs Z136.10 vs FDA",
+          "comparison_table": [
+            {"aspect": "Developer", "E1.46": "ESTA", "Z136.10": "LIA", "FDA": "Federal Agency"},
+            {"aspect": "Focus", "E1.46": "Entertainment operations", "Z136.10": "Safe use guidance", "FDA": "Product safety"},
+            {"aspect": "Audience Scanning", "E1.46": "Detailed requirements", "Z136.10": "General guidance", "FDA": "Variance required"},
+            {"aspect": "Compliance", "E1.46": "Industry standard", "Z136.10": "Industry standard", "FDA": "Legally required"}
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "8.2.2",
+      "title": "MPE for Entertainment: Relaxation Factors",
+      "type": "interactive_calculation",
+      "duration_minutes": 10,
+      "content": {
+        "title": "Understanding MPE Relaxation",
+        "explanation": "Entertainment applications may use MPE relaxation factors under specific conditions. Learn when and how to apply these safely.",
+        "relaxation_types": [
+          {
+            "type": "Scanned Beams",
+            "condition": "Beam moving across eye",
+            "relaxation": "Time-averaged exposure",
+            "formula": "MPE_scanned = MPE_CW × (scan_speed_factor)"
+          },
+          {
+            "type": "Diffraction Effects",
+            "condition": "Beam split by grating/mirror ball",
+            "relaxation": "Power distributed across multiple beams",
+            "formula": "MPE_per_beam = MPE_total / N_beams"
+          },
+          {
+            "type": "Supervised Installations",
+            "condition": "Trained operator present",
+            "relaxation": "May use 0.25s aversion response",
+            "restriction": "Only for trained personnel"
+          }
+        ],
+        "calculator": {
+          "type": "mpe_relaxation",
+          "inputs": [
+            {"name": "base_mpe", "label": "Base MPE", "unit": "mW/cm²"},
+            {"name": "scan_speed", "label": "Scan Speed", "unit": "points/sec"},
+            {"name": "beam_divergence", "label": "Beam Divergence", "unit": "mrad"},
+            {"name": "viewing_distance", "label": "Viewing Distance", "unit": "m"}
+          ],
+          "outputs": [
+            {"name": "relaxed_mpe", "label": "Relaxed MPE"},
+            {"name": "safety_factor", "label": "Safety Factor"},
+            {"name": "compliance_status", "label": "Compliance Status"}
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "8.2.3",
+      "title": "Scan Failure Safety Systems",
+      "type": "interactive_simulation",
+      "duration_minutes": 12,
+      "content": {
+        "title": "Scan Failure Detection and Response",
+        "explanation": "Scan failure systems must detect scanner malfunction and terminate laser emission within milliseconds to prevent hazardous static beam exposure.",
+        "requirements": {
+          "response_time": {
+            "value": "A few milliseconds",
+            "rationale": "Must terminate before eye damage occurs"
+          },
+          "failure_modes": [
+            "Single scanner failure (results in line scan)",
+            "Both scanners fail (static beam)",
+            "Control signal loss",
+            "Power interruption"
+          ]
+        },
+        "simulation": {
+          "type": "scan_fail_demo",
+          "scenarios": [
+            {
+              "name": "Normal Operation",
+              "description": "Scanned pattern at safe MPE levels",
+              "visual": "scan_pattern_normal"
+            },
+            {
+              "name": "Scanner Failure - Without Protection",
+              "description": "Static beam exceeds MPE instantly",
+              "visual": "scan_fail_hazard",
+              "hazard_level": "CRITICAL"
+            },
+            {
+              "name": "Scanner Failure - With Protection",
+              "description": "System detects failure and blanks beam",
+              "visual": "scan_fail_protected",
+              "response_time": "2-5 milliseconds"
+            }
+          ],
+          "interactive_controls": [
+            "Simulate scanner failure",
+            "Adjust scan speed",
+            "View response time measurement",
+            "Toggle safety system on/off"
+          ]
+        },
+        "design_principles": [
+          "Multiple scanning components for redundancy",
+          "Independent failure detection",
+          "Fail-safe to beam-off state",
+          "Regular testing and calibration"
+        ]
+      }
+    },
+    {
+      "lesson_id": "8.2.4",
+      "title": "Installation Requirements: Supervised vs Unsupervised",
+      "type": "decision_exercise",
+      "duration_minutes": 8,
+      "content": {
+        "title": "Installation Classification",
+        "explanation": "E1.46 distinguishes between supervised installations (operator present) and unsupervised installations (automated operation), with different requirements for each.",
+        "comparison": {
+          "supervised": {
+            "description": "Trained operator continuously monitoring",
+            "requirements": [
+              "Operator can terminate emission immediately",
+              "3m vertical separation from audience",
+              "2.5m horizontal separation from audience",
+              "May use 0.25s MPE for trained personnel"
+            ],
+            "use_cases": ["Live shows", "Performances", "Demonstrations"]
+          },
+          "unsupervised": {
+            "description": "Automated or scheduled operation without continuous monitoring",
+            "requirements": [
+              "Enhanced physical barriers required",
+              "More conservative MPE limits",
+              "Automatic monitoring systems",
+              "Emergency stop accessible to public"
+            ],
+            "use_cases": ["Theme park attractions", "Permanent installations", "Automated displays"]
+          }
+        },
+        "exercise": {
+          "type": "classification_scenarios",
+          "scenarios": [
+            {
+              "description": "Laser show at a concert with operator at control console",
+              "correct_classification": "Supervised",
+              "key_factors": ["Operator present", "Live performance", "Immediate control"]
+            },
+            {
+              "description": "Automated lobby display running on schedule",
+              "correct_classification": "Unsupervised",
+              "key_factors": ["No operator", "Automated", "Public access"]
+            },
+            {
+              "description": "DJ-controlled lasers at a nightclub",
+              "correct_classification": "Supervised",
+              "key_factors": ["Operator present", "Real-time control"]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "8.2.5",
+      "title": "Pre-Show Safety Verification",
+      "type": "interactive_checklist",
+      "duration_minutes": 12,
+      "content": {
+        "title": "E1.46 Pre-Show Requirements",
+        "explanation": "Complete safety verification before every performance is mandatory. This interactive checklist guides you through all required checks.",
+        "checklist_categories": [
+          {
+            "category": "Physical Installation",
+            "items": [
+              {"id": "p1", "item": "Laser projector securely mounted", "critical": true},
+              {"id": "p2", "item": "All external mirrors/galvos secured", "critical": true},
+              {"id": "p3", "item": "Cable runs safe and protected", "critical": false},
+              {"id": "p4", "item": "Emergency stop accessible and tested", "critical": true}
+            ]
+          },
+          {
+            "category": "Optical Safety",
+            "items": [
+              {"id": "o1", "item": "Beam path verified clear of hazards", "critical": true},
+              {"id": "o2", "item": "MPE measurements completed for audience areas", "critical": true},
+              {"id": "o3", "item": "Blanking/masking properly positioned", "critical": true},
+              {"id": "o4", "item": "Scan failure system tested and functional", "critical": true}
+            ]
+          },
+          {
+            "category": "Documentation",
+            "items": [
+              {"id": "d1", "item": "Risk assessment reviewed", "critical": true},
+              {"id": "d2", "item": "Operator competency verified", "critical": true},
+              {"id": "d3", "item": "Emergency procedures reviewed", "critical": true},
+              {"id": "d4", "item": "Sign-off documentation ready", "critical": false}
+            ]
+          }
+        ],
+        "interactive_features": [
+          "Check off each item as completed",
+          "Flag critical items incomplete",
+          "Generate pre-show report",
+          "Schedule re-check reminders"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "moduleId": "c5-m6",
+  "moduleTitle": "International Show Documentation",
+  "nodes": [
+    {
+      "id": "international-show",
+      "label": "International Laser Show",
+      "type": "concept",
+      "description": "Laser show deployment across international borders",
+      "connections": ["documentation", "permits", "logistics", "planning-stages"]
+    },
+    {
+      "id": "documentation",
+      "label": "Documentation Package",
+      "type": "category",
+      "description": "Comprehensive set of required documents",
+      "connections": ["regulatory-docs", "equipment-docs", "safety-docs", "personnel-docs", "show-docs"]
+    },
+    {
+      "id": "regulatory-docs",
+      "label": "Regulatory Documentation",
+      "type": "document-category",
+      "documents": ["laser-permit", "venue-approval", "lso-designation", "insurance", "import-license"]
+    },
+    {
+      "id": "equipment-docs",
+      "label": "Equipment Documentation",
+      "type": "document-category",
+      "documents": ["laser-specs", "classification-labels", "power-specs", "maintenance-records", "carnet", "packing-list"]
+    },
+    {
+      "id": "safety-docs",
+      "label": "Safety Documentation",
+      "type": "document-category",
+      "documents": ["safety-plan", "mpe-calcs", "noehd-calc", "beam-diagrams", "emergency-plan", "risk-assessment"]
+    },
+    {
+      "id": "personnel-docs",
+      "label": "Personnel Documentation",
+      "type": "document-category",
+      "documents": ["lso-qualifications", "operator-certs", "crew-list", "passport-copies"]
+    },
+    {
+      "id": "show-docs",
+      "label": "Show Documentation",
+      "type": "document-category",
+      "documents": ["show-description", "show-script", "venue-layout", "audience-scanning"]
+    },
+    {
+      "id": "carnet",
+      "label": "ATA Carnet",
+      "type": "document",
+      "description": "Temporary import/export passport for goods",
+      "connections": ["temporary-import", "customs"]
+    },
+    {
+      "id": "planning-stages",
+      "label": "Planning Stages",
+      "type": "process",
+      "description": "Timeline for international show preparation",
+      "connections": ["research", "permits-stage", "documentation-stage", "logistics-stage", "final-prep"]
+    },
+    {
+      "id": "research",
+      "label": "Initial Research",
+      "type": "stage",
+      "timeline": "8-12 weeks before",
+      "tasks": ["identify-category", "research-regulations", "contact-authorities", "assess-import"]
+    },
+    {
+      "id": "permits-stage",
+      "label": "Permit Applications",
+      "type": "stage",
+      "timeline": "6-8 weeks before",
+      "tasks": ["laser-permit-app", "venue-approval", "import-auth", "work-visas"]
+    },
+    {
+      "id": "documentation-stage",
+      "label": "Documentation Package",
+      "type": "stage",
+      "timeline": "4-6 weeks before",
+      "tasks": ["translate-docs", "prepare-certifications", "show-description", "mpe-documentation"]
+    },
+    {
+      "id": "logistics-stage",
+      "label": "Equipment & Logistics",
+      "type": "stage",
+      "timeline": "3-4 weeks before",
+      "tasks": ["carnet-arrangement", "shipping", "power-compatibility", "venue-access"]
+    },
+    {
+      "id": "final-prep",
+      "label": "Final Preparations",
+      "type": "stage",
+      "timeline": "1-2 weeks before",
+      "tasks": ["confirm-permits", "crew-travel", "crew-briefing", "review-docs"]
+    },
+    {
+      "id": "permit-calculator",
+      "label": "Permit Calculator",
+      "type": "tool",
+      "description": "Calculate permits by destination country",
+      "connections": ["usa", "germany", "uk", "australia", "canada", "japan", "uae", "china", "mexico", "singapore"]
+    },
+    {
+      "id": "usa",
+      "label": "United States",
+      "type": "country",
+      "category": "F",
+      "permits": ["FDA Variance", "State Laser Permit"],
+      "leadTime": "60-90 days"
+    },
+    {
+      "id": "germany",
+      "label": "Germany",
+      "type": "country",
+      "category": "F",
+      "permits": ["Lasershow Genehmigung", "TÜV Inspection"],
+      "leadTime": "4-8 weeks"
+    },
+    {
+      "id": "china",
+      "label": "China",
+      "type": "country",
+      "category": "G",
+      "permits": ["Import License", "Ministry of Culture Approval", "Public Security"],
+      "leadTime": "8-12 weeks"
+    },
+    {
+      "id": "uae",
+      "label": "UAE",
+      "type": "country",
+      "category": "G",
+      "permits": ["TRA Equipment Approval", "Civil Defense Approval", "Event Permit"],
+      "leadTime": "6-10 weeks"
+    },
+    {
+      "id": "translation",
+      "label": "Document Translation",
+      "type": "requirement",
+      "description": "Documents may need translation to local language",
+      "connections": ["certified-translation", "technical-translation"]
+    },
+    {
+      "id": "work-permit",
+      "label": "Work Permits / Visas",
+      "type": "requirement",
+      "description": "Legal authorization for international crew to work"
+    },
+    {
+      "id": "temporary-import",
+      "label": "Temporary Import",
+      "type": "procedure",
+      "description": "Procedures for temporary equipment import without duties"
+    },
+    {
+      "id": "local-consultant",
+      "label": "Local Consultant",
+      "type": "resource",
+      "description": "Local expert familiar with regulations"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "international-show",
+      "target": "documentation",
+      "type": "requires",
+      "description": "International shows require comprehensive documentation"
+    },
+    {
+      "source": "planning-stages",
+      "target": "research",
+      "type": "begins-with",
+      "description": "Planning begins with initial research"
+    },
+    {
+      "source": "research",
+      "target": "permits-stage",
+      "type": "leads-to",
+      "description": "Research informs permit applications"
+    },
+    {
+      "source": "carnet",
+      "target": "temporary-import",
+      "type": "enables",
+      "description": "ATA Carnet enables temporary import"
+    },
+    {
+      "source": "permit-calculator",
+      "target": "usa",
+      "type": "includes",
+      "description": "Calculator includes USA requirements"
+    },
+    {
+      "source": "category-f",
+      "target": "usa",
+      "type": "includes",
+      "description": "USA is Category F country"
+    },
+    {
+      "source": "category-g",
+      "target": "china",
+      "type": "includes",
+      "description": "China is Category G country"
+    }
+  ],
+  "timelineData": {
+    "category-a": { "minWeeks": 2, "maxWeeks": 4, "typical": "2-4 weeks" },
+    "category-b": { "minWeeks": 4, "maxWeeks": 6, "typical": "4-6 weeks" },
+    "category-f": { "minWeeks": 6, "maxWeeks": 10, "typical": "6-10 weeks" },
+    "category-g": { "minWeeks": 10, "maxWeeks": 16, "typical": "10-16 weeks" },
+    "category-x": { "minWeeks": 16, "maxWeeks": 24, "typical": "16+ weeks" }
+  }
+}

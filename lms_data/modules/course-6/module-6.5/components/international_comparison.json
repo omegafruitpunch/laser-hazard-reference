@@ -1,0 +1,334 @@
+{
+  "component_id": "international_comparison",
+  "name": "International Standards Comparison",
+  "type": "comparison_table",
+  "description": "Interactive comparison of international outdoor laser safety standards",
+  "version": "1.0.0",
+  "standards": [
+    {
+      "id": "faa",
+      "name": "FAA (United States)",
+      "jurisdiction": "United States",
+      "primary_documents": [
+        "AC 70-1B (Outdoor Laser Operations)",
+        "AC 70-2A (Laser Illumination Reporting)",
+        "FAA Order JO 7400.2 (Chapter 29)"
+      ],
+      "regulatory_body": "Federal Aviation Administration",
+      "approach": "Prescriptive",
+      "attributes": {
+        "notification_form": {
+          "value": "FAA Form 7140-1",
+          "description": "Detailed form with laser configuration worksheets"
+        },
+        "advance_notice": {
+          "value": "30 days recommended",
+          "description": "Minimum time for FAA service center review"
+        },
+        "lso_required": {
+          "value": "Recommended",
+          "description": "Laser Safety Officer strongly recommended but not mandatory"
+        },
+        "observer_minimum": {
+          "value": "Per SAE AS6029",
+          "description": "Varies by operation size and complexity"
+        },
+        "flight_zones": {
+          "value": "LFZ, CFZ, SFZ, NFZ",
+          "description": "Laser-Free, Critical, Sensitive, Normal Flight Zones"
+        },
+        "lfz_limit": {
+          "value": "50 nW/cm²",
+          "description": "<2 NM from runway, <2,000 ft AGL"
+        },
+        "cfz_limit": {
+          "value": "5 µW/cm²",
+          "description": "10 NM radius, up to 10,000 ft AGL"
+        },
+        "sfz_limit": {
+          "value": "100 µW/cm²",
+          "description": "As defined by FAA on case-by-case basis"
+        },
+        "visible_mpe": {
+          "value": "2.6 mW/cm²",
+          "description": "For 0.25 second exposure"
+        },
+        "vcf_method": {
+          "value": "FAA Tables (Appendix B)",
+          "description": "Visual correction factors from AC 70-1B"
+        },
+        "measurement_standard": {
+          "value": "SAE Aerospace Standards",
+          "description": "ARP5290, ARP5293A, ARP5535, AS4970, AS6029"
+        },
+        "enforcement": {
+          "value": "18 USC 39A",
+          "description": "Federal law - up to 5 years prison, $250,000 fine"
+        },
+        "insurance_required": {
+          "value": "No federal requirement",
+          "description": "May be required by venue or local authority"
+        },
+        "appeals_process": {
+          "value": "Administrative appeal",
+          "description": "Through FAA service center"
+        }
+      }
+    },
+    {
+      "id": "easa",
+      "name": "EASA (European Union)",
+      "jurisdiction": "European Union",
+      "primary_documents": [
+        "Safety Information Bulletin 2014-16",
+        "NPA Provisions",
+        "National regulations (varies by member state)"
+      ],
+      "regulatory_body": "European Union Aviation Safety Agency",
+      "approach": "Performance-based",
+      "attributes": {
+        "notification_form": {
+          "value": "National forms (varies)",
+          "description": "Each member state has own notification process"
+        },
+        "advance_notice": {
+          "value": "Varies by state (typically 14-30 days)",
+          "description": "Check specific member state requirements"
+        },
+        "lso_required": {
+          "value": "Yes - Mandatory",
+          "description": "Certified Laser Safety Officer required"
+        },
+        "observer_minimum": {
+          "value": "Risk-based assessment",
+          "description": "Determined by operator risk assessment"
+        },
+        "flight_zones": {
+          "value": "Similar to ICAO",
+          "description": "Generally aligned with ICAO Doc 9817"
+        },
+        "lfz_limit": {
+          "value": "50 nW/cm²",
+          "description": "Similar to FAA"
+        },
+        "cfz_limit": {
+          "value": "5 µW/cm²",
+          "description": "Generally consistent with FAA"
+        },
+        "sfz_limit": {
+          "value": "100 µW/cm²",
+          "description": "Generally consistent with FAA"
+        },
+        "visible_mpe": {
+          "value": "2.55 mW/cm² (IEC)",
+          "description": "Based on IEC 60825-1"
+        },
+        "vcf_method": {
+          "value": "CIE Photopic Curve",
+          "description": "Commission Internationale de l'Éclairance standard"
+        },
+        "measurement_standard": {
+          "value": "IEC 60825 series",
+          "description": "International Electrotechnical Commission standards"
+        },
+        "enforcement": {
+          "value": "National laws",
+          "description": "Varies by member state"
+        },
+        "insurance_required": {
+          "value": "Varies by state",
+          "description": "Many states require liability insurance"
+        },
+        "appeals_process": {
+          "value": "National process",
+          "description": "Varies by member state"
+        }
+      }
+    },
+    {
+      "id": "caa_uk",
+      "name": "CAA UK",
+      "jurisdiction": "United Kingdom",
+      "primary_documents": [
+        "CAP 736 (Operation of Lasers in the UK)",
+        "CAP 1265 (Police/Local Authority Guidance)",
+        "Laser Misuse Act 2018"
+      ],
+      "regulatory_body": "Civil Aviation Authority (UK)",
+      "approach": "Prescriptive with Performance Elements",
+      "attributes": {
+        "notification_form": {
+          "value": "CAA Laser Notification",
+          "description": "CAA-specific notification process"
+        },
+        "advance_notice": {
+          "value": "28 days minimum",
+          "description": "Earlier notification recommended"
+        },
+        "lso_required": {
+          "value": "Yes - CAA Registered",
+          "description": "LSO must be registered with CAA"
+        },
+        "observer_minimum": {
+          "value": "2 minimum",
+          "description": "More required for complex operations"
+        },
+        "flight_zones": {
+          "value": "LFZ, CFZ, SFZ, NFZ",
+          "description": "Similar definitions to FAA"
+        },
+        "lfz_limit": {
+          "value": "50 nW/cm²",
+          "description": "Consistent with international standards"
+        },
+        "cfz_limit": {
+          "value": "5 µW/cm²",
+          "description": "Consistent with international standards"
+        },
+        "sfz_limit": {
+          "value": "100 µW/cm²",
+          "description": "Consistent with international standards"
+        },
+        "visible_mpe": {
+          "value": "2.55 mW/cm²",
+          "description": "Based on IEC 60825-1"
+        },
+        "vcf_method": {
+          "value": "CIE Photopic Curve",
+          "description": "Standard CIE curve"
+        },
+        "measurement_standard": {
+          "value": "IEC 60825 / British Standards",
+          "description": "BS EN 60825 series"
+        },
+        "enforcement": {
+          "value": "Laser Misuse Act 2018",
+          "description": "Up to 5 years imprisonment for aiming at aircraft"
+        },
+        "insurance_required": {
+          "value": "Yes - £5M minimum",
+          "description": "Public liability insurance mandatory"
+        },
+        "appeals_process": {
+          "value": "CAA review process",
+          "description": "Administrative and legal channels"
+        }
+      }
+    },
+    {
+      "id": "icao",
+      "name": "ICAO",
+      "jurisdiction": "International",
+      "primary_documents": [
+        "Annex 14 (Aerodrome Design)",
+        "Doc 9817 (Laser Emitters and Flight Safety)",
+        "Cir 349 (Guidance on Laser)"
+      ],
+      "regulatory_body": "International Civil Aviation Organization",
+      "approach": "Guidance/Recommendations",
+      "attributes": {
+        "notification_form": {
+          "value": "N/A - Recommendations only",
+          "description": "Individual states establish requirements"
+        },
+        "advance_notice": {
+          "value": "N/A",
+          "description": "Up to individual states"
+        },
+        "lso_required": {
+          "value": "Recommended",
+          "description": "Strongly recommended in guidance"
+        },
+        "observer_minimum": {
+          "value": "Risk-based",
+          "description": "Based on risk assessment"
+        },
+        "flight_zones": {
+          "value": "Conceptual framework",
+          "description": "Provides basis for national implementations"
+        },
+        "lfz_limit": {
+          "value": "50 nW/cm² recommended",
+          "description": "Recommended exposure limit"
+        },
+        "cfz_limit": {
+          "value": "5 µW/cm² recommended",
+          "description": "Recommended exposure limit"
+        },
+        "sfz_limit": {
+          "value": "100 µW/cm² recommended",
+          "description": "Recommended exposure limit"
+        },
+        "visible_mpe": {
+          "value": "Reference to IEC",
+          "description": "Refers to IEC 60825-1"
+        },
+        "vcf_method": {
+          "value": "CIE Photopic",
+          "description": "Standard CIE curve"
+        },
+        "measurement_standard": {
+          "value": "IEC 60825",
+          "description": "References IEC standards"
+        },
+        "enforcement": {
+          "value": "N/A",
+          "description": "No direct enforcement - guidance only"
+        },
+        "insurance_required": {
+          "value": "N/A",
+          "description": "Up to individual states"
+        },
+        "appeals_process": {
+          "value": "N/A",
+          "description": "Up to individual states"
+        }
+      }
+    }
+  ],
+  "comparison_features": {
+    "side_by_side": true,
+    "filter_by_attribute": true,
+    "highlight_differences": true,
+    "export_comparison": true,
+    "country_selector": true
+  },
+  "special_notes": [
+    {
+      "country": "Germany",
+      "note": "BGV B2 compliance required. Stricter observer training requirements."
+    },
+    {
+      "country": "France",
+      "note": "DSAC notification required. Local prefecture approval may be needed."
+    },
+    {
+      "country": "Australia",
+      "note": "CASA AC 139-08 applies. Additional CASA notification required."
+    },
+    {
+      "country": "Canada",
+      "note": "Transport Canada guidelines. Provincial regulations may apply."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "id": "q1",
+      "question": "Which regulatory body requires a CAA-registered Laser Safety Officer?",
+      "options": ["FAA", "EASA", "CAA UK", "ICAO"],
+      "correct": 2
+    },
+    {
+      "id": "q2",
+      "question": "What is the advance notice period for FAA Form 7140-1?",
+      "options": ["14 days", "21 days", "28 days", "30 days recommended"],
+      "correct": 3
+    },
+    {
+      "id": "q3",
+      "question": "Which standard uses a performance-based approach?",
+      "options": ["FAA AC 70-1B", "EASA SIB 2014-16", "CAA UK CAP 736", "ICAO Doc 9817"],
+      "correct": 1
+    }
+  ]
+}

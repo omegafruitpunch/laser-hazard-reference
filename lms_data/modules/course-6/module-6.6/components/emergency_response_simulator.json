@@ -1,0 +1,432 @@
+{
+  "component_id": "emergency_response_simulator",
+  "name": "Emergency Response Simulator",
+  "type": "scenario_simulator",
+  "description": "Scenario-based training for laser emergency situations",
+  "version": "1.0.0",
+  "emergency_scenarios": [
+    {
+      "id": "aircraft_incursion",
+      "title": "Aircraft Incursion During Show",
+      "category": "safety_critical",
+      "description": "An aircraft enters the protected airspace while lasers are active.",
+      "initial_state": {
+        "time": "21:45",
+        "show_status": "active",
+        "aircraft_type": "Small aircraft",
+        "distance": "1.5 miles",
+        "direction": "Approaching venue",
+        "lasers_active": true,
+        "observers_alert": true
+      },
+      "timeline": [
+        {
+          "time_offset": 0,
+          "event": "Observer spots aircraft",
+          "action_required": "immediate_shutdown",
+          "correct_action": {
+            "type": "emergency_stop",
+            "description": "Activate emergency stop immediately",
+            "time_limit_seconds": 2
+          },
+          "incorrect_actions": [
+            {
+              "action": "wait_confirmation",
+              "consequence": "Aircraft enters beam path. Laser illumination incident occurs.",
+              "severity": "major"
+            },
+            {
+              "action": "redirect_beam",
+              "consequence": "Manual redirection too slow. Incident still occurs.",
+              "severity": "major"
+            }
+          ]
+        },
+        {
+          "time_offset": 5,
+          "event": "Emergency stop activated",
+          "action_required": "verify_shutdown",
+          "correct_action": {
+            "type": "verification",
+            "description": "Confirm all lasers off, track aircraft",
+            "time_limit_seconds": 10
+          }
+        },
+        {
+          "time_offset": 15,
+          "event": "Aircraft passes through",
+          "action_required": "coordinate",
+          "correct_action": {
+            "type": "communication",
+            "description": "Contact ATC, report shutdown",
+            "time_limit_seconds": 30
+          }
+        },
+        {
+          "time_offset": 60,
+          "event": "Aircraft clear",
+          "action_required": "assess_restart",
+          "correct_action": {
+            "type": "assessment",
+            "description": "All observers confirm clear airspace before restart",
+            "time_limit_seconds": 120
+          }
+        }
+      ],
+      "scoring": {
+        "shutdown_time": {
+          "excellent": 2,
+          "acceptable": 5,
+          "maximum": 10
+        },
+        "points": {
+          "correct_action": 100,
+          "minor_delay": 75,
+          "major_delay": 25,
+          "incorrect_action": 0
+        }
+      },
+      "debrief_points": [
+        "Emergency stop activation time is critical",
+        "Never wait for confirmation before shutdown",
+        "Verification comes after shutdown, not before",
+        "Communication with ATC maintains safety awareness",
+        "Restart requires all-clear from all observers"
+      ]
+    },
+    {
+      "id": "equipment_malfunction",
+      "title": "Scan-Failure Protection Malfunction",
+      "category": "equipment_failure",
+      "description": "The scan-failure protection system fails during operation.",
+      "initial_state": {
+        "time": "21:30",
+        "show_status": "active",
+        "scan_failure_status": "malfunction",
+        "backup_system": "unknown",
+        "beams_currently_scanning": true,
+        "audience_present": true
+      },
+      "decision_points": [
+        {
+          "id": "detect_malfunction",
+          "prompt": "The scan-failure alarm has sounded, but the lasers continue projecting. What is your immediate action?",
+          "options": [
+            {
+              "id": "immediate_shutdown",
+              "text": "Activate emergency stop immediately",
+              "correct": true,
+              "feedback": "Correct. Any scan-failure malfunction requires immediate shutdown.",
+              "points": 100
+            },
+            {
+              "id": "test_backup",
+              "text": "Test if backup protection is working",
+              "correct": false,
+              "feedback": "Never test systems while beams are active and audience is present.",
+              "points": 0,
+              "consequence": "Audience exposure to uncontrolled beams"
+            },
+            {
+              "id": "continue_monitor",
+              "text": "Continue monitoring - beams appear normal",
+              "correct": false,
+              "feedback": "Scan-failure malfunction is a critical safety issue requiring immediate action.",
+              "points": 0,
+              "consequence": "Potential injury to audience or aircraft"
+            },
+            {
+              "id": "reduce_power",
+              "text": "Reduce beam power and continue",
+              "correct": false,
+              "feedback": "Reducing power doesn't address the fundamental safety system failure.",
+              "points": 25
+            }
+          ]
+        },
+        {
+          "id": "post_shutdown_action",
+          "prompt": "Emergency stop activated. What next?",
+          "options": [
+            {
+              "id": "inspect_equipment",
+              "text": "Inspect equipment before considering restart",
+              "correct": true,
+              "feedback": "Correct. Equipment must be inspected and repaired before restart.",
+              "points": 100
+            },
+            {
+              "id": "reset_restart",
+              "text": "Reset system and restart show",
+              "correct": false,
+              "feedback": "Never restart without identifying and correcting the malfunction cause.",
+              "points": 0,
+              "consequence": "Malfunction may recur"
+            },
+            {
+              "id": "disable_protection",
+              "text": "Disable protection and continue manually",
+              "correct": false,
+              "feedback": "Operating without scan-failure protection is never acceptable.",
+              "points": 0,
+              "consequence": "Extreme safety violation"
+            }
+          ]
+        }
+      ],
+      "debrief_points": [
+        "Scan-failure protection is a critical safety system",
+        "Malfunction requires immediate shutdown",
+        "Equipment must be inspected before restart",
+        "Never operate without functioning protection systems",
+        "Document all malfunctions for maintenance records"
+      ]
+    },
+    {
+      "id": "pilot_report",
+      "title": "Pilot Reports Laser Illumination",
+      "category": "regulatory_emergency",
+      "description": "A pilot reports being illuminated by a laser. Authorities are investigating.",
+      "initial_state": {
+        "time": "22:15",
+        "show_status": "just_completed",
+        "report": "Pilot reported illumination at 21:50",
+        "location": "5 miles from venue",
+        "investigation": "FAA and local police investigating",
+        "your_beams": "Were directed away from that location"
+      },
+      "decision_points": [
+        {
+          "id": "initial_response",
+          "prompt": "You receive a call from the FAA about a laser illumination report. How do you respond?",
+          "options": [
+            {
+              "id": "cooperate_fully",
+              "text": "Cooperate fully, provide all documentation",
+              "correct": true,
+              "feedback": "Correct. Full cooperation is legally required and professionally essential.",
+              "points": 100
+            },
+            {
+              "id": "deny_involvement",
+              "text": "Deny your lasers could be responsible",
+              "correct": false,
+              "feedback": "Never make statements without reviewing evidence and documentation.",
+              "points": 0,
+              "consequence": "Potential obstruction investigation"
+            },
+            {
+              "id": "lawyer_first",
+              "text": "Refuse to speak until consulting lawyer",
+              "correct": false,
+              "feedback": "While legal counsel is your right, complete cooperation is the professional standard.",
+              "points": 50
+            }
+          ]
+        },
+        {
+          "id": "documentation",
+          "prompt": "What documentation should you immediately gather?",
+          "type": "multi_select",
+          "options": [
+            {
+              "id": "faa_approval",
+              "text": "FAA approval letter (LOD)",
+              "correct": true
+            },
+            {
+              "id": "notam",
+              "text": "Active NOTAM documentation",
+              "correct": true
+            },
+            {
+              "id": "observer_logs",
+              "text": "Observer logs for the time period",
+              "correct": true
+            },
+            {
+              "id": "weather_data",
+              "text": "Weather conditions at time of report",
+              "correct": true
+            },
+            {
+              "id": "equipment_settings",
+              "text": "Equipment settings and beam directions",
+              "correct": true
+            },
+            {
+              "id": "blame_others",
+              "text": "Evidence of other laser activity in area",
+              "correct": false,
+              "feedback": "Focus on your documentation, not deflection."
+            }
+          ]
+        },
+        {
+          "id": "explanation",
+          "prompt": "Investigators ask about your beam directions at the time. How do you respond?",
+          "options": [
+            {
+              "id": "show_records",
+              "text": "Show them the recorded beam path data and observer logs",
+              "correct": true,
+              "feedback": "Correct. Accurate records are your best defense.",
+              "points": 100
+            },
+            {
+              "id": "from_memory",
+              "text": "Describe from memory where beams were pointing",
+              "correct": false,
+              "feedback": "Never rely on memory. Always refer to documented records.",
+              "points": 25
+            },
+            {
+              "id": "uncertain",
+              "text": "Say you're not sure - beams move around a lot",
+              "correct": false,
+              "feedback": "This suggests lack of control. Proper operations require tracking.",
+              "points": 0
+            }
+          ]
+        }
+      ],
+      "debrief_points": [
+        "Documentation is your best defense",
+        "Cooperate fully with investigations",
+        "Never speculate or make statements from memory",
+        "Accurate records prove compliance",
+        "Investigations can take months - maintain all records"
+      ]
+    },
+    {
+      "id": "medical_emergency",
+      "title": "Medical Emergency On Site",
+      "category": "personnel_emergency",
+      "description": "A crew member suffers a medical emergency requiring evacuation.",
+      "initial_state": {
+        "time": "21:30",
+        "show_status": "in_progress",
+        "crew_status": "One observer collapsed",
+        "symptoms": "Chest pain, difficulty breathing",
+        "ems_eta": "10 minutes",
+        "show_can_continue": "marginally"
+      },
+      "decision_points": [
+        {
+          "id": "immediate_action",
+          "prompt": "An observer collapses with chest pain. What's your first action?",
+          "options": [
+            {
+              "id": "call_911",
+              "text": "Call 911/EMS immediately",
+              "correct": true,
+              "feedback": "Correct. Medical emergency takes immediate priority.",
+              "points": 100
+            },
+            {
+              "id": "continue_show",
+              "text": "Continue show while someone else handles it",
+              "correct": false,
+              "feedback": "Medical emergency requires your immediate attention as LSO.",
+              "points": 0
+            },
+            {
+              "id": "shutdown_first",
+              "text": "Emergency stop lasers, then call 911",
+              "correct": true,
+              "feedback": "Also acceptable - securing the show is appropriate when crew member down.",
+              "points": 100
+            }
+          ]
+        },
+        {
+          "id": "evacuation_route",
+          "prompt": "EMS needs clear access. How do you handle this?",
+          "options": [
+            {
+              "id": "clear_shutdown",
+              "text": "Order show shutdown, clear evacuation route",
+              "correct": true,
+              "feedback": "Correct. Show must yield to emergency medical needs.",
+              "points": 100
+            },
+            {
+              "id": "continue_with_caution",
+              "text": "Continue show, route around active area",
+              "correct": false,
+              "feedback": "Never prioritize show over emergency medical access.",
+              "points": 0
+            },
+            {
+              "id": "pause_resume",
+              "text": "Pause briefly, resume when EMS arrives",
+              "correct": false,
+              "feedback": "Medical emergency requires full shutdown until resolved.",
+              "points": 25
+            }
+          ]
+        },
+        {
+          "id": "crew_assignment",
+          "prompt": "With one observer down, how do you manage coverage?",
+          "options": [
+            {
+              "id": "redeploy_crew",
+              "text": "Redeploy remaining observers, accept reduced coverage",
+              "correct": false,
+              "feedback": "Reduced coverage may not be safe. Consider shutdown.",
+              "points": 50
+            },
+            {
+              "id": "emergency_shutdown_coverage",
+              "text": "Emergency shutdown - insufficient crew for safe operation",
+              "correct": true,
+              "feedback": "Correct. Safe operations require adequate crew.",
+              "points": 100
+            },
+            {
+              "id": "call_backup",
+              "text": "Call backup observer and continue",
+              "correct": false,
+              "feedback": "Backup won't arrive in time. Shutdown is appropriate.",
+              "points": 25
+            }
+          ]
+        }
+      ],
+      "debrief_points": [
+        "Medical emergencies take priority over the show",
+        "EMS needs immediate, unimpeded access",
+        "Staffing levels must be maintained for safety",
+        "Shutdown may be necessary even if show is going well",
+        "Have emergency action plan for medical situations"
+      ]
+    }
+  ],
+  "scoring": {
+    "excellent": {
+      "min_score": 90,
+      "message": "Excellent response! Your actions demonstrate professional-level emergency management."
+    },
+    "good": {
+      "min_score": 75,
+      "message": "Good response. Some areas for improvement identified."
+    },
+    "needs_improvement": {
+      "min_score": 60,
+      "message": "Review needed. Several responses could compromise safety."
+    },
+    "critical_review": {
+      "min_score": 0,
+      "message": "Critical safety issues identified. Mandatory review required."
+    }
+  },
+  "features": {
+    "timer_enabled": true,
+    "stress_simulation": true,
+    "real_time_feedback": true,
+    "consequence_visualization": true,
+    "team_coordination_mode": true,
+    "scenario_randomization": true
+  }
+}

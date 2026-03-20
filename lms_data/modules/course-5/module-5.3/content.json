@@ -1,0 +1,369 @@
+{
+  "module_id": "course-5-module-5.3",
+  "phases": [
+    {
+      "phase_id": "warm_up",
+      "phase_name": "Warm-Up: Indoor vs Outdoor",
+      "duration_minutes": 2,
+      "content": {
+        "scenario": {
+          "title": "The Canadian Tour Decision",
+          "description": "You're planning laser shows in Toronto. One is in a convention centre, the other at an outdoor festival near the waterfront.",
+          "visual": "toronto_scenario"
+        },
+        "interaction": {
+          "type": "decision_tree",
+          "instruction": "Select which shows require federal authorization:",
+          "options": [
+            {
+              "id": "indoor_only",
+              "label": "Convention centre only",
+              "correct": false,
+              "feedback": "Indoor shows don't require federal authorization - but MPE limits still apply!"
+            },
+            {
+              "id": "outdoor_only",
+              "label": "Outdoor festival only",
+              "correct": true,
+              "feedback": "Correct! Outdoor shows require Transport Canada authorization. Indoor shows must stay below 2.5 mW/cm² MPE."
+            },
+            {
+              "id": "both",
+              "label": "Both shows",
+              "correct": false,
+              "feedback": "Indoor shows don't require federal authorization, though provincial OHS may apply."
+            },
+            {
+              "id": "neither",
+              "label": "Neither show",
+              "correct": false,
+              "feedback": "The outdoor show definitely requires Transport Canada authorization."
+            }
+          ]
+        },
+        "key_insight": {
+          "title": "Key Canadian Distinction",
+          "content": "Canada has a clear split: Indoor shows are primarily self-regulated (MPE compliance), while outdoor shows require explicit federal authorization from Transport Canada."
+        }
+      }
+    },
+    {
+      "phase_id": "core_concept",
+      "phase_name": "Core Concept: REDA Structure",
+      "duration_minutes": 5,
+      "content": {
+        "introduction": "The Radiation Emitting Devices Act is Canada's federal legislation governing laser products. Explore its structure:",
+        "interactive_structure": {
+          "type": "collapsible_sections",
+          "title": "REDA Legislative Structure",
+          "sections": [
+            {
+              "id": "definitions",
+              "title": "Section 2: Key Definitions",
+              "icon": "📖",
+              "content": {
+                "definitions": [
+                  {"term": "Radiation", "definition": "Energy in the form of electromagnetic waves or acoustical waves"},
+                  {"term": "Radiation Emitting Device", "definition": "Any device capable of producing and emitting radiation, plus components and accessories"},
+                  {"term": "Manufacturer", "definition": "Person engaged in manufacturing, modifying, or assembling radiation emitting devices"},
+                  {"term": "Distributor", "definition": "Person engaged in selling or leasing radiation emitting devices"},
+                  {"term": "Inspector", "definition": "Individual designated under Section 7 with enforcement powers"},
+                  {"term": "Analyst", "definition": "Individual designated under Section 11 with technical analysis authority"}
+                ]
+              }
+            },
+            {
+              "id": "prohibitions",
+              "title": "Sections 4-5: Prohibitions",
+              "icon": "🚫",
+              "content": {
+                "section_4": {
+                  "title": "Sale, Lease, Import Prohibition",
+                  "prohibits": [
+                    "Non-compliant devices (must meet prescribed standards)",
+                    "Devices creating risk of injury, impairment, or death",
+                    "Devices not performing to claimed characteristics",
+                    "Devices emitting unnecessary radiation"
+                  ]
+                },
+                "section_5": {
+                  "title": "Deception Prohibition",
+                  "prohibits": [
+                    "False, misleading, or deceptive labeling",
+                    "False packaging or advertising"
+                  ]
+                }
+              }
+            },
+            {
+              "id": "notification",
+              "title": "Section 6: Notification Requirements",
+              "icon": "📢",
+              "content": {
+                "requirement": "Manufacturers/importers must notify Minister 'forthwith' upon becoming aware of:",
+                "triggers": [
+                  "Device does not comply with standards",
+                  "Device creates risk of injury/impairment/death",
+                  "Device doesn't perform as claimed"
+                ],
+                "timing": "'Forthwith' = immediately, without delay",
+                "minister_powers": "Minister may order notification to affected parties"
+              }
+            },
+            {
+              "id": "enforcement",
+              "title": "Sections 7-10: Enforcement",
+              "icon": "👮",
+              "content": {
+                "inspector_powers": [
+                  "Enter premises at reasonable time (Section 8)",
+                  "Examine and remove devices for further examination",
+                  "Open and examine packages",
+                  "Examine and copy records, test data, shipping documents",
+                  "Seize devices if contravention suspected (Section 10)"
+                ],
+                "dwelling_house": "Warrant required for dwelling-house entry (Section 8(2))",
+                "obstruction": "No obstruction, hindrance, or false statements permitted (Section 9)"
+              }
+            },
+            {
+              "id": "offences",
+              "title": "Section 14: Offences and Penalties",
+              "icon": "⚖️",
+              "content": {
+                "sections_4_to_6": {
+                  "offence": "Contravention of Sections 4-6 (sale/import/deception)",
+                  "summary_conviction": "Fine up to $5,000",
+                  "indictment": "Fine up to $10,000"
+                },
+                "other_provisions": {
+                  "offence": "Contravention of other provisions",
+                  "summary_conviction": "Fine up to $1,000 or imprisonment up to 6 months or both",
+                  "indictment": "Fine up to $3,000 or imprisonment up to 1 year or both"
+                },
+                "employer_liability": {
+                  "section": "Section 15",
+                  "rule": "Employer liable for employee/agent offences",
+                  "defence": "Due diligence defence available"
+                }
+              }
+            },
+            {
+              "id": "regulations",
+              "title": "Section 13: Regulation-Making Powers",
+              "icon": "📋",
+              "content": {
+                "governor_in_council_can": [
+                  "Prescribe classes of radiation emitting devices",
+                  "Prescribe standards for design, construction, functioning",
+                  "Exempt devices from provisions",
+                  "Respect labelling, packaging, advertising",
+                  "Require record keeping",
+                  "Respect seizure, detention, forfeiture",
+                  "Implement international agreements"
+                ],
+                "interim_orders": {
+                  "section": "13.1",
+                  "power": "Minister may make interim orders for significant risks",
+                  "duration": "14 days to 1 year depending on approval"
+                }
+              }
+            }
+          ]
+        },
+        "jurisdiction_note": {
+          "title": "REDA Jurisdiction Note",
+          "content": "REDA primarily applies to manufacturers, importers, and distributors of laser products. Entertainment operators using lasers are primarily regulated through provincial Occupational Health and Safety acts, with Transport Canada having jurisdiction over outdoor shows affecting aviation."
+        }
+      }
+    },
+    {
+      "phase_id": "guided_practice",
+      "phase_name": "Guided Practice: Compliance Pathways",
+      "duration_minutes": 6,
+      "content": {
+        "compliance_flow": {
+          "title": "REDA Compliance Flow",
+          "type": "interactive_flowchart",
+          "pathways": [
+            {
+              "id": "indoor_pathway",
+              "title": "Indoor Shows Pathway",
+              "steps": [
+                {
+                  "step": 1,
+                  "action": "Design show with MPE below 2.5 mW/cm²",
+                  "details": "Maximum Permissible Exposure limit for audience"
+                },
+                {
+                  "step": 2,
+                  "action": "Conduct irradiance measurements",
+                  "details": "Verify compliance with MPE limit"
+                },
+                {
+                  "step": 3,
+                  "action": "Document safety measures",
+                  "details": "Risk assessment, method statement, MPE calculations"
+                },
+                {
+                  "step": 4,
+                  "action": "Check provincial OHS requirements",
+                  "details": "Contact provincial regulator for any additional requirements"
+                }
+              ],
+              "key_point": "No federal permit required, but strict MPE compliance mandatory"
+            },
+            {
+              "id": "outdoor_pathway",
+              "title": "Outdoor Shows Pathway",
+              "steps": [
+                {
+                  "step": 1,
+                  "action": "Complete Notice of Proposal form",
+                  "details": "Transport Canada 'Notice of Proposal to Conduct Outdoor Laser Operation(s)'"
+                },
+                {
+                  "step": 2,
+                  "action": "Submit to Civil Aviation Regional Office",
+                  "details": "Contact appropriate regional office for your area"
+                },
+                {
+                  "step": 3,
+                  "action": "Receive authorization before operation",
+                  "details": "Cannot proceed without written authorization"
+                },
+                {
+                  "step": 4,
+                  "action": "Comply with any conditions specified",
+                  "details": "Authorization may include specific operational requirements"
+                }
+              ],
+              "key_point": "Authorization REQUIRED before outdoor operation",
+              "form_similarity": "Similar to US FAA Advisory Circular 70-1"
+            }
+          ]
+        },
+        "inspector_scenario": {
+          "title": "Inspector Powers Simulator",
+          "type": "interactive_scenario",
+          "scenario": "A Health Canada inspector arrives at your facility. What are they permitted to do?",
+          "interactions": [
+            {
+              "action": "Enter without notice during business hours",
+              "permitted": true,
+              "explanation": "Inspectors may enter at any reasonable time"
+            },
+            {
+              "action": "Enter your home without consent",
+              "permitted": false,
+              "explanation": "Warrant or occupant consent required for dwelling-houses"
+            },
+            {
+              "action": "Seize laser equipment if they suspect a violation",
+              "permitted": true,
+              "explanation": "Section 10 allows seizure if contravention believed"
+            },
+            {
+              "action": "Demand to see certificates of conformity",
+              "permitted": true,
+              "explanation": "Can examine and copy relevant records and documents"
+            },
+            {
+              "action": "Arrest personnel",
+              "permitted": false,
+              "explanation": "Inspectors don't have arrest powers; they report to Minister"
+            }
+          ]
+        },
+        "provincial_note": {
+          "title": "Provincial Considerations",
+          "content": [
+            "REDA is federal law - provincial OHS acts apply to workplaces",
+            "Contact provincial regulators for specific show permits",
+            "Strict laser pointer laws in Montreal, Toronto, Vancouver (since June 2018)",
+            "Canadian standards align closely with ANSI Z136 series"
+          ]
+        }
+      }
+    },
+    {
+      "phase_id": "challenges",
+      "phase_name": "Challenge: Canadian Compliance",
+      "duration_minutes": 2,
+      "content": {
+        "introduction": "Test your understanding of Canadian requirements.",
+        "challenges": [
+          {
+            "id": "challenge_1",
+            "type": "timing_challenge",
+            "title": "Notification Timing",
+            "question": "Under Section 6 of REDA, how quickly must a manufacturer notify the Minister after discovering a defect?",
+            "options": [
+              {"label": "Within 24 hours", "correct": false},
+              {"label": "Within 7 days", "correct": false},
+              {"label": "Forthwith (immediately)", "correct": true},
+              {"label": "Within 30 days", "correct": false}
+            ],
+            "explanation": "Section 6 requires notification 'forthwith' - meaning immediately, without delay."
+          },
+          {
+            "id": "challenge_2",
+            "type": "penalty_calculation",
+            "title": "Penalty Assessment",
+            "question": "A company is convicted on indictment for selling non-compliant laser products (Section 4 violation). What is the maximum fine?",
+            "options": [
+              {"label": "$1,000", "correct": false},
+              {"label": "$5,000", "correct": false},
+              {"label": "$10,000", "correct": true},
+              {"label": "$50,000", "correct": false}
+            ],
+            "explanation": "Section 14 specifies up to $10,000 for Sections 4-6 contraventions on indictment. Other provisions max at $3,000."
+          },
+          {
+            "id": "challenge_3",
+            "type": "documentation_checklist",
+            "title": "Outdoor Show Requirements",
+            "question": "For an outdoor laser show in Vancouver, select all required steps:",
+            "items": [
+              {"id": "step1", "label": "Submit Notice of Proposal to Transport Canada", "required": true},
+              {"id": "step2", "label": "Obtain written authorization before operation", "required": true},
+              {"id": "step3", "label": "Comply with Vancouver laser pointer bylaws", "required": true},
+              {"id": "step4", "label": "Pay federal licensing fee to Health Canada", "required": false, "note": "Transport Canada, not Health Canada, for outdoor shows"},
+              {"id": "step5", "label": "Notify provincial OHS authority", "required": false, "note": "May be recommended but not federally required"}
+            ]
+          }
+        ],
+        "achievement": {
+          "badge_unlock": "canada_compliance_expert",
+          "message": "Congratulations! You've mastered Canadian laser regulations under REDA."
+        }
+      }
+    }
+  ],
+  "quiz_bank": {
+    "module_quiz": "lms_data/quiz_banks/course-5/course-5-quiz-supplemental.json",
+    "relevant_questions": ["c5-s7", "c5-s8", "c5-s9", "c5-s10", "c5-s15", "c5-s20"]
+  },
+  "components": {
+    "interactive_elements": [
+      {
+        "id": "reda_compliance_flow",
+        "type": "interactive_flowchart",
+        "path": "components/REDAComplianceFlow.tsx",
+        "description": "Interactive flowchart showing indoor vs outdoor compliance pathways"
+      },
+      {
+        "id": "indoor_outdoor_decision_tree",
+        "type": "decision_tree",
+        "path": "components/IndoorOutdoorDecision.tsx",
+        "description": "Decision tree for determining indoor vs outdoor requirements"
+      },
+      {
+        "id": "inspector_powers_simulator",
+        "type": "interactive_scenario",
+        "path": "components/InspectorPowers.tsx",
+        "description": "Simulator for Health Canada inspector powers and limitations"
+      }
+    ]
+  }
+}

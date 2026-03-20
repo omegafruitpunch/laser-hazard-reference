@@ -1,0 +1,83 @@
+{
+  "document": "beam-hazard-calculations.pdf",
+  "title": "Roberta McHatton - Laser Safety Services",
+  "type": "Professional Profile / CV",
+  "note": "This document is a CV/resume, not technical beam hazard calculations",
+  "total_pages": 4,
+  "pages": [
+    {
+      "page_num": 1,
+      "core_concepts": [
+        "Introduction to Roberta McHatton and Laser Safety Services (LSS)",
+        "Company background and specialization in entertainment/display industries",
+        "Clientele including major events and artists"
+      ],
+      "key_terms": {
+        "Laser Safety Services (LSS)": "Company providing laser safety consultation since 1995",
+        "ANSI Z136": "American National Standards Institute laser safety standards",
+        "FDA/CDRH": "Food and Drug Administration / Center for Devices and Radiological Health"
+      },
+      "difficulty": "beginner",
+      "learning_objectives": [
+        "Understand professional qualifications in laser safety"
+      ],
+      "prerequisites": []
+    },
+    {
+      "page_num": 2,
+      "core_concepts": [
+        "Professional background and experience at Laser Fantasy International",
+        "Timeline of career from 1995-2004 and 2005-current"
+      ],
+      "key_terms": {
+        "LFI": "Laser Fantasy International - former employer"
+      },
+      "difficulty": "beginner",
+      "learning_objectives": [
+        "Understand career paths in laser safety industry"
+      ],
+      "prerequisites": []
+    },
+    {
+      "page_num": 3,
+      "core_concepts": [
+        "Professional organization memberships (ILDA, ESA)",
+        "Publications and training program development",
+        "Laser Safety Officer (LSO) training requirements per ANSI Z136.1"
+      ],
+      "key_terms": {
+        "ILDA": "International Laser Display Association",
+        "ESA": "Event Safety Alliance",
+        "LSO": "Laser Safety Officer"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Identify key professional organizations in laser safety",
+        "Understand ANSI Z136.1 training requirements"
+      ],
+      "prerequisites": [
+        "Basic understanding of laser safety standards"
+      ]
+    },
+    {
+      "page_num": 4,
+      "core_concepts": [
+        "Training course components and certification qualifications",
+        "Training duration (4 hours) and assessment criteria (80% pass rate)"
+      ],
+      "key_terms": {
+        "MPE": "Maximum Permissible Exposure",
+        "NOHD": "Nominal Ocular Hazard Distance",
+        "USAF Eye Hazards": "US Air Force document on laser eye injuries"
+      },
+      "difficulty": "intermediate",
+      "learning_objectives": [
+        "Understand LSO training curriculum",
+        "Know certification requirements"
+      ],
+      "prerequisites": [
+        "Understanding of basic laser safety concepts"
+      ]
+    }
+  ]
+}

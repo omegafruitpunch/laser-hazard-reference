@@ -1,0 +1,118 @@
+{
+  "module_id": "course-5-australia-nz",
+  "course_id": "course-5",
+  "course_name": "International Laser Regulations",
+  "module_name": "Australia and New Zealand Laser Regulations",
+  "source_pdf": "australia-nz.pdf",
+  "total_pages": 1,
+  "estimated_duration_minutes": 15,
+  "learning_objectives": [
+    "Understand Australia's state-based laser regulations",
+    "Identify regulated laser classes in different Australian states",
+    "Recognize New Zealand laser safety standards",
+    "Understand licensing requirements for laser use"
+  ],
+  "content_pages": [
+    {
+      "page_number": 1,
+      "title": "Australian State-Based Laser Regulations",
+      "content": {
+        "overview": "Australian laser safety is governed by a combination of federal standards and state-specific regulations. Unlike some countries with uniform national laser laws, Australia has a decentralized regulatory approach.",
+        "key_authorities": [
+          {
+            "name": "ARPANSA",
+            "full_name": "Australian Radiation Protection and Nuclear Safety Agency",
+            "role": "Federal guidance on non-ionizing radiation including lasers",
+            "website": "https://www.arpansa.gov.au/understanding-radiation/what-is-radiation/non-ionising-radiation/laser"
+          },
+          {
+            "name": "Safe Work Australia",
+            "role": "National policy body for workplace health and safety",
+            "resource": "Laser Classification and Potential Hazards documentation"
+          }
+        ],
+        "regulated_states": {
+          "description": "Only three Australian states have specific regulations for powerful lasers and IPLs (Intense Pulsed Light devices):",
+          "states": [
+            {
+              "name": "Western Australia",
+              "regulations": "Regulates Class 3B and Class 4 lasers regardless of purpose",
+              "notes": "Class 4 lasers are commonly used for skin pigmentation treatment and hair removal. Beauty therapists can use less powerful lasers legally."
+            },
+            {
+              "name": "Queensland",
+              "regulations": "Governed by Radiation Safety Act 1999 (Qld) and Radiation Safety Regulations 1999",
+              "requirements": [
+                "Businesses must submit details of laser types to Queensland Health Authority",
+                "Required: Radiation Safety and Protection Plan for Diagnostic, Therapeutic or Cosmetic practices"
+              ]
+            },
+            {
+              "name": "Tasmania",
+              "regulations": "Radiation Protection Act 2005 and 2006",
+              "requirements": [
+                "License required for Class 3B or Class 4 lasers and IPLs used for medical purposes",
+                "Cosmetic procedures may soon require same licensing as medical use"
+              ]
+            }
+          ]
+        },
+        "australian_standard": {
+          "standard": "AS/NZS 4173:2004",
+          "title": "Safe use of lasers in health care",
+          "status": "Recognized standard but NOT law or regulation",
+          "requirements": "All personnel using lasers should have training appropriate to their tasks"
+        },
+        "key_takeaways": [
+          "Only WA, QLD, and TAS have specific laser regulations",
+          "Class 3B and Class 4 lasers are the primary regulated classes",
+          "IPL devices are regulated alongside lasers in these states",
+          "AS/NZS 4173:2004 provides guidance but is not legally binding",
+          "License requirements vary by state and application (medical vs cosmetic)"
+        ]
+      },
+      "quiz_questions": [
+        {
+          "question": "Which Australian states currently have specific regulations for Class 3B and Class 4 lasers?",
+          "type": "multiple_choice",
+          "options": [
+            "New South Wales, Victoria, and South Australia",
+            "Western Australia, Queensland, and Tasmania",
+            "All states have identical laser regulations",
+            "Only Western Australia"
+          ],
+          "correct_answer": 1,
+          "explanation": "Western Australia, Queensland, and Tasmania are the only states with specific regulations for powerful lasers and IPLs."
+        },
+        {
+          "question": "Under Queensland's Radiation Safety Act 1999, what must businesses submit to the Queensland Health Authority?",
+          "type": "multiple_choice",
+          "options": [
+            "Only laser purchase receipts",
+            "Details of the type of laser being used",
+            "Patient treatment records",
+            "Annual financial statements"
+          ],
+          "correct_answer": 1,
+          "explanation": "Queensland requires businesses to submit details of the type of laser being used to the Queensland Health Authority."
+        },
+        {
+          "question": "Is AS/NZS 4173:2004 legally binding in Australia?",
+          "type": "true_false",
+          "correct_answer": false,
+          "explanation": "AS/NZS 4173:2004 is a recognized standard but is NOT law or regulation - it provides guidance that personnel should have appropriate training."
+        }
+      ]
+    }
+  ],
+  "glossary": {
+    "ARPANSA": "Australian Radiation Protection and Nuclear Safety Agency - federal guidance body",
+    "IPL": "Intense Pulsed Light - a broad-spectrum light source used for various cosmetic and medical treatments",
+    "AS/NZS 4173:2004": "Australian/New Zealand Standard for safe use of lasers in health care"
+  },
+  "references": [
+    "https://www.arpansa.gov.au/understanding-radiation/what-is-radiation/non-ionising-radiation/laser",
+    "https://www.safeworkaustralia.gov.au/doc/laser-classification-and-potential-hazards",
+    "https://edenlaserclinics.com.au/articles/laser-treatment-rules-regulations/"
+  ]
+}

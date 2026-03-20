@@ -1,0 +1,204 @@
+{
+  "graph_name": "International Laser Safety Regulatory Knowledge Graph",
+  "version": "1.0",
+  "course": "Course 5 - International Regulations",
+  "generated_by": "PDF Elite Processor Agent #13",
+  "generation_timestamp": "2026-03-19T15:46:00Z",
+  "description": "Knowledge graph mapping international laser safety regulations, standards, and compliance requirements",
+  
+  "nodes": {
+    "regions": [
+      {"id": "EU", "name": "European Union", "type": "region", "regulatory_framework": "EU Directives"},
+      {"id": "UK", "name": "United Kingdom", "type": "region", "regulatory_framework": "Post-Brexit UK Regulations"},
+      {"id": "CA", "name": "Canada", "type": "region", "regulatory_framework": "REDA"},
+      {"id": "AU", "name": "Australia", "type": "region", "regulatory_framework": "AS/NZS 2211"},
+      {"id": "NZ", "name": "New Zealand", "type": "region", "regulatory_framework": "Radiation Safety Act"},
+      {"id": "CH", "name": "Switzerland", "type": "region", "regulatory_framework": "FOPH Regulations"},
+      {"id": "AT", "name": "Austria", "type": "region", "regulatory_framework": "OENORM S1105:2014"},
+      {"id": "FI", "name": "Finland", "type": "region", "regulatory_framework": "STUK Regulations"},
+      {"id": "SE", "name": "Sweden", "type": "region", "regulatory_framework": "Swedish Radiation Authority"},
+      {"id": "DE", "name": "Germany", "type": "region", "regulatory_framework": "TUV Standards"},
+      {"id": "FR", "name": "France", "type": "region", "regulatory_framework": "Regional Variations"},
+      {"id": "NL", "name": "Netherlands", "type": "region", "regulatory_framework": "ARBO/NEN 6025x"},
+      {"id": "IE", "name": "Ireland", "type": "region", "regulatory_framework": "SHWW Regulations"}
+    ],
+    
+    "regulatory_bodies": [
+      {"id": "IEC_TC76", "name": "IEC Technical Committee 76", "type": "standards_body", "scope": "International laser safety standards"},
+      {"id": "HSE", "name": "Health and Safety Executive", "type": "regulator", "region": "UK", "scope": "Workplace safety"},
+      {"id": "FOPH", "name": "Federal Office of Public Health", "type": "regulator", "region": "CH", "scope": "Swiss laser regulations"},
+      {"id": "STUK", "name": "Finnish Radiation Authorities", "type": "regulator", "region": "FI", "scope": "Radiation safety"},
+      {"id": "Health_Canada", "name": "Health Canada", "type": "regulator", "region": "CA", "scope": "REDA administration"},
+      {"id": "Transport_Canada", "name": "Transport Canada", "type": "regulator", "region": "CA", "scope": "Outdoor laser operations"},
+      {"id": "CAA", "name": "Civil Aviation Authority", "type": "regulator", "region": "UK", "scope": "Aviation safety"},
+      {"id": "PLASA", "name": "PLASA", "type": "industry_body", "region": "UK", "scope": "Entertainment industry guidance"},
+      {"id": "ILDA", "name": "International Laser Display Association", "type": "industry_body", "scope": "Global industry standards"},
+      {"id": "EU_Commission", "name": "European Commission", "type": "regulator", "region": "EU", "scope": "EU directive implementation"}
+    ],
+    
+    "standards": [
+      {"id": "IEC_60825_1", "name": "IEC 60825-1", "type": "standard", "edition": "Edition 3 (2014)", "scope": "Laser product safety"},
+      {"id": "EN_60825", "name": "EN 60825", "type": "standard", "scope": "European adoption of IEC 60825"},
+      {"id": "EU_2006_25_EC", "name": "EU Directive 2006/25/EC", "type": "directive", "scope": "Worker exposure to artificial optical radiation"},
+      {"id": "REDA", "name": "Radiation Emitting Devices Act", "type": "legislation", "region": "CA", "citation": "R.S.C., 1985, c. R-1"},
+      {"id": "OENORM_S1105", "name": "OENORM S1105:2014", "type": "standard", "region": "AT", "scope": "Austrian laser safety"},
+      {"id": "AS_NZS_2211", "name": "AS/NZS 2211", "type": "standard", "scope": "Australia/New Zealand laser safety"},
+      {"id": "O_NIRSA", "name": "O-NIRSA", "type": "standard", "region": "CH", "scope": "Swiss optical radiation safety"},
+      {"id": "CAA_CAP_736", "name": "CAA CAP 736", "type": "guidance", "region": "UK", "scope": "Directed light operations"},
+      {"id": "Safety_Display_Lasers", "name": "Safety of Display Lasers", "type": "guidance", "region": "UK", "year": 2016},
+      {"id": "NEN_6025x", "name": "NEN 6025x", "type": "standard", "region": "NL", "scope": "Dutch laser standards"}
+    ],
+    
+    "requirements": [
+      {"id": "MPE_10W_m2", "name": "MPE 10 W/m²", "type": "exposure_limit", "value": "10 W/m² (1 mW/cm²)", "application": "General audience exposure"},
+      {"id": "MPE_2.5_mW_cm2", "name": "MPE 2.5 mW/cm²", "type": "exposure_limit", "value": "2.5 mW/cm²", "application": "Canada indoor shows"},
+      {"id": "MPE_1_mW_cm2_FI", "name": "MPE 1 mW/cm² Finland", "type": "exposure_limit", "value": "1 mW/cm²", "application": "Finland special permits"},
+      {"id": "MPE_children_factor", "name": "Children MPE Factor", "type": "exposure_limit", "value": "Factor of 10 reduction", "application": "Under 500nm for children"},
+      {"id": "Timebase_10s", "name": "10 Second Time Base", "type": "exposure_parameter", "value": "10 seconds", "application": "Audience exposure minimum"},
+      {"id": "Timebase_0.25s", "name": "0.25 Second Time Base", "type": "exposure_parameter", "value": "0.25 seconds", "application": "Eye aversion response"},
+      {"id": "Vert_Sep_3m", "name": "3m Vertical Separation", "type": "safety_zone", "value": "3 meters", "application": "Supervised installations"},
+      {"id": "Vert_Sep_6m", "name": "6m Vertical Separation", "type": "safety_zone", "value": "6 meters", "application": "Unsupervised installations"},
+      {"id": "Lat_Sep_2.5m", "name": "2.5m Lateral Separation", "type": "safety_zone", "value": "2.5 meters", "application": "All installations"},
+      {"id": "Swiss_Level_1", "name": "Swiss Competence Level 1", "type": "certification", "scope": "No laser in audience area"},
+      {"id": "Swiss_Level_2", "name": "Swiss Competence Level 2", "type": "certification", "scope": "Laser in audience area - requires MPE knowledge"},
+      {"id": "CE_Marking", "name": "CE Marking", "type": "conformity_mark", "scope": "EU market access"},
+      {"id": "UKCA_Marking", "name": "UKCA Marking", "type": "conformity_mark", "scope": "UK market access post-Brexit"}
+    ],
+    
+    "safety_systems": [
+      {"id": "PASS", "name": "Professional Audience Safety System", "type": "safety_system", "function": "Scan-fail detection"},
+      {"id": "SafetyScan", "name": "SafetyScan", "type": "safety_system", "function": "Scan-fail protection"},
+      {"id": "Scan_Fail", "name": "Scan-Fail Devices", "type": "safety_system", "function": "Automatic shutdown on scan failure"},
+      {"id": "E_Stop", "name": "Emergency Stop", "type": "safety_system", "function": "Manual emergency shutdown"},
+      {"id": "Blanking", "name": "Software Blanking", "type": "safety_system", "function": "Software beam termination"},
+      {"id": "Metallic_Masking", "name": "Metallic Masking", "type": "safety_system", "function": "Physical beam restriction"}
+    ],
+    
+    "permit_statuses": [
+      {"id": "Status_A", "name": "Status A", "description": "Permit required, permission given", "examples": ["AT", "FI", "DE", "SE", "CH", "UK", "US"]},
+      {"id": "Status_C", "name": "Status C", "description": "Permit required but often not enforced", "examples": ["JP", "LU"]},
+      {"id": "Status_D", "name": "Status D", "description": "Allowed without permit", "examples": ["BE", "CA", "CZ", "FR-OUT", "GR", "IT", "NL", "ES"]},
+      {"id": "Status_E", "name": "Status E", "description": "Not allowed under almost all circumstances", "examples": ["FR-IN"]},
+      {"id": "Status_F", "name": "Status F", "description": "Situation unclear", "examples": ["CN", "IN", "RU", "PL", "AE"]}
+    ]
+  },
+  
+  "edges": [
+    {"source": "EU", "target": "EU_2006_25_EC", "relationship": "implements"},
+    {"source": "EU", "target": "EN_60825", "relationship": "adopts"},
+    {"source": "EN_60825", "target": "IEC_60825_1", "relationship": "harmonized_with"},
+    {"source": "EU_Commission", "target": "EU_2006_25_EC", "relationship": "administers"},
+    {"source": "IEC_TC76", "target": "IEC_60825_1", "relationship": "develops"},
+    
+    {"source": "UK", "target": "Safety_Display_Lasers", "relationship": "guidance_based_on"},
+    {"source": "UK", "target": "CAA_CAP_736", "relationship": "aviation_guidance"},
+    {"source": "HSE", "target": "Safety_Display_Lasers", "relationship": "consulted_on"},
+    {"source": "PLASA", "target": "Safety_Display_Lasers", "relationship": "contributed_to"},
+    {"source": "CAA", "target": "CAA_CAP_736", "relationship": "publishes"},
+    {"source": "UK", "target": "UKCA_Marking", "relationship": "requires"},
+    {"source": "UK", "target": "EN_60825", "relationship": "retained_as"},
+    
+    {"source": "CA", "target": "REDA", "relationship": "governed_by"},
+    {"source": "Health_Canada", "target": "REDA", "relationship": "administers"},
+    {"source": "Transport_Canada", "target": "CA", "relationship": "regulates_outdoor"},
+    {"source": "CA", "target": "ANSI_Z136", "relationship": "aligns_with"},
+    
+    {"source": "CH", "target": "FOPH", "relationship": "regulated_by"},
+    {"source": "FOPH", "target": "O_NIRSA", "relationship": "implements"},
+    {"source": "CH", "target": "Swiss_Level_1", "relationship": "requires"},
+    {"source": "CH", "target": "Swiss_Level_2", "relationship": "requires_for_audience"},
+    
+    {"source": "AT", "target": "OENORM_S1105", "relationship" :"implements"},
+    {"source": "FI", "target": "STUK", "relationship": "regulated_by"},
+    {"source": "SE", "target": "Swedish_Radiation_Authority", "relationship": "regulated_by"},
+    {"source": "DE", "target": "TUV", "relationship": "standards_by"},
+    {"source": "NL", "target": "NEN_6025x", "relationship": "references"},
+    {"source": "NL", "target": "TUV", "relationship": "follows_as_guideline"},
+    
+    {"source": "Status_A", "target": "AT", "relationship": "applies_to"},
+    {"source": "Status_A", "target": "FI", "relationship": "applies_to"},
+    {"source": "Status_A", "target": "DE", "relationship": "applies_to"},
+    {"source": "Status_A", "target": "SE", "relationship": "applies_to"},
+    {"source": "Status_A", "target": "CH", "relationship": "applies_to"},
+    {"source": "Status_A", "target": "UK", "relationship": "applies_to"},
+    {"source": "Status_D", "target": "CA", "relationship": "applies_to"},
+    {"source": "Status_E", "target": "FR-IN", "relationship": "applies_to"},
+    
+    {"source": "EU", "target": "CE_Marking", "relationship": "requires"},
+    {"source": "MPE_10W_m2", "target": "UK", "relationship": "applies_in"},
+    {"source": "MPE_2.5_mW_cm2", "target": "CA", "relationship": "limit_in"},
+    {"source": "MPE_1_mW_cm2_FI", "target": "FI", "relationship": "limit_in"},
+    {"source": "Vert_Sep_3m", "target": "UK", "relationship": "required_in"},
+    {"source": "Vert_Sep_6m", "target": "UK", "relationship": "required_for_unsupervised"},
+    
+    {"source": "PASS", "target": "UK", "relationship": "recommended_in"},
+    {"source": "PASS", "target": "SE", "relationship": "required_in"},
+    {"source": "Scan_Fail", "target": "FI", "relationship": "required_for_scanned"},
+    {"source": "E_Stop", "target": "UK", "relationship": "required_in"},
+    {"source": "E_Stop", "target": "CA", "relationship": "required_in"},
+    
+    {"source": "ILDA", "target": "PASS", "relationship": "promotes"},
+    {"source": "ILDA", "target": "SafetyScan", "relationship": "promotes"}
+  ],
+  
+  "compliance_paths": {
+    "EU_Entertainment_Operator": {
+      "steps": [
+        "Determine country status classification",
+        "Obtain permits if Status A",
+        "Ensure CE marking on equipment",
+        "Comply with EU 2006/25/EC for workers",
+        "Follow EN 60825 standards"
+      ],
+      "key_considerations": ["Member state variations exist", "Worker exposure limits apply"]
+    },
+    "UK_Entertainment_Operator": {
+      "steps": [
+        "Follow Safety of Display Lasers guidance",
+        "Appoint competent LSO with executive responsibility",
+        "Conduct risk assessment and method statement",
+        "Maintain 3m/2.5m separation (supervised) or 6m/2.5m (unsupervised)",
+        "Notify CAA for outdoor shows",
+        "Test E-stop before each performance",
+        "Document sign-off procedures"
+      ],
+      "key_considerations": ["No prior written permission needed if standards met", "UKCA marking for equipment"]
+    },
+    "Canada_Entertainment_Operator": {
+      "steps": [
+        "For indoor: Maintain MPE below 2.5 mW/cm²",
+        "For outdoor: Submit Notice of Proposal to Transport Canada",
+        "Receive authorization from Civil Aviation Regional Office",
+        "Comply with provincial OHS requirements"
+      ],
+      "key_considerations": ["REDA applies to manufacturers/distributors", "Strict laser pointer laws in major cities"]
+    },
+    "Switzerland_Entertainment_Operator": {
+      "steps": [
+        "Notify FOPH 14 days in advance via online portal",
+        "Obtain Competence Level 1 (no audience exposure) or Level 2 (audience exposure)",
+        "Level 2 requires MPE calculation knowledge",
+        "Register event with competent person"
+      ],
+      "key_considerations": ["Competence certificates mandatory", "FOPH directly enforces regulations"]
+    }
+  },
+  
+  "cross_border_considerations": {
+    "equipment_movement": [
+      "Verify conformity markings (CE for EU, UKCA for UK)",
+      "Check voltage and electrical standards compatibility",
+      "Ensure documentation in local language"
+    ],
+    "documentation": [
+      "Risk assessments may need translation",
+      "Insurance certificates for international coverage",
+      "Operator competency certification recognition"
+    ],
+    "permits": [
+      "Each country requires separate permit assessment",
+      "Status classifications vary significantly",
+      "Some countries require local safety consultants"
+    ]
+  }
+}

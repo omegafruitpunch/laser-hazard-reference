@@ -1,0 +1,251 @@
+{
+  "component_id": "eyewear_spec_database",
+  "name": "Eyewear Specification Database",
+  "version": "1.0.0",
+  "type": "reference_tool",
+  "description": "Reference database of laser protective eyewear specifications and standards",
+  "pedagogical_approach": {
+    "reference_material": true,
+    "searchable_filterable": true,
+    "standards_education": true
+  },
+  "database_structure": {
+    "eyewear_types": {
+      "narrowband": {
+        "name": "Narrowband",
+        "description": "Maximum protection at specific wavelength",
+        "characteristics": ["Highest OD at target wavelength", "Good VLT", "Wavelength specific"],
+        "typical_od": "6-8",
+        "typical_vlt": "30-60%"
+      },
+      "broadband": {
+        "name": "Broadband",
+        "description": "Protection across continuous wavelength range",
+        "characteristics": ["Multiple wavelength protection", "Lower VLT", "Versatile"],
+        "typical_od": "4-6",
+        "typical_vlt": "10-30%"
+      },
+      "multi_line": {
+        "name": "Multi-Line",
+        "description": "Protection at specific discrete wavelengths",
+        "characteristics": ["Optimized for specific lines", "Better VLT than broadband", "Limited to specified wavelengths"],
+        "typical_od": "5-7",
+        "typical_vlt": "20-40%"
+      },
+      "alignment": {
+        "name": "Alignment",
+        "description": "Lower OD for intentional beam viewing",
+        "characteristics": ["Lower OD (2-4)", "High VLT", "For beam positioning tasks"],
+        "typical_od": "2-4",
+        "typical_vlt": "50-80%",
+        "warning": "Not for protection during operation - alignment only"
+      },
+      "prescription": {
+        "name": "Prescription",
+        "description": "Built-in prescription lenses with laser protection",
+        "characteristics": ["Corrective vision + protection", "No gaps between glasses and protection", "Higher cost"],
+        "typical_od": "Varies",
+        "typical_vlt": "Varies"
+      }
+    },
+    "specification_parameters": {
+      "optical_density": {
+        "name": "Optical Density (OD)",
+        "unit": "dimensionless",
+        "measurement": "log₁₀(1/T)",
+        "interpretation": "Higher OD = more attenuation",
+        "standards": "Must meet or exceed calculated requirement"
+      },
+      "visible_light_transmission": {
+        "name": "Visible Light Transmission (VLT)",
+        "unit": "%",
+        "measurement": "Percentage of visible light passing through",
+        "interpretation": "Higher VLT = better visibility",
+        "trade_off": "Inversely related to OD"
+      },
+      "damage_threshold": {
+        "name": "Laser Damage Threshold",
+        "units": ["W/cm²", "J/cm²"],
+        "measurement": "Maximum power/energy before damage",
+        "importance": "Eyewear must survive expected exposure"
+      },
+      "marking": {
+        "name": "EN 207 Marking",
+        "format": "L-code + RB-code",
+        "example": "LB7 = Continuous wave, OD 7+",
+        "standards_reference": "EN 207:2017"
+      }
+    }
+  },
+  "standards_reference": {
+    "en_207": {
+      "name": "EN 207",
+      "full_name": "European Standard for Personal Eye Protection",
+      "scope": "Laser protective eyewear specifications",
+      "marking_system": {
+        "l_code": {
+          "D": "Continuous wave (CW) > 0.5s",
+          "I": "Pulse > 1μs to 0.5s",
+          "R": "Q-switched pulse 1ns to 1μs",
+          "M": "Mode-locked pulse < 1ns"
+        },
+        "rb_code": {
+          "scale": "1-10",
+          "meaning": "Minimum OD at specified conditions"
+        },
+        "examples": [
+          {"marking": "D LB7", "meaning": "CW laser, OD 7+, large beam diameter"},
+          {"marking": "I LB5", "meaning": "Long pulse, OD 5+, large beam diameter"},
+          {"marking": "R LB6", "meaning": "Q-switched pulse, OD 6+, large beam diameter"}
+        ]
+      }
+    },
+    "ansi_z136": {
+      "name": "ANSI Z136.1",
+      "full_name": "American National Standard for Safe Use of Lasers",
+      "scope": "US laser safety requirements",
+      "eyewear_requirements": {
+        "od_specification": "Must specify OD at specific wavelengths",
+        "damage_threshold": "Must withstand expected exposure",
+        "labeling": "Wavelength and OD must be marked"
+      }
+    }
+  },
+  "sample_specifications": [
+    {
+      "model": "Example-532-7",
+      "type": "narrowband",
+      "protection": {
+        "wavelength": 532,
+        "od": 7,
+        "bandwidth": "±10 nm"
+      },
+      "vlt": 40,
+      "color": "Amber/Orange",
+      "en_207_marking": "D LB7",
+      "damage_threshold": "100 W/cm² CW",
+      "frame_options": ["Standard", "Over-glasses", "Goggles"],
+      "applications": ["Frequency-doubled Nd:YAG", "DPSS green lasers"]
+    },
+    {
+      "model": "Example-1064-7",
+      "type": "narrowband",
+      "protection": {
+        "wavelength": 1064,
+        "od": 7,
+        "bandwidth": "±20 nm"
+      },
+      "vlt": 25,
+      "color": "Green",
+      "en_207_marking": "D LB7",
+      "damage_threshold": "500 W/cm² CW",
+      "frame_options": ["Standard", "Over-glasses"],
+      "applications": ["Nd:YAG lasers", "Fiber lasers near 1064 nm"]
+    },
+    {
+      "model": "Example-Dual-5",
+      "type": "multi_line",
+      "protection": [
+        {"wavelength": 532, "od": 5},
+        {"wavelength": 1064, "od": 5}
+      ],
+      "vlt": 18,
+      "color": "Orange",
+      "en_207_marking": "D LB5",
+      "damage_threshold": "100 W/cm² CW",
+      "frame_options": ["Standard", "Goggles"],
+      "applications": ["Labs with both 532 and 1064 nm lasers"]
+    },
+    {
+      "model": "Example-Broadband-UV",
+      "type": "broadband",
+      "protection": {
+        "range": "190-400 nm",
+        "od": 6
+      },
+      "vlt": 85,
+      "color": "Clear",
+      "en_207_marking": "D LB6",
+      "damage_threshold": "50 W/cm² CW",
+      "frame_options": ["Standard", "Goggles", "Face shield"],
+      "applications": ["Excimer lasers", "UV LEDs", "UV sources"]
+    }
+  ],
+  "search_and_filter": {
+    "filters": [
+      {
+        "id": "wavelength",
+        "name": "Wavelength",
+        "type": "range_slider",
+        "unit": "nm",
+        "min": 180,
+        "max": 11000
+      },
+      {
+        "id": "min_od",
+        "name": "Minimum OD",
+        "type": "range_slider",
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      {
+        "id": "min_vlt",
+        "name": "Minimum VLT",
+        "type": "range_slider",
+        "unit": "%",
+        "min": 0,
+        "max": 100
+      },
+      {
+        "id": "type",
+        "name": "Eyewear Type",
+        "type": "multiselect",
+        "options": ["narrowband", "broadband", "multi_line", "alignment", "prescription"]
+      }
+    ],
+    "sort_options": [
+      {"id": "wavelength_asc", "label": "Wavelength (Low to High)"},
+      {"id": "od_desc", "label": "OD (High to Low)"},
+      {"id": "vlt_desc", "label": "VLT (High to Low)"},
+      {"id": "name_asc", "label": "Name (A-Z)"}
+    ]
+  },
+  "educational_features": {
+    "specification_guide": {
+      "title": "How to Read Eyewear Specifications",
+      "sections": [
+        {
+          "title": "Understanding OD Ratings",
+          "content": "OD is wavelength-specific. A filter rated OD 7 @ 532 nm may have OD 1 @ 1064 nm. Always verify protection at YOUR wavelength."
+        },
+        {
+          "title": "EN 207 Markings Explained",
+          "content": "The marking indicates test conditions. 'D LB7' means tested with continuous wave laser, large beam, achieving OD 7."
+        },
+        {
+          "title": "Damage Threshold Importance",
+          "content": "Even protective eyewear can be damaged by high-power lasers. Verify the damage threshold exceeds your laser's output."
+        }
+      ]
+    },
+    "comparison_tool": {
+      "enabled": true,
+      "max_items": 4,
+      "comparison_table": {
+        "rows": [
+          "Model",
+          "Type",
+          "Wavelength/Range",
+          "OD",
+          "VLT",
+          "Color",
+          "EN 207 Marking",
+          "Damage Threshold",
+          "Frame Options",
+          "Applications"
+        ]
+      }
+    }
+  }
+}

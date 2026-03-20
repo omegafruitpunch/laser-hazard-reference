@@ -1,0 +1,417 @@
+{
+  "component_id": "showtime_scenario",
+  "name": "Showtime Emergency Scenario",
+  "type": "scenario_simulator",
+  "description": "Scenario-based emergency training: 'It's showtime and the wind picks up...'",
+  "version": "1.0.0",
+  "scenarios": [
+    {
+      "id": "wind_emergency",
+      "title": "The Wind Emergency",
+      "description": "It's showtime and the wind picks up unexpectedly. Make the right decisions to ensure safety.",
+      "initial_context": {
+        "time": "20:45",
+        "show_start": "21:00",
+        "weather_2_hours_ago": {
+          "wind_speed": 5,
+          "wind_gusts": 8,
+          "conditions": "clear",
+          "temperature": 72
+        },
+        "weather_current": {
+          "wind_speed": 22,
+          "wind_gusts": 32,
+          "conditions": "increasing clouds",
+          "temperature": 68,
+          "trend": "worsening"
+        },
+        "weather_forecast": {
+          "next_2_hours": "Wind increasing to 28-35 mph with gusts to 40 mph. 40% chance of light rain.",
+          "storm_cells": "Located 15 miles west, moving east at 20 mph"
+        },
+        "situation": {
+          "observers_available": 3,
+          "observers_required": 4,
+          "one_observer_sick": true,
+          "audience_size": 5000,
+          "promoter_pressure": true,
+          "equipment_secured": true
+        }
+      },
+      "stages": [
+        {
+          "id": "assessment",
+          "title": "Situation Assessment",
+          "description": "You've just received the weather update. What is your immediate assessment?",
+          "decision_point": {
+            "question": "What is your immediate assessment of this situation?",
+            "options": [
+              {
+                "id": "assess_1",
+                "text": "Conditions are marginal but acceptable. Proceed with the show.",
+                "outcome": "Incorrect. Wind speeds of 22 mph sustained with gusts to 32 mph are approaching dangerous limits, and the forecast shows worsening conditions.",
+                "feedback": "While 22 mph is just below the typical 25 mph threshold, the gusts to 32 mph and deteriorating forecast require more caution.",
+                "score": 10
+              },
+              {
+                "id": "assess_2",
+                "text": "Conditions are concerning and require immediate attention. Need to evaluate further.",
+                "outcome": "Correct assessment. You're taking the situation seriously.",
+                "feedback": "Good - you're recognizing that current conditions combined with the forecast create a potentially dangerous situation.",
+                "score": 100,
+                "next_stage": "data_collection"
+              },
+              {
+                "id": "assess_3",
+                "text": "Conditions require immediate shutdown. Cancel the show.",
+                "outcome": "Premature. While caution is warranted, you need more information before making a final decision.",
+                "feedback": "While safety is paramount, making a cancellation decision without gathering more data may be premature. Check all factors first.",
+                "score": 70,
+                "next_stage": "data_collection"
+              }
+            ]
+          }
+        },
+        {
+          "id": "data_collection",
+          "title": "Information Gathering",
+          "description": "You need more information before making a decision.",
+          "decision_point": {
+            "question": "What actions should you take immediately? (Select all that apply)",
+            "type": "multi_select",
+            "options": [
+              {
+                "id": "action_1",
+                "text": "Contact meteorological services for updated forecast",
+                "correct": true,
+                "feedback": "Correct - Professional meteorological guidance is essential for this decision."
+              },
+              {
+                "id": "action_2",
+                "text": "Check all equipment is properly secured against wind",
+                "correct": true,
+                "feedback": "Correct - Equipment security is critical with increasing winds."
+              },
+              {
+                "id": "action_3",
+                "text": "Redeploy available observers to cover critical sectors",
+                "correct": true,
+                "feedback": "Correct - With one observer down, you need to optimize coverage."
+              },
+              {
+                "id": "action_4",
+                "text": "Brief crew on potential shutdown procedures",
+                "correct": true,
+                "feedback": "Correct - Everyone needs to be prepared for possible shutdown."
+              },
+              {
+                "id": "action_5",
+                "text": "Ignore the promoter pressure and focus on safety",
+                "correct": true,
+                "feedback": "Correct - Safety always takes priority over schedule or pressure."
+              },
+              {
+                "id": "action_6",
+                "text": "Promise the promoter the show will start on time",
+                "correct": false,
+                "feedback": "Incorrect - Never promise a start time when safety is uncertain."
+              }
+            ],
+            "min_correct": 4,
+            "next_stage": "decision_making"
+          }
+        },
+        {
+          "id": "decision_making",
+          "title": "Making the Decision",
+          "description": "You've gathered information. The storm cells are moving faster than forecast and will arrive in 30 minutes.",
+          "decision_point": {
+            "question": "What is your decision?",
+            "options": [
+              {
+                "id": "decision_1",
+                "text": "Start the show immediately - get it in before the storm hits",
+                "outcome": "Dangerous decision. Starting a show with a storm approaching creates unacceptable risk.",
+                "feedback": "This is extremely dangerous. Starting a show when you know severe weather is approaching puts everyone at risk.",
+                "score": 0,
+                "consequences": [
+                  "Show started",
+                  "Storm arrived 20 minutes into show",
+                  "Emergency shutdown required",
+                  "Audience and crew at risk",
+                  "Equipment damage possible"
+                ]
+              },
+              {
+                "id": "decision_2",
+                "text": "Delay 30 minutes and reassess after storm passes",
+                "outcome": "Good decision. Delaying allows the storm to pass before making a final determination.",
+                "feedback": "Excellent decision. A delay is the prudent choice when weather is deteriorating. You can assess after conditions stabilize.",
+                "score": 100,
+                "next_stage": "delay_management"
+              },
+              {
+                "id": "decision_3",
+                "text": "Cancel the show - conditions are too uncertain",
+                "outcome": "Conservative but acceptable decision. Safety is the priority.",
+                "feedback": "While perhaps conservative, this prioritizes safety. Document your decision rationale for future reference.",
+                "score": 80,
+                "next_stage": "cancellation_protocol"
+              },
+              {
+                "id": "decision_4",
+                "text": "Reduce beam power and proceed with shortened show",
+                "outcome": "Risky decision. Reduced power doesn't address the weather hazard.",
+                "feedback": "Reducing power addresses visual interference concerns but not the fundamental weather safety issue.",
+                "score": 40
+              }
+            ]
+          }
+        },
+        {
+          "id": "delay_management",
+          "title": "Managing the Delay",
+          "description": "You've decided to delay. How do you manage this?",
+          "decision_point": {
+            "question": "What actions should you take during the delay?",
+            "type": "multi_select",
+            "options": [
+              {
+                "id": "delay_1",
+                "text": "Communicate clearly with the audience about the delay",
+                "correct": true,
+                "feedback": "Correct - Transparency with the audience maintains trust and safety."
+              },
+              {
+                "id": "delay_2",
+                "text": "Secure all equipment against potential wind/rain",
+                "correct": true,
+                "feedback": "Correct - Protect your equipment during the delay."
+              },
+              {
+                "id": "delay_3",
+                "text": "Monitor weather continuously for all-clear",
+                "correct": true,
+                "feedback": "Correct - Continuous monitoring is essential."
+              },
+              {
+                "id": "delay_4",
+                "text": "Keep crew ready for quick startup if conditions improve",
+                "correct": true,
+                "feedback": "Correct - Be prepared to resume efficiently if conditions allow."
+              },
+              {
+                "id": "delay_5",
+                "text": "Let the audience disperse and hope they come back",
+                "correct": false,
+                "feedback": "Incorrect - You should maintain audience presence and communication."
+              }
+            ],
+            "min_correct": 4,
+            "next_stage": "resolution"
+          }
+        },
+        {
+          "id": "cancellation_protocol",
+          "title": "Cancellation Procedures",
+          "description": "You've decided to cancel. Proper procedure is essential.",
+          "decision_point": {
+            "question": "What must you do when cancelling the show?",
+            "type": "multi_select",
+            "options": [
+              {
+                "id": "cancel_1",
+                "text": "Document the decision and rationale",
+                "correct": true,
+                "feedback": "Correct - Documentation protects you legally and operationally."
+              },
+              {
+                "id": "cancel_2",
+                "text": "Notify the promoter and venue management",
+                "correct": true,
+                "feedback": "Correct - Stakeholder notification is essential."
+              },
+              {
+                "id": "cancel_3",
+                "text": "Begin orderly equipment shutdown and packing",
+                "correct": true,
+                "feedback": "Correct - Secure shutdown protects equipment."
+              },
+              {
+                "id": "cancel_4",
+                "text": "Brief all personnel on cancellation",
+                "correct": true,
+                "feedback": "Correct - Everyone needs to know the status."
+              },
+              {
+                "id": "cancel_5",
+                "text": "Blame the promoter for pressuring you",
+                "correct": false,
+                "feedback": "Incorrect - Stay professional. Focus on safety, not blame."
+              }
+            ],
+            "min_correct": 4,
+            "next_stage": "resolution"
+          }
+        },
+        {
+          "id": "resolution",
+          "title": "Scenario Resolution",
+          "description": "The storm has passed through. Conditions have improved significantly.",
+          "resolution": {
+            "outcome": "After a 45-minute delay, conditions improved to 8 mph winds, clear skies. Show proceeded successfully with all safety measures in place.",
+            "key_lessons": [
+              "Always prioritize safety over schedule",
+              "Gather professional meteorological input for weather decisions",
+              "Document all decision-making for legal protection",
+              "Maintain clear communication with all stakeholders",
+              "Have contingency plans ready before you need them"
+            ],
+            "debrief_questions": [
+              "What factors were most important in your decision?",
+              "How did you balance safety vs. stakeholder pressure?",
+              "What would you do differently next time?"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "aircraft_emergency",
+      "title": "Aircraft Incursion",
+      "description": "An aircraft is spotted approaching during your show. Respond quickly and correctly.",
+      "initial_context": {
+        "time": "21:30",
+        "show_status": "running",
+        "aircraft_sighting": {
+          "type": "helicopter",
+          "distance": "2 miles",
+          "direction": "approaching from airport",
+          "altitude": "estimated 1500 ft"
+        },
+        "observer_report": "Helicopter spotted, 2 miles out, coming from the north",
+        "lasers_active": true
+      },
+      "stages": [
+        {
+          "id": "immediate_response",
+          "title": "Immediate Response",
+          "description": "Observer reports aircraft. You have seconds to react.",
+          "decision_point": {
+            "question": "What is your immediate action?",
+            "options": [
+              {
+                "id": "response_1",
+                "text": "Wait to see if the aircraft comes closer",
+                "outcome": "Incorrect. Never wait when aircraft are reported.",
+                "feedback": "Waiting is never acceptable. Any aircraft report requires immediate action.",
+                "score": 0
+              },
+              {
+                "id": "response_2",
+                "text": "Activate emergency stop immediately",
+                "outcome": "Correct! Immediate shutdown is the only acceptable response.",
+                "feedback": "Correct. The emergency stop must be activated immediately upon any aircraft report.",
+                "score": 100,
+                "next_stage": "post_shutdown"
+              },
+              {
+                "id": "response_3",
+                "text": "Ask the observer for more details first",
+                "outcome": "Incorrect. Details can wait - shutdown cannot.",
+                "feedback": "Additional details are helpful but secondary to immediate shutdown.",
+                "score": 20
+              }
+            ]
+          }
+        },
+        {
+          "id": "post_shutdown",
+          "title": "Post-Shutdown Actions",
+          "description": "You've activated the emergency stop. All lasers are off.",
+          "decision_point": {
+            "question": "What are your next steps?",
+            "type": "multi_select",
+            "options": [
+              {
+                "id": "post_1",
+                "text": "Confirm all lasers are actually off",
+                "correct": true,
+                "feedback": "Correct - Visual verification that all beams are terminated."
+              },
+              {
+                "id": "post_2",
+                "text": "Track the aircraft's position and path",
+                "correct": true,
+                "feedback": "Correct - Observers should track until aircraft clears."
+              },
+              {
+                "id": "post_3",
+                "text": "Contact ATC to report the shutdown",
+                "correct": true,
+                "feedback": "Correct - ATC coordination is important."
+              },
+              {
+                "id": "post_4",
+                "text": "Immediately restart when aircraft passes",
+                "correct": false,
+                "feedback": "Incorrect - Wait for all-clear confirmation from observers."
+              },
+              {
+                "id": "post_5",
+                "text": "Document the incident with timestamps",
+                "correct": true,
+                "feedback": "Correct - Documentation is essential."
+              }
+            ],
+            "min_correct": 4,
+            "next_stage": "recovery"
+          }
+        },
+        {
+          "id": "recovery",
+          "title": "Show Recovery",
+          "description": "The aircraft has passed and observers confirm clear airspace.",
+          "decision_point": {
+            "question": "When can you resume the show?",
+            "options": [
+              {
+                "id": "resume_1",
+                "text": "Resume immediately - aircraft is gone",
+                "outcome": "Incomplete. Need verification.",
+                "feedback": "Need all-clear from all observers, not just visual confirmation.",
+                "score": 50
+              },
+              {
+                "id": "resume_2",
+                "text": "Wait 5 minutes to be safe",
+                "outcome": "Conservative but not required.",
+                "feedback": "While conservative, you can resume once observers confirm all-clear.",
+                "score": 80
+              },
+              {
+                "id": "resume_3",
+                "text": "Resume after all observers confirm all-clear",
+                "outcome": "Correct procedure.",
+                "feedback": "Correct - All observers must confirm clear airspace before resuming.",
+                "score": 100
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "features": {
+    "real_time_feedback": true,
+    "branching_paths": true,
+    "consequence_visualization": true,
+    "debrief_discussion": true,
+    "score_tracking": true,
+    "retry_allowed": true
+  },
+  "scoring": {
+    "passing_score": 80,
+    "excellent_score": 95
+  }
+}

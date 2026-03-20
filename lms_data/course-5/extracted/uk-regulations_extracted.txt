@@ -1,0 +1,2133 @@
+PDF: uk-regulations.pdf
+Total Pages: 35
+================================================================================
+
+--- Page 1 ---
+Words: 14, Images: 1
+
+SAFETY OF DISPLAY LASERS
+1
+SAFETY OF DISPLAY LASERS
+1st Edition - April 2016
+
+
+================================================================================
+
+--- Page 2 ---
+Words: 87, Images: 0
+
+SAFETY OF DISPLAY LASERS
+2
+This Safety of Display Lasers Guidance has been written by representatives from leading trade 
+organisations, venues and laser companies in the UK. 
+Its aim is to help those procuring and using temporary or permanent lighting displays make 
+health and safety improvements. 
+The Health and Safety Executive was consulted in the production of this guidance. 
+This publication is based on guidance previously published by 
+HSE; HS(G)95 ‘The Radiation Safety of Lasers Used for Display Purposes’, 
+which has now been withdrawn.
+Foreword - HSE
+
+
+================================================================================
+
+--- Page 3 ---
+Words: 94, Images: 0
+
+SAFETY OF DISPLAY LASERS
+3
+This guidance has been prepared with the assistance of the following 
+Authorities, Trade Organisations, Venues & Laser Companies:
+AC Lasers
+BBC
+Deﬁ nitive Special Projects Ltd
+ER Productions 
+Hart District Council
+Human Applications Ltd
+ITV
+Laser Hire Ltd
+Laser Hire London Ltd
+Laser Graﬁ x Ltd
+Olympia London 
+PLASA 
+Royal Albert Hall
+South Staffordshire Council
+Tim Fothergill Productions Ltd
+Wandsworth Borough Council
+Yutree Insurance Ltd.
+Prosight Speciality Insurance Ltd
+With special thanks to the Health and Safety Executive and Public Health England 
+for their invaluable support and advice. 
+Acknowledgements
+
+
+================================================================================
+
+--- Page 4 ---
+Words: 254, Images: 1
+
+SAFETY OF DISPLAY LASERS
+4
+Safety of Lasers
+Introduction ............................................................................................................................. 5
+About this guide ...................................................................................................................... 5
+Why do you need this guidance? ............................................................................................. 5
+Risk from the laser beam hazards ............................................................................................ 5
+Chapter 1 
+6
+Laser Beam Hazards: How to Reduce Their Risk
+Laser Beam Hazards – Optical ................................................................................................ 6
+Laser Beam Hazards – Skin Burns and Fire Risks .................................................................... 7
+Other Laser Beam Hazards ..................................................................................................... 8
+Chapter 2 
+9
+Managing Laser Safety
+Plan, Do, Check and Act ......................................................................................................... 9
+Roles and Responsibilities ....................................................................................................... 9
+Liaising with Others ............................................................................................................... 11
+Competency .......................................................................................................................... 11
+Emergencies/Contingencies .................................................................................................. 11
+Eye injury - Actual or Perceived .............................................................................................. 11
+Chapter 3 
+12
+Show Planning and System Design
+What is the creative brief? ...................................................................................................... 13
+Where the effects will be used? ............................................................................................. 13
+When Laser will be used? ...................................................................................................... 13
+How will it be done? .............................................................................................................. 14
+Chapter 4 
+16
+Installation and Alignment
+Installation ............................................................................................................................. 16
+Alignment  ............................................................................................................................. 18
+Programming ......................................................................................................................... 18
+Rehearsal .............................................................................................................................. 18
+Chapter 5 
+19
+Pre show checks
+Assessing for safety ............................................................................................................... 19
+Visual checks ........................................................................................................................ 19
+Physical checks ..................................................................................................................... 19
+Sign off .................................................................................................................................. 20
+Chapter 6 
+21
+Operation
+Monitoring the show .............................................................................................................. 21
+Chapter 7 
+21
+Post show
+Show complete ..................................................................................................................... 21
+Dismantle and removing ........................................................................................................ 21
+Appendices 
+22
+Appendix A: Glossary of Laser Terms .................................................................................... 22
+Appendix B: Types of Lasers ................................................................................................. 27
+Appendix C: Laser Classiﬁ cation ............................................................................................ 28
+Appendix D: Case Studies .................................................................................................... 29
+Appendix E: Contacts ............................................................................................................ 33
+Appendix F: Amsler Grid and instructions .............................................................................. 34
+Appendix G: Bibliography ...................................................................................................... 35
+Index
+
+
+================================================================================
+
+--- Page 5 ---
+Words: 470, Images: 0
+
+SAFETY OF DISPLAY LASERS
+5
+Introduction
+A laser light show can be a truly entrancing 
+spectacle. The sight of sheets, waves, cones and 
+beams of light choreographed to music or in free 
+form can inspire and delight audiences. Graphics 
+and written messages can seem to appear from 
+nowhere and enhance an event like no other form of 
+special effect or lighting type. Using the information 
+in this guidance to supplement other sources of 
+information and training should help to ensure safe 
+and enjoyable laser light shows for all.
+About this guide
+This guidance has been produced for all those 
+involved in the safe use of lasers as part of 
+a temporary or permanent laser light display; from 
+the small village hall disco through to an arena 
+performance. It is structured to inform anyone 
+involved with the production of a laser display either 
+as a more permanent installation within a venue 
+or as a temporary aspect of an event or touring 
+production of the hazards with display laser use and 
+to provide information on how to ensure the safety of 
+any laser display.
+The layout and style of the document is intended to 
+provide advice and information avoiding the use of 
+over technical terms. Where used, those terms will 
+be deﬁ ned in the glossary.
+The guide is organised to take you through a 
+number of stages, from planning, risk assessment, 
+arranging a display, display performance and post 
+show and at each stage highlight safety critical 
+considerations enabling the reader to understand 
+the required safety management responsibilities.
+(Whether you are the laser operator, the client who 
+is arranging the display, organiser of an event, or the 
+owner/operator of the venue). 
+Following this guidance is not compulsory, unless 
+speciﬁ cally stated, as some elements go further 
+than the minimum you need to do to comply with 
+workplace health and safety law. If in doubt you 
+should refer to the requirements of the law at
+www.hse.gov.uk/
+Enforcing authorities may use this guidance to help 
+decide if applicable methods and controls have been 
+applied in the planning and management of a laser 
+display. 
+Why do you need this guidance?
+When display lasers are wrongly used, they can 
+be hazardous – they can cause injury or damage. 
+Some of the hazards are common to many sorts 
+of equipment; others are speciﬁ c to using lasers. 
+This guide focuses on hazards which are speciﬁ c to 
+display lasers, for guidance on hazards which are 
+not covered in this guide you should refer to one of 
+the many other sources of safety information. If you 
+are unsure of any aspect of the laser installation or 
+operation you should seek additional advice.  
+Risk from the laser beam hazards 
+• Permanent eye damage;
+• Skin burns;
+• Source of ignition; and
+• Distraction, dazzle and glare.
+Safety of Lasers
+
+
+================================================================================
+
+--- Page 6 ---
+Words: 476, Images: 0
+
+SAFETY OF DISPLAY LASERS
+6
+Chapter 1
+Laser Beam Hazard:  How to Reduce Their Risks
+Laser Beam Hazards – Optical
+Risks
+Laser products used in the entertainment industries 
+have high radiant powers (typically from 200mW to 
+40W+ i.e. Class 3B and 4). These laser products 
+can produce visible laser beams (400-700nm) which 
+pose signiﬁ cant risks to the human eye perhaps 
+over 100s of meters and can lead to permanent eye 
+damage.
+ 
+ 
+Control measure
+Always consider the power of the laser 
+product to the size of the venue and the 
+display area over which the planned laser 
+effects are required. Adhere to the other 
+control measures listed.  
+Risks
+Laser beams can cause serious injury to the eye. 
+Maximum Permissible Exposure (MPE) levels are set 
+by International Bodies to represent the maximum 
+exposure at the front of the eye at which no injury to 
+the eye will occur.      
+ 
+ 
+Control measure
+Always ensure that one or more safety 
+measures such as scanning failure safety 
+systems, safer programming techniques, 
+electronic failure safety response systems 
+and/or ﬁ rmware programming are used, 
+when intentional optical exposure to scanned 
+effects are planned. Any laser beams 
+intended to be directed at people should be 
+measured and conﬁ rmed to not exceed the 
+relevant MPE under reasonably foreseeable 
+failure conditions. Use blanking plates to 
+ensure that site crew and other people are 
+not exposed to potentially harmful beams. 
+Always follow the suggested safe system(s) of 
+work as described in this guidance document.
+Risk
+Some laser products available for entertainment 
+purposes can produce non-visible wavelengths in 
+their laser beam outputs (less than 400nm and more 
+than 700nm), either by design or as a by-product. 
+These wavelengths are potentially far more hazardous 
+than the visible wavelengths. These wavelengths may 
+burn/damage the human eye, as it can’t react to the 
+wavelengths in the beam it can’t see.
+ 
+ 
+Control measure
+Always ensure only visible wavelengths are in 
+the laser beam(s) of the laser products being 
+used. Refer to manufactures speciﬁ cations 
+to conﬁ rm that only visible wavelengths are 
+present. If further doubt remains, seek expert 
+advice.
+Risk
+Beams from laser products with scanned x-y 
+outputs may pose less risk of eye injury than static 
+beams, as the beam movement reduces exposure 
+time. However, exposures from scanned effects 
+across a display area may still produce hazardous 
+exposures if the beams are repeatedly viewed in 
+one location or if fault conditions arise that produce 
+concentrated, unexpected ‘failed’ effects into an 
+audience/working area.
+Control Measures to Consider When Managing Laser Beam Risks
+Health and safety law requires that these measures are considered in an order that reﬂ ects their reliability i.e. 
+avoidance (using an alternative safer light source), then measures to control exposure. In practice, it may be 
+necessary to apply a combination of these measures to adequately control laser beam risks. (The suggested 
+controls in this guidance are non-exhaustive).
+
+
+================================================================================
+
+--- Page 7 ---
+Words: 313, Images: 0
+
+SAFETY OF DISPLAY LASERS
+7
+ 
+ 
+Control measure
+Always use scan failure systems with safe 
+programming techniques for any occupied 
+area exposed to laser beams. Onsite 
+measurements should conﬁ rm that exposures 
+are below that of the MPE level under normal 
+and simulated failure conditions.
+Risk
+Reﬂ ected laser beams can be equally as hazardous 
+as direct laser beams. There are also different 
+types of diffractive (split beam) effects from which 
+exposure to the beams can also cause injuries.
+ 
+ 
+Control measure
+Always ensure that any reﬂ ection from 
+mobile or static reﬂ ective surfaces, including 
+ﬁ xed mirrors or mirror balls that enter an 
+occupied area are correctly evaluated and 
+any secondary laser beams are assessed 
+through suitable irradiance measurements 
+and compared with the appropriate MPE.
+Risk
+Q-switched and other pulsed laser products should 
+not be used where the possibility of exposure 
+of people (audience, workers or performers) is 
+intended or likely under reasonably foreseeable fault 
+conditions.
+ 
+ 
+Control measure
+Exposure of people with pulsed lasers is, by 
+default, not acceptable.
+Laser Beam Hazards – Skin Burns 
+and Fire Risks
+Risks
+If the laser output power is greater than 500mW 
+skin burn and ﬁ re can be a signiﬁ cant risk. Laser 
+products which produce ultraviolet radiation 
+(less than 400nm) create an additional exposure 
+risk to skin over extended periods. In certain 
+circumstances, due to heat that can be created 
+with a laser beam, the beams can cause unsuitable 
+material (e.g. reﬂ ective or combustible) within the 
+optical path to ignite (internal or externally of the 
+laser system housing).
+ 
+ 
+Control measure
+Always ensure the speciﬁ cation for the laser 
+used for audience or worker exposure is 
+veriﬁ ed only to have visible wavelengths.  
+Exposures to skin above the skin MPE should 
+not be permitted. Ensure when installing laser 
+systems that they are securely mounted and 
+outputs terminate on suitable surfaces (e.g. 
+non-reﬂ ective or non-combustible).
+
+
+================================================================================
+
+--- Page 8 ---
+Words: 294, Images: 2
+
+SAFETY OF DISPLAY LASERS
+8
+Other Laser Beam Hazards
+Risks
+Laser products and all associated effects devices 
+should be secure against inadvertent displacement 
+or misalignment using suitable securing equipment, 
+mechanisms or restrictive positioning. Careful 
+considerations should be given as part of any risk 
+assessment to identify the possible inadvertent 
+movement of the system by performers, crew or 
+scenery moves etc.
+ 
+ 
+Control measure
+If identiﬁ ed as a possibility to cause a hazard, 
+preventative control methods should be 
+employed. This may include relocation of the 
+equipment or the use of barriers. The potential 
+for movement of equipment emphasises the 
+importance of pre-performance checks.
+Risks
+In outdoor displays, even when accessible beams 
+are considered to be below the applicable MPE, the 
+presence of laser beams may still cause distraction 
+to people unaware that a display is taking place. 
+For example, unexpected laser beams may dazzle 
+or disorientate motorists and aircraft pilots. There 
+is also the risk of confusion with air trafﬁ c control 
+navigational lights and trafﬁ c signals on roads and 
+railways.  
+ 
+ 
+Control measure
+It is good practice to ensure that beams are 
+projected away from airports, ﬂ ight paths 
+and motorists. The display organiser should 
+ensure that the Civil Aviation Authority (CAA) 
+is notiﬁ ed - see Appendix E for contact 
+information. Exposure of a pilot may be an 
+offence under the Air Navigation Order (Refer 
+to CAA CAP 736).
+This guidance acknowledges that the installation 
+and removal of laser systems will expose workers to 
+other hazards that are not laser-beam related such 
+as electricity at work, trip hazards and working at 
+height etc. Guidance on these and other workplace 
+safety related issues can be found on the Health and 
+Safety Executive’s website at www.hse.gov.uk
+A laser effects head (photos courtesy of Michael Sollinger)
+
+
+================================================================================
+
+--- Page 9 ---
+Words: 533, Images: 0
+
+SAFETY OF DISPLAY LASERS
+9
+Chapter 2
+Managing Laser Safety
+Plan, Do, Check and Act
+Display installations should be set up in accordance 
+with a safe system of work. Therefore, it is important 
+that key people involved with the laser display know 
+what they are expected to do and each participant is 
+aware of their responsibilities.
+Roles and Responsibilities
+The following participants will have a role in laser 
+safety during laser displays and are mentioned 
+throughout this guide. Not all roles will exist in all 
+situations as clients/organiser/venue may be one 
+and the same.
+Client 
+The client will be responsible for ensuring those 
+retained to organise, install or produce a laser 
+display are competent to carry out the required 
+work and able to demonstrate to them that the 
+installation/display will be safe during the installation, 
+alignment, use, in case of an emergency and 
+removal.
+Organiser 
+The organiser will be responsible for ensuring the 
+various safety management processes for the safe 
+use of lasers is implemented, that everyone involved 
+is aware of their responsibilities and that the required 
+communications and liaisons arrangements are in 
+place.   
+Venue
+The venue management will be responsible for 
+ensuring the installation and operation of any 
+laser display on the premises is safe and does 
+not constitute a risk to those at work or to those 
+entering the premises when a laser display is in 
+operation.   
+Installer
+Companies or individuals responsible for the safe 
+installation of the laser products into a venue, 
+normally as a permanent system. 
+Supplier
+Companies or individuals responsible for the safe 
+installation and operation of the laser products in 
+a venue or at an event, normally as a temporary 
+installation for a touring production or show.
+Laser Safety Ofﬁ cer (LSO)
+The LSO will be responsible for evaluating and 
+managing laser risks, and implementing the laser 
+safety precautions speciﬁ ed by the supplier, venue 
+or site safety ofﬁ cers.
+Operator or Programmer
+The operator or programmer will be responsible for 
+the safe operation of the laser effects.
+Laser Safety Adviser
+In addition to the LSO, the Laser Safety Adviser is 
+a person who is usually independent but who has a 
+sound and fundamental knowledge of laser hazard 
+concepts and hazard prevention strategies, is aware 
+of the legal responsibilities and requirements and 
+is able to understand and assess a laser display 
+installation. The LSA is an advisory role and does not 
+have an executive mandate.
+Organisation
+From an early stage, organisers should ensure 
+that clearly deﬁ ned roles and responsibilities exist 
+in relation to safety, addressing both normal and 
+emergency situations. Whatever management 
+structure is chosen, organisers will need to decide 
+who is responsible for the various safety duties, 
+making sure there are no gaps and ensuring everyone 
+understands their own responsibilities. If a number of 
+people are involved, there will need to be close liaison 
+and good communication between them.
+It is good practice for suppliers to appoint a laser 
+safety ofﬁ cer (LSO) for all installations. The LSO 
+should have executive rather than just advisory 
+responsibility for this work. He/she should also be 
+involved in the examination and audit of engineered 
+and administrative safety provisions before hand-
+over of a new installation to the user. 
+
+
+================================================================================
+
+--- Page 10 ---
+Words: 491, Images: 0
+
+SAFETY OF DISPLAY LASERS
+10
+An installation should not be used by the operator/
+programmer until the hand-over documentation has 
+been completed and if necessary any pre-show 
+procedures have been completed. In addition, for 
+any installation, the operator(s) need to prove that 
+they are fully competent and understand the safety 
+procedures in the hand-over documentation. The 
+operators also need to show that they can maintain 
+these safety procedures and operate the installation 
+safely, over the time of the installation, unless the 
+operator and the installer are one and the same.
+Operators, Laser Safety Ofﬁ cers and (if consulted) 
+any Laser Safety Adviser, should be able to evaluate 
+the hazard level posed appropriate to the complexity 
+of the display, and have the following responsibilities 
+as required for each installation:
+a) they should possess a detailed knowledge 
+of the laser systems being used for each 
+installation i.e:
+ 
+• the laser type and model;
+ 
+• radiant power and beam divergence;
+ 
+• beam wavelengths (and colours);
+ 
+• the effect capabilities, accessible beam levels 
+and the exposure hazards by different effects,   
+scanner models/speeds and modes; and
+ 
+• have a thorough knowledge of the operating 
+control systems and any safety control systems 
+adopted.
+b) For temporary and long-term installations, 
+operators should complete a log of the daily/
+weekly alignment checks. These should 
+include beam alignment checks using mirrors 
+or other ‘targets’ and regular checking of any 
+emergency shutdown systems/procedures or 
+other safety systems and materials.
+c) All those involved in the laser display operation 
+must understand their role in an emergency 
+situation and the emergency shutdown 
+procedure after equipment failure, audience 
+unruliness, safety management system issues 
+or other environmental variations.
+d) Be aware of any special arrangements for 
+ensuring safety, such as restricted areas and 
+where the audience should be standing to view 
+a particular display.
+e) The laser safety assessment is normally carried 
+out by an LSO, but everyone else involved in 
+the display should understand the assessment 
+and their role in implementing it. 
+Plan
+As early as possible and before arriving on site the 
+following should be considered:
+a) Identify who needs to be supplied with 
+information and whether there are speciﬁ c 
+requirements;
+b) Outline information about the laser display 
+including venue, dates, type of laser display 
+and details of the installer;
+c) Ensure adequate insurance arrangements;
+d) Determine how the installation, alignment, 
+performance and dismantling will be managed;
+e) Determine whether audience or performer 
+exposure to the laser beams is intended. 
+Provide details of how personal exposures to 
+laser beams will be assessed and controlled;
+f) Conﬁ rm details of staff, chains of accountability, 
+and contact details;
+g) Provide stage drawing of the intended laser 
+installation with dimensions or scale diagrams 
+speciﬁ c to the venue; and
+h) Provide a record of risk assessments and 
+emergency plans.
+After installation and before the ﬁ rst performance, 
+it is good practice to have sign-off documentation 
+from the installer or supplier conﬁ rming all of the 
+
+
+================================================================================
+
+--- Page 11 ---
+Words: 584, Images: 0
+
+SAFETY OF DISPLAY LASERS
+11
+above. Subsequent performances should be 
+checked and reviewed.
+After the performance, the supplier or the venue 
+should record the details and decide what did and 
+did not go well, and what could be done differently 
+next time. In the event of an adverse incident, ensure 
+full details are recorded.
+Liaising with Others
+Organisers should consider external bodies or 
+organisations such as the local authority and 
+emergency services. There should be effective 
+liaison arrangements in place on health and safety 
+matters and sharing of safety-related information, 
+e.g. emergency plans.
+Many entertainment venues, including outdoor 
+events, require a licence from the local authority. 
+There may be speciﬁ c requirements relating to 
+public safety in the use of lasers and information 
+that needs to be supplied in relation to laser safety. 
+Any duty holder should ensure that they comply with 
+these requirements to ensure that such events are 
+properly organised and that competent personnel 
+supervise the activities. The licence holder will be 
+able to advise you what these requirements are and 
+for further advice contact the Environmental Health 
+department and/or licensing section at the local 
+authority in which the venue is situated.
+In the case of outdoor displays, other regulatory 
+bodies may need to be consulted. These include 
+the maritime and harbour authorities, the Police, the 
+Highways Agency and the Civil Aviation Authority 
+(CAA). 
+Competency
+Users and those responsible for safety at events and 
+venues should ensure that an LSO has sufﬁ cient 
+skills, knowledge and experience in the evaluation 
+and management of laser risks. They must also be 
+capable of implementing the laser safety precautions 
+speciﬁ ed by the supplier or the venue. The LSO 
+should have executive rather than an advisory 
+responsibility for the day-to-day management, 
+operation and maintenance of such installations.
+Emergencies/Contingencies
+Equipment
+When an emergency stop button (E-stop) is used, 
+the laser and/or laser products must be restarted 
+by the deliberate action of the operator or other 
+speciﬁ cally trained person. It is important for the 
+E-stop to be tested before each performance to 
+ensure that it provides the required protection, and 
+the results of the test recorded. 
+High quality safety related control systems (SRCS), 
+operating on scan failure detection may be used 
+as part of a safety system. However, such control 
+systems should not be relied upon as the only safety 
+measure and should form part of a number of safety 
+devices to ensure personnel safety.
+Eye Injury - Actual or Perceived 
+Actual eye injuries should be treated as medical 
+emergencies. The casualty should be managed 
+through the venue’s arrangements and taken to the 
+nearest accident and emergency hospital. Details of 
+the laser beam should accompany the casualty.
+When there is no obvious injury, this is unlikely to 
+be a medical emergency. If there was no intended 
+exposure of people to laser beams and no known 
+incident that had resulted in exposure, reassurance 
+may be all that is required. If all of the laser beams 
+at the event are in the visible spectrum (400 to 
+700nm) a simple reading test can be used to assess 
+possible damage to the retina. It is also possible to 
+use an Amsler Grid, which is a tool to assess retinal 
+function (see Appendix F). If there is concern that 
+an injury may have occurred, the casualty should 
+ideally be taken to an eye hospital with full details of 
+the type of laser in use at the time of exposure. This 
+should ideally be done within 24 hours of the alleged 
+incident. 
+
+
+================================================================================
+
+--- Page 12 ---
+Words: 361, Images: 0
+
+SAFETY OF DISPLAY LASERS
+12
+Chapter 3 
+Show Planning and System Design
+A laser display is produced by static or moving laser 
+beams. The beams are moved by the following:
+a) A pair of galvanometer-mounted mirrors 
+oscillating at right angles to each other 
+(scanning). Scanning device control is normally 
+achieved by some form of programmable 
+controller (PC);
+b) Diffraction effects are produced when the laser 
+beam is split into many beams on passing 
+through a transmission grating or on being 
+reﬂ ected from a reﬂ ection grating; 
+c) A pattern may also be produced by moving 
+other types of reﬂ ective surfaces or devices;
+d) Some scanning applications present a viewing 
+condition whereby a beam is perceived as a 
+series of pulses as it passes across the eye; 
+e) Laser beams are moved around by scanners 
+and the speed and frequency they pass over 
+the eye is the most important factor in deciding 
+the safety of the effect.
+Scanning frequency is therefore an important 
+determinant of injury threshold and as such, requires 
+careful evaluation before a scanned display can be 
+considered safe to view. 
+Display installations that expose people to laser 
+beams should have the following safe programming 
+techniques:
+a) Multiple scanning components, so that failure 
+of any single component results in either no 
+accessible beam or one that remains below 
+the MPE for the eye because of the continued 
+operation of other components within the 
+system. Scanned patterns generated by 
+separate optical components, moving at right 
+angles to each other, are a good example of 
+this technique. If one scanner fails, the resulting 
+line scan pattern produced by the other 
+scanner must be designed to be below the 
+MPE for the eye;
+b) Similar principles apply to diffraction effects 
+intended to target people. Particular 
+consideration should be given to the location of 
+the zero diffracted order;
+c) A control system that does not produce 
+hazardous beams when faults in its operation 
+occur;
+d) Scan-failure detection devices that effect 
+automatic system shutdown in the shortest 
+reasonably practicable time. Shutdown speeds 
+of no more than a few milliseconds should be 
+readily achievable.
+Installations intended to expose audiences should 
+never be left unattended.
+
+
+================================================================================
+
+--- Page 13 ---
+Words: 365, Images: 1
+
+SAFETY OF DISPLAY LASERS
+13
+What is the creative brief?
+A creative brief is the client’s initial vision of the laser 
+display.
+Where the effects will be used?
+Some of the factors to be considered when identifying 
+the locations of hazardous laser beams are:
+a) The personal exposure risks arising from 
+reasonably foreseeable fault conditions;
+b) The extent to which potential target materials 
+are reﬂ ectors; 
+c) Whether, in the case of diffuse reﬂ ectors such 
+as matt-painted surfaces, specular reﬂ ection 
+occurs following illumination at high angles of 
+incidence; and
+d) In instances where all the laser effects cannot 
+be seen by the operator, additional e-stop 
+operators will be required.
+Specular behaviour should be assumed in all cases 
+where there is any doubt about a surface’s reﬂ ective 
+property. It should never be assumed that buildings, 
+roofs and walkways etc. close to or within the 
+display area are unoccupied; people may appear 
+unexpectedly. 
+The accuracy of exposure hazard calculation for 
+a particular laser beam ultimately depends upon 
+the accuracy and correct use of product data 
+supplied by the manufacturer of the installation, 
+especially the manufacturer of the incorporated 
+laser system(s). In this respect, the criteria used 
+by laser system manufacturers to specify laser 
+beam parameters need careful attention. This 
+is because they vary from manufacturer to 
+manufacturer and even between products marketed 
+by the same manufacturer. For example, beam 
+divergence may be given as a half angle instead 
+of the more common full angle. Exposure hazard 
+calculations should always be based upon full 
+angle considerations. Note that the use of optical 
+components along the path of the laser beam may 
+increase or reduce the hazard. On site veriﬁ cation of 
+any calculations where personal exposure is likely to 
+occur should be carried out.
+When the Laser will be used?
+This may be a discrete and rigid time plan or 
+dependent on other show factors but should at 
+least outline when the hazard will be present. 
+Where possible the approximate time and duration 
+of the effects should be detailed. This should 
+include alignment and rehearsals schedules. This 
+information should be communicated to any relevant 
+authorities (e.g. the CAA).
+Figure 1. Show 
+planning ﬂ ow chart
+
+
+================================================================================
+
+--- Page 14 ---
+Words: 544, Images: 0
+
+SAFETY OF DISPLAY LASERS
+14
+How will it be done?
+The locations of hazardous accessible beams 
+(i.e. those that exceed the applicable MPE value) 
+arising during normal operation and following fault 
+conditions should be identiﬁ ed and pointed out to 
+the operator before installation commissioning and 
+hand-over. 
+For permanent installations, it is reasonable to 
+expect a high level of planning for the installation 
+in advance of the equipment arriving. Time should 
+be allowed for the provision of detailed information 
+where the installation develops before the ﬁ rst 
+performance. The venue management should be 
+provided with sufﬁ cient information (as contained 
+in the list below) to assess the risks from the use of 
+the laser. The level of detail will depend on the level 
+of continued involvement of the installer. However, it 
+is recommended that the venue should ensure that 
+they have sufﬁ cient information to safely operate the 
+laser in the event of closure of the laser installer.
+In addition to the requirements in Chapter 2, 
+Information should contain the following:
+a) Clear instructions on the use and effect of 
+display controls;
+b) Details of all permissible display effects, their 
+safety implications and the constraints on their 
+use;
+c) Information on manual shutdown and 
+monitoring requirements;
+d) Information on automatic emergency shutdown 
+systems, their mode of operation, maintenance 
+requirements and function veriﬁ cation;
+e) Details of routine servicing and maintenance 
+procedures, their frequency, who should carry 
+them out, and details of protective eyewear 
+and/or clothing required;
+f) Details of all routine adjustment and alignment 
+checks to be carried out by the user, to include 
+frequency, record keeping and corrective action 
+requirements: external optical component 
+checks are especially important;
+g) Operator competency and training 
+requirements;
+h) The supplier’s address and telephone number 
+or those of its LSO; and
+i) Any special conditions to be observed.
+For temporary installations, it is recognised that the 
+level of available detail about the laser installation 
+increases as the installation date approaches and, in 
+some circumstances, may not be ﬁ nalised until the 
+installation commences. However, installers should 
+attempt to minimise such uncertainty. Information 
+may be requested by the organiser, venue, regulatory 
+authority and, where appointed, an adviser. 
+Users and operators need to structure their work 
+schedules themselves in an effective system of work 
+including maintenance, installation procedures, 
+alignment checks and safety checks. Any 
+dismantling details (to avoid equipment damage) 
+are also useful. These systems of work should 
+also include the use of PPE and controlled access 
+to potential areas of hazard during alignment, 
+programming and safety system testing, as stated 
+on the risk assessment. Special attention should 
+be given to ensure that minimum safety separation 
+distances, in each site assessment, are observed 
+and maintained during operation.
+The aim of the safety assessment is to provide 
+assurance that the laser beams produced during a 
+display cannot lead to personal exposures above the 
+applicable MPE value in both normal operation and 
+following fault conditions. Table 1 below summarises 
+the criteria that apply to MPE selection for various 
+exposure situations and ﬁ gure 2, the safety 
+assessment ﬂ ow chart shows schematically the 
+major questions that need to be answered in a safety 
+assessment. Appendix A contains the MPE data 
+published in the current British Standard relevant to 
+the current UK legislation.
+
+
+================================================================================
+
+--- Page 15 ---
+Words: 257, Images: 1
+
+SAFETY OF DISPLAY LASERS
+15
+Accessible emissions that arise 
+in normal operations
+MPE relaxations following reasonably 
+foreseeable fault conditions
+Audience
+(i.e. . members of 
+the public and/or 
+audience)
+The applicable MPE should 
+be based on continuous, 
+direct ocular exposure to the 
+emission(s) for at least 10 
+seconds.
+The applicable MPE time base should 
+either match the response time of any 
+safety-related control system, designed 
+to terminate emission upon detection 
+of a fault, or match the time taken for 
+the emission to be manually terminated. 
+For intentional exposures, the minimum 
+time base should be 10 seconds. For 
+faults that cause Continuous Wave (CW) 
+emission, the applicable MPE may be 
+based on the eye aversion response 
+time of 0.25 seconds. 
+Employees
+(of supplier/installer or 
+user)
+Generally as for audience 
+except that, where speciﬁ c 
+safety training is given, the 
+applicable MPE for CW beams 
+may be based on the eye 
+aversion response time of 0.25 
+seconds, e.g. during setting up 
+procedures.
+Performers 
+(e.g. actors, dancers, 
+musicians etc.)
+As for employees but the training should include the use of stage 
+choreography as a means of assuring that ocular exposure risk is negligible. 
+Where an emission, although accessible, is not able to be viewed by the eye, 
+the applicable MPE may be based on the appropriate skin exposure value. An 
+example of this situation would be where the angle of illumination by the laser 
+and the part of the performer’s body being exposed (e.g. the feet) make ocular 
+exposure a practical impossibility.
+Table 1
+Figure 2. Safe or Unsafe Flow Chart
+
+
+================================================================================
+
+--- Page 16 ---
+Words: 420, Images: 1
+
+SAFETY OF DISPLAY LASERS
+16
+Chapter 4
+Installation and Alignment
+Installation
+If employers use hazardous sources of light, they 
+must put in place control measures to reduce the 
+risk of harm to the eyes and skin of their workers, 
+to as low as is reasonably practicable. This is the 
+key legal requirement of the Control of Artiﬁ cial 
+Optical Radiation at Work Regulations 2010. 
+Any areas where accessible beams could lead 
+to personal exposure in excess of the applicable 
+Maximum Permissible Exposure value (MPE) must 
+be assessed and an action plan devised, comprising 
+technical and organisational measures designed to 
+prevent exposure exceeding the MPE. The action 
+plan should be part of hand-over documentation. 
+The duties in these regulations, while not directly 
+applying to volunteers or members of the public, 
+extend the general duties set out in the Health and 
+Safety at Work etc. Act 1974, which require the 
+safeguarding of the health and safety of people who 
+are not at work.
+These locations should be designated by 
+warning signs as laser hazard areas, and entry 
+to them restricted to authorised people, who will 
+take appropriate precautions, e.g. wearing eye 
+protection. Consideration should also be given 
+to how to manage access for staff with ‘Access 
+all Areas’ passes and it may be necessary to use 
+appropriately trained security staff.
+Members of the audience should not be able to 
+expose either themselves or others in excess of 
+the applicable MPE value through irresponsible 
+behaviour, e.g. by climbing furniture to gain a better 
+view of performers or by placing reﬂ ective objects 
+in beam paths. Therefore it is good practice for 
+supervised installations to be designed so that 
+hazardous emissions are not accessible at any 
+point less than 3m above and 2.5m laterally from 
+any location at which a member of the audience 
+or public may gain access during a display (see 
+Figures 3 and 4). For unsupervised installations, 
+the vertical separation should increase to 6m (see 
+ﬁ gure 5). In circumstance where any of the above 
+distances cannot be achieved, any deviation should 
+be considered in a more detailed assessment to 
+ensure that persons are not put at risk. The security 
+and robustness of external targets is particularly 
+important in open air displays because they are 
+affected by weather, vibrations from trafﬁ c and, 
+sometimes, deliberate interference and vandalism. 
+Remember that at typical outdoor event projection 
+distances, even small misalignment of external 
+optical components or of the laser beam itself can 
+result in a grossly mis-targeted hazardous emission.
+Figure 3. Separation distances
+
+
+================================================================================
+
+--- Page 17 ---
+Words: 23, Images: 2
+
+SAFETY OF DISPLAY LASERS
+17
+Figure 4. View of monitored laser installation separation distances
+Figure 5. View of unmonitored laser installation separation distances
+
+
+================================================================================
+
+--- Page 18 ---
+Words: 491, Images: 0
+
+SAFETY OF DISPLAY LASERS
+18
+Ensure that mirrors external to the laser projector are 
+securely mounted and inaccessible to unauthorised 
+people. Clamping mechanisms should be tamper-
+proof and, so far as is practicable, designed to be 
+fail-safe. Any part of the installation that would shine 
+hazardous beams into public areas if misaligned 
+should be masked to restrict reﬂ ection angles to a 
+range that minimises this risk.
+Where a beam is intended to be viewed or where 
+viewing is likely because the necessary separation 
+distances cannot be maintained, personal exposure 
+should be constrained to the applicable MPE 
+value. The time required for this should not be 
+underestimated; it is likely to take a number of 
+hours, particularly in a large venue or with complex 
+installations.
+Alignment
+Laser output should take place within a 
+predetermined area. This is best achieved by 
+masking the effects head to conﬁ ne beam 
+movement. Masking materials should be rigidly 
+mounted and made of black-painted steel or 
+aluminium, software blanking or, where there is no 
+ﬁ re hazard, similarly treated block board. If software 
+blanking will be used to control masking, it should 
+not be used as the sole safety measure.
+Alignment of lasers can be hazardous and access 
+to display areas should ideally be restricted to 
+alignment personnel only. Where practicable, 
+beams should be reduced to below the MPE 
+during alignment. If this is not possible, provisions 
+should be put in place to control the risk to people, 
+including those not involved with the alignment 
+process, from being exposed to above the MPE.
+Any changes to an existing laser system installation 
+such as repositioning the systems or altering of the 
+control system or the programmed effects should 
+only be carried out with the agreement of the LSO. 
+For long-term installations and touring productions 
+any foreseeable adjustments and programming 
+alterations should be included in the original hand-
+over documentation. Any other alterations will need 
+to be justiﬁ ed for safety considerations which are 
+checked and agreed with an LSO.
+Where a laser beam is directed at an external optical 
+component, such as a mirror-ball, the incident beam, 
+unlike the reﬂ ected beam, is often not intended to 
+be accessible and so, provided that the advice given 
+in this guidance about separation distances and 
+the provision of masking is implemented, exposure 
+evaluation is not necessary. However, if the reﬂ ected 
+beam is accessible, it should be assessed for 
+viewing safely.
+Programming 
+Where practicable, programming should be carried 
+out prior to installation and conﬁ rmed on site. If 
+programming is carried out at the venue, unless all 
+beam effects are directed into areas where workers 
+will not be located, the area should be cleared of all 
+personnel.
+Rehearsal
+The operator should be particularly vigilant during 
+rehearsals to ensure that all effects are as intended. 
+It may be appropriate to have an additional operator 
+with access to the E-stop, especially if the effects 
+involve exposure of performers to laser beams.
+
+
+================================================================================
+
+--- Page 19 ---
+Words: 469, Images: 0
+
+SAFETY OF DISPLAY LASERS
+19
+Chapter 5
+Pre Show Checks
+Assessing for Safety
+This chapter deals with the requirements for the 
+safety checks that should be undertaken before a 
+display laser installation is put to use. 
+Visual Checks
+The supplier should specify in the hand-over 
+documentation, the type and frequency of external 
+optical component checks to be carried out by the 
+user. Checks for correct alignment of all optical 
+elements, such as mirrors, should be carried out 
+daily according to a speciﬁ ed procedure.
+Physical Checks
+All display laser products should be designed to 
+prevent unauthorised use. Typical systems used 
+to control the operation of the laser will be a pass 
+key control or password entry control system. 
+In addition, consideration should be given to the 
+siting of the control console away from accessible 
+areas. It is recognised that the laser itself may 
+be key controlled but, due to its location, it is not 
+reasonable for the individual laser key to be the 
+primary security control.
+Display laser installations should be provided with 
+one or more clearly identiﬁ able and easily operated 
+emergency stop controls (E-stop). The frequency 
+of maintenance and correct operation checks of 
+these controls should also be speciﬁ ed. Ideally the 
+E-stop(s) should be tested before each performance 
+and importantly, when the E-stop has been used 
+during a performance it should be not be possible to 
+automatically re-start the laser product(s). 
+Demonstration of an installation’s ability to achieve 
+compliance with the applicable MPE value when 
+scanning fails should be based upon measurement 
+and computation of worst-case exposure 
+conditions.
+Calculation accuracy should be conﬁ rmed, wherever 
+practicable, by suitable measurements of accessible 
+beams within the deﬁ ned laser display area. This 
+should be done both during and upon completion 
+of equipment installation. Adequate time should be 
+allowed for any measurements to be carried out, 
+and in complex installations this may take several 
+hours.
+Conﬁ rmatory measurements are particularly 
+important where there is a risk of hazardous 
+exposure to scanned laser beams following fault 
+conditions, or where there is the potential for 
+reﬂ ection off of surfaces that have indeterminate 
+reﬂ ective properties.
+If a laser installation is not being operated manually 
+and monitored continuously during the operational 
+period, then a rigorous hourly or daily testing 
+system needs to be monitored and managed by 
+trained operators throughout the period of an event 
+or permanent installation. Also, for those events 
+requiring a repeating laser system(s) installation, the 
+initial design should be carried out by experienced 
+laser suppliers or LSOs, along with the safety 
+monitoring system for such installations. It is 
+recommended that a laser system installation should 
+not be operated entirely automatically and that 
+safety procedures are checked and tested daily. It is 
+recommended that extra safety over-rides are used 
+for ‘automated’ installations and that these systems 
+are tamper-proof.
+
+
+================================================================================
+
+--- Page 20 ---
+Words: 356, Images: 0
+
+SAFETY OF DISPLAY LASERS
+20
+Sign Off
+The successful completion of the different stages 
+of designing, installing and operating a laser show 
+should be recorded. It is essential to do this where 
+control of equipment passes from one person to 
+another and it is useful to record that those involved 
+have been told what is expected of them and that 
+they have understood this. 
+For example:
+• The installer should conﬁ rm that the installation 
+is safe to use and should provide description of 
+the operating and maintenance procedures to 
+the organiser/venue;
+• The organiser/venue should conﬁ rm that they  
+have understood this; and
+• The event manager and the venue operators 
+should be given the information they need in 
+order for the display to go ahead, and conﬁ rm 
+that they have received it and that they give 
+permission for the display to go ahead.
+These various agreements and exchanges of 
+information should be recorded. For small-scale 
+events this might be by the exchange of messages 
+or emails. For larger and more complex events 
+it could be by exchanging documents which are 
+dated, timed and signed by the parties involved. 
+Sign-off documents can usefully include a summary 
+of the checks that have been carried out at each 
+stage. Written conﬁ rmation of hand-over is not 
+necessary where, for example, the installer and 
+the user are one and the same, but a document 
+recording the checks that have been carried out at 
+each stage will still be useful.
+It is good practice for the LSO to be involved in the 
+preparation of hand-over documentation for the 
+user. The laser display suppliers are responsible for 
+ensuring that pre-performance checks are carried 
+out (and recorded), that the laser performance 
+proceeds as planned and safety systems terminate 
+the laser effect(s) in the event of unsafe conditions.
+It is also good practice for suppliers to agree the 
+necessary supervision with the installation user. 
+These details should be included in hand-over 
+documentation.
+The safety assessment must be appropriate to the 
+viewing conditions that are likely to arise both during 
+normal operation of the display installation and 
+following faults in its operation.
+
+
+================================================================================
+
+--- Page 21 ---
+Words: 268, Images: 0
+
+SAFETY OF DISPLAY LASERS
+21
+Chapter 6
+Operation
+Monitoring the Show
+Members of the audience should not be able to 
+expose either themselves or others in excess of 
+the applicable MPE value through irresponsible 
+behaviour, e.g. by climbing furniture to gain a better 
+view of performers or by placing reﬂ ective objects in 
+beam paths.
+The operator should be fully aware of the full range 
+of adjustments and other operational modes, such 
+as diffraction motors, that are built into each system. 
+If any part of the equipment including the control 
+system(s) is modiﬁ ed to produce additional effects, 
+or increase the power, or scan angles outside this 
+speciﬁ cation, then the operator/organiser/venue 
+should ensure that the installation is re-assessed 
+and any safety overrides and systems are suitable 
+for the new modiﬁ cations.
+When operating laser system installations manually, 
+operators need to be vigilant so that if there is 
+equipment failure during operation, or if audience 
+unruliness or any unsafe conditions occur, the 
+display/effect should be stopped. 
+Chapter 7
+Post Show
+Show Complete
+It is good practice to place on record either that the 
+show went without incident, or to record anything 
+unplanned. This can be on a section of the pre-show 
+check document. The record should be dated, timed 
+and signed by the operator.
+Dismantling and Removal
+Although out of the scope of this guidance, the risk 
+assessment should consider any particular risks 
+associated with activities at the end of the show. 
+For a temporary show, this may involve dismantling 
+equipment when staff are tired, it may be dark (for 
+outdoor events) and there may be time pressures.
+
+
+================================================================================
+
+--- Page 22 ---
+Words: 571, Images: 0
+
+SAFETY OF DISPLAY LASERS
+22
+Appendix A: Glossary of Laser Terms
+Accessible Emission 
+Limit (AEL)
+The deﬁ ned power levels used in the laser classiﬁ cation system. See Appendix C.
+Alignment
+The process of setting up laser beam path parameters in the following ways:
+a) Aligning optics and laser beams within the internal components of the laser product 
+(normally carried out off site);
+b) Aligning projection zones and areas where the effects will be projected; and
+c) Alignment of external optics and effects
+Amsler Grid
+A viewing grid of horizontal and vertical lines to monitor a person’s central visual ﬁ eld. It is a diagnostic tool 
+that aids the detection of visual disturbances cause by changes in the retina, in particular the macular and 
+optical nerve. (See Appendix F for an Amsler grid and instructions).
+Aperture
+An opening through which radiation can pass.
+Aperture Stop
+A device or method preventing the beam output from a laser product.
+Applicable Maximum 
+Permissible Exposure 
+(MPE) Value 
+The Control of Artiﬁ cial Optical Radiation at Work Regulations 2010 refers to exposure limits for workers 
+who may be exposed to laser beams or other optical radiation. The term Maximum Permissible Exposure 
+is used for exposures to laser beams. The MPE is the maximum amount of laser beam to which a person 
+may be exposed without the risk of an injury. Different values generally apply for eye exposure and for skin 
+exposure.  
+The MPE value that satisﬁ es this criterion will depend on:
+a) The wavelength of laser beam being considered;
+b) The viewing condition which applies to the accessible laser beam, i.e. whether the beam is viewed 
+directly or following diffuse reﬂ ection and whether it is scanned, pulsed or continuous wave; and
+c) The applicable exposure time base. This should be based on a fully justiﬁ able assessment of the 
+maximum time any person can or is likely to view an accessible emission. In this regard, it may be 
+justiﬁ able to assume that exposure will be curtailed by eye aversion responses and/or automatic 
+emergency shutdown devices for performers. However, for deliberate exposure of the eyes of the 
+audience, an exposure duration of 10 seconds minimum should be assumed.
+A detailed assessment of MPEs is beyond the scope of this Guide. However, it is possible to simplify the 
+assessment by using an MPE of 10W/m2 (equivalent to 1mW/cm2) for all wavelengths from 400nm to 
+700nm. However, where the performance is intended for children, the MPE level should be reduced by a 
+factor of 10 for wavelengths below 500nm.
+The MPE applies to the peak power of the laser beam and should not be modiﬁ ed for scanning effects or 
+beam modulation (switching on and off quickly).
+The laser beam can be compared with the MPE by measurement if the measurement instrument has an 
+aperture of 7mm diameter. All values need to be normalised to mW/cm2 or W/m2.
+However, the instrument must be capable of assessing whether the laser beam is pulsed or modulated and 
+must be able to record the peak laser beam power.
+The skin MPE value should be considered as 200mW/cm2 as this is the 10 second or greater value so 
+poses no skin hazard for durations of less than 10 seconds. The table below shows applicable MPE values 
+for common time bases in the visual spectrum for eye exposure.
+Time Base (seconds)
+Eye (mW/cm2)
+0.25
+2.54
+1
+1.80
+3
+1.37
+10
+1.01
+
+
+================================================================================
+
+--- Page 23 ---
+Words: 555, Images: 0
+
+SAFETY OF DISPLAY LASERS
+23
+Attenuation
+The decrease in energy (or power) as a beam passes through an absorbing or scattering medium.
+Aversion Response 
+Movement of the eyelid or the head to avoid an exposure to a noxious stimulant, bright light. It can occur 
+within 0.25 seconds, and it includes the blink reﬂ ex time.
+Beam
+A collection of rays that may be parallel, convergent, or divergent.
+Beam Divergence
+Angle of beam spread measured in radians or milliradians (1 milliradian = 3.4 minutes of arc). For small an-
+gles where the cord is approximately equal to the arc, the beam divergence can be closely approximated 
+by the ratio of the cord length (beam diameter) divided by the distance (range) from the laser aperture.
+This is the value that deﬁ nes the increase in the diameter of the laser beam with distance from the exit 
+aperture. The value gives the full angle at the point where the laser radiant exposure or irradiance is e-1 or 
+e-2 of the maximum value, depending upon which criteria is used.
+Blanking Plate
+Non-ﬂ ammable materials used to blank, mask or terminate laser emissions.
+Blink Reflex
+See Aversion Response.
+Brightness
+The visual sensation of the luminous intensity of a light source. The brightness of a laser beam is most 
+closely associated with the radio-metric concept of radiance.
+CAA CAP 736
+The UK Civil Aviation Authority’s policy and supporting guidance for commercial organisations and individu-
+als planning to operate directed light, ﬁ reworks, toy balloons and lanterns within UK airspace.
+Cornea
+The transparent outer coat of the human eye, covering the iris and the crystalline lens. The cornea is the 
+main refracting element of the eye.
+Coherence
+A term describing light as waves which are in phase in both time and space. Monochromaticity and low 
+divergence are two properties of coherent light.
+Collimated Light
+Light rays that are parallel. Collimated light is emitted by many lasers. Diverging light may be collimated by 
+a lens or other device.
+Continuous Wave (CW)
+Constant, steady-state delivery of laser power.
+Control Programming
+Programming the laser effects to the display parameters which includes safety, in advance of the display.
+Controlled Area
+Any locale where the activity of those within are subject to control and supervision for the purpose of laser 
+radiation hazard protection.
+Diffuse Reflection
+Takes place when different parts of a beam incident on a surface are reﬂ ected over a wide range of angles.
+Diffracted Beams
+The process by which a beam of light or other system of waves is spread out as a result of passing 
+through a narrow aperture or across an edge, typically accompanied by interference between the wave 
+forms produced.
+Diffraction Grating
+An optical component that splits emission laser beam into a number of beams or ﬁ ngers of light. When 
+used in conjunction with diffusely reﬂ ective or transmissive optics, a broad swathe of light or wash effect, 
+often multi-coloured, can be produced. Diffraction effects may be projected statically or scanned.
+Direct Ocular Viewing
+Exposure of the eye directly, or after specular reﬂ ection, to all or part of a laser beam.
+Display Laser Installation
+The installation as a whole; includes the laser product, the effects head, any external optical components 
+such as mirrors and mirror-balls, and any other devices or components which form part of the laser display 
+equipment.
+
+
+================================================================================
+
+--- Page 24 ---
+Words: 593, Images: 0
+
+SAFETY OF DISPLAY LASERS
+24
+Appendix A: Glossary of Laser Terms
+Display Laser Product
+Any laser product that is designed to project static or scanned emissions at imaging screens or into free 
+space for the purpose of entertainment, and which achieves this by either integral and/or external optical 
+components.
+Divergence
+The increase in the diameter of the laser beam with distance from the exit aperture. The value gives the 
+full angle at the point where the laser radiant exposure or irradiance is e-1 or e-2 of the maximum value, 
+depending upon which criteria is used.
+Effects Head
+An arrangement of optical processing components such as scanning devices, mirrors, ﬁ lters and diffraction 
+gratings that usually forms an integral part of the laser product incorporated within a display installation.
+Electronic Failure Safety 
+Response System
+A device that works in harmony with the laser system and control software in order to limit or prevent the 
+emission of hazardous beams into a predeﬁ ned or programmed area. These can take the form of straight 
+up analogue devices that monitor laser power and positions, to ﬁ rmware masking and emission prevention. 
+Due to the nature of these devices, emission times during fault conditions can often be down as low 
+as microseconds and emissions can often be altered as required at the time to allow higher powers in 
+restricted zones and safe powers in audience zones.
+Emission
+The visible and non-visible light output produced by a laser.
+Energy (Q)
+The capacity for doing work. Energy is commonly used to express the output from pulsed lasers and it is 
+generally measured in Joules (J). The product of power (watts) and duration (seconds). One watt second = 
+one Joule.
+Erythema
+The medical term for redness of the skin due to congestion of the capillaries.
+Exposure Duration
+The total amount of time the ocular structures or skin are exposed to the laser beam.
+External Optical Component 
+Any optical processing device that forms part of a display laser installation but which is located or mounted 
+externally to the incorporated laser product and any associated effects head (mirrors, mirror balls etc.)
+Fail-safe Interlock
+An interlock where the failure of a single mechanical or electrical component of the interlock will cause the 
+system to go into, or remain in, a safe mode.
+Firmware programming
+The programming of non-volatile devices such as ROM, EPROM and Flash memory devices.
+Full angle/Half angle
+Properties of a laser beam that deﬁ ne divergence. Any beam will have both properties and they are 
+inherently linked. (It is important to know which angle a particular manufacturer uses in order to perform the 
+required calculations.)
+Galvanometer
+See Scanner
+Iris
+The annular pigmented structure that lies behind the cornea of the human eye. The iris forms the pupil.
+Intrabeam Viewing
+The viewing condition whereby the eye is exposed to all or part of a direct laser beam or a specular 
+reﬂ ection.
+Irradiance (E)
+Radiant ﬂ ux (radiant power) per unit area incident upon a given surface. Units: watts per square centimetre. 
+(Sometimes referred to as power density, although not exactly correct). Joule (J) is a unit of energy (1 joule 
+= 1 watt-second).
+Laser
+An acronym for light ampliﬁ cation by stimulated emission of radiation. It produces an intense beam of light 
+with the unique properties of coherency, collimation and monochromaticity.
+Laser Classification
+Lasers are classiﬁ ed in BS EN 60825 Part 1, to provide information on the laser beam hazard and the 
+necessary control measures to reduce the risk from the laser beam hazard. (See Appendix D for further 
+information.)
+
+
+================================================================================
+
+--- Page 25 ---
+Words: 485, Images: 0
+
+SAFETY OF DISPLAY LASERS
+25
+Laser System
+An assembly of electrical, mechanical and optical components which includes a laser.
+Lens
+A curved piece of optically transparent material which, depending on its shape, is used to either converge 
+or diverge light. 
+Light
+See Visible Radiation.
+Limiting Aperture
+The maximum circular area over which radiance and radiant exposure can be averaged when determining 
+safety hazards.
+Macula
+The small, uniquely pigmented and specialized area of the retina.
+Maintenance
+Performance of those adjustments or procedures speciﬁ ed in user information provided by the 
+manufacturer with the laser or laser system, which are to be performed by the user to ensure the intended 
+performance of the product.
+Maximum Permissible 
+Exposure (MPE)
+See Applicable Maximum Permissible Exposure Value
+Nanometre 
+A unit of spatial measurement that is 109 meter, or one billionth of a meter. A measurement of the 
+wavelength of laser light generally measured from peak to peak.
+Nominal Ocular Hazard Dis-
+tance (NOHD)
+This describes the distance within which the level of the direct, reﬂ ected, or scattered radiation during 
+normal operation exceeds the applicable MPE. Exposure levels beyond the boundary of the NOHD are 
+below the appropriate MPE level.
+Ocular Fundus
+The back of the eye. The ocular fundus may be seen through the pupil by use of an ophthalmoscope.
+Optical Radiation
+Ultraviolet, visible and infrared radiation (0.35-1.4 μm) that falls in the region of transmittance of the human 
+eye.
+Output Power
+The energy per second measured in watts emitted from the laser in the form of coherent light.
+Power
+The rate of energy delivery expressed in watts (joules per second). Thus: 1 watt = 1 joule / 1 sec.
+Programmable Controller
+A software controlled programmable electronic device that controls a display laser installation.
+Protective Housing
+A device designed to prevent direct access to radiant power or energy.
+Pulse
+A discontinuous burst of laser, light or energy, as opposed to a continuous beam. A true pulse achieves 
+higher peak powers than that attainable in a CW output.
+Pulsed Laser
+A Laser which delivers energy in the form of a single or train of pulses.
+Q-Switch
+A device that produces very short (~10-250ns), intense laser pulses by enhancing the storage and 
+dumping of electronic energy in and out of the lasing medium.
+Radiant Energy (Q)
+Energy in the form of electromagnetic waves usually expressed in units of joules (watt-seconds).
+Radiant Exposure (H)
+The total energy per unit area incident upon a given surface. It is used to express exposure to pulsed laser 
+radiation in units of J/cm2.
+Reflection
+The return of radiant energy (incident light) by a surface, with no change in wavelength.
+Refraction
+The change of direction of propagation of any wave, such as an electromagnetic wave, when it passes 
+from one medium to another in which the wave velocity is different. The bending of incident rays as they 
+pass from one medium to another (e.g., air to glass).
+
+
+================================================================================
+
+--- Page 26 ---
+Words: 337, Images: 0
+
+SAFETY OF DISPLAY LASERS
+26
+Appendix A: Glossary of Laser Terms
+Retina
+The sensory tissue that receives the incident image formed by the cornea and lens of the human eye. 
+The retina lines the posterior eye.
+Scanned Laser/
+Scanned Effects
+A laser having a time-varying direction, origin, or pattern of propagation with respect to a stationary frame 
+of reference. Generally created using scanners to position beams rapidly using X-Y coordinates in free 
+space.
+Scanner
+A device with an oscillating mirror that directs the reﬂ ected beam backwards and forwards. Normally used 
+in tandem with a second galvanometer/scanner producing X & Y outputs to create laser-drawn shapes.
+Secure Enclosure
+An enclosure to which casual access is impeded by an appropriate means (e.g. door secured by lock, 
+magnetically or electrically operated latch, or by screws).
+Semiconductor Laser
+A type of laser which produces its output from semiconductor materials such as gallium arsenide (GaAs).
+Source
+The term source means either laser or laser-illuminated reﬂ ecting surface, i.e., source of light.
+Spectator 
+An individual who wishes to observe or watch a laser or laser system in operation and who may lack the 
+appropriate laser safety training.
+Specular Reflection
+A mirror-like reﬂ ection.
+Ultraviolet Radiation (UV)
+Electromagnetic radiation with wavelengths between soft X-rays and visible violet light, often broken down 
+into UV-A (315-400nm), UV-B (280-315nm), and UV-C (100-280nm).
+Visible Radiation
+Electromagnetic radiation which can be detected by the human eye. It is commonly used to describe 
+wavelengths in the range between 400nm and 700-780nm.
+Watt (W)
+The unit of power or radiant ﬂ ux (1 watt = 1 joule per second).
+Wavelength
+The distance between concentric oscillations of the light wave, usually measured from peak to peak, which 
+determines its colour. Common units of measurement are the micrometer (micron), the nanometer and 
+(earlier) the Angstrom.
+Zero Diffracted Order
+The reﬂ ected beam from a diffraction grating that is following the path that a beam would follow if the 
+diffraction grating were a mirror. Typically the order with the highest incident/reﬂ ected power.
+
+
+================================================================================
+
+--- Page 27 ---
+Words: 234, Images: 0
+
+SAFETY OF DISPLAY LASERS
+27
+Appendix B: Types of Lasers
+OPSL (Optically Pumped 
+Semiconductor Laser)
+Air-cooled laser diode producing powers in the range of 1W > 12W. Typically very good beam proﬁ le with 
+low divergence. Wavelengths from 460nm > 639nm. These diodes are often combined in laser projectors 
+to give white light laser projectors up to 30W or even higher.
+DPSS (Diode Pumped 
+Solid State) 
+Air-cooled laser diode, normally 200mW > 10W. This laser produces 532nm green laser light, not as 
+common since diodes are now available and are more stable. 
+Diode (Direct output 
+from a diode) 
+From 1mW up to 2W, normally used in arrays to create more power. Up to 48 diodes creating in excess of 
+30W in a laser projector.
+Pulsed laser
+Pulsed lasers are lasers which emit light not continuously, but rather in the form of optical pulses. The term 
+is most commonly used for Q-switched lasers emitting nanosecond pulses.
+Some older lasers that may still be found in use
+Gas Water-Cooled 
+Tube-style laser, either glass or ceramic. These lasers can be mixed gas, Krypton or Argon giving constant 
+laser output. These are not commonly used in temporary installations anymore, although they may still be 
+found in ﬁ xed installations. Water-cooled lasers would normally be installed into a beam table or used to 
+feed remote ﬁ bre optic heads. Power of water-cooled lasers can range from 100mW to 35W. 
+
+
+================================================================================
+
+--- Page 28 ---
+Words: 329, Images: 0
+
+SAFETY OF DISPLAY LASERS
+28
+Appendix C: Laser Classiﬁ cation
+Class
+Basis for Classiﬁ cation
+Class 1
+SAFE
+Visible/non visible
+Lasers which are safe under reasonably foreseeable conditions of operation. Generally a 
+product that contains a higher class laser system but access to the beam is controlled by 
+engineering means.
+Class 1C
+SAFE WITHOUT VIEWING AIDS
+Visible/non visible
+Lasers intended for use directly on people’s skin, for applications such as hair removal. Not 
+relevant for laser displays.
+Class 1M
+SAFE WITHOUT VIEWING AIDS
+302.5 to 4000nm
+Safe under reasonably foreseeable conditions of operation. Laser beams are collimated but 
+with a large diameter. May be hazardous if user employs optics within the beam.
+Class 2
+LOW POWER
+Visible laser beams only
+For CW lasers, protection of the eyes is normally provided by the natural aversion response, 
+including the blink reﬂ ex, which takes approximately 0.25 seconds. (These lasers are not 
+inherently safe.)
+Accessible Emission Limit = 1mW for a continuous wave laser.
+Class 2M
+SAFE WITHOUT VIEWING AIDS
+Visible laser beams only
+Protection of the eyes is normally provided by the natural aversion response, including the 
+blink reﬂ ex, which takes approximately 0.25 seconds. Beams are collimated but with a large 
+diameter. 
+May be hazardous if user employs optics within the beam.
+Class 3R
+LOW/MEDIUM POWER
+Visible/non-visible
+Risk of injury is greater than for the lower classes but not as high as for class 3B. Up to 5 
+times the Accessible Emission Limit for Class 1 or Class 2.
+Class 3B
+MEDIUM/HIGH POWER
+Visible/non-visible
+Direct intrabeam viewing of these devices is always hazardous. Viewing diffuse reﬂ ections 
+is normally safe provided the eye is no closer than 13cm from the diffusing surface and the 
+exposure duration is less than 10 seconds.
+Accessible Emission Limit = 500mW for a continuous wave laser.
+Class 4
+HIGH POWER
+Visible/non-visible
+Direct intrabeam viewing is hazardous.
+Specular and diffuse reﬂ ections are hazardous. Eye, skin and ﬁ re hazard.
+TREAT CLASS 4 LASERS WITH CAUTION
+
+
+================================================================================
+
+--- Page 29 ---
+Words: 855, Images: 0
+
+SAFETY OF DISPLAY LASERS
+29
+Appendix D: Case Studies
+Type of venue: Outdoor music festival with one stage in open 
+farmland away from major roads
+Time of year: Mid-June
+Laser equipment to be used: 4x10W full colour laser systems 
+to produce ﬂ at lines, cones and waves and other aerial effects 
+installed by a single laser supplier contracted by the organisers of 
+the festival.
+Festival organiser: The festival organiser that had contracted 
+the laser supplier to provide the effects for the show, provided 
+the supplier with details regarding the site, surrounding hazards 
+and the site plans which included stage, other structures and 
+audience areas. 
+Laser Suppliers pre-site actions (without any prior site visit): 
+The supplier pre-programmed the effects the organisers and 
+artists requested and tested the laser systems that would be 
+used for the show. Conﬁ rmation of other details such as rigging 
+and positioning of the lasers was carried out using the site plan 
+that the organisers had supplied. Based on the plan an evaluation 
+of the appropriate MPE levels was calculated. All information 
+regarding the planned laser use was then passed to the CAA.
+Laser supplier’s installation: The four laser projectors were 
+secured on to lighting trusses above the stage the day before 
+the show. An E-stop ‘key operated’ button was tested and then 
+installed alongside the controller for use during the alignment, 
+programming and the show operation of the laser projection. 
+Before any laser was powered, laser hazard warning signs were 
+placed at all entrances to the stage.
+Laser supplier’s alignment process: After completing the 
+laser systems installation, including securing all cabling, the 
+audience and other work areas were cleared of any people for the 
+alignment process. The laser scanning zones were aligned using 
+the lowest possible output powers and stored on the controller. 
+Safety scan lenses for the lower audience ‘windows’ were ﬁ tted 
+to the laser system output to ensure the laser beams directed 
+towards the audience were suitably diverged. To stop any 
+unintended scanning of areas such as follow spot, FOH or dance 
+platforms, metallic masking was applied to the laser projectors. All 
+cameras and projectors that could be affected by the laser beam 
+were moved or masked.
+Festival organiser: As requested by the laser supplier, the festival 
+organiser assisted the process of preventing any other persons 
+working on the site, being in the areas where the alignment 
+process was to be carried out.
+Laser supplier’s safety checks and programming: The 
+laser supplier conﬁ rmed the programmed scanned effects in 
+the audience area were at or below the expected or intended 
+MPE level at the masking and output zones and at the nearest 
+audience locations by using a laser power meter to measure a 
+divergent single laser beam. The scan fail software on the control 
+systems was disabled for the test and each laser beam was 
+measured. The readings were recorded on an LSO report form 
+by the operator (who, for the purposes of the show was fulﬁ lling 
+the role of the LSO). The recorded measurements were then 
+analysed and alterations to the output were made to maintain 
+the required safety conditions before programming the required 
+effects continued. Prior to the programming being carried out, 
+the scan fail software was re-enabled and tested to ensure any of 
+the concentrated effects and single beam effects were blanked 
+instantly. 
+Laser supplier’s pre-show checks: On the day of the show and 
+prior to the audience entering the area in front of the stage, the 
+laser locations and installation were checked, including reference 
+beams and effects in each scanning zone. It was found that one 
+of the laser systems had been accidently been moved due to 
+extra lighting being added to the truss next to the laser projector 
+overnight. Discussions followed whether to use the method of 
+blanking the output and moving the system by adjusting the 
+clamps holding the ﬁ xture, then use a safer low power reference 
+beam from the laser projector to realign the beam to the original 
+location. The show power setting could then be reapplied to the 
+laser. As there was little time remaining before the site would be 
+opened to the public and the light levels during the daytime would 
+make alignment difﬁ cult with low power settings, the decision 
+was taken that the system could not be realigned safely in the 
+time available. So the laser projector was disconnected from the 
+installation and not used for the show. 
+Laser supplier’s operation for the show: The remaining 
+three laser systems are then used as intended with the pre-
+programmed sequences and effects being triggered by the 
+operator throughout the show. For the full duration of the show 
+the operator monitored the laser systems and the control 
+system and at the end of the event, the system was shut down 
+completely.
+Laser supplier’s show report: The laser supplier operated a 
+policy for recording any events that occurred during the laser 
+display. The issues encountered on this install were recorded on 
+the show ﬁ le to be analysed and acted upon as part of the show 
+planning routine for further installs.
+Case Study 1 - Outdoor Music Festival
+
+
+================================================================================
+
+--- Page 30 ---
+Words: 1110, Images: 0
+
+SAFETY OF DISPLAY LASERS
+30
+Appendix D: Case Studies
+Type of venue: Indoor arena with stage presentation area for an 
+awards ceremony with stage performers and an after party for the 
+guests.
+Time of Year: November.
+Laser equipment to be used: The show was to use 3 x 6W 
+full colour and 2 x 5W Green laser systems to produce ﬂ at lines, 
+cones and waves and other aerial effects.
+Organiser of the event: The organiser supplied some details 
+of the venue to the laser supplier regarding the areas within the 
+arena to be used and seating plans etc. However, they failed to 
+inform the laser supplier that there would be performers on stage 
+during the laser display and an addition of a riser for the DJ.
+Laser supplier pre-site actions: The supplier pre-programmed 
+the effects the organiser requested and tested the laser systems 
+that would be used for the show. They conﬁ rmed the installation 
+details including the seating arrangement and the room plan with 
+the details provided by the organiser. An evaluation of the areas 
+where the MPE measurements need to be conﬁ rmed through 
+measurement was undertaken and recorded. Other details such 
+as rigging and positioning of the lasers was planned as part of 
+this process.
+The ﬁ ve laser system units were installed, two secured to truss 
+that surrounded the projection screens in the stage set, three 
+on heavy duty stands with barriers around the stands to prevent 
+access by other staff and the audience. The installation was 
+carried out overnight as access to the arena was limited due to 
+a concert the previous evening. The E-stops were tested prior to 
+programming to ensure that if any of the projectors, controllers, or 
+scan fail systems failed during alignment or programming periods 
+the outputs would be rapidly blanked.
+Laser supplier’s alignment process: After ensuring that the 
+installation had been safely completed including cable runs and 
+other equipment being stowed, the remaining arena security staff 
+were asked to leave the area and briefed as to what work was 
+going to be undertaken. Then the alignment of laser scanning 
+zones was carried out at the lowest visible power. The required 
+metal blanking plates were then ﬁ tted to the output window of the 
+laser systems. 
+Laser supplier’s safety checks and programming: The laser 
+supplier’s safe system of work conﬁ rmed and checked that all the 
+planned scanned effects into the audience areas were safe for 
+viewing in simulated failure conditions. The MPE readings for each 
+laser system output were taken at the nearest audience location 
+for each of the laser systems. Any adjustments that were required 
+were carried out prior to programming effects that were to be 
+used for this event. The laser supplier conﬁ rmed the programmed 
+scanned effects in the audience area were at or below the 
+expected or intended MPE level at the masking and output zones 
+at the nearest audience locations by using a laser power meter 
+to measure a divergent single laser beam. The scan fail software 
+on the control systems was disabled for the test and each laser 
+beam was measured. The readings were recorded on an LSO 
+report form, by the operator (who, for the purposes of the show 
+was fulﬁ lling the role of the LSO). The recorded measurements 
+were then analysed and alterations to the output were made 
+to maintain the required safety conditions before programming 
+the required effects continued. Prior to the programming being 
+carried out, the scan fail software was then re-enabled and tested 
+to ensure any of the concentrated effects and single beam effects 
+were blanked instantly.
+However, due to the closeness of the performers during one 
+section of the evening entertainment, the effects were re-
+programmed in another zone and extra blanking was added for 
+their performance. 
+The laser supplier briefed the client that with better advanced 
+planning, the laser supplier could have positioned the laser 
+systems in locations that would not be impaired by performers. 
+In this instance, the repositioning of some of the laser systems 
+away from the stage or rigging the laser systems at the front or 
+far enough ‘up’ stage, would have been preferred positions to 
+reduce interference. This approach would also have improved the 
+overall safety of the stage area, and would also have allowed for 
+any last-minute alterations. In addition, the laser systems could 
+have been rigged higher in relation to the height of the venue.
+Laser supplier’s pre-show checks: After the programming and 
+safety checks had been completed, the show was rehearsed 
+and before each run through, the reference beams or effects 
+were checked to ensure the laser systems had not moved by the 
+vibrations from the bass of the sound system set at maximum. 
+Small alterations or movement were noticed and with time in hand 
+before the guests arrived there was time to adjust those laser 
+systems.
+The dancers who were part of the opening show were briefed 
+prior to the rehearsals by the laser operator and told not to use 
+the front area of the stage marked with white masking tape on the 
+stage ﬂ oor while a laser effect was being projected down on to 
+the front of the stage for a certain period during the show.
+Laser supplier’s operation for the show: The opening part of 
+the show and presentation ceremonies went to plan. The operator 
+was then notiﬁ ed that during the interval a replacement band 
+who had been booked at the last moment were going to put up 
+two backdrops, one either side of the stage with the rest of their 
+equipment. This resulted in two of the laser systems at the back 
+of the stage having half of their scan areas covered and musicians 
+performing in front of the remaining section of their outputs. The 
+operator decided the two laser systems at the rear of the stage 
+should be switched off during the band’s performance. In addition 
+to this change, the DJ was positioned on a riser in the front of the 
+stage for the remainder of the evening, this was noted on the pre-
+show checks and a planned shutdown of the central laser on the 
+mid truss above the stage was scheduled.
+Once the band had cleared the stage and with strict access 
+controls and security in place at the stage, the two laser systems 
+disabled during the band’s performance were switched on. 
+Laser supplier’s show report: The laser supplier compiled a 
+show report which noted the issue with the introduction of the 
+replacement band and the unplanned use of a riser for the DJ at 
+the front of the stage.
+Case Study 2 - Indoor Corporate Awards Dinner Event
+
+
+================================================================================
+
+--- Page 31 ---
+Words: 451, Images: 0
+
+SAFETY OF DISPLAY LASERS
+31
+Appendix D: Case Studies
+Type of Venue: Nightclub with a 300-person capacity. 
+Laser equipment to be used: An owner of a nightclub in need of 
+refurbishment, contacted a lighting company to supply and install 
+a lighting system that includes a 2W RGB laser system to be 
+installed following extensive works.
+Lighting company planning: The lighting company visited the 
+venue to ascertain the most suitable laser product to use. During 
+the visit the client informed the lighting company that he wanted 
+the laser to project the beams into the area of the dance ﬂ oor 
+and bar area. The company carried out a risk assessment which 
+demonstrated that this could be done but that the installation 
+would require specialist knowledge and assessments in order to 
+ensure safe use of the laser. The lighting company and client also 
+discussed the proposed installation and licensing arrangements 
+with the council. 
+Lighting company’s design: Following advice from a laser 
+specialist, the lighting company informed the client that the laser 
+beams should be terminated away from the public area. They 
+explained that if audience scanning was still a requirement, 
+a detailed assessment would need to be completed. With the 
+requirements of enhanced training, operator competency and 
+detailed daily checks required for a show that included audience 
+scanning, it was agreed with the client that the laser beams would 
+be terminated away from the public and not scan the dance ﬂ oor 
+or bar area. In response to these design decisions it was decided 
+that the control system would be a dedicated laser controller with 
+an E-stop connected to the laser.
+Lighting company’s installation: The laser was positioned on 
+a lighting truss above the DJ. It was aligned to only project above 
+head height which included the provision of a person being 
+carried on another’s shoulders. The output window of the laser 
+was masked using black foil so that in the event of a failure, it 
+would not be possible for the laser to project into the public area. 
+The system programming was tested and checked and 
+hand-over paper work was prepared.
+Lighting company’s handover and training: All the relevant 
+paper work was handed over to the client including reference to 
+the PLASA Laser Guidance. Operator training was given on the 
+safe operation of the system, emergency stops and any daily 
+checks required and suggestions made to the client that any 
+checks or incidents involving the laser system are recorded. The 
+client was also advised that a permanent LSO be appointed from 
+those that had received the training to ensure the laser operated 
+in the agreed design and installation parameters.
+Case Study 3 - Permanent Installation of a Laser System in a Nightclub
+
+
+================================================================================
+
+--- Page 32 ---
+Words: 386, Images: 0
+
+SAFETY OF DISPLAY LASERS
+32
+Appendix D: Case Studies
+Type of Venue: Single story village community centre used for 
+private hire and functions.
+Laser Equipment to be used: Mobile DJ with a small lighting rig 
+and a 500mW laser bought from a high street store.
+Pre-show actions: The DJ arrived on site to set up in a small, 
+single-storey village community centre to play at a wedding 
+reception. The DJ met with the client to decide where to set 
+up. The DJ set up the laser on the small goalpost truss over the 
+decks above head height so the lasers could not be handled 
+by any of the guests. He turned on the laser and positioned the 
+beams on to the ceiling. He then turned off the laser whilst setting 
+up the rest of his decks, lighting and sound equipment.
+During the reception: As the reception got underway, the client 
+asked the DJ to move the lasers so they would shine on to the 
+dance ﬂ oor for the bride and groom’s ﬁ rst dance. The DJ refused, 
+explaining that it may be potentially unsafe to the guests and 
+their children to stare directly into the laser beams. Later the 
+truss over the deck was accidentally moved by a guest and the 
+laser position moved enough to shine down in to the hall. The 
+DJ immediately stopped the laser and re-aligned it before turning 
+it back on. As a safety measure the DJ switched off the laser 
+whenever he left it unattended.
+At the end of the evening the ﬁ rst piece of equipment the DJ 
+turned off was the laser projector.
+Key simple rules to ensure safety for low power systems in 
+smaller venues (pubs, clubs and village halls etc.)
+• Ensure that the person responsible for the laser has an 
+understanding of laser safety.
+• Ensure that the laser projector is functioning correctly.
+• Ensure that the laser projector is installed above head height 
+to reduce close up viewing.
+• Ensure that the laser projector is securely mounted to 
+prevent accidental misalignment.
+• Ensure that the laser projector is monitored at all times when 
+in use.
+• Ensure that the laser projector can be switched off in the 
+case of failure or misuse.
+ 
+Case Study 4 - Mobile Disco Hired for a Private Function
+
+
+================================================================================
+
+--- Page 33 ---
+Words: 142, Images: 0
+
+SAFETY OF DISPLAY LASERS
+33
+Appendix E: Contacts
+Civil Aviation Authority
+Aviation House
+Gatwick Airport South 
+West Sussex 
+RH6 0YR
+Main Switchboard: 01293 567171
+www.caa.co.uk
+To download form DAP1918: Notification of Outdoor Laser, Searchlight, Firework, 
+Helium-Filled Toy Balloon or Sky Lantern event. 
+Use the link below:
+http://publicapps.caa.co.uk/modalapplication.aspx?appid=11&mode=detail&id=4366  
+Local authorities
+To identify the local authority you need to consult regarding laser displays, licencing etc., 
+follow the UK government link below:
+www.gov.uk/ﬁ nd-your-local-council 
+British Standards Institute (BSI) 
+389 Chiswick High Road
+London
+W4 4AL
+Tel: 020 8996 9000
+www.bsigroup.co.uk
+To buy British Standards use the link to the BSI shop, enter the standard you require and 
+identify the version you wish to buy. Standards can be downloaded in PDF ﬁ le format.
+http://shop.bsigroup.com/ 
+NB: Please contact PLASA if any of the links on the contacts page do not work.
+Tel: 01323 524120  |  www.plasa.org
+
+
+================================================================================
+
+--- Page 34 ---
+Words: 207, Images: 1
+
+SAFETY OF DISPLAY LASERS
+34
+Appendix F: Amsler Grid
+How to test using the Amsler Grid
+If the person being tested needs reading glasses, they should be 
+worn whilst using the Amsler Grid. The grid should be held at your 
+usual reading distance.
+1. The person taking the test is required to cover one eye and 
+then instructed to focus on the dot in the centre.
+2. Ask the person if any of the lines look wavy, blurred or 
+distorted. (All lines should be straight, all intersections should 
+form right angles and all the squares should be the same 
+size.)
+3. Ask the person if there are any missing areas or dark areas 
+in the grid.
+4. Ask the person if they can see all corners and sides of the 
+grid.
+5. Repeat the above process for the other eye.
+6. Instruct the person being tested to mark on the grid any 
+areas of the chart that they are not seeing properly.
+VERY IMPORTANT: Should the person being tested report any 
+of the listed irregularities above they should be instructed to 
+report to an optometrist immediately. The marked grid should be 
+given to the person so that they can take it with them to the eye 
+examination.
+
+
+================================================================================
+
+--- Page 35 ---
+Words: 241, Images: 0
+
+SAFETY OF DISPLAY LASERS
+35
+Appendix G: Bibliography
+Should you wish to obtain any of the documents listed below, the links 
+on this page will take you to the websites that host web versions or 
+download facilities for copies of the documents.
+The BSI shop link will open the purchase page of the BSI website, where 
+the document number can be entered into the search facility and the 
+document then purchased online.
+UK Health and Safety
+Health and Safety at Work etc. Act 1974 
+Scanned PDF version available
+Managing for Health and Safety 
+Online & PDF available
+The Control of Artiﬁ cial Optical Radiation at work Regulations 2010 
+Online & PDF available
+Provision and Use of Work Equipment Regulations 1992 
+Online & PDF available 
+Personal Protective Equipment at Work Regulations 1992 
+Online & PDF available
+Risk Assessment
+European Directives & Standards
+Directive 2006/42/EC Machinery Directive 
+Online & PDF available
+Directive - 2006/95/EC Low Voltage Directive 
+Online & PDF available
+BS EN ISO 12100-1:2003 + Amendment 1:2009 Safety of machinery. 
+Basic concepts, general principles for design. 
+Basic terminology, methodology 
+BSI Shop
+BS EN ISO 12100-2:2003 + Amendment 1:2009  Safety of machinery. 
+Basic concepts, general principles for design. 
+Technical principles 
+BSI Shop
+BS EN 60825-1:2014 Safety of laser products. Equipment classiﬁ cation 
+and requirements 
+BSI Shop
+Other publications 
+Safety with Lasers and Other Optical Sources 
+D Sliney, M Wolbarsht, 1980, Plenum Press
+Lasers, Festival and Entertainment Lighting Code 
+Institution of Lighting Professionals, 2012
+
+
+================================================================================
+

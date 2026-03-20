@@ -1,0 +1,576 @@
+{
+  "module_id": "4.2",
+  "module_title": "Florida & Georgia State Regulations",
+  "course": "Course 4: US State & Local Regulations",
+  "states_covered": ["Florida", "Georgia"],
+  "estimated_duration_minutes": 25,
+  "difficulty": "Intermediate",
+  "learning_objectives": [
+    "Navigate Florida's comprehensive laser registration system",
+    "Understand Georgia's federal-deference approach to regulation",
+    "Compare state-specific requirements for entertainment laser shows",
+    "Identify special local requirements (Orlando Fire, etc.)",
+    "Apply interstate reciprocity concepts"
+  ],
+  "prerequisites": [
+    "Course 2: FDA Compliance & Reporting",
+    "Module 4.1: California & Colorado Regulations (recommended)"
+  ],
+  "phases": [
+    {
+      "id": "phase-1",
+      "title": "Scenario Warm-Up: The Southeast Tour",
+      "duration": 3,
+      "type": "warmup",
+      "description": "You're planning shows in Miami, Orlando, and Atlanta. What regulatory differences will you encounter?",
+      "interactive_element": {
+        "type": "scenario_mapper",
+        "id": "southeast_tour_scenario",
+        "prompt": "Select each city to discover the regulatory landscape:",
+        "locations": [
+          {
+            "name": "Miami Beach Convention Center",
+            "state": "Florida",
+            "jurisdictions": ["Federal FDA", "Florida DOH Bureau of Radiation Control"],
+            "requirements": ["FDA Variance", "FL Laser Registration", "20-day advance notice for out-of-state equipment"],
+            "special_notes": "Registration required for all Class IIIB/IV lasers"
+          },
+          {
+            "name": "Orlando Arena",
+            "state": "Florida",
+            "jurisdictions": ["Federal FDA", "Florida DOH", "Orlando/Orange County Fire"],
+            "requirements": ["FDA Variance", "FL Laser Registration", "Fire coordination for fog/haze"],
+            "special_notes": "Orlando Fire Rescue has special requirements for laser shows with atmospheric effects"
+          },
+          {
+            "name": "Atlanta Music Venue",
+            "state": "Georgia",
+            "jurisdictions": ["Federal FDA"],
+            "requirements": ["FDA Variance", "Follow federal guidelines"],
+            "special_notes": "Georgia defers to federal regulations; no separate state registration"
+          }
+        ],
+        "feedback": {
+          "correct_understanding": "Correct! Florida has comprehensive state registration, while Georgia follows federal guidelines with no additional state layer.",
+          "key_insight": "Florida's registration system is one of the more comprehensive in the Southeast."
+        }
+      }
+    },
+    {
+      "id": "phase-2",
+      "title": "Core Concept: Florida's Registration System",
+      "duration": 8,
+      "type": "core",
+      "description": "Understanding Florida's comprehensive laser device registration program",
+      "content_sections": [
+        {
+          "title": "Statutory Authority",
+          "content": "Florida regulates lasers under Chapter 501.122, Florida Statutes, and Chapter 64E-4, Florida Administrative Code.",
+          "key_points": [
+            "All laser devices (except exempted) must be registered",
+            "Applies to both users AND manufacturers",
+            "Registration is FREE (no fee)",
+            "One-time registration per device"
+          ]
+        },
+        {
+          "title": "Device Classification Requirements",
+          "content": "Florida uses standard laser classification with specific registration triggers.",
+          "key_points": [
+            "Class IV: ≥0.5 watts (medical surgery, laser shows, cutters, welders)",
+            "Class IIIB: >0.005W but <0.5W (small laser shows, surveying, range finders)",
+            "Exemptions apply to certain consumer products",
+            "Registration required within 30 days of acquisition"
+          ]
+        },
+        {
+          "title": "Laser Safety Officer Requirements",
+          "content": "Florida requires designation of a qualified Laser Safety Officer.",
+          "key_points": [
+            "LSO must be listed on registration form",
+            "Qualified by training and experience",
+            "Authority to establish radiation protection program",
+            "Responsibility for facility or mobile laser safety"
+          ]
+        },
+        {
+          "title": "Out-of-State Equipment",
+          "content": "Special requirements apply to temporary laser use in Florida.",
+          "key_points": [
+            "20-day advance written notice required",
+            "Notify Bureau of Radiation Control before bringing device into state",
+            "Applies to entertainment lasers for laser light shows",
+            "Each location requires separate consideration"
+          ]
+        }
+      ],
+      "interactive_element": {
+        "type": "interactive_checklist",
+        "id": "florida_registration_checklist",
+        "title": "Florida Registration Checklist",
+        "items": [
+          {
+            "step": 1,
+            "task": "Determine laser classification",
+            "details": "Class IIIB or IV requires registration"
+          },
+          {
+            "step": 2,
+            "task": "Designate Laser Safety Officer",
+            "details": "Must be qualified by training and experience"
+          },
+          {
+            "step": 3,
+            "task": "Complete registration form",
+            "details": "Include all device specifications"
+          },
+          {
+            "step": 4,
+            "task": "Submit within 30 days",
+            "details": "Send to FL Department of Health, Bureau of Radiation Control"
+          },
+          {
+            "step": 5,
+            "task": "Notify of any changes",
+            "details": "If device is moved, altered, destroyed, or sold"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phase-3",
+      "title": "Core Concept: Georgia's Federal Deference Model",
+      "duration": 5,
+      "type": "core",
+      "description": "Understanding Georgia's approach of following federal guidelines",
+      "content_sections": [
+        {
+          "title": "Georgia Regulatory Approach",
+          "content": "Georgia does not maintain separate state laser regulations. Instead, the state follows federal FDA guidelines.",
+          "key_points": [
+            "No state laser registration required",
+            "No state-specific licensing program",
+            "Follows 21 CFR 1040 (FDA regulations)",
+            "Federal variance required for entertainment shows"
+          ]
+        },
+        {
+          "title": "Required Documentation",
+          "content": "While Georgia doesn't require state registration, proper documentation is essential.",
+          "key_points": [
+            "FDA Variance (required for entertainment)",
+            "Standard Operating Procedures (SOP)",
+            "Quality Control Safety Checklists",
+            "Health and Safety Report with Risk Assessment",
+            "Operation Log Sheets"
+          ]
+        },
+        {
+          "title": "FAA Coordination for Outdoor Shows",
+          "content": "Georgia is in the FAA Eastern Service Area.",
+          "key_points": [
+            "Submit FAA Form 7140 for outdoor shows",
+            "Email: 9-ATO-ESA-OSG-Lasers-Searchlights@faa.gov",
+            "Required for unterminated outdoor laser operations",
+            "Coordinate with local venues on safety requirements"
+          ]
+        }
+      ],
+      "interactive_element": {
+        "type": "document_library",
+        "id": "georgia_documents",
+        "title": "Required Documentation in Georgia",
+        "documents": [
+          {
+            "name": "FDA Variance Application",
+            "purpose": "License to perform laser light shows",
+            "form_url": "https://www.fda.gov/downloads/AboutFDA/ReportsManualsForms/Forms/UCM080788.pdf",
+            "submission": "FDA Division of Docket Management"
+          },
+          {
+            "name": "Laser Light Show Product Report",
+            "purpose": "Certify laser shows/projectors compliance",
+            "form_url": "https://www.fda.gov/downloads/AboutFDA/ReportsManualsForms/Forms/UCM081634.pdf",
+            "submission": "RadHealthCustomerService@fda.hhs.gov"
+          },
+          {
+            "name": "Annual Report",
+            "purpose": "Report all laser activity (July 1 - June 30)",
+            "note": "Filing auto-renews basic variance",
+            "form_url": "https://www.fda.gov/downloads/AboutFDA/ReportsManualsForms/Forms/UCM081603.pdf"
+          },
+          {
+            "name": "Standard Operating Procedures",
+            "purpose": "Description of safe laser show procedures",
+            "type": "Internal document"
+          },
+          {
+            "name": "Health and Safety Report",
+            "purpose": "Risk assessment with show info, diagrams, training proof",
+            "contents": ["Show information", "Laser descriptions", "Location diagrams", "Proof of training", "Insurance certificates"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "phase-4",
+      "title": "State Comparator: Florida vs Georgia",
+      "duration": 5,
+      "type": "practice",
+      "description": "Interactive comparison of the two states",
+      "interactive_element": {
+        "type": "state_comparator",
+        "id": "fl_ga_comparator",
+        "title": "Florida vs Georgia Requirements",
+        "categories": [
+          {
+            "name": "State Registration",
+            "florida": "Required - FREE registration",
+            "georgia": "Not required",
+            "note": "FL has formal system; GA defers to federal"
+          },
+          {
+            "name": "Regulatory Authority",
+            "florida": "FL DOH Bureau of Radiation Control",
+            "georgia": "None (follows FDA)",
+            "note": "FL has active state oversight"
+          },
+          {
+            "name": "Advance Notice",
+            "florida": "20 days for out-of-state equipment",
+            "georgia": "None required",
+            "note": "FL protects against unregistered imports"
+          },
+          {
+            "name": "Laser Safety Officer",
+            "florida": "Required - must be designated on registration",
+            "georgia": "Recommended per federal guidelines",
+            "note": "Both require qualified operator"
+          },
+          {
+            "name": "Registration Fee",
+            "florida": "$0 (FREE)",
+            "georgia": "N/A",
+            "note": "Florida registration has no cost"
+          },
+          {
+            "name": "Local Requirements",
+            "florida": "Orlando/Orange County Fire coordination",
+            "georgia": "Venue-specific requirements may apply",
+            "note": "Both may have local fire/safety coordination"
+          },
+          {
+            "name": "Timeline to Compliant Operation",
+            "florida": "3-4 weeks (20-day notice + processing)",
+            "georgia": "2-3 weeks (federal variance only)",
+            "note": "Florida takes longer due to state layer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phase-5",
+      "title": "Permit Requirement Finder: Southeast Edition",
+      "duration": 5,
+      "type": "practice",
+      "description": "Determine requirements for your specific Southeast operation",
+      "interactive_element": {
+        "type": "decision_tree",
+        "id": "southeast_permit_finder",
+        "title": "Southeast Permit Finder",
+        "questions": [
+          {
+            "id": "q1",
+            "question": "Which state will you operate in?",
+            "options": [
+              {"label": "Florida", "next": "q2_fl"},
+              {"label": "Georgia", "next": "q2_ga"}
+            ]
+          },
+          {
+            "id": "q2_fl",
+            "question": "Where is your laser equipment registered?",
+            "options": [
+              {"label": "Already registered in Florida", "next": "q3_fl_reg"},
+              {"label": "Coming from another state", "next": "r_fl_outofstate"},
+              {"label": "New purchase/unregistered", "next": "r_fl_new"}
+            ]
+          },
+          {
+            "id": "q2_ga",
+            "question": "What type of operation?",
+            "options": [
+              {"label": "Indoor entertainment venue", "next": "r_ga_indoor"},
+              {"label": "Outdoor laser show", "next": "r_ga_outdoor"},
+              {"label": "Private/corporate event", "next": "r_ga_private"}
+            ]
+          },
+          {
+            "id": "q3_fl_reg",
+            "question": "Is this a new location for the registered device?",
+            "options": [
+              {"label": "Yes, different venue/city", "next": "r_fl_newlocation"},
+              {"label": "Same location as registered", "next": "r_fl_same"}
+            ]
+          }
+        ],
+        "results": {
+          "r_fl_outofstate": {
+            "title": "Florida - Out-of-State Equipment",
+            "permits": [
+              "FDA Variance (Federal)",
+              "20-Day Advance Notice to FL Bureau of Radiation Control",
+              "Written notice before bringing device into Florida"
+            ],
+            "timeline": "Allow 3+ weeks (20-day notice + processing)",
+            "contact": "FL DOH Bureau of Radiation Control",
+            "special_note": "Must notify 20 days BEFORE bringing laser into state"
+          },
+          "r_fl_new": {
+            "title": "Florida - New Device Registration",
+            "permits": [
+              "FDA Variance (Federal)",
+              "Florida Laser Registration (FREE)",
+              "Designate Laser Safety Officer",
+              "Submit within 30 days of acquisition"
+            ],
+            "timeline": "Register within 30 days of acquiring laser",
+            "contact": "FL DOH Bureau of Radiation Control"
+          },
+          "r_fl_newlocation": {
+            "title": "Florida - New Location for Registered Device",
+            "permits": [
+              "FDA Variance (Federal)",
+              "Update registration with new location",
+              "Notify Bureau of Radiation Control of change"
+            ],
+            "timeline": "Notify before moving device",
+            "contact": "FL DOH Bureau of Radiation Control"
+          },
+          "r_fl_same": {
+            "title": "Florida - Existing Registration",
+            "permits": [
+              "FDA Variance (Federal)",
+              "Maintain current Florida registration"
+            ],
+            "note": "Ensure registration is current and reflects accurate device location"
+          },
+          "r_ga_indoor": {
+            "title": "Georgia - Indoor Entertainment",
+            "permits": [
+              "FDA Variance (Federal)",
+              "Follow federal guidelines",
+              "Venue coordination as required"
+            ],
+            "timeline": "Federal variance timeline",
+            "documentation": "Maintain SOPs, safety checklists, operation logs"
+          },
+          "r_ga_outdoor": {
+            "title": "Georgia - Outdoor Laser Show",
+            "permits": [
+              "FDA Variance (Federal)",
+              "FAA Form 7140 (Eastern Service Area)",
+              "Submit to: 9-ATO-ESA-OSG-Lasers-Searchlights@faa.gov"
+            ],
+            "timeline": "Federal variance + FAA coordination",
+            "special_note": "Georgia is in FAA Eastern Service Area"
+          },
+          "r_ga_private": {
+            "title": "Georgia - Private/Corporate Event",
+            "permits": [
+              "FDA Variance (Federal) if applicable",
+              "Follow ANSI Z136 safety guidelines"
+            ],
+            "timeline": "Federal variance timeline if required",
+            "note": "Private events may have different requirements based on attendance and setup"
+          }
+        }
+      }
+    },
+    {
+      "id": "phase-6",
+      "title": "Special Local Requirements",
+      "duration": 3,
+      "type": "core",
+      "description": "City-specific requirements that add complexity",
+      "interactive_element": {
+        "type": "local_requirements_map",
+        "id": "local_reqs",
+        "locations": [
+          {
+            "city": "Orlando, FL",
+            "requirement": "Orlando/Orange County Fire coordination",
+            "details": "Fire rescue coordination required for shows with atmospheric effects (fog/haze)",
+            "contact": "Orange County Fire Rescue"
+          },
+          {
+            "city": "Miami, FL",
+            "requirement": "Venue-specific permits",
+            "details": "Individual venues may have additional safety requirements",
+            "contact": "Venue management + FL DOH"
+          },
+          {
+            "city": "Atlanta, GA",
+            "requirement": "Venue coordination",
+            "details": "Major venues have established safety protocols",
+            "contact": "Venue safety coordinator"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phase-7",
+      "title": "Challenge: The Florida-Georgia Circuit",
+      "duration": 5,
+      "type": "challenge",
+      "description": "Navigate complex interstate operations between Florida and Georgia",
+      "interactive_element": {
+        "type": "scenario_challenge",
+        "id": "fl_ga_challenge",
+        "title": "The Cross-Border Festival",
+        "scenario": "You're operating a Class 4 laser show system for a festival circuit. Show #1 is in Orlando, FL on June 15th. Show #2 is in Atlanta, GA on June 22nd. Your equipment is currently registered in Texas. Today is May 20th.",
+        "questions": [
+          {
+            "id": "ch_1",
+            "question": "What's the critical deadline for Florida compliance?",
+            "options": [
+              "May 26 (20 days before show)",
+              "June 1 (2 weeks before show)",
+              "June 8 (1 week before show)",
+              "June 15 (show day)"
+            ],
+            "correct": 0,
+            "explanation": "Florida requires 20-day advance notice for out-of-state equipment. May 20 + 20 days = May 26. The show is June 15, so May 26 is the last day to notify and still meet the 20-day requirement."
+          },
+          {
+            "id": "ch_2",
+            "question": "For the Atlanta show, what additional documentation is needed beyond FDA variance?",
+            "options": [
+              "Georgia state laser license",
+              "FAA Form 7140 (outdoor show)",
+              "Georgia radiation permit",
+              "Both A and C"
+            ],
+            "correct": 1,
+            "explanation": "Georgia doesn't require state licensing. However, if it's an outdoor show, FAA Form 7140 would be required. The question mentions Atlanta (major city) - typically indoor venues don't need FAA, but outdoor would."
+          },
+          {
+            "id": "ch_3",
+            "question": "The Orlando venue wants to use atmospheric fog effects. What additional coordination is required?",
+            "options": [
+              "None - included in Florida registration",
+              "Notify FDA of modified show",
+              "Coordinate with Orlando/Orange County Fire",
+              "Apply for special effects variance"
+            ],
+            "correct": 2,
+            "explanation": "Orlando/Orange County Fire Rescue has special requirements for laser shows with atmospheric effects like fog/haze. This is a local requirement beyond state registration."
+          }
+        ],
+        "badge": {
+          "name": "Southeast Circuit Navigator",
+          "description": "Successfully navigated Florida-Georgia interstate operations",
+          "icon": "🎭"
+        }
+      }
+    }
+  ],
+  "quiz_questions": [
+    {
+      "id": "fl-ga-q1",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which Florida agency regulates laser devices?",
+      "options": [
+        "Florida Department of Transportation",
+        "Florida Department of Health - Bureau of Radiation Control",
+        "Florida OSHA",
+        "Florida EPA"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Florida Department of Health Bureau of Radiation Control regulates laser devices in Florida."
+    },
+    {
+      "id": "fl-ga-q2",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "Florida charges a fee for laser device registration.",
+      "correct_answer": false,
+      "explanation": "Florida laser registration is FREE. There is no fee for registering laser devices with the state."
+    },
+    {
+      "id": "fl-ga-q3",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "How many days in advance must out-of-state laser operators notify Florida?",
+      "options": [
+        "5 days",
+        "10 days",
+        "20 days",
+        "30 days"
+      ],
+      "correct_answer": 2,
+      "explanation": "Florida requires 20-day advance written notice before bringing out-of-state laser equipment into the state for temporary use."
+    },
+    {
+      "id": "fl-ga-q4",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What is Georgia's approach to laser regulation?",
+      "options": [
+        "Comprehensive state registration like Florida",
+        "Follows federal FDA guidelines with no separate state requirements",
+        "Requires state laser license for all Class 4 operations",
+        "Delegates to county health departments"
+      ],
+      "correct_answer": 1,
+      "explanation": "Georgia defers to federal FDA regulations and does not maintain separate state laser registration or licensing requirements."
+    },
+    {
+      "id": "fl-ga-q5",
+      "type": "scenario",
+      "difficulty": "hard",
+      "question": "A laser show company with Texas-registered equipment plans shows in Orlando and Atlanta next month. What must they do?",
+      "scenario": "Interstate operation planning",
+      "correct_answer": "Notify Florida 20 days in advance; Georgia requires no state registration but follow federal guidelines",
+      "explanation": "Florida requires 20-day notice for out-of-state equipment. Georgia has no state registration, so federal variance compliance is sufficient. Both require FDA variance."
+    }
+  ],
+  "key_takeaways": [
+    "Florida requires FREE state registration for Class IIIB/IV lasers",
+    "Florida requires 20-day advance notice for out-of-state equipment",
+    "Georgia defers entirely to federal FDA regulations",
+    "Florida requires a designated Laser Safety Officer on registration",
+    "Orlando/Orange County Fire has special requirements for atmospheric effects",
+    "Registration is one-time in Florida but must be updated for location changes",
+    "Timeline: Florida = 3-4 weeks (with notice), Georgia = 2-3 weeks"
+  ],
+  "resources": [
+    {
+      "title": "Florida Bureau of Radiation Control - Laser Registration",
+      "url": "http://www.floridahealth.gov/environmental-health/radiation-control/lasers/index.html",
+      "type": "official"
+    },
+    {
+      "title": "Chapter 64E-4, Florida Administrative Code",
+      "url": "https://www.flrules.org/gateway/ChapterHome.asp?Chapter=64E-4",
+      "type": "regulation"
+    },
+    {
+      "title": "Georgia Department of Natural Resources - Radiation",
+      "url": "https://epd.georgia.gov/radiation",
+      "type": "official"
+    },
+    {
+      "title": "FDA Laser Products Page",
+      "url": "https://www.fda.gov/radiation-emitting-products/laser-products-and-instruments",
+      "type": "official"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "created_date": "2026-03-19",
+    "author": "Module Builder Agent C4-A",
+    "review_status": "pending"
+  }
+}

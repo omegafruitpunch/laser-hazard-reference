@@ -1,0 +1,215 @@
+{
+  "module": "Introduction to Laser Hazards",
+  "course": "Course 1: Laser Safety Fundamentals",
+  "totalQuestions": 15,
+  "difficultyDistribution": {
+    "beginner": 5,
+    "intermediate": 5,
+    "advanced": 5
+  },
+  "mappings": [
+    {
+      "questionId": "m1-q1",
+      "sectionId": "laser-properties",
+      "sectionTitle": "Laser Properties",
+      "topic": "Laser Definition",
+      "difficulty": "beginner",
+      "questionType": "multiple_choice",
+      "questionPreview": "What does LASER stand for?",
+      "bloomsLevel": "Remember",
+      "prerequisiteKnowledge": ["None"]
+    },
+    {
+      "questionId": "m1-q2",
+      "sectionId": "laser-properties",
+      "sectionTitle": "Laser Properties",
+      "topic": "Divergence",
+      "difficulty": "beginner",
+      "questionType": "true_false",
+      "questionPreview": "Laser light spreads out (diverges) significantly over long distances.",
+      "bloomsLevel": "Understand",
+      "prerequisiteKnowledge": ["Basic light behavior"]
+    },
+    {
+      "questionId": "m1-q3",
+      "sectionId": "laser-properties",
+      "sectionTitle": "Laser Properties",
+      "topic": "Coherence",
+      "difficulty": "beginner",
+      "questionType": "multiple_choice",
+      "questionPreview": "What property describes laser light waves traveling in locked-step patterns?",
+      "bloomsLevel": "Remember",
+      "prerequisiteKnowledge": ["Laser properties overview"]
+    },
+    {
+      "questionId": "m1-q4",
+      "sectionId": "em-spectrum",
+      "sectionTitle": "The Electromagnetic Spectrum",
+      "topic": "Visible Spectrum",
+      "difficulty": "beginner",
+      "questionType": "multiple_choice",
+      "questionPreview": "Which color of visible light has the longest wavelength?",
+      "bloomsLevel": "Remember",
+      "prerequisiteKnowledge": ["Basic physics"]
+    },
+    {
+      "questionId": "m1-q5",
+      "sectionId": "em-spectrum",
+      "sectionTitle": "The Electromagnetic Spectrum",
+      "topic": "Radiation Types",
+      "difficulty": "beginner",
+      "questionType": "true_false",
+      "questionPreview": "Laser light is a form of ionizing radiation like X-rays.",
+      "bloomsLevel": "Understand",
+      "prerequisiteKnowledge": ["Electromagnetic spectrum basics"]
+    },
+    {
+      "questionId": "m1-q6",
+      "sectionId": "ocular-hazards",
+      "sectionTitle": "Wavelength and Ocular Hazards",
+      "topic": "Power Concentration",
+      "difficulty": "intermediate",
+      "questionType": "multiple_choice",
+      "questionPreview": "When a laser beam enters the eye, by how much can its power be concentrated on the retina?",
+      "bloomsLevel": "Remember",
+      "prerequisiteKnowledge": ["Eye anatomy basics", "Laser power concepts"]
+    },
+    {
+      "questionId": "m1-q7",
+      "sectionId": "beam-interactions",
+      "sectionTitle": "Beam Interactions and Reflection Hazards",
+      "topic": "Mirror Ball Safety",
+      "difficulty": "intermediate",
+      "questionType": "scenario",
+      "questionPreview": "A venue plans to use a mirror ball without a scanning device...",
+      "bloomsLevel": "Apply",
+      "prerequisiteKnowledge": ["Mirror ball operation", "Beam splitting principles"]
+    },
+    {
+      "questionId": "m1-q8",
+      "sectionId": "beam-interactions",
+      "sectionTitle": "Beam Interactions and Reflection Hazards",
+      "topic": "Specular Reflection",
+      "difficulty": "intermediate",
+      "questionType": "multiple_choice",
+      "questionPreview": "Which surfaces can create a specular (mirror-like) reflection?",
+      "bloomsLevel": "Understand",
+      "prerequisiteKnowledge": ["Reflection types"]
+    },
+    {
+      "questionId": "m1-q9",
+      "sectionId": "laser-classification",
+      "sectionTitle": "FDA Laser Classification System",
+      "topic": "Class IV Threshold",
+      "difficulty": "intermediate",
+      "questionType": "multiple_choice",
+      "questionPreview": "What is the power threshold for a Class IV laser?",
+      "bloomsLevel": "Remember",
+      "prerequisiteKnowledge": ["Laser classes overview"]
+    },
+    {
+      "questionId": "m1-q10",
+      "sectionId": "beam-interactions",
+      "sectionTitle": "Beam Interactions and Reflection Hazards",
+      "topic": "Diffuse Reflection",
+      "difficulty": "intermediate",
+      "questionType": "true_false",
+      "questionPreview": "A high-powered laser reflecting off rough concrete is completely safe.",
+      "bloomsLevel": "Evaluate",
+      "prerequisiteKnowledge": ["Diffuse reflection properties", "Power retention"]
+    },
+    {
+      "questionId": "m1-q11",
+      "sectionId": "beam-interactions",
+      "sectionTitle": "Beam Interactions and Reflection Hazards",
+      "topic": "Scanning Safety",
+      "difficulty": "advanced",
+      "questionType": "multiple_choice",
+      "questionPreview": "Why are Class IIIb/IV lasers required to have scanning devices with mirror balls?",
+      "bloomsLevel": "Analyze",
+      "prerequisiteKnowledge": ["Beam splitting calculations", "Safety thresholds"]
+    },
+    {
+      "questionId": "m1-q12",
+      "sectionId": "beam-interactions",
+      "sectionTitle": "Beam Interactions and Reflection Hazards",
+      "topic": "Emergency Response",
+      "difficulty": "advanced",
+      "questionType": "scenario",
+      "questionPreview": "During a show, an audience member reports seeing a bright flash...",
+      "bloomsLevel": "Evaluate",
+      "prerequisiteKnowledge": ["Safety protocols", "Emergency procedures"]
+    },
+    {
+      "questionId": "m1-q13",
+      "sectionId": "ocular-hazards",
+      "sectionTitle": "Wavelength and Ocular Hazards",
+      "topic": "Wavelength Absorption",
+      "difficulty": "advanced",
+      "questionType": "multiple_choice",
+      "questionPreview": "Which part of the eye absorbs far-infrared radiation (CO2 laser)?",
+      "bloomsLevel": "Understand",
+      "prerequisiteKnowledge": ["Eye anatomy", "Wavelength penetration"]
+    },
+    {
+      "questionId": "m1-q14",
+      "sectionId": "laser-properties",
+      "sectionTitle": "Laser Properties",
+      "topic": "Power vs Size",
+      "difficulty": "advanced",
+      "questionType": "true_false",
+      "questionPreview": "Physical size is a reliable indicator of a laser's power output.",
+      "bloomsLevel": "Evaluate",
+      "prerequisiteKnowledge": ["Laser construction", "Power measurement"]
+    },
+    {
+      "questionId": "m1-q15",
+      "sectionId": "beam-interactions",
+      "sectionTitle": "Beam Interactions and Reflection Hazards",
+      "topic": "Power Calculation",
+      "difficulty": "advanced",
+      "questionType": "calculation",
+      "questionPreview": "If a 1W laser beam is split into 100 equal rays, what is the power of each ray?",
+      "bloomsLevel": "Apply",
+      "prerequisiteKnowledge": ["Beam splitting", "Unit conversion"]
+    }
+  ],
+  "sectionQuestionCounts": {
+    "laser-properties": 4,
+    "em-spectrum": 2,
+    "beam-interactions": 6,
+    "ocular-hazards": 2,
+    "laser-classification": 1
+  },
+  "assessmentStrategies": {
+    "formative": {
+      "description": "Questions embedded after each section",
+      "questionIds": ["m1-q1", "m1-q2", "m1-q4", "m1-q6", "m1-q7", "m1-q9"],
+      "purpose": "Reinforce learning and identify misconceptions immediately"
+    },
+    "summative": {
+      "description": "Comprehensive quiz at module end",
+      "questionIds": ["m1-q1", "m1-q3", "m1-q5", "m1-q8", "m1-q10", "m1-q11", "m1-q12", "m1-q13", "m1-q14", "m1-q15"],
+      "purpose": "Measure overall module comprehension"
+    },
+    "adaptive": {
+      "description": "Additional questions for missed topics",
+      "rules": [
+        {
+          "condition": "beam-interactions questions < 60% correct",
+          "action": "Recommend review of reflection types and scanning safety"
+        },
+        {
+          "condition": "ocular-hazards questions incorrect",
+          "action": "Recommend eye anatomy review"
+        }
+      ]
+    }
+  },
+  "contentIntegrity": {
+    "allQuestionsSourcedFrom": "FDA Publication 86-8262",
+    "verifiedBy": "Module Enhancement Agent B",
+    "verificationDate": "2026-03-19",
+    "notes": "All quiz answers and explanations derived from extracted FDA document content"
+  }
+}

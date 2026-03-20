@@ -1,0 +1,356 @@
+{
+  "version": "1.0",
+  "created_at": "2026-03-19T15:46:17Z",
+  "created_by": "Knowledge Graph Assembler Agent B",
+  "recommendation_types": {
+    "next_concepts": {
+      "description": "Concepts to learn next based on current progress",
+      "algorithm": "dependency_graph_traversal",
+      "max_recommendations": 5,
+      "priority_factors": {
+        "prerequisite_completion": 0.4,
+        "concept_difficulty_match": 0.25,
+        "learning_path_continuity": 0.2,
+        "cross_course_relevance": 0.15
+      }
+    },
+    "prerequisite_review": {
+      "description": "Prerequisites to review if learner is struggling",
+      "algorithm": "weakness_detection",
+      "trigger_conditions": ["quiz_failure", "exercise_failure", "time_threshold_exceeded"],
+      "max_recommendations": 3,
+      "priority_factors": {
+        "assessment_failure_correlation": 0.5,
+        "concept_dependency_strength": 0.3,
+        "time_since_last_review": 0.2
+      }
+    },
+    "related_concepts": {
+      "description": "Related concepts for deeper understanding",
+      "algorithm": "knowledge_graph_expansion",
+      "max_recommendations": 4,
+      "expansion_depth": 2,
+      "priority_factors": {
+        "relationship_strength": 0.35,
+        "concept_centrality": 0.25,
+        "completeness_boost": 0.25,
+        "difficulty_progression": 0.15
+      }
+    },
+    "cross_course_connections": {
+      "description": "Connections between courses for comprehensive knowledge",
+      "algorithm": "inter_course_linking",
+      "max_recommendations": 3,
+      "priority_factors": {
+        "concept_overlap": 0.4,
+        "prerequisite_chain": 0.3,
+        "application_context": 0.3
+      }
+    }
+  },
+  "learning_paths": {
+    "fundamentals": {
+      "name": "Laser Safety Fundamentals",
+      "description": "Core concepts for all laser personnel",
+      "target_audience": ["all_personnel"],
+      "concepts_sequence": [
+        "concept_005", "concept_008", "concept_010", "concept_011", "concept_012",
+        "concept_001", "concept_009", "concept_026", "concept_027"
+      ],
+      "estimated_duration_minutes": 120,
+      "certification_alignment": ["Basic Laser Safety"]
+    },
+    "calculations": {
+      "name": "Hazard Calculations Specialist",
+      "description": "Advanced calculation skills for LSOs",
+      "target_audience": ["LSO", "CMLSO", "CLSO"],
+      "concepts_sequence": [
+        "concept_001", "concept_006", "concept_007", "concept_002", "concept_003",
+        "concept_015", "concept_024", "concept_025"
+      ],
+      "estimated_duration_minutes": 180,
+      "certification_alignment": ["CMLSO", "CLSO"],
+      "prerequisites": ["fundamentals"]
+    },
+    "regulatory_compliance": {
+      "name": "Regulatory Compliance Specialist",
+      "description": "FDA, state, and international regulations",
+      "target_audience": ["LSO", "CMLSO", "CLSO", "Compliance Officer"],
+      "concepts_sequence": [
+        "concept_033", "concept_010", "concept_031", "concept_035", "concept_046",
+        "concept_063", "concept_064", "concept_074", "concept_075"
+      ],
+      "estimated_duration_minutes": 240,
+      "certification_alignment": ["CMLSO", "CLSO"],
+      "prerequisites": ["fundamentals"]
+    },
+    "biological_hazards": {
+      "name": "Biological Hazards Specialist",
+      "description": "Understanding tissue interactions and injuries",
+      "target_audience": ["LSO", "CMLSO", "CLSO", "Medical Personnel"],
+      "concepts_sequence": [
+        "concept_013", "concept_014", "concept_022", "concept_023",
+        "concept_020", "concept_021", "concept_056", "concept_057", "concept_059"
+      ],
+      "estimated_duration_minutes": 150,
+      "certification_alignment": ["CLSO"],
+      "prerequisites": ["fundamentals"]
+    },
+    "aviation_safety": {
+      "name": "Aviation Safety Specialist",
+      "description": "Outdoor laser operations and airspace safety",
+      "target_audience": ["LSO", "Show Operator", "Outdoor Laser Operator"],
+      "concepts_sequence": [
+        "concept_002", "concept_036", "concept_037", "concept_038", "concept_039",
+        "concept_040", "concept_079", "concept_080"
+      ],
+      "estimated_duration_minutes": 120,
+      "certification_alignment": ["CMLSO"],
+      "prerequisites": ["calculations"]
+    },
+    "international_shows": {
+      "name": "International Show Specialist",
+      "description": "Global laser show deployment and compliance",
+      "target_audience": ["Show Operator", "Touring Technician", "International LSO"],
+      "concepts_sequence": [
+        "concept_042", "concept_041", "concept_044", "concept_086", "concept_087",
+        "concept_088", "concept_089", "concept_090", "concept_045", "concept_091"
+      ],
+      "estimated_duration_minutes": 180,
+      "certification_alignment": ["CMLSO"],
+      "prerequisites": ["regulatory_compliance", "aviation_safety"]
+    },
+    "entertainment_specialist": {
+      "name": "Entertainment Laser Specialist",
+      "description": "Complete entertainment laser safety competency",
+      "target_audience": ["Show Operator", "Entertainment LSO"],
+      "concepts_sequence": [
+        "concept_030", "concept_032", "concept_034", "concept_078",
+        "concept_017", "concept_065", "concept_009", "concept_031"
+      ],
+      "estimated_duration_minutes": 200,
+      "certification_alignment": ["CMLSO"],
+      "prerequisites": ["fundamentals", "calculations"]
+    },
+    "medical_lasers": {
+      "name": "Medical Laser Specialist",
+      "description": "Medical laser applications and safety",
+      "target_audience": ["Medical LSO", "Clinical Staff"],
+      "concepts_sequence": [
+        "concept_077", "concept_072", "concept_056", "concept_057",
+        "concept_001", "concept_016", "concept_009"
+      ],
+      "estimated_duration_minutes": 180,
+      "certification_alignment": ["CLSO"],
+      "prerequisites": ["fundamentals", "biological_hazards"]
+    },
+    "lsm_certification_prep": {
+      "name": "CLSO/CMLSO Certification Prep",
+      "description": "Comprehensive preparation for LSM certification",
+      "target_audience": ["LSO Candidates"],
+      "concepts_sequence": [
+        "concept_001", "concept_002", "concept_003", "concept_009", "concept_010",
+        "concept_029", "concept_033", "concept_035", "concept_020", "concept_021",
+        "concept_026", "concept_027", "concept_068", "concept_069"
+      ],
+      "estimated_duration_minutes": 600,
+      "certification_alignment": ["CLSO", "CMLSO"],
+      "prerequisites": []
+    }
+  },
+  "recommendation_rules": {
+    "difficulty_progression": {
+      "description": "Rules for progressing between difficulty levels",
+      "rules": [
+        {
+          "from": "beginner",
+          "to": "intermediate",
+          "requirements": {
+            "min_completed_concepts": 5,
+            "min_average_score": 75,
+            "time_in_level_minutes": 60
+          }
+        },
+        {
+          "from": "intermediate",
+          "to": "advanced",
+          "requirements": {
+            "min_completed_concepts": 12,
+            "min_average_score": 80,
+            "time_in_level_minutes": 120
+          }
+        }
+      ]
+    },
+    "prerequisite_enforcement": {
+      "description": "How strictly to enforce prerequisites",
+      "mode": "advisory",
+      "soft_block_threshold": 0.7,
+      "hard_block_threshold": 0.4,
+      "warning_message": "We recommend completing prerequisites first for better understanding"
+    },
+    "spaced_repetition": {
+      "description": "Review scheduling for concept retention",
+      "initial_interval_days": 1,
+      "interval_multiplier": 2.5,
+      "max_interval_days": 90,
+      "trigger_accuracy": 70
+    }
+  },
+  "concept_relationships_graph": {
+    "strong_dependencies": [
+      {"from": "concept_002", "to": "concept_001", "weight": 1.0},
+      {"from": "concept_002", "to": "concept_006", "weight": 0.9},
+      {"from": "concept_002", "to": "concept_008", "weight": 0.9},
+      {"from": "concept_003", "to": "concept_002", "weight": 1.0},
+      {"from": "concept_007", "to": "concept_008", "weight": 0.9},
+      {"from": "concept_009", "to": "concept_010", "weight": 0.8},
+      {"from": "concept_015", "to": "concept_008", "weight": 0.9},
+      {"from": "concept_020", "to": "concept_005", "weight": 0.8},
+      {"from": "concept_021", "to": "concept_007", "weight": 0.8},
+      {"from": "concept_025", "to": "concept_016", "weight": 0.9},
+      {"from": "concept_026", "to": "concept_009", "weight": 0.7},
+      {"from": "concept_027", "to": "concept_009", "weight": 0.7},
+      {"from": "concept_028", "to": "concept_026", "weight": 0.6},
+      {"from": "concept_031", "to": "concept_010", "weight": 0.9},
+      {"from": "concept_032", "to": "concept_001", "weight": 1.0},
+      {"from": "concept_032", "to": "concept_030", "weight": 0.9},
+      {"from": "concept_036", "to": "concept_002", "weight": 0.8},
+      {"from": "concept_041", "to": "concept_035", "weight": 0.8},
+      {"from": "concept_044", "to": "concept_042", "weight": 0.8}
+    ],
+    "complementary_concepts": [
+      {"pair": ["concept_001", "concept_016"], "relationship": "protection_based_on"},
+      {"pair": ["concept_002", "concept_003"], "relationship": "distance_and_zone"},
+      {"pair": ["concept_020", "concept_021"], "relationship": "damage_mechanisms"},
+      {"pair": ["concept_022", "concept_023"], "relationship": "eye_structures"},
+      {"pair": ["concept_026", "concept_027"], "relationship": "control_hierarchy"},
+      {"pair": ["concept_033", "concept_035"], "relationship": "product_standards"},
+      {"pair": ["concept_036", "concept_040"], "relationship": "regulation_and_law"},
+      {"pair": ["concept_037", "concept_080"], "relationship": "airspace_zones"}
+    ],
+    "cross_course_mappings": [
+      {
+        "concept": "concept_001",
+        "courses": ["course-1", "course-2", "course-3", "course-6", "course-8"],
+        "primary_course": "course-1"
+      },
+      {
+        "concept": "concept_002",
+        "courses": ["course-1", "course-5", "course-6", "course-8"],
+        "primary_course": "course-1"
+      },
+      {
+        "concept": "concept_009",
+        "courses": ["course-1", "course-8"],
+        "primary_course": "course-1"
+      },
+      {
+        "concept": "concept_010",
+        "courses": ["course-2", "course-5", "course-8"],
+        "primary_course": "course-2"
+      },
+      {
+        "concept": "concept_016",
+        "courses": ["course-3", "course-6", "course-8"],
+        "primary_course": "course-3"
+      },
+      {
+        "concept": "concept_033",
+        "courses": ["course-2", "course-8"],
+        "primary_course": "course-2"
+      },
+      {
+        "concept": "concept_035",
+        "courses": ["course-2", "course-5", "course-8"],
+        "primary_course": "course-5"
+      }
+    ]
+  },
+  "adaptive_learning": {
+    "learner_profiles": {
+      "novice": {
+        "description": "New to laser safety",
+        "difficulty_bias": -1,
+        "explanation_detail": "high",
+        "example_frequency": "high",
+        "prerequisite_enforcement": "strict"
+      },
+      "intermediate": {
+        "description": "Some laser safety experience",
+        "difficulty_bias": 0,
+        "explanation_detail": "medium",
+        "example_frequency": "medium",
+        "prerequisite_enforcement": "advisory"
+      },
+      "advanced": {
+        "description": "Experienced LSO",
+        "difficulty_bias": 1,
+        "explanation_detail": "low",
+        "example_frequency": "low",
+        "prerequisite_enforcement": "optional"
+      }
+    },
+    "struggle_detection": {
+      "triggers": [
+        {"metric": "quiz_attempts", "threshold": 3, "severity": "mild"},
+        {"metric": "time_per_concept", "threshold": 300, "severity": "moderate"},
+        {"metric": "exercise_failures", "threshold": 2, "severity": "severe"}
+      ],
+      "interventions": {
+        "mild": ["offer_hint", "suggest_review"],
+        "moderate": ["provide_simpler_explanation", "suggest_prerequisite"],
+        "severe": ["recommend_prerequisite_review", "offer_alternate_resource"]
+      }
+    }
+  },
+  "api_endpoints": {
+    "get_recommendations": {
+      "method": "POST",
+      "path": "/api/v1/recommendations",
+      "parameters": {
+        "learner_id": "string",
+        "current_concept_id": "string",
+        "recommendation_types": ["next_concepts", "prerequisite_review", "related_concepts", "cross_course_connections"],
+        "context": "learning_path|assessment|search|browse",
+        "max_results": "integer"
+      },
+      "response": {
+        "recommendations": [
+          {
+            "concept_id": "string",
+            "recommendation_type": "string",
+            "confidence_score": "float",
+            "reason": "string",
+            "priority": "integer"
+          }
+        ]
+      }
+    },
+    "get_learning_path": {
+      "method": "POST",
+      "path": "/api/v1/learning-path",
+      "parameters": {
+        "learner_id": "string",
+        "goal": "string",
+        "starting_concept_id": "string",
+        "constraints": {
+          "max_duration_minutes": "integer",
+          "difficulty_range": ["beginner", "intermediate", "advanced"],
+          "certification_target": "string"
+        }
+      }
+    },
+    "update_progress": {
+      "method": "POST",
+      "path": "/api/v1/progress",
+      "parameters": {
+        "learner_id": "string",
+        "concept_id": "string",
+        "status": "started|completed|mastered",
+        "assessment_score": "float",
+        "time_spent_minutes": "integer"
+      }
+    }
+  }
+}

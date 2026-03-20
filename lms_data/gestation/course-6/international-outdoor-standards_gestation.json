@@ -1,0 +1,191 @@
+{
+  "pdf_name": "international-outdoor-standards.pdf",
+  "course": "course-6",
+  "module": "c6-m5",
+  "total_pages": 17,
+  "gestation_analysis": [
+    {
+      "page": 1,
+      "summary": "Introduction to laser safety concepts for aviation. Patrick Murphy's paper covers visual interference hazards as the primary concern for pilots. Discusses the three main hazards: distraction, glare, and flashblindness. Eye injury is considered a secondary concern due to low probability at aviation distances.",
+      "key_entities": ["FAA", "Patrick Murphy", "LaserPointerSafety.com"],
+      "concepts": ["visual interference", "distraction", "glare", "flashblindness", "eye injury"],
+      "learning_points": [
+        "Visual interference is the primary hazard during critical flight phases",
+        "About 10 laser/aircraft incidents per night reported to FAA",
+        "Helicopters are more susceptible due to lower altitudes and slower speeds"
+      ]
+    },
+    {
+      "page": 2,
+      "summary": "Four principles for pilots to remember: 1) Visual interference is primary hazard, 2) Laser flashes can startle, 3) Eye damage is highly unlikely at aviation distances, 4) Laser protective glasses may be appropriate for first responder pilots. Detailed explanation of visual interference hazards with simulator photos.",
+      "key_entities": ["FAA", "NORAD"],
+      "concepts": ["flashblindness", "glare", "distraction", "visual warning system", "ADIZ"],
+      "learning_points": [
+        "Distraction is mental interference - pilots should focus on flying",
+        "Glare blocks vision as long as beam is in eyes",
+        "Flashblindness causes afterimages lasting seconds to minutes"
+      ]
+    },
+    {
+      "page": 3,
+      "summary": "Visual interference hazard distances chart explained. A 5mW green laser pointer causes flashblindness up to 250 feet, glare to 1,100 feet, and distraction to 11,000 feet. Human eye sensitivity curve discussed - green light (532nm) appears brightest, explaining why 95% of incidents involve green lasers.",
+      "key_entities": ["FDA"],
+      "concepts": ["hazard distance", "green laser", "532nm", "eye sensitivity", "visual interference zones"],
+      "learning_points": [
+        "5mW green laser: flashblindness to 250ft, glare to 1,100ft, distraction to 11,000ft",
+        "Human eye is most sensitive to green light (532nm)",
+        "Green lasers have longer visual interference distances than red or blue of same power"
+      ]
+    },
+    {
+      "page": 4,
+      "summary": "Comparison between red, green, and blue laser visual interference distances. Blue lasers are only 18% as visually hazardous as equivalent green lasers. Phase of flight analysis - visual interference is hazardous primarily during critical phases: takeoff, approach, landing. Most incidents occur below 10,000 feet AGL.",
+      "key_entities": [],
+      "concepts": ["red laser", "green laser", "blue laser", "critical flight phases", "altitude"],
+      "learning_points": [
+        "Blue 1000mW laser glare hazard: 2,890 feet vs green: 15,510 feet (18%)",
+        "Critical phases: takeoff, approach, landing, emergency maneuvers",
+        "Lower altitude = easier targeting = more incidents"
+      ]
+    },
+    {
+      "page": 5,
+      "summary": "Laser eye injuries considered extremely rare. Zero documented permanent eye injuries in 20,000+ FAA and UK CAA incidents. NOHD (Nominal Ocular Hazard Distance) explained - the distance where injury chance is 'vanishingly small'. Safety factors built into MPE and NOHD calculations. 5mW pointer NOHD is 52 feet; 2000mW handheld NOHD is 593 feet.",
+      "key_entities": ["FAA", "UK CAA"],
+      "concepts": ["NOHD", "MPE", "retinal burn", "eye injury", "safety factor"],
+      "learning_points": [
+        "NO documented permanent eye injuries in 20,000+ incidents",
+        "NOHD has built-in safety factor - being inside NOHD doesn't mean certain injury",
+        "MPE is approximately 10x lower than where minimal injuries occur"
+      ]
+    },
+    {
+      "page": 6,
+      "summary": "Detailed NOHD explanation with color-coded hazard zones. Non-eye physical effects discussed - about 0.1% of incidents report 'shock' or physical reaction, which is psychological, not actual laser impact. What laser illumination looks like from pilot perspective - series of flashes, not steady beam. Windscreen refracts and spreads light.",
+      "key_entities": [],
+      "concepts": ["NOHD zones", "physical effects", "windscreen refraction", "veiling glare"],
+      "learning_points": [
+        "Laser beams at aircraft distances cannot cause heat, shock, or physical force",
+        "Illumination appears as flashes, not steady beam (difficulty hand-holding on moving target)",
+        "Windscreen spreads beam causing veiling glare"
+      ]
+    },
+    {
+      "page": 7,
+      "summary": "Fixed wing vs rotary wing comparison. Helicopters at greater risk due to lower altitudes and hovering capability. However, helicopters can stay in area to identify laser source. Probability statistics from 2012 review: 1% adverse eye exposure, 28% cockpit illumination. Chance of adverse effects: 1 in 1,500,000 flights. Laser protective eyewear recommendations.",
+      "key_entities": ["FAA Civil Aerospace Medical Institute"],
+      "concepts": ["helicopter vulnerability", "protective eyewear", "incident probability", "OD rating"],
+      "learning_points": [
+        "Helicopters fly lower, hover = higher risk but can track source",
+        "Chance of cockpit illumination: 1 in 54,000 flights per year",
+        "Eyewear designed specifically for pilots should be tested on actual aircraft"
+      ]
+    },
+    {
+      "page": 8,
+      "summary": "Laser protective eyewear guidance continued. Key points: choose pilot-specific eyewear, test on actual equipment, don't wear routinely (keep available), OD 2-2.5 for green, OD 1-1.5 for red/blue. Laser illumination procedures: 'Fly the plane' first, block light, don't rub eyes, inform ATC, report to FAA, seek eye care if concerned.",
+      "key_entities": ["ATC", "FAA"],
+      "concepts": ["protective eyewear", "OD 2", "OD 2.5", "laser illumination procedures", "fly the plane"],
+      "learning_points": [
+        "Don't wear protective eyewear routinely - keep available for deployment",
+        "OD 2 or 2.5 suggested for green (532nm); OD 3 blocks too much instrument light",
+        "First priority: 'Fly the plane' - maintain aircraft control"
+      ]
+    },
+    {
+      "page": 9,
+      "summary": "Appendix A - FAQs. Difference between laser pointer and handheld explained (FDA regulations define pointers as <5mW). Atmospheric effects on laser beams - fog, smoke, rain scatter light, reducing hazard. Terminology: incident, illumination, hit, strike, attack. Why people aim at aircraft - mostly ignorance about beam reach and effects.",
+      "key_entities": ["FDA"],
+      "concepts": ["laser pointer", "handheld laser", "atmospheric attenuation", "terminology"],
+      "learning_points": [
+        "FDA defines laser pointers as <5mW for pointing purposes",
+        "Atmospheric conditions (fog, rain) reduce laser intensity reaching aircraft",
+        "Most incidents due to ignorance - people don't understand beam reaches aircraft"
+      ]
+    },
+    {
+      "page": 10,
+      "summary": "Legal consequences and pilot preparedness. Aiming at aircraft is illegal under 18 USC 39A (up to 5 years, $250,000 fine). Also 49 USC 46505 (interference with flight crew). State laws also apply. FAA civil penalties up to $11,000 per violation. Australian example - bans didn't reduce incidents. Pilots are last line of defense.",
+      "key_entities": ["FBI", "FAA", "TSA", "DHS"],
+      "concepts": ["18 USC 39A", "federal law", "civil penalty", "state laws", "Australia ban"],
+      "learning_points": [
+        "18 USC 39A: Up to 5 years imprisonment, $250,000 fine",
+        "FAA civil penalty: Up to $11,000 per violation",
+        "Australia's import controls and bans did not reduce incident rates"
+      ]
+    },
+    {
+      "page": 11,
+      "summary": "Appendix B - Eye hazard considerations. How visible laser light harms the eye - retinal absorption and thermal damage. Beam spread over distance reduces hazard. NOHD chart for lasers from 1mW to 1000mW. NOHD does not depend on color (unlike visual interference). 1mW pointer NOHD: 23 feet. 1 watt laser NOHD: 733 feet.",
+      "key_entities": [],
+      "concepts": ["retinal burn", "beam divergence", "NOHD chart", "thermal injury"],
+      "learning_points": [
+        "For eye hazards, only power and divergence matter - not color",
+        "1mW pointer NOHD: 23 feet; 5mW: 52 feet; 1W: 733 feet",
+        "Beam spreads over distance - less concentrated = less hazardous"
+      ]
+    },
+    {
+      "page": 12,
+      "summary": "NOHD safety factor explanation. Being inside NOHD doesn't mean certain injury. Yellow zone indicates 50/50 chance of smallest detectable retinal change under worst-case conditions (stationary beam, steady eye). Real-world conditions (moving aircraft, brief exposure) make actual injury much less likely.",
+      "key_entities": [],
+      "concepts": ["NOHD zones", "safety factor", "50/50 chance", "laboratory conditions"],
+      "learning_points": [
+        "Yellow zone: ~50/50 chance of barely detectable retinal spot under worst conditions",
+        "NOHD = 'Nominal' not 'Actual' Ocular Hazard Distance",
+        "Real-world exposures are brief - reducing injury probability"
+      ]
+    },
+    {
+      "page": 13,
+      "summary": "Higher-power lasers typically have wider beam divergence, which actually reduces NOHD in real-world conditions. 1 watt laser with 1.5 mrad divergence has shorter NOHD than theoretical 1 mrad. Appendix C - Technical note: doubling laser power doesn't double hazard distance. NOHD increases as square root of power.",
+      "key_entities": [],
+      "concepts": ["beam divergence", "real-world NOHD", "square root relationship"],
+      "learning_points": [
+        "High-power lasers usually have wider divergence = shorter real-world NOHD",
+        "Doubling power increases NOHD by factor of 1.4 (square root), not 2.0",
+        "500mW NOHD: 519 ft; 1000mW NOHD: 733 ft (not 1038 ft)"
+      ]
+    },
+    {
+      "page": 14,
+      "summary": "Color brightness vs hazard distance relationship. Doubling apparent brightness doesn't double hazard distances. Green 1000mW at 88% brightness has glare distance of 15,510 ft. Blue 1000mW at 16% brightness has glare distance of 2,890 ft. Green appears 5.5x brighter but has 5.4x longer glare distance - confirming relationship holds.",
+      "key_entities": [],
+      "concepts": ["apparent brightness", "glare distance", "color comparison"],
+      "learning_points": [
+        "Visual interference hazard distance proportional to square root of apparent brightness",
+        "Green laser: 88% brightness, 15,510 ft glare distance",
+        "Blue laser: 16% brightness, 2,890 ft glare distance"
+      ]
+    },
+    {
+      "page": 15,
+      "summary": "Further discussion of NOHD and eye safety. The document emphasizes that NOHD is a conservative safety measure with built-in reduction factors. Real-world injury probability is extremely low for aviation exposures.",
+      "key_entities": [],
+      "concepts": ["conservative safety standards", "real-world probability"],
+      "learning_points": [
+        "NOHD includes safety margins for worst-case scenarios",
+        "Aviation exposures typically well beyond injury distances"
+      ]
+    },
+    {
+      "page": 16,
+      "summary": "Continuation of technical discussion on laser hazard calculations and safety factors.",
+      "key_entities": [],
+      "concepts": ["hazard calculation methodology"],
+      "learning_points": [
+        "Technical details of MPE and NOHD calculations"
+      ]
+    },
+    {
+      "page": 17,
+      "summary": "Final notes on laser safety for aviation. Summary of key principles and recommendations for pilots and aviation officials.",
+      "key_entities": ["FAA", "pilots"],
+      "concepts": ["safety summary", "key recommendations"],
+      "learning_points": [
+        "Visual interference remains primary hazard",
+        "Education and preparedness are key safety measures"
+      ]
+    }
+  ]
+}

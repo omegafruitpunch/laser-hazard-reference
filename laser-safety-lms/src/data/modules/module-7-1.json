@@ -1,0 +1,50 @@
+{
+  "id": "module-7-1",
+  "courseId": "course-7",
+  "title": "Event Safety Planning",
+  "description": "Pre-event safety planning frameworks, risk assessments, and stakeholder coordination.",
+  "order": 1,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "Safety Starts Early",
+      "content": "Event safety planning cannot be an afterthought. Comprehensive safety planning must begin months before the event, involving all stakeholders from promoters to emergency services.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "Event Safety Planning Framework",
+      "content": "A systematic approach to event safety ensures all hazards are identified and controlled. Planning should begin 6 or more months before the event with initial hazard identification and stakeholder identification. At 3 months before, conduct detailed risk assessments and submit permit applications. At 1 month before, hold final safety briefings and review emergency procedures. Key stakeholders include show operators, the LSO, venue management, fire department, and emergency medical services.",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "Planning Checklist",
+      "content": "Develop a planning checklist for:\n\n1. A 3-day outdoor music festival\n2. A one-night corporate event in a hotel ballroom\n3. A touring show with 20 venues",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-7-1",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "Event Safety Planning Guide",
+      "path": "/docs/course-7-event-safety/event-safety-planning.pdf"
+    }
+  ],
+  "keyTakeaways": [
+    "Safety planning must begin months before the event, not days",
+    "Event Safety Plans should address all hazards: laser, crowd, weather, electrical",
+    "Coordinate with venue management, promoters, and emergency services",
+    "Define clear chain of command for safety decisions during the event"
+  ],
+  "nextModule": "module-7-2",
+  "prerequisites": [],
+  "difficulty": "intermediate"
+}

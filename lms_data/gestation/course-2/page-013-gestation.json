@@ -1,0 +1,61 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 13,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Warning logotype requirements",
+      "Class-based warning requirements",
+      "CAUTION vs DANGER thresholds",
+      "Aperture and protective housing labels",
+      "Certification and identification labels"
+    ],
+    "key_terms": [
+      {
+        "term": "CAUTION Logotype",
+        "definition": "Warning for Class II and Class IIIa (≤2.5 mW/cm²) products"
+      },
+      {
+        "term": "DANGER Logotype",
+        "definition": "Warning for Class IIIa (>2.5 mW/cm²), IIIb, and IV products"
+      },
+      {
+        "term": "Aperture Label",
+        "definition": "Warning at emission points exceeding Class I/IIa limits"
+      },
+      {
+        "term": "Certification Label",
+        "definition": "Statement of compliance with 21 CFR 1040.10 and 1040.11"
+      },
+      {
+        "term": "Identification Label",
+        "definition": "Manufacturer info, place, month/year of manufacture"
+      },
+      {
+        "term": "Class IIa Warning",
+        "definition": "Specific warning statement without logotype"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.10(g) - Labeling requirements",
+      "21 CFR 1010.2 - Certification label",
+      "21 CFR 1010.3 - Identification label",
+      "21 CFR 1040.10(g)(1)-(7) - Specific labeling provisions"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Determine correct warning logotype for each class",
+      "Calculate CAUTION vs DANGER threshold",
+      "Apply aperture labeling requirements",
+      "Format certification and identification labels"
+    ],
+    "prerequisites": [
+      "Understanding of product classes",
+      "Pages 6-7 content"
+    ],
+    "estimated_study_time_minutes": 30,
+    "content_type": "labeling_requirements",
+    "has_tables": false
+  }
+}

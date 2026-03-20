@@ -1,0 +1,27 @@
+{
+  "page_num": 7,
+  "source_pdf": "ocular-hazards.pdf",
+  "digestion": {
+    "summary": "SPECIAL POPULATIONS AT RISK\n\nCHILDREN:\n- Larger pupils allow more light entry\n- More transparent ocular media (especially lens)\n- May not understand danger or follow safety instructions\n- Higher susce...",
+    "key_concepts": [
+      "aphakic",
+      "pseudophakic",
+      "children vulnerability"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "SPECIAL POPULATIONS AT RISK\n\nCHILDREN:\n- Larger pupils allow more light entry\n- More transparent ocular media (especially lens)\n- May not understand danger or follow safety instructions\n- Higher susceptibility to blue light photochemical damage\n\nAPHAKIC AND PSEUDOPHAKIC INDIVIDUALS:\n- Aphakia (no lens): UV protection absent, UV transmits to retina\n- Pseudophakia (IOL): UV-blocking IOL provides protection\n- Non-UV-blocking IOL allows UV retinal exposure\n\nPHOTOSENSITIVE INDIVIDUALS:\n- Certain medications increase photosensitivity\n- Retinal dystrophies may increase vulnerability\n- Recent retinal surgery patients\n\nCATARACT PATIENTS:\n- Clouded lens scatters laser light\n- May increase retinal exposure area\n- Post-surgical eye more vulnerable\n\nOCULAR PATHOLOGIES:\n- Glaucoma reduces retinal tolerance\n- Diabetic retinopathy compromises vascular supply\n- Macular degeneration affects central vision region\n",
+    "analogies": [
+      "The eye's focusing capability is like a magnifying glass concentrating sunlight - it amplifies laser power by 100,000x at the retina."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Always wear appropriate laser eyewear when working with Class 3B or Class 4 lasers.",
+      "UV laser exposure has cumulative effects similar to sun damage - use full coverage PPE."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.119198"
+}

@@ -1,0 +1,38 @@
+{
+  "module_id": "course-1-module-1.3",
+  "course_id": "course-1",
+  "title": "Module 1.3: Beam Hazard Calculations",
+  "subtitle": "Master NOHD, NHZ, and Safety Zone Calculations",
+  "description": "Learn to calculate Nominal Ocular Hazard Distance (NOHD), Nominal Hazard Zone (NHZ), and understand beam propagation with interactive calculators and visual demonstrations. Based on ANSI Z136.1 and laser safety best practices.",
+  "duration_minutes": 12,
+  "difficulty": "intermediate",
+  "learning_objectives": [
+    "Calculate NOHD for CW and pulsed lasers using the correct formulas",
+    "Determine Nominal Hazard Zone (NHZ) boundaries for laser installations",
+    "Apply MPE values to calculate safety distances",
+    "Visualize beam divergence and hazard zones",
+    "Select appropriate control measures based on calculated hazard distances"
+  ],
+  "prerequisites": [
+    "course-1-module-1.1",
+    "course-1-module-1.2"
+  ],
+  "completion_criteria": {
+    "quiz_pass_score": 80,
+    "interactive_exercises_completed": ["nohd_calculator", "safety_zone_visualizer"],
+    "minimum_time_minutes": 10
+  },
+  "badge": {
+    "id": "beam_calculator",
+    "name": "Beam Calculation Specialist",
+    "icon": "📐",
+    "description": "Mastered laser beam hazard calculations"
+  },
+  "keywords": ["NOHD", "NHZ", "beam divergence", "MPE", "hazard zone", "safety distance", "calculations"],
+  "standards_reference": ["ANSI Z136.1 Section 4.3", "IEC 60825-1 Section 9"],
+  "research_alignment": {
+    "adult_learning": "Problem-centered approach with immediate application",
+    "brilliant_patterns": ["Interactive calculation tools", "Visual proof before formula", "Progressive hint system"],
+    "retention_strategy": "Spaced repetition of calculation workflows"
+  }
+}

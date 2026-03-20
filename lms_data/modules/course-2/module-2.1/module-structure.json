@@ -1,0 +1,213 @@
+{
+  "module_id": "course-2-module-2.1",
+  "module_number": "2.1",
+  "title": "FDA Regulatory Framework",
+  "course": "Course 2: FDA Compliance",
+  "version": "1.0",
+  "created_by": "Module Builder Agent C2-A",
+  "created_date": "2026-03-19",
+  
+  "learning_objectives": [
+    "Navigate the FDA laser product regulatory structure under 21 CFR",
+    "Understand the relationship between CDRH, FDA, and regulatory enforcement",
+    "Identify key reporting requirements: Product Reports, Supplemental Reports, and Annual Reports",
+    "Recognize the historical evolution of FDA laser regulations",
+    "Apply compliance timelines to real-world scenarios"
+  ],
+  
+  "module_structure": {
+    "total_lessons": 4,
+    "estimated_duration_minutes": 35,
+    "difficulty_level": "intermediate",
+    "prerequisites": [
+      "Basic understanding of laser classifications",
+      "Familiarity with general laser safety principles"
+    ]
+  },
+  
+  "lessons": [
+    {
+      "lesson_id": "2.1.1",
+      "title": "The Regulatory Landscape",
+      "duration_minutes": 8,
+      "type": "introductory",
+      "components": ["warmup_scenario", "regulatory_timeline", "concept_introduction"]
+    },
+    {
+      "lesson_id": "2.1.2",
+      "title": "CDRH and FDA Structure",
+      "duration_minutes": 8,
+      "type": "informational",
+      "components": ["interactive_diagram", "hierarchy_explorer", "knowledge_check"]
+    },
+    {
+      "lesson_id": "2.1.3",
+      "title": "Reporting Requirements",
+      "duration_minutes": 10,
+      "type": "procedural",
+      "components": ["form_selection_wizard", "reporting_flowchart", "decision_tree"]
+    },
+    {
+      "lesson_id": "2.1.4",
+      "title": "Compliance Challenge",
+      "duration_minutes": 9,
+      "type": "assessment",
+      "components": ["branching_scenario", "case_study", "mastery_check"]
+    }
+  ],
+  
+  "interactive_components": {
+    "regulatory_timeline": {
+      "id": "fda_timeline",
+      "type": "interactive_timeline",
+      "title": "FDA Laser Regulation Milestones",
+      "description": "Explore the historical development of FDA laser regulations through an interactive timeline",
+      "events": [
+        {
+          "year": 1960,
+          "event": "First Laser Demonstrated",
+          "description": "Theodore Maiman demonstrates the first working laser at Hughes Research Laboratories",
+          "significance": "Beginning of the laser era"
+        },
+        {
+          "year": 1965,
+          "event": "First Reported Laser Eye Injury",
+          "description": "First documented case of eye injury from ruby laser in research setting",
+          "significance": "Demonstrated need for safety regulations"
+        },
+        {
+          "year": 1968,
+          "event": "Radiation Control for Health and Safety Act",
+          "description": "Congress passes Public Law 90-602, giving FDA authority over electronic product radiation",
+          "significance": "Legal foundation for FDA laser oversight"
+        },
+        {
+          "year": 1975,
+          "event": "Original Laser Standard Published",
+          "description": "21 CFR 1040.10 and 1040.11 established with Classes I-IV",
+          "significance": "First comprehensive laser product regulations"
+        },
+        {
+          "year": 1976,
+          "event": "Standard Effective Date",
+          "description": "August 2, 1976 - All laser products manufactured on or after this date must comply",
+          "significance": "Enforcement begins"
+        },
+        {
+          "year": 1985,
+          "event": "Laser Light Show Guidance",
+          "description": "Appendix B added to Compliance Guide clarifying demonstration laser requirements",
+          "significance": "Entertainment industry-specific guidance"
+        },
+        {
+          "year": 1986,
+          "event": "Class IV Manual Reset Requirement",
+          "description": "August 20, 1986 - Class IV laser systems must include manual reset after power failure",
+          "significance": "Enhanced safety for high-power lasers"
+        },
+        {
+          "year": 1988,
+          "event": "Laser Notice No. 41",
+          "description": "Exemption for certain low-power inherently Class I laser products from reporting",
+          "significance": "Reduced burden for low-risk products"
+        },
+        {
+          "year": 2001,
+          "event": "Original Laser Notice No. 50",
+          "description": "First guidance on conformance with IEC 60825-1 Amendment 2",
+          "significance": "Beginning of FDA-IEC harmonization"
+        },
+        {
+          "year": 2007,
+          "event": "Revised Laser Notice No. 50",
+          "description": "June 24, 2007 - Expanded acceptance of IEC 60825-1 Editions 1.2 and 2",
+          "significance": "Major harmonization milestone"
+        },
+        {
+          "year": 2014,
+          "event": "Laser Notice No. 56",
+          "description": "Guidance on conformance with IEC 60825-1 Ed. 3 and IEC 60601-2-22 Ed. 3.1",
+          "significance": "Updated harmonization for modern standards"
+        },
+        {
+          "year": 2023,
+          "event": "Final Rule Amendments",
+          "description": "January 20, 2023 - Amendments to records and reporting requirements, effective February 21, 2023",
+          "significance": "Streamlined reporting for modern industry"
+        }
+      ]
+    },
+    
+    "form_selection_wizard": {
+      "id": "form_wizard",
+      "type": "decision_tree",
+      "title": "FDA Form Selection Wizard",
+      "description": "Interactive tool to determine which FDA form to use for your situation",
+      "starting_question": "What type of laser product action are you taking?",
+      "decision_tree": {
+        "nodes": [
+          {
+            "id": "root",
+            "question": "What type of laser product action are you taking?",
+            "options": [
+              {"label": "Introducing a new laser product", "next": "new_product"},
+              {"label": "Modifying an existing reported product", "next": "modification"},
+              {"label": "Reporting an incident or defect", "next": "incident"},
+              {"label": "Applying for a variance", "next": "variance"},
+              {"label": "Annual compliance reporting", "next": "annual"}
+            ]
+          },
+          {
+            "id": "new_product",
+            "question": "Is this a completely new product or part of an existing model family?",
+            "options": [
+              {"label": "Completely new product design", "result": "FORM FDA 3632 - Complete Product Report (21 CFR 1002.10)"},
+              {"label": "New model in existing model family", "result": "FORM FDA 3632 - Supplemental Report referencing original accession number (21 CFR 1002.11)"},
+              {"label": "Low-power Class I product (inherently safe)", "result": "May be exempt from Product Report per Laser Notice No. 41 - verify eligibility"}
+            ]
+          },
+          {
+            "id": "modification",
+            "question": "Does the modification affect any of the following?",
+            "options": [
+              {"label": "Actual or potential radiation emission", "result": "FORM FDA 3632 - Supplemental Report REQUIRED (21 CFR 1002.11)"},
+              {"label": "Degree of compliance with performance standards", "result": "FORM FDA 3632 - Supplemental Report REQUIRED (21 CFR 1002.11)"},
+              {"label": "Probability of detecting noncompliance", "result": "FORM FDA 3632 - Supplemental Report REQUIRED (21 CFR 1002.11)"},
+              {"label": "Only cosmetic changes (color, etc.)", "result": "No supplemental report required - document in next Annual Report"}
+            ]
+          },
+          {
+            "id": "incident",
+            "question": "What type of incident occurred?",
+            "options": [
+              {"label": "Accidental radiation occurrence (injury or potential)", "result": "Immediate notification to CDRH required (21 CFR 1002.20)"},
+              {"label": "Product defect affecting radiation safety", "result": "FORM FDA 3633 - Notification of defect (21 CFR 1003.10)"},
+              {"label": "Product fails to comply with standard", "result": "Immediate notification to CDRH required (21 CFR 1003.10)"},
+              {"label": "Medical device adverse event", "result": "FDA Form 3500A (MEDWATCH) - Medical device reporting"}
+            ]
+          },
+          {
+            "id": "variance",
+            "question": "What type of variance are you seeking?",
+            "options": [
+              {"label": "Laser light show demonstration (Class IIIb/IV)", "result": "FORM FDA 3147 - Application for Variance + Laser Light Show Report"},
+              {"label": "Medical laser product variance", "result": "21 CFR 1010.4 - Variance application with supporting documentation"},
+              {"label": "Alternate labeling or performance requirement", "result": "21 CFR 1010.4 - Variance application with justification"},
+              {"label": "Exemption from reporting/recordkeeping", "result": "21 CFR 1002.50 - Application with justification for small production or inherently safe products"}
+            ]
+          },
+          {
+            "id": "annual",
+            "result": "Annual Report Form - Due September 1 for year ending June 30 (21 CFR 1002.13)"
+          }
+        ]
+      }
+    }
+  },
+  
+  "assessment": {
+    "quiz_questions": 5,
+    "passing_score": 80,
+    "mastery_badge": "FDA Framework Navigator"
+  }
+}

@@ -1,0 +1,408 @@
+{
+  "graph_title": "Outdoor & Airspace Laser Safety Knowledge Graph",
+  "course": 6,
+  "version": "1.0",
+  "last_updated": "2026-03-19",
+  "nodes": [
+    {
+      "id": "faa_authority",
+      "label": "FAA Regulatory Authority",
+      "type": "regulatory",
+      "description": "Title 49 U.S.C. Section 40103 grants FAA authority over navigable airspace",
+      "properties": {
+        "statute": "49 U.S.C. § 40103",
+        "scope": "Navigable airspace"
+      }
+    },
+    {
+      "id": "faa_form_7140_1",
+      "label": "FAA Form 7140-1",
+      "type": "document",
+      "description": "Notice of Proposed Outdoor Laser Operation(s)",
+      "properties": {
+        "omb_control": "2120-0662",
+        "expiration": "2024-07-31"
+      }
+    },
+    {
+      "id": "ac_70_1b",
+      "label": "FAA AC 70-1B",
+      "type": "document",
+      "description": "Advisory Circular for Outdoor Laser Operations",
+      "properties": {
+        "date": "2022-02-14",
+        "replaces": "AC 70-1A"
+      }
+    },
+    {
+      "id": "visible_threshold",
+      "label": "Visible Laser Notification Threshold",
+      "type": "threshold",
+      "description": "50 nW/cm² - Trigger for FAA notification",
+      "properties": {
+        "value": "50 nW/cm²",
+        "wavelength_range": "400-700 nm"
+      }
+    },
+    {
+      "id": "mpe_threshold",
+      "label": "Maximum Permissible Exposure",
+      "type": "threshold",
+      "description": "Any laser exceeding MPE requires notification",
+      "properties": {
+        "visible_cw": "2.6 mW/cm²",
+        "applies_to": "All lasers"
+      }
+    },
+    {
+      "id": "laser_free_zone",
+      "label": "Laser-Free Zone (LFZ)",
+      "type": "flight_zone",
+      "description": "50 nW/cm² maximum - No distraction zone",
+      "properties": {
+        "threshold": "50 nW/cm²",
+        "effect": "Distraction protection"
+      }
+    },
+    {
+      "id": "critical_flight_zone",
+      "label": "Critical Flight Zone (CFZ)",
+      "type": "flight_zone",
+      "description": "5 µW/cm² maximum - Glare protection",
+      "properties": {
+        "threshold": "5 µW/cm²",
+        "effect": "Glare protection"
+      }
+    },
+    {
+      "id": "sensitive_flight_zone",
+      "label": "Sensitive Flight Zone (SFZ)",
+      "type": "flight_zone",
+      "description": "100 µW/cm² maximum - Flashblindness protection",
+      "properties": {
+        "threshold": "100 µW/cm²",
+        "effect": "Flashblindness/afterimage protection"
+      }
+    },
+    {
+      "id": "noed",
+      "label": "NOHD",
+      "type": "distance",
+      "description": "Nominal Ocular Hazard Distance - Eye injury protection",
+      "properties": {
+        "based_on": "MPE",
+        "unit": "feet"
+      }
+    },
+    {
+      "id": "szed",
+      "label": "SZED",
+      "type": "distance",
+      "description": "Sensitive Zone Exposure Distance",
+      "properties": {
+        "based_on": "100 µW/cm²",
+        "multiplier": "12732"
+      }
+    },
+    {
+      "id": "czed",
+      "label": "CZED",
+      "type": "distance",
+      "description": "Critical Zone Exposure Distance",
+      "properties": {
+        "based_on": "5 µW/cm²",
+        "multiplier_from_szed": "4.47"
+      }
+    },
+    {
+      "id": "lfed",
+      "label": "LFED",
+      "type": "distance",
+      "description": "Laser-Free Exposure Distance",
+      "properties": {
+        "based_on": "50 nW/cm²",
+        "multiplier_from_szed": "44.7"
+      }
+    },
+    {
+      "id": "visual_correction_factor",
+      "label": "Visual Correction Factor (VCF)",
+      "type": "calculation_factor",
+      "description": "Adjusts for perceived brightness by wavelength",
+      "properties": {
+        "peak_wavelength": "555 nm",
+        "peak_value": "1.0"
+      }
+    },
+    {
+      "id": "sae_as6029",
+      "label": "SAE AS6029B",
+      "type": "standard",
+      "description": "Performance Criteria for Laser Control Measures",
+      "properties": {
+        "scope": "Electronic protection systems",
+        "industry": "Aerospace"
+      }
+    },
+    {
+      "id": "sae_arp5535",
+      "label": "SAE ARP5535",
+      "type": "standard",
+      "description": "Observers for Laser Safety in Navigable Airspace",
+      "properties": {
+        "scope": "Visual monitoring procedures"
+      }
+    },
+    {
+      "id": "ansi_z136",
+      "label": "ANSI Z136 Series",
+      "type": "standard",
+      "description": "American National Standard for Safe Use of Lasers",
+      "properties": {
+        "z136_1": "General laser safety",
+        "z136_6": "Outdoor laser operations"
+      }
+    },
+    {
+      "id": "single_pulse",
+      "label": "Single Pulse Laser",
+      "type": "laser_mode",
+      "description": "Pulse duration < 0.25 seconds",
+      "properties": {
+        "duration": "< 0.25 s"
+      }
+    },
+    {
+      "id": "cw_laser",
+      "label": "Continuous Wave Laser",
+      "type": "laser_mode",
+      "description": "Output > 0.25 seconds continuous",
+      "properties": {
+        "duration": "> 0.25 s"
+      }
+    },
+    {
+      "id": "rep_pulsed",
+      "label": "Repetitively Pulsed Laser",
+      "type": "laser_mode",
+      "description": "PRF ≥ 1 Hz",
+      "properties": {
+        "prf_minimum": "1 Hz"
+      }
+    },
+    {
+      "id": "letter_determination",
+      "label": "Letter of Determination (LOD)",
+      "type": "process",
+      "description": "FAA response to Form 7140-1 submission",
+      "properties": {
+        "outcomes": ["No objection", "Objection"]
+      }
+    },
+    {
+      "id": "service_center",
+      "label": "FAA Service Center",
+      "type": "organization",
+      "description": "Regional FAA office processing laser notifications",
+      "properties": {
+        "responsibility": "Regional airspace management"
+      }
+    },
+    {
+      "id": "navigable_airspace",
+      "label": "Navigable Airspace",
+      "type": "location",
+      "description": "Airspace subject to FAA regulation",
+      "properties": {
+        "definition": "Airspace above minimum altitudes of flight"
+      }
+    },
+    {
+      "id": "precorrected_power",
+      "label": "Pre-corrected Power (PCP)",
+      "type": "calculation",
+      "description": "Total visible power before VCF application",
+      "properties": {
+        "single_pulse": "J × 4",
+        "cw": "W",
+        "rep_pulsed": "J × PRF"
+      }
+    },
+    {
+      "id": "slant_range",
+      "label": "Slant Range",
+      "type": "calculation",
+      "description": "Straight-line distance from laser source",
+      "properties": {
+        "conversion": "32.8 ft/cm"
+      }
+    },
+    {
+      "id": "control_measures",
+      "label": "Control Measures",
+      "type": "safety",
+      "description": "Methods to protect airspace from laser beams",
+      "properties": {
+        "types": ["Termination", "Observers", "Electronic systems", "Physical limits"]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "faa_authority",
+      "target": "navigable_airspace",
+      "relationship": "regulates",
+      "description": "FAA has authority over navigable airspace"
+    },
+    {
+      "source": "ac_70_1b",
+      "target": "faa_form_7140_1",
+      "relationship": "provides_instructions_for",
+      "description": "AC 70-1B provides detailed instructions for completing Form 7140-1"
+    },
+    {
+      "source": "visible_threshold",
+      "target": "faa_form_7140_1",
+      "relationship": "triggers_submission",
+      "description": "Exceeding 50 nW/cm² threshold requires Form 7140-1 submission"
+    },
+    {
+      "source": "mpe_threshold",
+      "target": "faa_form_7140_1",
+      "relationship": "triggers_submission",
+      "description": "Exceeding MPE requires Form 7140-1 submission"
+    },
+    {
+      "source": "faa_form_7140_1",
+      "target": "service_center",
+      "relationship": "submitted_to",
+      "description": "Form 7140-1 is submitted to the appropriate FAA Service Center"
+    },
+    {
+      "source": "service_center",
+      "target": "letter_determination",
+      "relationship": "issues",
+      "description": "Service Center issues Letter of Determination after review"
+    },
+    {
+      "source": "noed",
+      "target": "mpe_threshold",
+      "relationship": "calculated_from",
+      "description": "NOHD is calculated based on MPE"
+    },
+    {
+      "source": "szed",
+      "target": "sensitive_flight_zone",
+      "relationship": "protects",
+      "description": "SZED protects the Sensitive Flight Zone"
+    },
+    {
+      "source": "czed",
+      "target": "critical_flight_zone",
+      "relationship": "protects",
+      "description": "CZED protects the Critical Flight Zone"
+    },
+    {
+      "source": "lfed",
+      "target": "laser_free_zone",
+      "relationship": "protects",
+      "description": "LFED protects the Laser-Free Zone"
+    },
+    {
+      "source": "czed",
+      "target": "szed",
+      "relationship": "derived_from",
+      "description": "CZED = SZED × 4.47"
+    },
+    {
+      "source": "lfed",
+      "target": "szed",
+      "relationship": "derived_from",
+      "description": "LFED = SZED × 44.7"
+    },
+    {
+      "source": "visual_correction_factor",
+      "target": "szed",
+      "relationship": "used_in_calculation",
+      "description": "VCF is used in SZED calculations for visible lasers"
+    },
+    {
+      "source": "visual_correction_factor",
+      "target": "precorrected_power",
+      "relationship": "adjusts",
+      "description": "VCF adjusts PCP to account for perceived brightness"
+    },
+    {
+      "source": "sae_as6029",
+      "target": "control_measures",
+      "relationship": "specifies",
+      "description": "SAE AS6029 specifies performance criteria for electronic control measures"
+    },
+    {
+      "source": "control_measures",
+      "target": "faa_form_7140_1",
+      "relationship": "described_in",
+      "description": "Control measures are described in Section 6 of Form 7140-1"
+    },
+    {
+      "source": "single_pulse",
+      "target": "noed",
+      "relationship": "uses_equation",
+      "description": "Single pulse lasers use Equation 70-1.1 for NOHD"
+    },
+    {
+      "source": "cw_laser",
+      "target": "noed",
+      "relationship": "uses_equation",
+      "description": "CW lasers use Equation 70-1.2 for NOHD"
+    },
+    {
+      "source": "rep_pulsed",
+      "target": "noed",
+      "relationship": "uses_equation",
+      "description": "Repetitively pulsed lasers may use Equation 70-1.1 or 70-1.2 depending on PRF"
+    },
+    {
+      "source": "ansi_z136",
+      "target": "ac_70_1b",
+      "relationship": "source_for",
+      "description": "AC 70-1B equations are derived from ANSI Z136 standards"
+    },
+    {
+      "source": "slant_range",
+      "target": "noed",
+      "relationship": "component_of",
+      "description": "Slant range is a component of NOHD, SZED, CZED, LFED"
+    },
+    {
+      "source": "slant_range",
+      "target": "szed",
+      "relationship": "component_of",
+      "description": "Slant range is calculated for all protection distances"
+    },
+    {
+      "source": "slant_range",
+      "target": "czed",
+      "relationship": "component_of",
+      "description": "Slant range is calculated for all protection distances"
+    },
+    {
+      "source": "slant_range",
+      "target": "lfed",
+      "relationship": "component_of",
+      "description": "Slant range is calculated for all protection distances"
+    },
+    {
+      "source": "sae_arp5535",
+      "target": "control_measures",
+      "relationship": "specifies",
+      "description": "SAE ARP5535 specifies observer procedures for laser safety"
+    },
+    {
+      "source": "laser_free_zone",
+      "target": "visible_threshold",
+      "relationship": "equivalent_to",
+      "description": "Laser-Free Zone threshold (50 nW/cm²) equals the notification threshold"
+    }
+  ]
+}

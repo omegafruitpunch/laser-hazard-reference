@@ -1,0 +1,286 @@
+{
+  "module_id": "course-1-module-1.5",
+  "lessons": [
+    {
+      "lesson_id": "1.5.1",
+      "title": "Hierarchy of Controls",
+      "type": "interactive_sorting",
+      "duration_minutes": 3,
+      "content": {
+        "title": "The Control Hierarchy Pyramid",
+        "concept": "Controls should be applied in order of reliability, from most effective to least effective. PPE is always the last resort.",
+        "pyramid_levels": [
+          {
+            "level": 1,
+            "name": "Elimination/Substitution",
+            "description": "Remove the hazard or use a safer alternative",
+            "examples": [
+              "Use Class 1 enclosed system instead of Class 4",
+              "Substitute less hazardous wavelength",
+              "Replace with non-laser technology"
+            ],
+            "effectiveness": "Most effective",
+            "color": "#4CAF50"
+          },
+          {
+            "level": 2,
+            "name": "Engineering Controls",
+            "description": "Isolate the hazard through physical means",
+            "examples": [
+              "Enclosures and interlocks",
+              "Beam stops and beam blocks",
+              "Remote viewing systems",
+              "Ventilation systems"
+            ],
+            "effectiveness": "Highly effective",
+            "color": "#8BC34A"
+          },
+          {
+            "level": 3,
+            "name": "Administrative Controls",
+            "description": "Change how people work through procedures and training",
+            "examples": [
+              "Standard Operating Procedures (SOPs)",
+              "Safety training and authorization",
+              "Warning signs and labels",
+              "Maintenance schedules"
+            ],
+            "effectiveness": "Moderately effective",
+            "color": "#FFC107"
+          },
+          {
+            "level": 4,
+            "name": "Personal Protective Equipment",
+            "description": "Protect the individual from exposure",
+            "examples": [
+              "Laser safety eyewear",
+              "Protective clothing",
+              "Skin protection"
+            ],
+            "effectiveness": "Least effective - last resort",
+            "color": "#FF5722"
+          }
+        ],
+        "interactive_exercise": {
+          "type": "drag_drop_hierarchy",
+          "title": "Sort the Controls",
+          "instruction": "Drag each control measure to its correct position in the hierarchy",
+          "items": [
+            {"id": 1, "text": "Install door interlocks", "correct_level": 2},
+            {"id": 2, "text": "Require safety eyewear", "correct_level": 4},
+            {"id": 3, "text": "Post warning signs", "correct_level": 3},
+            {"id": 4, "text": "Use enclosed Class 1 system", "correct_level": 1},
+            {"id": 5, "text": "Write SOPs", "correct_level": 3},
+            {"id": 6, "text": "Install beam blocks", "correct_level": 2},
+            {"id": 7, "text": "Provide training", "correct_level": 3},
+            {"id": 8, "text": "Substitute lower power laser", "correct_level": 1}
+          ],
+          "feedback": {
+            "correct": "Excellent! You understand the control hierarchy.",
+            "incorrect": "Remember: Always try elimination first, then engineering, then administrative, and PPE last."
+          }
+        }
+      }
+    },
+    {
+      "lesson_id": "1.5.2",
+      "title": "Engineering Controls Deep Dive",
+      "type": "interactive_exploration",
+      "duration_minutes": 3,
+      "content": {
+        "title": "Engineering Controls by Type",
+        "categories": [
+          {
+            "name": "Enclosures",
+            "icon": "📦",
+            "description": "Physical barriers preventing access to laser radiation",
+            "types": [
+              {
+                "name": "Protective Housing",
+                "purpose": "Prevents access to laser radiation during operation",
+                "requirements": "Must withstand misuse, prevent human access under normal conditions",
+                "applies_to": "All laser classes"
+              },
+              {
+                "name": "Interlocked Enclosure",
+                "purpose": "Automatically disables laser when opened",
+                "requirements": "Fail-safe design, cannot be easily bypassed",
+                "applies_to": "Class 3B, Class 4"
+              },
+              {
+                "name": "Controlled Area",
+                "purpose": "Restricts access to authorized personnel only",
+                "requirements": "Physical barriers, access control, warning signs",
+                "applies_to": "Class 3B, Class 4"
+              }
+            ]
+          },
+          {
+            "name": "Beam Control",
+            "icon": "🔦",
+            "description": "Devices to manage beam path and termination",
+            "types": [
+              {
+                "name": "Beam Stops/Blocks",
+                "purpose": "Safely terminate beam at end of path",
+                "requirements": "Must handle beam power without damage or reflection",
+                "applies_to": "All classes where beam path must be terminated"
+              },
+              {
+                "name": "Beam Shutter",
+                "purpose": "Control beam transmission on/off",
+                "requirements": "Positive action, status indication",
+                "applies_to": "Class 3B, Class 4"
+              },
+              {
+                "name": "Attenuators",
+                "purpose": "Reduce beam power for alignment",
+                "requirements": "Known attenuation factor, secure mounting",
+                "applies_to": "All classes during alignment"
+              }
+            ]
+          },
+          {
+            "name": "Safety Systems",
+            "icon": "⚡",
+            "description": "Active systems for hazard detection and response",
+            "types": [
+              {
+                "name": "Scan-Failure Detection",
+                "purpose": "Detects scanner failure in audience scanning",
+                "requirements": "Response time < 1ms, automatic beam blanking",
+                "applies_to": "Entertainment lasers with audience exposure"
+              },
+              {
+                "name": "Emergency Stop",
+                "purpose": "Immediate system shutdown",
+                "requirements": "Easily accessible, manual reset required, tested regularly",
+                "applies_to": "Class 3B, Class 4"
+              },
+              {
+                "name": "Key Switch",
+                "purpose": "Prevents unauthorized operation",
+                "requirements": "Removable key, only one key supplied",
+                "applies_to": "Class 3B, Class 4"
+              }
+            ]
+          }
+        ],
+        "interactive_component": {
+          "type": "control_selector",
+          "title": "Select Controls for Your Laser",
+          "instruction": "Choose a laser class to see required engineering controls",
+          "options": ["Class 1", "Class 2", "Class 3R", "Class 3B", "Class 4"],
+          "control_matrix": {
+            "Class 1": ["Protective housing"],
+            "Class 2": ["Protective housing", "Warning label"],
+            "Class 3R": ["Protective housing", "Warning label"],
+            "Class 3B": ["Protective housing", "Interlocked enclosure OR remote interlock", "Key switch", "Beam shutter", "E-stop"],
+            "Class 4": ["Protective housing", "Interlocked enclosure", "Key switch", "Beam shutter", "E-stop", "Scan-failure detection (if scanned)", "Beam stops for all beams"]
+          }
+        }
+      }
+    },
+    {
+      "lesson_id": "1.5.3",
+      "title": "Administrative Controls",
+      "type": "interactive_checklist",
+      "duration_minutes": 2,
+      "content": {
+        "title": "Administrative Control Requirements",
+        "description": "Procedures, training, and documentation requirements",
+        "categories": [
+          {
+            "name": "Standard Operating Procedures (SOPs)",
+            "required_elements": [
+              "Purpose and scope of the procedure",
+              "Personnel authorized to perform the work",
+              "Required training and qualifications",
+              "Step-by-step instructions",
+              "Required PPE and controls",
+              "Emergency procedures",
+              "Date of creation and review schedule"
+            ],
+            "laser_specific_sops": [
+              "Laser startup and shutdown procedures",
+              "Alignment procedures",
+              "Maintenance procedures",
+              "Emergency response procedures",
+              "Service and repair procedures"
+            ]
+          },
+          {
+            "name": "Signage and Labeling",
+            "requirements": {
+              "Class_2": ["CAUTION - Laser Radiation"],
+              "Class_3R": ["CAUTION - Laser Radiation"],
+              "Class_3B": ["DANGER - Laser Radiation", "Avoid eye or skin exposure"],
+              "Class_4": ["DANGER - Laser Radiation", "Avoid eye or skin exposure", "Class 4 Laser Product"]
+            },
+            "sign_types": [
+              {"type": "Door signs", "text": "Laser in Use - Do Not Enter When Light is Illuminated"},
+              {"type": "Aperture labels", "text": "Laser Aperture - Avoid Exposure"},
+              {"type": "Area signs", "text": "Controlled Area - Authorized Personnel Only"},
+              {"type": "Eyewear reminder", "text": "Laser Safety Eyewear Required in This Area"}
+            ]
+          },
+          {
+            "name": "Training and Authorization",
+            "requirements": [
+              "Initial safety training before first work assignment",
+              "Refresher training annually or after incidents",
+              "Written authorization before independent work",
+              "Documentation of all training",
+              "Competency verification"
+            ],
+            "training_topics": [
+              "Laser fundamentals and bioeffects",
+              "Classification and hazard categories",
+              "Control measures and their use",
+              "MPE and exposure limits",
+              "Emergency procedures",
+              "Incident reporting"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "1.5.4",
+      "title": "Virtual Lab: Control Implementation",
+      "type": "virtual_simulation",
+      "duration_minutes": 2,
+      "content": {
+        "title": "Design a Safe Laser Lab",
+        "description": "Set up a safe optical table for a Class 4 laser installation",
+        "scenario": "You need to set up a 10W Nd:YAG laser (1064nm) for materials processing. Arrange the required controls on the optical table.",
+        "available_items": [
+          {"id": "laser", "name": "10W Nd:YAG Laser", "type": "source", "required": true},
+          {"id": "interlock_door", "name": "Door Interlock", "type": "engineering", "required": true},
+          {"id": "beam_block", "name": "Beam Block/Dump", "type": "engineering", "required": true},
+          {"id": "eyewear_1064", "name": "OD 6+ @ 1064nm Eyewear", "type": "ppe", "required": true},
+          {"id": "warning_sign", "name": "Class 4 Warning Sign", "type": "administrative", "required": true},
+          {"id": "e_stop", "name": "Emergency Stop", "type": "engineering", "required": true},
+          {"id": "key_switch", "name": "Key Switch", "type": "engineering", "required": true},
+          {"id": "curtain", "name": "Laser Safety Curtain", "type": "engineering", "required": false},
+          {"id": "power_meter", "name": "Power Meter", "type": "equipment", "required": false},
+          {"id": "sop_binder", "name": "SOP Binder", "type": "administrative", "required": true}
+        ],
+        "validation_rules": [
+          {"rule": "Door interlock must be present", "check": "interlock_door"},
+          {"rule": "Beam termination required", "check": "beam_block"},
+          {"rule": "Appropriate eyewear for wavelength", "check": "eyewear_1064"},
+          {"rule": "Warning signage required", "check": "warning_sign"},
+          {"rule": "E-stop must be accessible", "check": "e_stop"},
+          {"rule": "Key control for Class 4", "check": "key_switch"},
+          {"rule": "SOPs must be available", "check": "sop_binder"}
+        ],
+        "feedback": {
+          "complete": "Excellent! You've implemented all required controls for a Class 4 laser installation.",
+          "incomplete": "You're missing some critical controls. Review the requirements for Class 4 lasers.",
+          "warning": "Consider adding optional controls like laser safety curtains for enhanced protection."
+        }
+      }
+    }
+  ]
+}

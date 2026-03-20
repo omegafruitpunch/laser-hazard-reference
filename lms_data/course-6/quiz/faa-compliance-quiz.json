@@ -1,0 +1,141 @@
+{
+  "quiz_title": "FAA Compliance for Outdoor Laser Operations",
+  "course": 6,
+  "topic": "FAA Regulations",
+  "questions": [
+    {
+      "id": "c6-faa-001",
+      "type": "multiple_choice",
+      "question": "Under what authority does the FAA regulate outdoor laser operations?",
+      "options": [
+        "Title 14 CFR Part 107 (Commercial Drone Operations)",
+        "Title 49 U.S.C. Section 40103 (Sovereignty and Use of Airspace)",
+        "Title 21 CFR Part 1040 (FDA Laser Regulations)",
+        "Executive Order 12333 (Intelligence Activities)"
+      ],
+      "correct_answer": 1,
+      "explanation": "Title 49 U.S.C. Section 40103 grants the FAA authority to regulate the safe and efficient use of navigable airspace.",
+      "reference": "FAA AC 70-1B, Section 2"
+    },
+    {
+      "id": "c6-faa-002",
+      "type": "multiple_choice",
+      "question": "What form must be submitted to the FAA for outdoor laser operations that exceed thresholds in navigable airspace?",
+      "options": [
+        "FAA Form 337 (Major Repair and Alteration)",
+        "FAA Form 7480-1 (Notice of Landing Area Proposal)",
+        "FAA Form 7140-1 (Notice of Proposed Outdoor Laser Operation(s))",
+        "FAA Form 8050-1 (Aircraft Registration Application)"
+      ],
+      "correct_answer": 2,
+      "explanation": "FAA Form 7140-1 is the official notification form for outdoor laser operations.",
+      "reference": "FAA AC 70-1B, Section 5"
+    },
+    {
+      "id": "c6-faa-003",
+      "type": "multiple_choice",
+      "question": "At what power density must a visible laser operator notify the FAA when operating in navigable airspace?",
+      "options": [
+        "5 nW/cm²",
+        "50 nW/cm²",
+        "500 nW/cm²",
+        "5 µW/cm²"
+      ],
+      "correct_answer": 1,
+      "explanation": "Any visible laser beam exceeding 50 nanowatts per square centimeter (nW/cm²) in navigable airspace requires FAA notification.",
+      "reference": "FAA AC 70-1B, Section 5"
+    },
+    {
+      "id": "c6-faa-004",
+      "type": "multiple_choice",
+      "question": "What is the purpose of the Letter of Determination (LOD) issued by the FAA?",
+      "options": [
+        "To grant a license to operate lasers commercially",
+        "To approve FDA variances for laser products",
+        "To state whether FAA has objection to proposed laser use",
+        "To issue NOTAMs automatically"
+      ],
+      "correct_answer": 2,
+      "explanation": "The LOD states either that FAA has no objection to the proposed laser use or that FAA objects with explanation.",
+      "reference": "FAA AC 70-1B, Section 4"
+    },
+    {
+      "id": "c6-faa-005",
+      "type": "multiple_choice",
+      "question": "Which SAE standard specifies performance criteria for electronic laser control measures used for aviation safety?",
+      "options": [
+        "SAE ARP5290",
+        "SAE ARP5535",
+        "SAE AS6029B",
+        "SAE AS4970"
+      ],
+      "correct_answer": 2,
+      "explanation": "SAE AS6029B provides the performance criteria for electronic protection systems used in lieu of safety observers.",
+      "reference": "FAA AC 70-1B, Section 6"
+    },
+    {
+      "id": "c6-faa-006",
+      "type": "true_false",
+      "question": "The contents of FAA Advisory Circular 70-1B have the force and effect of law.",
+      "correct_answer": false,
+      "explanation": "AC 70-1B explicitly states it does not have the force and effect of law and is not meant to bind the public. It provides clarity on existing requirements.",
+      "reference": "FAA AC 70-1B, Title Page"
+    },
+    {
+      "id": "c6-faa-007",
+      "type": "multiple_choice",
+      "question": "What is the wavelength range considered 'visible' for FAA laser notification purposes?",
+      "options": [
+        "380 nm to 780 nm",
+        "400 nm to 700 nm",
+        "450 nm to 650 nm",
+        "300 nm to 1400 nm"
+      ],
+      "correct_answer": 1,
+      "explanation": "FAA AC 70-1B defines visible wavelengths as 400 nm to 700 nm for notification and VCF calculations.",
+      "reference": "FAA AC 70-1B, Section 5"
+    },
+    {
+      "id": "c6-faa-008",
+      "type": "multiple_choice",
+      "question": "How far in advance should proponents submit FAA Form 7140-1 for temporary laser shows?",
+      "options": [
+        "At least 7 days",
+        "At least 14 days",
+        "At least 30 days",
+        "At least 60 days"
+      ],
+      "correct_answer": 2,
+      "explanation": "While not strictly mandated, FAA recommends submitting at least 30 days before planned operation to allow adequate processing time.",
+      "reference": "FAA AC 70-1B, best practice recommendation"
+    },
+    {
+      "id": "c6-faa-009",
+      "type": "multiple_choice",
+      "question": "Which document provides guidance for reporting laser illumination of aircraft?",
+      "options": [
+        "FAA AC 70-1B",
+        "FAA AC 70-2",
+        "FAA Order JO 7400.2",
+        "49 U.S.C. Section 40103"
+      ],
+      "correct_answer": 1,
+      "explanation": "FAA Advisory Circular 70-2 provides guidance for aircrews and ATC on reporting laser illumination incidents.",
+      "reference": "FAA AC 70-1B, Section 6 (Related Documents)"
+    },
+    {
+      "id": "c6-faa-010",
+      "type": "multiple_select",
+      "question": "Which of the following are required when using an electronic protection system in lieu of safety observers? (Select all that apply)",
+      "options": [
+        "Description in Section 6 of Form 7140-1",
+        "Certification that system meets SAE AS6029 performance criteria",
+        "FDA variance number",
+        "Additional technical documentation"
+      ],
+      "correct_answers": [0, 1, 3],
+      "explanation": "Electronic protection systems require description in Section 6, certification to SAE AS6029, and additional technical documentation. FDA variance is a separate requirement unrelated to the electronic protection system itself.",
+      "reference": "FAA AC 70-1B, Appendix A, Section A.8"
+    }
+  ]
+}

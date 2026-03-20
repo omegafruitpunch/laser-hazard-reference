@@ -1,0 +1,77 @@
+{
+  "course_id": "course-6",
+  "course_title": "Outdoor Laser Safety & Airspace",
+  "extraction_timestamp": "2026-03-19T15:46:00Z",
+  "processing_agent": "PDF Elite Processor Agent #16",
+  "pdfs": {
+    "international-outdoor-standards.pdf": {
+      "filename": "international-outdoor-standards.pdf",
+      "total_pages": 17,
+      "title": "Laser Safety Concepts for Aviation",
+      "author": "Patrick Murphy, LaserPointerSafety.com",
+      "key_topics": [
+        "Visual interference hazards (distraction, glare, flashblindness)",
+        "FAA and UK CAA incident statistics",
+        "NOHD (Nominal Ocular Hazard Distance) calculations",
+        "Laser protective eyewear for pilots",
+        "Federal regulations (18 USC 39A)",
+        "Critical flight phases vulnerability",
+        "Helicopter vs fixed-wing considerations"
+      ],
+      "summary": "Comprehensive review of laser safety concepts for pilots and aviation officials. Primary hazard is visual interference during critical flight phases, not eye injury. Zero documented permanent eye injuries in 20,000+ incidents. Covers distraction, glare, flashblindness effects; NOHD calculations with safety factors; pilot protective eyewear recommendations; and legal consequences of aiming lasers at aircraft."
+    },
+    "securing-outdoor-shows.pdf": {
+      "filename": "securing-outdoor-shows.pdf",
+      "total_pages": 4,
+      "title": "FAA Advisory Circular 70-2A",
+      "author": "U.S. Department of Transportation, FAA",
+      "key_topics": [
+        "Reporting of laser illumination of aircraft",
+        "ATC procedures for laser incidents",
+        "Aircrew reporting requirements",
+        "Domestic Events Network (DEN)",
+        "In-flight emergency classification",
+        "Laser Beam Exposure Questionnaire",
+        "Aircrew mitigation procedures"
+      ],
+      "summary": "FAA AC 70-2A provides guidance on reporting unauthorized laser illumination incidents. ATC treats laser incidents as in-flight emergencies. Details reporting procedures through DEN, ATC broadcast protocols (every 5 minutes for 20 minutes), ATIS broadcasts for 1 hour, and aircrew mitigation procedures including completing the Laser Beam Exposure Questionnaire."
+    },
+    "outdoor-hazard-calculations.pdf": {
+      "filename": "outdoor-hazard-calculations.pdf",
+      "total_pages": 48,
+      "title": "FAA Advisory Circular 70-1B",
+      "author": "U.S. Department of Transportation, FAA",
+      "key_topics": [
+        "Outdoor laser operations guidance",
+        "Flight zone classifications (LFZ, CFZ, SFZ, NFZ)",
+        "Visual interference hazard calculations",
+        "Beam divergence and atmospheric effects",
+        "Laser Free Zone (LFZ) restrictions",
+        "Sensitive Flight Zone (SFZ) requirements",
+        "Coordination with FAA for outdoor shows"
+      ],
+      "summary": "Comprehensive FAA guidance for planning outdoor laser operations affecting the National Airspace System. Defines four flight zones: Laser Free Zone (LFZ <2NM, <2000ft, <50 μW/cm²), Critical Flight Zone (CFZ), Sensitive Flight Zone (SFZ), and Normal Flight Zone (NFZ). Provides calculation methods for visual interference hazards and coordination requirements with FAA."
+    },
+    "notam-procedures.pdf": {
+      "filename": "notam-procedures.pdf",
+      "total_pages": 3,
+      "title": "FAA Form 7140-1",
+      "author": "U.S. Department of Transportation, FAA",
+      "key_topics": [
+        "Notice of Proposed Outdoor Laser Operation",
+        "FAA Form 7140-1 completion",
+        "NOTAM filing requirements",
+        "Laser hazard zone calculations",
+        "FAA coordination procedures"
+      ],
+      "summary": "FAA Form 7140-1 for notifying the FAA of proposed outdoor laser operations. Required for any outdoor laser operation that may affect navigable airspace. Form captures laser specifications, operation details, hazard calculations, and contact information for coordination with FAA Air Traffic."
+    }
+  },
+  "aggregated_stats": {
+    "total_pdfs": 4,
+    "total_pages": 72,
+    "total_quiz_items": 12,
+    "knowledge_graph_nodes": 20,
+    "knowledge_graph_edges": 20
+  }
+}

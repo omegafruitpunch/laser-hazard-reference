@@ -1,0 +1,40 @@
+{
+  "module_id": "course-1-module-1.5",
+  "course_id": "course-1",
+  "title": "Module 1.5: Engineering & Administrative Controls",
+  "subtitle": "Hierarchy of Controls and Implementation",
+  "description": "Master the hierarchy of laser safety controls from elimination to PPE. Learn to select, implement, and maintain engineering controls (interlocks, barriers, beam stops) and administrative controls (SOPs, training, signage). Features interactive control hierarchy exercise and virtual lab setup.",
+  "duration_minutes": 10,
+  "difficulty": "intermediate",
+  "learning_objectives": [
+    "Apply the hierarchy of controls to laser safety scenarios",
+    "Select appropriate engineering controls for laser classes",
+    "Design effective administrative control programs",
+    "Implement proper signage and labeling requirements",
+    "Evaluate control effectiveness and maintenance requirements"
+  ],
+  "prerequisites": [
+    "course-1-module-1.1",
+    "course-1-module-1.2",
+    "course-1-module-1.3",
+    "course-1-module-1.4"
+  ],
+  "completion_criteria": {
+    "quiz_pass_score": 80,
+    "interactive_exercises_completed": ["control_hierarchy", "virtual_lab_setup"],
+    "minimum_time_minutes": 8
+  },
+  "badge": {
+    "id": "control_specialist",
+    "name": "Control Systems Specialist",
+    "icon": "🔒",
+    "description": "Mastered laser safety control systems and implementation"
+  },
+  "keywords": ["engineering controls", "administrative controls", "hierarchy of controls", "interlocks", "barriers", "PPE", "signage", "SOPs"],
+  "standards_reference": ["ANSI Z136.1 Section 4.3", "ANSI Z136.1 Section 4.4", "21 CFR 1040.10"],
+  "research_alignment": {
+    "adult_learning": "Hands-on virtual lab for control implementation",
+    "brilliant_patterns": ["Drag-and-drop sorting", "Virtual simulation", "Consequence visualization"],
+    "retention_strategy": "Interactive lab setup with immediate feedback"
+  }
+}

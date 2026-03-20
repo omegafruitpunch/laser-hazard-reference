@@ -1,0 +1,209 @@
+{
+  "gestation_type": "Compliance Criteria Analysis",
+  "course": "Course 8: Entertainment Technology Standards",
+  "compliance_domains": {
+    "federal_compliance": {
+      "regulator": "FDA (CDRH)",
+      "regulation": "21 CFR 1040",
+      "criteria": [
+        {
+          "id": "FDA-VAR-001",
+          "requirement": "Variance required for Class IIIb/IV lasers in entertainment",
+          "compliance_indicator": "Approved variance number documented",
+          "verification_method": "Review variance certificate",
+          "frequency": "Per show type/operator"
+        },
+        {
+          "id": "FDA-NOT-001",
+          "requirement": "30-day advance notification to FDA",
+          "compliance_indicator": "Written notification sent and confirmed",
+          "verification_method": "Notification records",
+          "frequency": "Per show/tour"
+        },
+        {
+          "id": "FDA-CLS-001",
+          "requirement": "Laser classification labeling present",
+          "compliance_indicator": "Class label visible on equipment",
+          "verification_method": "Physical inspection",
+          "frequency": "Per equipment"
+        },
+        {
+          "id": "FDA-SFT-001",
+          "requirement": "Safety features functional per class requirements",
+          "compliance_indicator": "All required interlocks/keys operational",
+          "verification_method": "Functional testing",
+          "frequency": "Per show"
+        }
+      ]
+    },
+    "aviation_compliance": {
+      "regulator": "FAA",
+      "applicability": "Outdoor laser operations",
+      "criteria": [
+        {
+          "id": "FAA-NOT-001",
+          "requirement": "2-4 weeks advance notification",
+          "compliance_indicator": "Written notification to regional office",
+          "verification_method": "Notification records",
+          "frequency": "Per outdoor show"
+        },
+        {
+          "id": "FAA-PWR-001",
+          "requirement": "Power limitations based on airspace",
+          "compliance_indicator": "Laser power documented, FAA response received",
+          "verification_method": "FAA determination letter",
+          "frequency": "Per outdoor location"
+        },
+        {
+          "id": "FAA-ZON-001",
+          "requirement": "Critical Flight Zone (CFZ) restrictions",
+          "compliance_indicator": "Beams do not enter restricted zones",
+          "verification_method": "Site assessment and beam plots",
+          "frequency": "Per outdoor show"
+        }
+      ]
+    },
+    "state_local_compliance": {
+      "regulator": "State Radiation Control / Local Authorities",
+      "criteria": [
+        {
+          "id": "STL-NOT-001",
+          "requirement": "State radiation office notification",
+          "compliance_indicator": "Written notification submitted",
+          "verification_method": "Notification records",
+          "frequency": "Varies by state"
+        },
+        {
+          "id": "STL-LIC-001",
+          "requirement": "Local laser display license/permit",
+          "compliance_indicator": "Valid license/permit on file",
+          "verification_method": "License document",
+          "frequency": "Per jurisdiction requirements"
+        },
+        {
+          "id": "STL-INS-001",
+          "requirement": "State inspection compliance",
+          "compliance_indicator": "Pass inspection if conducted",
+          "verification_method": "Inspection records",
+          "frequency": "As required by state"
+        }
+      ]
+    },
+    "technical_compliance": {
+      "standards": ["ANSI Z136.1", "ANSI E1.46"],
+      "criteria": [
+        {
+          "id": "TEC-MPE-001",
+          "requirement": "MPE not exceeded at audience locations",
+          "compliance_indicator": "MPE calculations and measurements documented",
+          "verification_method": "Calculation review, irradiance measurements",
+          "frequency": "Per installation"
+        },
+        {
+          "id": "TEC-DST-001",
+          "requirement": "Separation distances maintained",
+          "compliance_indicator": "3m vertical (attended) or 6m (unattended), 2.5m horizontal",
+          "verification_method": "Physical measurement",
+          "frequency": "Per installation"
+        },
+        {
+          "id": "TEC-SFD-001",
+          "requirement": "Scan failure detection operational",
+          "compliance_indicator": "Auto-shutdown within milliseconds",
+          "verification_method": "Simulated fault testing",
+          "frequency": "Before each show"
+        },
+        {
+          "id": "TEC-EST-001",
+          "requirement": "Emergency stop functional and accessible",
+          "compliance_indicator": "E-stop tested, accessible to LSO",
+          "verification_method": "Functional test before show",
+          "frequency": "Before each performance"
+        },
+        {
+          "id": "TEC-ODR-001",
+          "requirement": "Optical density calculations for eyewear",
+          "compliance_indicator": "Appropriate OD for laser wavelengths",
+          "verification_method": "Calculation verification",
+          "frequency": "Per laser system"
+        }
+      ]
+    },
+    "operational_compliance": {
+      "criteria": [
+        {
+          "id": "OPS-LSO-001",
+          "requirement": "LSO appointed with executive authority",
+          "compliance_indicator": "LSO identified, qualified, on-site",
+          "verification_method": "Personnel records, qualification verification",
+          "frequency": "Per show"
+        },
+        {
+          "id": "OPS-TRN-001",
+          "requirement": "Operators trained and competent",
+          "compliance_indicator": "Training records current",
+          "verification_method": "Training documentation review",
+          "frequency": "Ongoing"
+        },
+        {
+          "id": "OPS-DOC-001",
+          "requirement": "Hand-over documentation complete",
+          "compliance_indicator": "All required documents present",
+          "verification_method": "Documentation checklist",
+          "frequency": "Per installation"
+        },
+        {
+          "id": "OPS-CHK-001",
+          "requirement": "Pre-show safety checks completed",
+          "compliance_indicator": "Checklist signed, dated",
+          "verification_method": "Pre-show checklist review",
+          "frequency": "Before each performance"
+        },
+        {
+          "id": "OPS-EMR-001",
+          "requirement": "Emergency procedures established",
+          "compliance_indicator": "Written procedures, personnel trained",
+          "verification_method": "Procedure review, training verification",
+          "frequency": "Per venue"
+        }
+      ]
+    }
+  },
+  "compliance_matrix": {
+    "show_types": {
+      "indoor_audience_scanning": ["FDA-VAR-001", "FDA-NOT-001", "TEC-MPE-001", "TEC-SFD-001", "OPS-LSO-001", "OPS-TRN-001"],
+      "indoor_no_audience": ["FDA-NOT-001", "TEC-DST-001", "OPS-LSO-001"],
+      "outdoor_beam_only": ["FDA-NOT-001", "FAA-NOT-001", "FAA-ZON-001", "OPS-LSO-001"],
+      "outdoor_audience": ["FDA-VAR-001", "FDA-NOT-001", "FAA-NOT-001", "FAA-_PWR-001", "TEC-MPE-001", "TEC-SFD-001", "OPS-LSO-001"],
+      "touring_show": ["FDA-VAR-001", "FDA-NOT-001", "STL-NOT-001", "OPS-LSO-001", "OPS-DOC-001"]
+    }
+  },
+  "audit_checklist": {
+    "pre_event": [
+      "Verify FDA variance (if required)",
+      "Confirm FDA notification sent",
+      "Confirm FAA notification (outdoor)",
+      "Verify state/local permits",
+      "Review MPE calculations",
+      "Confirm LSO appointment",
+      "Verify operator training"
+    ],
+    "on_site": [
+      "Verify separation distances",
+      "Test scan failure detection",
+      "Test emergency stop systems",
+      "Confirm access controls",
+      "Review emergency procedures",
+      "Complete pre-show checklist"
+    ],
+    "post_event": [
+      "Document any incidents",
+      "Record show completion",
+      "Update maintenance logs",
+      "File documentation"
+    ]
+  },
+  "version": "1.0",
+  "generated_by": "PDF Elite Processor Agent #19",
+  "timestamp": "2026-03-19T15:46:00Z"
+}

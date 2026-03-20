@@ -1,0 +1,47 @@
+{
+  "id": "interlock-requirements",
+  "title": "Interlock Requirements: Manufacturing vs End User",
+  "source": "state-federal-jurisdiction.pdf",
+  "content": "Manufacturer Mandate:\n\nThere is a legal mandate in FLPPS (21 CFR 1040.10) requiring manufacturers to provide an external interlock on all commercial Class 3B and Class 4 lasers.\n\nEnd User Gap:\n\nInterestingly, there is NO federal legal mandate requiring the end client to actually USE the interlock. The interlock connector typically comes from the manufacturer in an electrically shorted state.\n\nPractical Consequences:\n\nThis gap means lasers are often placed into service without proper interlock system configuration. The safety responsibility falls on the employer and Laser Safety Officer.\n\nWhy No End User Mandate?\n\nThere are thousands of possible laser applications, making a one-size-fits-all mandate impractical. The responsibility shifts to the LSO to monitor and enforce laser safety issues.\n\nLSO Responsibilities:\n\nThe laser safety officer must:\n- Monitor laser safety compliance\n- Enforce safety protocols\n- Ensure interlocks are properly configured when appropriate\n- Address the increased risks from DIY laser construction",
+  "surprising_fact": {
+    "fact": "The interlock connector on your Class 4 laser probably came from the manufacturer already shorted (disabled).",
+    "why": "There's no federal mandate requiring users to connect interlocks, only that manufacturers provide them.",
+    "implication": "The safety responsibility falls on YOU and your LSO to properly configure interlocks."
+  },
+  "manufacturer_vs_user_comparison": {
+    "manufacturer_must": [
+      "Provide external interlock connector",
+      "Design interlock to disable laser when open",
+      "Document interlock specifications"
+    ],
+    "user_should": [
+      "Connect interlock to appropriate safety system",
+      "Test interlock functionality regularly",
+      "Document interlock configuration in SOPs"
+    ],
+    "legal_reality": "Manufacturer compliance is MANDATORY; user interlock usage is RECOMMENDED but not legally required by FDA"
+  },
+  "why_no_mandate_explained": {
+    "reason": "There are thousands of possible laser applications, making a one-size-fits-all mandate impractical.",
+    "examples": [
+      "Research lab may need interlock to fume hood",
+      "Manufacturing may need interlock to E-stop system", 
+      "Entertainment may need interlock to venue security",
+      "Medical may need interlock to room door"
+    ],
+    "result": "Responsibility shifts to the LSO to determine appropriate interlock configuration for each application"
+  },
+  "lso_action_items": {
+    "title": "LSO Checklist for Interlock Compliance",
+    "items": [
+      {"action": "Verify interlock connector exists on all Class 3B/4 lasers", "frequency": "Upon receipt"},
+      {"action": "Test interlock functionality", "frequency": "During installation and periodically"},
+      {"action": "Configure interlock to appropriate safety system", "frequency": "During installation"},
+      {"action": "Document interlock configuration", "frequency": "In SOPs and safety plan"},
+      {"action": "Train operators on interlock purpose and function", "frequency": "Initial and refresher"}
+    ]
+  },
+  "key_concepts": ["FLPPS interlock mandate", "End user responsibility", "Laser Safety Officer duties", "Shorted interlock connectors", "Regulatory gap"],
+  "authority_level": "federal",
+  "difficulty": "advanced"
+}

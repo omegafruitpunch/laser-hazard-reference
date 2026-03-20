@@ -1,0 +1,59 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 12,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Key control requirements",
+      "Beam attenuator specifications",
+      "Operating controls location",
+      "Viewing optics requirements",
+      "Scanning safeguard requirements"
+    ],
+    "key_terms": [
+      {
+        "term": "Key Control",
+        "definition": "Removable key preventing unauthorized use of Class IIIb/IV products"
+      },
+      {
+        "term": "Beam Attenuator",
+        "definition": "Device reducing beam to Class I levels without turning off laser"
+      },
+      {
+        "term": "Emission Indicator",
+        "definition": "Visible/audible warning of Class IIIa/IIIb/IV laser emission"
+      },
+      {
+        "term": "Fail-Safe Shutter",
+        "definition": "Defaults to blocking position upon failure"
+      },
+      {
+        "term": "Scanning Safeguard",
+        "definition": "Prevents emission exceeding class limits if scanning fails"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.10(f)(4) - Key control",
+      "21 CFR 1040.10(f)(5) - Emission indicator",
+      "21 CFR 1040.10(f)(6) - Beam attenuator",
+      "21 CFR 1040.10(f)(7) - Operating controls location",
+      "21 CFR 1040.10(f)(8) - Viewing optics",
+      "21 CFR 1040.10(f)(9) - Scanning safeguard"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Implement key control systems",
+      "Design beam attenuators",
+      "Position operating controls safely",
+      "Ensure viewing optics compliance",
+      "Design scanning safeguards"
+    ],
+    "prerequisites": [
+      "Pages 10-11 content"
+    ],
+    "estimated_study_time_minutes": 35,
+    "content_type": "performance_requirements",
+    "has_tables": false
+  }
+}

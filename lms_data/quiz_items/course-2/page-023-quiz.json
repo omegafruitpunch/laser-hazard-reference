@@ -1,0 +1,33 @@
+{
+  "course": "course-2",
+  "page_number": 23,
+  "quiz_items": [
+    {
+      "id": "C2-P23-Q1",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "What is a variance for laser light shows?",
+      "options": [
+        "A discount on FDA filing fees",
+        "Formal permission to deviate from Class IIIa demonstration limits for laser shows",
+        "An exemption from all safety requirements",
+        "A type of laser projector certification"
+      ],
+      "correct_answer": 1,
+      "explanation": "A variance is formal permission to deviate from a requirement of the regulations - specifically to use laser radiation levels exceeding Class IIIa limits for demonstration laser products.",
+      "learning_objective": "Define variance for laser shows",
+      "regulatory_reference": "21 CFR 1010.4, Appendix B"
+    },
+    {
+      "id": "C2-P23-Q2",
+      "type": "true_false",
+      "difficulty": "intermediate",
+      "question": "A variance for laser light shows can be transferred from one manufacturer to another.",
+      "options": ["True", "False"],
+      "correct_answer": 1,
+      "explanation": "False. A variance is a special performance standard limited to specific products by the variance holder. It is not transferrable between manufacturers.",
+      "learning_objective": "Understand variance limitations",
+      "regulatory_reference": "Appendix B - Variance Non-Transferability"
+    }
+  ]
+}

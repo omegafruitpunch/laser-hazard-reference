@@ -1,0 +1,51 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 22,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Appendix A footnotes continuation",
+      "Detailed requirement clarifications",
+      "Interlock variations by class",
+      "Warning label specifications"
+    ],
+    "key_terms": [
+      {
+        "term": "Footnote 4",
+        "definition": "Interlock requirements vary by internal radiation class"
+      },
+      {
+        "term": "Footnote 8",
+        "definition": "Medical lasers require radiation measurement system"
+      },
+      {
+        "term": "Footnote 11",
+        "definition": "Class IIIb/IV demonstration products require variance"
+      },
+      {
+        "term": "Footnote 12",
+        "definition": "DANGER logotype required"
+      },
+      {
+        "term": "Footnote 13",
+        "definition": "Reset requirement effective August 20, 1986"
+      }
+    ],
+    "regulatory_references": [
+      "Appendix A Footnotes 1-13"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Interpret matrix footnotes",
+      "Apply special requirements",
+      "Understand effective dates"
+    ],
+    "prerequisites": [
+      "Page 21 content"
+    ],
+    "estimated_study_time_minutes": 15,
+    "content_type": "reference_table",
+    "has_tables": true
+  }
+}

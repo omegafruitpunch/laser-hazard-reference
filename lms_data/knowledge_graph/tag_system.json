@@ -1,0 +1,490 @@
+{
+  "version": "1.0",
+  "created_at": "2026-03-19T15:46:17Z",
+  "created_by": "Knowledge Graph Assembler Agent B",
+  "tag_categories": {
+    "difficulty": {
+      "description": "Concept complexity level",
+      "tags": {
+        "beginner": {
+          "id": "diff_beginner",
+          "name": "Beginner",
+          "description": "Fundamental concepts suitable for all personnel",
+          "color": "#4CAF50",
+          "icon": "🌱",
+          "estimated_time_minutes": "5-15",
+          "prerequisites_count": 0,
+          "concept_count": 32
+        },
+        "intermediate": {
+          "id": "diff_intermediate",
+          "name": "Intermediate",
+          "description": "Concepts requiring foundational knowledge",
+          "color": "#FF9800",
+          "icon": "🌿",
+          "estimated_time_minutes": "15-30",
+          "prerequisites_count": "1-3",
+          "concept_count": 66
+        },
+        "advanced": {
+          "id": "diff_advanced",
+          "name": "Advanced",
+          "description": "Complex concepts for experienced practitioners",
+          "color": "#F44336",
+          "icon": "🌳",
+          "estimated_time_minutes": "30-60",
+          "prerequisites_count": "3+",
+          "concept_count": 29
+        }
+      }
+    },
+    "topic": {
+      "description": "Subject matter area",
+      "tags": {
+        "calculations": {
+          "id": "topic_calculations",
+          "name": "Calculations",
+          "description": "Mathematical and computational concepts",
+          "color": "#2196F3",
+          "icon": "📐",
+          "related_tags": ["physics", "safety"],
+          "concept_count": 18,
+          "concepts": ["concept_001", "concept_002", "concept_003", "concept_004", "concept_007", "concept_015", "concept_024", "concept_025"]
+        },
+        "regulations": {
+          "id": "topic_regulations",
+          "name": "Regulations",
+          "description": "Legal and regulatory requirements",
+          "color": "#9C27B0",
+          "icon": "⚖️",
+          "related_tags": ["safety", "certification"],
+          "concept_count": 22,
+          "concepts": ["concept_033", "concept_031", "concept_036", "concept_040", "concept_046", "concept_047", "concept_048", "concept_063", "concept_064"]
+        },
+        "safety": {
+          "id": "topic_safety",
+          "name": "Safety",
+          "description": "General safety concepts and practices",
+          "color": "#4CAF50",
+          "icon": "🛡️",
+          "related_tags": ["regulations", "biology", "engineering"],
+          "concept_count": 35,
+          "concepts": ["concept_001", "concept_009", "concept_016", "concept_026", "concept_027", "concept_028", "concept_068", "concept_069"]
+        },
+        "biology": {
+          "id": "topic_biology",
+          "name": "Biology",
+          "description": "Biological effects and tissue interactions",
+          "color": "#E91E63",
+          "icon": "🧬",
+          "related_tags": ["safety", "physics"],
+          "concept_count": 16,
+          "concepts": ["concept_013", "concept_014", "concept_020", "concept_021", "concept_022", "concept_023", "concept_056", "concept_057", "concept_058", "concept_059"]
+        },
+        "physics": {
+          "id": "topic_physics",
+          "name": "Physics",
+          "description": "Physical principles and properties",
+          "color": "#3F51B5",
+          "icon": "⚛️",
+          "related_tags": ["calculations", "biology"],
+          "concept_count": 14,
+          "concepts": ["concept_005", "concept_006", "concept_007", "concept_008", "concept_015", "concept_024"]
+        },
+        "engineering": {
+          "id": "topic_engineering",
+          "name": "Engineering",
+          "description": "Engineering controls and technical systems",
+          "color": "#795548",
+          "icon": "⚙️",
+          "related_tags": ["safety", "calculations"],
+          "concept_count": 12,
+          "concepts": ["concept_017", "concept_026", "concept_034", "concept_055"]
+        },
+        "procedures": {
+          "id": "topic_procedures",
+          "name": "Procedures",
+          "description": "Operational procedures and protocols",
+          "color": "#607D8B",
+          "icon": "📋",
+          "related_tags": ["safety", "regulations"],
+          "concept_count": 15,
+          "concepts": ["concept_027", "concept_067", "concept_070", "concept_073"]
+        },
+        "standards": {
+          "id": "topic_standards",
+          "name": "Standards",
+          "description": "Industry and international standards",
+          "color": "#00BCD4",
+          "icon": "📜",
+          "related_tags": ["regulations", "certification"],
+          "concept_count": 14,
+          "concepts": ["concept_029", "concept_030", "concept_035", "concept_041", "concept_083", "concept_097", "concept_098"]
+        }
+      }
+    },
+    "certification": {
+      "description": "Relevant certification programs",
+      "tags": {
+        "clso": {
+          "id": "cert_clso",
+          "name": "CLSO",
+          "full_name": "Certified Laser Safety Officer",
+          "description": "Professional certification for laser safety officers",
+          "color": "#FFD700",
+          "icon": "🏆",
+          "governing_body": "Board of Laser Safety",
+          "required_concepts": ["concept_001", "concept_002", "concept_009", "concept_010", "concept_020", "concept_021", "concept_029", "concept_033", "concept_068"],
+          "concept_count": 45,
+          "exam_topics": ["Fundamentals", "Bioeffects", "Calculations", "Controls", "Regulations", "Medical"]
+        },
+        "cmlso": {
+          "id": "cert_cmlso",
+          "name": "CMLSO",
+          "full_name": "Certified Medical Laser Safety Officer",
+          "description": "Specialized certification for medical laser safety",
+          "color": "#FF6B6B",
+          "icon": "🏥",
+          "governing_body": "Board of Laser Safety",
+          "required_concepts": ["concept_001", "concept_009", "concept_010", "concept_056", "concept_057", "concept_077", "concept_072"],
+          "concept_count": 38,
+          "exam_topics": ["Fundamentals", "Medical Applications", "Bioeffects", "Clinical Safety", "Regulations"],
+          "prerequisites": ["Clinical experience or CLSO"]
+        },
+        "lso": {
+          "id": "cert_lso",
+          "name": "LSO",
+          "full_name": "Laser Safety Officer",
+          "description": "Organization-level laser safety responsibility",
+          "color": "#4ECDC4",
+          "icon": "👤",
+          "governing_body": "Varies by organization",
+          "required_concepts": ["concept_009", "concept_010", "concept_026", "concept_027", "concept_068", "concept_069", "concept_070"],
+          "concept_count": 25,
+          "exam_topics": ["Responsibilities", "Hazard Evaluation", "Controls", "Training"]
+        },
+        "basic_laser_safety": {
+          "id": "cert_basic",
+          "name": "Basic Laser Safety",
+          "description": "Entry-level laser safety awareness",
+          "color": "#95E1D3",
+          "icon": "📚",
+          "governing_body": "Various",
+          "required_concepts": ["concept_005", "concept_008", "concept_010", "concept_012", "concept_018"],
+          "concept_count": 12,
+          "exam_topics": ["Basics", "Hazards", "Controls", "PPE"]
+        }
+      }
+    },
+    "application": {
+      "description": "Industry application area",
+      "tags": {
+        "medical": {
+          "id": "app_medical",
+          "name": "Medical",
+          "description": "Healthcare and clinical applications",
+          "color": "#E74C3C",
+          "icon": "💉",
+          "related_tags": ["certification_cmlso", "topic_biology"],
+          "concept_count": 28,
+          "concepts": ["concept_077", "concept_072", "concept_056", "concept_057", "concept_001", "concept_016"],
+          "key_standards": ["ANSI Z136.3", "IEC 60601-2-22"]
+        },
+        "industrial": {
+          "id": "app_industrial",
+          "name": "Industrial",
+          "description": "Manufacturing and material processing",
+          "color": "#3498DB",
+          "icon": "🏭",
+          "related_tags": ["topic_engineering", "topic_calculations"],
+          "concept_count": 22,
+          "concepts": ["concept_026", "concept_017", "concept_055", "concept_002", "concept_098"],
+          "key_standards": ["ANSI Z136.9", "ISO 11553"]
+        },
+        "entertainment": {
+          "id": "app_entertainment",
+          "name": "Entertainment",
+          "description": "Laser shows and displays",
+          "color": "#9B59B6",
+          "icon": "🎭",
+          "related_tags": ["certification_cmlso", "topic_regulations"],
+          "concept_count": 32,
+          "concepts": ["concept_030", "concept_032", "concept_031", "concept_042", "concept_044", "concept_078"],
+          "key_standards": ["ANSI Z136.10", "ANSI E1.46"]
+        },
+        "research": {
+          "id": "app_research",
+          "name": "Research",
+          "description": "Scientific and laboratory applications",
+          "color": "#2ECC71",
+          "icon": "🔬",
+          "related_tags": ["topic_physics", "topic_calculations"],
+          "concept_count": 24,
+          "concepts": ["concept_005", "concept_007", "concept_015", "concept_026", "concept_027"],
+          "key_standards": ["ANSI Z136.8"]
+        },
+        "military": {
+          "id": "app_military",
+          "name": "Military",
+          "description": "Defense and aerospace applications",
+          "color": "#34495E",
+          "icon": "🎖️",
+          "related_tags": ["topic_regulations", "topic_safety"],
+          "concept_count": 18,
+          "concepts": ["concept_036", "concept_037", "concept_040", "concept_002"],
+          "key_standards": ["ANSI Z136.6", "MIL-STD"]
+        },
+        "education": {
+          "id": "app_education",
+          "name": "Education",
+          "description": "Teaching and academic settings",
+          "color": "#F39C12",
+          "icon": "🎓",
+          "related_tags": ["topic_safety", "certification_basic"],
+          "concept_count": 15,
+          "concepts": ["concept_010", "concept_012", "concept_018", "concept_070"],
+          "key_standards": ["ANSI Z136.5"]
+        }
+      }
+    },
+    "concept_type": {
+      "description": "Type of knowledge concept",
+      "tags": {
+        "safety_parameter": {
+          "id": "type_safety_param",
+          "name": "Safety Parameter",
+          "description": "Quantified safety limits and values",
+          "color": "#E8F5E9",
+          "concept_count": 8
+        },
+        "calculation": {
+          "id": "type_calculation",
+          "name": "Calculation",
+          "description": "Mathematical procedures and formulas",
+          "color": "#E3F2FD",
+          "concept_count": 12
+        },
+        "laser_class": {
+          "id": "type_laser_class",
+          "name": "Laser Class",
+          "description": "Laser classification categories",
+          "color": "#FFF3E0",
+          "concept_count": 10
+        },
+        "regulation": {
+          "id": "type_regulation",
+          "name": "Regulation",
+          "description": "Legal and regulatory requirements",
+          "color": "#F3E5F5",
+          "concept_count": 15
+        },
+        "standard": {
+          "id": "type_standard",
+          "name": "Standard",
+          "description": "Industry and technical standards",
+          "color": "#E0F7FA",
+          "concept_count": 14
+        },
+        "control_measure": {
+          "id": "type_control",
+          "name": "Control Measure",
+          "description": "Safety control and mitigation methods",
+          "color": "#E8EAF6",
+          "concept_count": 18
+        },
+        "role": {
+          "id": "type_role",
+          "name": "Role",
+          "description": "Personnel roles and responsibilities",
+          "color": "#FBE9E7",
+          "concept_count": 6
+        },
+        "damage_mechanism": {
+          "id": "type_damage",
+          "name": "Damage Mechanism",
+          "description": "Biological damage processes",
+          "color": "#FFEBEE",
+          "concept_count": 6
+        },
+        "anatomy": {
+          "id": "type_anatomy",
+          "name": "Anatomy",
+          "description": "Biological structures and tissues",
+          "color": "#FCE4EC",
+          "concept_count": 4
+        },
+        "physics_fundamental": {
+          "id": "type_physics",
+          "name": "Physics Fundamental",
+          "description": "Basic physical principles",
+          "color": "#E8EAF6",
+          "concept_count": 6
+        }
+      }
+    },
+    "course": {
+      "description": "Source course",
+      "tags": {
+        "course_1": {
+          "id": "course_1",
+          "name": "Course 1: Laser Safety Fundamentals",
+          "description": "Foundational laser safety concepts",
+          "color": "#1abc9c",
+          "concept_count": 35
+        },
+        "course_2": {
+          "id": "course_2",
+          "name": "Course 2: FDA Regulatory Compliance",
+          "description": "FDA regulations and product requirements",
+          "color": "#3498db",
+          "concept_count": 32
+        },
+        "course_3": {
+          "id": "course_3",
+          "name": "Course 3: Biological Hazards",
+          "description": "Tissue interactions and bioeffects",
+          "color": "#9b59b6",
+          "concept_count": 28
+        },
+        "course_4": {
+          "id": "course_4",
+          "name": "Course 4: State Regulations",
+          "description": "State-specific laser requirements",
+          "color": "#e74c3c",
+          "concept_count": 15
+        },
+        "course_5": {
+          "id": "course_5",
+          "name": "Course 5: International Standards",
+          "description": "Global standards and international shows",
+          "color": "#f1c40f",
+          "concept_count": 38
+        },
+        "course_6": {
+          "id": "course_6",
+          "name": "Course 6: Outdoor & Airspace Safety",
+          "description": "Aviation and outdoor laser operations",
+          "color": "#e67e22",
+          "concept_count": 22
+        },
+        "course_7": {
+          "id": "course_7",
+          "name": "Course 7: Event Safety",
+          "description": "Event safety planning and management",
+          "color": "#2ecc71",
+          "concept_count": 12
+        },
+        "course_8": {
+          "id": "course_8",
+          "name": "Course 8: Entertainment Technology",
+          "description": "Entertainment-specific standards and practices",
+          "color": "#1abc9c",
+          "concept_count": 25
+        }
+      }
+    }
+  },
+  "tag_relationships": {
+    "implied_tags": {
+      "cert_clso": ["diff_intermediate", "diff_advanced", "topic_safety", "topic_regulations"],
+      "cert_cmlso": ["diff_advanced", "topic_safety", "topic_biology", "app_medical"],
+      "app_entertainment": ["cert_cmlso", "topic_regulations", "topic_safety"],
+      "app_medical": ["cert_cmlso", "topic_biology", "topic_safety"],
+      "topic_calculations": ["diff_intermediate", "diff_advanced"],
+      "type_calculation": ["topic_calculations"]
+    },
+    "conflicting_tags": [
+      ["diff_beginner", "diff_advanced"],
+      ["app_medical", "app_entertainment"]
+    ],
+    "recommended_combinations": [
+      {
+        "tags": ["topic_safety", "topic_regulations", "cert_clso"],
+        "reason": "Essential for CLSO certification"
+      },
+      {
+        "tags": ["app_entertainment", "topic_regulations", "topic_calculations"],
+        "reason": "Complete entertainment laser competency"
+      },
+      {
+        "tags": ["topic_biology", "app_medical", "cert_cmlso"],
+        "reason": "Medical laser safety specialization"
+      }
+    ]
+  },
+  "search_filters": {
+    "by_difficulty": {
+      "param": "difficulty",
+      "options": ["beginner", "intermediate", "advanced"],
+      "multi_select": true
+    },
+    "by_topic": {
+      "param": "topic",
+      "options": ["calculations", "regulations", "safety", "biology", "physics", "engineering", "procedures", "standards"],
+      "multi_select": true
+    },
+    "by_certification": {
+      "param": "certification",
+      "options": ["clso", "cmlso", "lso", "basic_laser_safety"],
+      "multi_select": true
+    },
+    "by_application": {
+      "param": "application",
+      "options": ["medical", "industrial", "entertainment", "research", "military", "education"],
+      "multi_select": true
+    },
+    "by_concept_type": {
+      "param": "type",
+      "options": ["safety_parameter", "calculation", "laser_class", "regulation", "standard", "control_measure", "role", "damage_mechanism"],
+      "multi_select": true
+    },
+    "by_course": {
+      "param": "course",
+      "options": ["course-1", "course-2", "course-3", "course-4", "course-5", "course-6", "course-7", "course-8"],
+      "multi_select": true
+    }
+  },
+  "tag_statistics": {
+    "total_concepts": 127,
+    "total_tags": 42,
+    "average_tags_per_concept": 3.5,
+    "most_common_tags": [
+      {"tag": "topic_safety", "count": 35},
+      {"tag": "diff_intermediate", "count": 66},
+      {"tag": "course_1", "count": 35},
+      {"tag": "cert_clso", "count": 45}
+    ],
+    "tag_distribution": {
+      "difficulty": {"beginner": 32, "intermediate": 66, "advanced": 29},
+      "topic": {"safety": 35, "regulations": 22, "calculations": 18, "biology": 16, "standards": 14, "physics": 14, "procedures": 15, "engineering": 12}
+    }
+  },
+  "tag_api": {
+    "get_tags": {
+      "method": "GET",
+      "path": "/api/v1/tags",
+      "parameters": {
+        "category": "difficulty|topic|certification|application|concept_type|course",
+        "include_stats": "boolean"
+      }
+    },
+    "filter_by_tags": {
+      "method": "POST",
+      "path": "/api/v1/concepts/filter",
+      "parameters": {
+        "tags": ["string"],
+        "operator": "AND|OR",
+        "include_related": "boolean"
+      }
+    },
+    "get_concept_tags": {
+      "method": "GET",
+      "path": "/api/v1/concepts/{concept_id}/tags",
+      "response": {
+        "concept_id": "string",
+        "tags": ["tag_object"],
+        "implied_tags": ["tag_object"]
+      }
+    }
+  }
+}

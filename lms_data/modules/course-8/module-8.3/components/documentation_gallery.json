@@ -1,0 +1,150 @@
+{
+  "component_id": "documentation_gallery",
+  "name": "Documentation Template Gallery",
+  "type": "interactive_templates",
+  "description": "Interactive safety documentation templates with guided completion",
+  "templates": [
+    {
+      "id": "risk_assessment",
+      "name": "Risk Assessment Template",
+      "description": "Comprehensive hazard identification and risk evaluation",
+      "sections": [
+        {
+          "title": "1. Installation Details",
+          "fields": [
+            {"id": "ra_location", "label": "Installation Location", "type": "text", "required": true},
+            {"id": "ra_date", "label": "Assessment Date", "type": "date", "required": true},
+            {"id": "ra_lso", "label": "LSO Name", "type": "text", "required": true}
+          ]
+        },
+        {
+          "title": "2. Equipment Information",
+          "fields": [
+            {"id": "ra_manufacturer", "label": "Laser Manufacturer", "type": "text", "required": true},
+            {"id": "ra_model", "label": "Model", "type": "text", "required": true},
+            {"id": "ra_wavelength", "label": "Wavelength(s)", "type": "text", "required": true, "placeholder": "e.g., 532 nm"},
+            {"id": "ra_power", "label": "Power Output", "type": "text", "required": true, "placeholder": "e.g., 5W"},
+            {"id": "ra_class", "label": "Laser Class", "type": "select", "options": ["Class 1", "Class 2", "Class 3R", "Class 3B", "Class 4"], "required": true}
+          ]
+        },
+        {
+          "title": "3. Hazard Identification",
+          "fields": [
+            {"id": "ra_beam_hazards", "label": "Beam Hazards", "type": "checkbox_group", "options": ["Direct exposure", "Specular reflection", "Diffuse reflection", "Eye injury risk", "Skin burn risk"]},
+            {"id": "ra_nonbeam_hazards", "label": "Non-Beam Hazards", "type": "checkbox_group", "options": ["Electrical", "Chemical", "Fire", "Ergonomic"]},
+            {"id": "ra_exposure_scenarios", "label": "Exposure Scenarios", "type": "textarea", "placeholder": "Describe potential exposure situations"}
+          ]
+        },
+        {
+          "title": "4. Risk Evaluation",
+          "fields": [
+            {"id": "ra_probability", "label": "Probability of Exposure", "type": "select", "options": ["Negligible", "Low", "Medium", "High"]},
+            {"id": "ra_severity", "label": "Severity of Harm", "type": "select", "options": ["Negligible", "Minor", "Serious", "Severe"]},
+            {"id": "ra_risk_level", "label": "Overall Risk Level", "type": "calculated", "calculation": "probability × severity matrix"}
+          ]
+        },
+        {
+          "title": "5. Control Measures",
+          "fields": [
+            {"id": "ra_eng_controls", "label": "Engineering Controls", "type": "textarea", "placeholder": "List physical controls (interlocks, enclosures, etc.)"},
+            {"id": "ra_admin_controls", "label": "Administrative Controls", "type": "textarea", "placeholder": "List procedures, training, signage"},
+            {"id": "ra_ppe", "label": "PPE Requirements", "type": "textarea", "placeholder": "List required personal protective equipment"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "handover_checklist",
+      "name": "Hand-Over Documentation",
+      "description": "Required documentation for transferring responsibility",
+      "sections": [
+        {
+          "title": "Equipment Details",
+          "fields": [
+            {"id": "ho_manufacturer", "label": "Manufacturer", "type": "text", "required": true},
+            {"id": "ho_model", "label": "Model", "type": "text", "required": true},
+            {"id": "ho_serial", "label": "Serial Number", "type": "text", "required": true},
+            {"id": "ho_power", "label": "Power Output", "type": "text", "required": true},
+            {"id": "ho_class", "label": "Classification", "type": "text", "required": true}
+          ]
+        },
+        {
+          "title": "Safety Systems",
+          "fields": [
+            {"id": "ho_interlocks", "label": "Interlocks Present", "type": "checkbox"},
+            {"id": "ho_estops", "label": "Emergency Stops", "type": "text", "placeholder": "Location and function"},
+            {"id": "ho_scanfail", "label": "Scan Failure Detection", "type": "checkbox"},
+            {"id": "ho_blanking", "label": "Blanking/Masking", "type": "text", "placeholder": "Description"}
+          ]
+        },
+        {
+          "title": "Operating Procedures",
+          "fields": [
+            {"id": "ho_startup", "label": "Startup Procedure", "type": "textarea"},
+            {"id": "ho_normal", "label": "Normal Operation", "type": "textarea"},
+            {"id": "ho_emergency", "label": "Emergency Shutdown", "type": "textarea"},
+            {"id": "ho_maintenance", "label": "Maintenance Requirements", "type": "textarea"}
+          ]
+        },
+        {
+          "title": "Sign-offs",
+          "fields": [
+            {"id": "ho_installer", "label": "Installer Signature", "type": "text"},
+            {"id": "ho_lso", "label": "LSO Signature", "type": "text"},
+            {"id": "ho_operator", "label": "Operator Signature", "type": "text"},
+            {"id": "ho_date", "label": "Date", "type": "date"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mpe_record",
+      "name": "MPE Calculation Record",
+      "description": "Document MPE calculations for compliance verification",
+      "sections": [
+        {
+          "title": "Laser Parameters",
+          "fields": [
+            {"id": "mpe_wavelength", "label": "Wavelength", "type": "number", "unit": "nm"},
+            {"id": "mpe_power", "label": "Power", "type": "number", "unit": "mW or W"},
+            {"id": "mpe_divergence", "label": "Beam Divergence", "type": "number", "unit": "mrad"}
+          ]
+        },
+        {
+          "title": "Exposure Parameters",
+          "fields": [
+            {"id": "mpe_duration", "label": "Exposure Duration", "type": "select", "options": ["0.25s", "1s", "10s", ">100s"]},
+            {"id": "mpe_viewing", "label": "Viewing Condition", "type": "select", "options": ["Direct", "Specular reflection", "Diffuse reflection"]},
+            {"id": "mpe_population", "label": "Affected Population", "type": "select", "options": ["General public", "Trained operators", "Performers"]}
+          ]
+        },
+        {
+          "title": "MPE Calculation",
+          "fields": [
+            {"id": "mpe_formula", "label": "Formula Used", "type": "text", "readonly": true, "calculated": true},
+            {"id": "mpe_result", "label": "Calculated MPE", "type": "text", "unit": "mW/cm²", "calculated": true},
+            {"id": "mpe_margin", "label": "Safety Margin", "type": "number", "placeholder": "e.g., 2.0 for 2x safety factor"}
+          ]
+        },
+        {
+          "title": "Verification",
+          "fields": [
+            {"id": "mpe_method", "label": "Measurement Method", "type": "select", "options": ["Calculation", "Direct measurement", "Both"]},
+            {"id": "mpe_equipment", "label": "Equipment Used", "type": "text"},
+            {"id": "mpe_technician", "label": "Technician", "type": "text"},
+            {"id": "mpe_date", "label": "Date", "type": "date"}
+          ]
+        }
+      ]
+    }
+  ],
+  "features": {
+    "auto_save": true,
+    "export_pdf": true,
+    "completion_tracking": true,
+    "validation": {
+      "required_fields": true,
+      "data_format": true
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 25,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Three reporting methods for laser shows",
+      "General reporting guide usage",
+      "Light show reporting guide usage",
+      "Combined reporting approaches"
+    ],
+    "key_terms": [
+      {
+        "term": "General Reporting Guide",
+        "definition": "Standard laser product report format"
+      },
+      {
+        "term": "Light Show Reporting Guide",
+        "definition": "Specialized format for show-specific information"
+      },
+      {
+        "term": "Projection System",
+        "definition": "Projector plus auxiliary components"
+      },
+      {
+        "term": "Reference to Manufacturer's Report",
+        "definition": "Using existing certification documentation"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1002.10 - Product reports",
+      "Reporting Guide for Laser Light Shows and Displays"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Choose appropriate reporting method",
+      "Reference existing manufacturer reports",
+      "Describe compliance with variance conditions",
+      "Identify projection system components"
+    ],
+    "prerequisites": [
+      "Pages 23-24 content"
+    ],
+    "estimated_study_time_minutes": 25,
+    "content_type": "specialized_guidance",
+    "has_tables": false
+  }
+}

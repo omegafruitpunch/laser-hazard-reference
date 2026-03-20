@@ -7,6 +7,7 @@ import { getQuizByCourseId } from '@/data/quizzes';
 import QuizEngine from '@/components/quiz/QuizEngine';
 import Link from 'next/link';
 import { ChevronLeft } from 'lucide-react';
+import type { QuizBank, Question } from '@/types/quiz';
 
 export default function QuizPage({ params }: { params: Promise<{ courseId: string }> }) {
   const { courseId } = use(params);
@@ -15,6 +16,62 @@ export default function QuizPage({ params }: { params: Promise<{ courseId: strin
 
   const questions = getQuizByCourseId(courseId);
   if (questions.length === 0) notFound();
+
+  const quizBank: QuizBank = {
+    id: `${courseId}-quiz`,
+    courseId,
+    title: `${course.title} Quiz`,
+    description: `Test your knowledge of ${course.title}`,
+    assessmentType: 'course_exam',
+    totalQuestions: questions.length,
+    passingScore: 70,
+    timeLimitMinutes: questions.length * 2,
+    categories: {},
+    questions: questions.map((q, i): Question => {
+      const baseQuestion = {
+        id: q.id || `q-${i}`,
+        text: q.question,
+        explanation: q.explanation,
+        points: 1,
+        difficulty: 'intermediate' as const,
+        competencyArea: 'fundamentals' as const,
+        tags: [courseId],
+        hints: [],
+      };
+      
+    if (q.type === 'true_false') {
+        return {
+          ...baseQuestion,
+          type: 'true_false' as const,
+          correctAnswer: q.correctIndex === 0,
+        } as Question;
+      }
+      
+      if (q.type === 'multiple_select') {
+        return {
+          ...baseQuestion,
+          type: 'multi_select' as const,
+          options: q.options,
+          correctIndices: q.correctIndices || [q.correctIndex],
+          requireAllCorrect: true,
+        } as Question;
+      }
+      
+      return {
+        ...baseQuestion,
+        type: 'multiple_choice' as const,
+        options: q.options,
+        correctIndex: q.correctIndex,
+      } as Question;
+    }),
+    retakePolicy: {
+      allowed: true,
+      maxAttempts: 3,
+      cooldownHours: 24,
+    },
+    randomizeQuestions: true,
+    randomizeOptions: true,
+  };
 
   return (
     <div className="max-w-2xl mx-auto space-y-6">
@@ -41,9 +98,7 @@ export default function QuizPage({ params }: { params: Promise<{ courseId: strin
       {/* Quiz */}
       <div className="bg-gray-900 border border-gray-800 rounded-2xl p-6">
         <QuizEngine
-          courseId={courseId}
-          courseTitle={course.title}
-          questions={questions}
+          quizBank={quizBank}
         />
       </div>
     </div>

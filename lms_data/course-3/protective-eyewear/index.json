@@ -1,0 +1,92 @@
+{
+  "module_index": {
+    "module_id": "course-3-protective-eyewear",
+    "course": "Course 3: Biological Hazards and Protection",
+    "title": "Laser Protective Eyewear",
+    "description": "Comprehensive module covering laser protective eyewear selection, optical density calculations, testing standards, and maintenance procedures",
+    "version": "1.0",
+    "last_updated": "2026-03-19",
+    "processing_agent": "PDF Elite Processor Agent #9",
+    "source_document": {
+      "file": "protective-eyewear.pdf",
+      "actual_format": "MS Word .doc (OLE format)",
+      "content_source": "OSHA Technical Manual - Laser Hazards",
+      "extraction_method": "OLE stream parsing with ASCII text extraction"
+    },
+    "files": {
+      "content": {
+        "path": "content.json",
+        "description": "Main module content with 7 learning sections",
+        "sections": [
+          "Fundamentals of Laser Protective Eyewear",
+          "Optical Density (OD) and Protection Calculations",
+          "Optical Density Requirements by Laser Type",
+          "Eyewear Selection Criteria",
+          "Eyewear Requirements by Laser Class",
+          "Important Limitations and Considerations",
+          "Optical Fiber Communication Systems (OFCS) Eyewear"
+        ]
+      },
+      "quiz": {
+        "path": "quiz.json",
+        "description": "10-question assessment with multiple question types",
+        "question_types": ["multiple_choice", "calculation", "scenario", "true_false", "multiple_select"],
+        "passing_score": 80,
+        "time_limit_minutes": 30
+      },
+      "knowledge_graph": {
+        "path": "knowledge_graph.json",
+        "description": "PPE knowledge graph with 23 nodes and 27 edges",
+        "coverage": [
+          "Laser classification requirements",
+          "Optical density calculations",
+          "Wavelength-specific protection",
+          "Regulatory standards",
+          "Hazard types",
+          "Special applications"
+        ]
+      },
+      "eyewear_specifications": {
+        "path": "eyewear_specifications.json",
+        "description": "Technical specifications for eyewear OD and wavelength coverage"
+      },
+      "selection_criteria": {
+        "path": "selection_criteria.json",
+        "description": "Step-by-step eyewear selection guide with calculation examples"
+      },
+      "testing_requirements": {
+        "path": "testing_requirements.json",
+        "description": "Testing standards and certification requirements"
+      },
+      "maintenance_procedures": {
+        "path": "maintenance_procedures.json",
+        "description": "Cleaning, storage, inspection, and replacement procedures"
+      },
+      "extracted_text": {
+        "path": "raw_extracted_text.txt",
+        "description": "Raw text extracted from source document (94KB)"
+      }
+    },
+    "learning_objectives": [
+      "Understand when laser protective eyewear is required",
+      "Calculate required Optical Density for specific laser systems",
+      "Select appropriate eyewear based on wavelength and laser class",
+      "Apply OSHA and ANSI standards for eye protection",
+      "Implement proper eyewear maintenance procedures"
+    ],
+    "target_audience": [
+      "Laser Safety Officers (LSOs)",
+      "Laser operators and technicians",
+      "Safety managers",
+      "Research laboratory personnel",
+      "Industrial laser users"
+    ],
+    "estimated_duration_minutes": 60,
+    "difficulty_level": "intermediate",
+    "prerequisites": [
+      "Basic understanding of laser classification",
+      "Familiarity with MPE concepts",
+      "Completion of Course 2 recommended"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "course": "Course 3: Bio-Hazards",
+  "source_pdf": "mpe-tables.pdf",
+  "gestation_content": {
+    "title": "MPE Tables Interpretation Guide",
+    "definitions_reference": "ANSI Z136.1-2000",
+    "key_parameters": [
+      {
+        "symbol": "αmin",
+        "name": "Limiting Angular Subtense",
+        "value": "1.5 mrad",
+        "significance": "Divides small-source viewing from extended-source viewing",
+        "application": "If source angular subtense ≤ 1.5 mrad, use small-source MPEs"
+      },
+      {
+        "symbol": "αmax",
+        "name": "Maximum Angular Subtense",
+        "value": "100 mrad",
+        "significance": "Angular limit beyond which extended source MPEs are expressed as constant radiance",
+        "application": "For sources larger than 100 mrad, radiance becomes constant"
+      },
+      {
+        "symbol": "T1",
+        "name": "Photochemical Time Constant",
+        "significance": "Exposure duration at which thermal MPEs are replaced by photochemical MPEs",
+        "application": "For retinal exposures in 400-600 nm range"
+      },
+      {
+        "symbol": "T2",
+        "name": "Thermal Time Constant",
+        "significance": "Exposure duration beyond which extended-source thermal MPEs become constant irradiance",
+        "application": "Function of α; determines when MPE transitions to constant value"
+      },
+      {
+        "symbol": "CA",
+        "name": "Melanin Correction Factor",
+        "wavelength_range": "700-1400 nm (IR-A)",
+        "purpose": "Increases MPE values based on reduced melanin absorption properties",
+        "application": "Accounts for reduced absorption in skin and retinal pigment epithelium"
+      },
+      {
+        "symbol": "CB",
+        "name": "Photochemical Hazard Correction Factor",
+        "wavelength_range": "450-600 nm",
+        "purpose": "Increases MPE values due to reduced photochemical hazards at red end of visible spectrum"
+      },
+      {
+        "symbol": "CC",
+        "name": "Pre-retinal Absorption Correction Factor",
+        "wavelength_range": "1150-1400 nm",
+        "purpose": "Increases MPE values due to pre-retinal absorption",
+        "application": "Accounts for ocular media absorption before retina"
+      },
+      {
+        "symbol": "CE",
+        "name": "Extended Source Correction Factor",
+        "purpose": "Used for calculating extended-source MPE from small-source MPE",
+        "condition": "When laser source subtends visual angle exceeding αmin"
+      },
+      {
+        "symbol": "CP",
+        "name": "Repetitive Pulse Correction Factor",
+        "purpose": "Reduces MPE for repetitive-pulse exposure of the eye"
+      },
+      {
+        "symbol": "Df",
+        "name": "Limiting Aperture",
+        "purpose": "Maximum diameter for averaging radiance and radiant exposure",
+        "application": "For hazard evaluation and classification measurements"
+      }
+    ],
+    "table_lookup_procedures": {
+      "small_source_mpe": {
+        "steps": [
+          "Identify wavelength range",
+          "Determine exposure duration",
+          "Identify applicable spectral region (retinal hazard, corneal hazard, skin)",
+          "Look up base MPE value",
+          "Apply correction factors if applicable"
+        ]
+      },
+      "extended_source_mpe": {
+        "steps": [
+          "Measure or calculate angular subtense α of source",
+          "If α ≤ αmin, use small-source MPE",
+          "If αmin < α ≤ αmax, apply CE correction factor",
+          "If α > αmax, use constant radiance MPE"
+        ],
+        "formula": "MPE_extended = MPE_small × CE(α)"
+      },
+      "repetitive_pulse_mpe": {
+        "steps": [
+          "Determine single-pulse MPE",
+          "Apply CP correction factor",
+          "Calculate average power limit",
+          "Take most restrictive of: single-pulse limit, CP-corrected limit, or average power limit"
+        ]
+      }
+    },
+    "measurement_conditions": {
+      "aperture_sizes": {
+        "7mm": "For eye exposure evaluations (pupil dilation)",
+        "3.5mm": "For older standards or specific conditions",
+        "1mm": "For focused beam measurements"
+      },
+      "distance_requirements": {
+        "NOHD": "Nominal Ocular Hazard Distance - beyond this distance, irradiance < MPE",
+        "NHZ": "Nominal Hazard Zone - space where radiation exceeds MPE"
+      },
+      "time_bases": {
+        "0.25s": "Aversion response time for visible lasers",
+        "10s": "Standard evaluation time for many applications",
+        "100s": "Maximum for certain Class 2 evaluations",
+        "30000s": "8-hour workday exposure limit"
+      }
+    },
+    "wavelength_regions": {
+      "UV_C": {
+        "range": "100-280 nm",
+        "hazard": "Corneal absorption, photokeratitis",
+        "mpe_basis": "Corneal damage threshold"
+      },
+      "UV_B": {
+        "range": "280-315 nm",
+        "hazard": "Corneal and lens absorption",
+        "mpe_basis": "Corneal damage threshold"
+      },
+      "UV_A": {
+        "range": "315-400 nm",
+        "hazard": "Lens focusing possible, some retinal hazard",
+        "mpe_basis": "Mixed corneal/retinal considerations"
+      },
+      "visible": {
+        "range": "400-700 nm",
+        "hazard": "Retinal hazard region",
+        "special_consideration": "Photochemical vs thermal injury mechanisms"
+      },
+      "retinal_hazard": {
+        "range": "400-1400 nm",
+        "hazard": "Direct retinal damage possible",
+        "note": "Eye's focusing mechanism concentrates energy on retina"
+      },
+      "IR_A": {
+        "range": "700-1400 nm",
+        "hazard": "Retinal (with reduced absorption)",
+        "correction": "CA factor applies"
+      },
+      "IR_B": {
+        "range": "1.4-3.0 µm",
+        "hazard": "Corneal and aqueous humor absorption",
+        "mpe_basis": "Corneal damage threshold"
+      },
+      "IR_C": {
+        "range": "3.0 µm - 1 mm",
+        "hazard": "Corneal absorption only",
+        "mpe_basis": "Corneal and skin damage thresholds"
+      }
+    }
+  }
+}

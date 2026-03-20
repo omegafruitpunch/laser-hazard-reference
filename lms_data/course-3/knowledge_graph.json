@@ -1,0 +1,408 @@
+{
+  "course": "Course 3: Bio-Hazards",
+  "graph_title": "IEC 60825-1 Standards and MPE Limits Knowledge Graph",
+  "nodes": {
+    "standards": [
+      {
+        "id": "IEC_60825_1",
+        "name": "IEC 60825-1:2014",
+        "type": "standard",
+        "title": "Safety of laser products - Part 1: Equipment classification and requirements",
+        "properties": {
+          "edition": "3.0",
+          "year": 2014,
+          "interpretation_sheet": "ISH1:2017",
+          "scope": "Equipment classification and requirements"
+        },
+        "relationships": [
+          {
+            "type": "defines",
+            "target": "laser_classes",
+            "description": "Defines laser product classification system"
+          },
+          {
+            "type": "specifies",
+            "target": "AEL",
+            "description": "Specifies Accessible Emission Limits"
+          },
+          {
+            "type": "references",
+            "target": "MPE",
+            "description": "References Maximum Permissible Exposure values"
+          }
+        ]
+      },
+      {
+        "id": "ANSI_Z136_1",
+        "name": "ANSI Z136.1-2000",
+        "type": "standard",
+        "title": "American National Standard for Safe Use of Lasers",
+        "properties": {
+          "year": 2000,
+          "scope": "Safe use of lasers"
+        },
+        "relationships": [
+          {
+            "type": "defines",
+            "target": "MPE_tables",
+            "description": "Defines MPE tables and correction factors"
+          }
+        ]
+      }
+    ],
+    "laser_classes": [
+      {
+        "id": "Class_1",
+        "name": "Class 1",
+        "type": "laser_class",
+        "description": "Safe under reasonably foreseeable conditions of operation",
+        "properties": {
+          "hazard_level": "none_under_normal_use",
+          "AEL_basis": "MPE_for_0.25s_or_100s"
+        }
+      },
+      {
+        "id": "Class_1M",
+        "name": "Class 1M",
+        "type": "laser_class",
+        "description": "Safe except when viewing with optical instruments",
+        "properties": {
+          "hazard_level": "low_with_optics",
+          "wavelength_range": "302.5nm_to_4000nm"
+        }
+      },
+      {
+        "id": "Class_2",
+        "name": "Class 2",
+        "type": "laser_class",
+        "description": "Safe due to aversion response (visible only)",
+        "properties": {
+          "hazard_level": "low",
+          "wavelength_range": "400nm_to_700nm",
+          "time_basis": "0.25s"
+        }
+      },
+      {
+        "id": "Class_2M",
+        "name": "Class 2M",
+        "type": "laser_class",
+        "description": "Class 2 except when viewing with optical instruments",
+        "properties": {
+          "hazard_level": "low_without_optics"
+        }
+      },
+      {
+        "id": "Class_3R",
+        "name": "Class 3R",
+        "type": "laser_class",
+        "description": "Low risk, normally safe with limited beam viewing",
+        "properties": {
+          "hazard_level": "low_to_moderate",
+          "AEL_factor": "5x_Class_1_or_2"
+        }
+      },
+      {
+        "id": "Class_3B",
+        "name": "Class 3B",
+        "type": "laser_class",
+        "description": "Direct beam viewing hazard, normally safe for diffuse reflections",
+        "properties": {
+          "hazard_level": "moderate",
+          "max_power": "0.5W"
+        }
+      },
+      {
+        "id": "Class_4",
+        "name": "Class 4",
+        "type": "laser_class",
+        "description": "High power, all viewing hazardous, fire and diffuse reflection hazard",
+        "properties": {
+          "hazard_level": "high",
+          "hazards": ["direct_beam", "diffuse_reflection", "fire", "plume"]
+        }
+      },
+      {
+        "id": "Class_1C",
+        "name": "Class 1C",
+        "type": "laser_class",
+        "description": "Contact medical application, closed beam path",
+        "properties": {
+          "application": "medical_contact",
+          "special_requirements": "engineering_controls"
+        }
+      }
+    ],
+    "limits": [
+      {
+        "id": "AEL",
+        "name": "Accessible Emission Limit",
+        "type": "limit",
+        "description": "Maximum accessible emission level permitted within a particular class",
+        "formula": "AEL = f(wavelength, duration, class)",
+        "relationships": [
+          {
+            "type": "compared_with",
+            "target": "AE",
+            "description": "AE compared against AEL for classification"
+          }
+        ]
+      },
+      {
+        "id": "MPE",
+        "name": "Maximum Permissible Exposure",
+        "type": "limit",
+        "description": "Level of laser radiation to which a person may be exposed without hazardous effect",
+        "properties": {
+          "applies_to": ["eye", "skin"],
+          "basis": "biological_thresholds_with_safety_factor"
+        },
+        "relationships": [
+          {
+            "type": "used_to_determine",
+            "target": "NOHD",
+            "description": "MPE used to calculate Nominal Ocular Hazard Distance"
+          },
+          {
+            "type": "adjusted_by",
+            "target": "correction_factors",
+            "description": "MPE values adjusted by correction factors"
+          }
+        ]
+      }
+    ],
+    "correction_factors": [
+      {
+        "id": "C5",
+        "name": "Pulse Repetition Correction Factor",
+        "symbol": "C5",
+        "type": "correction_factor",
+        "formula": "C5 = N^(-0.25)",
+        "description": "Accounts for thermal additivity in repetitive pulse trains",
+        "applies_to": "pulsed_lasers",
+        "parameters": {
+          "N": "Number of pulses within T2 or time base"
+        }
+      },
+      {
+        "id": "C6",
+        "name": "Extended Source Correction Factor",
+        "symbol": "C6",
+        "type": "correction_factor",
+        "formula": "C6 = α/αmin for αmin < α ≤ αmax; C6 = 1 for α ≤ αmin",
+        "description": "Adjusts limits for extended sources based on angular subtense"
+      },
+      {
+        "id": "CA",
+        "name": "Melanin Correction Factor",
+        "symbol": "CA",
+        "type": "correction_factor",
+        "wavelength_range": "700-1400nm",
+        "description": "Accounts for reduced melanin absorption in IR-A"
+      },
+      {
+        "id": "CB",
+        "name": "Photochemical Correction Factor",
+        "symbol": "CB",
+        "type": "correction_factor",
+        "wavelength_range": "450-600nm",
+        "description": "Accounts for reduced photochemical hazards"
+      },
+      {
+        "id": "CC",
+        "name": "Pre-retinal Absorption Factor",
+        "symbol": "CC",
+        "type": "correction_factor",
+        "wavelength_range": "1150-1400nm",
+        "description": "Accounts for pre-retinal absorption"
+      },
+      {
+        "id": "CE",
+        "name": "Extended Source MPE Factor",
+        "symbol": "CE",
+        "type": "correction_factor",
+        "description": "Converts small-source MPE to extended-source MPE"
+      },
+      {
+        "id": "CP",
+        "name": "Repetitive Pulse MPE Factor",
+        "symbol": "CP",
+        "type": "correction_factor",
+        "description": "Reduces MPE for repetitive pulse exposure"
+      }
+    ],
+    "measurement_parameters": [
+      {
+        "id": "alpha",
+        "name": "Angular Subtense",
+        "symbol": "α",
+        "type": "parameter",
+        "unit": "mrad",
+        "formula": "α = (αx + αy) / 2",
+        "description": "Average angular dimension of apparent source"
+      },
+      {
+        "id": "alpha_min",
+        "name": "Limiting Angular Subtense",
+        "symbol": "αmin",
+        "type": "parameter",
+        "value": 1.5,
+        "unit": "mrad",
+        "description": "Divides small-source from extended-source viewing"
+      },
+      {
+        "id": "alpha_max",
+        "name": "Maximum Angular Subtense",
+        "symbol": "αmax",
+        "type": "parameter",
+        "value": 100,
+        "unit": "mrad",
+        "description": "Maximum α for extended source MPE calculation",
+        "note": "Function of time for t < 0.25s"
+      },
+      {
+        "id": "gamma",
+        "name": "Angle of Acceptance",
+        "symbol": "γ",
+        "type": "parameter",
+        "unit": "mrad",
+        "description": "Field of view for radiance measurement"
+      },
+      {
+        "id": "T1",
+        "name": "Photochemical Time Constant",
+        "symbol": "T1",
+        "type": "parameter",
+        "description": "Time at which thermal MPEs are replaced by photochemical MPEs"
+      },
+      {
+        "id": "T2",
+        "name": "Thermal Time Constant",
+        "symbol": "T2",
+        "type": "parameter",
+        "formula": "T2 = 10 × 10^((α-1.5)/98.5)",
+        "range": "10-100 seconds",
+        "description": "Time beyond which extended-source thermal MPEs become constant"
+      }
+    ],
+    "hazard_regions": [
+      {
+        "id": "UV_C",
+        "name": "UV-C",
+        "range": "100-280nm",
+        "primary_hazard": "cornea",
+        "effect": "photokeratitis"
+      },
+      {
+        "id": "UV_B",
+        "name": "UV-B",
+        "range": "280-315nm",
+        "primary_hazard": "cornea_lens",
+        "effect": "cataracts"
+      },
+      {
+        "id": "UV_A",
+        "name": "UV-A",
+        "range": "315-400nm",
+        "primary_hazard": "lens_retina",
+        "effect": "variable"
+      },
+      {
+        "id": "visible",
+        "name": "Visible",
+        "range": "400-700nm",
+        "primary_hazard": "retina",
+        "effects": ["thermal", "photochemical"]
+      },
+      {
+        "id": "IR_A",
+        "name": "IR-A",
+        "range": "700-1400nm",
+        "primary_hazard": "retina",
+        "correction": "CA_applies"
+      },
+      {
+        "id": "IR_B",
+        "name": "IR-B",
+        "range": "1400-3000nm",
+        "primary_hazard": "cornea",
+        "effect": "corneal_burns"
+      },
+      {
+        "id": "IR_C",
+        "name": "IR-C",
+        "range": "3000nm-1mm",
+        "primary_hazard": "cornea_skin",
+        "effect": "surface_burns"
+      }
+    ],
+    "measurement_conditions": [
+      {
+        "id": "condition_1",
+        "name": "Condition 1",
+        "description": "Point and small source evaluation",
+        "aperture": "7mm"
+      },
+      {
+        "id": "condition_2",
+        "name": "Condition 2",
+        "description": "Extended source evaluation",
+        "aperture": "7mm_with_field_stop"
+      },
+      {
+        "id": "condition_3",
+        "name": "Condition 3",
+        "description": "Specific reference point evaluation"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "source": "IEC_60825_1",
+      "type": "references",
+      "target": "ANSI_Z136_1",
+      "description": "IEC standard references MPE concepts from ANSI"
+    },
+    {
+      "source": "Class_1",
+      "type": "has_limit",
+      "target": "AEL",
+      "description": "Each class has specific AELs"
+    },
+    {
+      "source": "MPE",
+      "type": "adjusted_by",
+      "target": "C5",
+      "description": "MPE adjusted by correction factors"
+    },
+    {
+      "source": "MPE",
+      "type": "adjusted_by",
+      "target": "C6",
+      "description": "Extended source correction applied to MPE"
+    },
+    {
+      "source": "alpha",
+      "type": "compared_with",
+      "target": "alpha_min",
+      "description": "α compared to αmin to determine source type"
+    },
+    {
+      "source": "alpha",
+      "type": "limited_by",
+      "target": "alpha_max",
+      "description": "α limited to αmax for certain calculations"
+    },
+    {
+      "source": "visible",
+      "type": "requires",
+      "target": "T1",
+      "description": "Visible region uses T1 for thermal/photochemical transition"
+    },
+    {
+      "source": "extended_source",
+      "type": "requires",
+      "target": "T2",
+      "description": "Extended sources use T2 for thermal limits"
+    }
+  ]
+}

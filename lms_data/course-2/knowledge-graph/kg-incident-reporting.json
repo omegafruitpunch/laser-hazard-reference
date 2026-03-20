@@ -1,0 +1,449 @@
+{
+  "graph_id": "course-2-kg-2",
+  "module_id": "course-2-module-2",
+  "title": "FDA Laser Incident Reporting Knowledge Graph",
+  "description": "Procedural knowledge graph for FDA laser incident reporting requirements",
+  "nodes": [
+    {
+      "id": "incident_reporting",
+      "type": "process",
+      "label": "Incident Reporting Process",
+      "description": "Process for reporting laser-related adverse events to FDA"
+    },
+    {
+      "id": "medwatch",
+      "type": "system",
+      "label": "MEDWATCH",
+      "description": "FDA's safety information and adverse event reporting program"
+    },
+    {
+      "id": "form_3500",
+      "type": "artifact",
+      "label": "Form FDA 3500",
+      "description": "Voluntary adverse event reporting form"
+    },
+    {
+      "id": "form_3500a",
+      "type": "artifact",
+      "label": "Form FDA 3500A",
+      "description": "Mandatory adverse event reporting form for manufacturers"
+    },
+    {
+      "id": "manufacturer",
+      "type": "entity",
+      "label": "Manufacturer",
+      "description": "Entity with mandatory reporting obligations"
+    },
+    {
+      "id": "importer",
+      "type": "entity",
+      "label": "Importer",
+      "description": "Entity importing laser products with reporting obligations"
+    },
+    {
+      "id": "healthcare_professional",
+      "type": "entity",
+      "label": "Healthcare Professional",
+      "description": "Can submit voluntary reports"
+    },
+    {
+      "id": "consumer",
+      "type": "entity",
+      "label": "Consumer",
+      "description": "Can submit voluntary reports"
+    },
+    {
+      "id": "death_event",
+      "type": "event_type",
+      "label": "Death",
+      "description": "Fatality associated with laser product use - always reportable"
+    },
+    {
+      "id": "serious_injury",
+      "type": "event_type",
+      "label": "Serious Injury",
+      "description": "Life-threatening, permanent impairment, or requiring medical intervention"
+    },
+    {
+      "id": "malfunction",
+      "type": "event_type",
+      "label": "Malfunction",
+      "description": "Product failure that could cause harm if recurrent"
+    },
+    {
+      "id": "ocular_injury",
+      "type": "event_type",
+      "label": "Ocular Injury",
+      "description": "Eye injury from laser exposure exceeding MPE"
+    },
+    {
+      "id": "skin_injury",
+      "type": "event_type",
+      "label": "Skin Injury",
+      "description": "Serious burns or tissue damage from laser exposure"
+    },
+    {
+      "id": "five_day_report",
+      "type": "milestone",
+      "label": "5-Day Report",
+      "description": "Expedited timeline for death/serious injury requiring immediate action"
+    },
+    {
+      "id": "thirty_day_report",
+      "type": "milestone",
+      "label": "30-Day Report",
+      "description": "Standard timeline for most reportable events"
+    },
+    {
+      "id": "investigation",
+      "type": "process_step",
+      "label": "Internal Investigation",
+      "description": "Manufacturer investigation of reported event"
+    },
+    {
+      "id": "root_cause_analysis",
+      "type": "process_step",
+      "label": "Root Cause Analysis",
+      "description": "Determination of underlying cause of event"
+    },
+    {
+      "id": "corrective_action",
+      "type": "process_step",
+      "label": "Corrective Action",
+      "description": "Implementation of fixes to prevent recurrence"
+    },
+    {
+      "id": "supplemental_report",
+      "type": "process_step",
+      "label": "Supplemental Report",
+      "description": "Additional report when new information becomes available"
+    },
+    {
+      "id": "mpe",
+      "type": "standard",
+      "label": "Maximum Permissible Exposure",
+      "description": "Safety threshold for laser exposure"
+    },
+    {
+      "id": "record_retention",
+      "type": "requirement",
+      "label": "10-Year Retention",
+      "description": "Investigation records must be kept for 10 years or 2 years beyond device life"
+    },
+    {
+      "id": "online_submission",
+      "type": "action",
+      "label": "Online Submission",
+      "description": "Submit via www.accessdata.fda.gov/scripts/medwatch/"
+    },
+    {
+      "id": "fax_submission",
+      "type": "action",
+      "label": "Fax Submission",
+      "description": "Submit to 1-800-FDA-0178"
+    },
+    {
+      "id": "mail_submission",
+      "type": "action",
+      "label": "Mail Submission",
+      "description": "Send to FDA MEDWATCH, 5600 Fishers Lane, Rockville, MD 20852-9787"
+    },
+    {
+      "id": "laser_wavelength",
+      "type": "parameter",
+      "label": "Laser Wavelength",
+      "description": "Required parameter in incident report"
+    },
+    {
+      "id": "output_power",
+      "type": "parameter",
+      "label": "Output Power/Energy",
+      "description": "Required parameter in incident report"
+    },
+    {
+      "id": "exposure_duration",
+      "type": "parameter",
+      "label": "Exposure Duration",
+      "description": "Required parameter in incident report"
+    },
+    {
+      "id": "nohd",
+      "type": "parameter",
+      "label": "NOHD",
+      "description": "Nominal Ocular Hazard Distance - required parameter"
+    },
+    {
+      "id": "eye_protection",
+      "type": "parameter",
+      "label": "Eye Protection",
+      "description": "Documentation of protective measures in place"
+    },
+    {
+      "id": "medical_evaluation",
+      "type": "parameter",
+      "label": "Medical Evaluation Results",
+      "description": "Required documentation of injury assessment"
+    },
+    {
+      "id": "recall",
+      "type": "event",
+      "label": "Product Recall",
+      "description": "Corrective action that requires supplemental reporting"
+    }
+  ],
+  "edges": [
+    {
+      "source": "manufacturer",
+      "target": "form_3500a",
+      "type": "uses",
+      "label": "must submit via"
+    },
+    {
+      "source": "importer",
+      "target": "form_3500a",
+      "type": "uses",
+      "label": "must submit via"
+    },
+    {
+      "source": "healthcare_professional",
+      "target": "form_3500",
+      "type": "uses",
+      "label": "can submit via"
+    },
+    {
+      "source": "consumer",
+      "target": "form_3500",
+      "type": "uses",
+      "label": "can submit via"
+    },
+    {
+      "source": "form_3500",
+      "target": "medwatch",
+      "type": "submitted_to",
+      "label": "processed by"
+    },
+    {
+      "source": "form_3500a",
+      "target": "medwatch",
+      "type": "submitted_to",
+      "label": "processed by"
+    },
+    {
+      "source": "death_event",
+      "target": "thirty_day_report",
+      "type": "requires",
+      "label": "report within"
+    },
+    {
+      "source": "serious_injury",
+      "target": "thirty_day_report",
+      "type": "requires",
+      "label": "report within"
+    },
+    {
+      "source": "malfunction",
+      "target": "thirty_day_report",
+      "type": "requires",
+      "label": "report within"
+    },
+    {
+      "source": "ocular_injury",
+      "target": "thirty_day_report",
+      "type": "requires",
+      "label": "report within"
+    },
+    {
+      "source": "skin_injury",
+      "target": "thirty_day_report",
+      "type": "requires",
+      "label": "report within"
+    },
+    {
+      "source": "death_event",
+      "target": "five_day_report",
+      "type": "may_require",
+      "label": "expedited if imminent hazard"
+    },
+    {
+      "source": "serious_injury",
+      "target": "five_day_report",
+      "type": "may_require",
+      "label": "expedited if immediate action needed"
+    },
+    {
+      "source": "manufacturer",
+      "target": "investigation",
+      "type": "must_conduct",
+      "label": "required to perform"
+    },
+    {
+      "source": "investigation",
+      "target": "root_cause_analysis",
+      "type": "includes",
+      "label": "incorporates"
+    },
+    {
+      "source": "root_cause_analysis",
+      "target": "corrective_action",
+      "type": "may_trigger",
+      "label": "may lead to"
+    },
+    {
+      "source": "corrective_action",
+      "target": "supplemental_report",
+      "type": "requires",
+      "label": "must be documented in"
+    },
+    {
+      "source": "investigation",
+      "target": "record_retention",
+      "type": "subject_to",
+      "label": "governed by"
+    },
+    {
+      "source": "ocular_injury",
+      "target": "mpe",
+      "type": "evaluated_against",
+      "label": "compared to"
+    },
+    {
+      "source": "incident_reporting",
+      "target": "laser_wavelength",
+      "type": "requires",
+      "label": "must include"
+    },
+    {
+      "source": "incident_reporting",
+      "target": "output_power",
+      "type": "requires",
+      "label": "must include"
+    },
+    {
+      "source": "incident_reporting",
+      "target": "exposure_duration",
+      "type": "requires",
+      "label": "must include"
+    },
+    {
+      "source": "incident_reporting",
+      "target": "nohd",
+      "type": "requires",
+      "label": "must include"
+    },
+    {
+      "source": "incident_reporting",
+      "target": "eye_protection",
+      "type": "requires",
+      "label": "must include"
+    },
+    {
+      "source": "incident_reporting",
+      "target": "medical_evaluation",
+      "type": "requires",
+      "label": "must include"
+    },
+    {
+      "source": "online_submission",
+      "target": "medwatch",
+      "type": "submitted_via",
+      "label": "delivered through"
+    },
+    {
+      "source": "fax_submission",
+      "target": "medwatch",
+      "type": "submitted_via",
+      "label": "delivered through"
+    },
+    {
+      "source": "mail_submission",
+      "target": "medwatch",
+      "type": "submitted_via",
+      "label": "delivered through"
+    },
+    {
+      "source": "recall",
+      "target": "supplemental_report",
+      "type": "requires",
+      "label": "must be reported via"
+    }
+  ],
+  "process_flows": [
+    {
+      "name": "Mandatory Incident Reporting",
+      "steps": [
+        "Learn of potential reportable event",
+        "Evaluate event for reportability",
+        "Conduct internal investigation",
+        "Determine root cause",
+        "Implement corrective actions if needed",
+        "Submit Form FDA 3500A within required timeframe (5 or 30 days)",
+        "Maintain investigation records for required period"
+      ]
+    },
+    {
+      "name": "Voluntary Incident Reporting",
+      "steps": [
+        "Observe adverse event or product problem",
+        "Gather relevant information",
+        "Complete Form FDA 3500",
+        "Submit via MEDWATCH (online, fax, or mail)"
+      ]
+    },
+    {
+      "name": "Supplemental Reporting",
+      "steps": [
+        "New information becomes available",
+        "Determine if supplemental report is required",
+        "Prepare supplemental report",
+        "Reference original report",
+        "Submit updated information to FDA"
+      ]
+    }
+  ],
+  "decision_trees": [
+    {
+      "name": "Is the Event Reportable?",
+      "root": "Did an event occur involving a laser product?",
+      "branches": [
+        {
+          "condition": "Death occurred",
+          "result": "REPORTABLE - Submit within 30 days (5 days if imminent hazard)"
+        },
+        {
+          "condition": "Serious injury (life-threatening, permanent impairment, medical intervention required)",
+          "result": "REPORTABLE - Submit within 30 days (5 days if immediate action needed)"
+        },
+        {
+          "condition": "Malfunction occurred",
+          "branches": [
+            {
+              "condition": "Would likely cause death or serious injury if recurrent",
+              "result": "REPORTABLE - Submit within 30 days"
+            },
+            {
+              "condition": "Would not likely cause harm if recurrent",
+              "result": "NOT REPORTABLE as malfunction"
+            }
+          ]
+        },
+        {
+          "condition": "Ocular exposure occurred",
+          "branches": [
+            {
+              "condition": "Exposure exceeded MPE and caused injury",
+              "result": "REPORTABLE - Submit within 30 days"
+            },
+            {
+              "condition": "Exposure did not exceed MPE or no injury",
+              "result": "NOT REPORTABLE"
+            }
+          ]
+        },
+        {
+          "condition": "No injury, no malfunction, no death",
+          "result": "NOT REPORTABLE"
+        }
+      ]
+    }
+  ]
+}

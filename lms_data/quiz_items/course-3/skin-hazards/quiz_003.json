@@ -1,0 +1,7 @@
+{
+  "id": "skin-hazards_q003",
+  "type": "true_false",
+  "question": "Dark-skinned individuals (Type VI on Fitzpatrick scale) are more susceptible to laser skin injury from all wavelengths.",
+  "correct": false,
+  "explanation": "Dark-skinned individuals have MORE protection for visible and IR wavelengths due to melanin. However, they are MORE vulnerable to wavelengths specifically targeting melanin."
+}

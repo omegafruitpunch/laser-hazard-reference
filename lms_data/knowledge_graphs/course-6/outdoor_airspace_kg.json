@@ -1,0 +1,250 @@
+{
+  "course_id": "course-6",
+  "course_title": "Outdoor Laser Safety & Airspace",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "id": "faa-regulations",
+        "type": "regulatory_body",
+        "label": "FAA Regulations",
+        "description": "Federal Aviation Administration laser regulations for aviation safety"
+      },
+      {
+        "id": "visual-interference",
+        "type": "hazard_category",
+        "label": "Visual Interference Hazards",
+        "description": "Three types: distraction, glare, and flashblindness"
+      },
+      {
+        "id": "nohd",
+        "type": "safety_concept",
+        "label": "Nominal Ocular Hazard Distance",
+        "description": "Distance at which laser irradiance falls below Maximum Permissible Exposure"
+      },
+      {
+        "id": "laser-free-zone",
+        "type": "airspace_zone",
+        "label": "Laser Free Zone (LFZ)",
+        "description": "Airspace <2 NM from runway, <2,000 ft AGL with <50 μW/cm² limit"
+      },
+      {
+        "id": "critical-flight-zone",
+        "type": "airspace_zone",
+        "label": "Critical Flight Zone (CFZ)",
+        "description": "10 NM radius from airport, up to 10,000 ft AGL"
+      },
+      {
+        "id": "sensitive-flight-zone",
+        "type": "airspace_zone",
+        "label": "Sensitive Flight Zone (SFZ)",
+        "description": "Specific airspace requiring lower exposure levels"
+      },
+      {
+        "id": "normal-flight-zone",
+        "type": "airspace_zone",
+        "label": "Normal Flight Zone (NFZ)",
+        "description": "All other airspace outside LFZ, CFZ, and SFZ"
+      },
+      {
+        "id": "18-usc-39a",
+        "type": "federal_law",
+        "label": "18 USC 39A",
+        "description": "Federal law making it a crime to aim lasers at aircraft"
+      },
+      {
+        "id": "ac-70-1b",
+        "type": "faa_guidance",
+        "label": "FAA AC 70-1B",
+        "description": "Advisory Circular for outdoor laser operations"
+      },
+      {
+        "id": "ac-70-2a",
+        "type": "faa_guidance",
+        "label": "FAA AC 70-2A",
+        "description": "Advisory Circular for reporting laser illumination of aircraft"
+      },
+      {
+        "id": "form-7140-1",
+        "type": "faa_form",
+        "label": "FAA Form 7140-1",
+        "description": "Notice of Proposed Outdoor Laser Operation"
+      },
+      {
+        "id": "notam",
+        "type": "procedure",
+        "label": "NOTAM",
+        "description": "Notice to Air Missions for laser operations"
+      },
+      {
+        "id": "protective-eyewear",
+        "type": "safety_equipment",
+        "label": "Laser Protective Eyewear",
+        "description": "OD-rated glasses for pilots in laser-prone areas"
+      },
+      {
+        "id": "green-laser",
+        "type": "laser_type",
+        "label": "Green Laser (532nm)",
+        "description": "Most common in incidents due to high visibility"
+      },
+      {
+        "id": "atc-procedures",
+        "type": "operational_procedure",
+        "label": "ATC Laser Procedures",
+        "description": "Emergency response and broadcast protocols"
+      },
+      {
+        "id": "den",
+        "type": "system",
+        "label": "Domestic Events Network (DEN)",
+        "description": "Real-time security information sharing network"
+      },
+      {
+        "id": "flashblindness",
+        "type": "hazard_type",
+        "label": "Flashblindness",
+        "description": "Vision-impairing afterimages lasting seconds to minutes"
+      },
+      {
+        "id": "glare",
+        "type": "hazard_type",
+        "label": "Glare",
+        "description": "Inability to see past the laser light while it is on"
+      },
+      {
+        "id": "distraction",
+        "type": "hazard_type",
+        "label": "Distraction",
+        "description": "Mental interference from bright light"
+      },
+      {
+        "id": "critical-flight-phase",
+        "type": "flight_concept",
+        "label": "Critical Flight Phases",
+        "description": "Takeoff, landing, low-level flying, emergencies"
+      }
+    ],
+    "edges": [
+      {
+        "source": "faa-regulations",
+        "target": "18-usc-39a",
+        "relationship": "enforces"
+      },
+      {
+        "source": "faa-regulations",
+        "target": "ac-70-1b",
+        "relationship": "publishes"
+      },
+      {
+        "source": "faa-regulations",
+        "target": "ac-70-2a",
+        "relationship": "publishes"
+      },
+      {
+        "source": "ac-70-1b",
+        "target": "laser-free-zone",
+        "relationship": "defines"
+      },
+      {
+        "source": "ac-70-1b",
+        "target": "critical-flight-zone",
+        "relationship": "defines"
+      },
+      {
+        "source": "ac-70-1b",
+        "target": "sensitive-flight-zone",
+        "relationship": "defines"
+      },
+      {
+        "source": "ac-70-1b",
+        "target": "normal-flight-zone",
+        "relationship": "defines"
+      },
+      {
+        "source": "visual-interference",
+        "target": "flashblindness",
+        "relationship": "includes"
+      },
+      {
+        "source": "visual-interference",
+        "target": "glare",
+        "relationship": "includes"
+      },
+      {
+        "source": "visual-interference",
+        "target": "distraction",
+        "relationship": "includes"
+      },
+      {
+        "source": "flashblindness",
+        "target": "critical-flight-phase",
+        "relationship": "hazardous_during"
+      },
+      {
+        "source": "glare",
+        "target": "critical-flight-phase",
+        "relationship": "hazardous_during"
+      },
+      {
+        "source": "green-laser",
+        "target": "visual-interference",
+        "relationship": "causes"
+      },
+      {
+        "source": "nohd",
+        "target": "protective-eyewear",
+        "relationship": "informs_selection"
+      },
+      {
+        "source": "form-7140-1",
+        "target": "notam",
+        "relationship": "triggers"
+      },
+      {
+        "source": "ac-70-2a",
+        "target": "atc-procedures",
+        "relationship": "specifies"
+      },
+      {
+        "source": "atc-procedures",
+        "target": "den",
+        "relationship": "uses"
+      },
+      {
+        "source": "laser-free-zone",
+        "target": "noam",
+        "relationship": "requires_notification"
+      },
+      {
+        "source": "protective-eyewear",
+        "target": "green-laser",
+        "relationship": "protects_against"
+      },
+      {
+        "source": "18-usc-39a",
+        "target": "green-laser",
+        "relationship": "regulates"
+      }
+    ]
+  },
+  "metadata": {
+    "node_count": 20,
+    "edge_count": 20,
+    "categories": [
+      "regulatory_body",
+      "hazard_category",
+      "safety_concept",
+      "airspace_zone",
+      "federal_law",
+      "faa_guidance",
+      "faa_form",
+      "procedure",
+      "safety_equipment",
+      "laser_type",
+      "operational_procedure",
+      "system",
+      "hazard_type",
+      "flight_concept"
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "course-1-quiz",
+  "courseId": "course-1",
+  "title": "Laser Safety Fundamentals Assessment",
+  "description": "Comprehensive assessment covering laser classification, hazards, controls, and safety fundamentals.",
+  "passingScore": 80,
+  "timeLimit": 30,
+  "randomizeQuestions": true,
+  "questions": [
+    {
+      "id": "c1-q1",
+      "type": "multiple_choice",
+      "question": "What is the primary ocular hazard associated with visible and near-infrared laser wavelengths?",
+      "options": ["Corneal burns", "Retinal damage", "Lens opacity", "Iris damage"],
+      "correctIndex": 1,
+      "explanation": "The retina is the most vulnerable structure for visible (400-700nm) and near-IR (700-1400nm) laser wavelengths, as the eye's optics focus the beam to a tiny spot on the retina, concentrating the energy."
+    },
+    {
+      "id": "c1-q2",
+      "type": "multiple_choice",
+      "question": "Which laser class requires the most stringent safety controls?",
+      "options": ["Class 1", "Class 2", "Class 3R", "Class 4"],
+      "correctIndex": 3,
+      "explanation": "Class 4 lasers are high-power devices that can cause immediate eye and skin injuries, ignite fires, and even make diffuse reflections hazardous. They require comprehensive engineering controls and safety programs."
+    },
+    {
+      "id": "c1-q3",
+      "type": "multiple_choice",
+      "question": "What does NOHD stand for?",
+      "options": ["Normal Optical Hazard Distance", "Nominal Ocular Hazard Distance", "Non-Optical Hazard Determination", "Nominal Output Hazard Distance"],
+      "correctIndex": 1,
+      "explanation": "NOHD (Nominal Ocular Hazard Distance) is the distance along the axis of an unobstructed laser beam at which the irradiance or radiant exposure has fallen to the level of the MPE."
+    },
+    {
+      "id": "c1-q4",
+      "type": "multiple_choice",
+      "question": "Who is responsible for overseeing the laser safety program?",
+      "options": ["The show promoter", "The venue manager", "The Laser Safety Officer (LSO)", "The local fire marshal"],
+      "correctIndex": 2,
+      "explanation": "The Laser Safety Officer (LSO) is the designated individual with authority and responsibility to monitor and enforce the control of laser hazards. The LSO must have authority to halt unsafe operations."
+    },
+    {
+      "id": "c1-q5",
+      "type": "multiple_choice",
+      "question": "What is the Maximum Permissible Exposure (MPE)?",
+      "options": [
+        "The maximum power a laser can legally produce",
+        "The level of laser radiation to which a person may be exposed without harm",
+        "The maximum distance a laser beam can travel safely",
+        "The highest optical density eyewear available"
+      ],
+      "correctIndex": 1,
+      "explanation": "MPE is the level of laser radiation to which an unprotected person may be exposed without adverse biological effects. It is wavelength-, duration-, and tissue-dependent."
+    },
+    {
+      "id": "c1-q6",
+      "type": "multiple_choice",
+      "question": "Which type of control measure is preferred in laser safety hierarchy?",
+      "options": ["Administrative controls", "Personal Protective Equipment", "Engineering controls", "Training programs"],
+      "correctIndex": 2,
+      "explanation": "Engineering controls (enclosures, interlocks, beam stops) are preferred over administrative controls and PPE because they do not rely on human behavior to be effective."
+    },
+    {
+      "id": "c1-q7",
+      "type": "multiple_choice",
+      "question": "Class 2 lasers rely on what natural protective mechanism for safety?",
+      "options": ["Skin tanning response", "The blink/aversion reflex", "Pupil constriction", "Tear production"],
+      "correctIndex": 1,
+      "explanation": "Class 2 lasers emit low-power visible light (≤1mW). The natural blink/aversion reflex (≈0.25 seconds) provides adequate protection under normal viewing conditions."
+    },
+    {
+      "id": "c1-q8",
+      "type": "multiple_choice",
+      "question": "What standard defines LSO qualifications and responsibilities in the US?",
+      "options": ["21 CFR 1040", "IEC 60825-1", "ANSI Z136.1", "OSHA 29 CFR 1910"],
+      "correctIndex": 2,
+      "explanation": "ANSI Z136.1 (American National Standard for Safe Use of Lasers) is the primary US standard that defines LSO duties, laser classification, MPE values, and control measures."
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-01-01T00:00:00Z"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "source_pdf": "ocular-hazards.pdf",
+  "topic": "Ocular Hazards of Laser Radiation",
+  "nodes": [
+    {
+      "id": "eye",
+      "label": "Eye",
+      "type": "organ",
+      "description": "Primary organ at risk from laser radiation"
+    },
+    {
+      "id": "cornea",
+      "label": "Cornea",
+      "type": "structure",
+      "description": "Outer transparent layer, absorbs UV and far-IR"
+    },
+    {
+      "id": "lens",
+      "label": "Lens",
+      "type": "structure",
+      "description": "Focuses light, UV-A accumulates here"
+    },
+    {
+      "id": "retina",
+      "label": "Retina",
+      "type": "structure",
+      "description": "Light-sensitive tissue, focus of visible/NIR lasers"
+    },
+    {
+      "id": "retinal_hazard_region",
+      "label": "Retinal Hazard Region",
+      "type": "wavelength_range",
+      "range": "400-1400 nm"
+    },
+    {
+      "id": "visible",
+      "label": "Visible Light",
+      "type": "wavelength_range",
+      "range": "400-700 nm"
+    },
+    {
+      "id": "near_ir",
+      "label": "Near-Infrared",
+      "type": "wavelength_range",
+      "range": "700-1400 nm"
+    },
+    {
+      "id": "uv",
+      "label": "Ultraviolet",
+      "type": "wavelength_range",
+      "range": "100-400 nm"
+    },
+    {
+      "id": "far_ir",
+      "label": "Far-Infrared",
+      "type": "wavelength_range",
+      "range": ">1400 nm"
+    },
+    {
+      "id": "photochemical",
+      "label": "Photochemical Damage",
+      "type": "mechanism"
+    },
+    {
+      "id": "thermal",
+      "label": "Thermal Damage",
+      "type": "mechanism"
+    },
+    {
+      "id": "mechanical",
+      "label": "Mechanical Damage",
+      "type": "mechanism"
+    },
+    {
+      "id": "mpe",
+      "label": "Maximum Permissible Exposure",
+      "type": "safety_parameter"
+    },
+    {
+      "id": "scotoma",
+      "label": "Scotoma",
+      "type": "injury_effect"
+    },
+    {
+      "id": "blink_reflex",
+      "label": "Blink Reflex",
+      "type": "protection_mechanism"
+    }
+  ],
+  "edges": [
+    {
+      "source": "eye",
+      "target": "cornea",
+      "relation": "contains"
+    },
+    {
+      "source": "eye",
+      "target": "lens",
+      "relation": "contains"
+    },
+    {
+      "source": "eye",
+      "target": "retina",
+      "relation": "contains"
+    },
+    {
+      "source": "cornea",
+      "target": "uv",
+      "relation": "absorbs"
+    },
+    {
+      "source": "cornea",
+      "target": "far_ir",
+      "relation": "absorbs"
+    },
+    {
+      "source": "retina",
+      "target": "retinal_hazard_region",
+      "relation": "absorbs"
+    },
+    {
+      "source": "retinal_hazard_region",
+      "target": "visible",
+      "relation": "includes"
+    },
+    {
+      "source": "retinal_hazard_region",
+      "target": "near_ir",
+      "relation": "includes"
+    },
+    {
+      "source": "visible",
+      "target": "photochemical",
+      "relation": "causes"
+    },
+    {
+      "source": "visible",
+      "target": "thermal",
+      "relation": "causes"
+    },
+    {
+      "source": "near_ir",
+      "target": "thermal",
+      "relation": "causes"
+    },
+    {
+      "source": "uv",
+      "target": "photochemical",
+      "relation": "causes"
+    },
+    {
+      "source": "far_ir",
+      "target": "thermal",
+      "relation": "causes"
+    },
+    {
+      "source": "retina",
+      "target": "scotoma",
+      "relation": "develops"
+    },
+    {
+      "source": "mpe",
+      "target": "retina",
+      "relation": "protects"
+    },
+    {
+      "source": "blink_reflex",
+      "target": "visible",
+      "relation": "protects_against"
+    }
+  ],
+  "metadata": {
+    "node_count": 15,
+    "edge_count": 16,
+    "created_at": "2026-03-19T17:25:44.121050"
+  }
+}

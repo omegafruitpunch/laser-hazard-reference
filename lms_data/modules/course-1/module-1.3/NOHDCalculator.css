@@ -1,0 +1,607 @@
+/**
+ * NOHD Calculator Styles
+ * Module 1.3: Beam Hazard Calculations
+ */
+
+.nohd-calculator {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.calculator-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 24px 32px;
+}
+
+.calculator-header h2 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.calculator-header .subtitle {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+/* Step Indicator */
+.step-indicator {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 32px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  position: relative;
+}
+
+.step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: -50%;
+  width: 100%;
+  height: 2px;
+  background: #dee2e6;
+  z-index: 0;
+}
+
+.step.complete:not(:last-child)::after {
+  background: #28a745;
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #dee2e6;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.step.active .step-number {
+  background: #667eea;
+  color: white;
+  transform: scale(1.1);
+}
+
+.step.complete .step-number {
+  background: #28a745;
+  color: white;
+}
+
+.step-label {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #6c757d;
+  text-align: center;
+}
+
+.step.active .step-label {
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Calculator Body */
+.calculator-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+}
+
+/* Input Panel */
+.input-panel {
+  padding: 32px;
+  border-right: 1px solid #e9ecef;
+}
+
+.step-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.step-description {
+  color: #6c757d;
+  margin-bottom: 24px;
+}
+
+/* Form Elements */
+.wavelength-selector,
+.power-input,
+.divergence-input,
+.exposure-selector {
+  margin-bottom: 24px;
+}
+
+.wavelength-selector label,
+.power-input label,
+.divergence-input label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.wavelength-selector select,
+.power-input input,
+.unit-selector select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.wavelength-selector select:focus,
+.power-input input:focus,
+.unit-selector select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Spectrum Bar */
+.spectrum-bar {
+  height: 12px;
+  background: linear-gradient(to right, 
+    #8B00FF 0%,
+    #6600FF 10%,
+    #0066FF 20%,
+    #00FFFF 30%,
+    #00FF00 40%,
+    #FFFF00 50%,
+    #FF8800 60%,
+    #FF0000 70%,
+    #FF4400 80%,
+    #FF2200 90%,
+    #AA0000 100%
+  );
+  border-radius: 6px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.wavelength-marker {
+  position: absolute;
+  top: -4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transform: translateX(-50%);
+  transition: left 0.3s ease;
+}
+
+.spectrum-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* Power Input */
+.power-input {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+/* Preset Buttons */
+.preset-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.preset-buttons span {
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.preset-btn {
+  padding: 6px 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  background: white;
+  color: #667eea;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.preset-btn:hover,
+.preset-btn.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+/* Range Input */
+.divergence-input input[type="range"] {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: #dee2e6;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.divergence-input input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #667eea;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.range-value {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #667eea;
+}
+
+/* Exposure Selector */
+.exposure-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exposure-btn {
+  padding: 16px;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.exposure-btn:hover {
+  border-color: #667eea;
+  background: #f8f9ff;
+}
+
+.exposure-btn.active {
+  border-color: #667eea;
+  background: #667eea;
+  color: white;
+}
+
+/* Info Box */
+.info-box {
+  background: #e7f3ff;
+  border-left: 4px solid #667eea;
+  padding: 16px;
+  border-radius: 4px;
+  margin: 16px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.info-box.warning {
+  background: #fff3cd;
+  border-left-color: #ffc107;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-prev,
+.btn-next,
+.btn-primary {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-prev {
+  background: #f8f9fa;
+  color: #6c757d;
+  border: 1px solid #dee2e6;
+}
+
+.btn-prev:hover {
+  background: #e9ecef;
+}
+
+.btn-next,
+.btn-primary {
+  background: #667eea;
+  color: white;
+  flex: 1;
+}
+
+.btn-next:hover,
+.btn-primary:hover {
+  background: #5a6fd6;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Results Section */
+.results .formula-display {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.results .formula-display h4 {
+  margin: 0 0 12px 0;
+  color: #333;
+}
+
+.results .formula {
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  background: white;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.results .formula-values {
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: #6c757d;
+  text-align: center;
+}
+
+.result-cards {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.result-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result-card.primary {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 2px solid #dee2e6;
+}
+
+.result-label {
+  font-size: 13px;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.result-value {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.result-alt {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.safety-category {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  margin-bottom: 24px;
+}
+
+/* Hint System */
+.hint-section {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e9ecef;
+}
+
+.hint-toggle {
+  background: none;
+  border: none;
+  color: #667eea;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hint-toggle:hover {
+  color: #5a6fd6;
+}
+
+.hint-content {
+  margin-top: 16px;
+  padding: 16px;
+  background: #fff9e6;
+  border-radius: 8px;
+}
+
+.hint-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px dashed #e0d5b5;
+}
+
+.hint-item:last-child {
+  border-bottom: none;
+}
+
+.hint-level {
+  font-size: 12px;
+}
+
+.hint-text {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Visualization Panel */
+.visualization-panel {
+  padding: 32px;
+  background: #fafbfc;
+}
+
+.visualization-panel h3 {
+  margin: 0 0 24px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.beam-diagram {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 24px;
+}
+
+.beam-svg {
+  width: 100%;
+  height: auto;
+}
+
+.visualization-legend {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.legend-line {
+  width: 20px;
+  height: 2px;
+  background: #333;
+}
+
+.legend-line.dashed {
+  background: repeating-linear-gradient(to right, #333 0, #333 3px, transparent 3px, transparent 6px);
+}
+
+.safety-notes {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.safety-notes h4 {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.safety-notes ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.safety-notes li {
+  padding: 8px 0;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.safety-notes li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .calculator-body {
+    grid-template-columns: 1fr;
+  }
+  
+  .input-panel {
+    border-right: none;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .step-indicator {
+    padding: 16px;
+  }
+  
+  .step-label {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .calculator-header {
+    padding: 16px 20px;
+  }
+  
+  .calculator-header h2 {
+    font-size: 22px;
+  }
+  
+  .input-panel,
+  .visualization-panel {
+    padding: 20px;
+  }
+  
+  .power-input {
+    grid-template-columns: 1fr;
+  }
+}

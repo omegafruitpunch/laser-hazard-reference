@@ -1,0 +1,79 @@
+{
+  "component_id": "preshow_simulator",
+  "name": "Pre-Show Safety Simulator",
+  "type": "interactive_simulation",
+  "description": "Virtual walkthrough of pre-show safety verification procedures",
+  "scenarios": [
+    {
+      "id": "festival_setup",
+      "name": "Outdoor Music Festival",
+      "description": "Multiple 10W lasers on main stage, audience scanning planned",
+      "environment": {
+        "type": "outdoor",
+        "weather": "clear",
+        "venue": "festival_stage",
+        "audience_capacity": 10000
+      },
+      "checks": [
+        {
+          "category": "Physical Installation",
+          "items": [
+            {"id": "p1", "description": "Lasers securely mounted on truss", "status": "check_required"},
+            {"id": "p2", "description": "All cables secured and protected", "status": "check_required"},
+            {"id": "p3", "description": "Emergency stop accessible at FOH", "status": "check_required"}
+          ]
+        },
+        {
+          "category": "Optical Safety",
+          "items": [
+            {"id": "o1", "description": "Beam paths clear of aircraft routes", "status": "check_required"},
+            {"id": "o2", "description": "Audience area MPE measurements taken", "status": "check_required"},
+            {"id": "o3", "description": "Scan failure systems tested", "status": "check_required"}
+          ]
+        },
+        {
+          "category": "Documentation",
+          "items": [
+            {"id": "d1", "description": "FAA notification confirmed", "status": "check_required"},
+            {"id": "d2", "description": "Variance documentation on-site", "status": "check_required"},
+            {"id": "d3", "description": "Operator competency verified", "status": "check_required"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nightclub_install",
+      "name": "Nightclub Permanent Install",
+      "description": "2W RGB laser above DJ booth, beams terminated above audience",
+      "environment": {
+        "type": "indoor",
+        "venue": "nightclub",
+        "unsupervised": true
+      },
+      "checks": [
+        {
+          "category": "Physical Barriers",
+          "items": [
+            {"id": "p1", "description": "Minimum separation distances verified", "status": "check_required"},
+            {"id": "p2", "description": "Laser secured against movement", "status": "check_required"},
+            {"id": "p3", "description": "Blanking plates positioned", "status": "check_required"}
+          ]
+        }
+      ]
+    }
+  ],
+  "interaction_mode": {
+    "type": "virtual_walkthrough",
+    "features": [
+      "Navigate through 3D venue view",
+      "Click on equipment to inspect",
+      "Complete checklist items",
+      "Receive feedback on missed checks"
+    ]
+  },
+  "scoring": {
+    "points_per_check": 5,
+    "bonus_for_completion": 20,
+    "critical_items": ["Emergency stops", "Scan failure test", "MPE verification"]
+  }
+}

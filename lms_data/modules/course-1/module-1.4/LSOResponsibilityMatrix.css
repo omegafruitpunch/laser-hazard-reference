@@ -1,0 +1,434 @@
+/**
+ * LSO Responsibility Matrix Styles
+ * Module 1.4: The Laser Safety Officer Role
+ */
+
+.lso-matrix {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.matrix-header {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 24px 32px;
+}
+
+.matrix-header h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.matrix-header .subtitle {
+  margin: 0;
+  opacity: 0.95;
+  font-size: 15px;
+}
+
+/* Progress Section */
+.progress-section {
+  padding: 20px 32px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.progress-bar-container {
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #f093fb, #f5576c);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.btn-reset {
+  background: transparent;
+  border: 1px solid #dee2e6;
+  color: #6c757d;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.btn-reset:hover {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+/* View Options */
+.view-options {
+  padding: 16px 32px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #495057;
+}
+
+.toggle-switch input {
+  width: 18px;
+  height: 18px;
+  accent-color: #f5576c;
+}
+
+/* Categories Container */
+.categories-container {
+  padding: 16px;
+}
+
+.category-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.category-card.expanded {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.category-header:hover {
+  background: #f8f9fa;
+}
+
+.category-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.category-info {
+  flex: 1;
+}
+
+.category-info h3 {
+  margin: 0 0 4px 0;
+  font-size: 17px;
+  color: #333;
+}
+
+.category-info p {
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.category-progress {
+  font-size: 12px;
+  color: #f5576c;
+  font-weight: 600;
+}
+
+.category-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-check-all,
+.btn-uncheck-all {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.btn-check-all {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.btn-check-all:hover {
+  background: #c8e6c9;
+}
+
+.btn-uncheck-all {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.btn-uncheck-all:hover {
+  background: #ffcdd2;
+}
+
+.expand-hint {
+  font-size: 12px;
+  color: #adb5bd;
+  margin-right: 8px;
+}
+
+.expand-icon {
+  font-size: 12px;
+  color: #adb5bd;
+  transition: transform 0.3s;
+}
+
+.expand-icon.expanded {
+  transform: rotate(180deg);
+}
+
+/* Responsibilities List */
+.responsibilities-list {
+  padding: 0 20px 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.responsibility-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin-top: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.responsibility-item:hover {
+  background: #e9ecef;
+}
+
+.responsibility-item.checked {
+  background: #e8f5e9;
+  border-color: #4caf50;
+}
+
+.responsibility-item.critical {
+  border-left: 4px solid #f44336;
+}
+
+.checkbox {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #adb5bd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.responsibility-item.checked .checkbox {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+
+.responsibility-text {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.responsibility-item.checked .responsibility-text {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.frequency-badge {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+.critical-badge {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Summary Section */
+.matrix-summary {
+  padding: 24px 32px;
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.matrix-summary h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.summary-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.summary-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.summary-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.summary-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+/* Legend */
+.matrix-legend {
+  padding: 20px 32px;
+  background: #fff;
+  border-top: 1px solid #e9ecef;
+}
+
+.matrix-legend h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #495057;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.legend-text {
+  font-size: 13px;
+  color: #6c757d;
+  text-transform: capitalize;
+}
+
+.legend-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: #fff3e0;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #e65100;
+}
+
+.critical-indicator {
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .matrix-header {
+    padding: 20px 24px;
+  }
+  
+  .progress-section,
+  .view-options {
+    padding: 16px 24px;
+  }
+  
+  .categories-container {
+    padding: 12px;
+  }
+  
+  .category-header {
+    padding: 14px 16px;
+  }
+  
+  .category-actions .btn-check-all,
+  .category-actions .btn-uncheck-all {
+    display: none;
+  }
+  
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .matrix-summary,
+  .matrix-legend {
+    padding: 20px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .matrix-header h2 {
+    font-size: 20px;
+  }
+  
+  .category-icon {
+    font-size: 24px;
+  }
+  
+  .frequency-badge {
+    display: none;
+  }
+}

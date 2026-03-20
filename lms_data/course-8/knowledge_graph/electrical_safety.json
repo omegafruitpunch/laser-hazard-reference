@@ -1,0 +1,177 @@
+{
+  "graph_id": "KG-ES-001",
+  "source": "electrical-safety-standards.pdf",
+  "document_type": "Regulatory Standards Summary",
+  "nodes": [
+    {
+      "id": "OSHA",
+      "type": "regulatory_body",
+      "label": "Occupational Safety and Health Administration",
+      "properties": {
+        "enforcement_mechanism": "General Duty Clause",
+        "reference": "29 CFR 1910",
+        "specific_regulation": "No specific laser interlock requirement"
+      }
+    },
+    {
+      "id": "FDA-CDRH",
+      "type": "regulatory_body",
+      "label": "FDA Center for Devices and Radiological Health",
+      "properties": {
+        "authority": "Title 21 Code of Federal Regulations",
+        "focus": "Manufacturing standards and product safety"
+      }
+    },
+    {
+      "id": "ANSI-Z136",
+      "type": "standard",
+      "label": "ANSI Z136.1-2014",
+      "properties": {
+        "full_name": "American National Standard for Safe Use of Lasers",
+        "role": "Industry best practices",
+        "adoption": "Referenced by OSHA for enforcement"
+      }
+    },
+    {
+      "id": "General-Duty-Clause",
+      "type": "regulation",
+      "label": "OSHA General Duty Clause",
+      "properties": {
+        "reference": "29 CFR 1910",
+        "application": "Requires industry best practices",
+        "enforcement_target": "Companies under OSHA jurisdiction"
+      }
+    },
+    {
+      "id": "21CFR-1040",
+      "type": "regulation",
+      "label": "21 CFR 1040",
+      "properties": {
+        "full_name": "Federal Laser Product Performance Standards (FLPPS)",
+        "scope": "Manufacturing of laser products",
+        "sub_sections": ["1040.10", "1040.11"]
+      }
+    },
+    {
+      "id": "21CFR-1040-10",
+      "type": "regulation",
+      "label": "21 CFR 1040.10",
+      "properties": {
+        "title": "Performance standards for laser products",
+        "covers": ["Housing interlocks", "Remote electrical interlocks", "Labeling", "Power classification"],
+        "applicability": "Manufacturers and end user enclosure builders"
+      }
+    },
+    {
+      "id": "21CFR-1040-11",
+      "type": "regulation",
+      "label": "21 CFR 1040.11",
+      "properties": {
+        "title": "Performance standards for specific use laser products",
+        "covers": ["Medical", "Survey", "Leveling", "Alignment", "Demonstration lasers"]
+      }
+    },
+    {
+      "id": "External-Interlock",
+      "type": "safety_feature",
+      "label": "External Interlock Connector",
+      "properties": {
+        "required_for": ["Class 3B lasers", "Class 4 lasers"],
+        "manufacturer_requirement": "Must provide on all commercial units",
+        "user_requirement": "No federal mandate to use",
+        "typical_state": "Electrically shorted (disabled) from factory"
+      }
+    },
+    {
+      "id": "In-House-Laser",
+      "type": "scenario",
+      "label": "In-House Laser Construction",
+      "properties": {
+        "context": "Facility building laser for own use",
+        "expectation": "Meet FLPPS intent",
+        "challenge": "Basic electronics knowledge sufficient to build Class 3B/4 lasers",
+        "risk": "No laser physics or safety knowledge required"
+      }
+    },
+    {
+      "id": "LSO",
+      "type": "role",
+      "label": "Laser Safety Officer",
+      "properties": {
+        "responsibility": "Monitor and enforce laser safety",
+        "increased_emphasis": "Due to DIY laser availability",
+        "oversight_scope": "In-house and commercial laser systems"
+      }
+    },
+    {
+      "id": "FLPPS-ANSI-Overlap",
+      "type": "relationship",
+      "label": "FLPPS and ANSI Z136.1 Overlap",
+      "properties": {
+        "description": "ANSI Z136.1 Section 4.3 repeats FLPPS requirements",
+        "sections": ["4.3.1", "4.3.2", "4.3.3", "4.3.4", "4.3.5.1", "4.3.7", "4.3.8", "4.3.14"],
+        "implication": "Adopting ANSI effectively adopts FLPPS"
+      }
+    },
+    {
+      "id": "Compliance-Gap",
+      "type": "risk",
+      "label": "Interlock Usage Compliance Gap",
+      "properties": {
+        "manufacturer_must": "Provide external interlocks",
+        "user_not_required": "No federal mandate to use them",
+        "common_issue": "Lasers placed in service without interlock configuration",
+        "connector_state": "Often shipped shorted (disabled)"
+      }
+    }
+  ],
+  "edges": [
+    {"source": "OSHA", "target": "General-Duty-Clause", "relation": "enforces_through"},
+    {"source": "OSHA", "target": "ANSI-Z136", "relation": "references"},
+    {"source": "OSHA", "target": "21CFR-1040", "relation": "references_for_enforcement"},
+    {"source": "FDA-CDRH", "target": "21CFR-1040", "relation": "mandates"},
+    {"source": "21CFR-1040", "target": "21CFR-1040-10", "relation": "includes"},
+    {"source": "21CFR-1040", "target": "21CFR-1040-11", "relation": "includes"},
+    {"source": "21CFR-1040-10", "target": "External-Interlock", "relation": "requires"},
+    {"source": "External-Interlock", "target": "Compliance-Gap", "relation": "creates"},
+    {"source": "In-House-Laser", "target": "LSO", "relation": "requires_oversight_from"},
+    {"source": "In-House-Laser", "target": "FLPPS-ANSI-Overlap", "relation": "should_comply_with"},
+    {"source": "ANSI-Z136", "target": "FLPPS-ANSI-Overlap", "relation": "contains"},
+    {"source": "LSO", "target": "Compliance-Gap", "relation": "must_address"},
+    {"source": "LSO", "target": "In-House-Laser", "relation": "monitors"}
+  ],
+  "regulatory_hierarchy": [
+    {
+      "level": "Federal Law",
+      "entity": "21 CFR 1040 (FLPPS)",
+      "scope": "Manufacturer requirements"
+    },
+    {
+      "level": "OSHA Enforcement",
+      "entity": "General Duty Clause + ANSI Z136.1",
+      "scope": "Workplace safety"
+    },
+    {
+      "level": "Industry Standard",
+      "entity": "ANSI Z136.1-2014",
+      "scope": "Best practices (also in FLPPS)"
+    }
+  ],
+  "critical_insights": [
+    {
+      "insight": "Interlock Provision vs Usage Gap",
+      "description": "Manufacturers must provide interlocks, but no federal law requires users to connect them",
+      "risk_level": "High"
+    },
+    {
+      "insight": "DIY Laser Safety Challenge",
+      "description": "High-power laser diodes enable anyone to build Class 3B/4 lasers without safety knowledge",
+      "risk_level": "High"
+    },
+    {
+      "insight": "OSHA-FDA Regulatory Overlap",
+      "description": "OSHA enforces workplace safety by referencing FDA manufacturing standards",
+      "risk_level": "Medium"
+    }
+  ]
+}

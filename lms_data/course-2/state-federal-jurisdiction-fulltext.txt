@@ -1,0 +1,81 @@
+OSHA / FDA / ANSI Requirements
+OSHA
+Federal OSHA has no specific requirement for Laser "Interlocks", but they require companies
+falling under their jurisdiction to follow industry standard "best practices" for laser safety. They will
+enforce this through the "General Duty Clause" of 29 CFR 1910. State OSHA may or may not
+specifically address Laser Interlocks, it depends on the state.
+Q: What document do they reference for enforcement?
+A: They look at the guidelines set forth in ANSI Z136.1-2014 and related specific ANSI Z136 sub-
+chapters. If they find a problem with a laser that does not appear to meet normal safety codes, they
+will refer to the FDA enforcement codes under 21 CFR 1040
+FDA
+The U.S. Food & Drug Administration's Center for Devices and Radiological Health (CDRH)
+mandates are released as federal code in Title 21 of the Code of Federal Regulations (21CFR).
+The subsections of this title list the required elements to which manufacturers must comply if they
+are offering a product for sale in the United States.
+A summary of 21CFR chapters related to laser products:
+21CFR1000-1005 - Broad scope list of devices regulated the records and reports that must be
+produced and retained by a manufacturer, and the import / export requirements.
+21CFR1010 - General performance standards, certifications and variances.
+21CFR1040.10 - Performance standards for manufacture of laser products. This is where one will
+find the information pertaining to the laser housing interlocks, remote electrical interlocks, labeling,
+and power classification. In addition to providing the required information for manufacturers, this
+standard is a useful reference for the end user in situations where the user is building their own
+class 1 enclosure around class 3B or class 4 laser systems.
+21CFR1040.11 - Performance standards for specific use laser products. Medical, survey, leveling,
+alignment, and demonstration laser products must meet criteria listed in this chapter as well as all
+criteria listed in 21CFR1040.10
+The chapters above are collectively known by the acronym FLPPS, which stands for
+Federal Laser Product Performance Standards.
+FLPPS requirements specific to the remote laser interlock:
+Every commercial Class 3b and Class 4 laser sold in the United States shall include a remote
+electrical interlock connection. The connection will have two terminals that need to be electrically
+shorted to each other. If the circuit opens, the laser will not emit a laser radiation hazard above the
+MPE threshold. The manufacturer is given leeway in choosing the method to be employed to
+accomplish this task. The manufacturer may use an electro-mechanical shutter or electro-optic
+modulator behind the laser housing, or they may choose to electrically shut down the power supply
+to the laser. The only real constraint is the fact that the device must be fail-safe and the voltage
+used for this remote interlock circuit shall be less than 130 volts RMS. Although it is unlikely that a
+modern manufacturer would use this voltage, one needs to be aware of the potential shock hazard
+that may be present at this connector. If you are unsure of the potential on a particular laser,
+consult the manufacturer. The fail safe requirement is an important feature. When a safety circuit
+has tripped the laser off, the laser must remain off until it has been restarted by an operator even if
+the safety circuit trip was momentary.\n\nLasers or laser systems manufactured for "in-house" use:
+Every effort should be made to meet the intent of FLPPS when a facility is constructing a laser or
+laser enclosure for its own use. FLPPS is intended for the safety of the end user. With the
+increased availability of high power laser diodes, any person with a basic understanding of
+electronics can construct class 3B or class 4 lasers without any knowledge of laser physics or laser
+safety. This places an increased emphasis on the laser safety officer to monitor and enforce laser
+safety issues.
+A facility that fully adopts the ANSI Z136.1 standard is effectively adopting FLPPS. A majority of
+the FLPPS requirements are repeated (almost verbatim) in section 4.3 of the ANSI Z136.1
+standard. This repeat of the FLPPS requirements within the ANSI standard provides beneficial
+safety information, but can lead to confusion when trying to implement end user engineered safety
+controls. ANSI Z136.1-2014 sections 4.3.1, 4.3.2, 4.3.3, 4.3.4, 4.3.5.1, 4.3.7, 4.3.8, and 4.3.14 are
+FLPPS specifications that are expected to already exist as a performance feature in a
+commercially certified product. These items should be verified to exist upon receipt of a laser and
+should be checked periodically to verify their functionality. If the laser or laser system is built in-
+house, full compliance is an expectation.
+End user interlocking requirements:
+We noted earlier that there was a legal mandate in FLPPS to provide an external interlock on all
+commercial class 3B and class 4 lasers. It is somewhat interesting that there is not a federal legal
+mandate for the end client to actually use it. In fact, the interlock connector will most likely come
+from the manufacturer in an electrically shorted state. This is unfortunate because the lasers are
+often placed into service without consideration of a proper interlock system configuration.
+Q: Why isn't use of the remote interlock mandated?
+A: There are thousands of possible laser applications. Many applications would not require the
+connection to an external interlock control system. Instead of mandating the use of the interlock,
+the ANSI Z136 series of standards provides several methods of instituting an engineered laser
+safety program.
+ANSI Z136
+ANSI Z136.1 is the American National Standard for Safe Use of Lasers. Z136.1 is the parent
+document referenced by all other Z136 standards. The standards are developed by the ANSI
+Accredited Standards Committee (ASC) Z136, a collaboration of the leading experts in the field,
+and are considered to be the authoritative standard in the United States for safe laser operation
+and practices. Although the standards are not "law," compliance with the standard is often
+mandated by federal entities.*
+* 10CFR851.23(11) requires all Dept. of Energy contractors to comply with ANSI Z136.1
+see: https://www.govinfo.gov/app/details/CFR-2012-title10-vol4/CFR-2012-title10-vol4-part851
+The ANSI Z136.1-2014 standard is a copyrighted publication available for purchase from several
+commercial sources. The ANSI Z136 secretariat and publisher is the Laser Institute of America
+(LIA), whose web address is: http://www.laserinstitute.org/

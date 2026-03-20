@@ -1,0 +1,64 @@
+{
+  "id": "course-5-quiz",
+  "courseId": "course-5",
+  "title": "International Regulations Assessment",
+  "description": "Assessment covering EU directives, UK regulations, Canadian requirements, and international standards harmonization.",
+  "passingScore": 80,
+  "timeLimit": 30,
+  "randomizeQuestions": true,
+  "questions": [
+    {
+      "id": "c5-q1",
+      "type": "multiple_choice",
+      "question": "Which EU Directive governs worker exposure to artificial optical radiation?",
+      "options": ["2006/25/EC", "2004/40/EC", "2014/35/EU", "89/391/EEC"],
+      "correctIndex": 0,
+      "explanation": "EU Directive 2006/25/EC on the minimum health and safety requirements regarding the exposure of workers to risks arising from physical agents (artificial optical radiation) applies to laser workers."
+    },
+    {
+      "id": "c5-q2",
+      "type": "multiple_choice",
+      "question": "What replaced CE marking in the UK domestic market after Brexit?",
+      "options": ["UK Safety Mark", "UKCA marking", "BSI certification", "HSE approval"],
+      "correctIndex": 1,
+      "explanation": "UKCA (UK Conformity Assessed) marking replaced CE marking for products placed on the UK domestic market after Brexit. CE marking may still be required for products sold in the EU."
+    },
+    {
+      "id": "c5-q3",
+      "type": "multiple_choice",
+      "question": "Canada regulates laser products under which legislation?",
+      "options": ["Health Protection Act", "Radiation Emitting Devices Act (REDA)", "Canada Safety Standards Act", "Nuclear Safety and Control Act"],
+      "correctIndex": 1,
+      "explanation": "Health Canada regulates laser products under the Radiation Emitting Devices Act (REDA), which sets performance standards for laser products sold in Canada."
+    },
+    {
+      "id": "c5-q4",
+      "type": "multiple_choice",
+      "question": "Which IEC technical committee is responsible for laser safety standards?",
+      "options": ["TC62", "TC76", "TC99", "TC34"],
+      "correctIndex": 1,
+      "explanation": "IEC Technical Committee 76 (TC76) is responsible for laser safety standards, including IEC 60825 series. TC76 works with ISO and national standards bodies on harmonization."
+    },
+    {
+      "id": "c5-q5",
+      "type": "multiple_choice",
+      "question": "AS/NZS 2211 is the laser safety standard for which region?",
+      "options": ["Asia Pacific", "Australia and New Zealand", "Southeast Asia", "Africa and South Pacific"],
+      "correctIndex": 1,
+      "explanation": "AS/NZS 2211 is the joint Australian/New Zealand laser safety standard series, which adopts IEC 60825 with Australasian-specific modifications."
+    },
+    {
+      "id": "c5-q6",
+      "type": "multiple_choice",
+      "question": "Which edition of IEC 60825-1 is the current international baseline?",
+      "options": ["Edition 1 (1993)", "Edition 2 (2007)", "Edition 3 (2014)", "Edition 4 (2021)"],
+      "correctIndex": 2,
+      "explanation": "IEC 60825-1 Edition 3 (2014) is the current edition forming the basis of international harmonization. It introduced changes to the classification system and accessible emission limits."
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-01-01T00:00:00Z"
+  }
+}

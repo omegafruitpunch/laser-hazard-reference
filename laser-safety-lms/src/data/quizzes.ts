@@ -506,6 +506,276 @@ export const quizzes: Record<string, QuizQuestion[]> = {
       explanation: 'A Standards Compliance Matrix lists all applicable standards (ANSI, IEC, state, federal), the company\'s compliance status for each, and any documented deviations with risk assessments and mitigations.',
     },
   ],
+
+  'quiz-8-1': [
+    {
+      id: 'q8-1-1',
+      question: 'Which ANSI Z136 standard covers safe use of lasers in healthcare settings?',
+      options: ['ANSI Z136.1', 'ANSI Z136.2', 'ANSI Z136.3', 'ANSI Z136.8'],
+      correctIndex: 2,
+      explanation: 'ANSI Z136.3 specifically addresses safe use of lasers in healthcare settings including hospitals, clinics, and medical procedures.',
+    },
+    {
+      id: 'q8-1-2',
+      question: 'What does ANSI Z136.1 primarily define?',
+      options: [
+        'Only entertainment laser requirements',
+        'MPE values, laser classification, and LSO responsibilities',
+        'Fiber optic communication safety only',
+        'Electrical safety requirements',
+      ],
+      correctIndex: 1,
+      explanation: 'ANSI Z136.1 is the foundation standard that defines Maximum Permissible Exposure (MPE) values, laser classification criteria, and Laser Safety Officer responsibilities.',
+    },
+    {
+      id: 'q8-1-3',
+      question: 'Which Z136 standard applies to outdoor laser operations?',
+      options: ['Z136.5', 'Z136.6', 'Z136.7', 'Z136.9'],
+      correctIndex: 1,
+      explanation: 'ANSI Z136.6 specifically addresses safe use of lasers outdoors, including FAA coordination, beam termination requirements, and atmospheric considerations.',
+    },
+    {
+      id: 'q8-1-4',
+      question: 'ANSI Z136.8 covers which environment?',
+      options: [
+        'Manufacturing facilities',
+        'Research, development, and testing laboratories',
+        'Medical surgical suites',
+        'Outdoor events',
+      ],
+      correctIndex: 1,
+      explanation: 'ANSI Z136.8 addresses safe use of lasers in research, development, or testing environments including university labs and experimental facilities.',
+    },
+    {
+      id: 'q8-1-5',
+      question: 'Which standard works with ANSI E1.46 for entertainment laser applications?',
+      options: ['ANSI Z136.1', 'ANSI Z136.3', 'ANSI Z136.8', 'ANSI Z136.10'],
+      correctIndex: 3,
+      explanation: 'ANSI Z136.10 specifically addresses safe use of lasers in entertainment and works in conjunction with ANSI E1.46 for entertainment laser applications.',
+    },
+  ],
+
+  'quiz-8-2': [
+    {
+      id: 'q8-2-1',
+      question: 'What is the minimum vertical separation distance required by E1.46 for supervised venues?',
+      options: ['2 meters', '2.5 meters', '3 meters', '4 meters'],
+      correctIndex: 2,
+      explanation: 'ANSI E1.46 requires a minimum 3-meter vertical separation between laser beams and the audience in supervised venues.',
+    },
+    {
+      id: 'q8-2-2',
+      question: 'What is the required response time for scan failure detection systems per E1.46?',
+      options: ['Within 100 milliseconds', 'Within 1 second', 'Within a few milliseconds', 'Within 10 seconds'],
+      correctIndex: 2,
+      explanation: 'E1.46 requires scan failure detection systems to respond within a few milliseconds to prevent hazardous exposure in case of scanner malfunction.',
+    },
+    {
+      id: 'q8-2-3',
+      question: 'What type of authority must the LSO have according to E1.46?',
+      options: [
+        'Advisory authority only',
+        'Executive authority with power to modify or terminate operations',
+        'Administrative authority for paperwork only',
+        'No authority — role is consultative',
+      ],
+      correctIndex: 1,
+      explanation: 'E1.46 requires the LSO to have executive authority and responsibility, including the power to modify or terminate operations for safety reasons.',
+    },
+    {
+      id: 'q8-2-4',
+      question: 'Which documentation is required by E1.46 for each installation?',
+      options: [
+        'Only equipment manuals',
+        'Risk assessment and MPE calculations',
+        'Only insurance certificates',
+        'Only operator licenses',
+      ],
+      correctIndex: 1,
+      explanation: 'E1.46 requires risk assessment documentation and MPE calculations for all accessible areas as part of the mandatory documentation package.',
+    },
+    {
+      id: 'q8-2-5',
+      question: 'What is the minimum horizontal separation distance required by E1.46?',
+      options: ['1.5 meters', '2 meters', '2.5 meters', '3 meters'],
+      correctIndex: 2,
+      explanation: 'ANSI E1.46 requires a minimum 2.5-meter horizontal separation between laser beams and accessible areas where the audience may be present.',
+    },
+  ],
+
+  'quiz-8-3': [
+    {
+      id: 'q8-3-1',
+      question: 'In the hierarchy of controls, which level is most effective?',
+      options: ['Administrative controls', 'PPE', 'Engineering controls', 'Elimination/Substitution'],
+      correctIndex: 3,
+      explanation: 'Elimination/substitution is the most effective level as it removes the hazard entirely rather than controlling exposure to it.',
+    },
+    {
+      id: 'q8-3-2',
+      question: 'Which of the following is an engineering control?',
+      options: [
+        'Safety training program',
+        'Protective eyewear',
+        'Safety interlocks and enclosures',
+        'Standard Operating Procedures',
+      ],
+      correctIndex: 2,
+      explanation: 'Engineering controls physically isolate people from hazards. Safety interlocks and enclosures are engineering controls, while training and SOPs are administrative controls, and eyewear is PPE.',
+    },
+    {
+      id: 'q8-3-3',
+      question: 'Why is PPE considered the last resort in the hierarchy of controls?',
+      options: [
+        'It is too expensive',
+        'It relies on human behavior and can fail',
+        'It is not effective against laser radiation',
+        'It requires regulatory approval',
+      ],
+      correctIndex: 1,
+      explanation: 'PPE is the last resort because it relies on consistent human behavior (proper selection, wearing, maintenance) and can fail if not used correctly.',
+    },
+    {
+      id: 'q8-3-4',
+      question: 'What is the primary purpose of administrative controls?',
+      options: [
+        'To physically block laser beams',
+        'To change how people work through procedures and training',
+        'To provide personal protection equipment',
+        'To eliminate the laser hazard entirely',
+      ],
+      correctIndex: 1,
+      explanation: 'Administrative controls change the way people work through procedures, training, signage, and access restrictions rather than physically controlling the hazard.',
+    },
+    {
+      id: 'q8-3-5',
+      question: 'Which control measure is required for Class 4 lasers?',
+      options: [
+        'Warning labels only',
+        'Comprehensive engineering controls including interlocks',
+        'Administrative controls only',
+        'No special controls required',
+      ],
+      correctIndex: 1,
+      explanation: 'Class 4 lasers require comprehensive engineering controls including protective housings, safety interlocks, and beam stops due to their high power and potential for serious injury.',
+    },
+  ],
+
+  'quiz-8-4': [
+    {
+      id: 'q8-4-1',
+      question: 'What is the purpose of a Standards Compliance Matrix?',
+      options: [
+        'To list all laser equipment',
+        'To document applicable standards and compliance status',
+        'To schedule maintenance activities',
+        'To track employee attendance',
+      ],
+      correctIndex: 1,
+      explanation: 'A Standards Compliance Matrix documents all applicable standards, compliance status for each, and any deviations with risk assessments.',
+    },
+    {
+      id: 'q8-4-2',
+      question: 'Which document establishes the baseline for medical surveillance?',
+      options: [
+        'Risk assessment',
+        'Pre-placement examination results',
+        'Training certificates',
+        'Equipment manuals',
+      ],
+      correctIndex: 1,
+      explanation: 'Pre-placement examination results establish the baseline for medical surveillance, allowing comparison if exposure incidents occur later.',
+    },
+    {
+      id: 'q8-4-3',
+      question: 'What must SOPs include for laser operations?',
+      options: [
+        'Only startup procedures',
+        'Startup, normal operation, emergency, and shutdown procedures',
+        'Only emergency procedures',
+        'Only maintenance schedules',
+      ],
+      correctIndex: 1,
+      explanation: 'Comprehensive SOPs must cover startup, normal operation, emergency procedures, and shutdown to ensure safe operation under all conditions.',
+    },
+    {
+      id: 'q8-4-4',
+      question: 'How long should laser safety training records be retained?',
+      options: [
+        '1 year',
+        'Until the next training session',
+        'Per employer policy and regulatory requirements (typically 3+ years)',
+        'No retention required',
+      ],
+      correctIndex: 2,
+      explanation: 'Training records should be retained per employer policy and regulatory requirements, typically for 3 or more years, to demonstrate compliance and competency.',
+    },
+    {
+      id: 'q8-4-5',
+      question: 'What is the purpose of hand-over documentation?',
+      options: [
+        'To transfer ownership of equipment',
+        'To transfer operational and safety responsibility to venue/operators',
+        'To sell used laser equipment',
+        'To terminate employment',
+      ],
+      correctIndex: 1,
+      explanation: 'Hand-over documentation transfers operational and safety responsibility from installers to venue operators, ensuring they have all necessary safety information.',
+    },
+  ],
+
+  'quiz-8-5': [
+    {
+      id: 'q8-5-1',
+      question: 'What percentage of the CLSO exam covers MPE and Hazard Analysis?',
+      options: ['10%', '15%', '20%', '25%'],
+      correctIndex: 2,
+      explanation: 'MPE and Hazard Analysis constitutes 20% of the CLSO examination, making it one of the largest content domains.',
+    },
+    {
+      id: 'q8-5-2',
+      question: 'What is the passing score for CLSO certification?',
+      options: ['60%', '70%', '75%', '80%'],
+      correctIndex: 1,
+      explanation: 'The passing score for CLSO certification is 70%. Candidates must achieve this score across all examination domains.',
+    },
+    {
+      id: 'q8-5-3',
+      question: 'Which domain has the highest weighting on the CLSO exam?',
+      options: [
+        'Fundamentals',
+        'Control Measures and Standards/Regulations (tied at 20%)',
+        'LSO Responsibilities',
+        'Medical Surveillance',
+      ],
+      correctIndex: 1,
+      explanation: 'Control Measures and Standards/Regulations are tied at 20% each, making them the highest-weighted domains on the CLSO examination.',
+    },
+    {
+      id: 'q8-5-4',
+      question: 'What additional focus does CMLSO certification have compared to CLSO?',
+      options: [
+        'Outdoor laser operations',
+        'Medical applications, tissue interactions, and OR safety protocols',
+        'Manufacturing environments',
+        'Entertainment applications',
+      ],
+      correctIndex: 1,
+      explanation: 'CMLSO focuses on medical applications, tissue interactions, operating room safety protocols, and patient/staff protection specific to healthcare settings.',
+    },
+    {
+      id: 'q8-5-5',
+      question: 'What does professional certification demonstrate?',
+      options: [
+        'Only completion of a training course',
+        'Competency to employers, regulators, and the public',
+        'Ability to sell laser equipment',
+        'Ownership of laser equipment',
+      ],
+      correctIndex: 1,
+      explanation: 'Professional certification demonstrates competency to employers, regulatory authorities, and the public, validating the holder\'s knowledge and qualifications.',
+    },
+  ],
 };
 
 export function getQuizByCourseId(courseId: string): QuizQuestion[] {

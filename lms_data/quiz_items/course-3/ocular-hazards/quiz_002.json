@@ -1,0 +1,13 @@
+{
+  "id": "ocular-hazards_q002",
+  "type": "multiple_choice",
+  "question": "By what factor can the eye's optics concentrate laser energy at the retina?",
+  "options": [
+    "10x to 100x",
+    "100x to 1,000x",
+    "1,000x to 10,000x",
+    "Up to 100,000x"
+  ],
+  "correct": 3,
+  "explanation": "The cornea and lens can focus laser energy by a factor of up to 100,000 times, making even relatively low-power lasers potentially dangerous to the retina."
+}

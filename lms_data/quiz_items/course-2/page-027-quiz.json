@@ -1,0 +1,33 @@
+{
+  "course": "course-2",
+  "page_number": 27,
+  "quiz_items": [
+    {
+      "id": "C2-P27-Q1",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "When is a scanning safeguard required for laser light shows?",
+      "options": [
+        "Only for Class IV projectors",
+        "For any scanning effect exposing audience to radiation >5 mW peak power",
+        "Only for outdoor shows",
+        "Never required with proper training"
+      ],
+      "correct_answer": 1,
+      "explanation": "Any scanning effect that may expose audience to scanned radiation >5 mW peak power requires a scanning safeguard because stopping/slowing could produce Class IIIb/IV levels and acute injury risk.",
+      "learning_objective": "Understand scanning safeguard requirements",
+      "regulatory_reference": "Appendix B - Audience Scanning"
+    },
+    {
+      "id": "C2-P27-Q2",
+      "type": "true_false",
+      "difficulty": "intermediate",
+      "question": "Failure to provide timely notifications of show schedules is a violation of variance conditions and may result in variance revocation.",
+      "options": ["True", "False"],
+      "correct_answer": 0,
+      "explanation": "True. Repeated failures to report, inadequate reporting, or failure to provide timely notifications are violations and may lead to variance amendment requirements or revocation.",
+      "learning_objective": "Know variance compliance consequences",
+      "regulatory_reference": "Appendix B - Variance Violations"
+    }
+  ]
+}

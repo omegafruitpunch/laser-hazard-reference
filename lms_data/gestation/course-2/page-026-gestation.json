@@ -1,0 +1,53 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 26,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Light show reporting content requirements",
+      "Touring vs permanent show documentation",
+      "Installation diagrams and safety analysis",
+      "Special project show requirements"
+    ],
+    "key_terms": [
+      {
+        "term": "Touring Shows",
+        "definition": "Mobile laser shows with multiple venues"
+      },
+      {
+        "term": "Permanent/Semi-Permanent Shows",
+        "definition": "Fixed installation shows"
+      },
+      {
+        "term": "Special Project Shows",
+        "definition": "One-time engagement performances"
+      },
+      {
+        "term": "Quality Control Procedures",
+        "definition": "Testing/checklists for setup and performances"
+      },
+      {
+        "term": "MPE Boundaries",
+        "definition": "Maximum Permissible Exposure limit locations"
+      }
+    ],
+    "regulatory_references": [
+      "Reporting Guide for Laser Light Shows",
+      "Variance conditions for scanning safeguards"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Document different show types",
+      "Create installation diagrams",
+      "Establish QC procedures",
+      "Plan for special project shows"
+    ],
+    "prerequisites": [
+      "Pages 23-25 content"
+    ],
+    "estimated_study_time_minutes": 25,
+    "content_type": "specialized_guidance",
+    "has_tables": false
+  }
+}

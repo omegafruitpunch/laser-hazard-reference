@@ -1,0 +1,301 @@
+{
+  "graph_id": "course-3-ppe-knowledge-graph",
+  "title": "Laser PPE Knowledge Graph",
+  "description": "Knowledge graph connecting laser protective eyewear concepts, specifications, and requirements",
+  "version": "1.0",
+  "nodes": [
+    {
+      "id": "laser_protective_eyewear",
+      "type": "primary_concept",
+      "label": "Laser Protective Eyewear",
+      "description": "Eye-protection devices designed to protect against laser radiation",
+      "attributes": {
+        "required_for": ["Class IIIB", "Class IV"],
+        "optional_for": ["Class I", "Class II", "Class IIIA"]
+      }
+    },
+    {
+      "id": "optical_density",
+      "type": "technical_concept",
+      "label": "Optical Density (OD)",
+      "description": "Logarithmic measure of laser eyewear attenuation",
+      "formula": "OD = log10(H0/MPE)",
+      "attributes": {
+        "typical_range": "1.0 to 7.0+",
+        "calculation_basis": "ANSI Z 136.1 MPE criteria"
+      }
+    },
+    {
+      "id": "wavelength_protection",
+      "type": "technical_concept",
+      "label": "Wavelength-Specific Protection",
+      "description": "Eyewear must be matched to specific laser wavelengths",
+      "attributes": {
+        "uv_range": "0.200 - 0.400 μm",
+        "visible_range": "0.400 - 0.780 μm",
+        "nir_range": "0.780 - 1.400 μm",
+        "fir_range": "3.00 - 1000 μm"
+      }
+    },
+    {
+      "id": "class_I_laser",
+      "type": "laser_class",
+      "label": "Class I Laser",
+      "description": "Cannot emit laser radiation at known hazard levels",
+      "attributes": {
+        "eyewear_required": false,
+        "typical_power": "< 0.4 W (CW visible)"
+      }
+    },
+    {
+      "id": "class_II_laser",
+      "type": "laser_class",
+      "label": "Class II Laser",
+      "description": "Low-power visible lasers, protected by aversion response",
+      "attributes": {
+        "eyewear_required": false,
+        "power_limit": "≤ 1 mW",
+        "safety_mechanism": "Blink reflex (0.25 sec)"
+      }
+    },
+    {
+      "id": "class_IIIA_laser",
+      "type": "laser_class",
+      "label": "Class IIIA Laser",
+      "description": "Intermediate power lasers",
+      "attributes": {
+        "eyewear_required": "Only if MPE exceeded",
+        "power_range": "1-5 mW (CW)",
+        "hazard": "Intrabeam viewing only"
+      }
+    },
+    {
+      "id": "class_IIIB_laser",
+      "type": "laser_class",
+      "label": "Class IIIB Laser",
+      "description": "Moderate power lasers",
+      "attributes": {
+        "eyewear_required": "Yes, when MPE exceeded",
+        "power_range": "5-500 mW (CW)",
+        "controls": "Controlled area required"
+      }
+    },
+    {
+      "id": "class_IV_laser",
+      "type": "laser_class",
+      "label": "Class IV Laser",
+      "description": "High power lasers with significant hazards",
+      "attributes": {
+        "eyewear_required": "MANDATORY",
+        "power_threshold": "> 500 mW (CW)",
+        "hazards": ["Eye", "Skin", "Fire", "Diffuse reflection"]
+      }
+    },
+    {
+      "id": "argon_laser",
+      "type": "laser_type",
+      "label": "Argon Laser",
+      "description": "Gas laser with primary output in blue-green visible spectrum",
+      "attributes": {
+        "wavelengths": ["0.514 μm (green)", "0.488 μm (blue)"],
+        "typical_OD_requirement": "OD 5.9 - 7.1 (5W, 0.514 μm)",
+        "eyewear_color": "Typically orange/red"
+      }
+    },
+    {
+      "id": "ndyag_laser",
+      "type": "laser_type",
+      "label": "Nd:YAG Laser",
+      "description": "Solid-state laser emitting in near-infrared",
+      "attributes": {
+        "wavelength": "1.064 μm (NIR)",
+        "typical_OD_requirement": "OD 5.1 - 6.5 (CW)",
+        "eyewear_characteristics": "Blocks NIR while allowing visible light"
+      }
+    },
+    {
+      "id": "co2_laser",
+      "type": "laser_type",
+      "label": "CO2 Laser",
+      "description": "Gas laser emitting in far-infrared",
+      "attributes": {
+        "wavelength": "10.6 μm (FIR)",
+        "typical_OD_requirement": "OD 5.0 - 6.0",
+        "eyewear_appearance": "Often clear or lightly tinted"
+      }
+    },
+    {
+      "id": "hene_laser",
+      "type": "laser_type",
+      "label": "HeNe Laser",
+      "description": "Common gas laser with red visible output",
+      "attributes": {
+        "wavelength": "0.633 μm (red)",
+        "typical_OD_requirement": "OD 2.5 - 4.0",
+        "eyewear_color": "Blue-green tinted"
+      }
+    },
+    {
+      "id": "exposure_duration",
+      "type": "parameter",
+      "label": "Exposure Duration",
+      "description": "Time factor in OD calculation",
+      "attributes": {
+        "blink_reflex": "0.25 sec",
+        "infrared_worst_case": "10 sec",
+        "diffuse_reflection": "600 sec",
+        "occupational": "30,000 sec (8 hours)"
+      }
+    },
+    {
+      "id": "MPE",
+      "type": "standard_reference",
+      "label": "Maximum Permissible Exposure",
+      "description": "Safety threshold from ANSI Z 136.1",
+      "attributes": {
+        "basis": "Biological research data",
+        "aperture_visible": "7 mm (fully dilated pupil)",
+        "aperture_uv_fir": "1 mm"
+      }
+    },
+    {
+      "id": "osha_regulation",
+      "type": "regulatory_reference",
+      "label": "OSHA 29 CFR 1926.102(b)(2)",
+      "description": "Construction standard for laser eye protection",
+      "attributes": {
+        "requirements": ["Specific wavelength protection", "Adequate optical density"],
+        "scope": "Construction industry"
+      }
+    },
+    {
+      "id": "ansi_z136.1",
+      "type": "standard_reference",
+      "label": "ANSI Z 136.1",
+      "description": "American National Standard for Safe Use of Lasers",
+      "attributes": {
+        "edition": "1993",
+        "publisher": "Laser Institute of America",
+        "scope": "User standard for laser safety"
+      }
+    },
+    {
+      "id": "laser_safety_officer",
+      "type": "role",
+      "label": "Laser Safety Officer (LSO)",
+      "description": "Individual with authority to monitor and enforce laser hazard control",
+      "responsibilities": [
+        "Eyewear approval",
+        "NHZ evaluation",
+        "Training provision",
+        "SOP approval"
+      ]
+    },
+    {
+      "id": "diffuse_reflection",
+      "type": "hazard_type",
+      "label": "Diffuse Reflection",
+      "description": "Scattered laser radiation from matte surfaces",
+      "attributes": {
+        "OD_requirement": "Generally less than intrabeam",
+        "considerations": ["Surface properties", "Viewing angle", "Distance"]
+      }
+    },
+    {
+      "id": "intrabeam_viewing",
+      "type": "hazard_type",
+      "label": "Intrabeam Viewing",
+      "description": "Direct viewing of primary or specularly reflected beam",
+      "attributes": {
+        "OD_requirement": "Maximum (worst case)",
+        "hazard_level": "Highest"
+      }
+    },
+    {
+      "id": "ofcs",
+      "type": "special_application",
+      "label": "Optical Fiber Communication Systems",
+      "description": "Special eyewear considerations for fiber optic work",
+      "attributes": {
+        "normal_operation": "Class I (enclosed)",
+        "service_requirements": "Filtered eye-loupes required"
+      }
+    },
+    {
+      "id": "limiting_aperture",
+      "type": "technical_concept",
+      "label": "Limiting Aperture",
+      "description": "Pupil size assumption for exposure calculations",
+      "attributes": {
+        "visible_NIR": "7 mm (worst-case dilated pupil)",
+        "UV_FIR": "1 mm"
+      }
+    },
+    {
+      "id": "eye_protection_labeling",
+      "type": "requirement",
+      "label": "Eyewear Labeling Requirements",
+      "description": "Mandatory information on protective eyewear",
+      "required_info": [
+        "OD values",
+        "Protected wavelengths",
+        "Compliance markings"
+      ]
+    },
+    {
+      "id": "engineering_controls",
+      "type": "control_measure",
+      "label": "Engineering Controls",
+      "description": "Primary protection methods preferred over PPE",
+      "examples": [
+        "Enclosed beam paths",
+        "Interlocks",
+        "Beam stops",
+        "Protective housing"
+      ]
+    }
+  ],
+  "edges": [
+    {"source": "laser_protective_eyewear", "target": "optical_density", "relation": "characterized_by", "weight": 1.0},
+    {"source": "laser_protective_eyewear", "target": "wavelength_protection", "relation": "requires", "weight": 1.0},
+    {"source": "laser_protective_eyewear", "target": "class_IIIB_laser", "relation": "required_for", "weight": 0.8},
+    {"source": "laser_protective_eyewear", "target": "class_IV_laser", "relation": "mandatory_for", "weight": 1.0},
+    {"source": "laser_protective_eyewear", "target": "ansi_z136.1", "relation": "specified_by", "weight": 1.0},
+    {"source": "laser_protective_eyewear", "target": "osha_regulation", "relation": "regulated_by", "weight": 0.9},
+    {"source": "optical_density", "target": "MPE", "relation": "calculated_from", "weight": 1.0},
+    {"source": "optical_density", "target": "exposure_duration", "relation": "depends_on", "weight": 0.9},
+    {"source": "optical_density", "target": "limiting_aperture", "relation": "uses", "weight": 0.8},
+    {"source": "argon_laser", "target": "optical_density", "relation": "requires_OD", "weight": 1.0},
+    {"source": "ndyag_laser", "target": "optical_density", "relation": "requires_OD", "weight": 1.0},
+    {"source": "co2_laser", "target": "optical_density", "relation": "requires_OD", "weight": 1.0},
+    {"source": "hene_laser", "target": "optical_density", "relation": "requires_OD", "weight": 1.0},
+    {"source": "class_IIIB_laser", "target": "intrabeam_viewing", "relation": "presents_hazard", "weight": 0.9},
+    {"source": "class_IV_laser", "target": "intrabeam_viewing", "relation": "presents_hazard", "weight": 1.0},
+    {"source": "class_IV_laser", "target": "diffuse_reflection", "relation": "presents_hazard", "weight": 0.8},
+    {"source": "laser_safety_officer", "target": "laser_protective_eyewear", "relation": "approves", "weight": 1.0},
+    {"source": "laser_safety_officer", "target": "optical_density", "relation": "specifies", "weight": 0.9},
+    {"source": "engineering_controls", "target": "laser_protective_eyewear", "relation": "preferred_over", "weight": 1.0},
+    {"source": "diffuse_reflection", "target": "optical_density", "relation": "requires_lower_OD_than", "weight": 0.7},
+    {"source": "intrabeam_viewing", "target": "optical_density", "relation": "determines_maximum", "weight": 1.0},
+    {"source": "wavelength_protection", "target": "argon_laser", "relation": "must_match", "weight": 1.0},
+    {"source": "wavelength_protection", "target": "ndyag_laser", "relation": "must_match", "weight": 1.0},
+    {"source": "wavelength_protection", "target": "co2_laser", "relation": "must_match", "weight": 1.0},
+    {"source": "eye_protection_labeling", "target": "laser_protective_eyewear", "relation": "applies_to", "weight": 1.0},
+    {"source": "ofcs", "target": "laser_protective_eyewear", "relation": "special_requirements", "weight": 0.8},
+    {"source": "ansi_z136.1", "target": "MPE", "relation": "defines", "weight": 1.0},
+    {"source": "class_II_laser", "target": "exposure_duration", "relation": "protected_by", "weight": 0.9},
+    {"source": "exposure_duration", "target": "MPE", "relation": "determines", "weight": 0.9}
+  ],
+  "metadata": {
+    "total_nodes": 23,
+    "total_edges": 27,
+    "coverage_areas": [
+      "Laser classification requirements",
+      "Optical density calculations",
+      "Wavelength-specific protection",
+      "Regulatory standards",
+      "Hazard types",
+      "Special applications"
+    ]
+  }
+}

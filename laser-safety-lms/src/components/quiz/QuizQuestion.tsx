@@ -24,10 +24,10 @@ export default function QuizQuestion({
     <div className="space-y-5">
       {/* Progress */}
       <div className="flex items-center gap-3">
-        <span className="text-sm text-gray-500">
+        <span className="text-sm text-muted-foreground">
           Question {questionNumber} of {totalQuestions}
         </span>
-        <div className="flex-1 bg-gray-800 rounded-full h-1.5">
+        <div className="flex-1 bg-muted rounded-full h-1.5">
           <div
             className="bg-red-500 h-1.5 rounded-full transition-all"
             style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
@@ -36,22 +36,22 @@ export default function QuizQuestion({
       </div>
 
       {/* Question */}
-      <h2 className="text-white text-lg font-medium leading-relaxed">{question.question}</h2>
+      <h2 className="text-foreground text-lg font-medium leading-relaxed">{question.question}</h2>
 
       {/* Options */}
       <div className="space-y-3">
         {question.options.map((option, index) => {
-          let style = 'border-gray-700 bg-gray-900 hover:border-gray-500 text-gray-300 hover:text-white cursor-pointer';
+          let style = 'border-border bg-card hover:border-muted-foreground text-muted-foreground hover:text-foreground cursor-pointer';
           if (showResult) {
             if (index === question.correctIndex) {
               style = 'border-green-500 bg-green-500/10 text-green-300 cursor-default';
             } else if (index === selectedIndex && index !== question.correctIndex) {
               style = 'border-red-500 bg-red-500/10 text-red-300 cursor-default';
             } else {
-              style = 'border-gray-800 bg-gray-900/50 text-gray-600 cursor-default';
+              style = 'border-border/50 bg-card/50 text-muted-foreground/60 cursor-default';
             }
           } else if (selectedIndex === index) {
-            style = 'border-red-500 bg-red-500/10 text-white cursor-pointer';
+            style = 'border-red-500 bg-red-500/10 text-foreground cursor-pointer';
           }
 
           return (
@@ -64,7 +64,7 @@ export default function QuizQuestion({
                 <span className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 ${
                   showResult && index === question.correctIndex ? 'bg-green-500/30 text-green-400'
                   : showResult && index === selectedIndex && index !== question.correctIndex ? 'bg-red-500/30 text-red-400'
-                  : 'bg-gray-800 text-gray-500'
+                  : 'bg-muted text-muted-foreground'
                 }`}>
                   {showResult && index === question.correctIndex ? <CheckCircle size={14} /> :
                    showResult && index === selectedIndex ? <XCircle size={14} /> :

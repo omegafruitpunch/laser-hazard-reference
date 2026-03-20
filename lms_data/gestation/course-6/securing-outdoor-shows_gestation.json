@@ -1,0 +1,52 @@
+{
+  "pdf_name": "securing-outdoor-shows.pdf",
+  "course": "course-6",
+  "module": "c6-m4",
+  "total_pages": 4,
+  "gestation_analysis": [
+    {
+      "page": 1,
+      "summary": "FAA Advisory Circular 70-2A - Reporting of Laser Illumination of Aircraft. Purpose: provide information to aviation community on FAA measures addressing unauthorized laser illumination. The FAA Modernization and Reform Act of 2012 (Public Law 112-95) prohibits aiming laser pointers at aircraft. ATC regards laser illumination as in-flight emergency.",
+      "key_entities": ["FAA", "FAA Modernization and Reform Act of 2012"],
+      "concepts": ["AC 70-2A", "unauthorized laser illumination", "in-flight emergency"],
+      "learning_points": [
+        "AC 70-2A dated February 8, 2013 - replaces AC 70-2 (January 11, 2005)",
+        "FAA Modernization and Reform Act of 2012 established prohibition against aiming lasers at aircraft",
+        "ATC treats laser illumination as in-flight emergency until aircrew states otherwise"
+      ]
+    },
+    {
+      "page": 2,
+      "summary": "Explanation of changes and authority. Incidents increased from 283 (2005) to 3,591 (2011). FAA authority under 49 USC 40103 (sovereignty and use of airspace) and 44701(a)(5) (protection of aircraft in air commerce). FAA notifications and reporting through Domestic Events Network (DEN). ATC reports include: UTC time, operator, flight number, aircraft type, location, altitude, description.",
+      "key_entities": ["DEN", "WOCC", "TSA"],
+      "concepts": ["Domestic Events Network", "reporting requirements", "ATC broadcast"],
+      "learning_points": [
+        "Laser incidents increased dramatically: 283 (2005) to 3,591 (2011)",
+        "ATC reports to Domestic Events Network (DEN) immediately",
+        "ATC broadcasts caution every 5 minutes for 20 minutes after reported event"
+      ]
+    },
+    {
+      "page": 3,
+      "summary": "Aircrew reporting procedures and mitigation. All aircrews should immediately report laser incidents to ATC with position, altitude, color, direction. ATIS broadcasts include laser event information for 1 hour. Pilots should complete Laser Beam Exposure Questionnaire after landing. Mitigation: avoid areas of reported activity, obtain ATC authorization for IFR deviations, shield eyes.",
+      "key_entities": ["ATC", "ATIS"],
+      "concepts": ["aircrew reporting", "ATIS broadcast", "mitigation procedures", "Laser Beam Exposure Questionnaire"],
+      "learning_points": [
+        "Report incidents immediately to ATC with position, altitude, color, direction",
+        "ATIS broadcasts laser event info for 1 hour after report",
+        "Complete Laser Beam Exposure Questionnaire at faa.gov/about/initiatives/lasers/"
+      ]
+    },
+    {
+      "page": 4,
+      "summary": "Aircrew information resources and related documents. FAA Laser Safety Initiative website and AIM references. Related documents include: 49 USC 40103, 44701(a)(5), 18 USC 39A (Aiming a laser pointer at an aircraft), Public Law 112-95, FAA Orders 7110.65, 7110.10, and 7210.3.",
+      "key_entities": ["FAA"],
+      "concepts": ["reporting resources", "related regulations"],
+      "learning_points": [
+        "FAA Laser Safety Initiative: faa.gov/about/initiatives/lasers/",
+        "Related laws: 18 USC 39A, 49 USC 40103, 44701(a)(5)",
+        "FAA Orders: JO 7110.65, JO 7110.10, JO 7210.3"
+      ]
+    }
+  ]
+}

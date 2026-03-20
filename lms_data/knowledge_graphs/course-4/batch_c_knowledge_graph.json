@@ -1,0 +1,366 @@
+{
+  "batch": "C",
+  "course": 4,
+  "agent": "PDF Elite Processor Agent #12",
+  "graph_type": "state_regulatory_knowledge_graph",
+  "nodes": [
+    {
+      "id": "nevada",
+      "type": "state",
+      "label": "Nevada",
+      "properties": {
+        "regulatory_tier": "notification_required",
+        "inspections": false,
+        "training_required": false
+      }
+    },
+    {
+      "id": "new-york",
+      "type": "state",
+      "label": "New York",
+      "properties": {
+        "regulatory_tier": "comprehensive_regulation",
+        "inspections": true,
+        "training_required": true
+      }
+    },
+    {
+      "id": "texas",
+      "type": "state",
+      "label": "Texas",
+      "properties": {
+        "regulatory_tier": "comprehensive_regulation",
+        "inspections": true,
+        "training_required": false,
+        "special_provisions": ["laser_hair_removal", "intense_pulsed_light"]
+      }
+    },
+    {
+      "id": "washington",
+      "type": "state",
+      "label": "Washington",
+      "properties": {
+        "regulatory_tier": "notification_required",
+        "inspections": false,
+        "training_required": false
+      }
+    },
+    {
+      "id": "nv_agency",
+      "type": "agency",
+      "label": "Nevada Radiation Control Program",
+      "properties": {
+        "division": "Division of Public and Behavioral Health",
+        "phone": "(775) 687-7550",
+        "address": "675 Fairview Drive, Suite 218, Carson City, NV 89701"
+      }
+    },
+    {
+      "id": "ny_agency",
+      "type": "agency",
+      "label": "NYS Dept. of Labor Radiological Health Unit",
+      "properties": {
+        "phone": "(518) 457-1202",
+        "address": "State Campus Building 12 Room 169 Albany, NY 12240"
+      }
+    },
+    {
+      "id": "tx_agency",
+      "type": "agency",
+      "label": "Texas DSHS Radiation Safety Licensing Branch",
+      "properties": {
+        "phone": "(512) 834-6688",
+        "address": "1100 W. 49th Street, Mail Code 2835 Austin, TX 78756-3189"
+      }
+    },
+    {
+      "id": "wa_agency",
+      "type": "agency",
+      "label": "Washington DOH Radiation Protection",
+      "properties": {
+        "phone": "(360) 236-3210",
+        "address": "P.O. Box 47827 Olympia, WA 98504-7827"
+      }
+    },
+    {
+      "id": "ny_reg_50",
+      "type": "regulation",
+      "label": "12 NYCRR Part 50",
+      "properties": {
+        "title": "Industrial Code Rule 50",
+        "amended_date": "1994-03-02",
+        "certification_types": ["Class A", "Class B"]
+      }
+    },
+    {
+      "id": "tx_tac_289_301",
+      "type": "regulation",
+      "label": "25 TAC 289.301",
+      "properties": {
+        "title": "Registration and Radiation Safety Requirements for Lasers and Intense-Pulsed Light Devices",
+        "scope": ["lasers", "intense_pulsed_light"]
+      }
+    },
+    {
+      "id": "tx_tac_289_302",
+      "type": "regulation",
+      "label": "25 TAC 289.302",
+      "properties": {
+        "title": "Registration and Radiation Safety Requirements for Laser Hair Removal Devices",
+        "scope": ["laser_hair_removal"]
+      }
+    },
+    {
+      "id": "wa_wac_296_62",
+      "type": "regulation",
+      "label": "WAC 296-62-09005",
+      "properties": {
+        "title": "Washington Laser Safety Rules",
+        "requirement": "advance_notification"
+      }
+    },
+    {
+      "id": "nv_advance_notification",
+      "type": "requirement",
+      "label": "Advance Notification",
+      "properties": {
+        "category": "notification",
+        "description": "Contact Radiation Control Program before installation/use"
+      }
+    },
+    {
+      "id": "ny_training",
+      "type": "requirement",
+      "label": "Laser Operator Training",
+      "properties": {
+        "category": "training",
+        "class_a": "Low intensity lasers",
+        "class_b": "Low and high intensity lasers"
+      }
+    },
+    {
+      "id": "tx_inspection",
+      "type": "requirement",
+      "label": "Routine Inspections",
+      "properties": {
+        "category": "inspection",
+        "frequency": "routine"
+      }
+    },
+    {
+      "id": "wa_light_show_notification",
+      "type": "requirement",
+      "label": "Light Show Advance Notification",
+      "properties": {
+        "category": "notification",
+        "applies_to": "laser_light_shows"
+      }
+    },
+    {
+      "id": "karen_beckley",
+      "type": "contact",
+      "label": "Karen Beckley",
+      "properties": {
+        "title": "Manager, Radiation Control Program",
+        "email": "kbeckley@health.nv.gov",
+        "state": "Nevada"
+      }
+    },
+    {
+      "id": "kirk_fisher",
+      "type": "contact",
+      "label": "Kirk Fisher",
+      "properties": {
+        "title": "Radiophysicist",
+        "state": "New York"
+      }
+    },
+    {
+      "id": "shannon_dove_edson",
+      "type": "contact",
+      "label": "Shannon Dove-Edson",
+      "properties": {
+        "title": "Program Manager, Laser Registration Program",
+        "email": "shannon.dove-edson@dshs.state.tx.us",
+        "state": "Texas"
+      }
+    },
+    {
+      "id": "david_jansen",
+      "type": "contact",
+      "label": "David B. Jansen",
+      "properties": {
+        "title": "Director",
+        "email": "radioiationinfo@doh.wa.gov",
+        "state": "Washington"
+      }
+    },
+    {
+      "id": "ilda",
+      "type": "organization",
+      "label": "International Laser Display Association (ILDA)",
+      "properties": {
+        "role": "Industry association",
+        "engagement": "Provided regulatory comments to Texas DSHS"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "nevada",
+      "target": "nv_agency",
+      "type": "REGULATED_BY",
+      "properties": {}
+    },
+    {
+      "source": "new-york",
+      "target": "ny_agency",
+      "type": "REGULATED_BY",
+      "properties": {}
+    },
+    {
+      "source": "texas",
+      "target": "tx_agency",
+      "type": "REGULATED_BY",
+      "properties": {}
+    },
+    {
+      "source": "washington",
+      "target": "wa_agency",
+      "type": "REGULATED_BY",
+      "properties": {}
+    },
+    {
+      "source": "nv_agency",
+      "target": "karen_beckley",
+      "type": "HAS_CONTACT",
+      "properties": {}
+    },
+    {
+      "source": "ny_agency",
+      "target": "kirk_fisher",
+      "type": "HAS_CONTACT",
+      "properties": {}
+    },
+    {
+      "source": "tx_agency",
+      "target": "shannon_dove_edson",
+      "type": "HAS_CONTACT",
+      "properties": {}
+    },
+    {
+      "source": "wa_agency",
+      "target": "david_jansen",
+      "type": "HAS_CONTACT",
+      "properties": {}
+    },
+    {
+      "source": "nevada",
+      "target": "nv_advance_notification",
+      "type": "REQUIRES",
+      "properties": {}
+    },
+    {
+      "source": "new-york",
+      "target": "ny_reg_50",
+      "type": "GOVERNED_BY",
+      "properties": {}
+    },
+    {
+      "source": "new-york",
+      "target": "ny_training",
+      "type": "REQUIRES",
+      "properties": {}
+    },
+    {
+      "source": "texas",
+      "target": "tx_tac_289_301",
+      "type": "GOVERNED_BY",
+      "properties": {}
+    },
+    {
+      "source": "texas",
+      "target": "tx_tac_289_302",
+      "type": "GOVERNED_BY",
+      "properties": {}
+    },
+    {
+      "source": "texas",
+      "target": "tx_inspection",
+      "type": "REQUIRES",
+      "properties": {}
+    },
+    {
+      "source": "washington",
+      "target": "wa_wac_296_62",
+      "type": "GOVERNED_BY",
+      "properties": {}
+    },
+    {
+      "source": "washington",
+      "target": "wa_light_show_notification",
+      "type": "REQUIRES",
+      "properties": {}
+    },
+    {
+      "source": "texas",
+      "target": "ilda",
+      "type": "ENGAGED_WITH",
+      "properties": {
+        "context": "regulatory_comments"
+      }
+    },
+    {
+      "source": "ny_reg_50",
+      "target": "ny_training",
+      "type": "MANDATES",
+      "properties": {}
+    },
+    {
+      "source": "new-york",
+      "target": "texas",
+      "type": "SIMILAR_TO",
+      "properties": {
+        "basis": "both_conduct_inspections"
+      }
+    },
+    {
+      "source": "nevada",
+      "target": "washington",
+      "type": "SIMILAR_TO",
+      "properties": {
+        "basis": "notification_only_no_inspections"
+      }
+    },
+    {
+      "source": "new-york",
+      "target": "nevada",
+      "type": "DIFFERENT_FROM",
+      "properties": {
+        "basis": "training_required_vs_notification_only"
+      }
+    }
+  ],
+  "metadata": {
+    "total_nodes": 21,
+    "total_edges": 20,
+    "node_types": {
+      "state": 4,
+      "agency": 4,
+      "regulation": 4,
+      "requirement": 4,
+      "contact": 4,
+      "organization": 1
+    },
+    "edge_types": {
+      "REGULATED_BY": 4,
+      "HAS_CONTACT": 4,
+      "REQUIRES": 4,
+      "GOVERNED_BY": 4,
+      "MANDATES": 1,
+      "ENGAGED_WITH": 1,
+      "SIMILAR_TO": 2,
+      "DIFFERENT_FROM": 1
+    }
+  }
+}

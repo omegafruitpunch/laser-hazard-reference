@@ -1,0 +1,456 @@
+{
+  "module_id": "course-2-module-2.2",
+  "lessons": [
+    {
+      "lesson_id": "2.2.1",
+      "title": "Understanding FDA Classes",
+      "content": {
+        "warmup": {
+          "type": "misconception_challenge",
+          "title": "Class Misconceptions",
+          "statements": [
+            {
+              "statement": "Class I lasers are always low power and safe to look at",
+              "is_misconception": true,
+              "explanation": "Class I systems may contain Class IV sources that are fully enclosed. The classification is based on accessible emission during operation, not internal laser power."
+            },
+            {
+              "statement": "Class 2 lasers rely on the blink reflex for protection",
+              "is_misconception": false,
+              "explanation": "Correct! Class II (<1mW visible) is designed to be safe because the blink reflex limits exposure to about 0.25 seconds."
+            },
+            {
+              "statement": "Class 3R means 'relatively safe' for intentional viewing",
+              "is_misconception": true,
+              "explanation": "3R is potentially hazardous - direct viewing can exceed MPE. The 'R' stands for Reduced requirements, not Reduced risk."
+            },
+            {
+              "statement": "Class IV is only dangerous with direct beam exposure",
+              "is_misconception": true,
+              "explanation": "Class IV lasers can cause injury from scattered/diffuse reflections, skin exposure, and can ignite materials."
+            }
+          ]
+        },
+        
+        "classification_pyramid": {
+          "type": "interactive_pyramid",
+          "title": "FDA Laser Class Pyramid",
+          "description": "Click each level to explore the characteristics of each FDA laser class",
+          "levels": [
+            {
+              "class": "Class I",
+              "level": "bottom",
+              "color": "#4CAF50",
+              "description": "Inherently safe or fully enclosed",
+              "details": {
+                "accessible_emission": "Cannot exceed Class I AEL during operation",
+                "hazard_potential": "Negligible",
+                "examples": ["CD/DVD players", "Laser printers", "Fully enclosed industrial systems"],
+                "key_point": "Class I products may contain high-power lasers that are completely enclosed"
+              }
+            },
+            {
+              "class": "Class IIa",
+              "level": "lower",
+              "color": "#8BC34A",
+              "description": "Visible lasers, low power, not intended for prolonged viewing",
+              "details": {
+                "accessible_emission": "Visible only, specific time limits apply",
+                "hazard_potential": "Low - not for extended viewing",
+                "examples": ["Some alignment lasers", "Specific industrial applications"],
+                "key_point": "Requires warning statement but not full logotype"
+              }
+            },
+            {
+              "class": "Class II",
+              "level": "middle_lower",
+              "color": "#CDDC39",
+              "description": "Visible lasers <1mW, blink reflex protection",
+              "details": {
+                "accessible_emission": "<1mW continuous visible (400-710nm)",
+                "hazard_potential": "Low for momentary exposure",
+                "examples": ["Laser pointers (if <1mW)", "Barcode scanners", "Alignment lasers"],
+                "key_point": "Protection relies on blink reflex - deliberate staring can cause injury"
+              }
+            },
+            {
+              "class": "Class IIIa",
+              "level": "middle",
+              "color": "#FFC107",
+              "description": "Visible lasers 1-5mW, hazardous with intentional viewing",
+              "details": {
+                "accessible_emission": "Total collectable radiant power ≤ 5mW visible",
+                "hazard_potential": "Moderate - direct viewing exceeds MPE",
+                "examples": ["Higher power laser pointers", "Some HeNe lasers", "Laser levels"],
+                "key_point": "CAUTION label required; can cause eye damage if viewed directly"
+              }
+            },
+            {
+              "class": "Class IIIb",
+              "level": "middle_upper",
+              "color": "#FF9800",
+              "description": "Direct viewing hazard, 5-500mW visible",
+              "details": {
+                "accessible_emission": "5-500mW visible; various limits for UV and IR",
+                "hazard_potential": "High - direct viewing causes injury; skin hazard at higher powers",
+                "examples": ["Industrial lasers", "Research lasers", "Medical therapy lasers"],
+                "key_point": "DANGER label required; remote interlock connector required"
+              }
+            },
+            {
+              "class": "Class IV",
+              "level": "top",
+              "color": "#F44336",
+              "description": "Highest hazard - diffuse reflection can injure",
+              "details": {
+                "accessible_emission": "Exceeds Class IIIb limits",
+                "hazard_potential": "Very High - diffuse reflections, skin burns, fire hazard",
+                "examples": ["Surgical lasers", "Industrial cutting/welding", "High-power research lasers"],
+                "key_point": "Most stringent controls required; manual reset required (post-1986)"
+              }
+            }
+          ]
+        },
+        
+        "comparison_table": {
+          "type": "sortable_table",
+          "title": "FDA vs IEC Classification Comparison",
+          "description": "Understanding the relationship between FDA and IEC classifications",
+          "comparison_data": [
+            {
+              "fda_class": "Class I",
+              "iec_class": "Class 1",
+              "differences": "Generally aligned; FDA has specific measurement parameters"
+            },
+            {
+              "fda_class": "Class IIa",
+              "iec_class": "No direct equivalent",
+              "differences": "FDA-specific class for limited viewing time"
+            },
+            {
+              "fda_class": "Class II",
+              "iec_class": "Class 2",
+              "differences": "Generally aligned for visible <1mW"
+            },
+            {
+              "fda_class": "Class IIIa",
+              "iec_class": "Class 3R",
+              "differences": "IIIa limited to 5mW visible; 3R has different AELs"
+            },
+            {
+              "fda_class": "Class IIIb",
+              "iec_class": "Class 3B",
+              "differences": "Similar hazard levels; some AEL differences"
+            },
+            {
+              "fda_class": "Class IV",
+              "iec_class": "Class 4",
+              "differences": "Generally aligned for high-power hazards"
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "lesson_id": "2.2.2",
+      "title": "Accessible Emission Limits",
+      "content": {
+        "ael_concept": {
+          "type": "concept_explainer",
+          "title": "What are Accessible Emission Limits?",
+          "analogy": "Think of AELs as speed limits for laser radiation. Just as speed limits keep traffic safe, AELs keep laser products within safe emission levels for their class.",
+          "key_points": [
+            "AELs define the maximum radiation that can be accessible during operation",
+            "Classification is based on the HIGHEST level of accessible radiation",
+            "Measurement must use worst-case conditions (maximum emission, closest access)",
+            "Different AELs apply for different wavelengths and exposure durations"
+          ]
+        },
+        
+        "measurement_parameters": {
+          "type": "interactive_diagram",
+          "title": "FDA Measurement Parameters (21 CFR 1040.10(e))",
+          "description": "Click each parameter to understand how FDA requires measurements to be made",
+          "parameters": [
+            {
+              "name": "Aperture",
+              "specification": "7mm diameter circular",
+              "purpose": "Simulates dilated pupil - worst-case eye access",
+              "visual": "aperture_7mm.svg"
+            },
+            {
+              "name": "Solid Angle",
+              "specification": "10^-3 steradian (with collimation)",
+              "purpose": "Defines the acceptance cone for measurement",
+              "visual": "solid_angle.svg"
+            },
+            {
+              "name": "Collimating Optics",
+              "specification": "5 diopters or less (20cm+ focal length)",
+              "purpose": "Accounts for diverging beams",
+              "visual": "collimation.svg"
+            },
+            {
+              "name": "Measurement Position",
+              "specification": "Maximum detection position",
+              "purpose": "Worst-case measurement location",
+              "visual": "measurement_position.svg"
+            }
+          ]
+        },
+        
+        "wavelength_regions": {
+          "type": "spectrum_explorer",
+          "title": "Wavelength-Dependent AELs",
+          "description": "AELs vary significantly by wavelength region",
+          "regions": [
+            {
+              "region": "UV-C",
+              "range": "180-280 nm",
+              "primary_hazard": "Corneal absorption",
+              "special_factors": "k1 and k2 wavelength correction factors apply"
+            },
+            {
+              "region": "UV-B",
+              "range": "280-315 nm",
+              "primary_hazard": "Corneal and lens absorption",
+              "special_factors": "Photochemical and thermal effects"
+            },
+            {
+              "region": "UV-A",
+              "range": "315-400 nm",
+              "primary_hazard": "Lens focusable to retina",
+              "special_factors": "Reduced hazard vs shorter UV"
+            },
+            {
+              "region": "Visible",
+              "range": "400-700 nm",
+              "primary_hazard": "Retinal damage",
+              "special_factors": "Blink reflex protection for Class II"
+            },
+            {
+              "region": "Retinal Hazard (IRA)",
+              "range": "700-1400 nm",
+              "primary_hazard": "Retinal damage (invisible!)",
+              "special_factors": "NO aversion reflex - silent hazard"
+            },
+            {
+              "region": "Far IR",
+              "range": ">1400 nm",
+              "primary_hazard": "Corneal absorption only",
+              "special_factors": "Eye safer than retinal region"
+            }
+          ]
+        },
+        
+        "calculation_walkthrough": {
+          "type": "step_by_step",
+          "title": "AEL Calculation Example",
+          "scenario": "Calculate the Class I AEL for a 632.8nm HeNe laser with 0.1 second exposure",
+          "steps": [
+            {
+              "step": 1,
+              "title": "Identify Wavelength Region",
+              "content": "632.8nm is in the visible region (400-700nm)",
+              "visual": "highlight_visible_region"
+            },
+            {
+              "step": 2,
+              "title": "Determine Applicable Formula",
+              "content": "For visible, t between 18μs and 10s: MPE = 1.8 × t^0.75 mW/cm²",
+              "reference": "21 CFR 1040.10 Table I"
+            },
+            {
+              "step": 3,
+              "title": "Calculate MPE",
+              "content": "MPE = 1.8 × (0.1)^0.75 = 1.8 × 0.178 = 0.32 mW/cm²",
+              "calculation_show": true
+            },
+            {
+              "step": 4,
+              "title": "Apply Aperture Area",
+              "content": "Class I AEL = MPE × Area = 0.32 mW/cm² × 0.385 cm² = 0.123 mW",
+              "note": "7mm diameter aperture has 0.385 cm² area"
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "lesson_id": "2.2.3",
+      "title": "Classification Decision Tree",
+      "content": {
+        "classification_wizard": {
+          "type": "interactive_wizard",
+          "title": "FDA Classification Wizard",
+          "description": "Walk through the classification process step by step",
+          "wizard_steps": [
+            {
+              "step": 1,
+              "title": "Wavelength",
+              "question": "What is your laser wavelength?",
+              "input_type": "wavelength_slider",
+              "range": [180, 1000000],
+              "unit": "nm"
+            },
+            {
+              "step": 2,
+              "title": "Emission Duration",
+              "question": "What is the longest possible emission duration?",
+              "input_type": "duration_selector",
+              "presets": [
+                {"label": "Single pulse", "value": 0.000000001},
+                {"label": "Q-switched pulse", "value": 0.00000002},
+                {"label": "Short exposure", "value": 0.25},
+                {"label": "Long term", "value": 10000}
+              ]
+            },
+            {
+              "step": 3,
+              "title": "Radiant Power/Energy",
+              "question": "What is the maximum accessible radiant power or energy?",
+              "input_type": "power_input",
+              "unit_options": ["mW", "W", "mJ", "J"]
+            },
+            {
+              "step": 4,
+              "title": "Classification Result",
+              "output_type": "classification_result",
+              "shows": ["calculated_aels", "recommended_class", "next_steps"]
+            }
+          ]
+        },
+        
+        "practice_cases": {
+          "type": "case_studies",
+          "title": "Classification Practice Cases",
+          "cases": [
+            {
+              "id": "case_1",
+              "name": "The CD Player",
+              "specifications": {
+                "wavelength": "780 nm (IR)",
+                "power": "5 mW internal, fully enclosed",
+                "access": "No user access to beam"
+              },
+              "question": "What is the FDA classification?",
+              "options": ["Class I", "Class II", "Class IIIa", "Class IIIb"],
+              "correct": 0,
+              "explanation": "Class I - The high-power laser is fully enclosed; no hazardous radiation is accessible during operation."
+            },
+            {
+              "id": "case_2",
+              "name": "The Presentation Pointer",
+              "specifications": {
+                "wavelength": "650 nm (red)",
+                "power": "4.5 mW",
+                "divergence": "1.5 mrad",
+                "duration": "Continuous"
+              },
+              "question": "What is the FDA classification?",
+              "options": ["Class I", "Class II", "Class IIIa", "Class IIIb"],
+              "correct": 2,
+              "explanation": "Class IIIa - Visible laser between 1-5mW falls into Class IIIa. The total collectable radiant power is the determining factor."
+            },
+            {
+              "id": "case_3",
+              "name": "The Engraving System",
+              "specifications": {
+                "wavelength": "1064 nm (Nd:YAG)",
+                "power": "50 W",
+                "beam": "Accessible during loading",
+                "interlocks": "Door interlocks prevent operation when open"
+              },
+              "question": "What is the FDA classification?",
+              "options": ["Class I", "Class II", "Class IIIb", "Class IV"],
+              "correct": 3,
+              "explanation": "Class IV - 50W far exceeds Class IIIb limits. Even with interlocks, the accessible emission level determines classification."
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "lesson_id": "2.2.4",
+      "title": "Requirements by Class",
+      "content": {
+        "requirements_drag_drop": {
+          "type": "drag_and_drop",
+          "title": "Match Requirements to Laser Class",
+          "instructions": "Drag each requirement to all laser classes where it applies",
+          "items": [
+            {"id": "protective_housing", "text": "Protective Housing (1040.10(f)(1))", "correct_classes": ["I", "IIa", "II", "IIIa", "IIIb", "IV"]},
+            {"id": "safety_interlock", "text": "Safety Interlocks (1040.10(f)(2))", "correct_classes": ["I", "IIa", "II", "IIIa", "IIIb", "IV"]},
+            {"id": "fail_safe", "text": "Fail-Safe Interlock (1040.10(f)(2)(iii))", "correct_classes": ["IIIb", "IV"]},
+            {"id": "remote_interlock", "text": "Remote Interlock Connector (1040.10(f)(3))", "correct_classes": ["IIIb", "IV"]},
+            {"id": "key_control", "text": "Key Control (1040.10(f)(4))", "correct_classes": ["IIIb", "IV"]},
+            {"id": "emission_indicator", "text": "Emission Indicator (1040.10(f)(5))", "correct_classes": ["II", "IIIa", "IIIb", "IV"]},
+            {"id": "beam_attenuator", "text": "Beam Attenuator (1040.10(f)(6))", "correct_classes": ["II", "IIIa", "IIIb", "IV"]},
+            {"id": "manual_reset", "text": "Manual Reset (1040.10(f)(10))", "correct_classes": ["IV"]},
+            {"id": "warning_logotype", "text": "Warning Logotype (1040.10(g))", "correct_classes": ["II", "IIIa", "IIIb", "IV"]},
+            {"id": "aperture_label", "text": "Aperture Label (1040.10(g)(5))", "correct_classes": ["II", "IIIa", "IIIb", "IV"]}
+          ],
+          "drop_zones": ["Class I", "Class IIa", "Class II", "Class IIIa", "Class IIIb", "Class IV"]
+        },
+        
+        "label_gallery": {
+          "type": "image_gallery",
+          "title": "Required Labels by Class",
+          "labels": [
+            {
+              "class": "Class II",
+              "label_type": "CAUTION Logotype",
+              "description": "Yellow warning triangle with 'LASER RADIATION' text",
+              "required_text": "CAUTION - LASER RADIATION - DO NOT STARE INTO BEAM",
+              "placement": "Product exterior, visible during operation"
+            },
+            {
+              "class": "Class IIIa",
+              "label_type": "CAUTION or DANGER Logotype",
+              "description": "Yellow (CAUTION) or red (DANGER) warning triangle",
+              "condition": "CAUTION if irradiance ≤ 2.5 mW/cm², otherwise DANGER",
+              "required_elements": ["Max output", "Pulse duration (if pulsed)", "Laser medium/wavelength"]
+            },
+            {
+              "class": "Class IIIb/IV",
+              "label_type": "DANGER Logotype",
+              "description": "Red warning triangle with 'LASER RADIATION' text",
+              "required_text": "DANGER - LASER RADIATION - AVOID DIRECT EYE EXPOSURE",
+              "additional_requirements": "Aperture labels required at all emission points"
+            }
+          ]
+        },
+        
+        "mastery_assessment": {
+          "type": "comprehensive_quiz",
+          "title": "Classification Mastery Check",
+          "questions": [
+            {
+              "type": "classification_calculation",
+              "scenario": "A laser product emits 3.5 mW at 650 nm continuously. The total collectable radiant power through a 7mm aperture is 3.2 mW.",
+              "question": "What is the FDA classification?",
+              "answer": "Class IIIa",
+              "explanation": "Visible laser with total collectable radiant power between 1-5mW is Class IIIa. The 3.2 mW measurement determines the class."
+            },
+            {
+              "type": "requirements_identification",
+              "scenario": "You are designing a Class IIIb laser system.",
+              "question": "Which of the following are NOT required for Class IIIb?",
+              "options": [
+                "Remote interlock connector",
+                "Manual reset mechanism",
+                "Beam attenuator",
+                "Key control"
+              ],
+              "correct_answer": 1,
+              "explanation": "Manual reset is only required for Class IV (post-1986). All other options are required for Class IIIb."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

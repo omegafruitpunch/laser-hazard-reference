@@ -1,0 +1,254 @@
+{
+  "maintenance_id": "eyewear-maintenance",
+  "title": "Laser Protective Eyewear Maintenance Procedures",
+  "version": "1.0",
+  "cleaning_procedures": {
+    "daily_cleaning": {
+      "frequency": "After each use",
+      "supplies": [
+        "Clean, lint-free microfiber cloth",
+        "Mild soap and water solution",
+        "Lens cleaning solution (alcohol-free recommended)"
+      ],
+      "procedure": [
+        "Rinse lenses under lukewarm water to remove dust/debris",
+        "Apply small amount of mild soap or lens cleaner",
+        "Gently rub both sides with clean fingers or soft cloth",
+        "Rinse thoroughly with clean water",
+        "Dry with clean microfiber cloth (pat, don't rub)",
+        "Inspect for remaining spots or streaks"
+      ],
+      "prohibited": [
+        "Paper towels or tissues (can scratch)",
+        "Ammonia-based cleaners (can damage coatings)",
+        "Abrasive cleaners",
+        "Hot water (can damage coatings)",
+        "Dry wiping (grit can scratch)"
+      ]
+    },
+    "deep_cleaning": {
+      "frequency": "Weekly or as needed",
+      "procedure": [
+        "Remove any detachable parts (side shields, etc.)",
+        "Clean all surfaces with mild soap solution",
+        "Clean nose bridge and temple tips thoroughly",
+        "Clean ventilation holes if present",
+        "Dry completely before storage"
+      ]
+    }
+  },
+  "storage_requirements": {
+    "environmental_conditions": {
+      "temperature": "Room temperature (15-25°C / 59-77°F)",
+      "humidity": "Low humidity to prevent mold/fungus",
+      "light": "Away from direct sunlight (UV can degrade some filters)",
+      "chemicals": "Away from solvents, acids, and corrosive vapors"
+    },
+    "storage_methods": {
+      "hard_case": {
+        "recommendation": "PREFERRED",
+        "benefits": [
+          "Protection from physical damage",
+          "Protection from environmental factors",
+          "Prevents scratching"
+        ]
+      },
+      "soft_pouch": {
+        "recommendation": "Acceptable for short-term",
+        "limitations": "Less protection than hard case"
+      },
+      "hanging_storage": {
+        "recommendation": "NOT RECOMMENDED",
+        "risks": ["Dust accumulation", "Potential falling damage", "Exposure to light"]
+      }
+    },
+    "multiple_eyewear": {
+      "organization": "Store by wavelength/OD for easy selection",
+      "labeling": "Clear external labeling on storage containers"
+    }
+  },
+  "inspection_procedures": {
+    "pre_use_inspection": {
+      "frequency": "Before each use",
+      "duration": "30 seconds",
+      "checklist": [
+        {
+          "item": "Lens condition",
+          "check": "No cracks, chips, or deep scratches",
+          "action_if_failed": "DO NOT USE - Replace immediately"
+        },
+        {
+          "item": "Filter integrity",
+          "check": "No discoloration, cloudiness, or delamination",
+          "action_if_failed": "DO NOT USE - Replace immediately"
+        },
+        {
+          "item": "Frame condition",
+          "check": "No cracks, breaks, or bent components",
+          "action_if_failed": "Assess - May need replacement"
+        },
+        {
+          "item": "Label legibility",
+          "check": "OD and wavelength markings readable",
+          "action_if_failed": "Remove from service - Labels required"
+        },
+        {
+          "item": "Cleanliness",
+          "check": "Lenses clean for clear vision",
+          "action_if_failed": "Clean before use"
+        }
+      ]
+    },
+    "periodic_inspection": {
+      "monthly": {
+        "responsibility": "Supervisor/LSO",
+        "procedure": [
+          "Collect all eyewear in area",
+          "Perform detailed visual inspection",
+          "Check fit and adjustment for each user",
+          "Verify all labeling is present",
+          "Document findings",
+          "Remove damaged units from service"
+        ]
+      },
+      "annual": {
+        "responsibility": "LSO",
+        "procedure": [
+          "Comprehensive inventory",
+          "Condition assessment of all units",
+          "Replacement planning",
+          "Update specifications if laser changes",
+          "Review and update training"
+        ]
+      }
+    }
+  },
+  "lifespan_and_replacement": {
+    "typical_lifespan": {
+      "normal_use": "2-3 years with proper care",
+      "heavy_use": "1-2 years",
+      "occasional_use": "3-5 years (check for degradation)"
+    },
+    "replacement_triggers": {
+      "immediate": [
+        "Any crack or chip in lens",
+        "Filter delamination or discoloration",
+        "Missing or illegible labels",
+        "Frame breakage affecting fit",
+        "Measured OD below rated value"
+      ],
+      "scheduled": [
+        "End of rated lifespan",
+        "Outdated specifications (laser changed)",
+        "Newer technology available",
+        "Upon employee request (if comfort issues)"
+      ]
+    },
+    "disposal": {
+      "damaged_eyewear": [
+        "Mark clearly as 'DO NOT USE'",
+        "Destroy lenses to prevent reuse",
+        "Dispose per facility waste procedures",
+        "Document disposal for inventory"
+      ]
+    }
+  },
+  "damage_prevention": {
+    "handling": [
+      "Use two hands to put on and remove",
+      "Never place lenses face down",
+      "Avoid contact with hard surfaces",
+      "Don't hang from neck when not in use (swinging hazard)"
+    ],
+    "environmental_protection": [
+      "Don't leave in direct sunlight (car dashboards)",
+      "Keep away from heat sources",
+      "Avoid exposure to chemicals/solvents",
+      "Don't expose to extreme temperatures"
+    ],
+    "transport": [
+      "Always use protective case",
+      "Don't pack heavy items on top",
+      "Separate from tools and sharp objects"
+    ]
+  },
+  "training_requirements": {
+    "user_training": {
+      "initial": [
+        "Proper donning and doffing technique",
+        "Pre-use inspection procedure",
+        "Cleaning methods",
+        "Storage requirements",
+        "When to replace/recycle"
+      ],
+      "refresher": "Annual or when issues identified"
+    },
+    "supervisor_training": {
+      "content": [
+        "Inspection procedures",
+        "Documentation requirements",
+        "Enforcement of wearing requirements",
+        "Recognizing damaged eyewear"
+      ]
+    }
+  },
+  "documentation": {
+    "inventory_records": {
+      "required_info": [
+        "Model number and manufacturer",
+        "OD rating and wavelength coverage",
+        "Date of purchase",
+        "Assigned user(s)",
+        "Inspection dates and results"
+      ]
+    },
+    "inspection_logs": {
+      "monthly": "Record of periodic inspections",
+      "incidents": "Any damage or issues found",
+      "replacements": "Documentation of disposed units"
+    }
+  },
+  "troubleshooting": {
+    "fogging": {
+      "causes": ["Temperature differential", "High humidity", "Poor ventilation"],
+      "solutions": [
+        "Use anti-fog coating or spray",
+        "Improve ventilation",
+        "Ensure proper fit (not too tight)",
+        "Consider different frame style"
+      ]
+    },
+    "scratches": {
+      "prevention": [
+        "Proper cleaning technique",
+        "Hard case storage",
+        "Separate from other items"
+      ],
+      "action": "Replace if scratches impair vision"
+    },
+    "comfort_issues": {
+      "pressure_points": "Adjust temples or try different model",
+      "slipping": "Adjust nose pads or temple tips",
+      "weight": "Consider lighter-weight options"
+    }
+  },
+  "maintenance_schedule_summary": {
+    "daily": [
+      "Pre-use inspection",
+      "Cleaning after use"
+    ],
+    "weekly": [
+      "Deep cleaning",
+      "Storage area check"
+    ],
+    "monthly": [
+      "Supervisor inspection",
+      "Documentation update"
+    ],
+    "annually": [
+      "LSO comprehensive review",
+      "Replacement planning",
+      "Training update"
+    ]
+  }
+}

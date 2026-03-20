@@ -1,0 +1,56 @@
+{
+  "id": "module-1-3",
+  "courseId": "course-1",
+  "title": "Role of the Laser Safety Officer",
+  "description": "Responsibilities, authority, and training requirements for a designated Laser Safety Officer (LSO).",
+  "order": 3,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "The LSO Mission",
+      "content": "The Laser Safety Officer is the cornerstone of any laser safety program. They serve as the primary guardian of safety, balancing operational needs with hazard control. Consider what qualities would make an effective LSO.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "LSO Responsibilities and Authority",
+      "content": "The Laser Safety Officer (LSO) is designated by the employer with authority and responsibility to monitor and enforce the control of laser hazards.\n\n## Primary Responsibilities:\n\n### Hazard Evaluation\n- Classify lasers and laser systems\n- Perform hazard evaluations for new installations\n- Determine Nominal Hazard Zones (NHZ)\n- Specify required control measures\n\n### Control Implementation\n- Ensure engineering controls are in place\n- Approve administrative procedures\n- Specify personal protective equipment\n- Establish Standard Operating Procedures (SOPs)\n\n### Training and Authorization\n- Ensure personnel training is adequate\n- Authorize personnel to operate lasers\n- Maintain training records\n- Conduct refresher training\n\n### Emergency Authority\nThe LSO must have the authority to terminate laser operations immediately if unsafe conditions exist. This authority is absolute and cannot be overridden by production schedules or operational pressures.",
+      "component": "LSOResponsibilityMatrix",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "LSO Decision Scenarios",
+      "content": "As an LSO, how would you handle these situations?\n\n**Scenario 1**: A show is scheduled to start in 30 minutes, but you notice the interlock on the laser enclosure is malfunctioning.\n\n**Scenario 2**: An operator wants to bypass a safety control to achieve a specific visual effect.\n\n**Scenario 3**: During setup, you observe personnel without required eyewear entering the laser controlled area.",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-1-3",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "LSO Responsibilities Guide",
+      "path": "/docs/course-1-fundamentals/lso-role.pdf"
+    },
+    {
+      "type": "interactive",
+      "title": "Responsibility Matrix",
+      "component": "LSOResponsibilityMatrix"
+    }
+  ],
+  "keyTakeaways": [
+    "The LSO is responsible for overseeing the laser safety program",
+    "LSO must have authority to halt unsafe operations immediately",
+    "LSO duties include hazard evaluation, control implementation, and personnel training",
+    "ANSI Z136.1 defines LSO qualifications and responsibilities"
+  ],
+  "nextModule": "module-1-4",
+  "prerequisites": ["module-1-2"],
+  "difficulty": "beginner"
+}

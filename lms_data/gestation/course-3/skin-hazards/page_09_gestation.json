@@ -1,0 +1,27 @@
+{
+  "page_num": 9,
+  "source_pdf": "skin-hazards.pdf",
+  "digestion": {
+    "summary": "TREATMENT OF LASER SKIN INJURIES\n\nIMMEDIATE FIRST AID:\n\nFor Thermal Burns:\n1. Remove from laser source immediately\n2. Cool with running water (not ice) for 10-20 minutes\n3. Remove jewelry and loose cl...",
+    "key_concepts": [
+      "burn first aid",
+      "thermal injury treatment",
+      "debridement"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "TREATMENT OF LASER SKIN INJURIES\n\nIMMEDIATE FIRST AID:\n\nFor Thermal Burns:\n1. Remove from laser source immediately\n2. Cool with running water (not ice) for 10-20 minutes\n3. Remove jewelry and loose clothing near affected area\n4. Cover with sterile non-adherent dressing\n5. Do not apply butter, oils, or creams (can trap heat)\n6. Do not pop blisters\n7. Seek medical attention for burns >3 inches or on face/hands\n\nFor UV Burns:\n- Cool compresses\n- Moisturizing lotions\n- Pain relief (NSAIDs)\n- Hydration\n- Avoid further UV exposure\n\nMEDICAL TREATMENT:\n- Wound assessment and cleaning\n- Tetanus prophylaxis if indicated\n- Topical antimicrobial agents (silver sulfadiazine)\n- Pain management\n- Fluid resuscitation (extensive burns)\n- Debridement when necessary\n- Skin grafting for full-thickness burns\n- Scar management (pressure therapy, silicone sheets)\n\nLONG-TERM CARE:\n- Physical therapy (for contracture prevention)\n- Psychological support\n- Cosmetic considerations\n- Monitoring for complications\n",
+    "analogies": [
+      "Laser skin burns are similar to thermal burns but can be more precisely localized."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Use protective gloves and long sleeves when operating high-power lasers.",
+      "UV laser exposure has cumulative effects similar to sun damage - use full coverage PPE."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.122901"
+}

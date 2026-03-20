@@ -1,0 +1,141 @@
+{
+  "component_id": "e146_compliance_checker",
+  "name": "E146 Compliance Checker",
+  "type": "interactive_checklist",
+  "description": "Interactive compliance verification tool for ANSI E1.46 entertainment laser setups",
+  "categories": [
+    {
+      "id": "planning",
+      "name": "Show Planning and Design",
+      "required": true,
+      "items": [
+        {
+          "id": "p1",
+          "item": "Creative brief documented",
+          "description": "Client's vision and requirements documented",
+          "required": true
+        },
+        {
+          "id": "p2",
+          "item": "Risk assessment completed",
+          "description": "Hazard identification and risk evaluation documented",
+          "required": true
+        },
+        {
+          "id": "p3",
+          "item": "MPE calculations for audience areas",
+          "description": "Exposure levels calculated for all occupied areas",
+          "required": true
+        },
+        {
+          "id": "p4",
+          "item": "Scan failure safety system specified",
+          "description": "System designed to terminate emission upon scanner fault",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "installation",
+      "name": "Installation Requirements",
+      "required": true,
+      "items": [
+        {
+          "id": "i1",
+          "item": "Minimum separation distances verified",
+          "description": "3m vertical, 2.5m horizontal (supervised) or enhanced barriers (unsupervised)",
+          "required": true
+        },
+        {
+          "id": "i2",
+          "item": "Laser projector securely mounted",
+          "description": "Equipment secured against inadvertent displacement",
+          "required": true
+        },
+        {
+          "id": "i3",
+          "item": "All external optics secured",
+          "description": "Mirrors, galvos, and effects heads properly secured",
+          "required": true
+        },
+        {
+          "id": "i4",
+          "item": "Blanking/masking in place",
+          "description": "Physical or software blanking preventing unauthorized beam access",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "safety_systems",
+      "name": "Safety Systems",
+      "required": true,
+      "items": [
+        {
+          "id": "s1",
+          "item": "Emergency stop installed and tested",
+          "description": "E-stop accessible and functional, prevents auto-restart",
+          "required": true
+        },
+        {
+          "id": "s2",
+          "item": "Scan failure detection tested",
+          "description": "Response time verified (few milliseconds)",
+          "required": true
+        },
+        {
+          "id": "s3",
+          "item": "Key/password control implemented",
+          "description": "Prevention of unauthorized operation",
+          "required": true
+        },
+        {
+          "id": "s4",
+          "item": "Warning signs posted",
+          "description": "Appropriate laser warning signs at access points",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "personnel",
+      "name": "Personnel and Documentation",
+      "required": true,
+      "items": [
+        {
+          "id": "per1",
+          "item": "LSO designated",
+          "description": "Laser Safety Officer with executive responsibility assigned",
+          "required": true
+        },
+        {
+          "id": "per2",
+          "item": "Operator competency verified",
+          "description": "Operator demonstrated knowledge of safety procedures",
+          "required": true
+        },
+        {
+          "id": "per3",
+          "item": "Hand-over documentation complete",
+          "description": "Installation, operation, and safety documentation provided",
+          "required": true
+        },
+        {
+          "id": "per4",
+          "item": "Emergency procedures reviewed",
+          "description": "All personnel briefed on emergency shutdown procedures",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "critical_items": ["p2", "p3", "p4", "i1", "s1", "s2", "per1"],
+    "pass_threshold": 100,
+    "critical_required": true
+  },
+  "output": {
+    "generate_report": true,
+    "report_sections": ["completed_items", "pending_items", "critical_warnings"]
+  }
+}

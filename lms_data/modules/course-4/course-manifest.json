@@ -1,0 +1,100 @@
+{
+  "course_id": "course-4",
+  "title": "Course 4: State Regulations",
+  "description": "Comprehensive coverage of laser safety regulations across U.S. states, with focus on interstate operations and compliance",
+  "version": "1.0.0",
+  "last_updated": "2026-03-19",
+  "total_modules": 5,
+  "modules": [
+    {
+      "module_id": "4.1",
+      "title": "Introduction to State Regulations",
+      "status": "reference_only",
+      "note": "Built by previous agent"
+    },
+    {
+      "module_id": "4.2",
+      "title": "Federal vs. State Jurisdiction",
+      "status": "reference_only",
+      "note": "Built by previous agent"
+    },
+    {
+      "module_id": "4.3",
+      "title": "Illinois & Massachusetts Regulations",
+      "path": "lms_data/modules/course-4/module-4.3/",
+      "status": "completed",
+      "built_by": "Module Builder Agent C4-B",
+      "states_covered": ["illinois", "massachusetts"],
+      "duration_minutes": 45,
+      "difficulty": "intermediate",
+      "special_features": [
+        "Interactive state comparison matrix",
+        "Height requirement visualizer",
+        "Notification calculator",
+        "LSO qualification tracker",
+        "Penalty comparison chart",
+        "Tour planning worksheet",
+        "Branching scenario simulator"
+      ]
+    },
+    {
+      "module_id": "4.4",
+      "title": "Nevada, New York, Texas & Washington",
+      "path": "lms_data/modules/course-4/module-4.4/",
+      "status": "completed",
+      "built_by": "Module Builder Agent C4-B",
+      "states_covered": ["nevada", "new-york", "texas", "washington"],
+      "duration_minutes": 50,
+      "difficulty": "intermediate",
+      "special_features": [
+        "Four-state regulatory matrix",
+        "NY Training certificate selector",
+        "ILDA engagement timeline",
+        "Notification requirements tool",
+        "Interactive contact directory",
+        "Tour planning simulator"
+      ]
+    },
+    {
+      "module_id": "4.5",
+      "title": "Interstate Operations & Compliance Matrix",
+      "path": "lms_data/modules/course-4/module-4.5/",
+      "status": "completed",
+      "built_by": "Module Builder Agent C4-B",
+      "states_covered": ["illinois", "massachusetts", "nevada", "new-york", "texas", "washington"],
+      "duration_minutes": 60,
+      "difficulty": "advanced",
+      "special_features": [
+        "I'm Touring - What Do I Need? interactive guide",
+        "Comprehensive six-state compliance matrix",
+        "Notification deadline calculator",
+        "Penalty comparison visualizer",
+        "Dynamic checklist generator",
+        "Multi-state tour planner",
+        "Emergency compliance guide",
+        "Tour document vault"
+      ]
+    }
+  ],
+  "learning_path": {
+    "recommended_sequence": ["4.1", "4.2", "4.3", "4.4", "4.5"],
+    "prerequisites": "Completion of Courses 1-3 recommended"
+  },
+  "regulatory_coverage": {
+    "comprehensive_regulation_states": ["illinois", "massachusetts", "new-york", "texas"],
+    "notification_only_states": ["nevada", "washington"],
+    "inspection_states": ["illinois", "massachusetts", "new-york", "texas"],
+    "training_required_states": ["new-york"]
+  },
+  "interactive_components_summary": {
+    "total_interactive_elements": 25,
+    "calculators": 2,
+    "comparison_matrices": 4,
+    "decision_trees": 3,
+    "generators": 2,
+    "simulators": 3,
+    "visualizers": 3,
+    "wizards": 2,
+    "other_tools": 6
+  }
+}

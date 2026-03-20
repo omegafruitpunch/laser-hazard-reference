@@ -1,0 +1,193 @@
+{
+  "criteria_id": "eyewear-selection-guide",
+  "title": "Laser Protective Eyewear Selection Criteria",
+  "version": "1.0",
+  "selection_process": {
+    "step_1_laser_characterization": {
+      "title": "Characterize the Laser System",
+      "description": "Identify all relevant laser parameters",
+      "required_parameters": [
+        {
+          "parameter": "Wavelength(s)",
+          "importance": "CRITICAL - Eyewear must match specific wavelength",
+          "source": "Laser specification label, technical manual"
+        },
+        {
+          "parameter": "Power or Energy Output",
+          "importance": "CRITICAL - Determines OD requirement",
+          "units": "Watts (CW) or Joules (pulsed)"
+        },
+        {
+          "parameter": "Beam Diameter",
+          "importance": "HIGH - Affects exposure calculation",
+          "default": "Assume 7 mm for visible/NIR if unknown"
+        },
+        {
+          "parameter": "Operating Mode",
+          "importance": "HIGH - CW, pulsed, or Q-switched",
+          "note": "Q-switched lasers typically require higher OD"
+        },
+        {
+          "parameter": "Exposure Duration",
+          "importance": "MEDIUM - Determines which MPE to use",
+          "options": ["0.25 sec", "10 sec", "600 sec", "8-hour"]
+        }
+      ]
+    },
+    "step_2_hazard_analysis": {
+      "title": "Conduct Hazard Analysis",
+      "description": "Determine viewing conditions and hazard types",
+      "viewing_scenarios": {
+        "intrabeam": {
+          "description": "Direct viewing of primary beam",
+          "OD_requirement": "Maximum - worst case",
+          "formula": "Use full OD calculation"
+        },
+        "diffuse_reflection": {
+          "description": "Viewing scattered light from matte surfaces",
+          "OD_requirement": "Generally 2-3 OD less than intrabeam",
+          "factors": ["Surface reflectivity", "Viewing angle", "Distance"],
+          "note": "Must be calculated for each situation"
+        },
+        "specular_reflection": {
+          "description": "Mirror-like reflections",
+          "OD_requirement": "Same as intrabeam",
+          "warning": "Can be as hazardous as direct beam"
+        }
+      },
+      "special_considerations": {
+        "alignment_procedures": "May require visibility while protected",
+        "multiple_wavelengths": "May need broadband or multiple eyewear types",
+        "service_maintenance": "Temporary controlled area requirements"
+      }
+    },
+    "step_3_od_calculation": {
+      "title": "Calculate Required Optical Density",
+      "formula": "OD = log10(H0/MPE)",
+      "calculation_steps": [
+        "Determine worst-case exposure H0 (W/cm² or J/cm²)",
+        "Select appropriate MPE from ANSI Z 136.1 Table 5",
+        "Calculate OD using formula",
+        "Round UP to next whole or half OD number",
+        "Consider conservative approach (use 8-hour MPE)"
+      ],
+      "example_calculation": {
+        "laser": "5W Argon at 0.514 μm",
+        "beam_diameter": "7 mm",
+        "beam_area": "0.385 cm²",
+        "H0": "(4 × 5.0) / (π × 0.7²) = 12.99 W/cm²",
+        "MPE_600sec": "16.7 × 10⁻⁶ W/cm²",
+        "OD": "log10(12.99 / 16.7×10⁻⁶) = 5.9",
+        "recommendation": "OD 6.0 or higher"
+      }
+    },
+    "step_4_eyewear_selection": {
+      "title": "Select Appropriate Eyewear",
+      "criteria": {
+        "wavelength_match": {
+          "requirement": "Eyewear must protect at the laser wavelength",
+          "verification": "Check manufacturer specifications",
+          "warning": "Do not assume - verify exact wavelength coverage"
+        },
+        "od_rating": {
+          "requirement": "Eyewear OD must meet or exceed calculated requirement",
+          "margin": "Select next available OD rating above calculation",
+          "example": "If OD 5.9 calculated, select OD 6.0 eyewear"
+        },
+        "visibility_requirements": {
+          "VLT": "Visible Light Transmission - higher for better visibility",
+          "alignment_tasks": "May require higher VLT with adequate OD",
+          "tradeoff": "Higher OD typically means lower VLT (darker lenses)"
+        },
+        "comfort_and_fit": {
+          "description": "Critical for compliance",
+          "factors": [
+            "Weight and balance",
+            "Adjustable temple length and nose bridge",
+            "Compatibility with other PPE (respirators, etc.)",
+            "Prescription needs"
+          ]
+        }
+      }
+    }
+  },
+  "regulatory_requirements": {
+    "osha_29_cfr_1926_102_b2": {
+      "title": "OSHA Construction Standard",
+      "requirement": "Employees exposed to laser beams shall be furnished suitable laser safety goggles which will:",
+      "criteria": [
+        "Protect for the specific wavelength of the laser",
+        "Be of optical density adequate for the energy involved"
+      ]
+    },
+    "ansi_z136_1": {
+      "title": "ANSI Z 136.1 Requirements",
+      "labeling": "All laser eyewear shall be clearly labeled with OD values and wavelengths",
+      "ls_approval": "LSO shall approve eyewear selections",
+      "inspection": "Regular inspection for damage required"
+    }
+  },
+  "laser_class_selection_guide": {
+    "Class_I": {
+      "eyewear_required": false,
+      "exception": "During service of embedded higher-class lasers"
+    },
+    "Class_II": {
+      "eyewear_required": false,
+      "protection": "Blink reflex (0.25 sec) provides adequate protection"
+    },
+    "Class_IIIA": {
+      "eyewear_required": "Only if MPE is exceeded",
+      "typical_use": "Generally safe for momentary viewing"
+    },
+    "Class_IIIB": {
+      "eyewear_required": true,
+      "when": "When MPE exceeded, during alignment, open beam operations"
+    },
+    "Class_IV": {
+      "eyewear_required": "MANDATORY",
+      "requirement": "For all personnel in controlled area",
+      "additional": "Must be worn at all times when laser capable of emitting"
+    }
+  },
+  "common_mistakes": {
+    "wavelength_mismatch": {
+      "mistake": "Selecting eyewear for wrong wavelength",
+      "consequence": "Zero protection - potentially catastrophic",
+      "prevention": "Always verify laser wavelength from specifications"
+    },
+    "insufficient_od": {
+      "mistake": "Selecting OD below calculated requirement",
+      "consequence": "Inadequate protection during exposure",
+      "prevention": "Round UP to next available OD rating"
+    },
+    "broadband_assumption": {
+      "mistake": "Assuming broadband eyewear protects at all wavelengths",
+      "consequence": "May have gaps in protection",
+      "prevention": "Verify all wavelengths in use are covered"
+    },
+    "comfort_over_safety": {
+      "mistake": "Selecting lighter eyewear for comfort",
+      "consequence": "Reduced OD protection",
+      "prevention": "Never compromise OD for comfort"
+    },
+    "old_eyewear": {
+      "mistake": "Using degraded or damaged eyewear",
+      "consequence": "Unknown OD - may not provide protection",
+      "prevention": "Regular inspection and replacement"
+    }
+  },
+  "selection_checklist": [
+    "☐ Laser wavelength(s) identified and verified",
+    "☐ Laser power/energy determined",
+    "☐ Worst-case exposure scenario identified",
+    "☐ Required OD calculated using ANSI Z 136.1 MPE values",
+    "☐ Eyewear selected with adequate wavelength coverage",
+    "☐ Eyewear OD rating meets or exceeds requirement",
+    "☐ Labeling verified (OD and wavelength markings present)",
+    "☐ Comfort and fit assessed for extended wear",
+    "☐ Compatibility with other PPE verified",
+    "☐ LSO approval obtained",
+    "☐ Users trained on proper use and limitations"
+  ]
+}

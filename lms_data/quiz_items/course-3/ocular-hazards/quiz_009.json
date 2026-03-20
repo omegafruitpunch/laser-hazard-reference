@@ -1,0 +1,14 @@
+{
+  "id": "ocular-hazards_q009",
+  "type": "scenario",
+  "question": "A technician accidentally receives a brief exposure to a 1064 nm Nd:YAG laser beam. What is the most likely outcome?",
+  "scenario": "During alignment procedures without protective eyewear, a Class 4 Nd:YAG laser beam reflects off a tool and enters the technician's eye for approximately 0.5 seconds.",
+  "options": [
+    "Immediate corneal pain and photokeratitis",
+    "No effect as the beam is invisible",
+    "Potential retinal injury without immediate symptoms",
+    "Immediate flash blindness with full recovery expected"
+  ],
+  "correct": 2,
+  "explanation": "1064 nm is in the near-infrared retinal hazard region. Being invisible, no pain or blink reflex occurs, but retinal damage is possible without immediate symptoms."
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ocular-hazards_q007",
+  "type": "multiple_select",
+  "question": "Which of the following are mechanisms of laser retinal injury? (Select all that apply)",
+  "options": [
+    "Photochemical damage",
+    "Thermal damage",
+    "Mechanical damage",
+    "Electrical damage"
+  ],
+  "correct": [
+    0,
+    1,
+    2
+  ],
+  "explanation": "Laser retinal injury occurs through photochemical (primarily blue light), thermal (heat from absorption), and mechanical (shock waves from short pulses) mechanisms."
+}

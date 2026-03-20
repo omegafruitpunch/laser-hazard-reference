@@ -1,0 +1,59 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 4,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Introduction to FDA laser product regulations",
+      "Federal Food, Drug and Cosmetic Act (FFDCA) Chapter V, Subchapter C",
+      "Electronic Product Radiation Control requirements",
+      "Manufacturer responsibilities overview"
+    ],
+    "key_terms": [
+      {
+        "term": "FFDCA",
+        "definition": "Federal Food, Drug and Cosmetic Act - primary legislation governing FDA authority"
+      },
+      {
+        "term": "Electronic Product Radiation Control",
+        "definition": "Regulatory framework for radiation-emitting electronic products"
+      },
+      {
+        "term": "21 CFR 1040.10",
+        "definition": "Code of Federal Regulations section containing laser product performance standard"
+      },
+      {
+        "term": "Laser",
+        "definition": "Device producing electromagnetic radiation in wavelength range 180 nm to 1 x 10^6 nm by controlled stimulated emission"
+      },
+      {
+        "term": "Laser Notices to Industry",
+        "definition": "Periodic clarifications and policy updates issued by CDRH"
+      },
+      {
+        "term": "DSMICA",
+        "definition": "Division of Small Manufacturers, International, and Consumer Assistance"
+      }
+    ],
+    "regulatory_references": [
+      "FFDCA Chapter V, Subchapter C",
+      "21 CFR Chapter I, Subchapter J",
+      "21 CFR 1040.10(b)(19) - Laser definition",
+      "21 CFR 1040.10(i) - Manufacturer definition"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Understand the legal basis for FDA laser product regulation",
+      "Define what constitutes a laser under FDA regulations",
+      "Identify the regulatory hierarchy (Act → Regulations → Guidance)",
+      "Know where to seek regulatory assistance"
+    ],
+    "prerequisites": [
+      "Basic understanding of US regulatory structure"
+    ],
+    "estimated_study_time_minutes": 20,
+    "content_type": "introduction",
+    "has_tables": false
+  }
+}

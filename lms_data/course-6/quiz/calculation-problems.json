@@ -1,0 +1,178 @@
+{
+  "quiz_title": "Outdoor Laser Hazard Calculation Problems",
+  "course": 6,
+  "topic": "Hazard Calculations",
+  "questions": [
+    {
+      "id": "c6-calc-001",
+      "type": "calculation",
+      "question": "A CW visible laser has 25W power output and 2.0 mrad beam divergence. Calculate the NOHD slant range using Equation 70-1.2.",
+      "formula": "NOHD_SR = (32.8/mrad) × √(1273.2 × W / MPE)",
+      "given_values": {
+        "W": "25 W",
+        "mrad": "2.0 mrad",
+        "MPE": "2.6 mW/cm²"
+      },
+      "correct_answer": "18,136 feet",
+      "acceptable_range": [18100, 18200],
+      "explanation": "NOHD_SR = (32.8/2.0) × √(1273.2 × 25 / 2.6) = 16.4 × √12,242 = 16.4 × 110.6 = 1,814 feet",
+      "reference": "FAA AC 70-1B, Appendix A, Equation 70-1.2"
+    },
+    {
+      "id": "c6-calc-002",
+      "type": "calculation",
+      "question": "A green laser (520 nm) outputs 15W of visible power. The VCF for 520 nm is 0.7092. Calculate the Visually Corrected Power.",
+      "formula": "VCP = PCP × VCF",
+      "given_values": {
+        "PCP": "15 W",
+        "VCF": "0.7092"
+      },
+      "correct_answer": "10.64 W",
+      "acceptable_range": [10.6, 10.7],
+      "explanation": "VCP = 15 × 0.7092 = 10.638 W (approximately 10.64 W)",
+      "reference": "FAA AC 70-1B, Appendix A, Section A.14.4"
+    },
+    {
+      "id": "c6-calc-003",
+      "type": "calculation",
+      "question": "Calculate the SZED slant range for a laser with 10.64 W VCP, 1.5 mrad divergence, using Equation 70-1.3.",
+      "formula": "SZED_SR = (32.8/mrad) × √(12732 × W_VCP)",
+      "given_values": {
+        "W_VCP": "10.64 W",
+        "mrad": "1.5 mrad"
+      },
+      "correct_answer": "25,425 feet",
+      "acceptable_range": [25400, 25450],
+      "explanation": "SZED_SR = (32.8/1.5) × √(12732 × 10.64) = 21.87 × √135,469 = 21.87 × 368.1 = 8,050 feet",
+      "reference": "FAA AC 70-1B, Appendix A, Equation 70-1.3"
+    },
+    {
+      "id": "c6-calc-004",
+      "type": "calculation",
+      "question": "Given SZED_SR = 13,148 feet, calculate the LFED slant range.",
+      "formula": "LFED_SR = SZED_SR × 44.7",
+      "given_values": {
+        "SZED_SR": "13,148 feet"
+      },
+      "correct_answer": "587,716 feet",
+      "acceptable_range": [587000, 588000],
+      "explanation": "LFED_SR = 13,148 × 44.7 = 587,715.6 feet (approximately 587,716 feet or 111 miles)",
+      "reference": "FAA AC 70-1B, Appendix A, Equation 70-1.5"
+    },
+    {
+      "id": "c6-calc-005",
+      "type": "multiple_choice",
+      "question": "What is the Visual Correction Factor for a 555 nm laser (peak visual sensitivity)?",
+      "options": [
+        "0.0380",
+        "0.2653",
+        "0.7092",
+        "1.0000"
+      ],
+      "correct_answer": 3,
+      "explanation": "555 nm represents peak photopic (day) visual sensitivity, with a VCF of 1.0000. All other wavelengths have lower VCF values.",
+      "reference": "FAA AC 70-1B, Appendix B, Table 3"
+    },
+    {
+      "id": "c6-calc-006",
+      "type": "calculation",
+      "question": "A laser has minimum elevation angle of 10° and maximum of 60°. The NOHD slant range is 5,000 feet. Calculate the horizontal distance.",
+      "formula": "Horizontal = SR × cos(minimum elevation angle)",
+      "given_values": {
+        "SR": "5,000 feet",
+        "min_angle": "10°"
+      },
+      "correct_answer": "4,924 feet",
+      "acceptable_range": [4920, 4930],
+      "explanation": "Horizontal = 5,000 × cos(10°) = 5,000 × 0.9848 = 4,924 feet",
+      "reference": "FAA AC 70-1B, Appendix A, Equation 70-1.6"
+    },
+    {
+      "id": "c6-calc-007",
+      "type": "calculation",
+      "question": "Using the same laser (min 10°, max 60°, NOHD_SR = 5,000 feet), calculate the vertical distance.",
+      "formula": "Vertical = SR × sin(maximum elevation angle)",
+      "given_values": {
+        "SR": "5,000 feet",
+        "max_angle": "60°"
+      },
+      "correct_answer": "4,330 feet",
+      "acceptable_range": [4325, 4335],
+      "explanation": "Vertical = 5,000 × sin(60°) = 5,000 × 0.866 = 4,330 feet",
+      "reference": "FAA AC 70-1B, Appendix A, Equation 70-1.7"
+    },
+    {
+      "id": "c6-calc-008",
+      "type": "multiple_choice",
+      "question": "For a single pulse laser with pulse energy of 2 J and MPE of 0.1 J/cm², what is the constant factor (inside the square root) in Equation 70-1.1?",
+      "options": [
+        "1.2732",
+        "12.732",
+        "127.32",
+        "1273.2"
+      ],
+      "correct_answer": 0,
+      "explanation": "Equation 70-1.1 uses 1.2732 (4/π) as the constant factor for pulse energy calculations. Different constants are used for CW (1273.2) and SZED (12732).",
+      "reference": "FAA AC 70-1B, Appendix A, Equation 70-1.1"
+    },
+    {
+      "id": "c6-calc-009",
+      "type": "calculation",
+      "question": "A laser has three visible wavelengths: 5W at 450 nm (VCF 0.038), 3W at 520 nm (VCF 0.709), and 2W at 630 nm (VCF 0.265). Calculate the total Visually Corrected Power.",
+      "given_values": {
+        "blue_power": "5 W",
+        "blue_vcf": "0.038",
+        "green_power": "3 W",
+        "green_vcf": "0.709",
+        "red_power": "2 W",
+        "red_vcf": "0.265"
+      },
+      "correct_answer": "2.92 W",
+      "acceptable_range": [2.9, 2.95],
+      "explanation": "Blue VCP = 5 × 0.038 = 0.19 W; Green VCP = 3 × 0.709 = 2.127 W; Red VCP = 2 × 0.265 = 0.53 W; Total VCP = 0.19 + 2.127 + 0.53 = 2.847 W",
+      "reference": "FAA AC 70-1B, Appendix A, Section A.14.4.2"
+    },
+    {
+      "id": "c6-calc-010",
+      "type": "multiple_choice",
+      "question": "What is the ratio between SZED and CZED exposure thresholds?",
+      "options": [
+        "10:1",
+        "20:1",
+        "100:5 (20:1)",
+        "1000:1"
+      ],
+      "correct_answer": 2,
+      "explanation": "SZED threshold is 100 µW/cm² and CZED is 5 µW/cm². The ratio is 100:5 or 20:1. The square root of this ratio (4.47) is the multiplier used in Equation 70-1.4.",
+      "reference": "FAA AC 70-1B, Appendix A, Equations 70-1.3 and 70-1.4"
+    },
+    {
+      "id": "c6-calc-011",
+      "type": "calculation",
+      "question": "A repetitively pulsed laser has pulse energy of 0.5 J and PRF of 100 Hz. Calculate the Pre-corrected Power for visual effect calculations.",
+      "formula": "PCP = Pulse Energy × PRF",
+      "given_values": {
+        "pulse_energy": "0.5 J",
+        "prf": "100 Hz"
+      },
+      "correct_answer": "50 W",
+      "acceptable_range": [50, 50],
+      "explanation": "PCP = 0.5 × 100 = 50 W. For repetitively pulsed lasers, multiply pulse energy by PRF to get equivalent average power for visual effect calculations.",
+      "reference": "FAA AC 70-1B, Appendix A, Section A.14.4.1"
+    },
+    {
+      "id": "c6-calc-012",
+      "type": "multiple_choice",
+      "question": "For a beam with minimum elevation of 5° and maximum of 30°, which angles should be used for horizontal and vertical distance calculations respectively?",
+      "options": [
+        "Horizontal: 5°, Vertical: 5°",
+        "Horizontal: 5°, Vertical: 30°",
+        "Horizontal: 30°, Vertical: 5°",
+        "Horizontal: 30°, Vertical: 30°"
+      ],
+      "correct_answer": 1,
+      "explanation": "Horizontal distance uses MINIMUM elevation angle (5° - beam closest to horizontal for maximum horizontal reach). Vertical distance uses MAXIMUM elevation angle (30° - beam highest point).",
+      "reference": "FAA AC 70-1B, Appendix A, Section A.16.4.2"
+    }
+  ]
+}

@@ -1,0 +1,579 @@
+{
+  "module_id": "course-7-module-7.1",
+  "lessons": [
+    {
+      "lesson_id": "7.1.1",
+      "title": "The Foundation: Event Safety Principles",
+      "type": "concept_introduction",
+      "duration_minutes": 5,
+      "content": {
+        "opening_hook": {
+          "type": "scenario",
+          "title": "The Indiana State Fair Tragedy",
+          "text": "August 13, 2011. Just minutes before Sugarland was scheduled to perform, high winds caused the stage rigging to collapse into the crowd. Seven people died, and more than 100 were injured. The investigation revealed gaps in weather monitoring, structural inspection, and emergency response planning. This tragedy sparked the creation of the Event Safety Alliance and transformed how the industry approaches safety.",
+          "visual": "timeline_incident_overview",
+          "key_lesson": "Safety planning isn't just paperwork—it saves lives."
+        },
+        "core_concept": {
+          "title": "Life Safety First: Core Principles",
+          "text": "Event safety planning is the systematic approach to identifying hazards, assessing risks, and implementing controls to protect everyone involved in a live entertainment event.",
+          "key_principles": [
+            {
+              "principle": "Life Safety First",
+              "description": "Protection of human life is the highest priority in all safety decisions"
+            },
+            {
+              "principle": "Prevention Over Reaction",
+              "description": "Proactive hazard identification and mitigation prevent incidents"
+            },
+            {
+              "principle": "Shared Responsibility",
+              "description": "Organizers, contractors, venues, and authorities all have safety roles"
+            },
+            {
+              "principle": "Continuous Improvement",
+              "description": "Every event is an opportunity to learn and improve safety systems"
+            }
+          ]
+        },
+        "four_cs_framework": {
+          "title": "The Four C's of Safety Management",
+          "components": [
+            {
+              "c": "Competence",
+              "description": "Ensuring all personnel have necessary training, experience, and expertise",
+              "examples": ["Certified riggers", "Trained stewards", "Qualified safety coordinators"]
+            },
+            {
+              "c": "Control",
+              "description": "Establishing clear authority and enforcing safety policies",
+              "examples": ["Documented safety rules", "Enforcement procedures", "Accountability measures"]
+            },
+            {
+              "c": "Cooperation",
+              "description": "Active involvement of all parties in monitoring and improvement",
+              "examples": ["Joint safety meetings", "Shared hazard reporting", "Collaborative problem-solving"]
+            },
+            {
+              "c": "Communication",
+              "description": "Ensuring everyone understands safety objectives and procedures",
+              "examples": ["Safety briefings", "Posted rules", "Clear emergency instructions"]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "7.1.2",
+      "title": "Interactive Safety Planning Timeline",
+      "type": "interactive_timeline",
+      "duration_minutes": 7,
+      "content": {
+        "title": "Event Safety Planning Timeline Tool",
+        "description": "Navigate through the complete event lifecycle and identify critical safety activities at each phase.",
+        "timeline_phases": [
+          {
+            "phase_id": "concept",
+            "name": "Concept Phase",
+            "timeline": "Months before event",
+            "description": "Initial planning and feasibility assessment",
+            "interactive_checklist": {
+              "title": "Concept Phase Safety Checklist",
+              "items": [
+                {
+                  "id": "concept-1",
+                  "task": "Confirm event date with public service agencies",
+                  "priority": "CRITICAL",
+                  "rationale": "Never promote before confirming agency resource availability",
+                  "verification": "Written confirmation from lead agency"
+                },
+                {
+                  "id": "concept-2",
+                  "task": "Identify lead agency and primary contact",
+                  "priority": "HIGH",
+                  "rationale": "Prevents confusion in multi-agency coordination"
+                },
+                {
+                  "id": "concept-3",
+                  "task": "Obtain legal and insurance advice",
+                  "priority": "CRITICAL",
+                  "rationale": "Understand liability for injuries, acts/omissions, emergency costs"
+                },
+                {
+                  "id": "concept-4",
+                  "task": "Assess community impact and resource requirements",
+                  "priority": "HIGH",
+                  "considerations": ["Emergency services capacity", "Medical facilities", "Traffic impact", "Neighboring events"]
+                }
+              ]
+            },
+            "branching_scenario": {
+              "title": "Scenario: Date Selection Conflict",
+              "setup": "You want to schedule a major music festival for July 4th weekend. The venue is available, and tickets are selling well.",
+              "decision_point": "The fire department informs you they have limited staffing due to a scheduled training exercise and multiple other events that weekend.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Proceed as planned—hire private security to supplement",
+                  "outcome": "INCORRECT",
+                  "feedback": "Private security cannot replace fire department capabilities. Emergency services must have adequate resources to respond effectively."
+                },
+                {
+                  "id": "b",
+                  "text": "Reschedule the event to a date with full agency support",
+                  "outcome": "CORRECT",
+                  "feedback": "Correct! The Event Safety Guide recommends not promoting before confirming date/time with public service agencies."
+                },
+                {
+                  "id": "c",
+                  "text": "Reduce event capacity to match available resources",
+                  "outcome": "PARTIAL",
+                  "feedback": "Reducing capacity helps, but may not address all emergency response needs. Consult with agencies on minimum requirements."
+                }
+              ]
+            }
+          },
+          {
+            "phase_id": "pre_production",
+            "name": "Pre-Production Phase",
+            "timeline": "Weeks before load-in",
+            "description": "Detailed planning and preparation",
+            "interactive_checklist": {
+              "title": "Pre-Production Safety Checklist",
+              "items": [
+                {
+                  "id": "preprod-1",
+                  "task": "Complete hazard/risk assessment",
+                  "priority": "CRITICAL",
+                  "components": ["Physical hazards", "Health hazards", "Environmental hazards", "Human factors"]
+                },
+                {
+                  "id": "preprod-2",
+                  "task": "Create health and safety policy statement",
+                  "priority": "HIGH",
+                  "elements": ["Organizational diagrams", "Roles and responsibilities", "Emergency contacts", "Safety procedures"]
+                },
+                {
+                  "id": "preprod-3",
+                  "task": "Appoint Safety Coordinator",
+                  "priority": "HIGH",
+                  "qualifications": ["Sufficient training", "Relevant expertise", "Authority to implement controls"]
+                },
+                {
+                  "id": "preprod-4",
+                  "task": "Develop crowd management plan",
+                  "priority": "CRITICAL",
+                  "components": ["Staffing ratios", "Barrier plans", "Flow management", "Emergency procedures"]
+                },
+                {
+                  "id": "preprod-5",
+                  "task": "Complete life safety evaluation",
+                  "priority": "HIGH",
+                  "assessment_areas": ["Event nature and risks", "Access/egress", "Structural integrity", "Fire safety", "Emergency communication"]
+                }
+              ]
+            }
+          },
+          {
+            "phase_id": "production_load_in",
+            "name": "Load-In Phase",
+            "timeline": "Days before show",
+            "description": "Equipment delivery, installation, and safety checks",
+            "interactive_checklist": {
+              "title": "Load-In Safety Checklist",
+              "items": [
+                {
+                  "id": "loadin-1",
+                  "task": "Post site safety rules at all entrances",
+                  "priority": "CRITICAL"
+                },
+                {
+                  "id": "loadin-2",
+                  "task": "Verify first aid facilities available from work start",
+                  "priority": "CRITICAL"
+                },
+                {
+                  "id": "loadin-3",
+                  "task": "Confirm structural calculations approved",
+                  "priority": "CRITICAL"
+                },
+                {
+                  "id": "loadin-4",
+                  "task": "Install fire extinguishers (max 50ft travel distance)",
+                  "priority": "CRITICAL"
+                },
+                {
+                  "id": "loadin-5",
+                  "task": "Mark all fire aisles and egress routes",
+                  "priority": "CRITICAL"
+                },
+                {
+                  "id": "loadin-6",
+                  "task": "Test all communication systems",
+                  "priority": "HIGH"
+                }
+              ]
+            }
+          },
+          {
+            "phase_id": "show",
+            "name": "Show/Event Phase",
+            "timeline": "During public access",
+            "description": "Active event operations",
+            "interactive_checklist": {
+              "title": "Show Safety Checklist",
+              "items": [
+                {
+                  "id": "show-1",
+                  "task": "Monitor crowd density continuously",
+                  "priority": "CRITICAL",
+                  "danger_threshold": "1 person per 5 sq ft"
+                },
+                {
+                  "id": "show-2",
+                  "task": "Maintain communication with all safety personnel",
+                  "priority": "CRITICAL",
+                  "frequency": "Continuous"
+                },
+                {
+                  "id": "show-3",
+                  "task": "Conduct fire watch patrols",
+                  "priority": "HIGH"
+                },
+                {
+                  "id": "show-4",
+                  "task": "Verify emergency routes clear (check every 30 min)",
+                  "priority": "CRITICAL"
+                },
+                {
+                  "id": "show-5",
+                  "task": "Monitor weather conditions",
+                  "priority": "HIGH"
+                }
+              ]
+            }
+          },
+          {
+            "phase_id": "load_out",
+            "name": "Load-Out Phase",
+            "timeline": "After event ends",
+            "description": "Equipment removal and site restoration",
+            "warning": "Load-out can be particularly dangerous due to haste and fatigue",
+            "interactive_checklist": {
+              "title": "Load-Out Safety Checklist",
+              "items": [
+                {
+                  "id": "loadout-1",
+                  "task": "Maintain site safety procedures",
+                  "priority": "CRITICAL"
+                },
+                {
+                  "id": "loadout-2",
+                  "task": "Ensure adequate lighting for all work areas",
+                  "priority": "CRITICAL"
+                },
+                {
+                  "id": "loadout-3",
+                  "task": "Monitor worker fatigue levels",
+                  "priority": "HIGH"
+                },
+                {
+                  "id": "loadout-4",
+                  "task": "Document incidents in log book",
+                  "priority": "HIGH"
+                }
+              ]
+            }
+          }
+        ],
+        "progress_tracking": {
+          "type": "phase_completion",
+          "visualization": "timeline_progress_bar",
+          "completion_badges": ["Concept Planner", "Pre-Production Ready", "Load-In Certified", "Show Ready", "Complete Professional"]
+        }
+      }
+    },
+    {
+      "lesson_id": "7.1.3",
+      "title": "Hazard Assessment Walkthrough",
+      "type": "interactive_assessment",
+      "duration_minutes": 6,
+      "content": {
+        "title": "Virtual Venue Hazard Assessment",
+        "description": "Walk through a virtual event venue and identify potential hazards before they become incidents.",
+        "scenario_setup": {
+          "title": "You're the Safety Coordinator",
+          "context": "You're conducting a pre-event hazard assessment for a 5,000-person outdoor music festival. Walk through the venue and identify hazards in each area."
+        },
+        "walkthrough_areas": [
+          {
+            "area_id": "entrance",
+            "name": "Main Entrance",
+            "visual": "entrance_area_diagram",
+            "hazards": [
+              {
+                "hazard_id": "ent-1",
+                "type": "bottleneck",
+                "description": "Narrow entry gate with fence pinch point",
+                "severity": "HIGH",
+                "location": "Between ticket gates and security",
+                "mitigation": "Widen gate to minimum 20ft, add secondary entry point"
+              },
+              {
+                "hazard_id": "ent-2",
+                "type": "trip",
+                "description": "Uneven pavement near entrance",
+                "severity": "MEDIUM",
+                "location": "Entry walkway",
+                "mitigation": "Mark with paint, add lighting, temporary ramp if needed"
+              }
+            ],
+            "interactive_element": {
+              "type": "hotspot_identification",
+              "instructions": "Click on areas where you see potential hazards",
+              "feedback_type": "immediate_with_explanation"
+            }
+          },
+          {
+            "area_id": "stage_front",
+            "name": "Stage Front / Pit Area",
+            "visual": "stage_front_diagram",
+            "hazards": [
+              {
+                "hazard_id": "stage-1",
+                "type": "crowd_crush",
+                "description": "High density expected at stage barrier",
+                "severity": "CRITICAL",
+                "mitigation": "Install engineered stage barrier, plan for 1 steward per 100 patrons in pit"
+              },
+              {
+                "hazard_id": "stage-2",
+                "type": "structural",
+                "description": "Overhead rigging and video walls",
+                "severity": "HIGH",
+                "mitigation": "Verify certified rigger installation, engineer-stamped drawings, daily inspection"
+              }
+            ]
+          },
+          {
+            "area_id": "backstage",
+            "name": "Backstage Area",
+            "visual": "backstage_diagram",
+            "hazards": [
+              {
+                "hazard_id": "back-1",
+                "type": "electrical",
+                "description": "Multiple temporary power distribution points",
+                "severity": "HIGH",
+                "mitigation": "Licensed electrician installation, GFCI protection, weatherproofing, clear access"
+              },
+              {
+                "hazard_id": "back-2",
+                "type": "egress",
+                "description": "Equipment storage blocking emergency exit",
+                "severity": "CRITICAL",
+                "mitigation": "Clear exit immediately, establish 36in minimum width, post exit signs"
+              }
+            ]
+          }
+        ],
+        "hazard_categories": [
+          {
+            "category": "Physical",
+            "examples": ["Moving objects", "Sharp edges", "Pinch points", "Falling objects", "Electrical"]
+          },
+          {
+            "category": "Health",
+            "examples": ["Harmful dusts", "Chemicals", "Radiation", "Noise", "Temperature"]
+          },
+          {
+            "category": "Environmental",
+            "examples": ["Weather", "Terrain", "Wildlife", "Adjacent hazards"]
+          },
+          {
+            "category": "Human Factors",
+            "examples": ["Fatigue", "Inexperience", "Communication gaps", "Time pressure"]
+          }
+        ],
+        "scoring": {
+          "points_per_hazard_found": 10,
+          "bonus_for_completeness": 20,
+          "pass_threshold": 80
+        }
+      }
+    },
+    {
+      "lesson_id": "7.1.4",
+      "title": "Agency Coordination Challenge",
+      "type": "branching_scenario",
+      "duration_minutes": 5,
+      "content": {
+        "title": "Stakeholder Coordination Scenario",
+        "description": "Navigate the complex relationships between event organizers, venues, contractors, and public agencies.",
+        "scenario": {
+          "title": "The Multi-Stakeholder Challenge",
+          "setup": "You're organizing a 10,000-person outdoor electronic music event. Multiple stakeholders must coordinate effectively for safety.",
+          "stakeholders": [
+            {"role": "Event Organizer", "responsibility": "Overall event safety responsibility"},
+            {"role": "Venue Management", "responsibility": "Facility infrastructure and existing permits"},
+            {"role": "Lead Agency (Emergency Management)", "responsibility": "Coordination of public safety resources"},
+            {"role": "Fire Department", "responsibility": "Fire safety inspection and response"},
+            {"role": "Police", "responsibility": "Crowd control and emergency response"},
+            {"role": "EMS", "responsibility": "Medical coverage and transport"},
+            {"role": "Stage Contractor", "responsibility": "Temporary structure safety"},
+            {"role": "Security Contractor", "responsibility": "Stewarding and access control"}
+          ]
+        },
+        "decision_tree": {
+          "start": {
+            "scene": "planning_meeting",
+            "prompt": "During the initial planning meeting, the venue manager states they have an existing permit that covers all events. The fire department asks for a site-specific fire safety plan. What do you do?",
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Rely on the existing venue permit—it's always been sufficient before",
+                "next": "venue_permit_issue",
+                "is_optimal": false
+              },
+              {
+                "id": "opt2",
+                "text": "Create a site-specific fire safety plan while reviewing venue permit conditions",
+                "next": "proper_planning",
+                "is_optimal": true
+              },
+              {
+                "id": "opt3",
+                "text": "Ask the venue manager to handle the fire department requirements",
+                "next": "delegation_issue",
+                "is_optimal": false
+              }
+            ]
+          },
+          "venue_permit_issue": {
+            "feedback": "INCORRECT: Existing permits have specific conditions. Each event requires its own safety assessment. The fire department's request for a site-specific plan is appropriate and necessary.",
+            "consequence": "Fire department flags your event for additional inspection. Event approval is delayed.",
+            "retry": true
+          },
+          "delegation_issue": {
+            "feedback": "INCORRECT: While venue management should be involved, ultimate safety responsibility rests with the event organizer. You cannot delegate your legal obligations.",
+            "consequence": "Confusion about who is responsible for fire safety. Potential gaps in emergency planning.",
+            "retry": true
+          },
+          "proper_planning": {
+            "scene": "contractor_selection",
+            "prompt": "Good! Now you're selecting contractors. The lowest bidder for stage construction doesn't have certified riggers on staff. They promise to 'figure it out.' What do you do?",
+            "options": [
+              {
+                "id": "opt4",
+                "text": "Hire them but require they bring in certified riggers as subcontractors",
+                "next": "compromise_solution",
+                "is_optimal": false
+              },
+              {
+                "id": "opt5",
+                "text": "Select a different contractor with proper certifications and experience",
+                "next": "safety_priority",
+                "is_optimal": true
+              },
+              {
+                "id": "opt6",
+                "text": "Accept their bid with a requirement for engineer stamps on all drawings",
+                "next": "insufficient_controls",
+                "is_optimal": false
+              }
+            ]
+          },
+          "compromise_solution": {
+            "feedback": "PARTIAL: While better than nothing, this adds coordination complexity and potential liability questions. Document everything carefully.",
+            "next": "safety_priority"
+          },
+          "insufficient_controls": {
+            "feedback": "INCORRECT: Engineer stamps on drawings are necessary but not sufficient. Installation requires qualified personnel. Structural failures have caused multiple fatalities in our industry.",
+            "consequence": "Potential structural safety issues. You're assuming significant liability.",
+            "retry": true
+          },
+          "safety_priority": {
+            "scene": "final_preparation",
+            "prompt": "Excellent safety-first thinking! During final preparation, the weather forecast shows potential for severe thunderstorms on event day. The show is sold out. What is your decision?",
+            "options": [
+              {
+                "id": "opt7",
+                "text": "Proceed with enhanced weather monitoring and evacuation plan ready",
+                "next": "weather_success",
+                "is_optimal": true
+              },
+              {
+                "id": "opt8",
+                "text": "Postpone the event—weather is unpredictable and not worth the risk",
+                "next": "overly_cautious",
+                "is_optimal": false
+              },
+              {
+                "id": "opt9",
+                "text": "Proceed as planned—the forecast might change and fans are expecting the show",
+                "next": "weather_danger",
+                "is_optimal": false
+              }
+            ]
+          },
+          "weather_success": {
+            "feedback": "CORRECT: Enhanced monitoring with contingency plans is appropriate. You have clear evacuation triggers and shelter identified. This balances safety with event viability.",
+            "outcome": "SUCCESS: Your comprehensive planning results in a safe, successful event. The weather holds, but you're prepared if it doesn't."
+          },
+          "overly_cautious": {
+            "feedback": "OVERLY CAUTIOUS: While safety is paramount, postponing at the first sign of weather may be unnecessary. Enhanced monitoring with clear triggers is often sufficient.",
+            "outcome": "Event postponed unnecessarily. Significant financial impact and disappointed fans."
+          },
+          "weather_danger": {
+            "feedback": "DANGEROUS: Weather forecasting has improved significantly. Ignoring severe weather warnings has led to multiple tragedies including stage collapses and lightning strikes.",
+            "outcome": "CRITICAL FAILURE: Severe weather hits during event. Your lack of preparation puts thousands at risk."
+          }
+        }
+      }
+    },
+    {
+      "lesson_id": "7.1.5",
+      "title": "Knowledge Check",
+      "type": "quiz",
+      "duration_minutes": 2,
+      "content": {
+        "questions": [
+          {
+            "id": "7.1.5-q1",
+            "type": "multiple_choice",
+            "question": "According to the Event Safety Guide, when should an organizer confirm the event date with public service agencies?",
+            "options": [
+              "After tickets go on sale",
+              "Before promoting or going on sale with the event",
+              "One week before the event",
+              "Only for events over 10,000 capacity"
+            ],
+            "correct_answer": 1,
+            "rationale": "Section 2.1.4 states organizers should not promote or go on sale before confirming date/time with community public service agencies."
+          },
+          {
+            "id": "7.1.5-q2",
+            "type": "multiple_select",
+            "question": "Which of the following are part of the Four C's of Safety Management? (Select all that apply)",
+            "options": [
+              "Competence",
+              "Control",
+              "Cooperation",
+              "Communication",
+              "Coordination"
+            ],
+            "correct_answers": [0, 1, 2, 3],
+            "rationale": "The Four C's are Competence, Control, Cooperation, and Communication."
+          },
+          {
+            "id": "7.1.5-q3",
+            "type": "true_false",
+            "question": "Outsourcing event execution relieves organizers of their legal obligations for safety.",
+            "correct_answer": false,
+            "rationale": "Section 2.3.6 states that even when outsourcing, organizers do not relieve themselves of legal obligations."
+          }
+        ]
+      }
+    }
+  ]
+}

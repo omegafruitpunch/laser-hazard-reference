@@ -1,0 +1,355 @@
+{
+  "module_id": "course-5-module-5.2",
+  "phases": [
+    {
+      "phase_id": "warm_up",
+      "phase_name": "Warm-Up: Brexit Impact Check",
+      "duration_minutes": 2,
+      "content": {
+        "scenario": {
+          "title": "The Post-Brexit Shipment",
+          "description": "A laser equipment supplier is shipping products to both UK and EU customers. What marking is required?",
+          "visual": "shipping_scenario"
+        },
+        "interaction": {
+          "type": "toggle_comparison",
+          "instruction": "Toggle to see what changed after Brexit:",
+          "comparison": {
+            "before_brexit": {
+              "label": "Pre-Brexit (Before 2021)",
+              "uk_marking": "CE Marking accepted",
+              "eu_marking": "CE Marking required",
+              "standards": "EU harmonized standards",
+              "documentation": "EU Declaration of Conformity"
+            },
+            "after_brexit": {
+              "label": "Post-Brexit (Current)",
+              "uk_marking": "UKCA Marking required (or CE until Dec 2024 for existing stock)",
+              "eu_marking": "CE Marking required",
+              "standards": "UK designated standards (mostly same as EU)",
+              "documentation": "UK Declaration of Conformity"
+            }
+          }
+        },
+        "knowledge_check": {
+          "question": "If a manufacturer wants to sell the same laser product in BOTH the UK and EU markets, what markings might be needed?",
+          "options": [
+            {"id": "opt1", "label": "CE only", "correct": false},
+            {"id": "opt2", "label": "UKCA only", "correct": false},
+            {"id": "opt3", "label": "Both CE and UKCA", "correct": true},
+            {"id": "opt4", "label": "Neither - ISO 9001 is sufficient", "correct": false}
+          ],
+          "explanation": "Products sold in the EU need CE marking; products sold in GB (England, Scotland, Wales) need UKCA. Northern Ireland has special arrangements."
+        }
+      }
+    },
+    {
+      "phase_id": "core_concept",
+      "phase_name": "Core Concept: UKCA vs CE Deep Dive",
+      "duration_minutes": 5,
+      "content": {
+        "introduction": "Explore the key differences between CE and UKCA marking with this interactive comparator:",
+        "interactive_comparator": {
+          "type": "side_by_side_comparison",
+          "title": "UKCA vs CE Marking Comparator",
+          "ce_column": {
+            "title": "🇪🇺 CE Marking (EU)",
+            "applies_to": "European Union + EEA",
+            "legal_basis": "EU Directives (2006/25/EC, etc.)",
+            "standards": "EU Harmonized Standards (EN)",
+            "notified_bodies": "EU Notified Bodies",
+            "declaration": "EU Declaration of Conformity",
+            "technical_file": "Held by manufacturer or EU authorized representative",
+            "validity": "Required for EU market access"
+          },
+          "ukca_column": {
+            "title": "🇬🇧 UKCA Marking (UK)",
+            "applies_to": "Great Britain (England, Scotland, Wales)",
+            "legal_basis": "Retained EU law + UK regulations",
+            "standards": "UK Designated Standards (BS EN)",
+            "notified_bodies": "UK Approved Bodies",
+            "declaration": "UK Declaration of Conformity",
+            "technical_file": "Held by manufacturer or UK responsible person",
+            "validity": "Required for GB market access"
+          },
+          "common_elements": {
+            "title": "Common Requirements",
+            "items": [
+              "Same technical requirements (standards largely identical)",
+              "Same conformity assessment procedures",
+              "Both manufacturer self-declaration for most laser products",
+              "Both require technical documentation"
+            ]
+          },
+          "transition_notes": {
+            "title": "Transition Period Notes",
+            "content": [
+              "CE marked goods already in UK market can circulate",
+              "Dual marking (CE + UKCA) possible on same product",
+              "Northern Ireland uses UKNI marking with CE",
+              "EU no longer recognizes UKCA marking"
+            ]
+          }
+        },
+        "guidance_evolution": {
+          "title": "UK Guidance Evolution",
+          "timeline": [
+            {
+              "period": "Pre-2016",
+              "guidance": "HS(G)95",
+              "status": "HSE guidance on laser displays",
+              "color": "#95a5a6"
+            },
+            {
+              "period": "2016-Present",
+              "guidance": "Safety of Display Lasers",
+              "status": "Current industry guidance replacing HS(G)95",
+              "contributors": "PLASA, HSE, industry representatives",
+              "color": "#27ae60"
+            }
+          ],
+          "key_changes": [
+            "More practical guidance for venues and operators",
+            "Clearer role definitions",
+            "Updated to reflect modern laser technology",
+            "Case studies for different venue types"
+          ]
+        }
+      }
+    },
+    {
+      "phase_id": "guided_practice",
+      "phase_name": "Guided Practice: Roles & Safety Zones",
+      "duration_minutes": 6,
+      "content": {
+        "roles_section": {
+          "title": "UK Laser Display Roles",
+          "introduction": "Match each role to its primary responsibilities:",
+          "interaction": {
+            "type": "matching_exercise",
+            "roles": [
+              {
+                "id": "client",
+                "title": "Client",
+                "description": "The person/organization arranging the laser display",
+                "responsibilities": [
+                  "Ensure retained personnel are competent",
+                  "Confirm installation will be safe"
+                ]
+              },
+              {
+                "id": "organiser",
+                "title": "Organiser",
+                "description": "Responsible for overall event safety management",
+                "responsibilities": [
+                  "Implement safety management processes",
+                  "Ensure awareness of responsibilities",
+                  "Establish communication arrangements"
+                ]
+              },
+              {
+                "id": "venue",
+                "title": "Venue",
+                "description": "Premises where display occurs",
+                "responsibilities": [
+                  "Ensure safe installation and operation",
+                  "No risk to workers or public"
+                ]
+              },
+              {
+                "id": "lso",
+                "title": "Laser Safety Officer (LSO)",
+                "description": "Key safety role with EXECUTIVE responsibility",
+                "responsibilities": [
+                  "Evaluate and manage laser risks",
+                  "Implement safety precautions",
+                  "Executive (not just advisory) responsibility",
+                  "Detailed knowledge of laser systems",
+                  "Understand control and safety systems"
+                ],
+                "highlight": "The LSO has EXECUTIVE responsibility - not just advisory!"
+              },
+              {
+                "id": "supplier",
+                "title": "Supplier/Installer",
+                "description": "Provides and installs laser equipment",
+                "responsibilities": [
+                  "Safe installation and operation",
+                  "Pre-show checks and documentation",
+                  "Hand-over to venue/operator"
+                ]
+              },
+              {
+                "id": "operator",
+                "title": "Operator/Programmer",
+                "description": "Runs the laser display during shows",
+                "responsibilities": [
+                  "Safe operation of laser effects",
+                  "Daily/weekly alignment checks",
+                  "Understand emergency procedures"
+                ]
+              }
+            ]
+          }
+        },
+        "safety_zones_section": {
+          "title": "Safety Zone Separation Distances",
+          "introduction": "The UK guidance specifies minimum separation distances to protect audiences:",
+          "interactive_visualizer": {
+            "type": "safety_zone_calculator",
+            "title": "UK Safety Zone Visualizer",
+            "scenarios": [
+              {
+                "type": "supervised",
+                "label": "Supervised Installation",
+                "description": "Operator present and monitoring during show",
+                "vertical_separation": "3 meters minimum",
+                "lateral_separation": "2.5 meters minimum",
+                "visual": "supervised_zone_diagram"
+              },
+              {
+                "type": "unsupervised",
+                "label": "Unsupervised Installation",
+                "description": "No dedicated operator monitoring (e.g., nightclub installation)",
+                "vertical_separation": "6 meters minimum",
+                "lateral_separation": "2.5 meters minimum",
+                "visual": "unsupervised_zone_diagram"
+              }
+            ],
+            "mpe_requirements": {
+              "standard": "10 W/m² (1 mW/cm²) for 400-700nm",
+              "children_note": "Reduce by factor of 10 for wavelengths below 500nm when children present",
+              "measurement_aperture": "7mm diameter (fully dilated pupil)",
+              "time_bases": [
+                {"duration": "0.25s", "mpe": "2.54 mW/cm²", "use": "Eye aversion response (trained staff only)"},
+                {"duration": "10s", "mpe": "1.01 mW/cm²", "use": "Minimum for audience exposure"}
+              ]
+            }
+          }
+        },
+        "plan_do_check_act": {
+          "title": "Plan-Do-Check-Act Framework",
+          "description": "The UK guidance follows this management framework:",
+          "steps": [
+            {
+              "phase": "PLAN",
+              "actions": [
+                "Identify information recipients and requirements",
+                "Outline laser display details",
+                "Ensure adequate insurance",
+                "Confirm exposure assessments",
+                "Provide stage drawings and risk assessments"
+              ]
+            },
+            {
+              "phase": "DO",
+              "actions": [
+                "Implement safe systems of work",
+                "Ensure all roles understand responsibilities",
+                "Maintain communication arrangements"
+              ]
+            },
+            {
+              "phase": "CHECK",
+              "actions": [
+                "Verify sign-off documentation completed",
+                "Review subsequent performances",
+                "Record what worked and what didn't"
+              ]
+            },
+            {
+              "phase": "ACT",
+              "actions": [
+                "Implement improvements for next time",
+                "Document adverse incidents fully"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "phase_id": "challenges",
+      "phase_name": "Challenge: UK Compliance Scenarios",
+      "duration_minutes": 3,
+      "content": {
+        "introduction": "Apply your knowledge to these UK-specific scenarios.",
+        "challenges": [
+          {
+            "id": "scenario_1",
+            "type": "decision_tree",
+            "title": "Venue Assessment",
+            "description": "A nightclub wants to install a permanent laser system for weekend dance nights. The beams will be 4 meters above the dance floor. What type of installation is this?",
+            "decision_points": [
+              {
+                "question": "Will there be a dedicated operator monitoring during operation?",
+                "if_yes": "Supervised - 3m vertical separation required",
+                "if_no": "Unsupervised - 6m vertical separation required"
+              }
+            ],
+            "correct_answer": "Unsupervised installation - 4m is below the 6m requirement for unsupervised installations.",
+            "conclusion": "The beams must be raised to 6m minimum, or a dedicated operator must be present."
+          },
+          {
+            "id": "scenario_2",
+            "type": "documentation_checklist",
+            "title": "Pre-Show Documentation",
+            "description": "Select all documents required for a UK laser display:",
+            "items": [
+              {"id": "doc1", "label": "Risk Assessment", "required": true},
+              {"id": "doc2", "label": "Method Statement", "required": true},
+              {"id": "doc3", "label": "MPE Calculations", "required": true},
+              {"id": "doc4", "label": "Show Visual/Scan Area Diagram", "required": true},
+              {"id": "doc5", "label": "Insurance Certificate Copy", "required": true},
+              {"id": "doc6", "label": "CE/UKCA Marking Certificates for all equipment", "required": false, "note": "Equipment compliance, not show-specific"},
+              {"id": "doc7", "label": "Sign-off Documentation", "required": true}
+            ]
+          },
+          {
+            "id": "scenario_3",
+            "type": "emergency_response",
+            "title": "Emergency Procedure",
+            "description": "During a show, the scan-fail system triggers. What is the correct response sequence?",
+            "correct_sequence": [
+              "E-stop the affected laser immediately",
+              "Secure the area if needed",
+              "Do NOT restart automatically",
+              "Investigate cause before resuming",
+              "Document the incident"
+            ]
+          }
+        ],
+        "achievement": {
+          "badge_unlock": "uk_compliance_specialist",
+          "message": "Excellent! You've mastered UK post-Brexit laser safety requirements."
+        }
+      }
+    }
+  ],
+  "quiz_bank": {
+    "module_quiz": "lms_data/quiz_banks/course-5/course-5-quiz-supplemental.json",
+    "relevant_questions": ["c5-s4", "c5-s5", "c5-s6", "c5-s11", "c5-s12", "c5-s14", "c5-s19"]
+  },
+  "components": {
+    "interactive_elements": [
+      {
+        "id": "ukca_ce_comparator",
+        "type": "toggle_comparison",
+        "path": "components/UKCACEComparator.tsx",
+        "description": "Side-by-side comparison of UKCA and CE marking requirements"
+      },
+      {
+        "id": "safety_zone_visualizer",
+        "type": "interactive_diagram",
+        "path": "components/SafetyZoneVisualizer.tsx",
+        "description": "Interactive safety zone separation distance calculator"
+      },
+      {
+        "id": "roles_responsibility_matcher",
+        "type": "matching_exercise",
+        "path": "components/RolesMatcher.tsx",
+        "description": "Match roles to their UK-specific responsibilities"
+      }
+    ]
+  }
+}

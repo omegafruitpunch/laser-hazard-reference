@@ -1,0 +1,36 @@
+{
+  "module_id": "course-7-module-7.1",
+  "course_id": "course-7",
+  "title": "Module 7.1: Event Safety Planning",
+  "subtitle": "Master the Fundamentals of Event Safety Planning and Management",
+  "description": "Learn comprehensive event safety planning from initial concept through post-event review. This module covers hazard assessments, safety policies, regulatory coordination, and the development of effective safety management systems for live entertainment events.",
+  "duration_minutes": 25,
+  "difficulty": "intermediate",
+  "learning_objectives": [
+    "Develop comprehensive event safety management plans",
+    "Conduct thorough hazard/risk assessments",
+    "Coordinate effectively with public service agencies and authorities",
+    "Create health and safety policies that meet regulatory requirements",
+    "Apply the four phases of event production planning",
+    "Establish effective safety monitoring and review systems"
+  ],
+  "prerequisites": [],
+  "completion_criteria": {
+    "quiz_pass_score": 80,
+    "interactive_exercises_completed": ["safety_planning_timeline", "hazard_assessment_walkthrough", "stakeholder_coordination_scenario"],
+    "minimum_time_minutes": 20
+  },
+  "badge": {
+    "id": "event_safety_planner",
+    "name": "Event Safety Planning Specialist",
+    "icon": "🛡️",
+    "description": "Mastered event safety planning fundamentals"
+  },
+  "keywords": ["event safety", "risk assessment", "hazard identification", "safety planning", "NIMS", "ICS", "emergency planning", "venue assessment"],
+  "standards_reference": ["Event Safety Guide", "NFPA 101", "FEMA IS-15", "NIMS/ICS"],
+  "research_alignment": {
+    "adult_learning": "Scenario-based learning with real-world application",
+    "technical_training": "Competency-based progression with mastery gates",
+    "interactive_design": "Progressive disclosure for complex planning content"
+  }
+}

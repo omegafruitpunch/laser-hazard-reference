@@ -1,0 +1,166 @@
+{
+  "module_id": "8.2",
+  "quiz_title": "Module 8.2: ANSI E1.46 Assessment",
+  "description": "Test your knowledge of entertainment laser safety standards and E1.46 requirements",
+  "passing_score": 85,
+  "time_limit_minutes": 25,
+  "attempts_allowed": 3,
+  "questions": [
+    {
+      "id": "8.2-Q1",
+      "type": "multiple_choice",
+      "text": "Which organization developed ANSI E1.46?",
+      "options": [
+        "Laser Institute of America (LIA)",
+        "FDA",
+        "ESTA (Entertainment Services and Technology Association)",
+        "OSHA"
+      ],
+      "correct_answer": 2,
+      "points": 5,
+      "explanation": "ESTA (Entertainment Services and Technology Association) developed ANSI E1.46 for entertainment laser safety."
+    },
+    {
+      "id": "8.2-Q2",
+      "type": "multiple_choice",
+      "text": "What is the minimum vertical separation distance for supervised installations from the audience?",
+      "options": [
+        "2.0 meters",
+        "2.5 meters",
+        "3.0 meters",
+        "6.0 meters"
+      ],
+      "correct_answer": 2,
+      "points": 5,
+      "explanation": "E1.46 requires a minimum 3-meter vertical separation between laser beams and the audience for supervised installations."
+    },
+    {
+      "id": "8.2-Q3",
+      "type": "multiple_choice",
+      "text": "What is the required scan failure detection response time?",
+      "options": [
+        "Within 0.25 seconds",
+        "Within 100 milliseconds",
+        "Within a few milliseconds",
+        "Within 1 second"
+      ],
+      "correct_answer": 2,
+      "points": 5,
+      "explanation": "Scan failure detection must respond within a few milliseconds to prevent hazardous static beam exposure."
+    },
+    {
+      "id": "8.2-Q4",
+      "type": "multiple_choice",
+      "text": "What MPE time base can be used for trained personnel in supervised installations?",
+      "options": [
+        "10 seconds",
+        "1 second",
+        "0.25 seconds (blink reflex)",
+        "0.1 seconds"
+      ],
+      "correct_answer": 2,
+      "points": 5,
+      "explanation": "For trained personnel in supervised installations, the 0.25-second aversion response (blink reflex) MPE may be used."
+    },
+    {
+      "id": "8.2-Q5",
+      "type": "true_false",
+      "text": "Software blanking alone is sufficient as a safety measure for audience scanning.",
+      "correct_answer": false,
+      "points": 5,
+      "explanation": "E1.46 states that software blanking should not be used as the sole safety measure. Hardware protection is required."
+    },
+    {
+      "id": "8.2-Q6",
+      "type": "multiple_select",
+      "text": "Which of the following are required for scan failure safety systems? (Select all)",
+      "options": [
+        "Response within a few milliseconds",
+        "Weekly email reports",
+        "Fail-safe to beam-off state",
+        "Automatic restart after failure"
+      ],
+      "correct_answer": [0, 2],
+      "points": 5,
+      "explanation": "Scan failure systems must respond within milliseconds and fail-safe to beam-off. Automatic restart is prohibited."
+    },
+    {
+      "id": "8.2-Q7",
+      "type": "multiple_choice",
+      "text": "What is the minimum horizontal separation distance for supervised installations?",
+      "options": [
+        "1.5 meters",
+        "2.0 meters",
+        "2.5 meters",
+        "3.0 meters"
+      ],
+      "correct_answer": 2,
+      "points": 5,
+      "explanation": "E1.46 requires a minimum 2.5-meter horizontal separation from the audience for supervised installations."
+    },
+    {
+      "id": "8.2-Q8",
+      "type": "multiple_choice",
+      "text": "For unsupervised installations, what additional requirements apply?",
+      "options": [
+        "Lower MPE limits and enhanced physical barriers",
+        "No additional requirements",
+        "Only Class 1 lasers allowed",
+        "Weekly operator training"
+      ],
+      "correct_answer": 0,
+      "points": 5,
+      "explanation": "Unsupervised installations require more conservative MPE limits and enhanced physical barriers since no operator is present."
+    },
+    {
+      "id": "8.2-Q9",
+      "type": "multiple_select",
+      "text": "Which checks are required during pre-show verification? (Select all that apply)",
+      "options": [
+        "Emergency stop tested and accessible",
+        "Scan failure system tested",
+        "Social media posts scheduled",
+        "MPE measurements verified for audience areas"
+      ],
+      "correct_answer": [0, 1, 3],
+      "points": 5,
+      "explanation": "Pre-show verification must include emergency stop testing, scan failure system verification, and MPE measurement confirmation."
+    },
+    {
+      "id": "8.2-Q10",
+      "type": "multiple_choice",
+      "text": "What exposure time base should be used for audience members in intentional exposure scenarios?",
+      "options": [
+        "0.25 seconds",
+        "1 second",
+        "At least 10 seconds",
+        "Unlimited exposure"
+      ],
+      "correct_answer": 2,
+      "points": 5,
+      "explanation": "For audience members, the MPE should be based on at least 10 seconds of continuous exposure as the time base."
+    },
+    {
+      "id": "8.2-Q11",
+      "type": "multiple_choice",
+      "text": "When using diffraction effects (mirror balls), what must be considered?",
+      "options": [
+        "Nothing special - they're always safe",
+        "Number of facets and power per reflected beam",
+        "Only the color of the laser",
+        "Mirror balls are prohibited"
+      ],
+      "correct_answer": 1,
+      "points": 5,
+      "explanation": "The safety of mirror balls depends on the number of facets splitting the beam and the resulting power per reflected beam."
+    },
+    {
+      "id": "8.2-Q12",
+      "type": "true_false",
+      "text": "Pulsed lasers (Q-switched) are acceptable for audience scanning with proper precautions.",
+      "correct_answer": false,
+      "points": 5,
+      "explanation": "E1.46 states that pulsed lasers (including Q-switched) should not be used where audience exposure is intended or likely."
+    }
+  ]
+}

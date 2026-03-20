@@ -1,0 +1,27 @@
+{
+  "page_num": 8,
+  "source_pdf": "skin-hazards.pdf",
+  "digestion": {
+    "summary": "LASER SKIN INJURY SYMPTOMS AND CLASSIFICATION\n\nFIRST DEGREE (Superficial):\n- Erythema (redness)\n- Pain\n- Dry appearance\n- No blistering\n- Heals 3-6 days without scarring\n- Similar to mild sunburn\n\nSEC...",
+    "key_concepts": [
+      "burn classification",
+      "erythema",
+      "blister formation"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "LASER SKIN INJURY SYMPTOMS AND CLASSIFICATION\n\nFIRST DEGREE (Superficial):\n- Erythema (redness)\n- Pain\n- Dry appearance\n- No blistering\n- Heals 3-6 days without scarring\n- Similar to mild sunburn\n\nSECOND DEGREE (Partial Thickness):\n- Severe erythema\n- Blister formation\n- Moist, weeping surface\n- Severe pain\n- Heals 2-3 weeks\n- May scar depending on depth\n\nTHIRD DEGREE (Full Thickness):\n- White or charred appearance\n- Leathery texture\n- Insensate (nerve destruction)\n- Destroys epidermis and dermis\n- Requires medical intervention\n- Scarring inevitable\n- May require grafting\n\nFOURTH DEGREE:\n- Extends to subcutaneous tissue\n- Muscle/bone involvement\n- Black, charred appearance\n- Life-threatening if extensive\n- Surgical debridement required\n\nLASER-SPECIFIC CONSIDERATIONS:\n- High-power lasers can cause immediate third-degree burns\n- UV injuries may have delayed symptoms (hours)\n- Pigmentary changes (hyper or hypopigmentation) common\n- Hypertrophic scarring possible\n",
+    "analogies": [
+      "Laser skin burns are similar to thermal burns but can be more precisely localized."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Use protective gloves and long sleeves when operating high-power lasers.",
+      "UV laser exposure has cumulative effects similar to sun damage - use full coverage PPE."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.122776"
+}

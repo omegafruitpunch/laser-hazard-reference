@@ -1,0 +1,100 @@
+{
+  "id": "course-3-quiz",
+  "courseId": "course-3",
+  "title": "Biological Hazards & Classification Assessment",
+  "description": "Assessment covering ocular and skin hazards, IEC standards, MPE calculations, and protective eyewear selection.",
+  "passingScore": 80,
+  "timeLimit": 30,
+  "randomizeQuestions": true,
+  "questions": [
+    {
+      "id": "c3-q1",
+      "type": "multiple_choice",
+      "question": "Which part of the eye is most at risk from visible (400-700nm) laser exposure?",
+      "options": ["Cornea", "Lens", "Retina", "Iris"],
+      "correctIndex": 2,
+      "explanation": "The eye's optics focus visible laser light onto the retina, concentrating the beam energy 100,000x or more. Retinal damage is often immediate, painless, and permanent."
+    },
+    {
+      "id": "c3-q2",
+      "type": "multiple_choice",
+      "question": "What type of damage do UV lasers (200-400nm) primarily cause to the eye?",
+      "options": ["Retinal burns", "Corneal and lens damage", "Vitreous humor heating", "Optic nerve damage"],
+      "correctIndex": 1,
+      "explanation": "UV wavelengths are absorbed by the anterior structures of the eye — primarily the cornea and lens. UV exposure can cause photokeratitis (similar to arc eye) and contribute to cataract formation."
+    },
+    {
+      "id": "c3-q3",
+      "type": "multiple_choice",
+      "question": "What is the primary difference between IEC 60825-1 Class 3R and ANSI/FDA Class IIIa?",
+      "options": [
+        "They are identical with different names",
+        "IEC 3R allows up to 5x the AEL of Class 2, while ANSI IIIa is limited to 5mW",
+        "IEC 3R requires engineering controls while ANSI IIIa does not",
+        "IEC 3R applies only to industrial lasers"
+      ],
+      "correctIndex": 1,
+      "explanation": "IEC Class 3R allows emission up to 5x the Class 2 AEL (up to 5mW for visible CW lasers). The ANSI/FDA Class IIIa also covers up to 5mW, but the classification boundaries differ slightly in other parameters."
+    },
+    {
+      "id": "c3-q4",
+      "type": "multiple_choice",
+      "question": "MPE values for eye exposure are generally _____ than for skin exposure.",
+      "options": ["Higher", "Lower", "The same", "Not comparable"],
+      "correctIndex": 1,
+      "explanation": "Eye MPE values are significantly lower (stricter) than skin MPE values for the same wavelength and duration, because the eye's focusing optics concentrate the beam to a tiny retinal spot."
+    },
+    {
+      "id": "c3-q5",
+      "type": "multiple_choice",
+      "question": "What does Optical Density (OD) measure in laser safety eyewear?",
+      "options": [
+        "The thickness of the lens material",
+        "The transmission percentage of the lens",
+        "The attenuation factor (log10) for laser radiation",
+        "The wavelength range covered by the eyewear"
+      ],
+      "correctIndex": 2,
+      "explanation": "OD is the log10 of the ratio of incident to transmitted irradiance. OD 3 means the lens transmits 1/1000 of the incident laser radiation. Required OD = log10(beam irradiance / MPE)."
+    },
+    {
+      "id": "c3-q6",
+      "type": "multiple_choice",
+      "question": "For pulsed laser systems, what must be evaluated when checking MPE compliance?",
+      "options": [
+        "Only the peak power",
+        "Only the average power",
+        "Both single-pulse MPE and repetitive-pulse MPE",
+        "Only the total energy per session"
+      ],
+      "correctIndex": 2,
+      "explanation": "Pulsed laser systems must be evaluated against both single-pulse MPE (for individual pulse energy) and the repetitive-pulse MPE (which accounts for thermal summation at high repetition rates)."
+    },
+    {
+      "id": "c3-q7",
+      "type": "multiple_choice",
+      "question": "At what skin temperature does thermal injury typically begin to occur?",
+      "options": ["37°C", "40°C", "45°C", "60°C"],
+      "correctIndex": 2,
+      "explanation": "Thermal injury to skin begins when tissue temperature exceeds approximately 45°C for sustained periods. Below this threshold, heat damage mechanisms are minimal for typical exposure durations."
+    },
+    {
+      "id": "c3-q8",
+      "type": "multiple_choice",
+      "question": "Why is laser retinal damage often described as painless?",
+      "options": [
+        "The retina has no blood supply",
+        "The retina lacks pain receptors (nociceptors)",
+        "The damage is too small to trigger pain",
+        "The brain filters out laser-induced pain signals"
+      ],
+      "correctIndex": 1,
+      "explanation": "The retina has no pain receptors (nociceptors). As a result, retinal burns from laser exposure cause no pain, making it possible for an injury to occur without the victim being immediately aware of it."
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-01-01T00:00:00Z"
+  }
+}

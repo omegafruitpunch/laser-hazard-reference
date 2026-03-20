@@ -1,0 +1,135 @@
+{
+  "quiz_id": "course-7-quiz-1",
+  "title": "Emergency Response Procedures Assessment",
+  "module": "Emergency Response Procedures",
+  "passing_score": 80,
+  "time_limit_minutes": 30,
+  "questions": [
+    {
+      "question_id": "er-q1",
+      "type": "multiple_choice",
+      "question": "What does NIMS stand for?",
+      "options": [
+        "National Incident Management System",
+        "National Insurance Management Service",
+        "National Infrastructure Monitoring System",
+        "National Industrial Medical Services"
+      ],
+      "correct_answer": 0,
+      "explanation": "NIMS stands for National Incident Management System, which provides a consistent nationwide template for incident management."
+    },
+    {
+      "question_id": "er-q2",
+      "type": "multiple_choice",
+      "question": "According to NIMS, which of the following is NOT considered an incident requiring emergency response?",
+      "options": [
+        "Major disasters and emergencies",
+        "Terrorist attacks and threats",
+        "Routine maintenance issues",
+        "Hazardous materials spills"
+      ],
+      "correct_answer": 2,
+      "explanation": "Routine maintenance issues are not considered incidents requiring emergency response under NIMS definitions."
+    },
+    {
+      "question_id": "er-q3",
+      "type": "multiple_select",
+      "question": "Which of the following are sections of the Incident Command System (ICS) structure? (Select all that apply)",
+      "options": [
+        "Command",
+        "Operations",
+        "Planning",
+        "Logistics",
+        "Finance/Administration",
+        "Public Relations"
+      ],
+      "correct_answers": [0, 1, 2, 3, 4],
+      "explanation": "ICS includes four main sections: Command, Operations, Planning, Logistics, and Finance/Administration."
+    },
+    {
+      "question_id": "er-q4",
+      "type": "multiple_choice",
+      "question": "Who coordinates the on-site and off-site response once a major incident has been declared?",
+      "options": [
+        "The Fire Department",
+        "The Police",
+        "The Event Organizer",
+        "The Safety Coordinator"
+      ],
+      "correct_answer": 1,
+      "explanation": "Once a major incident has been declared, the police will coordinate and facilitate the on-site and off-site response."
+    },
+    {
+      "question_id": "er-q5",
+      "type": "true_false",
+      "question": "In the case of a fire, the fire department should be responsible for dealing with an on-site response.",
+      "correct_answer": true,
+      "explanation": "True. While police coordinate overall response, the fire department takes responsibility for fire-related on-site response."
+    },
+    {
+      "question_id": "er-q6",
+      "type": "multiple_choice",
+      "question": "Which FEMA course is specifically designed for Special Events Contingency Planning?",
+      "options": [
+        "IS-100",
+        "IS-200",
+        "IS-15.b",
+        "IS-700"
+      ],
+      "correct_answer": 2,
+      "explanation": "FEMA's IS-15.b course is titled 'Special Events Contingency Planning for Public Safety Agencies.'"
+    },
+    {
+      "question_id": "er-q7",
+      "type": "multiple_select",
+      "question": "Which elements should be included in a major incident plan? (Select all that apply)",
+      "options": [
+        "Identification of key decision-making workers",
+        "Command post location",
+        "Emergency routes and access",
+        "Coded messages for security alerts",
+        "Rendezvous points for emergency services",
+        "Details of food vendor contracts"
+      ],
+      "correct_answers": [0, 1, 2, 3, 4],
+      "explanation": "Major incident plans should include key personnel, command locations, emergency routes, alert codes, and rendezvous points. Food vendor contracts are not part of emergency planning."
+    },
+    {
+      "question_id": "er-q8",
+      "type": "multiple_choice",
+      "question": "What is the purpose of cordons during a major incident?",
+      "options": [
+        "To create photo opportunities for media",
+        "To control access and maintain safety perimeters",
+        "To direct audience traffic to concessions",
+        "To separate VIP areas from general admission"
+      ],
+      "correct_answer": 1,
+      "explanation": "Cordons are used to control access and maintain safety perimeters during major incidents."
+    },
+    {
+      "question_id": "er-q9",
+      "type": "matching",
+      "question": "Match the ICS position with its responsibility:",
+      "pairs": [
+        {"term": "Incident Commander", "definition": "Overall incident management"},
+        {"term": "Public Information Officer", "definition": "Interface with public and media"},
+        {"term": "Safety Officer", "definition": "Monitors safety conditions"},
+        {"term": "Liaison Officer", "definition": "Coordinates with other agencies"}
+      ],
+      "explanation": "Each ICS position has specific responsibilities for incident management coordination."
+    },
+    {
+      "question_id": "er-q10",
+      "type": "scenario",
+      "question": "Scenario: During an outdoor concert, a severe storm causes a stage structure to collapse with multiple injuries. Using NIMS/ICS principles, describe the immediate response actions and who should be involved.",
+      "model_answer": "Under NIMS/ICS: 1) Incident Commander establishes command post, 2) Operations Section coordinates rescue, 3) Planning Section tracks resources, 4) Logistics supports with equipment, 5) Finance/Admin tracks costs. Police coordinate overall response, Fire handles technical rescue, EMS manages medical/triage. Joint Information Center handles public communications.",
+      "key_points": ["Incident Commander", "Command Post", "Multi-agency coordination", "Triage areas", "Public Information"]
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "processing_agent": "PDF Elite Processor Agent #18",
+    "created_date": "2026-03-19"
+  }
+}

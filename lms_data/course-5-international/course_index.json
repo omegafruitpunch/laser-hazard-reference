@@ -1,0 +1,126 @@
+{
+  "course_id": "course-5",
+  "course_name": "International Laser Regulations",
+  "batch": "B",
+  "processor_agent": "PDF Elite Processor Agent #14",
+  "processing_date": "2026-03-19",
+  "source_pdfs": [
+    {
+      "filename": "australia-nz.pdf",
+      "pages": 1,
+      "words": 264,
+      "title": "Australia and New Zealand Laser Regulations"
+    },
+    {
+      "filename": "iec-iso-harmonization.pdf",
+      "pages": 37,
+      "words": 18172,
+      "title": "IEC 60825-1 and ISO Harmonization"
+    },
+    {
+      "filename": "international-show-docs.pdf",
+      "pages": 7,
+      "words": 2385,
+      "title": "International Laser Show Documentation"
+    }
+  ],
+  "total_content_pages": 45,
+  "total_words_extracted": 20821,
+  "modules": [
+    {
+      "module_id": "course-5-australia-nz",
+      "name": "Australia and New Zealand Laser Regulations",
+      "file": "module_australia_nz.json",
+      "duration_minutes": 15,
+      "pages": 1,
+      "quiz_questions": 3
+    },
+    {
+      "module_id": "course-5-iec-iso",
+      "name": "IEC 60825-1 and ISO Harmonization",
+      "file": "module_iec_iso.json",
+      "duration_minutes": 45,
+      "pages": 13,
+      "quiz_questions": 4
+    },
+    {
+      "module_id": "course-5-international-show-docs",
+      "name": "International Laser Show Documentation",
+      "file": "module_international_show_docs.json",
+      "duration_minutes": 25,
+      "pages": 5,
+      "quiz_questions": 6
+    }
+  ],
+  "assessments": [
+    {
+      "quiz_id": "course-5-international-regulations-quiz",
+      "file": "quiz_assessment.json",
+      "total_questions": 20,
+      "passing_score_percent": 80,
+      "time_limit_minutes": 30,
+      "categories": [
+        "IEC 60825-1 Fundamentals",
+        "Australia and New Zealand Regulations",
+        "International Laser Shows",
+        "International Safety Standards"
+      ]
+    }
+  ],
+  "knowledge_graphs": [
+    {
+      "graph_id": "course-5-international-knowledge-graph",
+      "file": "knowledge_graph.json",
+      "nodes": 25,
+      "edges": 23,
+      "clusters": 4
+    }
+  ],
+  "supporting_files": [
+    {
+      "file": "extracted_content.json",
+      "description": "Raw extracted text from all PDFs"
+    }
+  ],
+  "learning_path": {
+    "recommended_sequence": [
+      "module_iec_iso.json",
+      "module_australia_nz.json",
+      "module_international_show_docs.json",
+      "quiz_assessment.json"
+    ],
+    "total_estimated_duration_minutes": 85,
+    "prerequisites": ["Basic laser safety principles"],
+    "target_audience": "Laser safety officers, regulatory compliance personnel, international laser operators"
+  },
+  "key_topics_covered": [
+    "IEC 60825-1 Edition 3.0 classification principles",
+    "Accessible Emission Limits (AELs) and measurement",
+    "Extended source analysis and correction factors",
+    "Pulse grouping and TOTP method",
+    "Conventional lamp replacement (Subclause 4.4)",
+    "Australian state-based laser regulations",
+    "Queensland Radiation Safety Act 1999",
+    "AS/NZS 4173:2004 standard",
+    "ILDA international show requirements",
+    "Audience scanning regulations by country",
+    "Finnish laser show permits",
+    "International laser documentation requirements"
+  ],
+  "compliance_frameworks": [
+    "IEC 60825-1:2014 (Group Safety Publication)",
+    "AS/NZS 4173:2004",
+    "ARPANSA guidelines",
+    "ILDA safety standards"
+  ],
+  "regional_coverage": [
+    "Australia (WA, QLD, TAS specific)",
+    "New Zealand",
+    "Finland (EU example)",
+    "Canada (reference)",
+    "Category F countries (China, Russia, UAE, etc.)",
+    "Category X countries (unknown status)"
+  ],
+  "processing_status": "COMPLETE",
+  "output_location": "lms_data/course-5-international/"
+}

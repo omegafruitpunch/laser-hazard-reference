@@ -1,0 +1,45 @@
+{
+  "processing_agent": "PDF Elite Processor Agent #10",
+  "batch": "Course 4 - Batch A",
+  "pdfs_processed": [
+    "california.pdf",
+    "colorado.pdf",
+    "florida.pdf"
+  ],
+  "total_pdfs": 3,
+  "output_directory": "J:\\laser-hazard-refernce\\laser-hazard-reference\\lms_data\\course-4\\state-regs",
+  "generated_files": {
+    "extractions": [
+      "california.pdf_extracted.json",
+      "colorado.pdf_extracted.json",
+      "florida.pdf_extracted.json"
+    ],
+    "analyses": [
+      "california_analysis.json",
+      "colorado_analysis.json",
+      "florida_analysis.json"
+    ],
+    "quizzes": [
+      "california_quiz.json",
+      "colorado_quiz.json",
+      "florida_quiz.json"
+    ],
+    "knowledge_graphs": [
+      "california_knowledge_graph.json",
+      "colorado_knowledge_graph.json",
+      "florida_knowledge_graph.json"
+    ],
+    "combined": [
+      "batch_a_all_extracted.json",
+      "batch_a_all_analyses.json",
+      "batch_a_all_quizzes.json",
+      "batch_a_all_knowledge_graphs.json"
+    ]
+  },
+  "states_covered": [
+    "California",
+    "Colorado",
+    "Florida"
+  ],
+  "total_pages_processed": 8
+}

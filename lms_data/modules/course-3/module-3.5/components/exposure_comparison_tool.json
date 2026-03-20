@@ -1,0 +1,294 @@
+{
+  "component_id": "exposure_comparison_tool",
+  "name": "Exposure vs MPE Comparison Tool",
+  "version": "1.0.0",
+  "type": "calculation_tool",
+  "description": "Compare actual laser exposure to MPE limits with hazard determination",
+  "pedagogical_approach": {
+    "concept_first": true,
+    "hazard_assessment_focus": true,
+    "safety_factor_emphasis": true,
+    "immediate_feedback": true
+  },
+  "input_sections": {
+    "exposure_scenario": {
+      "title": "Step 1: Define Exposure Scenario",
+      "description": "Describe the actual or potential exposure",
+      "fields": [
+        {
+          "id": "scenario_name",
+          "label": "Scenario Name",
+          "type": "text",
+          "default": "Example Scenario",
+          "placeholder": "e.g., Alignment procedure exposure"
+        },
+        {
+          "id": "exposure_type",
+          "label": "Type of Exposure",
+          "type": "select",
+          "options": [
+            {"value": "direct_beam", "label": "Direct Beam (Intrabeam)", "hazard_level": "high"},
+            {"value": "specular_reflection", "label": "Specular Reflection", "hazard_level": "high"},
+            {"value": "diffuse_reflection", "label": "Diffuse Reflection", "hazard_level": "moderate"},
+            {"value": "scattered_radiation", "label": "Scattered Radiation", "hazard_level": "variable"}
+          ],
+          "default": "direct_beam"
+        }
+      ]
+    },
+    "actual_exposure": {
+      "title": "Step 2: Actual Exposure Parameters",
+      "description": "Enter the measured or calculated exposure values",
+      "fields": [
+        {
+          "id": "actual_irradiance",
+          "label": "Actual Irradiance",
+          "type": "number_with_unit",
+          "unit_options": ["mW/cm²", "W/cm²", "W/m²", "μW/cm²"],
+          "default_unit": "mW/cm²",
+          "default": 10,
+          "min": 0,
+          "help_text": "Power per unit area at exposure location"
+        },
+        {
+          "id": "actual_duration",
+          "label": "Exposure Duration",
+          "type": "number_with_unit",
+          "unit_options": ["seconds", "minutes", "hours"],
+          "default_unit": "seconds",
+          "default": 0.25,
+          "min": 0,
+          "help_text": "How long the exposure lasts"
+        },
+        {
+          "id": "exposure_repetition",
+          "label": "Number of Exposures",
+          "type": "number",
+          "default": 1,
+          "min": 1,
+          "help_text": "For repeated exposure scenarios"
+        }
+      ]
+    },
+    "mpe_calculation": {
+      "title": "Step 3: Calculate MPE for Comparison",
+      "description": "Calculate the permissible exposure limit",
+      "reference_to_component": "mpe_calculator",
+      "fields": [
+        {
+          "id": "wavelength",
+          "label": "Wavelength",
+          "type": "slider_with_number",
+          "unit": "nm",
+          "min": 180,
+          "max": 10000,
+          "default": 532
+        },
+        {
+          "id": "mpe_tissue",
+          "label": "Tissue Type",
+          "type": "radio_button",
+          "options": [
+            {"id": "eye", "label": "Eye", "description": "Ocular MPE (more conservative)"},
+            {"id": "skin", "label": "Skin", "description": "Skin MPE (less conservative)"}
+          ],
+          "default": "eye"
+        },
+        {
+          "id": "mpe_geometry",
+          "label": "Exposure Geometry",
+          "type": "radio_button",
+          "options": [
+            {"id": "point", "label": "Point Source", "description": "Direct beam viewing"},
+            {"id": "extended", "label": "Extended Source", "description": "Diffuse viewing"}
+          ],
+          "default": "point"
+        }
+      ]
+    }
+  },
+  "comparison_logic": {
+    "calculate_radiant_exposure": {
+      "description": "Calculate total energy per unit area",
+      "formula": "H = E × t",
+      "where": "H = radiant exposure, E = irradiance, t = time"
+    },
+    "safety_factor_calculation": {
+      "description": "Calculate ratio of actual to permissible",
+      "formula": "Safety Factor = MPE / Actual",
+      "interpretation": {
+            "sf_gt_10": {"message": "Safe - large safety margin", "color": "#22c55e"},
+            "sf_1_to_10": {"message": "Caution - within safety margin", "color": "#f59e0b"},
+            "sf_lt_1": {"message": "Hazardous - exceeds MPE", "color": "#dc2626"}
+      }
+    },
+    "excess_ratio": {
+      "description": "How many times the MPE is the actual exposure",
+      "formula": "Excess Ratio = Actual / MPE",
+      "only_show_when": "excess_ratio > 1"
+    }
+  },
+  "output_display": {
+    "comparison_gauge": {
+      "type": "dual_gauge",
+      "left": {
+        "label": "Actual Exposure",
+        "value_source": "actual_calculated"
+      },
+      "right": {
+        "label": "MPE Limit",
+        "value_source": "mpe_calculated"
+      }
+    },
+    "safety_assessment": {
+      "title": "Safety Assessment",
+      "sections": [
+        {
+          "id": "hazard_determination",
+          "title": "Hazard Determination",
+          "content_template": "Exposure is {assessment} relative to MPE"
+        },
+        {
+          "id": "safety_margin",
+          "title": "Safety Margin Analysis",
+          "show_safety_factor": true,
+          "show_margin_percentage": true
+        },
+        {
+          "id": "recommendations",
+          "title": "Recommendations",
+          "conditional_content": [
+            {
+              "condition": "safety_factor < 1",
+              "content": "IMMEDIATE ACTION REQUIRED: Exposure exceeds MPE. Implement controls immediately."
+            },
+            {
+              "condition": "safety_factor < 10",
+              "content": "CAUTION: Limited safety margin. Consider additional controls."
+            },
+            {
+              "condition": "safety_factor >= 10",
+              "content": "Acceptable: Adequate safety margin. Maintain current controls."
+            }
+          ]
+        }
+      ]
+    },
+    "visual_comparison": {
+      "type": "bar_chart",
+      "bars": [
+        {"label": "Actual Exposure", "value_source": "actual", "color": "dynamic"},
+        {"label": "MPE Limit", "value_source": "mpe", "color": "#3b82f6"},
+        {"label": "Class 1 AEL", "value_source": "ael_class1", "color": "#22c55e"},
+        {"label": "Class 3R AEL", "value_source": "ael_class3r", "color": "#f59e0b"}
+      ],
+      "log_scale": true
+    }
+  },
+  "scenario_examples": [
+    {
+      "id": "example_1",
+      "title": "Accidental Direct Exposure",
+      "description": "Researcher accidentally views direct beam during alignment",
+      "inputs": {
+        "exposure_type": "direct_beam",
+        "wavelength": 532,
+        "actual_irradiance": 100,
+        "actual_irradiance_unit": "mW/cm²",
+        "actual_duration": 0.5,
+        "mpe_tissue": "eye",
+        "mpe_geometry": "point"
+      },
+      "calculated_mpe": "1.13 mJ/cm²",
+      "actual_exposure": "50 mJ/cm²",
+      "safety_factor": 0.023,
+      "assessment": "HAZARDOUS",
+      "excess_multiple": "44× MPE",
+      "interpretation": "Immediate retinal injury risk - emergency medical evaluation required"
+    },
+    {
+      "id": "example_2",
+      "title": "Diffuse Reflection from White Card",
+      "description": "Observer views diffuse reflection from alignment target",
+      "inputs": {
+        "exposure_type": "diffuse_reflection",
+        "wavelength": 632.8,
+        "actual_irradiance": 0.05,
+        "actual_irradiance_unit": "mW/cm²",
+        "actual_duration": 10,
+        "mpe_tissue": "eye",
+        "mpe_geometry": "extended"
+      },
+      "calculated_mpe": "10 mJ/cm²",
+      "actual_exposure": "0.5 mJ/cm²",
+      "safety_factor": 20,
+      "assessment": "SAFE",
+      "interpretation": "Well below MPE with good safety margin"
+    },
+    {
+      "id": "example_3",
+      "title": "Momentary Specular Reflection",
+      "description": "Brief exposure to reflection from optical component",
+      "inputs": {
+        "exposure_type": "specular_reflection",
+        "wavelength": 1064,
+        "actual_irradiance": 5,
+        "actual_irradiance_unit": "mW/cm²",
+        "actual_duration": 0.1,
+        "mpe_tissue": "eye",
+        "mpe_geometry": "point"
+      },
+      "calculated_mpe": "0.8 mJ/cm²",
+      "actual_exposure": "0.5 mJ/cm²",
+      "safety_factor": 1.6,
+      "assessment": "CAUTION",
+      "interpretation": "Just below MPE - any increase in duration would exceed limit"
+    }
+  ],
+  "hazard_categories": {
+    "definitions": [
+      {
+        "category": "Class 1 - Acceptable",
+        "safety_factor_range": [10, 999999],
+        "color": "#22c55e",
+        "action": "No action required",
+        "description": "Exposure is less than 1/10 of MPE"
+      },
+      {
+        "category": "Class 2 - Tolerable",
+        "safety_factor_range": [1, 10],
+        "color": "#f59e0b",
+        "action": "Monitor and consider additional controls",
+        "description": "Exposure is below MPE but with limited margin"
+      },
+      {
+        "category": "Class 3 - Undesirable",
+        "safety_factor_range": [0.5, 1],
+        "color": "#f97316",
+        "action": "Immediate corrective action required",
+        "description": "Exposure approaches or slightly exceeds MPE"
+      },
+      {
+        "category": "Class 4 - Unacceptable",
+        "safety_factor_range": [0, 0.5],
+        "color": "#dc2626",
+        "action": "STOP WORK - Immediate hazard controls needed",
+        "description": "Exposure significantly exceeds MPE"
+      }
+    ]
+  },
+  "report_generation": {
+    "enabled": true,
+    "template": "exposure_assessment_report",
+    "sections": [
+      "scenario_description",
+      "input_parameters",
+      "calculated_mpe",
+      "actual_exposure",
+      "comparison_results",
+      "hazard_assessment",
+      "recommendations",
+      "references"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 11,
+  "quiz_items": [
+    {
+      "id": "C2-P11-Q1",
+      "type": "multiple_select",
+      "difficulty": "advanced",
+      "question": "For Class IIIb/IV laser products, what are the remote interlock connector requirements? (Select all that apply)",
+      "options": [
+        "Required on all Class IIIb and IV systems",
+        "Circuit must prevent access when terminals are open",
+        "Electrical potential limited to 130 volts rms",
+        "Must be wireless connection"
+      ],
+      "correct_answer": [0, 1, 2],
+      "explanation": "Remote interlock connectors are required on Class IIIb/IV systems. When terminals open, access prevented. Voltage limited to 130V rms. Shorted mating connector may be provided for operation without remote interlock.",
+      "learning_objective": "Apply remote interlock requirements",
+      "regulatory_reference": "21 CFR 1040.10(f)(3)"
+    },
+    {
+      "id": "C2-P11-Q2",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "Why are snap-action spring switches NOT acceptable as fail-safe interlocks for Class IIIb/IV products?",
+      "options": [
+        "They are too expensive",
+        "They are subject to short-circuit failure",
+        "They are not waterproof",
+        "They require too much force"
+      ],
+      "correct_answer": 1,
+      "explanation": "Snap-action spring switches are subject to short-circuit failure and cannot serve as fail-safe safety interlocks. However, they could be used in series with a second switch or solenoid-operated latch.",
+      "learning_objective": "Understand fail-safe requirements",
+      "regulatory_reference": "21 CFR 1040.10(f)(2)"
+    }
+  ]
+}

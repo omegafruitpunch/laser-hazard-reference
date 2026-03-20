@@ -1,0 +1,50 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 3,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Table of contents for FDA Compliance Guide",
+      "Document structure and navigation",
+      "Key regulatory topics covered"
+    ],
+    "key_terms": [
+      {
+        "term": "Performance Requirements",
+        "definition": "Technical specifications laser products must meet"
+      },
+      {
+        "term": "Labeling Requirements",
+        "definition": "Mandatory warnings and identification marks"
+      },
+      {
+        "term": "Informational Requirements",
+        "definition": "User manual and service documentation requirements"
+      },
+      {
+        "term": "Variance",
+        "definition": "Permission to deviate from standard requirements"
+      },
+      {
+        "term": "Product Recalls",
+        "definition": "Procedures for defective or noncompliant products"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.10",
+      "21 CFR 1040.11",
+      "Appendix A: Tabulation of FDA Requirements",
+      "Appendix B: Laser Light Show Requirements"
+    ],
+    "difficulty_level": "beginner",
+    "learning_objectives": [
+      "Navigate the FDA Compliance Guide structure",
+      "Understand the main regulatory topic areas"
+    ],
+    "prerequisites": [],
+    "estimated_study_time_minutes": 5,
+    "content_type": "table_of_contents",
+    "has_tables": false
+  }
+}

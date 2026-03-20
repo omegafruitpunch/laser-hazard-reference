@@ -1,0 +1,30 @@
+{
+  "page_num": 10,
+  "source_pdf": "skin-hazards.pdf",
+  "digestion": {
+    "summary": "SKIN PROTECTION STRATEGIES\n\nENGINEERING CONTROLS:\n- Enclosures and beam containment\n- Interlocks on access panels\n- Remote viewing via cameras\n- Beam blocks and beam stops\n\nADMINISTRATIVE CONTROLS:\n- ...",
+    "key_concepts": [
+      "PPE",
+      "protective gloves",
+      "barrier creams",
+      "engineering controls"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "SKIN PROTECTION STRATEGIES\n\nENGINEERING CONTROLS:\n- Enclosures and beam containment\n- Interlocks on access panels\n- Remote viewing via cameras\n- Beam blocks and beam stops\n\nADMINISTRATIVE CONTROLS:\n- Standard Operating Procedures (SOPs)\n- Controlled access to laser areas\n- Training on skin hazards\n- Warning signs and labels\n- Buddy system for high-power operations\n\nPERSONAL PROTECTIVE EQUIPMENT (PPE):\n\nGloves:\n- Required for UV and high-power laser work\n- Material must be appropriate for wavelength\n- Leather for IR protection\n- UV-resistant materials for UV lasers\n- Check for degradation and damage\n\nLab Coats and Clothing:\n- Flame-resistant materials for high-power lasers\n- Long sleeves mandatory\n- High collar/neck protection\n- Close-fitting cuffs\n- Light colors preferred (reflect visible/IR)\n\nFace Shields:\n- For protection against back-reflections\n- Must be wavelength-specific\n- Not a substitute for laser eyewear\n\nBarrier Creams:\n- Limited effectiveness\n- May provide some UV protection\n- Not a primary control method\n\nHOUSEKEEPING:\n- Eliminate reflective surfaces\n- Non-reflective tools and surfaces\n- Proper storage of lasers when not in use\n",
+    "analogies": [
+      "The eye's focusing capability is like a magnifying glass concentrating sunlight - it amplifies laser power by 100,000x at the retina.",
+      "Laser skin burns are similar to thermal burns but can be more precisely localized."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Always wear appropriate laser eyewear when working with Class 3B or Class 4 lasers.",
+      "Use protective gloves and long sleeves when operating high-power lasers.",
+      "UV laser exposure has cumulative effects similar to sun damage - use full coverage PPE."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.123032"
+}

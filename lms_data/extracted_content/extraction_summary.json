@@ -1,0 +1,14 @@
+{
+  "course-1": {
+    "status": "success",
+    "pages": 1,
+    "words": 210,
+    "output": "J:\\laser-hazard-refernce\\laser-hazard-reference\\lms_data\\extracted_content\\course-1\\extracted_content.json"
+  },
+  "course-2": {
+    "status": "success",
+    "pages": 29,
+    "words": 10773,
+    "output": "J:\\laser-hazard-refernce\\laser-hazard-reference\\lms_data\\extracted_content\\course-2\\extracted_content.json"
+  }
+}

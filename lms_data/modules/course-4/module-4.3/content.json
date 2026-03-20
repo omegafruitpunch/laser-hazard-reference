@@ -1,0 +1,514 @@
+{
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Introduction to Illinois & Massachusetts Regulations",
+      "type": "overview",
+      "content": {
+        "summary": "Illinois and Massachusetts represent two distinct approaches to state-level laser regulation. Illinois operates under the Laser System Act of 1997 with comprehensive ANSI Z136 series incorporation, while Massachusetts uses 105 CMR 121.000 with strong emphasis on ANSI Z136.1 compliance and specific entertainment laser provisions.",
+        "key_comparison": {
+          "illinois": {
+            "authority": "Illinois Emergency Management Agency",
+            "citation": "32 ILCS 315",
+            "legal_basis": "Laser System Act of 1997 [420 ILCS 56]",
+            "effective_date": "May 17, 2001",
+            "regulatory_tier": "comprehensive"
+          },
+          "massachusetts": {
+            "authority": "Massachusetts Department of Public Health",
+            "citation": "105 CMR 121.000",
+            "legal_basis": "M.G.L. c. 111, §§ 5I, 5N, 5O, 5P",
+            "effective_date": "Ongoing",
+            "regulatory_tier": "comprehensive"
+          }
+        }
+      }
+    },
+    {
+      "id": "illinois_deep_dive",
+      "title": "Illinois Laser Safety Regulations",
+      "type": "interactive_state_profile",
+      "state": "illinois",
+      "components": [
+        {
+          "type": "state_regulatory_card",
+          "title": "Illinois Regulatory Overview",
+          "agency": "Illinois Emergency Management Agency",
+          "division": "Division of Nuclear Safety",
+          "contact": {
+            "name": "Don Agnew",
+            "title": "Health Physicist",
+            "phone": "(217) 785-9975",
+            "email": "don.agnew@illinois.gov",
+            "address": "1035 Outer Park Drive, Springfield, IL 62704"
+          },
+          "regulatory_citation": "Title 32, Chapter II, Part 315",
+          "legal_authority": "Laser System Act of 1997 [420 ILCS 56]",
+          "effective_date": "May 17, 2001"
+        },
+        {
+          "type": "accordion_panel",
+          "title": "Registration Requirements",
+          "items": [
+            {
+              "header": "Installation Registration (One-Time)",
+              "content": "Required before placing installation in operation. Includes operator name, location, classification numbers, room locations, and LSO designation.",
+              "reference": "Section 315.60(a)"
+            },
+            {
+              "header": "Annual Laser System Registration",
+              "content": "Required information: Manufacturer, model, serial number, output power, wavelength, and class of each laser system.",
+              "reference": "Section 315.60(b)"
+            },
+            {
+              "header": "Out-of-State Facilities",
+              "content": "10 working days advance written notice required. Must register installation and laser systems, include nature/duration/scope of use, exact locations. Pre-operational inspection may be required within 24 hours.",
+              "reference": "Section 315.80"
+            }
+          ]
+        },
+        {
+          "type": "lso_qualification_matrix",
+          "title": "Illinois LSO Qualification Requirements",
+          "requirements": [
+            "Fundamentals of laser operation",
+            "Familiarity with equipment type utilized",
+            "Biological effects on eye and skin",
+            "Laser and laser system classification",
+            "Control measures",
+            "Nonradiation hazards",
+            "Medical surveillance practices (if applicable)",
+            "Laser terminology",
+            "Maximum Permissible Exposure (MPE) levels"
+          ],
+          "duty_areas": [
+            "Establish and implement laser radiation safety program",
+            "Ensure hazard instructions provided to exposed individuals",
+            "Permit operation only by trained individuals with SOP access",
+            "Ensure laser systems meet requirements and control measures in effect",
+            "Periodically audit functionality of control measures"
+          ],
+          "reference": "Section 315.90"
+        },
+        {
+          "type": "entertainment_laser_requirements",
+          "title": "Illinois Entertainment Laser Light Show Requirements",
+          "advance_notice": "10 working days in writing or facsimile",
+          "required_info": [
+            "Name, address, phone of registrant",
+            "Name, address, phone of LSO",
+            "Name, address, phone of person in charge",
+            "Location, time, date of show",
+            "Documentation of FDA variance (21 CFR 1040.11)",
+            "FAA notification for outdoor performances",
+            "Manufacturer, class, wavelength, output power",
+            "Sketches of location, beam paths, reflective surfaces"
+          ],
+          "safe_operation_requirements": [
+            "Emissions outside 400-700nm shall not exceed Class 1 limits",
+            "Audience area shall not exceed Class 1 limits",
+            "Operators/performers not intended to view: shall not exceed Class 2",
+            "Areas above Class 2: posted with warning signs and barriers",
+            "Scanning lasers: no audience exposure above Class 1 during failures",
+            "Mirror ball: meet conditions when stationary or during failure",
+            "Direct supervision required except for low power or height/side separations"
+          ],
+          "height_requirements": {
+            "unattended": "6 meters above audience OR 2.5m lateral separation",
+            "with_operator": "3 meters above audience (for Class 2+ areas)"
+          },
+          "reference": "Section 315.140"
+        },
+        {
+          "type": "interactive_timeline",
+          "title": "Illinois Incident Reporting Timeline",
+          "events": [
+            {
+              "trigger": "Exposure > 100 times MPE, partial/total loss of sight, skin perforation",
+              "timeframe": "Immediate notification",
+              "method": "Phone to Department"
+            },
+            {
+              "trigger": "Exposure > 5 times MPE, second or third degree burns",
+              "timeframe": "Within 24 hours",
+              "method": "Written notification"
+            },
+            {
+              "trigger": "Any incident requiring notification",
+              "timeframe": "Within 30 days",
+              "method": "Complete written report"
+            }
+          ]
+        },
+        {
+          "type": "exemption_list",
+          "title": "Illinois Exemptions",
+          "exemptions": [
+            "Certified Class 1, Class 2, Class 2a and Class 3a lasers",
+            "Embedded Class 3b or Class 4 lasers with lower classification",
+            "Laser systems in transit per transportation agency rules",
+            "Inoperable laser systems (note: disconnected = still operable)"
+          ],
+          "reference": "Section 315.50"
+        }
+      ]
+    },
+    {
+      "id": "massachusetts_deep_dive",
+      "title": "Massachusetts Laser Safety Regulations",
+      "type": "interactive_state_profile",
+      "state": "massachusetts",
+      "components": [
+        {
+          "type": "state_regulatory_card",
+          "title": "Massachusetts Regulatory Overview",
+          "agency": "Massachusetts Department of Public Health",
+          "division": "Radiation Control Program",
+          "contact": {
+            "name": "Mario Lannaccone",
+            "title": "Emergency Plan Supvr./Radiation Control Officer",
+            "phone": "(617) 242-3035",
+            "fax": "(617) 242-3457",
+            "email": "karen.farris@state.ma.us",
+            "address": "Schraff Center Suite IMZA, 529 Main Street, Charlestown, MA 02129"
+          },
+          "regulatory_citation": "105 CMR 121.000",
+          "legal_authority": "M.G.L. c. 111, §§ 5I, 5N, 5O, and 5P",
+          "effective_date": "Effective May 7, 1997"
+        },
+        {
+          "type": "accordion_panel",
+          "title": "Massachusetts Registration Framework",
+          "items": [
+            {
+              "header": "Facility Registration",
+              "content": "Facilities with Class 3B or Class 4 lasers under same administrative control must register. Application required prior to operation with LSO designation.",
+              "reference": "105 CMR 121.012-121.020"
+            },
+            {
+              "header": "Certificate Posting",
+              "content": "Current certificate or legible copy must be posted conspicuously at each registered facility.",
+              "reference": "105 CMR 121.017"
+            },
+            {
+              "header": "Renewal Grace Period",
+              "content": "Application filed 30+ days prior to expiration extends validity until determination.",
+              "reference": "105 CMR 121.017"
+            },
+            {
+              "header": "Vendor Requirements",
+              "content": "Vendors selling, leasing, transferring, lending, or disposing of Class 3B or Class 4 lasers must notify Radiation Control Program within 15 days with recipient details and device information.",
+              "reference": "105 CMR 121.021"
+            }
+          ]
+        },
+        {
+          "type": "interactive_comparison",
+          "title": "Massachusetts vs. Illinois: Entertainment Laser Height Requirements",
+          "comparison_type": "dual_column",
+          "massachusetts": {
+            "unattended_class_2+": "20 feet above OR 8 feet side/below audience floor",
+            "attended_continuous_control": "10 feet above OR 8 feet side/below audience floor",
+            "reference": "105 CMR 121.008"
+          },
+          "illinois": {
+            "unattended": "6 meters (~19.7 feet) above OR 2.5m lateral separation",
+            "with_operator": "3 meters (~9.8 feet) above audience (Class 2+ areas)",
+            "reference": "32 ILCS 315.140(c)(7)"
+          }
+        },
+        {
+          "type": "entertainment_notification_comparison",
+          "title": "Entertainment Laser Notification: Massachusetts vs. Illinois",
+          "both_states": {
+            "advance_notice": "10 working days/10 days",
+            "common_requirements": [
+              "Owner information",
+              "LSO contact details",
+              "Performance dates and times",
+              "Laser class information",
+              "FDA variance documentation"
+            ]
+          },
+          "massachusetts_unique": [
+            "Operator contact information",
+            "Facility contact information",
+            "Individual in charge of performance",
+            "Length of time laser in operation",
+            "Sketches describing design/layout of show",
+            "FAA notification copy (if applicable)"
+          ],
+          "illinois_unique": [
+            "Person in charge contact",
+            "Specific location, time, date of show",
+            "FAA notification for outdoor performances",
+            "Manufacturer, wavelength, output power",
+            "Sketches of location, beam paths, reflective surfaces"
+          ]
+        },
+        {
+          "type": "penalty_structure",
+          "title": "Massachusetts Enforcement & Penalties",
+          "civil_penalties": {
+            "maximum_per_violation": "$500",
+            "willfulness": "Applied whether or not violation was willful",
+            "assessment_factors": [
+              "Willfulness of violation",
+              "Actual and potential danger to public health/environment",
+              "Actual or potential costs/damage/injury",
+              "Cost of enforcement",
+              "Reasonable efforts to prevent/comply/remedy",
+              "Prior compliance history",
+              "Deterrence likelihood",
+              "Financial condition of violator"
+            ]
+          },
+          "grounds_for_denial_revocation": [
+            "Failed to submit required information",
+            "Failed to meet registration requirements",
+            "Not suitable/responsible to operate facility",
+            "Fraud, misrepresentation, false information",
+            "Failed to pay registration fee or civil penalties",
+            "Failed to allow inspections or impeded enforcement",
+            "Criminal conviction relating to fitness",
+            "Prior suspension/denial/revocation in other jurisdiction",
+            "Operated after certificate expiration",
+            "Failed to remedy cited violation",
+            "Falsification of test results",
+            "Endangered public health, safety, or environment",
+            "Used laser for purposes other than registration"
+          ],
+          "waiver_provisions": {
+            "authority": "Commissioner or designee",
+            "findings_required": [
+              "Compliance would cause undue hardship",
+              "Substantial compliance with spirit of requirement",
+              "Compliance does not jeopardize health or safety"
+            ],
+            "documentation": "Written documentation supporting request required"
+          },
+          "reference": "105 CMR 121.027, 121.011"
+        }
+      ]
+    },
+    {
+      "id": "interactive_components",
+      "title": "Interactive Learning Components",
+      "type": "interactive_section",
+      "components": [
+        {
+          "type": "state_comparison_matrix",
+          "title": "Illinois vs. Massachusetts: Comprehensive Comparison Matrix",
+          "categories": [
+            {
+              "category": "Regulatory Authority",
+              "illinois": "Illinois Emergency Management Agency, Division of Nuclear Safety",
+              "massachusetts": "Massachusetts Department of Public Health, Radiation Control Program"
+            },
+            {
+              "category": "Legal Citation",
+              "illinois": "32 ILCS Part 315",
+              "massachusetts": "105 CMR 121.000"
+            },
+            {
+              "category": "Registration Classes",
+              "illinois": "Class 3b and 4 only",
+              "massachusetts": "Class 3B and 4 only"
+            },
+            {
+              "category": "Annual Registration",
+              "illinois": "Required for laser systems",
+              "massachusetts": "Required (365-day period)"
+            },
+            {
+              "category": "Advance Notice (Out-of-State)",
+              "illinois": "10 working days",
+              "massachusetts": "10 working days"
+            },
+            {
+              "category": "LSO Requirements",
+              "illinois": "9 specific qualification areas",
+              "massachusetts": "Designated by employer, ANSI Z136.1 duties"
+            },
+            {
+              "category": "Record Retention",
+              "illinois": "5 years",
+              "massachusetts": "Per ANSI Z136 series"
+            },
+            {
+              "category": "Inspections",
+              "illinois": "Yes - Pre-operational possible within 24 hours",
+              "massachusetts": "At Director's discretion"
+            },
+            {
+              "category": "Maximum Civil Penalty",
+              "illinois": "Not specified in summary",
+              "massachusetts": "$500 per violation"
+            },
+            {
+              "category": "Waiver Provisions",
+              "illinois": "Not specified",
+              "massachusetts": "Commissioner may grant waivers for undue hardship"
+            }
+          ]
+        },
+        {
+          "type": "scenario_simulator",
+          "title": "Multi-State Operations Scenario",
+          "scenario": {
+            "title": "Touring Laser Show: Illinois to Massachusetts",
+            "context": "You are the LSO for a laser light show company planning a 5-city tour that includes Chicago, IL and Boston, MA.",
+            "setup": "Your show uses Class 4 lasers with audience scanning (properly variance-approved). You need to ensure compliance in both states.",
+            "decision_points": [
+              {
+                "id": "dp1",
+                "question": "How many days in advance must you notify each state?",
+                "options": [
+                  {
+                    "label": "5 days for both",
+                    "correct": false,
+                    "feedback": "Incorrect. Both states require more advance notice."
+                  },
+                  {
+                    "label": "10 working days for both",
+                    "correct": true,
+                    "feedback": "Correct! Both Illinois and Massachusetts require 10 working days advance notice for entertainment laser shows."
+                  },
+                  {
+                    "label": "15 days for IL, 10 for MA",
+                    "correct": false,
+                    "feedback": "Incorrect. Both states have the same 10 working day requirement."
+                  }
+                ]
+              },
+              {
+                "id": "dp2",
+                "question": "For unattended operation in the audience area, what height requirement applies?",
+                "options": [
+                  {
+                    "label": "Same for both states: 20 feet",
+                    "correct": false,
+                    "feedback": "Incorrect. The requirements differ between states."
+                  },
+                  {
+                    "label": "IL: 6 meters, MA: 20 feet",
+                    "correct": true,
+                    "feedback": "Correct! Illinois requires 6 meters (~19.7 ft) while Massachusetts requires 20 feet for unattended Class 2+ areas."
+                  },
+                  {
+                    "label": "IL: 20 feet, MA: 6 meters",
+                    "correct": false,
+                    "feedback": "Incorrect. You have the states reversed."
+                  }
+                ]
+              },
+              {
+                "id": "dp3",
+                "question": "Which documentation is required by BOTH states?",
+                "options": [
+                  {
+                    "label": "Only FDA variance",
+                    "correct": false,
+                    "feedback": "Incorrect. More documentation is required."
+                  },
+                  {
+                    "label": "FDA variance and FAA notification",
+                    "correct": false,
+                    "feedback": "Partially correct, but FAA notification is only required for outdoor shows."
+                  },
+                  {
+                    "label": "FDA variance, LSO contact, show dates, laser class info",
+                    "correct": true,
+                    "feedback": "Correct! Both states require FDA variance, LSO contact information, performance dates/times, and laser class information."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "drag_drop_exercise",
+          "title": "Match Requirements to the Correct State",
+          "instructions": "Drag each requirement to the state where it applies. Some may apply to both.",
+          "items": [
+            {
+              "text": "$500 maximum civil penalty per violation",
+              "correct_state": "massachusetts",
+              "explanation": "Massachusetts specifies $500 maximum civil penalty in 105 CMR 121.027"
+            },
+            {
+              "text": "LSO must be qualified in 9 specific areas",
+              "correct_state": "illinois",
+              "explanation": "Illinois Section 315.90 specifies 9 LSO qualification areas"
+            },
+            {
+              "text": "15-day vendor notification requirement",
+              "correct_state": "massachusetts",
+              "explanation": "Massachusetts 105 CMR 121.021 requires vendor notification within 15 days"
+            },
+            {
+              "text": "6-month eyewear examination requirement",
+              "correct_state": "illinois",
+              "explanation": "Illinois Section 315.100(b)(5)(E) requires eyewear examination every 6 months"
+            },
+            {
+              "text": "ANSI Z136.1, Z136.2, and Z136.3 incorporated",
+              "correct_state": "both",
+              "explanation": "Both states incorporate all three ANSI standards"
+            },
+            {
+              "text": "Waiver provisions for undue hardship",
+              "correct_state": "massachusetts",
+              "explanation": "Massachusetts 105 CMR 121.011 includes waiver provisions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knowledge_check",
+      "title": "Module 4.3 Knowledge Check",
+      "type": "assessment",
+      "quiz_pool_ref": "lms_data/course-4/illinois_quiz.json",
+      "additional_questions": [
+        {
+          "id": "m4.3-q1",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "question": "Which agency administers laser regulations in Massachusetts?",
+          "options": [
+            "Massachusetts Department of Environmental Protection",
+            "Massachusetts Department of Public Health - Radiation Control Program",
+            "Massachusetts Department of Labor and Workforce Development",
+            "Massachusetts Emergency Management Agency"
+          ],
+          "correct_answer": 1,
+          "explanation": "The Massachusetts Department of Public Health's Radiation Control Program administers 105 CMR 121.000 laser regulations."
+        },
+        {
+          "id": "m4.3-q2",
+          "type": "multiple_choice",
+          "difficulty": "hard",
+          "question": "A laser show company is planning performances in both Chicago and Boston. What is the minimum height requirement for unattended lasers above the audience in each city?",
+          "options": [
+            "Both: 20 feet",
+            "Chicago: 6 meters, Boston: 20 feet",
+            "Chicago: 20 feet, Boston: 6 meters",
+            "Both: 6 meters"
+          ],
+          "correct_answer": 1,
+          "explanation": "Illinois (Chicago) requires 6 meters (~19.7 ft) while Massachusetts (Boston) requires 20 feet for unattended Class 2+ areas."
+        },
+        {
+          "id": "m4.3-q3",
+          "type": "true_false",
+          "difficulty": "easy",
+          "question": "Both Illinois and Massachusetts require 10 working days advance notice for entertainment laser shows.",
+          "options": ["True", "False"],
+          "correct_answer": 0,
+          "explanation": "True. Both states require 10 working days advance notice for entertainment laser light shows."
+        }
+      ]
+    }
+  ]
+}

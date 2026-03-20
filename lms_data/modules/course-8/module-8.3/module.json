@@ -1,0 +1,109 @@
+{
+  "module_id": "8.3",
+  "course_id": "8",
+  "title": "Module 8.3: ESTA Standards & ACN Protocol",
+  "subtitle": "Entertainment Control Networks and Documentation Standards",
+  "description": "Explore ESTA's role in entertainment technology standards, understand the ACN (Architecture for Control Networks) protocol family, and master documentation requirements for laser entertainment systems including safety templates and compliance records.",
+  "version": "1.0.0",
+  "estimated_duration_minutes": 40,
+  "difficulty": "intermediate",
+  "prerequisites": ["8.1", "8.2"],
+  "learning_objectives": [
+    {
+      "id": "8.3.1",
+      "objective": "Describe ESTA's role in the ANSI standards development process",
+      "blooms_level": "Comprehension",
+      "assessment_method": "Organization structure analysis"
+    },
+    {
+      "id": "8.3.2",
+      "objective": "Explain the ACN protocol architecture and its components (E1.17, E1.30, E1.31)",
+      "blooms_level": "Comprehension",
+      "assessment_method": "Protocol stack visualization"
+    },
+    {
+      "id": "8.3.3",
+      "objective": "Complete documentation templates for laser safety programs",
+      "blooms_level": "Application",
+      "assessment_method": "Template completion exercises"
+    },
+    {
+      "id": "8.3.4",
+      "objective": "Apply control measure prioritization hierarchy in documentation",
+      "blooms_level": "Application",
+      "assessment_method": "Control selection scenarios"
+    },
+    {
+      "id": "8.3.5",
+      "objective": "Create comprehensive hand-over documentation for laser installations",
+      "blooms_level": "Synthesis",
+      "assessment_method": "Documentation assembly project"
+    }
+  ],
+  "interactive_components": [
+    {
+      "id": "acn_architecture_explorer",
+      "name": "ACN Architecture Explorer",
+      "type": "interactive_diagram",
+      "file": "components/acn_architecture.json",
+      "description": "Interactive exploration of ACN protocol layers and components"
+    },
+    {
+      "id": "control_prioritizer",
+      "name": "Control Measure Prioritizer",
+      "type": "interactive_exercise",
+      "file": "components/control_prioritizer.json",
+      "description": "Hierarchy of controls exercise with feedback"
+    },
+    {
+      "id": "documentation_gallery",
+      "name": "Documentation Template Gallery",
+      "type": "interactive_templates",
+      "file": "components/documentation_gallery.json",
+      "description": "Interactive safety documentation templates with guided completion"
+    },
+    {
+      "id": "handover_builder",
+      "name": "Hand-Over Document Builder",
+      "type": "interactive_form",
+      "file": "components/handover_builder.json",
+      "description": "Build complete installation hand-over documentation"
+    },
+    {
+      "id": "esta_standards_matrix",
+      "name": "ESTA Standards Cross-Reference Matrix",
+      "type": "interactive_table",
+      "file": "components/esta_matrix.json",
+      "description": "Visual cross-reference of ESTA entertainment standards"
+    }
+  ],
+  "content_files": {
+    "lessons": "lessons.json",
+    "quiz": "quiz.json"
+  },
+  "assessment": {
+    "quiz_file": "quiz.json",
+    "passing_score": 80,
+    "attempts_allowed": 3
+  },
+  "badge": {
+    "id": "esta_documentation_expert",
+    "name": "ESTA Documentation Expert",
+    "icon": "📑",
+    "description": "Mastered ESTA standards and laser safety documentation"
+  },
+  "standards_reference": [
+    "ANSI E1.17-2010 Architecture for Control Networks (ACN)",
+    "ANSI E1.30-11-2019 ACN Root Layer Protocol on TCP",
+    "ANSI E1.46-2023 Entertainment Technology - Laser Safety",
+    "ANSI Z136.1-2022 Safe Use of Lasers"
+  ],
+  "keywords": ["ESTA", "ACN", "E1.17", "E1.30", "documentation", "hand-over", "control hierarchy"],
+  "research_alignment": {
+    "adult_learning": "Document-centered learning with practical templates",
+    "brilliant_patterns": ["Progressive template completion", "Interactive cross-referencing", "Build-as-you-learn"],
+    "retention_strategy": "Template-based skill transfer to workplace"
+  },
+  "created_at": "2026-03-19T15:46:00Z",
+  "updated_at": "2026-03-19T15:46:00Z"
+}

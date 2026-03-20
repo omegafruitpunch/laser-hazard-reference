@@ -1,0 +1,354 @@
+{
+  "module_id": "course-5-module-5.1",
+  "phases": [
+    {
+      "phase_id": "warm_up",
+      "phase_name": "Warm-Up: The Touring Dilemma",
+      "duration_minutes": 2,
+      "content": {
+        "scenario": {
+          "title": "Your European Tour",
+          "description": "You're planning a laser show tour across 5 EU countries. Each country has different requirements for audience scanning.",
+          "countries": ["Germany", "Netherlands", "France", "Belgium", "Austria"],
+          "visual": "eu_tour_map"
+        },
+        "interaction": {
+          "type": "classification_challenge",
+          "instruction": "Drag each country to its likely permit status:",
+          "drag_items": [
+            {"id": "germany", "label": "Germany", "correct_zone": "status_a"},
+            {"id": "netherlands", "label": "Netherlands", "correct_zone": "status_d"},
+            {"id": "france", "label": "France (Indoor)", "correct_zone": "status_e"},
+            {"id": "belgium", "label": "Belgium", "correct_zone": "status_d"},
+            {"id": "austria", "label": "Austria", "correct_zone": "status_a"}
+          ],
+          "drop_zones": [
+            {"id": "status_a", "label": "Status A - Permit Required", "description": "Explicit permission needed"},
+            {"id": "status_d", "label": "Status D - No Permit", "description": "Allowed without permit"},
+            {"id": "status_e", "label": "Status E - Prohibited", "description": "Not allowed"}
+          ]
+        },
+        "feedback": {
+          "correct": "Excellent! You correctly identified that Germany and Austria require permits (Status A), Netherlands and Belgium don't require permits (Status D), and France indoors prohibits audience scanning (Status E).",
+          "incorrect": "Not quite. Remember: Germany and Austria have strict permit requirements, while France indoors has a near-total ban on audience scanning."
+        }
+      }
+    },
+    {
+      "phase_id": "core_concept",
+      "phase_name": "Core Concept: The EU Regulatory Hierarchy",
+      "duration_minutes": 5,
+      "content": {
+        "introduction": "EU laser safety follows a three-tier hierarchy. Click each tier to explore:",
+        "interactive_hierarchy": {
+          "type": "collapsible_pyramid",
+          "levels": [
+            {
+              "tier": 1,
+              "title": "EU Directive 2006/25/EC",
+              "subtitle": "The Foundation",
+              "content": {
+                "description": "Minimum health and safety requirements regarding worker exposure to artificial optical radiation",
+                "key_points": [
+                  "Applies to all EU member states",
+                  "Employers must assess and manage optical radiation risks",
+                  "Exposure limit values (ELVs) must not be exceeded",
+                  "Worker information and training mandatory"
+                ],
+                "legal_basis": "Article 153 of the Treaty on the Functioning of the European Union"
+              }
+            },
+            {
+              "tier": 2,
+              "title": "EN 60825-1",
+              "subtitle": "The Harmonized Standard",
+              "content": {
+                "description": "European adoption of IEC 60825-1 for laser product safety",
+                "key_points": [
+                  "Harmonized standard under EU Directive",
+                  "Provides presumption of conformity",
+                  "Covers laser classification and labeling",
+                  "Product safety requirements (not workplace exposure)"
+                ],
+                "relationship": "Links Directive requirements to technical specifications"
+              }
+            },
+            {
+              "tier": 3,
+              "title": "National Implementation",
+              "subtitle": "Country-Specific Requirements",
+              "content": {
+                "description": "Each EU member state implements through national laws and may add specific requirements",
+                "examples": [
+                  {"country": "Austria", "standard": "OENORM S1105:2014"},
+                  {"country": "Finland", "authority": "STUK - Radiation Authority"},
+                  {"country": "Sweden", "authority": "Swedish Radiation Safety Authority"},
+                  {"country": "Netherlands", "reference": "NEN 6025x + ARBO"}
+                ],
+                "variation_note": "Status classifications vary by country based on national enforcement practices"
+              }
+            }
+          ]
+        },
+        "ce_marking_section": {
+          "title": "CE Marking Requirements",
+          "visual": "ce_marking_flow",
+          "content": [
+            "CE marking required for laser products sold in EU/EEA",
+            "Indicates compliance with applicable directives",
+            "Manufacturer issues EU Declaration of Conformity",
+            "Technical documentation must be maintained",
+            "Not a safety certification - it's a conformity mark"
+          ]
+        }
+      }
+    },
+    {
+      "phase_id": "guided_practice",
+      "phase_name": "Guided Practice: Country Status Explorer",
+      "duration_minutes": 7,
+      "content": {
+        "introduction": "Explore the interactive map to understand specific country requirements. Select a country to see its Status classification and requirements.",
+        "interactive_map": {
+          "type": "eu_country_status_map",
+          "title": "EU Country Status Map",
+          "legend": {
+            "status_a": {"color": "#e74c3c", "label": "Status A - Permit Required", "icon": "📋"},
+            "status_c": {"color": "#f39c12", "label": "Status C - Permit Required (Limited Enforcement)", "icon": "⚠️"},
+            "status_d": {"color": "#27ae60", "label": "Status D - Allowed Without Permit", "icon": "✓"},
+            "status_e": {"color": "#8e44ad", "label": "Status E - Prohibited", "icon": "🚫"},
+            "status_f": {"color": "#95a5a6", "label": "Status F - Unclear", "icon": "❓"}
+          },
+          "countries": [
+            {
+              "code": "AT",
+              "name": "Austria",
+              "status": "status_a",
+              "standard": "OENORM S1105:2014",
+              "requirements": [
+                "Permit required from authorities",
+                "Compliance with harmonized standard",
+                "Risk assessment required"
+              ],
+              "mpe_limit": "1 mW/cm² (10 W/m²)"
+            },
+            {
+              "code": "FI",
+              "name": "Finland",
+              "status": "status_a",
+              "authority": "STUK (Radiation Authority)",
+              "requirements": [
+                "Permit required from STUK",
+                "All lasers and techs must be listed in permit",
+                "On-site inspection by STUK mandatory",
+                "Grating effects only (no scanned effects without special permit)"
+              ],
+              "mpe_limit": "1 mW/cm² for special permits"
+            },
+            {
+              "code": "SE",
+              "name": "Sweden",
+              "status": "status_a",
+              "authority": "Swedish Radiation Authority",
+              "requirements": [
+                "Permit required for all laser displays",
+                "Risk Assessment and Method Statement required",
+                "On-site MPE measurements mandatory",
+                "PASS or equivalent scan-fail device required"
+              ],
+              "notes": "All shows inspected by authorities"
+            },
+            {
+              "code": "DE",
+              "name": "Germany",
+              "status": "status_a",
+              "standards": "TÜV Standards",
+              "requirements": [
+                "Permit from local authorities required",
+                "TÜV standards compliance expected",
+                "Detailed documentation required"
+              ]
+            },
+            {
+              "code": "CH",
+              "name": "Switzerland",
+              "status": "status_a",
+              "authority": "FOPH (Federal Office of Public Health)",
+              "effective_date": "June 1, 2019",
+              "requirements": [
+                "14 days advance notification via online portal",
+                "Competence Level 1 or 2 certificate required",
+                "Level 2 required for audience exposure (includes MPE calculation knowledge)",
+                "Event registration by competent person"
+              ],
+              "certification": {
+                "level_1": "No laser in audience area (3m vertical or 2.5m lateral separation)",
+                "level_2": "Laser in audience area - requires MPE calculation and programming knowledge"
+              }
+            },
+            {
+              "code": "NL",
+              "name": "Netherlands",
+              "status": "status_d",
+              "references": "NEN 6025x, ARBO regulations",
+              "requirements": [
+                "No specific laser display permit required",
+                "General workplace safety (ARBO) applies",
+                "TÜV standards followed as guideline"
+              ],
+              "notes": "Professional practice: maintain 3m minimum beam height"
+            },
+            {
+              "code": "BE",
+              "name": "Belgium",
+              "status": "status_d",
+              "requirements": [
+                "No permit required for audience scanning",
+                "General safety principles apply"
+              ]
+            },
+            {
+              "code": "FR",
+              "name": "France",
+              "status": "status_e_indoor",
+              "status_note": "Status D for outdoor shows",
+              "requirements": [
+                "Indoor: Audience scanning not allowed under almost all circumstances",
+                "Some regions prohibit all Class 4 laser devices",
+                "Outdoor: Allowed without permit (Status D)"
+              ],
+              "notes": "Suppliers may reclassify projectors to Class 2 to circumvent"
+            },
+            {
+              "code": "IT",
+              "name": "Italy",
+              "status": "status_d",
+              "requirements": [
+                "No specific permit required",
+                "General safety principles apply"
+              ]
+            },
+            {
+              "code": "ES",
+              "name": "Spain",
+              "status": "status_d",
+              "requirements": [
+                "No specific permit required",
+                "General safety principles apply"
+              ]
+            },
+            {
+              "code": "PL",
+              "name": "Poland",
+              "status": "status_f",
+              "reference": "IEC 60825-3:1995",
+              "notes": "Situation unclear - permits rarely encountered in practice"
+            },
+            {
+              "code": "LU",
+              "name": "Luxembourg",
+              "status": "status_c",
+              "hybrid": "Status A/C hybrid",
+              "requirements": [
+                "Law requires permit (Status A)",
+                "Enforcement varies (Status C characteristic)"
+              ],
+              "mpe_requirement": "No radiation above MPE may touch living things"
+            }
+          ],
+          "comparison_tool": {
+            "enabled": true,
+            "max_selection": 3,
+            "attributes": ["Status", "Permit Required", "MPE Limit", "Key Requirements"]
+          }
+        },
+        "exercise": {
+          "type": "scenario_decision",
+          "scenarios": [
+            {
+              "id": "scenario_1",
+              "title": "Tour Planning",
+              "description": "You're planning a 3-city tour: Amsterdam, Stockholm, and Vienna. Which cities require advance permits?",
+              "options": [
+                {"id": "opt1", "label": "Only Stockholm", "correct": false},
+                {"id": "opt2", "label": "Stockholm and Vienna", "correct": true},
+                {"id": "opt3", "label": "All three cities", "correct": false},
+                {"id": "opt4", "label": "Only Vienna", "correct": false}
+              ],
+              "explanation": "Stockholm (Sweden) and Vienna (Austria) are Status A - permits required. Amsterdam (Netherlands) is Status D - no permit required."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "phase_id": "challenges",
+      "phase_name": "Challenge: Compliance Pathway",
+      "duration_minutes": 4,
+      "content": {
+        "introduction": "Test your mastery with these cross-border compliance challenges.",
+        "challenges": [
+          {
+            "id": "challenge_1",
+            "type": "compliance_pathway_simulator",
+            "title": "The Multi-Country Festival",
+            "description": "You're providing lasers for a festival that tours Finland, Sweden, and Germany. Put the compliance steps in the correct order:",
+            "steps": [
+              {"id": "step1", "text": "Apply for permits from each country's radiation authority", "order": 1},
+              {"id": "step2", "text": "Prepare Risk Assessments and Method Statements", "order": 2},
+              {"id": "step3", "text": "Ensure all equipment has CE marking", "order": 3, "note": "Prerequisite - should be done before permits"},
+              {"id": "step4", "text": "Submit detailed equipment lists and tech credentials", "order": 4},
+              {"id": "step5", "text": "Conduct on-site MPE measurements before each show", "order": 5},
+              {"id": "step6", "text": "Have PASS/scan-fail devices installed", "order": 6, "note": "Required for Sweden"}
+            ],
+            "correct_sequence": [3, 1, 2, 4, 6, 5],
+            "hint": "Equipment compliance comes first, then permits, then documentation, then on-site preparation."
+          },
+          {
+            "id": "challenge_2",
+            "type": "mpe_comparison",
+            "title": "MPE Limit Challenge",
+            "description": "Which country has the strictest MPE requirement for audience scanning?",
+            "options": [
+              {"country": "Netherlands", "mpe": "10 W/m² (1 mW/cm²)", "correct": false},
+              {"country": "Finland (special permits)", "mpe": "1 mW/cm²", "correct": true},
+              {"country": "Sweden", "mpe": "10 W/m² (1 mW/cm²)", "correct": false},
+              {"country": "Germany", "mpe": "Varies by region", "correct": false}
+            ],
+            "explanation": "Finland's STUK may grant special permits with MPE as low as 1 mW/cm², which is 10 times stricter than the standard 10 W/m²."
+          }
+        ],
+        "achievement": {
+          "badge_unlock": "eu_regulatory_navigator",
+          "message": "Congratulations! You've mastered the EU regulatory framework."
+        }
+      }
+    }
+  ],
+  "quiz_bank": {
+    "module_quiz": "lms_data/quiz_banks/course-5/course-5-quiz-supplemental.json",
+    "relevant_questions": ["c5-s1", "c5-s2", "c5-s3", "c5-s13", "c5-s18"]
+  },
+  "components": {
+    "interactive_elements": [
+      {
+        "id": "eu_country_status_map",
+        "type": "interactive_map",
+        "path": "components/EUCountryStatusMap.tsx",
+        "description": "Clickable EU map showing Status A-F classifications"
+      },
+      {
+        "id": "directive_hierarchy_visualizer",
+        "type": "pyramid_visualization",
+        "path": "components/DirectiveHierarchy.tsx",
+        "description": "Collapsible pyramid showing EU directive hierarchy"
+      },
+      {
+        "id": "compliance_pathway_simulator",
+        "type": "sortable_checklist",
+        "path": "components/CompliancePathway.tsx",
+        "description": "Drag-and-drop compliance step sequencer"
+      }
+    ]
+  }
+}

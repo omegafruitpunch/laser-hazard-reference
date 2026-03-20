@@ -1,0 +1,50 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 16,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Recordkeeping requirements",
+      "Quality control procedures documentation",
+      "Life testing requirements",
+      "Distribution records for recall traceability"
+    ],
+    "key_terms": [
+      {
+        "term": "Testing Program Adequacy",
+        "definition": "Quality control sufficient to ensure claimed compliance"
+      },
+      {
+        "term": "Life Testing",
+        "definition": "Verification that product remains compliant with age"
+      },
+      {
+        "term": "State of Control",
+        "definition": "Manufacturing conditions assuring product compliance"
+      },
+      {
+        "term": "HHS Publication FDA 76-8036",
+        "definition": "Quality Control Practices for Compliance guide"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1010.2(c) - Certification based on testing",
+      "21 CFR 1002.30 - Recordkeeping requirements",
+      "HHS Publication FDA 76-8036"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Establish adequate testing programs",
+      "Document quality control procedures",
+      "Maintain required records",
+      "Understand life testing requirements"
+    ],
+    "prerequisites": [
+      "Quality management understanding"
+    ],
+    "estimated_study_time_minutes": 20,
+    "content_type": "recordkeeping_requirements",
+    "has_tables": false
+  }
+}

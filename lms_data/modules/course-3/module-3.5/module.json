@@ -1,0 +1,86 @@
+{
+  "module_id": "3.5",
+  "course_id": "3",
+  "title": "Module 3.5: MPE Tables & AEL Calculations",
+  "description": "Master MPE table navigation, AEL calculations, and correction factor applications with interactive calculation tools",
+  "version": "1.0.0",
+  "estimated_duration_minutes": 75,
+  "difficulty": "advanced",
+  "prerequisites": ["3.4"],
+  "learning_objectives": [
+    {
+      "id": "3.5.1",
+      "objective": "Calculate MPE values for any wavelength and exposure duration",
+      "blooms_level": "Application",
+      "assessment_method": "Calculation exercises with validation"
+    },
+    {
+      "id": "3.5.2",
+      "objective": "Apply correction factors (CA, CB, CC, CE, CP) correctly",
+      "blooms_level": "Application",
+      "assessment_method": "Factor application exercises"
+    },
+    {
+      "id": "3.5.3",
+      "objective": "Determine AEL boundaries for laser classification",
+      "blooms_level": "Application",
+      "assessment_method": "Classification calculation scenarios"
+    },
+    {
+      "id": "3.5.4",
+      "objective": "Compare exposure scenarios to MPE limits",
+      "blooms_level": "Analysis",
+      "assessment_method": "Hazard evaluation exercises"
+    }
+  ],
+  "interactive_components": [
+    {
+      "id": "mpe_calculator",
+      "name": "MPE Calculator",
+      "type": "calculation_tool",
+      "file": "components/mpe_calculator.json"
+    },
+    {
+      "id": "ael_calculator",
+      "name": "AEL Calculator",
+      "type": "calculation_tool",
+      "file": "components/ael_calculator.json"
+    },
+    {
+      "id": "correction_factor_explorer",
+      "name": "Correction Factor Explorer",
+      "type": "interactive_visualization",
+      "file": "components/correction_factor_explorer.json"
+    },
+    {
+      "id": "exposure_comparison_tool",
+      "name": "Exposure vs MPE Comparison",
+      "type": "calculation_tool",
+      "file": "components/exposure_comparison_tool.json"
+    }
+  ],
+  "content_files": {
+    "lesson": "content.md",
+    "workbook": "workbook.md"
+  },
+  "assessment": {
+    "quiz_file": "quiz.json",
+    "passing_score": 80,
+    "attempts_allowed": 3
+  },
+  "created_at": "2026-03-19T17:48:00Z",
+  "accessibility": {
+    "wcag_level": "2.1 AA",
+    "screen_reader_compatible": true,
+    "keyboard_navigable": true,
+    "high_contrast_support": true,
+    "reduced_motion_support": true,
+    "features": [
+      "Step-by-step formula explanations",
+      "Alternative text for mathematical concepts",
+      "Calculator with ARIA live regions",
+      "Keyboard-accessible input fields"
+    ]
+  },
+  "updated_at": "2026-03-19T17:48:00Z"
+}

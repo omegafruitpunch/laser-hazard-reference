@@ -1,0 +1,103 @@
+{
+  "component_id": "standard_selector",
+  "name": "Standard Selection Challenge",
+  "type": "decision_tree",
+  "description": "Scenario-based decision tree for selecting the appropriate ANSI Z136 standard",
+  "scenarios": [
+    {
+      "id": "scenario1",
+      "title": "Hospital Operating Room",
+      "description": "A hospital is installing new surgical laser systems in three operating rooms for ophthalmic procedures.",
+      "details": [
+        "Class 4 medical lasers",
+        "Surgical suite environment",
+        "Patient and staff exposure considerations"
+      ],
+      "correct_answer": "Z136.3",
+      "explanation": "ANSI Z136.3 specifically covers Safe Use of Lasers in Health Care Facilities, including medical and surgical applications.",
+      "hints": [
+        "Consider the application environment",
+        "This is a medical setting with patients",
+        "Z136.3 is the healthcare-specific standard"
+      ]
+    },
+    {
+      "id": "scenario2",
+      "title": "Music Festival Laser Show",
+      "description": "A music festival wants to add laser effects with beams entering the audience area during performances.",
+      "details": [
+        "Multiple 10W RGB laser projectors",
+        "Intentional audience exposure",
+        "Outdoor festival setting"
+      ],
+      "correct_answer": "Z136.10 + E1.46",
+      "explanation": "Z136.10 covers entertainment safe use, and E1.46 provides specific requirements for intentional audience exposure.",
+      "hints": [
+        "This is entertainment with audience scanning",
+        "Intentional exposure requires special standards",
+        "E1.46 is the entertainment-specific standard"
+      ]
+    },
+    {
+      "id": "scenario3",
+      "title": "University Physics Lab",
+      "description": "A university physics department uses Class 4 lasers for spectroscopy and quantum optics research.",
+      "details": [
+        "Research environment",
+        "Graduate student researchers",
+        "Non-production laboratory setting"
+      ],
+      "correct_answer": "Z136.8",
+      "explanation": "ANSI Z136.8 covers Safe Use of Lasers in Research, Development, and Testing environments.",
+      "hints": [
+        "This is a research laboratory",
+        "Academic research setting",
+        "Z136.8 is the R&D-specific standard"
+      ]
+    },
+    {
+      "id": "scenario4",
+      "title": "Industrial Manufacturing",
+      "description": "A manufacturing plant uses high-power lasers for cutting and welding sheet metal.",
+      "details": [
+        "Production environment",
+        "Material processing",
+        "Worker safety focus"
+      ],
+      "correct_answer": "Z136.1",
+      "explanation": "General industrial applications fall under ANSI Z136.1, the foundation standard for safe laser use.",
+      "hints": [
+        "This is general industrial use",
+        "No special application standard applies",
+        "Z136.1 is the foundation standard"
+      ]
+    },
+    {
+      "id": "scenario5",
+      "title": "Outdoor Laser Display",
+      "description": "A theme park operates a nighttime laser show projected over a lake with potential aviation exposure.",
+      "details": [
+        "Outdoor environment",
+        "Aviation coordination needed",
+        "Permanent installation"
+      ],
+      "correct_answer": "Z136.6 + Z136.10",
+      "explanation": "Z136.6 covers outdoor laser operations including aviation safety, and Z136.10 covers the entertainment aspect.",
+      "hints": [
+        "Outdoor operations have specific requirements",
+        "Aviation coordination is involved",
+        "Z136.6 is the outdoor-specific standard"
+      ]
+    }
+  ],
+  "feedback": {
+    "correct": {
+      "message": "Correct! You've identified the right standard for this application.",
+      "action": "show_explanation"
+    },
+    "incorrect": {
+      "message": "Not quite. Think about the specific application environment.",
+      "action": "show_hint"
+    }
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "knowledge_graph": {
+    "name": "Course 8: Entertainment Technology Standards Knowledge Graph",
+    "description": "Industry standards and regulatory framework for laser entertainment",
+    "version": "1.0",
+    "nodes": {
+      "standards": [
+        {
+          "id": "std-z136-1",
+          "type": "standard",
+          "name": "ANSI Z136.1",
+          "title": "Safe Use of Lasers",
+          "scope": "General laser safety foundation",
+          "authority": "ANSI/LIA",
+          "connections": ["std-z136-10", "std-e146", "reg-fda"]
+        },
+        {
+          "id": "std-z136-10",
+          "type": "standard",
+          "name": "ANSI Z136.10",
+          "title": "Safe Use of Lasers in Entertainment",
+          "scope": "Audience scanning applications",
+          "authority": "ANSI/LIA",
+          "connections": ["std-z136-1", "std-e146"]
+        },
+        {
+          "id": "std-e146",
+          "type": "standard",
+          "name": "ANSI E1.46",
+          "title": "Entertainment Technology - Laser Safety",
+          "scope": "Entertainment-specific laser guidance",
+          "authority": "ANSI/ESTA",
+          "connections": ["std-z136-1", "std-z136-10", "org-esta"]
+        },
+        {
+          "id": "std-iec60825",
+          "type": "standard",
+          "name": "IEC 60825-1",
+          "title": "Laser Product Safety",
+          "scope": "International laser classification",
+          "authority": "IEC",
+          "connections": ["reg-fda"]
+        },
+        {
+          "id": "std-acn",
+          "type": "standard",
+          "name": "ANSI E1.17",
+          "title": "Architecture for Control Networks (ACN)",
+          "scope": "Control protocol architecture",
+          "authority": "ANSI/ESTA",
+          "connections": ["std-e130", "org-esta"]
+        },
+        {
+          "id": "std-e130",
+          "type": "standard",
+          "name": "ANSI E1.30-11",
+          "title": "ACN Root Layer Protocol on TCP",
+          "scope": "TCP transport for ACN",
+          "authority": "ANSI/ESTA",
+          "connections": ["std-acn"]
+        }
+      ],
+      "regulations": [
+        {
+          "id": "reg-fda",
+          "type": "regulation",
+          "name": "21 CFR 1040",
+          "title": "Laser Product Performance Standard",
+          "authority": "FDA/CDRH",
+          "jurisdiction": "Federal",
+          "scope": "Laser product manufacture and sale",
+          "connections": ["std-z136-1", "std-iec60825", "proc-variance"]
+        },
+        {
+          "id": "reg-faa",
+          "type": "regulation",
+          "name": "FAA Order 7400.2",
+          "title": "Outdoor Laser Operations",
+          "authority": "FAA",
+          "jurisdiction": "Federal",
+          "scope": "Aviation safety for outdoor laser shows",
+          "connections": ["proc-notam"]
+        },
+        {
+          "id": "reg-state",
+          "type": "regulation",
+          "name": "State Radiation Control",
+          "title": "State Laser Regulations",
+          "authority": "State Agencies",
+          "jurisdiction": "State",
+          "scope": "Varies by state",
+          "connections": ["reg-fda"]
+        }
+      ],
+      "organizations": [
+        {
+          "id": "org-ansi",
+          "type": "organization",
+          "name": "ANSI",
+          "full_name": "American National Standards Institute",
+          "role": "Standards accreditation and oversight",
+          "connections": ["org-lia", "org-esta", "org-iec"]
+        },
+        {
+          "id": "org-lia",
+          "type": "organization",
+          "name": "LIA",
+          "full_name": "Laser Institute of America",
+          "role": "Secretariat for ANSI Z136 series",
+          "connections": ["org-ansi", "std-z136-1"]
+        },
+        {
+          "id": "org-esta",
+          "type": "organization",
+          "name": "ESTA",
+          "full_name": "Entertainment Services and Technology Association",
+          "role": "Develops entertainment technology standards",
+          "connections": ["org-ansi", "std-e146", "std-acn"]
+        },
+        {
+          "id": "org-fda",
+          "type": "organization",
+          "name": "FDA",
+          "full_name": "Food and Drug Administration",
+          "role": "Regulates laser product safety",
+          "connections": ["reg-fda"]
+        },
+        {
+          "id": "org-iec",
+          "type": "organization",
+          "name": "IEC",
+          "full_name": "International Electrotechnical Commission",
+          "role": "International standards development",
+          "connections": ["std-iec60825"]
+        }
+      ],
+      "concepts": [
+        {
+          "id": "concept-mpe",
+          "type": "concept",
+          "name": "Maximum Permissible Exposure",
+          "abbreviation": "MPE",
+          "definition": "Maximum laser exposure level considered safe",
+          "connections": ["std-z136-1", "calc-irradiance", "safety-hierarchy"]
+        },
+        {
+          "id": "concept-nohd",
+          "type": "concept",
+          "name": "Nominal Ocular Hazard Distance",
+          "abbreviation": "NOHD",
+          "definition": "Distance at which irradiance falls below MPE",
+          "connections": ["concept-mpe", "calc-hazard-dist"]
+        },
+        {
+          "id": "concept-class",
+          "type": "concept",
+          "name": "Laser Classification",
+          "definition": "System categorizing lasers by hazard level",
+          "connections": ["reg-fda", "std-iec60825", "class-i", "class-ii", "class-iii", "class-iv"]
+        },
+        {
+          "id": "concept-variance",
+          "type": "concept",
+          "name": "FDA Variance",
+          "definition": "Permission to deviate from performance standards",
+          "connections": ["reg-fda", "proc-variance"]
+        },
+        {
+          "id": "concept-lso",
+          "type": "concept",
+          "name": "Laser Safety Officer",
+          "abbreviation": "LSO",
+          "definition": "Person with executive responsibility for laser safety",
+          "connections": ["std-z136-1", "role-responsibilities"]
+        },
+        {
+          "id": "concept-scanfail",
+          "type": "concept",
+          "name": "Scan Failure Detection",
+          "definition": "System to auto-terminate emission upon scanner fault",
+          "connections": ["safety-engineering", "std-z136-10"]
+        },
+        {
+          "id": "concept-estop",
+          "type": "concept",
+          "name": "Emergency Stop",
+          "abbreviation": "E-stop",
+          "definition": "Manual shutdown control for emergencies",
+          "connections": ["safety-engineering", "role-operator"]
+        }
+      ],
+      "procedures": [
+        {
+          "id": "proc-variance",
+          "type": "procedure",
+          "name": "Variance Application",
+          "description": "Process to obtain FDA variance for Class IIIb/IV entertainment use",
+          "steps": ["Submit application", "Include safety documentation", "Await approval"],
+          "connections": ["reg-fda", "concept-variance"]
+        },
+        {
+          "id": "proc-notam",
+          "type": "procedure",
+          "name": "FAA Notification",
+          "description": "Process for notifying FAA of outdoor laser operations",
+          "timing": "2-4 weeks advance",
+          "connections": ["reg-faa"]
+        },
+        {
+          "id": "proc-mpe-calc",
+          "type": "procedure",
+          "name": "MPE Calculation",
+          "description": "Calculate maximum permissible exposure for exposure scenario",
+          "connections": ["concept-mpe", "calc-irradiance"]
+        }
+      ],
+      "laser_classes": [
+        {
+          "id": "class-i",
+          "type": "laser_class",
+          "name": "Class I",
+          "power_limit": "<0.39 µW",
+          "hazard": "None under normal conditions",
+          "connections": ["concept-class"]
+        },
+        {
+          "id": "class-ii",
+          "type": "laser_class",
+          "name": "Class II",
+          "power_limit": "<1 mW",
+          "hazard": "Blink reflex protection",
+          "connections": ["concept-class"]
+        },
+        {
+          "id": "class-iii",
+          "type": "laser_class",
+          "name": "Class III",
+          "subclasses": ["Class IIIa", "Class IIIb"],
+          "power_limit": "1-500 mW",
+          "hazard": "Direct exposure injurious",
+          "connections": ["concept-class", "proc-variance"]
+        },
+        {
+          "id": "class-iv",
+          "type": "laser_class",
+          "name": "Class IV",
+          "power_limit": ">500 mW",
+          "hazard": "All exposure modes hazardous",
+          "connections": ["concept-class", "proc-variance"]
+        }
+      ],
+      "roles": [
+        {
+          "id": "role-lso",
+          "type": "role",
+          "name": "Laser Safety Officer",
+          "responsibilities": ["Risk evaluation", "Safety implementation", "Emergency authority"],
+          "connections": ["concept-lso"]
+        },
+        {
+          "id": "role-operator",
+          "type": "role",
+          "name": "Laser Operator",
+          "responsibilities": ["Safe operation", "Equipment monitoring", "E-stop access"],
+          "connections": ["concept-estop", "safety-procedures"]
+        },
+        {
+          "id": "role-lsa",
+          "type": "role",
+          "name": "Laser Safety Adviser",
+          "responsibilities": ["Advisory consultation", "Risk assessment assistance"],
+          "limitations": "No executive authority",
+          "connections": ["concept-lso"]
+        }
+      ]
+    },
+    "edges": [
+      {"source": "std-z136-1", "target": "std-z136-10", "type": "supplements"},
+      {"source": "std-z136-1", "target": "std-e146", "type": "referenced_by"},
+      {"source": "std-e146", "target": "org-esta", "type": "developed_by"},
+      {"source": "reg-fda", "target": "concept-class", "type": "defines"},
+      {"source": "concept-mpe", "target": "concept-nohd", "type": "used_in"},
+      {"source": "proc-variance", "target": "class-iii", "type": "required_for"},
+      {"source": "proc-variance", "target": "class-iv", "type": "required_for"},
+      {"source": "org-ansi", "target": "org-lia", "type": "accredits"},
+      {"source": "org-ansi", "target": "org-esta", "type": "accredits"},
+      {"source": "role-lso", "target": "concept-lso", "type": "embodies"},
+      {"source": "concept-scanfail", "target": "safety-engineering", "type": "category"}
+    ],
+    "metadata": {
+      "total_nodes": 35,
+      "total_edges": 11,
+      "categories": ["standards", "regulations", "organizations", "concepts", "procedures", "laser_classes", "roles"],
+      "generated_by": "PDF Elite Processor Agent #19",
+      "timestamp": "2026-03-19T15:46:00Z"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "page_num": 7,
+  "source_pdf": "skin-hazards.pdf",
+  "digestion": {
+    "summary": "3. ENVIRONMENTAL FACTORS:\n\nAmbient Temperature:\n- High heat: Vasodilation increases heat dissipation\n- Cold: Vasoconstriction may reduce heat dissipation\n\nAir Movement:\n- Convective cooling can reduce...",
+    "key_concepts": [
+      "thermal relaxation",
+      "beam spot size",
+      "photosensitization"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "3. ENVIRONMENTAL FACTORS:\n\nAmbient Temperature:\n- High heat: Vasodilation increases heat dissipation\n- Cold: Vasoconstriction may reduce heat dissipation\n\nAir Movement:\n- Convective cooling can reduce thermal damage\n\nHumidity:\n- Affects evaporative cooling\n\n4. EXPOSURE PARAMETERS:\n\nBeam Spot Size:\n- Smaller spot: Less heat dissipation, higher peak temperature\n- Larger spot: Better heat dissipation, lower peak temperature\n\nPulse Duration:\n- Short pulses: Photoacoustic effects dominant\n- Long pulses/continuous: Thermal effects dominant\n\nRepetition Rate:\n- High PRF: Cumulative heating\n- Low PRF: Thermal relaxation between pulses\n\n5. INDIVIDUAL FACTORS:\n- Age: Skin thickness and repair capacity vary\n- Medications: Photosensitizing drugs\n- Previous UV damage: Compromised skin integrity\n- Hydration status: Affects thermal tolerance\n",
+    "analogies": [
+      "Laser skin burns are similar to thermal burns but can be more precisely localized."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Use protective gloves and long sleeves when operating high-power lasers.",
+      "UV laser exposure has cumulative effects similar to sun damage - use full coverage PPE."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.122650"
+}

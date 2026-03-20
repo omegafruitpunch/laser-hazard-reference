@@ -1,0 +1,163 @@
+{
+  "quiz_id": "module_3.6_quiz",
+  "module_id": "3.6",
+  "title": "Protective Eyewear Selection Assessment",
+  "description": "Test your ability to calculate OD requirements and select appropriate laser protective eyewear",
+  "version": "1.0.0",
+  "config": {
+    "randomize_questions": true,
+    "randomize_options": true,
+    "show_feedback_immediately": true,
+    "passing_score": 80,
+    "time_limit_minutes": 40,
+    "attempts_allowed": 3,
+    "calculator_allowed": true
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "blooms_level": "Knowledge",
+      "question": "What does OD stand for in laser safety?",
+      "options": [
+        {"id": "a", "text": "Optical Diameter", "correct": false},
+        {"id": "b", "text": "Optical Density", "correct": true},
+        {"id": "c", "text": "Ocular Distance", "correct": false},
+        {"id": "d", "text": "Output Divergence", "correct": false}
+      ],
+      "correct_feedback": "Correct! OD stands for Optical Density, which measures how much a filter attenuates laser light.",
+      "incorrect_feedback": "Incorrect. OD stands for Optical Density - it measures the attenuation of light passing through a filter."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "blooms_level": "Comprehension",
+      "question": "If OD = 3, what percentage of light is transmitted through the filter?",
+      "options": [
+        {"id": "a", "text": "30%", "correct": false},
+        {"id": "b", "text": "3%", "correct": false},
+        {"id": "c", "text": "0.3%", "correct": false},
+        {"id": "d", "text": "0.1%", "correct": true}
+      ],
+      "correct_feedback": "Correct! OD 3 means transmission = 10^-3 = 0.001 = 0.1%.",
+      "incorrect_feedback": "Incorrect. Transmission = 10^(-OD). For OD 3: 10^-3 = 0.001 = 0.1%."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "difficulty": "medium",
+      "blooms_level": "Application",
+      "question": "Calculate the required OD for a laser exposure where E_actual = 1000 mW/cm² and MPE = 1 mW/cm².",
+      "formula": "OD = log₁₀(E_actual / MPE)",
+      "correct_answer": 3,
+      "tolerance": 0.1,
+      "unit": "dimensionless",
+      "correct_feedback": "Correct! OD = log₁₀(1000/1) = log₁₀(1000) = 3.",
+      "incorrect_feedback": "Use OD = log₁₀(1000/1) = log₁₀(1000). Remember that log₁₀(1000) = 3."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "difficulty": "medium",
+      "blooms_level": "Application",
+      "question": "A 500 mW, 532 nm laser has a beam diameter of 2 mm at the eye. Calculate the irradiance.",
+      "formula": "E = Power / Area, Area = π × (d/2)²",
+      "hint": "Convert mm to cm before calculating area.",
+      "correct_answer": 15915,
+      "tolerance": 500,
+      "unit": "mW/cm²",
+      "correct_feedback": "Correct! Area = π × (0.1 cm)² = 0.0314 cm². E = 500 / 0.0314 = 15,915 mW/cm².",
+      "incorrect_feedback": "Convert diameter: 2 mm = 0.2 cm, radius = 0.1 cm. Area = π × (0.1)² = 0.0314 cm². Then E = 500/0.0314."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Analysis",
+      "question": "A laser safety officer calculates required OD = 4.2. What OD eyewear should be selected?",
+      "options": [
+        {"id": "a", "text": "OD 4", "correct": false},
+        {"id": "b", "text": "OD 4.2", "correct": false},
+        {"id": "c", "text": "OD 5", "correct": true},
+        {"id": "d", "text": "OD 6", "correct": false}
+      ],
+      "correct_feedback": "Correct! Always round UP to the next integer OD for safety margin. OD 4.2 → OD 5.",
+      "incorrect_feedback": "Incorrect. Always round UP to the next standard OD level to provide safety margin. OD 4.2 rounds up to OD 5."
+    },
+    {
+      "id": "q6",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Comprehension",
+      "question": "Which statement about eyewear VLT (Visible Light Transmission) is TRUE?",
+      "options": [
+        {"id": "a", "text": "Higher VLT always means better protection", "correct": false},
+        {"id": "b", "text": "VLT and OD are inversely related", "correct": true},
+        {"id": "c", "text": "VLT is independent of wavelength", "correct": false},
+        {"id": "d", "text": "VLT must be above 50% for safety", "correct": false}
+      ],
+      "correct_feedback": "Correct! As OD increases, VLT decreases. Higher protection means less visible light transmission.",
+      "incorrect_feedback": "Incorrect. VLT (Visible Light Transmission) and OD are inversely related - higher OD means lower VLT."
+    },
+    {
+      "id": "q7",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "blooms_level": "Application",
+      "question": "For alignment tasks where the user needs to see the beam spot, what type of eyewear is most appropriate?",
+      "options": [
+        {"id": "a", "text": "Full protection with OD 7+", "correct": false},
+        {"id": "b", "text": "Alignment eyewear with OD 2-4", "correct": true},
+        {"id": "c", "text": "No eyewear needed for alignment", "correct": false},
+        {"id": "d", "text": "Prescription glasses only", "correct": false}
+      ],
+      "correct_feedback": "Correct! Alignment eyewear with lower OD (2-4) allows visibility of the beam while providing protection for the alignment task.",
+      "incorrect_feedback": "Incorrect. Alignment eyewear with lower OD (2-4) is specifically designed for tasks requiring beam visibility."
+    },
+    {
+      "id": "q8",
+      "type": "calculation",
+      "difficulty": "hard",
+      "blooms_level": "Application",
+      "question": "Calculate the required OD for a 10 W, 1064 nm Nd:YAG laser with 5 mm beam diameter at the eye (0.25 s exposure). Assume CA = 5.0 for 1064 nm.",
+      "hint": "MPE = 5 × 2.56 mW/cm² = 12.8 mW/cm². Calculate irradiance, then ratio, then OD.",
+      "correct_answer": 4.7,
+      "tolerance": 0.3,
+      "unit": "dimensionless",
+      "correct_feedback": "Correct! E = 10,000/(π×0.25²) = 50,930 mW/cm². MPE = 12.8 mW/cm². Ratio = 3,979. OD = log₁₀(3,979) = 3.6 → round to 4.",
+      "incorrect_feedback": "Calculate irradiance: 10,000 mW / (π × 0.25² cm²) = 50,930 mW/cm². MPE with CA=5: 5 × 2.56 = 12.8 mW/cm². Ratio = 3,979. OD = log(3,979) ≈ 3.6 → OD 4."
+    },
+    {
+      "id": "q9",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Synthesis",
+      "question": "A lab has both 532 nm and 1064 nm lasers. Which eyewear strategy is generally NOT recommended?",
+      "options": [
+        {"id": "a", "text": "Two separate pairs of narrowband eyewear", "correct": false},
+        {"id": "b", "text": "One pair of dual-wavelength eyewear", "correct": false},
+        {"id": "c", "text": "532 nm eyewear only (since it has lower MPE)", "correct": true},
+        {"id": "d", "text": "Broadband eyewear covering both wavelengths", "correct": false}
+      ],
+      "correct_feedback": "Correct! Using 532 nm eyewear only would leave eyes unprotected at 1064 nm - a dangerous practice.",
+      "incorrect_feedback": "Incorrect. Using only 532 nm eyewear would not protect against 1064 nm radiation, creating a serious hazard."
+    },
+    {
+      "id": "q10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "blooms_level": "Evaluation",
+      "question": "An eyewear specification shows 'D LB7' marking. What does this indicate?",
+      "options": [
+        {"id": "a", "text": "OD 7 for pulsed lasers", "correct": false},
+        {"id": "b", "text": "OD 7 for continuous wave lasers with large beam diameter", "correct": true},
+        {"id": "c", "text": "OD 7 for Q-switched lasers", "correct": false},
+        {"id": "d", "text": "Damage threshold of 7 W/cm²", "correct": false}
+      ],
+      "correct_feedback": "Correct! 'D' indicates continuous wave testing, 'LB' indicates large beam, '7' is the OD rating.",
+      "incorrect_feedback": "Incorrect. Per EN 207: 'D' = continuous wave (>0.5s), 'LB' = large beam test condition, '7' = OD 7+."
+    }
+  ]
+}

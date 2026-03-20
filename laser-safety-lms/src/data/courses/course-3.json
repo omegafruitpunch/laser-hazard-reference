@@ -1,0 +1,29 @@
+{
+  "id": "course-3",
+  "title": "Biological Hazards & Classification",
+  "description": "Understand how laser radiation interacts with human tissue, IEC 60825 international standards, and biological safety thresholds. Deep dive into ocular and skin hazards, MPE calculations, and protective eyewear selection.",
+  "duration": 75,
+  "difficulty": "advanced",
+  "category": "Safety Science",
+  "modules": [
+    "module-3-1",
+    "module-3-2",
+    "module-3-3",
+    "module-3-4",
+    "module-3-5"
+  ],
+  "prerequisites": ["course-1"],
+  "certifications": ["CLSO", "Biological Safety Specialist"],
+  "learningObjectives": [
+    "Understand ocular anatomy and wavelength-specific hazards",
+    "Analyze skin hazards and thermal injury thresholds",
+    "Apply IEC 60825-1 classification requirements",
+    "Use MPE tables for eye and skin exposure calculations",
+    "Select appropriate protective eyewear based on optical density requirements"
+  ],
+  "thumbnail": "/images/courses/course-3.jpg",
+  "icon": "🧬",
+  "coverColor": "from-green-700 to-emerald-500",
+  "createdAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-01-01T00:00:00Z"
+}

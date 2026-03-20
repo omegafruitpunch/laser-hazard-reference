@@ -1,0 +1,31 @@
+{
+  "page_num": 3,
+  "source_pdf": "skin-hazards.pdf",
+  "digestion": {
+    "summary": "ULTRAVIOLET (UV) SKIN HAZARDS\n\nUV-A (315-400 nm):\n- Penetrates to dermis\n- Contributes to photoaging\n- Minimal erythema (redness)\n- Photosensitization with certain medications\n- Cumulative effects ove...",
+    "key_concepts": [
+      "UV-A",
+      "UV-B",
+      "UV-C",
+      "erythema",
+      "photoaging"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "ULTRAVIOLET (UV) SKIN HAZARDS\n\nUV-A (315-400 nm):\n- Penetrates to dermis\n- Contributes to photoaging\n- Minimal erythema (redness)\n- Photosensitization with certain medications\n- Cumulative effects over time\n\nUV-B (280-315 nm):\n- Partially absorbed by epidermis\n- Causes sunburn (erythema)\n- Tanning response\n- DNA damage\n- Skin cancer risk with chronic exposure\n\nUV-C (100-280 nm):\n- Strongly absorbed by stratum corneum\n- High photon energy\n- Used for sterilization\n- Photokeratitis risk (eyes)\n- Can cause severe surface burns\n\nACUTE UV EXPOSURE EFFECTS:\n- Erythema (redness) - delayed 2-24 hours\n- Edema (swelling)\n- Pain and tenderness\n- Blistering (severe exposure)\n- Desquamation (peeling)\n\nCHRONIC UV EXPOSURE EFFECTS:\n- Photoaging (wrinkles, solar elastosis)\n- Actinic keratosis (precancerous)\n- Skin cancer (basal cell, squamous cell, melanoma)\n- Immunosuppression\n",
+    "analogies": [
+      "The eye's focusing capability is like a magnifying glass concentrating sunlight - it amplifies laser power by 100,000x at the retina.",
+      "Laser skin burns are similar to thermal burns but can be more precisely localized."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Always wear appropriate laser eyewear when working with Class 3B or Class 4 lasers.",
+      "Use protective gloves and long sleeves when operating high-power lasers.",
+      "UV laser exposure has cumulative effects similar to sun damage - use full coverage PPE."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.122103"
+}

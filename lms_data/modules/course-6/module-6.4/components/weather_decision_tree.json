@@ -1,0 +1,445 @@
+{
+  "component_id": "weather_decision_tree",
+  "name": "Weather Protocol Decision Tree",
+  "type": "decision_tree",
+  "description": "Interactive decision tree for weather-related go/no-go decisions",
+  "version": "1.0.0",
+  "scenarios": [
+    {
+      "id": "scenario_1",
+      "name": "Wind Speed Evaluation",
+      "description": "Evaluate wind conditions and make appropriate decisions",
+      "initial_state": {
+        "wind_speed_mph": 28,
+        "wind_gusts_mph": 35,
+        "trend": "increasing"
+      },
+      "decision_tree": {
+        "root": {
+          "id": "wind_check",
+          "question": "What is the current sustained wind speed?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "below_15",
+              "label": "Below 15 mph",
+              "next": "proceed_normal"
+            },
+            {
+              "value": "15_to_25",
+              "label": "15-25 mph",
+              "next": "monitor_wind"
+            },
+            {
+              "value": "above_25",
+              "label": "Above 25 mph",
+              "next": "evaluate_gusts"
+            }
+          ]
+        },
+        "proceed_normal": {
+          "id": "proceed_normal",
+          "result": "PROCEED",
+          "message": "Wind conditions acceptable. Proceed with normal operations.",
+          "actions": ["Continue monitoring", "Brief observers on weather watch"]
+        },
+        "monitor_wind": {
+          "id": "monitor_wind",
+          "question": "Is the wind trending upward or stable?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable or decreasing",
+              "next": "proceed_caution"
+            },
+            {
+              "value": "increasing",
+              "label": "Increasing",
+              "next": "evaluate_trend"
+            }
+          ]
+        },
+        "proceed_caution": {
+          "id": "proceed_caution",
+          "result": "PROCEED_WITH_CAUTION",
+          "message": "Proceed with increased weather monitoring.",
+          "actions": [
+            "Increase weather check frequency to every 15 minutes",
+            "Verify equipment is secured against wind",
+            "Brief crew on potential shutdown criteria"
+          ]
+        },
+        "evaluate_trend": {
+          "id": "evaluate_trend",
+          "question": "What is the forecast for the next 2 hours?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "improving",
+              "label": "Improving conditions",
+              "next": "delay_decision"
+            },
+            {
+              "value": "deteriorating",
+              "label": "Deteriorating conditions",
+              "next": "prepare_shutdown"
+            }
+          ]
+        },
+        "delay_decision": {
+          "id": "delay_decision",
+          "result": "DELAY",
+          "message": "Consider delaying start to allow conditions to improve.",
+          "actions": [
+            "Monitor for 30 minutes",
+            "Contact meteorologist for update",
+            "Prepare audience communication"
+          ]
+        },
+        "evaluate_gusts": {
+          "id": "evaluate_gusts",
+          "question": "What are the wind gust speeds?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "gusts_below_35",
+              "label": "Gusts below 35 mph",
+              "next": "structural_check"
+            },
+            {
+              "value": "gusts_above_35",
+              "label": "Gusts above 35 mph",
+              "next": "immediate_shutdown"
+            }
+          ]
+        },
+        "structural_check": {
+          "id": "structural_check",
+          "question": "Can all structures and equipment withstand current winds?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes, structures are secure",
+              "next": "beam_stability"
+            },
+            {
+              "value": "no",
+              "label": "No, concerns exist",
+              "next": "immediate_shutdown"
+            }
+          ]
+        },
+        "beam_stability": {
+          "id": "beam_stability",
+          "question": "Will atmospheric turbulence affect beam safety?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "no",
+              "label": "No, beams will remain stable",
+              "next": "reduced_power"
+            },
+            {
+              "value": "yes",
+              "label": "Yes, turbulence may scatter beams",
+              "next": "immediate_shutdown"
+            }
+          ]
+        },
+        "reduced_power": {
+          "id": "reduced_power",
+          "result": "PROCEED_REDUCED_POWER",
+          "message": "May proceed with reduced power and increased monitoring.",
+          "actions": [
+            "Reduce maximum beam powers by 50%",
+            "Restrict beam angles to lower elevations",
+            "Continuous weather monitoring",
+            "Prepare for immediate shutdown"
+          ]
+        },
+        "prepare_shutdown": {
+          "id": "prepare_shutdown",
+          "result": "PREPARE_SHUTDOWN",
+          "message": "Conditions will worsen. Begin orderly shutdown preparation.",
+          "actions": [
+            "Notify all personnel of likely shutdown",
+            "Secure non-essential equipment",
+            "Prepare audience communication",
+            "Monitor for shutdown trigger"
+          ]
+        },
+        "immediate_shutdown": {
+          "id": "immediate_shutdown",
+          "result": "IMMEDIATE_SHUTDOWN",
+          "message": "Wind conditions exceed safe limits. Immediate shutdown required.",
+          "actions": [
+            "Activate emergency stop",
+            "Secure all equipment",
+            "Evacuate if structures at risk",
+            "Document decision rationale"
+          ]
+        }
+      }
+    },
+    {
+      "id": "scenario_2",
+      "name": "Lightning Risk Evaluation",
+      "description": "Evaluate lightning risk and make appropriate decisions",
+      "initial_state": {
+        "lightning_distance_miles": 8,
+        "approaching": true
+      },
+      "decision_tree": {
+        "root": {
+          "id": "lightning_check",
+          "question": "How far away is the nearest lightning activity?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "none",
+              "label": "No lightning within 50 miles",
+              "next": "lightning_clear"
+            },
+            {
+              "value": "10_to_50",
+              "label": "10-50 miles away",
+              "next": "monitor_lightning"
+            },
+            {
+              "value": "within_10",
+              "label": "Within 10 miles",
+              "next": "immediate_shutdown_lightning"
+            }
+          ]
+        },
+        "lightning_clear": {
+          "id": "lightning_clear",
+          "result": "PROCEED",
+          "message": "No lightning risk. Normal operations.",
+          "actions": ["Continue standard monitoring"]
+        },
+        "monitor_lightning": {
+          "id": "monitor_lightning",
+          "question": "Is the lightning approaching or moving away?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "approaching",
+              "label": "Approaching",
+              "next": "evaluate_speed"
+            },
+            {
+              "value": "moving_away",
+              "label": "Moving away",
+              "next": "continue_monitor"
+            },
+            {
+              "value": "stationary",
+              "label": "Stationary",
+              "next": "continue_monitor"
+            }
+          ]
+        },
+        "continue_monitor": {
+          "id": "continue_monitor",
+          "result": "PROCEED_WITH_CAUTION",
+          "message": "Monitor lightning conditions closely.",
+          "actions": [
+            "Check weather radar every 10 minutes",
+            "Have shutdown plan ready",
+            "Brief all personnel"
+          ]
+        },
+        "evaluate_speed": {
+          "id": "evaluate_speed",
+          "question": "At current speed, when will lightning reach 10-mile perimeter?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "more_than_30_min",
+              "label": "More than 30 minutes",
+              "next": "continue_monitor"
+            },
+            {
+              "value": "less_than_30_min",
+              "label": "Less than 30 minutes",
+              "next": "prepare_shutdown_lightning"
+            }
+          ]
+        },
+        "prepare_shutdown_lightning": {
+          "id": "prepare_shutdown_lightning",
+          "result": "PREPARE_SHUTDOWN",
+          "message": "Lightning approaching. Prepare for shutdown.",
+          "actions": [
+            "Alert all personnel",
+            "Prepare orderly shutdown",
+            "When lightning within 10 miles: immediate shutdown"
+          ]
+        },
+        "immediate_shutdown_lightning": {
+          "id": "immediate_shutdown_lightning",
+          "result": "IMMEDIATE_SHUTDOWN",
+          "message": "Lightning within 10 miles. Immediate shutdown and evacuation.",
+          "actions": [
+            "Shut down all equipment",
+            "Evacuate outdoor areas",
+            "Seek shelter in buildings or vehicles",
+            "Wait 30 minutes after last thunder"
+          ]
+        }
+      }
+    },
+    {
+      "id": "scenario_3",
+      "name": "Visibility Assessment",
+      "description": "Evaluate visibility conditions for safe operations",
+      "decision_tree": {
+        "root": {
+          "id": "visibility_check",
+          "question": "What is the current visibility?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "above_6",
+              "label": "Above 6 miles",
+              "next": "visibility_ok"
+            },
+            {
+              "value": "3_to_6",
+              "label": "3-6 miles",
+              "next": "evaluate_cause"
+            },
+            {
+              "value": "below_3",
+              "label": "Below 3 miles",
+              "next": "shutdown_visibility"
+            }
+          ]
+        },
+        "visibility_ok": {
+          "id": "visibility_ok",
+          "result": "PROCEED",
+          "message": "Visibility adequate for operations.",
+          "actions": ["Continue monitoring"]
+        },
+        "evaluate_cause": {
+          "id": "evaluate_cause",
+          "question": "What is causing reduced visibility?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "haze",
+              "label": "Haze/distant fog",
+              "next": "haze_assessment"
+            },
+            {
+              "value": "precip",
+              "label": "Precipitation",
+              "next": "evaluate_precip"
+            },
+            {
+              "value": "fog",
+              "label": "Local fog",
+              "next": "shutdown_visibility"
+            }
+          ]
+        },
+        "haze_assessment": {
+          "id": "haze_assessment",
+          "question": "Is visibility stable or decreasing?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "stable",
+              "label": "Stable or improving",
+              "next": "proceed_with_monitoring"
+            },
+            {
+              "value": "decreasing",
+              "label": "Decreasing",
+              "next": "prepare_shutdown"
+            }
+          ]
+        },
+        "proceed_with_monitoring": {
+          "id": "proceed_with_monitoring",
+          "result": "PROCEED_WITH_CAUTION",
+          "message": "May proceed with enhanced aircraft detection measures.",
+          "actions": [
+            "Increase observer vigilance",
+            "Use binoculars if available",
+            "Listen for aircraft sounds",
+            "Monitor visibility every 10 minutes"
+          ]
+        },
+        "evaluate_precip": {
+          "id": "evaluate_precip",
+          "question": "What type of precipitation?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "light_rain",
+              "label": "Light rain",
+              "next": "equipment_check_precip"
+            },
+            {
+              "value": "heavy_rain",
+              "label": "Heavy rain",
+              "next": "shutdown_visibility"
+            },
+            {
+              "value": "snow",
+              "label": "Any snow",
+              "next": "shutdown_visibility"
+            }
+          ]
+        },
+        "equipment_check_precip": {
+          "id": "equipment_check_precip",
+          "question": "Is equipment weather-resistant and properly protected?",
+          "type": "multiple_choice",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes, properly protected",
+              "next": "proceed_with_monitoring"
+            },
+            {
+              "value": "no",
+              "label": "No, at risk",
+              "next": "shutdown_visibility"
+            }
+          ]
+        },
+        "shutdown_visibility": {
+          "id": "shutdown_visibility",
+          "result": "IMMEDIATE_SHUTDOWN",
+          "message": "Visibility below safe minimum. Immediate shutdown required.",
+          "actions": [
+            "Shut down all laser operations",
+            "Protect equipment from weather",
+            "Wait for visibility to improve above 3 miles",
+            "Reassess before restarting"
+          ]
+        }
+      }
+    }
+  ],
+  "weather_limits": {
+    "wind_sustained_max_mph": 25,
+    "wind_gusts_max_mph": 35,
+    "visibility_min_miles": 3,
+    "lightning_distance_min_miles": 10,
+    "temperature_min_f": -10,
+    "temperature_max_f": 110
+  },
+  "features": {
+    "real_time_weather_integration": true,
+    "decision_logging": true,
+    "stakeholder_notification": true,
+    "weather_radar_embed": true
+  }
+}

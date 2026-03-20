@@ -1,0 +1,1786 @@
+PDF: ansi-e146.pdf
+Total Pages: 34
+================================================================================
+
+--- Page 1 ---
+Words: 0, Images: 1
+
+
+
+================================================================================
+
+--- Page 2 ---
+Words: 32, Images: 1
+
+HHS Publication FDA 86-8262 
+June 1980 
+Revised May 1986 
+U.S. Department of Health and Human Services 
+Public Health Service 
+Food and Drug Administration 
+Center for Devices and Radiological Health 
+Rockville, Maryland 20857 
+
+
+================================================================================
+
+--- Page 3 ---
+Words: 206, Images: 1
+
+CONTENTS 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . .  
+CHAPTERl: BACKGROUND 
+5 
+A Word About Radiation and Laser Light 
+Lasers-A Special Kind of Light 
+Laser Hazards 
+. . . . . . . . . . . . . .  
+CHAPTER 2: GOVERNMENT REQUIREMENTS 
+.17 
+FDA's Regulatory Standard for Lasers 
+What the FDA Standard means for Laser Light Shows 
+Open Air Lasers and the Federal Aviation 
+Administration Requirements 
+State and Local Requirements for Laser Light Shows 
+. . . . . . . . . . . . . .  
+CHAPTER 3: INDIVIDUAL RESPONSIBILITIES 
+.22 
+Responsibilities of Laser Manufacturers and Operators 
+Responsibilities of Facility Managers Where Laser Shows 
+are Held 
+What the Public Should Know About Laser Safety 
+. . . . . . . . . . . . . . . . . . . . . . . . .  
+APPENDIX I-How 
+Lasers Work 
+.26 
+. . . . . . . . . . . . . . . . . . .  
+APPEN DlX I I-Addresses of FAA Offices 
+.30 
+APPENDIX ill-Addresses of State Radiation Control Offices . . .  .32 
+
+
+================================================================================
+
+--- Page 4 ---
+Words: 347, Images: 1
+
+INTRODUCTION 
+L 
+aser light is one of the 
+most exciting visual phe- 
+nomena to illuminate the en- 
+tertainment scene in recent 
+years. Laser light shows have 
+been used to complement the 
+music of such diverse groups 
+as the Philadelphia Orchestra 
+and rock groups like KISS, 
+WINGS, and the Electric Light 
+Orchestra. Lasers are becom- 
+ing routine features of plane- 
+tari ums, discotheques, confer- 
+ences, amusement parks, state 
+fairs, and even shopping 
+malls. 
+As beautiful as they can be, 
+high power laser beams can 
+be dangerous if they are not 
+used with a serious concern 
+for safety. Accidental exposure 
+to a high power laser beam 
+can cause permanent eye dam- 
+age and severe skin burns. With 
+laser shows that are designed 
+andlor operated by competent 
+and conscientious people, the 
+chance of such accidents is 
+negligible. Unfortunately, 
+however, several light shows 
+have been operated in a 
+haphazard and hazardous man- 
+ner. 
+The Food and Drug Admin- 
+istration is the Federal agency 
+responsible for protecting the 
+public from radiation hazards 
+from electronic products, in- 
+cluding lasers. FDA's authority 
+includes regulating the manufac- 
+ture and assembly of lasers, re- 
+quiring corrective action for 
+those that do not comply with 
+the safety regulations and 
+educating people about laser 
+safety. Several State radiation 
+agencies are also active in the 
+control of laser products and 
+their use. 
+The laser products that are in 
+compliance with the laser stan- 
+dard have certain safety features 
+to reduce the chance of ac- 
+cidents. But such efforts cannot 
+ensure absolute safety. It is up to 
+the laser operator and other 
+responsible parties to see that 
+the laser is used in a safe man- 
+ner. 
+We hope this booklet will help 
+those who sponsor, arrange for, 
+set up, insure or are otherwise 
+involved with light shows, to 
+carry out their part in laser safe- 
+ty. The booklet assumes no 
+technical background. It 
+describes the possible hazards, 
+government requirements and 
+individual responsibilities in laser 
+light shows. The relevant gov- 
+ernment offices are included so 
+people can get more information 
+on their responsibilities and other 
+aspects of laser light show safety. 
+
+
+================================================================================
+
+--- Page 5 ---
+Words: 20, Images: 1
+
+SPECTRUM OF RADIATIONS 
+U LTRA- 
+INFRA 
+MICRO 
+FMITV 
+X RAYS 
+VIOLET 
+RED 
+WAVES 
+WAVES 
+VISIBLE LIGHT 
+BLUE 
+GREEN 
+YELLOW 
+RED 
+
+
+================================================================================
+
+--- Page 6 ---
+Words: 177, Images: 1
+
+Chapter I 
+A W O R D  ABOUT RADIATION A N D  LASER LIGHT 
+T 
+he fact that lasers give off radiation 
+may be a surprise to some. Let's 
+clarify this point right away. 
+short waves are 
+effects of the various types of radiations. 
+So, although laser light is part of this 
+family of radiations, it should not be con- 
+fused with the others. For example, un- 
+like x rays or radioactivity, visible light 
+radiation has not been associated with 
+causing cancer or genetic damage. 
+Light radiation falls on the spectrum of 
+radiations ranging from ultraviolet 
+through infrared (or heat). Within this 
+range, only a small band of wavelengths 
+is visible to the human eye. Each color 
+that we see is actually light radiation of a 
+particular wave1,ength. Visible light spans 
+from violet, with short waves, to red, 
+with longer waves. Lasers generally give 
+off visible or optical radiation; some 
+lasers can also give off radiation in the 
+ultraviolet or infrared ranges that we 
+can't see. Of course, lasers used in light 
+shows give off visible radiation. 
+
+
+================================================================================
+
+--- Page 7 ---
+Words: 192, Images: 1
+
+E 
+ssentially, the laser light 
+that creates such spectacular 
+and exotic effects, is the same 
+radiation that comes from an or- 
+dinary light bulb ... but it has 
+some important differences. Laser 
+light can have the purest and 
+brightest of colors. And it can be 
+thousands of times more intense 
+than the light by which we read. 
+The light from a light bulb 
+radiates in all directions. If you 
+were able to separate and trace 
+the waves of light, you'd see a 
+jumble of different wavelengths, 
+and directions. In the light from a 
+light bulb all the colors of the 
+spectrum (i.e., the various 
+wavelengths) are present and add 
+to each other so that the light ap- 
+pears white. 
+Because the light from a light 
+bulb spreads out, its power falls 
+off or decreases as you move far- 
+ther away. This is because of a 
+property called "divergence." 
+Think of a flashlight, whose light 
+beam spreads out as you move 
+farther away from it. This 
+divergence or spreading out of 
+the beam means that the power 
+of the light is spread over an in- 
+creasingly larger area as you 
+move farther away. 
+
+
+================================================================================
+
+--- Page 8 ---
+Words: 181, Images: 1
+
+A Special Kind of Light 
+Laser light is quite different. All 
+the light waves in a laser beam 
+can have the same wavelength. 
+Furthermore, they are in phase 
+with each other. They travel in 
+locked-step or synchronized pat- 
+terns. This unique property of 
+laser light is called "coherence." 
+Again, color depends upon the 
+wavelength. Since a laser beam is 
+composed of light of the same 
+wavelength, it has an extraor- 
+dinarily pure color. 
+And, most important, unlike the 
+flashlight, a laser beam does not 
+diverge or spread out very much. 
+The laser light can travel in a very 
+narrow beam even over long dis- 
+tances. Because of this, its power 
+can be extremely concentrated. In 
+fact, some lasers can produce a 
+beam of light that, even miles 
+away, can be thousands of times 
+brighter than the sun's surface ap- 
+pears from earth. The fact that a 
+laser beam can retain such high 
+power, even over long distances, 
+partly accounts for its use in light 
+shows and many other applica- 
+tions. But this same fact also ac- 
+counts for its potential hazard. 
+
+
+================================================================================
+
+--- Page 9 ---
+Words: 104, Images: 1
+
+A laser beam loses very little power 
+when it is reflected off a smooth, shiny 
+surface. When the light from a light bulb 
+is reflected off a mirror, it continues to 
+diverge and spread its energy over even 
+larger areas. When a laser beam is 
+reflected off a mirror or other smooth, 
+shiny surfaces, such as water, glass, metal 
+beams or a glossy floor, it still does not 
+diverge very much. So a reflected laser 
+beam can have almost the same power 
+and potentially the same hazard as a 
+direct laser beam. 
+Ordinary light 
+reflects off a mirror 
+and its beam continues to diverge. 
+
+
+================================================================================
+
+--- Page 10 ---
+Words: 13, Images: 1
+
+Laser light reflects 
+off a mirror and still 
+does not diverge very much 
+
+
+================================================================================
+
+--- Page 11 ---
+Words: 116, Images: 1
+
+Mirror balls are frequently used in light 
+shows to separate and reflect the laser 
+beam into many rays of laser light. When 
+done properly, this can significantly 
+reduce the power and, therefore, the 
+potential hazard of a laser beam. If the 
+beam is reflected off enough facets on 
+the mirror ball, the resulting rays will go 
+off in many directions. Although the 
+individual rays still do not diverge very 
+much, each has only a fraction of the 
+power in the direct beam. Obviously, the 
+degree of safety that this can produce 
+depends upon the power of the direct 
+laser beam, and the number of rays and 
+directions into which the beam is split. 
+No scanning 
+device 
+
+
+================================================================================
+
+--- Page 12 ---
+Words: 129, Images: 1
+
+The more rays into which the beam is 
+split, the smaller the fraction of power 
+each reflected ray will have. A scanning 
+device is usually used to sweep the beam 
+back and forth across a broad section of 
+the mirror ball so that the beam is broken 
+up by several facets on the ball. Rotating 
+the mirror ball can provide even more 
+safety because the movement of the re- 
+flected rays reduces any exposure time. 
+Without a scanning device, or without a 
+properly designed scanning system, the 
+beam is broken by the mirror ball into 
+fewer rays, each having a larger fraction 
+of the power in the direct beam. This 
+means that even with a mirror ball there 
+could still be a potential for harm. 
+Scanning 
+device 
+built in 
+
+
+================================================================================
+
+--- Page 13 ---
+Words: 93, Images: 1
+
+If a laser beam is reflected off a 
+rough or irregular surface, like a 
+concrete wall or even some 
+"walls" of smoke, the irregulari- 
+ties in the surface scatter the 
+beam in many different directions. 
+The beam is forced to diverge and 
+therefore lose some of its power. 
+However, a very high powered 
+laser beam can still retain enough 
+of its intensity after reflecting off a 
+rough or irregular surface to cause 
+injury. In addition, some rough 
+surfaces may have shiny spots that 
+allow for a mirror-like reflection 
+of part of the beam. 
+
+
+================================================================================
+
+--- Page 14 ---
+Words: 0, Images: 1
+
+
+
+================================================================================
+
+--- Page 15 ---
+Words: 99, Images: 1
+
+L&ER 
+HAZARDS 
+T 
+he high powered lasers that 
+are increasingly used in 
+laser shows can produce 
+enough light radiation to cause 
+permanent eye damage as well 
+as severe skin burns. Should 
+any accidental direct exposure 
+occur, there is a high chance of 
+injury to the individual. 
+The lens and cornea of the 
+eye concentrate light and focus 
+it on the retina. In a sense, the 
+eye acts like a magnifying lens 
+to concentrate the light. The 
+retina translates the light into 
+nerve impulses that travel 
+through the optic nerve to the 
+brain, where an image is 
+Optic Nerve, 
+EYE 
+
+
+================================================================================
+
+--- Page 16 ---
+Words: 382, Images: 1
+
+perceived. If a laser beam 
+enters the pupil of the eye, its 
+power is concentrated by the 
+lens into a smaller area, 
+resulting in more light and heat 
+per unit area. The intensity of 
+the laser beam can actually be 
+increased by 10,000 times or 
+more by the time it reaches the 
+retina! If the laser beam strikes 
+the eye from the side (hitting 
+the area of the eye used for 
+peripheral vision), damage can 
+occur but may not be noticed 
+right away, although a number 
+of burns in this part of the 
+retina might impair vision. If 
+the beam comes directly head 
+on at the eye (striking the eye's 
+area for sharp vision) the burn 
+could result in a very notice- 
+able blind spot or other serious 
+impairments to vision. It may 
+only take a fraction of a second 
+for the damage to occur. 
+Because the eye focuses light, 
+it is the most sensitive part of 
+the body to laser radiation. But 
+severe skin burns can also be 
+caused by laser light. With 
+some lasers, you can light a 
+cigarette merely by putting the 
+end of it in the laser beam. If 
+the beam has enough power to 
+light a cigarette, you can im- 
+agine the kind of skin burns it 
+could cause. 
+The question of safety or 
+hazard with laser light shows is 
+"To what levels of power might 
+people be exposed?" The mere 
+presence of a high powered 
+laser does not necessarily pose 
+a hazard. Scanning safeguards 
+and other means can be taken 
+to protect people from laser 
+hazards. But: 
+There is a hazard whenever 
+a high power laser beam could 
+possibly strike someone, par- 
+ticularly in the eyes. 
+The beam could be dangerous 
+even if it is reflected off a 
+smooth or shiny surface. If the 
+laser is high enough in power, 
+it could be dangerous even 
+when the beam i s  reflected off 
+a rough surface or scattered by 
+fog or smoke. 
+H It only takes a fraction of a 
+second to cause serious injury! 
+These are the reasons for the 
+government's safety requirements 
+for laser light shows. But such 
+efforts cannot ensure absolute 
+safety. So it is important that 
+you, as a person involved with 
+producing a laser show, carry 
+out your part in laser safety. 
+
+
+================================================================================
+
+--- Page 17 ---
+Words: 150, Images: 1
+
+CHAPTER 2 
+GOVERNMENT 
+FDA's REGULATORY 
+STANDARD FOR 
+ALL LASERS 
+A 
+II laser products made 
+since August 1976 must 
+meet the FDA laser perfor- 
+mance standard. Each manufac- 
+turer of laser products must 
+report to FDA about the types 
+of laser products produced. 
+The standard divides laser 
+products into four classes, bas- 
+ed on the potential for injuring 
+people and the intensity of the 
+radiation in the laser beam (the 
+power of the laser beam is 
+measured in watts*). 
+Class I products produce 
+levels of radiation that have not 
+been found to cause biological 
+damage. Class I visible radiation 
+lasers emit less than 0.39 mi- 
+crowatts (or 0.39 millionths of a 
+watt) continuous output. 
+*The term "watts," when used to describe 
+laser output, is NOT equivalent to wattage, 
+when used to describe an electric light. 
+Refer to page 28 of Appendix I for an ex- 
+planation of the distinction. 
+16 
+-- 
+
+
+================================================================================
+
+--- Page 18 ---
+Words: 375, Images: 1
+
+Class II lasers produce radiation- 
+that could cause eye damage 
+after direct, long-term exposure. 
+Class II lasers emit less than 1 
+milliwatt (or 1 thousandth of a 
+watt) continuous output. 
+Class Ill laser products pro- 
+duce radiation powerful enough 
+to injure human tissue with one 
+short exposure to the direct 
+beam or its direct reflections off 
+a shiny surface. Class Ill visible 
+radiation lasers emit less than 
+500 milliwatts (or one-half watt) 
+continuous output. 
+Class Ill is subdivided into 
+Classes llla and Illb. Class llla is 
+limited to five milliwatts in the 
+visible spectrum. More stringent 
+requirements apply to Class lllb 
+lasers. 
+Class IV lasers produce radi- 
+ation so powerful that it can cause 
+injury with a direct or reflected 
+exposure, even when the beam 
+is scattered or diffused by a 
+rough surface or even by some 
+smoke screens. Class IV visible 
+radiation lasers emit more than 
+one-half watt continuous output. 
+All laser products above Class I, 
+made after August 1976, must 
+have labels that indicate the 
+class to which they belong. 
+Additional safety design and 
+labeling features are required 
+according to the class of the 
+product. 
+WHAT THE FDA 
+STANDARD MEANS 
+FOR 
+LASER LIGHT SHOWS 
+FDA's standard was developed 
+when the use of lasers in the 
+entertainment world was in its 
+infancy. Lasers for demonstration 
+purposes fell primarily into 
+Class I or II and the standard 
+reflected this. But because of 
+the low visibility of their beams, 
+Class I and II lasers are not 
+effective with very large crowds. 
+The light shows at concerts and 
+discotheques nowadays often 
+use Class lllb and even Class IV 
+lasers. FDA recognizes that it is 
+possible to use these high 
+powered lasers in such a way 
+that they will be as safe as 
+Class I and II demonstration 
+lasers as long as the manufacturers 
+can assure safety. FDA does 
+this by means of a "variance." 
+A variance is permission from 
+FDA to deviate from one or 
+more of the requirements of a 
+standard when alternate steps 
+are taken to assure safety. Before 
+May 1980, all of the safety 
+requirements described below 
+were imposed for laser shows 
+except the requirement of an 
+approved variance prior to per- 
+formance. As of September 20, 
+1985, the following policy is 
+legally binding: 
+
+
+================================================================================
+
+--- Page 19 ---
+Words: 410, Images: 1
+
+Before Class lllb or Class IV 
+lasers are sold, used in perfor- 
+mances, or otherwise introduced 
+into commerce for demon- 
+stration or entertainment pur- 
+poses, manufacturers must 
+have an approved variance 
+from FDA. 
+W Laser manufacturers include 
+people who make laser pro- 
+duds and people who receive 
+compensation to design, as- 
+semble, or modify a laser pro- 
+jector and/or light show. 
+This means that a musical 
+group or others are considered 
+manufacturers if they assemble 
+a show. . .even if the act of 
+manufacture is simply setting 
+up a show in a particular loca- 
+tion or changing a general pur- 
+pose laser to light show use, 
+without adding any new laser 
+components. This does not 
+mean that "all the world's a 
+laser manufacturer." And it 
+does not mean that a separate 
+variance is needed for each 
+laser show. But it does mean 
+that first, the manufacturers of 
+all Class lllb or IV laser pro- 
+ducts used in shows that do 
+not already have a variance, 
+must obtain one for each type 
+of show performed. Second, all 
+l'man~fact~rerslf 
+must submit 
+to FDA a report on all thetypes 
+of laser products manufactured. 
+A variance must be obtained 
+before a laser can be used in a 
+performance or display. 
+FDA uses several safety criteria 
+to determine whether a variance 
+will be granted to a laser light 
+show. These criteria include: 
+H The laser must meet all the 
+design and labeling require- 
+ments of its class and the 
+following. 
+H Laser radiation cannot ex- 
+ceed Class I limits where the 
+audience is located. (This can 
+be achieved by proper use of 
+mirror balls, scanning devices, 
+or other safeguards.) 
+H If devices, like mirror balls or 
+flat mirrors, are used to reflect 
+the beam, scanning safeguards 
+or other measures are required 
+to make sure that laser radiation 
+above Class I will not acci- 
+dentally go into the audience. 
+H Performers cannot be exposed 
+to radiation above Class I limits 
+if they must view the laser beam 
+in the course of a performance. 
+When they don't have to view 
+the laser beam, performers can- 
+not be exposed to radiation 
+above Class I1 limits. 
+If the laser is not under the 
+continuous control of an opera- 
+tor, laser radiation above Class 
+II limits must be restricted so 
+that it comes no closer than 6 
+meters (about 20 feet) above, 
+or 2.5 meters (about 8 feet) on 
+the sides or below the floor 
+where the audience would be. 
+
+
+================================================================================
+
+--- Page 20 ---
+Words: 411, Images: 1
+
+If the laser is under the con- 
+tinuous control of an operator, 
+laser radiation above Class II 
+limits can come no closer than 
+3 meters (about 10 feet) above 
+or 2.5 meters (about 8 feet) on 
+the sides or below the floor 
+where the audience would be. 
+Appropriate controls must be 
+taken to make sure that un- 
+authorized persons cannot in- 
+terfere with the safe operation 
+of the laser. A person must be 
+designated as the laser safety 
+officer who will be responsible 
+for shutting down the laser 
+should any unsafe conditions 
+occur (e.g., should individuals 
+in the audience try to get 
+within the direct laser beam by 
+climbing on a chair or some- 
+one's shoulders, or should 
+reflective articles be thrown in 
+the beam). In some situations, 
+as when the audience becomes 
+unruly, strict security measures 
+should be taken to keep the 
+laser operating area free and 
+under the full control of the 
+authorized personnel. 
+Other criteria may be includ- 
+ed depending upon the particu- 
+lar show. They may include 
+such requirements as com- 
+pliance with State and local re- 
+quirements, contacting the 
+Federal Aviation Administration 
+for outdoor shows, certification 
+of operators, use of laser cut-off 
+devices or safety shields, time 
+limitations for particular effects 
+and restrictions on the location 
+of the operator or performers. 
+Once a variance is granted, 
+representatives of FDA must 
+be allowed to inspect the laser 
+equipment and the safety pro- 
+cedures to assure that the con- 
+ditions of the variance are 
+met. 
+FDA should be notified in 
+writing of all shows at least 1 
+month in advance. When this 
+is not possible bcause of last 
+minute scheduling, FDA 
+should be notified by tele- 
+phone as soon as possible and 
+then a written confirmation 
+should be sent to FDA. 
+Anyone who operates laser 
+light shows without an approv- 
+ed FDA variance or who other- 
+wise violates the FDA laser safe- 
+ty standard may be subject to a 
+court injunction andlor civil 
+penalties (fines up to $300,000) 
+as provided for in Section 360C 
+of the Radiation Control for 
+Health and Safety Act. When 
+FDA becomes aware of a par- 
+ticular laser show that is 
+operated in violation of the law 
+or otherwise in an irresponsible 
+fashion, FDA will notify the 
+manufacturer or operator and 
+require corrective action. If the 
+problem is serious, FDA will 
+also notify the State and local 
+authorities and facility 
+managers who can take addi- 
+tional, immediate legal steps to 
+halt a hazardous show. 
+
+
+================================================================================
+
+--- Page 21 ---
+Words: 376, Images: 1
+
+To apply for a variance or for 
+more information about the 
+variance status of a particular 
+laser show manufacturer, re- 
+porting requirements, variance 
+applications and safe operation 
+of laser light shows, contact: 
+Office of Compliance HFZ-312 
+Center for Devices and 
+Radiological Health 
+8757 Georgia Avenue 
+Silver Spring, MD 20910 
+(301) 427-8228 
+OPEN AIR LASER 
+LIGHT SHOWS A N D  
+FAA REQUIREMENTS 
+Even though the chances are 
+small that an aircraft passenger 
+or pilot would be injured by a 
+laser beam from an outdoors 
+light show, the possibility of 
+harm does exist. Therefore, the 
+Federal Aviation Administration 
+must be notified before any 
+open air laser light shows 
+operate. 
+FAA will not object if the 
+output power of the laser beam 
+is less than or equal to one half 
+watt (that is, the laser is Class I, 
+II, or Ill). As long as aircraft fly 
+no closer than the required 
+1,000 feet over congested areas 
+or over an outdoor assembly of 
+people, there should be little 
+risk from a laser beam of this 
+power. If the show is adjacent 
+to an airport, however, the FAA 
+may object because of the 
+possible risk to aircraft landing 
+and taking off. 
+FAA will not object to open 
+air shows with Class IV laser 
+beam powers between one-half 
+and 12 watts if the laser manu- 
+facturerloperator informs FAA 
+of the location, time and laser 
+output sufficiently in advance 
+of the show and if FAA can 
+restrict the air traffic in the 
+area. 
+In most cases, FAA will ob- 
+ject if the laser beam power is 
+greater than 12 watts. A laser of 
+this power is rarely needed for 
+an effective light show and 
+could require extensive restric- 
+tions on air traffic. 
+Notification to the FAA of a 
+proposed open air laser light 
+show should be made in writ- 
+ing at least 2 weeks and pre- 
+ferably 4 weeks in advance of 
+the performance. FAA can 
+usually respond with a 
+determination within 7 days. 
+The notification should be 
+directed to the Chief of the 
+Airspace and Procedures 
+Branch at the regional office 
+having jurisdiction over the 
+area where the laser show will 
+take place. The addresses and 
+phone numbers of the ap- 
+propriate office for each area 
+will be found in Appendix II. 
+
+
+================================================================================
+
+--- Page 22 ---
+Words: 335, Images: 1
+
+STATE AND LOCAL 
+LASER LIGHT SHOW 
+REQUIREMENTS 
+State and municipal govern- 
+ments can have their own re- 
+quirements, beyond those of 
+FDA and FAA, with which laser 
+light shows must comply when 
+operating in their jurisdictions. 
+Presently, 6 State agencies have 
+specific legislation for lasers 
+and 25 have the authority to 
+develop specific laser regula- 
+tions. In addition, all States and 
+many local agencies have the 
+authority to take action if a 
+laser show endangers the gen- 
+eral health and safety of the 
+public. Several States have clos- 
+ed down laser shows that 
+violated the FDA safety re- 
+quirements. 
+The State agencies with the 
+responsibility for radiation con- 
+trol should be notified in ad- 
+vance of laser shows operating 
+within the State boundaries. 
+The following information 
+should be provided in writing 
+by the laser safety officer from 
+either the operating group or 
+the facility where the show is 
+held: 
+Name, address, and phone 
+num ber of laser safety officer(s1 
+or operator(s) 
+Name, address, and phone 
+number of the auditorium facili- 
+ty and the manager 
+T V D ~  
+of laser show 
+Date(s) and time of perfor- 
+mance (if it is not an ongoing 
+show) 
+Length of time laser will be 
+in operation 
+Expected attendance 
+Class of laser and name of 
+manufacturer 
+Sketches to describe the 
+design or layout of the show 
+If Class lllb or IV laser pro- 
+duct, FDA variance and acces- 
+sion number and date of the 
+variance approval 
+Since the State requirements 
+vary, it is important that laser 
+show operators or facility 
+managers contact the appro- 
+priate office directly to notify 
+the authorities of the operation 
+of a laser show and to ascertain 
+what, if any, additional re- 
+quirements exist. The State per- 
+sonnel will also be aware of 
+any relevant municipal re- 
+quirements. Managers of 
+facilities where laser shows are 
+held should be familiar with 
+any local safety requirements. 
+The addresses and phone 
+numbers of the State radiation 
+control offices will be found in 
+Appendix I l l  of this booklet. 
+
+
+================================================================================
+
+--- Page 23 ---
+Words: 119, Images: 1
+
+CHAPTER 3 
+INDIVIDUAL 
+RESPONSIBILITIES 
+RESPONSIBILITIES 
+O F  LASER 
+MANUFACTURERS 
+A N D  OPERATORS 
+L 
+aser manufacturers (in- 
+cluding operators or people 
+who set up or assemble laser 
+systems) should have a good 
+understanding of the FDA laser 
+performance standard, the 
+requirements for the class of 
+laser product with which they 
+are concerned and the safety 
+requirements for laser light 
+show operations. 
+FDA and State personnel are 
+available to help you make sure 
+that your shows are run safely 
+and in compliance with the 
+law. For more information, 
+contact the appropriate State 
+office listed in Appendix Ill of 
+this booklet, or: 
+Office of Compliance HFZ-312 
+Center for Devices and 
+Radiological Health 
+8757 Georgia Avenue 
+Silver Spring, MD 20910 
+(301) 427-8228 
+
+
+================================================================================
+
+--- Page 24 ---
+Words: 388, Images: 1
+
+Specifically, the following 
+responsibilities are those of the 
+laser manufacturer or operator 
+of light shows: 
+You must notify FDA, in 
+writing, at least 1 month in ad- 
+vance of a show. In cases of 
+traveling shows, you may want 
+to send to FDA the schedule 
+for the entire tour. When this is 
+not possible because of last 
+minute scheduling, you should 
+notify FDA by telephone as far 
+in advance as possible and then 
+confirm it in writing. 
+H You must contact the State 
+or local radiation control 
+authorities in writing in ad- 
+vance of conducting a laser 
+show in their jurisdiction. 
+Again, when this is not possi- 
+ble, you should telephone the 
+State agency as far in advance 
+as feasible. The information you 
+should provide to the State is 
+listed on page 21 of this book- 
+let. In some areas, they also 
+have operating requirements 
+beyond FDA's. (See Appendix 
+Ill of this booklet for ii list of 
+the State authorities who must 
+be contacted .) 
+H You should also provide 
+to the facility manager the 
+information that is given to 
+the State authority. 
+If you are responsible for an 
+outdoor laser light show, you 
+must notify the Federal Aviation 
+Administration. (See Appendix 
+II of this booklet for a list of 
+which FAA office must be con- 
+tacted.) 
+If there are any radiation ac- 
+cidents or alleged accidents, 
+that is, if someone is hurt or an 
+accidental exposure to a laser 
+beam of Class Ill or IV occurs, 
+you must report the incident to 
+the local authority and FDA 
+regardless of whether any ac- 
+tual injuries occurred. 
+As of September 20, 1985, if 
+you will be using a Class lllb or 
+IV laser in light shows or displays, 
+you must submit a variance ap- 
+lication and receive an approved 
+variance from FDA before a 
+performance. You may be asked 
+to show the documents to verify 
+your variance to State or local 
+authorities and facility managers. 
+In fact, this is required in some 
+jurisdictions. Because the public 
+is becoming increasingly aware 
+of potential laser hazards, you 
+may want to include a statement 
+in any promotional advertising 
+of your laser show that it will 
+be operated in conformance 
+with FDA laser safety criteria. If 
+you do so, however, you can- 
+not imply that the show is 
+"endorsed" or "approved" by 
+FDA. 
+
+
+================================================================================
+
+--- Page 25 ---
+Words: 267, Images: 1
+
+Before granting a variance, 
+FDA will require that a report be 
+filed describing your laser pro- 
+ducts and the manner by which 
+they comply with the FDA laser 
+safety standard and the con- 
+ditions of any variances. This 
+"initial report" must be followed 
+up by a "model change report" 
+should you plan to introduce a 
+new or modified laser show or 
+device into commerce. An 
+annual report must also be sub- 
+mitted by September 1 of each 
+year summarizing the testing 
+and the records that must be 
+maintained. 
+RESPONSIBILITIES OF 
+THE MANAGERS O F  
+FACILITIES WHERE 
+LASER SHOWS 
+ARE HELD 
+In order to safeguard your 
+audiences,you should be aware 
+of the safety requirements plac- 
+ed on the manufacturers and 
+operators of laser shows by 
+Federal, State and local 
+authorities. To avoid possible 
+liability for laser injuries, see 
+that any shows in your facility 
+have complied with the legal 
+requirements. 
+NOTE: The laser operator should 
+provide to you the information 
+about the class of laser to be 
+used and its variance status. A 
+laser product should have a 
+label indicating its class. If the 
+laser is Class lllb or IV, the 
+company responsible for the 
+laser should have documentation 
+(an accession and variance 
+number) from FDA granting a 
+variance. you can contact the 
+State authority (see Appendix Ill 
+of this booklet) or FDA to verify 
+the status of a company's 
+variance. 
+O n e  person, either the laser 
+company's operator, or where 
+there is no operator, an em- 
+ployee from the facility, should 
+be designated as laser safety of- 
+ficer. A laser safety officer 
+should be in attendance 
+
+
+================================================================================
+
+--- Page 26 ---
+Words: 336, Images: 1
+
+whenever a laser is in opera- 
+tion and should be responsible 
+for shutting down the laser 
+should any unsafe conditions 
+occur. 
+.In 
+order to properly set up 
+and align a laser light system 
+that can be operated safely, 
+laser groups will need time in 
+the facility before the show 
+without members of the public 
+present. They will need the 
+electrical power and water sup- 
+ply set up early enough to test 
+and align the equipment. De- 
+pending upon the complexity 
+of the system, the preparation 
+for a show may take up to 
+several hours. Should a full in- 
+spection by FDA representa- 
+tives be found necessary, it may 
+require an additional hour or 
+two prior to the show. This 
+should be allowed for in the 
+scheduling of performances. 
+.Should 
+any accident occur 
+with the laser, you should 
+report the incident to the State 
+authority and to FDA. 
+FDA and State personnel are 
+available to help you ensure 
+that laser shows in your facility 
+are run safely and in com- 
+pliance with the law. Contact 
+the FDA or the appropriate 
+State office listed in Appendix Ill 
+for more information. 
+WHAT THE PUBLIC 
+SHOULD KNOW 
+ABOUT LASER SAFETY 
+Laser light shows can be ex- 
+citing but they can also be 
+hazardous if someone is ac- 
+cidentally struck (particularly in 
+the eyes) by direct, reflected or 
+even diffuse high power laser 
+radiation. 
+You have a right to enjoy a 
+laser show knowing that your 
+safety is provided for by the 
+laser manufacturer, the laser 
+operator and the management 
+of the facility where the show is 
+held. Should you have reason 
+to believe that a show is not 
+being run safely - that is, that 
+the precautions spelled out in 
+this booklet are not being taken 
+- talk with the laser operator 
+or people in charge of the faci- 
+lity, or call the State authority 
+(listed in Appendix Ill). If you 
+are aware of anyone being in- 
+jured at a laser show, report it 
+to the State authority or FDA. 
+
+
+================================================================================
+
+--- Page 27 ---
+Words: 240, Images: 1
+
+APPENDIX I 
+HOW LASERS WORK 
+L 
+aser is an acronym for "Light 
+Amplification by Stimulated Emis- 
+sion of Radiation." The actual 
+material that produces the laser light 
+is called the lasing medium. It may 
+be either a solid, liquid or a gas. 
+Most large light shows use gas lasers 
+with either krypton gas or a mixture 
+of argon and krypton gases. Helium- 
+neon gas lasers are common in 
+smaller laser displays. The gas is 
+usually contained in a long, thin 
+cylindrical glass tube. The pressure 
+and the concentration of the gas in- 
+side the tube must be just right or 
+else the laser will not operate. 
+At one end of the tube is a totally 
+reflecting mirror; at the other end is 
+a partially transmitting mirror (that 
+is, it allows a small portion of light 
+to pass through). Like a fluorescent 
+light bulb, the lasers in light shows 
+will work only when an electric cur- 
+rent passes through the tube con- 
+taining the gases. 
+When the electrical energy enters 
+the tube, it "excites" the atoms of 
+the lasing medium. What actually 
+happens is the electrons of an atom 
+absorb the electrical energy by jum- 
+ping to higher energy states. After a 
+small fraction of a second, the elec- 
+trons will "fall" back to their normal 
+energy state. When they do so, the 
+atom gives off the excess energy in 
+the form of a "photon" or small 
+packet of light radiation. 
+
+
+================================================================================
+
+--- Page 28 ---
+Words: 154, Images: 1
+
+Atom in 
+Atom in 
+Atom Returns to Normal 
+Normal State 
+Excited Sate 
+by Giving Off 
+Nucleus 
+Electron 
+Depending upon the amount of 
+energy absorbed, the atom will 
+give off a phpton with a particular 
+wavelength. This photon of light 
+can trigger (or "stimulate") the 
+release (or "emission") of similar 
+photons from the other excited 
+atoms in the lasing medium. The 
+photons bounce back and forth 
+between the two mirrors at the 
+ends of the tube. As they bounce 
+back and forth they continue to 
+trigger more and more photons, 
+building up to higher and higher 
+intensity. The stimulated photons 
+of light radiation are of the same 
+wavelength and move in the same 
+direction as the original photons. 
+Some of this light will pass out 
+through the partially transmitting 
+mirror at the end of the tube. This 
+is the laser beam with the unique 
+characteristic described before: 
+coherence. 
+Partially 
+,,,bbbbbbb,b 
+Transmitting 
+Mirror 
+4
+4
+ 
+444444 
+
+
+================================================================================
+
+--- Page 29 ---
+Words: 317, Images: 1
+
+You may be wondering how 
+a laser beam that is supposed 
+to be composed of light waves 
+with the same wavelength can 
+result in the numerous color ef- 
+fects that are frequently seen in 
+light shows. The answer lies in 
+the atomic structure of the las- 
+ing medium and in the fact that 
+the atom can release more than 
+one level of energy at the same 
+time. 
+Each of the electron orbits of 
+an atom is bound to the 
+nucleus by a specific level of 
+energy. Those close to the 
+nucleus are bound progres- 
+sively more tightly. Those fur- 
+ther away from the nucleus are 
+bound progressively less tightly. 
+In order for an electron to 
+jump to another energy state, it 
+must have absorbed a specific 
+amount of additional energy to 
+"boost" it into that higher 
+state. And likewise, when that 
+electron falls back to its normal 
+state, the atom wilt give off the 
+same specific amount of 
+energy. The wavelength or col- 
+or of the photon given off is 
+determined by this specific 
+amount of energy. 
+The atomic structure of kryp- 
+ton gas is relatively complex. It 
+has 36 electrons. So a krypton 
+atom has many electrons at dif- 
+ferent energy states available to 
+absorb and then emit photons 
+of various wavelengths and 
+therefore various colors. By in- 
+corporating a prism at the end 
+of the laser, the photons of the 
+particular wavelengths (or col- 
+ors) can be separated into 
+several rays of different colors. 
+Another point that should be 
+clarified has to do with the units 
+by which the output of a laser is 
+measured. Although the term 
+"watt" is used to describe both 
+lasers and conventional electric 
+devices like light bulbs, the term 
+can refer to very different things. 
+When you have a 100 watt light 
+bulb, the wattage refers to the 
+power input or the electricity re- 
+quired to make the bulb work. 
+
+
+================================================================================
+
+--- Page 30 ---
+Words: 160, Images: 1
+
+The output from a 100 watt light 
+bulb is about 15 watts. And again, 
+the 15 watts of energy coming out 
+of a light bulb is spread out in all 
+directions. When you have a 1 
+watt laser, the wattage refers to 
+the optical output of the laser. 
+This 1 watt of optical radiation is 
+traveling in a narrow, concen- 
+trated beam in one direction. At a 
+distance of 100 feet, the light from 
+the 1 watt laser can be about 1 
+million times more concentrated 
+than from the light bulb! 
+It should also be pointed out 
+that the physical size of a laser 
+has little bearing on its power out- 
+put. There are many lasers that 
+are physically small, but have 
+more power output than some 
+large ones. The only reliable way 
+of telling the power output of a 
+laser is to look at the label on the 
+product, which should indicate its 
+class and absolute maximum 
+power output. 
+
+
+================================================================================
+
+--- Page 31 ---
+Words: 7, Images: 1
+
+APPENDIX II 
+A 
+REGIONAL 
+BOUNDARIES 
+(Alaskan) 
+9 
+
+
+================================================================================
+
+--- Page 32 ---
+Words: 129, Images: 1
+
+LOCATIONS OF REGIONAL HEADQUARTERS 
+Alaskan Regional Office 
+P.O. Box 14 
+Anchorage, AK 9951 3 
+(907) 271-5645 
+Central Regional Office 
+601 E. 12th St. 
+Kansas City, M O  64106 
+(816) 374-5626 
+Eastern Regional Office 
+Federal Building 
+JFK International Airport 
+Jamaica, NY 11 430 
+(212) 917-1005 
+Great Lakes Regional Office 
+2300 E. Devon Ave. 
+Des Plains, IL 60018 
+(31 2) 694-7294 
+New England Regional Office 
+12 New England Executive Park 
+Burlington, MA 01803 
+(61 7) 273-7244 
+Northwest Regional Office 
+1 7900 Pacific Highway S. 
+Seattle, W A  981 68 
+(206) 431 -2001 
+Southern Regional Office 
+P.O. Box 20636 
+Atlanta, GA 30320 
+(404) 763-7222 
+Southwest Regional Office 
+P.O. Box 1689 
+Ft. Worth, TX 76101 
+(817) 877-2100 
+Western-Pacific Regional Office 
+P.O. Box 92007 
+Worldway Postal Center 
+Los Angeles, CA 90009 
+(21 3) 536-6427 
+
+
+================================================================================
+
+--- Page 33 ---
+Words: 522, Images: 1
+
+APPENDIX Ill 
+STATE RADIATION 
+CONTROL OFFICES 
+For information on State and local requirements for laser light shows, contact the 
+appropriate office listed below. 
+Division of Rad. Hlth. 
+State Dept. of Public Hlth. 
+State Office Bldg. 
+Montgomery, AL 361 30 
+(205) 261-531 5 
+Radiological Hlth. Program 
+Dept. of Hlth. & Soc. Serv. 
+Pouch H-06F 
+Juneau, AK 9981 1-9976 
+(907) 465-301 9 
+Arizona Rad. Reg. Agency 
+925 S. 52nd St., Suite 2 
+Tempe, AZ 85281 
+(602) 262-801 1 
+Division of Rad. Control 
+and Emergency Mgmt. 
+Dept. of Hlth. 
+4815 W. Markham St. 
+Little Rock, AR 72201 
+(501 1 661 -2301 
+Radiological Hlth. Sect. 
+State Dept. of Hlth. Serv. 
+714 P St., Ofc. Bldg. #8 
+Sacramento, CA 9581 4 
+(91 6) 322-2073 
+Radiation Control Div. 
+Dept. of Hlth. 
+4210 E. 11th Ave. 
+Denver, CO 80220 
+(303) 320-8333 ext. 6246 
+Radiation Control Unit 
+Dept. of Env. Protection 
+State Ofc. Bldg. 
+165 Capital Ave. 
+Hartford, CT 061 06 
+(203) 566-5668 
+Office of Rad. Control 
+Dept. of Hlth. & Soc. Serv. 
+Robbins Bldg. 
+Silver Lake Plaza 
+P.O. Box 637 
+Dover, DE 19901 
+(302) 736-4731 
+Department of Consumer 
+and Reg. Affairs 
+Sewice Fac. Reg. Admin. 
+614 H St., NW. Rm. 1014 
+Washington, DC 20001 
+(202) 727-71 90 
+Office of Rad. Control 
+Dept. of Hlth. & Rehab. Sew. 
+1317 Winewood Blvd. 
+Tallahassee, FL 32301 
+(904) 487-1 004 
+Radiological Hlth. Sect. 
+Dept. of Human Resources 
+878 Peachtree St., Rm. 600 
+Atlanta, GA.30309 
+(404) 894-5795 
+Bureau of Env. Hlth. 
+Dept. of Public Hlth. 
+and Soc. Sew. 
+P.O. Box 2816 
+Agana, GU 96910 
+(671 1 734-2671 
+'~oise and Rad. Branch 
+Dept. of Hlth. 
+591 Ala Moana Blvd. 
+Honolulu, HI 96813 
+(808) 548-4383 
+Radiation Control Sect. 
+Dept. of Hlth. & Welfare 
+Statehouse Mail 
+Boise, ID 83720 
+(2081 334-4107 
+Department of Nuclear Safety 
+1035 Outer Park Dr. 
+Springfield, IL 62704 
+(2 17) 546-81 00 
+Radiological Hlth. Sect. 
+SGte B&rd of Hlth. 
+1330 W. Michigan St. 
+P.O. Box 1964 
+Indianapolis, IN 46206 
+(317) 633-0152 
+Environmental Hlth. Sect. 
+Dept. of Hlth. 
+Lucas State Ofc. Bldg. 
+Des Moines, IA 5031 9 
+(51 5) 281-4928 
+Bureau of Air Quality 
+and Rad. Control 
+Dept. of Hlth. & Envivon. 
+Forbes Field. Bldg. 321 
+Topeka, KS 66620 
+(91 3) 862-9360 
+Radiation Control Br. 
+275 E. Main St. 
+Frankfort, KY 40621 
+(502) 564-3700 
+Nuclear Energy Div. 
+Ofc. of Air Quality 
+and Nuclear Energy 
+Div. of Env. Quality 
+P.O. Box 14690 
+Baton Rouge, LA 70898-4690 
+(504) 925-4518 
+Division of Hlth. Eng. 
+157 Capital St. 
+Augusta, ME 04333 
+(207) 289-3826 
+Division of Rad. Control 
+Dept. of Hlth. & Mental Hyg. 
+201 W. Preston St. 
+Baltimore, MD 21201 
+(301) 225-6981 
+Radiation Control Prog. 
+Dept. of Public Hlth. 
+150 Tremont St., 7th FI. 
+Boston, MA 021 11 
+(617) 727-6214 
+Division of Rad. Hlth. 
+3500 N. Logan St. 
+P.O. Box 30035 
+Lansing, MI 48909 
+(51 7) 373-1 578 
+Section of Rad. Hlth. 
+Dept. of Hlth. 
+71 7 Delaware St., SE 
+P.O. Box 9441 
+Minneapolis, MN 55440 
+(6121 623-5323 
+Division of Rad. Hlth. 
+State Dept. of Hlth. 
+31 50 Lawson St. 
+P.O. Box 1700 
+Jackson, MS 3921 5-1 700 
+(601) 354-6657 
+Bureau of Rad. Hlth. 
+1730 E. Elm Plaza 
+P.O. Box 570 
+Jefferson City. M O  65102 
+(314) 751-8208 
+
+
+================================================================================
+
+--- Page 34 ---
+Words: 464, Images: 1
+
+Occupational Hlth. Bur. 
+Dept. of Hlth. & Env. Sci. 
+Cogswell Bldg. 
+Helena, MT 59620 
+(406) 444-3671 
+Division of Rad. Hlth. 
+301 Centennial Mall, S. 
+P.O. Box 95007 
+Lincoln, NE 68509 
+(402) 471-2168 
+Radiological Hlth. Sect. 
+Health Div. 
+505 E. King St. 
+Carson City, NV 89710 
+(702) 885-5394 
+Radiological Hlth. Prog. 
+P.O. Box 148 
+Concord, NH 03301 
+(603) 271 -4588 
+Radiation, Pesticides, 
+and Env. Labs 
+Div. of Env. Quality 
+380 Scotch Rd. 
+Trenton, NJ 08628 
+(609) 292-8392 
+Radiation Protection Bur. 
+Dept. of Hlth. & Env. 
+P.O. Box 968 
+Santa Fe, NM 87504-0968 
+(505) 984-0020 
+Bureau of Env. Rad. Prot. 
+Empire State Plaza 
+Corning Tower 
+Albany, NY 12237 
+(518) 473-3613 
+Bureau for Rad. Control 
+NY City Dept. of Hlth. 
+65 Worth St. 
+New York, NY 10013 
+(212) 334-7761 
+Radiation Protection Sect. 
+Div. of Fac. Serv. 
+P.O. Box 12200 
+Raleigh, NC 27605-2200 
+(919) 733-4283 
+Division of Env. Eng. 
+Dept. of Hlth. 
+1200 Missouri Ave. 
+Bismarck, ND 58501 
+(701 ) 224-2348 
+Radiological Hlth. Prog. 
+Dept. of Hlth. 
+264 N. High St. 
+P.O. Box 118 
+Columbus, OH 43216 
+(614) 466-1 380 
+Radiation and Special 
+Hazards Service 
+P.O. Box 53551 
+Oklahoma City, OK 731 52 
+(405) 271 -5221 
+Radiation Control Sect. 
+State Hlth. Div. 
+P.O. Box 231 
+Portland, OR 97207 
+(503) 229-5797 
+Bureau of Rad. Protection 
+Dept. of Env. Resources 
+P.O. Box 2063 
+Harrisburg, PA 17120 
+(71 7) 787-2480 
+Radiological Hlth. Div. 
+GPO Call Box 70184 
+Rio Piedras, PR 00936 
+(809) 767-3563 
+Division of Occup. Hlth. 
+and Rad. Control 
+Dept. of Hlth. 
+Cannon Bldg.. Davis St. 
+Providence, RI 02908 
+(401) 277-2438 
+Bureau of Rad. Hlth. 
+Dept. of Hlth. 
+and Env. Control 
+2600 Bull St. 
+Columbia, SC 29201 
+(803) 758-5548 
+Licensure and Cert. Pmg. 
+State Dept. of Hlth. 
+Joe Foss Ofc. Bldg. 
+523 E. Capital 
+Pierre, SD 57501 
+(605) 773-3364 
+Division of Rad. Hlth. 
+Dept. of Public Hlth. 
+Terra Bldg.. 150 9th Ave. N. 
+Nashville, TN 37203 
+(61 5) 741-7812 
+Bureau of Rad. Control 
+Dept. of Hlth. 
+1100 W. 49th St. 
+Austin, TX 78756-3189 
+(51 2) 835-7000 
+Bureau of Rad. Control 
+State Dept. of Hlth. 
+Box 45500 
+Salt Lake City. UT 84145 
+(801 ) 533-6734 
+Division of Occup. 
+and Rad. Hlth. 
+Dept. of Hlth. 
+10 Baldwin St. 
+Montpelier, VT 05602 
+(802) 828-2886 
+Bureau of Rad. Hlth. 
+Dept. of Hlth. Haz. Control 
+109 Governor St. 
+Richmond, VA 23219 
+(804) 786-5932 
+Department of Public Works 
+Div. of Natural Res. 
+P.O. Box 4340 
+Charlotte Arnalie 
+St. Thomas, VI 00801 
+(809) 774-6420 
+Radiation Control Sec. 
+Dept. of Soc. & Hlth. Serv. 
+MS LF-13 
+Olympia. WA 98504 
+(206) 753-3468 
+Radiological H lth. Sect. 
+Industrial Hyg. Div. 
+151 1 lth Ave. 
+S. Charleston, WV 25303 
+(304) 348-3526 
+Radiation Protect. Sect. 
+Div. of Hlth. 
+P.O. Box 309 
+Madison, WI 53701 
+(608) 273-5181 
+Radiological Hlth. Serv. 
+Div. of Hlth. & Med. Sew. 
+Hathaway Bldg. 
+Cheyenne, WY 82002-0710 
+(307) 777-7956 
+
+
+================================================================================
+

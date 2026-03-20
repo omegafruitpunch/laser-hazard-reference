@@ -1,0 +1,104 @@
+{
+  "module_id": "module-6.2",
+  "course_id": "course-6",
+  "title": "Module 6.2: Flight Zones & Safety Distances",
+  "description": "Interactive exploration of FAA flight zone classifications (LFZ, CFZ, SFZ, NFZ), visual interference hazards, and exposure thresholds for aviation safety.",
+  "version": "1.0.0",
+  "last_updated": "2026-03-19",
+  "estimated_duration_minutes": 60,
+  "learning_objectives": [
+    {
+      "id": "6.2.1",
+      "objective": "Differentiate between LFZ, CFZ, SFZ, and NFZ airspace classifications",
+      "bloom_level": "analysis",
+      "assessment_method": "zone_classification"
+    },
+    {
+      "id": "6.2.2",
+      "objective": "Apply exposure thresholds (50 nW/cm², 5 µW/cm², 100 µW/cm²) to determine hazard distances",
+      "bloom_level": "application",
+      "assessment_method": "calculation_exercise"
+    },
+    {
+      "id": "6.2.3",
+      "objective": "Explain the three types of visual interference: distraction, glare, and flashblindness",
+      "bloom_level": "comprehension",
+      "assessment_method": "scenario_identification"
+    },
+    {
+      "id": "6.2.4",
+      "objective": "Analyze flight phase vulnerabilities and critical approach/departure corridors",
+      "bloom_level": "analysis",
+      "assessment_method": "case_study"
+    }
+  ],
+  "prerequisites": [
+    "module-6.1/faa-regulations"
+  ],
+  "sections": [
+    {
+      "id": "6.2.1",
+      "title": "Understanding Flight Zones",
+      "type": "interactive_visualization",
+      "duration_minutes": 20,
+      "component": "FlightZoneVisualizer",
+      "content_summary": "Interactive diagram showing the four flight zones (LFZ, CFZ, SFZ, NFZ) with exposure limits, dimensions, and regulatory requirements."
+    },
+    {
+      "id": "6.2.2",
+      "title": "Visual Interference Hazards",
+      "type": "interactive_comparison",
+      "duration_minutes": 15,
+      "component": "ExposureCalculator",
+      "content_summary": "50 nW/cm² threshold visualization demonstrating the three types of visual interference and their effects on pilots."
+    },
+    {
+      "id": "6.2.3",
+      "title": "Critical Flight Phases",
+      "type": "scenario_based",
+      "duration_minutes": 15,
+      "content_summary": "Analysis of takeoff, landing, and emergency flight phases where laser interference poses the greatest risk."
+    },
+    {
+      "id": "6.2.4",
+      "title": "Helicopter vs. Fixed-Wing Considerations",
+      "type": "comparative_analysis",
+      "duration_minutes": 10,
+      "content_summary": "Differences in vulnerability and operational considerations for rotary vs fixed-wing aircraft."
+    }
+  ],
+  "assessments": [
+    {
+      "id": "quiz-6.2",
+      "type": "formative",
+      "title": "Flight Zones Knowledge Check",
+      "passing_score": 80,
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple_choice",
+          "question": "What is the maximum allowable exposure in the Laser Free Zone (LFZ)?",
+          "options": ["5 µW/cm²", "50 nW/cm²", "100 µW/cm²", "2.6 mW/cm²"],
+          "correct": 1,
+          "explanation": "The Laser Free Zone (LFZ) has the most restrictive limit at 50 nanowatts per square centimeter (nW/cm²) to prevent any visual distraction."
+        },
+        {
+          "id": "q2",
+          "type": "multiple_choice",
+          "question": "Which flight zone has an exposure limit of 5 µW/cm²?",
+          "options": ["Laser Free Zone", "Critical Flight Zone", "Sensitive Flight Zone", "Normal Flight Zone"],
+          "correct": 1,
+          "explanation": "The Critical Flight Zone (CFZ) has an exposure limit of 5 µW/cm² to prevent glare that could impair pilot vision."
+        },
+        {
+          "id": "q3",
+          "type": "multiple_choice",
+          "question": "Which visual interference effect involves afterimages that persist after the light is gone?",
+          "options": ["Distraction", "Glare", "Flashblindness", "Veiling luminance"],
+          "correct": 2,
+          "explanation": "Flashblindness causes afterimages that persist from seconds to minutes after exposure, making it the most serious visual interference hazard."
+        }
+      ]
+    }
+  ]
+}

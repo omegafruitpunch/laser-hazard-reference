@@ -1,0 +1,14 @@
+{
+  "id": "skin-hazards_q007",
+  "type": "scenario",
+  "question": "A researcher receives an accidental exposure to a Class 4 808 nm diode laser. What is the recommended first aid?",
+  "scenario": "The beam contacted the forearm for approximately 2 seconds during an alignment procedure, causing immediate pain and redness.",
+  "options": [
+    "Apply ice directly to the burn",
+    "Cool with running water for 10-20 minutes, cover with sterile dressing",
+    "Apply butter or oil to soothe the burn",
+    "No treatment needed for skin exposure"
+  ],
+  "correct": 1,
+  "explanation": "For laser thermal burns, cool with running water (not ice) for 10-20 minutes and cover with sterile non-adherent dressing. Never apply butter or oils."
+}

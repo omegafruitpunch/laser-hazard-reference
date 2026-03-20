@@ -1,0 +1,324 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-03-19T18:27:57.226423",
+  "total_entities": 216,
+  "total_relationships": 158,
+  "entity_types": [
+    "concept",
+    "regulation",
+    "standard",
+    "procedure",
+    "hazard",
+    "control",
+    "calculation",
+    "equipment",
+    "organization",
+    "role",
+    "laser_class",
+    "wavelength_range",
+    "document",
+    "training_topic",
+    "requirement",
+    "safety_measure"
+  ],
+  "relationship_types": [
+    "requires",
+    "relates_to",
+    "implements",
+    "prohibits",
+    "mandates",
+    "calculates",
+    "protects_against",
+    "defines",
+    "enforces",
+    "governs",
+    "applies_to",
+    "supersedes",
+    "references",
+    "complies_with",
+    "certifies",
+    "supplements"
+  ],
+  "entities": [
+    {
+      "global_id": "E00001",
+      "name": "Laser Safety Officer (LSO)",
+      "type": "role",
+      "attributes": {
+        "responsibility": "Oversee laser safety program",
+        "training_hours": 4,
+        "pass_rate": "80%",
+        "authority": "Executive",
+        "definition": "Person with executive responsibility for laser safety",
+        "abbreviation": "LSO",
+        "responsibilities": [
+          "Risk evaluation",
+          "Safety implementation",
+          "Emergency authority"
+        ]
+      },
+      "course_origins": ["course-1", "course-8"]
+    },
+    {
+      "global_id": "E00002",
+      "name": "Laser Biological Hazards",
+      "type": "training_topic",
+      "attributes": {
+        "content": "Health risks to eyes and skin"
+      },
+      "course_origins": ["course-1", "course-3"]
+    },
+    {
+      "global_id": "E00003",
+      "name": "ANSI Z136.1",
+      "type": "standard",
+      "attributes": {
+        "topic": "Safe Use of Lasers",
+        "title": "Safe Use of Lasers",
+        "referenced_in": "Laser show variance conditions",
+        "authority": "ANSI/LIA",
+        "scope": "General laser safety foundation"
+      },
+      "course_origins": ["course-1", "course-2", "course-8"]
+    },
+    {
+      "global_id": "E00004",
+      "name": "21 CFR 1040",
+      "type": "regulation",
+      "attributes": {
+        "title": "Performance Standards for Light-Emitting Products",
+        "agency": "FDA CDRH",
+        "scope": "Laser product certification and labeling"
+      },
+      "course_origins": ["course-2"]
+    },
+    {
+      "global_id": "E00005",
+      "name": "IEC 60825-1",
+      "type": "standard",
+      "attributes": {
+        "title": "Safety of laser products - Part 1: Equipment classification and requirements",
+        "edition": "3.0",
+        "year": "2014"
+      },
+      "course_origins": ["course-3", "course-5"]
+    },
+    {
+      "global_id": "E00006",
+      "name": "MPE",
+      "type": "concept",
+      "attributes": {
+        "definition": "Maximum laser exposure level considered safe",
+        "full_name": "Maximum Permissible Exposure",
+        "abbreviation": "MPE"
+      },
+      "course_origins": ["course-1", "course-3", "course-5", "course-8"]
+    },
+    {
+      "global_id": "E00007",
+      "name": "NOHD",
+      "type": "concept",
+      "attributes": {
+        "definition": "Distance at which irradiance falls below MPE",
+        "full_name": "Nominal Ocular Hazard Distance",
+        "abbreviation": "NOHD"
+      },
+      "course_origins": ["course-1", "course-5", "course-6", "course-8"]
+    },
+    {
+      "global_id": "E00008",
+      "name": "Class 1 Laser",
+      "type": "laser_class",
+      "attributes": {
+        "hazard": "Safe under normal use",
+        "description": "Inherently safe or fully enclosed"
+      },
+      "course_origins": ["course-1", "course-2"]
+    },
+    {
+      "global_id": "E00009",
+      "name": "Class 2 Laser",
+      "type": "laser_class",
+      "attributes": {
+        "hazard": "Blink reflex protection",
+        "description": "Low power visible lasers"
+      },
+      "course_origins": ["course-1"]
+    },
+    {
+      "global_id": "E00010",
+      "name": "Class 3R Laser",
+      "type": "laser_class",
+      "attributes": {
+        "hazard": "Low/Medium risk",
+        "description": "Low risk, normally safe with aversion response"
+      },
+      "course_origins": ["course-1", "course-5"]
+    },
+    {
+      "global_id": "E00011",
+      "name": "Class 3B Laser",
+      "type": "laser_class",
+      "attributes": {
+        "hazard": "Direct viewing hazardous",
+        "description": "Hazardous for direct eye exposure"
+      },
+      "course_origins": ["course-1", "course-2"]
+    },
+    {
+      "global_id": "E00012",
+      "name": "Class 4 Laser",
+      "type": "laser_class",
+      "attributes": {
+        "hazard": "Eye, skin, fire hazard",
+        "description": "High power, all hazards present"
+      },
+      "course_origins": ["course-1"]
+    },
+    {
+      "global_id": "E00013",
+      "name": "Protective Eyewear",
+      "type": "safety_measure",
+      "attributes": {
+        "type": "Personal protective equipment",
+        "key_property": "Optical Density (OD)"
+      },
+      "course_origins": ["course-1", "course-3"]
+    },
+    {
+      "global_id": "E00014",
+      "name": "FDA Variance",
+      "type": "requirement",
+      "attributes": {
+        "purpose": "Authorization for entertainment use of Class IIIb/IV lasers",
+        "issuing_authority": "FDA CDRH"
+      },
+      "course_origins": ["course-2"]
+    },
+    {
+      "global_id": "E00015",
+      "name": "Laser Notice 50",
+      "type": "document",
+      "attributes": {
+        "purpose": "FDA guidance on audience scanning",
+        "topic": "Entertainment laser exposure limits"
+      },
+      "course_origins": ["course-2"]
+    },
+    {
+      "global_id": "E00016",
+      "name": "Retinal Damage",
+      "type": "hazard",
+      "attributes": {
+        "severity": "Critical",
+        "mechanism": "Thermal or photochemical injury to retina",
+        "symptoms": "Often painless, vision loss"
+      },
+      "course_origins": ["course-1", "course-3"]
+    },
+    {
+      "global_id": "E00017",
+      "name": "EU Directive 2006/25/EC",
+      "type": "regulation",
+      "attributes": {
+        "scope": "Worker exposure to artificial optical radiation",
+        "region": "European Union"
+      },
+      "course_origins": ["course-5"]
+    },
+    {
+      "global_id": "E00018",
+      "name": "FAA Order 7400.2",
+      "type": "regulation",
+      "attributes": {
+        "scope": "Outdoor laser operations affecting airspace",
+        "agency": "Federal Aviation Administration"
+      },
+      "course_origins": ["course-6"]
+    },
+    {
+      "global_id": "E00019",
+      "name": "NOTAM",
+      "type": "procedure",
+      "attributes": {
+        "full_name": "Notice to Air Missions",
+        "purpose": "Notify pilots of temporary hazards",
+        "lead_time": "24-72 hours"
+      },
+      "course_origins": ["course-6"]
+    },
+    {
+      "global_id": "E00020",
+      "name": "ANSI E1.46",
+      "type": "standard",
+      "attributes": {
+        "title": "Entertainment Technology — Laser Safety",
+        "developer": "ESTA",
+        "scope": "Entertainment laser applications"
+      },
+      "course_origins": ["course-8"]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "E00001",
+      "target": "E00003",
+      "type": "complies_with",
+      "description": "LSO follows ANSI Z136.1 requirements"
+    },
+    {
+      "source": "E00003",
+      "target": "E00006",
+      "type": "defines",
+      "description": "ANSI Z136.1 defines MPE values"
+    },
+    {
+      "source": "E00003",
+      "target": "E00007",
+      "type": "defines",
+      "description": "ANSI Z136.1 defines NOHD calculation methods"
+    },
+    {
+      "source": "E00012",
+      "target": "E00016",
+      "type": "poses",
+      "description": "Class 4 lasers pose retinal damage risk"
+    },
+    {
+      "source": "E00013",
+      "target": "E00016",
+      "type": "protects_against",
+      "description": "Protective eyewear protects against retinal damage"
+    },
+    {
+      "source": "E00004",
+      "target": "E00014",
+      "type": "requires",
+      "description": "21 CFR 1040 requires FDA variance for entertainment"
+    },
+    {
+      "source": "E00015",
+      "target": "E00014",
+      "type": "supplements",
+      "description": "Laser Notice 50 supplements variance guidance"
+    },
+    {
+      "source": "E00005",
+      "target": "E00008",
+      "type": "defines",
+      "description": "IEC 60825-1 defines Class 1 criteria"
+    },
+    {
+      "source": "E00005",
+      "target": "E00012",
+      "type": "defines",
+      "description": "IEC 60825-1 defines Class 4 criteria"
+    },
+    {
+      "source": "E00018",
+      "target": "E00019",
+      "type": "requires",
+      "description": "FAA Order 7400.2 requires NOTAM filing"
+    }
+  ]
+}

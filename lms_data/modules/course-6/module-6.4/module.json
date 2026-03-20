@@ -1,0 +1,73 @@
+{
+  "module_id": "6.4",
+  "course_id": "6",
+  "title": "Module 6.4: Securing Outdoor Laser Shows",
+  "description": "Comprehensive guide to pre-show security, weather protocols, and on-site safety measures for outdoor laser operations",
+  "version": "1.0.0",
+  "estimated_duration_minutes": 75,
+  "difficulty": "advanced",
+  "prerequisites": ["6.1", "6.2", "6.3"],
+  "learning_objectives": [
+    {
+      "id": "6.4.1",
+      "objective": "Execute a complete pre-show security checklist for outdoor laser operations",
+      "blooms_level": "Application",
+      "assessment_method": "Interactive checklist simulation"
+    },
+    {
+      "id": "6.4.2",
+      "objective": "Make weather-related go/no-go decisions based on meteorological conditions",
+      "blooms_level": "Analysis",
+      "assessment_method": "Weather protocol decision tree"
+    },
+    {
+      "id": "6.4.3",
+      "objective": "Implement proper observer positioning and communication protocols",
+      "blooms_level": "Application",
+      "assessment_method": "Observer placement scenario"
+    },
+    {
+      "id": "6.4.4",
+      "objective": "Respond appropriately to unexpected events during outdoor shows",
+      "blooms_level": "Evaluation",
+      "assessment_method": "Emergency scenario simulation"
+    }
+  ],
+  "interactive_components": [
+    {
+      "id": "show_security_checklist",
+      "name": "Show Security Checklist",
+      "type": "interactive_checklist",
+      "file": "components/show_security_checklist.json"
+    },
+    {
+      "id": "weather_decision_tree",
+      "name": "Weather Protocol Decision Tree",
+      "type": "decision_tree",
+      "file": "components/weather_decision_tree.json"
+    },
+    {
+      "id": "observer_placement_simulator",
+      "name": "Observer Placement Simulator",
+      "type": "interactive_map",
+      "file": "components/observer_placement_simulator.json"
+    },
+    {
+      "id": "showtime_scenario",
+      "name": "Showtime Emergency Scenario",
+      "type": "scenario_simulator",
+      "file": "components/showtime_scenario.json"
+    }
+  ],
+  "content_files": {
+    "lesson": "content.md",
+    "workbook": "workbook.md"
+  },
+  "assessment": {
+    "quiz_file": "quiz.json",
+    "passing_score": 85,
+    "attempts_allowed": 3
+  },
+  "created_at": "2026-03-19T15:40:00Z",
+  "updated_at": "2026-03-19T15:40:00Z"
+}

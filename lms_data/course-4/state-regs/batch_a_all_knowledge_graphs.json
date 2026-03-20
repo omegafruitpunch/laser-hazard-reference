@@ -1,0 +1,158 @@
+[
+  {
+    "state": "California",
+    "nodes": [
+      {
+        "id": "California_State",
+        "type": "jurisdiction",
+        "label": "California"
+      },
+      {
+        "id": "California_Regulations",
+        "type": "regulation_set",
+        "label": "California Laser Regulations"
+      },
+      {
+        "id": "California_Licensing",
+        "type": "requirement",
+        "label": "Licensing Requirements"
+      },
+      {
+        "id": "California_Compliance",
+        "type": "obligation",
+        "label": "Compliance Obligations"
+      },
+      {
+        "id": "California_Penalties",
+        "type": "enforcement",
+        "label": "Penalties & Enforcement"
+      }
+    ],
+    "edges": [
+      {
+        "source": "California_State",
+        "target": "California_Regulations",
+        "relationship": "governs"
+      },
+      {
+        "source": "California_Regulations",
+        "target": "California_Licensing",
+        "relationship": "includes"
+      },
+      {
+        "source": "California_Regulations",
+        "target": "California_Compliance",
+        "relationship": "requires"
+      },
+      {
+        "source": "California_Regulations",
+        "target": "California_Penalties",
+        "relationship": "enforces"
+      }
+    ]
+  },
+  {
+    "state": "Colorado",
+    "nodes": [
+      {
+        "id": "Colorado_State",
+        "type": "jurisdiction",
+        "label": "Colorado"
+      },
+      {
+        "id": "Colorado_Regulations",
+        "type": "regulation_set",
+        "label": "Colorado Laser Regulations"
+      },
+      {
+        "id": "Colorado_Licensing",
+        "type": "requirement",
+        "label": "Licensing Requirements"
+      },
+      {
+        "id": "Colorado_Compliance",
+        "type": "obligation",
+        "label": "Compliance Obligations"
+      },
+      {
+        "id": "Colorado_Penalties",
+        "type": "enforcement",
+        "label": "Penalties & Enforcement"
+      }
+    ],
+    "edges": [
+      {
+        "source": "Colorado_State",
+        "target": "Colorado_Regulations",
+        "relationship": "governs"
+      },
+      {
+        "source": "Colorado_Regulations",
+        "target": "Colorado_Licensing",
+        "relationship": "includes"
+      },
+      {
+        "source": "Colorado_Regulations",
+        "target": "Colorado_Compliance",
+        "relationship": "requires"
+      },
+      {
+        "source": "Colorado_Regulations",
+        "target": "Colorado_Penalties",
+        "relationship": "enforces"
+      }
+    ]
+  },
+  {
+    "state": "Florida",
+    "nodes": [
+      {
+        "id": "Florida_State",
+        "type": "jurisdiction",
+        "label": "Florida"
+      },
+      {
+        "id": "Florida_Regulations",
+        "type": "regulation_set",
+        "label": "Florida Laser Regulations"
+      },
+      {
+        "id": "Florida_Licensing",
+        "type": "requirement",
+        "label": "Licensing Requirements"
+      },
+      {
+        "id": "Florida_Compliance",
+        "type": "obligation",
+        "label": "Compliance Obligations"
+      },
+      {
+        "id": "Florida_Penalties",
+        "type": "enforcement",
+        "label": "Penalties & Enforcement"
+      }
+    ],
+    "edges": [
+      {
+        "source": "Florida_State",
+        "target": "Florida_Regulations",
+        "relationship": "governs"
+      },
+      {
+        "source": "Florida_Regulations",
+        "target": "Florida_Licensing",
+        "relationship": "includes"
+      },
+      {
+        "source": "Florida_Regulations",
+        "target": "Florida_Compliance",
+        "relationship": "requires"
+      },
+      {
+        "source": "Florida_Regulations",
+        "target": "Florida_Penalties",
+        "relationship": "enforces"
+      }
+    ]
+  }
+]

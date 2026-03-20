@@ -1,0 +1,73 @@
+{
+  "module_id": "6.5",
+  "course_id": "6",
+  "title": "Module 6.5: International Outdoor Standards",
+  "description": "Comparative analysis of international outdoor laser safety standards, regulations, and measurement protocols",
+  "version": "1.0.0",
+  "estimated_duration_minutes": 70,
+  "difficulty": "advanced",
+  "prerequisites": ["6.1", "6.2", "6.3"],
+  "learning_objectives": [
+    {
+      "id": "6.5.1",
+      "objective": "Compare FAA AC 70-1B with international standards (ICAO, EASA, CAA UK)",
+      "blooms_level": "Analysis",
+      "assessment_method": "International comparison tool"
+    },
+    {
+      "id": "6.5.2",
+      "objective": "Calculate SAE measurement zones using proper formulas",
+      "blooms_level": "Application",
+      "assessment_method": "Power measurement visualizer"
+    },
+    {
+      "id": "6.5.3",
+      "objective": "Identify country-specific requirements for outdoor laser operations",
+      "blooms_level": "Knowledge",
+      "assessment_method": "Standards matching exercise"
+    },
+    {
+      "id": "6.5.4",
+      "objective": "Apply visual correction factors for different laser wavelengths",
+      "blooms_level": "Application",
+      "assessment_method": "VCF calculation exercise"
+    }
+  ],
+  "interactive_components": [
+    {
+      "id": "international_comparison",
+      "name": "International Standards Comparison",
+      "type": "comparison_table",
+      "file": "components/international_comparison.json"
+    },
+    {
+      "id": "power_measurement_visualizer",
+      "name": "SAE Power Measurement Visualizer",
+      "type": "interactive_calculator",
+      "file": "components/power_measurement_visualizer.json"
+    },
+    {
+      "id": "vcf_calculator",
+      "name": "Visual Correction Factor Calculator",
+      "type": "interactive_calculator",
+      "file": "components/vcf_calculator.json"
+    },
+    {
+      "id": "zone_calculator",
+      "name": "Flight Zone Calculator",
+      "type": "interactive_calculator",
+      "file": "components/zone_calculator.json"
+    }
+  ],
+  "content_files": {
+    "lesson": "content.md",
+    "workbook": "workbook.md"
+  },
+  "assessment": {
+    "quiz_file": "quiz.json",
+    "passing_score": 85,
+    "attempts_allowed": 3
+  },
+  "created_at": "2026-03-19T15:40:00Z",
+  "updated_at": "2026-03-19T15:40:00Z"
+}

@@ -1,0 +1,33 @@
+{
+  "course": "course-2",
+  "page_number": 12,
+  "quiz_items": [
+    {
+      "id": "C2-P12-Q1",
+      "type": "true_false",
+      "difficulty": "intermediate",
+      "question": "A power switch alone can satisfy the beam attenuator requirement for Class IIIb/IV laser products.",
+      "options": ["True", "False"],
+      "correct_answer": 1,
+      "explanation": "False. Power switches and key controls do not satisfy the beam attenuator requirement. The attenuator must reduce beam to Class I levels without turning off the laser and be available at all times during operation.",
+      "learning_objective": "Understand beam attenuator requirements",
+      "regulatory_reference": "21 CFR 1040.10(f)(6)"
+    },
+    {
+      "id": "C2-P12-Q2",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "What is required for viewing optics (viewports, microscopes) on laser products?",
+      "options": [
+        "Must provide access to Class IIIa levels for better visibility",
+        "May not provide access above Class I limits during operation/maintenance",
+        "Only need warning labels",
+        "Must be made of glass only"
+      ],
+      "correct_answer": 1,
+      "explanation": "Viewing optics may not provide human access to laser or collateral radiation exceeding Class I and Table VI limits during operation or maintenance. Shutters/attenuators must be fail-safe.",
+      "learning_objective": "Apply viewing optics requirements",
+      "regulatory_reference": "21 CFR 1040.10(f)(8)"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "courseId": "course-8",
+  "title": "Entertainment Technology Standards",
+  "description": "Comprehensive coverage of ANSI/ESTA standards for entertainment technology with certification preparation.",
+  "version": "1.1.0",
+  "lastUpdated": "2024-03-19",
+  "modules": [
+    {
+      "id": "module-8-1",
+      "file": "module-8-1.json",
+      "title": "ANSI Z136 Laser Safety Standards",
+      "order": 1,
+      "duration": 15,
+      "components": ["StandardsHierarchyVisualizer", "Z136Navigator"]
+    },
+    {
+      "id": "module-8-2",
+      "file": "module-8-2.json",
+      "title": "ANSI E1.46 Entertainment Laser Standard",
+      "order": 2,
+      "duration": 15,
+      "components": ["E146ComplianceChecker"]
+    },
+    {
+      "id": "module-8-3",
+      "file": "module-8-3.json",
+      "title": "Control Hierarchy & Implementation",
+      "order": 3,
+      "duration": 15,
+      "components": ["ControlMeasurePrioritizer"]
+    },
+    {
+      "id": "module-8-4",
+      "file": "module-8-4.json",
+      "title": "Documentation & Compliance Systems",
+      "order": 4,
+      "duration": 15,
+      "components": ["DocumentationTemplateGallery", "ChecklistGenerator"]
+    },
+    {
+      "id": "module-8-5",
+      "file": "module-8-5.json",
+      "title": "Certification Preparation & Professional Standards",
+      "order": 5,
+      "duration": 15,
+      "components": ["KnowledgeGapAnalyzer", "CertificationExamSimulator", "StudyPlanGenerator"]
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-8-1",
+      "moduleId": "module-8-1",
+      "title": "ANSI Z136 Series Assessment",
+      "questions": 5
+    },
+    {
+      "id": "quiz-8-2",
+      "moduleId": "module-8-2",
+      "title": "E1.46 Requirements Assessment",
+      "questions": 5
+    },
+    {
+      "id": "quiz-8-3",
+      "moduleId": "module-8-3",
+      "title": "Control Measures Assessment",
+      "questions": 5
+    },
+    {
+      "id": "quiz-8-4",
+      "moduleId": "module-8-4",
+      "title": "Documentation Assessment",
+      "questions": 5
+    },
+    {
+      "id": "quiz-8-5",
+      "moduleId": "module-8-5",
+      "title": "Certification Prep Assessment",
+      "questions": 5
+    }
+  ],
+  "standardsCovered": [
+    {
+      "standard": "ANSI Z136.1",
+      "title": "Safe Use of Lasers",
+      "type": "Foundation"
+    },
+    {
+      "standard": "ANSI Z136.2",
+      "title": "Optical Fiber Communication",
+      "type": "Specialized"
+    },
+    {
+      "standard": "ANSI Z136.3",
+      "title": "Health Care",
+      "type": "Specialized"
+    },
+    {
+      "standard": "ANSI Z136.6",
+      "title": "Outdoor Use",
+      "type": "Specialized"
+    },
+    {
+      "standard": "ANSI Z136.8",
+      "title": "Research, Development, Testing",
+      "type": "Specialized"
+    },
+    {
+      "standard": "ANSI Z136.10",
+      "title": "Entertainment",
+      "type": "Specialized"
+    },
+    {
+      "standard": "ANSI E1.46",
+      "title": "Entertainment Technology — Laser Safety",
+      "type": "Industry-Specific"
+    }
+  ],
+  "certificationsTargeted": [
+    {
+      "acronym": "CLSO",
+      "name": "Certified Laser Safety Officer",
+      "organization": "Board of Laser Safety"
+    },
+    {
+      "acronym": "CMLSO",
+      "name": "Certified Medical Laser Safety Officer",
+      "organization": "Board of Laser Safety"
+    }
+  ]
+}

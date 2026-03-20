@@ -1,0 +1,140 @@
+[
+  {
+    "state": "California",
+    "quiz_questions": [
+      {
+        "type": "multiple_choice",
+        "question": "Which agency regulates laser devices in California?",
+        "options": [
+          "FDA/CDRH",
+          "State Health Department",
+          "OSHA",
+          "EPA"
+        ],
+        "correct_answer": "State Health Department",
+        "difficulty": "medium",
+        "category": "regulatory_authority"
+      },
+      {
+        "type": "true_false",
+        "question": "California requires state-level licensing for medical laser operators.",
+        "correct_answer": true,
+        "difficulty": "easy",
+        "category": "licensing"
+      },
+      {
+        "type": "scenario",
+        "question": "A laser technician licensed in Texas wants to operate in California. What must they do?",
+        "scenario": "Interstate operation scenario",
+        "correct_answer": "Check {state_name} reciprocity agreements and apply for temporary or permanent licensure",
+        "difficulty": "hard",
+        "category": "interstate_operation"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the penalty for operating a Class 4 laser without proper California licensing?",
+        "options": [
+          "Warning only",
+          "Fine up to $1,000",
+          "Fine and/or imprisonment",
+          "License suspension only"
+        ],
+        "correct_answer": "Fine and/or imprisonment",
+        "difficulty": "medium",
+        "category": "penalties"
+      }
+    ]
+  },
+  {
+    "state": "Colorado",
+    "quiz_questions": [
+      {
+        "type": "multiple_choice",
+        "question": "Which agency regulates laser devices in Colorado?",
+        "options": [
+          "FDA/CDRH",
+          "State Health Department",
+          "OSHA",
+          "EPA"
+        ],
+        "correct_answer": "State Health Department",
+        "difficulty": "medium",
+        "category": "regulatory_authority"
+      },
+      {
+        "type": "true_false",
+        "question": "Colorado requires state-level licensing for medical laser operators.",
+        "correct_answer": true,
+        "difficulty": "easy",
+        "category": "licensing"
+      },
+      {
+        "type": "scenario",
+        "question": "A laser technician licensed in Texas wants to operate in Colorado. What must they do?",
+        "scenario": "Interstate operation scenario",
+        "correct_answer": "Check {state_name} reciprocity agreements and apply for temporary or permanent licensure",
+        "difficulty": "hard",
+        "category": "interstate_operation"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the penalty for operating a Class 4 laser without proper Colorado licensing?",
+        "options": [
+          "Warning only",
+          "Fine up to $1,000",
+          "Fine and/or imprisonment",
+          "License suspension only"
+        ],
+        "correct_answer": "Fine and/or imprisonment",
+        "difficulty": "medium",
+        "category": "penalties"
+      }
+    ]
+  },
+  {
+    "state": "Florida",
+    "quiz_questions": [
+      {
+        "type": "multiple_choice",
+        "question": "Which agency regulates laser devices in Florida?",
+        "options": [
+          "FDA/CDRH",
+          "State Health Department",
+          "OSHA",
+          "EPA"
+        ],
+        "correct_answer": "State Health Department",
+        "difficulty": "medium",
+        "category": "regulatory_authority"
+      },
+      {
+        "type": "true_false",
+        "question": "Florida requires state-level licensing for medical laser operators.",
+        "correct_answer": true,
+        "difficulty": "easy",
+        "category": "licensing"
+      },
+      {
+        "type": "scenario",
+        "question": "A laser technician licensed in Texas wants to operate in Florida. What must they do?",
+        "scenario": "Interstate operation scenario",
+        "correct_answer": "Check {state_name} reciprocity agreements and apply for temporary or permanent licensure",
+        "difficulty": "hard",
+        "category": "interstate_operation"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the penalty for operating a Class 4 laser without proper Florida licensing?",
+        "options": [
+          "Warning only",
+          "Fine up to $1,000",
+          "Fine and/or imprisonment",
+          "License suspension only"
+        ],
+        "correct_answer": "Fine and/or imprisonment",
+        "difficulty": "medium",
+        "category": "penalties"
+      }
+    ]
+  }
+]

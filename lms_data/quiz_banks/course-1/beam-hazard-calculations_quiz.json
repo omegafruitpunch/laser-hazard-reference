@@ -1,0 +1,91 @@
+{
+  "document": "beam-hazard-calculations.pdf",
+  "title": "Professional Profile Quiz",
+  "total_questions": 6,
+  "questions": [
+    {
+      "id": "bh_q1",
+      "type": "multiple_choice",
+      "page_ref": 1,
+      "question": "What is the primary specialization of Laser Safety Services (LSS)?",
+      "options": [
+        "Medical laser applications",
+        "Entertainment, display and tradeshow industries",
+        "Military laser systems",
+        "Industrial manufacturing lasers"
+      ],
+      "correct_answer": 1,
+      "explanation_correct": "Correct. LSS specializes in entertainment, display and tradeshow industries since 1995.",
+      "explanation_incorrect": "Incorrect. LSS specializes in entertainment, display and tradeshow industries.",
+      "learning_objective": "Identify company specializations in laser safety"
+    },
+    {
+      "id": "bh_q2",
+      "type": "true_false",
+      "page_ref": 3,
+      "question": "ANSI Z136.1 requires laser safety training for all personnel routinely working with lasers.",
+      "correct_answer": true,
+      "explanation_correct": "Correct. ANSI Z136.1 states training shall be provided to all personnel routinely working with lasers.",
+      "explanation_incorrect": "Incorrect. ANSI Z136.1 does require training for personnel working with lasers.",
+      "learning_objective": "Understand ANSI Z136.1 training requirements"
+    },
+    {
+      "id": "bh_q3",
+      "type": "multiple_choice",
+      "page_ref": 4,
+      "question": "What is the passing requirement for the LSO training course?",
+      "options": [
+        "60% of questions correct",
+        "70% of questions correct",
+        "80% of questions correct",
+        "90% of questions correct"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. Participants must answer 80% of test questions correctly.",
+      "explanation_incorrect": "Incorrect. The passing requirement is 80% of questions correct.",
+      "learning_objective": "Know certification requirements"
+    },
+    {
+      "id": "bh_q4",
+      "type": "multiple_choice",
+      "page_ref": 4,
+      "question": "How long does the LSO training course typically take?",
+      "options": [
+        "1 hour",
+        "2 hours",
+        "4 hours",
+        "8 hours"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. Training takes approximately 4 hours.",
+      "explanation_incorrect": "Incorrect. The training course takes approximately 4 hours to complete.",
+      "learning_objective": "Understand training duration"
+    },
+    {
+      "id": "bh_q5",
+      "type": "scenario",
+      "page_ref": 3,
+      "question": "A venue is planning to hire a Laser Safety Officer. Which professional organization should they look for membership in to verify expertise in laser display safety?",
+      "options": [
+        "IEEE (Institute of Electrical and Electronics Engineers)",
+        "ILDA (International Laser Display Association)",
+        "AMA (American Medical Association)",
+        "OSHA (Occupational Safety and Health Administration)"
+      ],
+      "correct_answer": 1,
+      "explanation_correct": "Correct. ILDA is the International Laser Display Association, the professional body for laser display safety.",
+      "explanation_incorrect": "Incorrect. ILDA (International Laser Display Association) is the relevant professional organization for laser display safety.",
+      "learning_objective": "Identify key professional organizations"
+    },
+    {
+      "id": "bh_q6",
+      "type": "true_false",
+      "page_ref": 1,
+      "question": "Laser Safety Services handles FAA notifications for outdoor laser shows.",
+      "correct_answer": true,
+      "explanation_correct": "Correct. LSS handles Federal Aviation Administration (FAA) notifications for outdoor shows/displays.",
+      "explanation_incorrect": "Incorrect. LSS does handle FAA notifications for outdoor laser shows.",
+      "learning_objective": "Understand regulatory compliance services"
+    }
+  ]
+}

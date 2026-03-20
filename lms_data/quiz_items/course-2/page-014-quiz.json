@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 14,
+  "quiz_items": [
+    {
+      "id": "C2-P14-Q1",
+      "type": "multiple_select",
+      "difficulty": "intermediate",
+      "question": "What information must be included in user information (manual) for laser products? (Select all that apply)",
+      "options": [
+        "Instructions for operation and maintenance with warnings",
+        "Radiation specifications",
+        "Price list and ordering information",
+        "Reproductions of required labels"
+      ],
+      "correct_answer": [0, 1, 3],
+      "explanation": "User information must include: operation/maintenance instructions with warnings, radiation specifications, label reproductions, controls listing, and caution statement about hazardous exposure if instructions not followed.",
+      "learning_objective": "Know user information requirements",
+      "regulatory_reference": "21 CFR 1040.10(h)(1)"
+    },
+    {
+      "id": "C2-P14-Q2",
+      "type": "scenario",
+      "difficulty": "advanced",
+      "question": "A manufacturer produces multi-axis robotic laser workstations. Which Laser Notice provides specific guidance for these products?",
+      "options": [
+        "Laser Notice #37",
+        "Laser Notice #39",
+        "Laser Notice #50",
+        "Laser Notice #56"
+      ],
+      "correct_answer": 1,
+      "explanation": "Laser Notice #39 addresses multi-axis, robotic, high-power laser workstations not Class I due to need to accommodate all sizes of workpieces. It discusses hazards and information required in user manuals.",
+      "learning_objective": "Identify specialized guidance documents",
+      "regulatory_reference": "Laser Notice #39"
+    }
+  ]
+}

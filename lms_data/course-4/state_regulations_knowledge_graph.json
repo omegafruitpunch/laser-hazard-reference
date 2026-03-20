@@ -1,0 +1,242 @@
+{
+  "graph_name": "Course 4: State Laser Regulations Knowledge Graph",
+  "version": "1.0",
+  "created_date": "2026-03-19",
+  "states_processed": ["Georgia", "Illinois", "Massachusetts"],
+  "graph_schema": {
+    "node_types": ["State", "Regulation", "Requirement", "Agency", "ANSI_Standard", "Laser_Class", "Form", "Timeline", "Penalty"],
+    "edge_types": ["REGULATED_BY", "REQUIRES", "INCORPORATES", "EXEMPTS", "MANDATES", "PROHIBITS", "REFERENCES", "TRIGGERS", "ADMINISTERED_BY"]
+  },
+  "nodes": [
+    {
+      "id": "STATE_GA",
+      "type": "State",
+      "name": "Georgia",
+      "approach": "Federal_deference",
+      "has_state_specific_regs": false,
+      "primary_governance": "FDA_FAA"
+    },
+    {
+      "id": "STATE_IL",
+      "type": "State",
+      "name": "Illinois",
+      "approach": "Comprehensive_state_regulation",
+      "citation": "32_Ill_Adm_Code_315",
+      "authority": "Laser_System_Act_1997_420_ILCS_56"
+    },
+    {
+      "id": "STATE_MA",
+      "type": "State",
+      "name": "Massachusetts",
+      "approach": "Comprehensive_state_regulation",
+      "citation": "105_CMR_121.000",
+      "authority": "MGL_c111_ss_5I_5N_5O_5P"
+    },
+    {
+      "id": "AGENCY_IEMA",
+      "type": "Agency",
+      "name": "Illinois Emergency Management Agency",
+      "jurisdiction": "Illinois",
+      "former_name": "Department of Nuclear Safety"
+    },
+    {
+      "id": "AGENCY_MA_DPH",
+      "type": "Agency",
+      "name": "Massachusetts Department of Public Health",
+      "jurisdiction": "Massachusetts",
+      "program": "Radiation_Control_Program"
+    },
+    {
+      "id": "AGENCY_FDA",
+      "type": "Agency",
+      "name": "Food and Drug Administration",
+      "division": "CDRH",
+      "jurisdiction": "Federal"
+    },
+    {
+      "id": "AGENCY_FAA",
+      "type": "Agency",
+      "name": "Federal Aviation Administration",
+      "jurisdiction": "Federal"
+    },
+    {
+      "id": "ANSI_Z136_1",
+      "type": "ANSI_Standard",
+      "name": "ANSI Z136.1",
+      "title": "Safe Use of Lasers",
+      "adopted_by": ["Illinois", "Massachusetts"]
+    },
+    {
+      "id": "ANSI_Z136_2",
+      "type": "ANSI_Standard",
+      "name": "ANSI Z136.2",
+      "title": "Optical Fiber Communication Systems",
+      "adopted_by": ["Illinois", "Massachusetts"]
+    },
+    {
+      "id": "ANSI_Z136_3",
+      "type": "ANSI_Standard",
+      "name": "ANSI Z136.3",
+      "title": "Safe Use of Lasers in Health Care",
+      "adopted_by": ["Illinois", "Massachusetts"]
+    },
+    {
+      "id": "CLASS_3B",
+      "type": "Laser_Class",
+      "name": "Class 3B",
+      "registration_required": true
+    },
+    {
+      "id": "CLASS_4",
+      "type": "Laser_Class",
+      "name": "Class 4",
+      "registration_required": true
+    },
+    {
+      "id": "CLASS_3A",
+      "type": "Laser_Class",
+      "name": "Class 3A",
+      "registration_required": false,
+      "exempt": true
+    },
+    {
+      "id": "REQUIREMENT_LSO",
+      "type": "Requirement",
+      "name": "Laser Safety Officer",
+      "required_by": ["Illinois", "Massachusetts"],
+      "qualifications": ["Training", "Experience", "Authority"]
+    },
+    {
+      "id": "REQUIREMENT_REGISTRATION",
+      "type": "Requirement",
+      "name": "Facility Registration",
+      "varies_by_state": true
+    },
+    {
+      "id": "REQUIREMENT_VARIANCE",
+      "type": "Requirement",
+      "name": "FDA Variance",
+      "required_for": "Entertainment_laser_shows",
+      "authority": "21_CFR_1040.11"
+    },
+    {
+      "id": "TIMELINE_IL_10DAY",
+      "type": "Timeline",
+      "name": "10 Working Days Notice",
+      "context": "Out-of-state temporary use",
+      "states": ["Illinois", "Massachusetts"]
+    },
+    {
+      "id": "TIMELINE_MA_ENTERTAINMENT",
+      "type": "Timeline",
+      "name": "10 Days Before First Performance",
+      "context": "Entertainment laser notification",
+      "state": "Massachusetts"
+    },
+    {
+      "id": "TIMELINE_IL_30DAY",
+      "type": "Timeline",
+      "name": "30 Days",
+      "context": "Discontinuance notification, change of operator",
+      "state": "Illinois"
+    },
+    {
+      "id": "PENALTY_MA_CIVIL",
+      "type": "Penalty",
+      "name": "Civil Penalty",
+      "amount": "$500_per_violation",
+      "state": "Massachusetts"
+    },
+    {
+      "id": "REQUIREMENT_FAA_7140",
+      "type": "Requirement",
+      "name": "FAA Form 7140-1",
+      "purpose": "Outdoor unterminated laser shows",
+      "submission": "FAA_Service_Area"
+    }
+  ],
+  "edges": [
+    {"source": "STATE_GA", "target": "AGENCY_FDA", "type": "REGULATED_BY", "weight": 1.0},
+    {"source": "STATE_GA", "target": "AGENCY_FAA", "type": "REGULATED_BY", "weight": 1.0},
+    {"source": "STATE_IL", "target": "AGENCY_IEMA", "type": "ADMINISTERED_BY", "weight": 1.0},
+    {"source": "STATE_MA", "target": "AGENCY_MA_DPH", "type": "ADMINISTERED_BY", "weight": 1.0},
+    {"source": "STATE_IL", "target": "ANSI_Z136_1", "type": "INCORPORATES", "weight": 1.0},
+    {"source": "STATE_IL", "target": "ANSI_Z136_2", "type": "INCORPORATES", "weight": 1.0},
+    {"source": "STATE_IL", "target": "ANSI_Z136_3", "type": "INCORPORATES", "weight": 1.0},
+    {"source": "STATE_MA", "target": "ANSI_Z136_1", "type": "INCORPORATES", "weight": 1.0},
+    {"source": "STATE_MA", "target": "ANSI_Z136_2", "type": "INCORPORATES", "weight": 1.0},
+    {"source": "STATE_MA", "target": "ANSI_Z136_3", "type": "INCORPORATES", "weight": 1.0},
+    {"source": "STATE_IL", "target": "CLASS_3B", "type": "REQUIRES", "property": "registration"},
+    {"source": "STATE_IL", "target": "CLASS_4", "type": "REQUIRES", "property": "registration"},
+    {"source": "STATE_MA", "target": "CLASS_3B", "type": "REQUIRES", "property": "registration"},
+    {"source": "STATE_MA", "target": "CLASS_4", "type": "REQUIRES", "property": "registration"},
+    {"source": "STATE_IL", "target": "CLASS_3A", "type": "EXEMPTS", "property": "registration"},
+    {"source": "STATE_GA", "target": "REQUIREMENT_VARIANCE", "type": "REQUIRES", "property": "entertainment_shows"},
+    {"source": "STATE_IL", "target": "REQUIREMENT_VARIANCE", "type": "REQUIRES", "property": "entertainment_shows"},
+    {"source": "STATE_MA", "target": "REQUIREMENT_VARIANCE", "type": "REQUIRES", "property": "entertainment_shows"},
+    {"source": "STATE_IL", "target": "REQUIREMENT_LSO", "type": "MANDATES"},
+    {"source": "STATE_MA", "target": "REQUIREMENT_LSO", "type": "MANDATES"},
+    {"source": "STATE_GA", "target": "REQUIREMENT_FAA_7140", "type": "REQUIRES", "condition": "outdoor_unterminated"},
+    {"source": "STATE_IL", "target": "TIMELINE_IL_10DAY", "type": "REFERENCES"},
+    {"source": "STATE_MA", "target": "TIMELINE_IL_10DAY", "type": "REFERENCES"},
+    {"source": "STATE_MA", "target": "TIMELINE_MA_ENTERTAINMENT", "type": "REFERENCES"},
+    {"source": "STATE_IL", "target": "TIMELINE_IL_30DAY", "type": "REFERENCES"},
+    {"source": "STATE_MA", "target": "PENALTY_MA_CIVIL", "type": "TRIGGERS", "condition": "violation"}
+  ],
+  "comparative_analysis": {
+    "registration_requirements": {
+      "Georgia": "None state-specific; follows federal",
+      "Illinois": "Installation (one-time) + Annual system registration",
+      "Massachusetts": "Certificate of Registration required; renewable"
+    },
+    "laser_classes_regulated": {
+      "Georgia": "Not specified in state docs; FDA classes apply",
+      "Illinois": "Class 3B and Class 4 (exempts 1, 2, 2a, 3a)",
+      "Massachusetts": "Class 3B and Class 4 only"
+    },
+    "advance_notice_temporary": {
+      "Georgia": "Not specified",
+      "Illinois": "10 working days",
+      "Massachusetts": "10 working days"
+    },
+    "entertainment_notification": {
+      "Georgia": "Not specified",
+      "Illinois": "10 working days",
+      "Massachusetts": "10 days before first performance"
+    },
+    "lso_required": {
+      "Georgia": "Implied by federal",
+      "Illinois": "Yes - specific qualifications defined",
+      "Massachusetts": "Yes - must be designated"
+    },
+    "civil_penalties": {
+      "Georgia": "Not specified",
+      "Illinois": "Not specified in Part 315",
+      "Massachusetts": "Up to $500 per violation"
+    },
+    "record_retention": {
+      "Georgia": "Not specified",
+      "Illinois": "5 years",
+      "Massachusetts": "Specified in ANSI standards incorporated"
+    },
+    "variety_of_ansi_standards": {
+      "Georgia": "Not incorporated",
+      "Illinois": "Z136.1, Z136.2, Z136.3",
+      "Massachusetts": "Z136.1, Z136.2, Z136.3"
+    }
+  },
+  "key_insights": [
+    "Illinois and Massachusetts have comprehensive state-specific regulations, while Georgia defers to federal oversight",
+    "Both Illinois and Massachusetts require 10 working days advance notice for temporary out-of-state laser use",
+    "ANSI Z136 series standards are incorporated by reference in both Illinois and Massachusetts",
+    "Only Massachusetts explicitly defines civil penalties ($500 per violation)",
+    "Class 3B and Class 4 lasers consistently require registration across regulated states",
+    "All three states require FDA variance for entertainment laser shows",
+    "Laser Safety Officer requirements are explicit in Illinois and Massachusetts, implied in Georgia"
+  ],
+  "quiz_cross_references": {
+    "Georgia": "georgia_quiz.json",
+    "Illinois": "illinois_quiz.json",
+    "Massachusetts": "massachusetts_quiz.json"
+  }
+}

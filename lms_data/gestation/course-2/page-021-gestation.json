@@ -1,0 +1,55 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 21,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Appendix A: Tabulation of FDA Requirements",
+      "Class-based requirement matrix",
+      "Performance, labeling, and information requirements by class",
+      "Specific-purpose product requirements"
+    ],
+    "key_terms": [
+      {
+        "term": "Requirement Matrix",
+        "definition": "Table showing which requirements apply to each laser class"
+      },
+      {
+        "term": "R - Required",
+        "definition": "Requirement applies to this class"
+      },
+      {
+        "term": "N/A - Not Applicable",
+        "definition": "Requirement does not apply"
+      },
+      {
+        "term": "S - Same",
+        "definition": "Requirements same as other products of that class"
+      },
+      {
+        "term": "NP - Not Permitted",
+        "definition": "Product class not allowed for this application"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1040.10(f) - Performance requirements",
+      "21 CFR 1040.10(g) - Labeling requirements",
+      "21 CFR 1040.10(h) - Information requirements",
+      "21 CFR 1040.11 - Specific-purpose products"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Navigate the requirements matrix",
+      "Identify applicable requirements by class",
+      "Compare requirements across classes",
+      "Apply footnotes to specific cases"
+    ],
+    "prerequisites": [
+      "All previous pages"
+    ],
+    "estimated_study_time_minutes": 30,
+    "content_type": "reference_table",
+    "has_tables": true
+  }
+}

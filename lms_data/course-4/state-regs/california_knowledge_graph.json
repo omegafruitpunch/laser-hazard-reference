@@ -1,0 +1,52 @@
+{
+  "state": "California",
+  "nodes": [
+    {
+      "id": "California_State",
+      "type": "jurisdiction",
+      "label": "California"
+    },
+    {
+      "id": "California_Regulations",
+      "type": "regulation_set",
+      "label": "California Laser Regulations"
+    },
+    {
+      "id": "California_Licensing",
+      "type": "requirement",
+      "label": "Licensing Requirements"
+    },
+    {
+      "id": "California_Compliance",
+      "type": "obligation",
+      "label": "Compliance Obligations"
+    },
+    {
+      "id": "California_Penalties",
+      "type": "enforcement",
+      "label": "Penalties & Enforcement"
+    }
+  ],
+  "edges": [
+    {
+      "source": "California_State",
+      "target": "California_Regulations",
+      "relationship": "governs"
+    },
+    {
+      "source": "California_Regulations",
+      "target": "California_Licensing",
+      "relationship": "includes"
+    },
+    {
+      "source": "California_Regulations",
+      "target": "California_Compliance",
+      "relationship": "requires"
+    },
+    {
+      "source": "California_Regulations",
+      "target": "California_Penalties",
+      "relationship": "enforces"
+    }
+  ]
+}

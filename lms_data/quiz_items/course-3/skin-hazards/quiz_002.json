@@ -1,0 +1,13 @@
+{
+  "id": "skin-hazards_q002",
+  "type": "multiple_choice",
+  "question": "What is the primary mechanism of injury for UV laser skin exposure?",
+  "options": [
+    "Thermal damage",
+    "Photochemical damage",
+    "Mechanical damage",
+    "Electrical damage"
+  ],
+  "correct": 1,
+  "explanation": "UV laser injury is primarily photochemical, involving DNA absorption and molecular bond breaking, unlike visible and IR which are primarily thermal."
+}

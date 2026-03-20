@@ -1,0 +1,86 @@
+{
+  "module_id": "3.4",
+  "course_id": "3",
+  "title": "Module 3.4: IEC 60825-1 Standard",
+  "description": "Understanding the international laser safety classification standard, AEL tables, and relationship to FDA regulations",
+  "version": "1.0.0",
+  "estimated_duration_minutes": 60,
+  "difficulty": "intermediate",
+  "prerequisites": ["3.1", "3.2", "3.3"],
+  "learning_objectives": [
+    {
+      "id": "3.4.1",
+      "objective": "Navigate and interpret IEC 60825-1 classification tables",
+      "blooms_level": "Application",
+      "assessment_method": "Interactive table lookup exercises"
+    },
+    {
+      "id": "3.4.2",
+      "objective": "Understand the relationship between IEC 60825-1 and FDA 21 CFR 1040.10",
+      "blooms_level": "Comprehension",
+      "assessment_method": "Comparison scenario questions"
+    },
+    {
+      "id": "3.4.3",
+      "objective": "Identify the conditions of use for each laser class (1, 1M, 2, 2M, 3R, 3B, 4)",
+      "blooms_level": "Application",
+      "assessment_method": "Classification decision-tree exercise"
+    },
+    {
+      "id": "3.4.4",
+      "objective": "Explain the significance of M and R suffix classes",
+      "blooms_level": "Comprehension",
+      "assessment_method": "Concept explanation with visual aids"
+    }
+  ],
+  "interactive_components": [
+    {
+      "id": "mpe_table_navigator",
+      "name": "MPE Table Navigator",
+      "type": "interactive_table",
+      "file": "components/mpe_table_navigator.json"
+    },
+    {
+      "id": "ael_explorer",
+      "name": "AEL Table Explorer",
+      "type": "interactive_table",
+      "file": "components/ael_explorer.json"
+    },
+    {
+      "id": "classification_tree",
+      "name": "Laser Classification Decision Tree",
+      "type": "decision_tree",
+      "file": "components/classification_tree.json"
+    },
+    {
+      "id": "iec_vs_fda",
+      "name": "IEC vs FDA Comparison Tool",
+      "type": "comparison_table",
+      "file": "components/iec_vs_fda.json"
+    }
+  ],
+  "content_files": {
+    "lesson": "content.md",
+    "workbook": "workbook.md"
+  },
+  "assessment": {
+    "quiz_file": "quiz.json",
+    "passing_score": 80,
+    "attempts_allowed": 3
+  },
+  "created_at": "2026-03-19T17:38:00Z",
+  "accessibility": {
+    "wcag_level": "2.1 AA",
+    "screen_reader_compatible": true,
+    "keyboard_navigable": true,
+    "high_contrast_support": true,
+    "reduced_motion_support": true,
+    "features": [
+      "ARIA labels on all tables",
+      "Semantic table markup with headers",
+      "Keyboard navigation for comparison tools",
+      "Screen reader announcements for dynamic content"
+    ]
+  },
+  "updated_at": "2026-03-19T17:38:00Z"
+}

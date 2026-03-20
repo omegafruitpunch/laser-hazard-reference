@@ -1,0 +1,96 @@
+{
+  "component_id": "handover_builder",
+  "name": "Hand-Over Document Builder",
+  "type": "interactive_form",
+  "description": "Build complete installation hand-over documentation with guided sections",
+  "sections": [
+    {
+      "id": "equipment",
+      "title": "1. Equipment Identification",
+      "required": true,
+      "fields": [
+        {"id": "eq_manufacturer", "label": "Manufacturer", "type": "text", "required": true},
+        {"id": "eq_model", "label": "Model Number", "type": "text", "required": true},
+        {"id": "eq_serial", "label": "Serial Number", "type": "text", "required": true},
+        {"id": "eq_type", "label": "Laser Type", "type": "select", "options": ["Diode", "DPSS", "OPSL", "Gas", "Other"]},
+        {"id": "eq_wavelength", "label": "Wavelength(s)", "type": "text", "required": true, "placeholder": "e.g., 532nm, 638nm, 445nm"},
+        {"id": "eq_power", "label": "Maximum Power Output", "type": "text", "required": true, "placeholder": "e.g., 5W total"},
+        {"id": "eq_class", "label": "Laser Class", "type": "select", "options": ["Class 1", "Class 2", "Class 3R", "Class 3B", "Class 4"], "required": true},
+        {"id": "eq_divergence", "label": "Beam Divergence", "type": "text", "placeholder": "e.g., 1.2 mrad"}
+      ]
+    },
+    {
+      "id": "safety_systems",
+      "title": "2. Safety Systems",
+      "required": true,
+      "fields": [
+        {"id": "ss_interlocks", "label": "Safety Interlocks", "type": "checkbox_group", "options": ["Door interlocks", "Cover interlocks", "Remote interlock connector", "Not applicable"]},
+        {"id": "ss_estops", "label": "Emergency Stop Locations", "type": "textarea", "required": true, "placeholder": "List all E-stop locations and their functions"},
+        {"id": "ss_scanfail", "label": "Scan Failure Detection", "type": "checkbox"},
+        {"id": "ss_scanfail_details", "label": "Scan Fail Details", "type": "textarea", "placeholder": "Response time, test procedure", "conditional_on": "ss_scanfail"},
+        {"id": "ss_blanking", "label": "Beam Blanking/Masking", "type": "textarea", "placeholder": "Describe physical or software blanking systems"},
+        {"id": "ss_key", "label": "Key Control", "type": "select", "options": ["Key switch on laser", "Password protection", "Both", "None"]}
+      ]
+    },
+    {
+      "id": "alignment",
+      "title": "3. Alignment and Beam Path",
+      "required": true,
+      "fields": [
+        {"id": "al_projector_loc", "label": "Projector Location", "type": "textarea", "required": true, "placeholder": "Mounting position, height, access"},
+        {"id": "al_beam_path", "label": "Beam Path Description", "type": "textarea", "required": true, "placeholder": "Describe beam path, effect zones, termination points"},
+        {"id": "al_mirrors", "label": "External Mirrors/Optics", "type": "textarea", "placeholder": "List any external optical components and their mounting"},
+        {"id": "al_no_access", "label": "No-Access Zones", "type": "textarea", "required": true, "placeholder": "Define areas where beams exceed MPE"}
+      ]
+    },
+    {
+      "id": "procedures",
+      "title": "4. Operating Procedures",
+      "required": true,
+      "fields": [
+        {"id": "proc_startup", "label": "Startup Procedure", "type": "textarea", "required": true, "placeholder": "Step-by-step startup sequence"},
+        {"id": "proc_normal", "label": "Normal Operation", "type": "textarea", "required": true, "placeholder": "Normal operating procedures"},
+        {"id": "proc_shutdown", "label": "Normal Shutdown", "type": "textarea", "required": true},
+        {"id": "proc_emergency", "label": "Emergency Shutdown", "type": "textarea", "required": true, "placeholder": "Emergency stop procedures and recovery"},
+        {"id": "proc_alignment", "label": "Alignment Procedures", "type": "textarea", "placeholder": "Procedures for alignment and adjustment"}
+      ]
+    },
+    {
+      "id": "maintenance",
+      "title": "5. Maintenance Requirements",
+      "required": true,
+      "fields": [
+        {"id": "maint_schedule", "label": "Maintenance Schedule", "type": "textarea", "placeholder": "Daily, weekly, monthly maintenance tasks"},
+        {"id": "maint_checks", "label": "Alignment Checks", "type": "textarea", "placeholder": "Frequency and procedure for alignment verification"},
+        {"id": "maint_cleaning", "label": "Cleaning Requirements", "type": "textarea"},
+        {"id": "maint_service", "label": "Service Contact", "type": "text", "placeholder": "Manufacturer or service provider contact"}
+      ]
+    },
+    {
+      "id": "signoffs",
+      "title": "6. Sign-Offs",
+      "required": true,
+      "fields": [
+        {"id": "so_installer", "label": "Installer Name/Company", "type": "text", "required": true},
+        {"id": "so_installer_sig", "label": "Installer Signature", "type": "text", "required": true},
+        {"id": "so_installer_date", "label": "Date", "type": "date", "required": true},
+        {"id": "so_lso", "label": "LSO Name", "type": "text", "required": true},
+        {"id": "so_lso_sig", "label": "LSO Signature", "type": "text", "required": true},
+        {"id": "so_lso_date", "label": "Date", "type": "date", "required": true},
+        {"id": "so_operator", "label": "Operator Name", "type": "text"},
+        {"id": "so_operator_sig", "label": "Operator Signature", "type": "text"},
+        {"id": "so_operator_date", "label": "Date", "type": "date"},
+        {"id": "so_venue", "label": "Venue Representative", "type": "text"},
+        {"id": "so_venue_sig", "label": "Venue Signature", "type": "text"},
+        {"id": "so_venue_date", "label": "Date", "type": "date"}
+      ]
+    }
+  ],
+  "features": {
+    "progress_indicator": true,
+    "section_validation": true,
+    "auto_save": true,
+    "export_formats": ["PDF", "JSON"],
+    "template_save": true
+  }
+}

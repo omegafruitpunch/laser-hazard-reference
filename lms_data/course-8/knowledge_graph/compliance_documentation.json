@@ -1,0 +1,174 @@
+{
+  "graph_id": "KG-CD-001",
+  "source": "compliance-documentation.pdf",
+  "document_type": "FDA Regulatory Guide",
+  "nodes": [
+    {
+      "id": "FDA-CDRH",
+      "type": "regulatory_body",
+      "label": "FDA Center for Devices and Radiological Health",
+      "properties": {
+        "full_name": "Center for Devices and Radiological Health",
+        "department": "U.S. Food and Drug Administration",
+        "location": "Silver Spring, MD 20993",
+        "contact": "1-800-638-2041"
+      }
+    },
+    {
+      "id": "Form-3640",
+      "type": "form",
+      "label": "Form FDA 3640",
+      "properties": {
+        "title": "Reporting Guide for Laser Light Shows and Displays",
+        "omb_control": "0910-0025",
+        "expiration": "July 31, 2020",
+        "estimated_burden": "24 hours per response"
+      }
+    },
+    {
+      "id": "21CFR-1002",
+      "type": "regulation",
+      "label": "21 CFR 1002",
+      "properties": {
+        "title": "Reporting Requirements for Electronic Products",
+        "scope": "Electronic products which emit radiation",
+        "requirements": ["Product reporting", "Annual reports", "Supplement submissions"]
+      }
+    },
+    {
+      "id": "Accession-Number",
+      "type": "process",
+      "label": "Accession Number Assignment",
+      "properties": {
+        "purpose": "Track submissions in CDRH database",
+        "meaning": "Report entered into database - NOT product approval",
+        "usage": "Reference for supplements and annual reports"
+      }
+    },
+    {
+      "id": "Manufacturer-Responsibility",
+      "type": "responsibility",
+      "label": "Manufacturer Compliance Responsibility",
+      "properties": {
+        "certification": "Manufacturer certifies product compliance",
+        "testing": "Must follow good manufacturing practices",
+        "reporting": "Submit reports prior to interstate commerce",
+        "cdrh_role": "CDRH does NOT approve reports or products"
+      }
+    },
+    {
+      "id": "Quality-Control",
+      "type": "process",
+      "label": "Quality Control and Testing Program",
+      "properties": {
+        "requirements": ["Testing program", "Quality control procedures", "Manufacturing tolerances"],
+        "documentation": "Must be documented in reports",
+        "verification": "CDRH may disapprove if deficient"
+      }
+    },
+    {
+      "id": "Pre-Shipment-Requirement",
+      "type": "requirement",
+      "label": "Pre-Shipment Reporting Requirement",
+      "properties": {
+        "timing": "Prior to shipment in interstate commerce",
+        "regulation": "21 CFR 1002",
+        "import_requirements": "21 CFR 1005"
+      }
+    },
+    {
+      "id": "Report-Rejection",
+      "type": "process",
+      "label": "Report Rejection Process",
+      "properties": {
+        "criteria": "Incomplete or inadequate reports",
+        "action": "Returned for completion",
+        "consequence": "No accession number, not entered in database"
+      }
+    },
+    {
+      "id": "Annual-Report",
+      "type": "process",
+      "label": "Annual Reporting Process",
+      "properties": {
+        "frequency": "Annual",
+        "content": "Updates on model family",
+        "reference": "Accession number required"
+      }
+    },
+    {
+      "id": "Supplement-Submission",
+      "type": "process",
+      "label": "Supplement Submission",
+      "properties": {
+        "trigger": "Additional information about model family",
+        "reference": "Use original accession number",
+        "timing": "As needed for changes"
+      }
+    },
+    {
+      "id": "Radiation-Defect",
+      "type": "violation",
+      "label": "Radiation Defect Determination",
+      "properties": {
+        "detection": "CDRH may determine product has defect",
+        "enforcement": "May require cessation of commerce",
+        "corrective_action": "Deficiencies must be corrected"
+      }
+    },
+    {
+      "id": "Record-Retention",
+      "type": "requirement",
+      "label": "Record Retention Requirements",
+      "properties": {
+        "scope": "Testing and quality control records",
+        "accessibility": "Must be accessible for inspection",
+        "purpose": "Support compliance verification"
+      }
+    }
+  ],
+  "edges": [
+    {"source": "FDA-CDRH", "target": "Form-3640", "relation": "publishes"},
+    {"source": "Form-3640", "target": "21CFR-1002", "relation": "implements"},
+    {"source": "Manufacturer-Responsibility", "target": "Form-3640", "relation": "submits"},
+    {"source": "FDA-CDRH", "target": "Accession-Number", "relation": "assigns"},
+    {"source": "Accession-Number", "target": "Annual-Report", "relation": "referenced_in"},
+    {"source": "Accession-Number", "target": "Supplement-Submission", "relation": "referenced_in"},
+    {"source": "Quality-Control", "target": "Form-3640", "relation": "documented_in"},
+    {"source": "Pre-Shipment-Requirement", "target": "Manufacturer-Responsibility", "relation": "mandated_by"},
+    {"source": "Report-Rejection", "target": "Accession-Number", "relation": "prevents_assignment"},
+    {"source": "Radiation-Defect", "target": "Quality-Control", "relation": "indicates_failure"},
+    {"source": "Record-Retention", "target": "Quality-Control", "relation": "supports"},
+    {"source": "21CFR-1002", "target": "Pre-Shipment-Requirement", "relation": "specifies"}
+  ],
+  "compliance_workflows": [
+    {
+      "name": "Initial Product Reporting",
+      "steps": [
+        "Complete Form FDA 3640",
+        "Document quality control program",
+        "Include test results",
+        "Submit to CDRH before shipment",
+        "Receive accession number"
+      ]
+    },
+    {
+      "name": "Annual Report Cycle",
+      "steps": [
+        "Review model family status",
+        "Document any changes",
+        "Reference original accession number",
+        "Submit annual report"
+      ]
+    },
+    {
+      "name": "Supplement Submission",
+      "steps": [
+        "Identify model family changes",
+        "Prepare supplemental information",
+        "Reference accession number",
+        "Submit to CDRH"
+      ]
+    }
+  ]
+}

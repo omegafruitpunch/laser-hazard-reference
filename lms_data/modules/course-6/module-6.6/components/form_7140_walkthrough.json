@@ -1,0 +1,340 @@
+{
+  "component_id": "form_7140_walkthrough",
+  "name": "FAA Form 7140-1 Interactive Walkthrough",
+  "type": "form_guide",
+  "description": "Step-by-step interactive guide to completing FAA Form 7140-1",
+  "version": "1.0.0",
+  "form_sections": [
+    {
+      "id": "section_1",
+      "title": "Section 1: General Information",
+      "description": "Basic information about the laser operation",
+      "fields": [
+        {
+          "id": "1a_service_center",
+          "label": "1a. To (FAA Service Center)",
+          "type": "select",
+          "required": true,
+          "help_text": "Select the service center for the operation location. See Appendix E of AC 70-1B.",
+          "options": [
+            {"value": "eastern", "label": "Eastern Service Center (AJV-E2)"},
+            {"value": "central", "label": "Central Service Center (AJV-C2)"},
+            {"value": "western_pacific", "label": "Western-Pacific Service Center (AJV-W2)"},
+            {"value": "alaskan", "label": "Alaskan Service Center (AJV-A2)"}
+          ]
+        },
+        {
+          "id": "1b_proponent",
+          "label": "1b. From (Proponent)",
+          "type": "text_group",
+          "required": true,
+          "help_text": "The proponent is the party primarily responsible for laser safety.",
+          "fields": [
+            {"id": "name", "label": "Name", "type": "text"},
+            {"id": "address", "label": "Address", "type": "text"},
+            {"id": "phone", "label": "Phone", "type": "tel"},
+            {"id": "email", "label": "Email", "type": "email"}
+          ]
+        },
+        {
+          "id": "1c_event_name",
+          "label": "1c. Event or Facility Name",
+          "type": "text",
+          "required": true,
+          "help_text": "Use a descriptive name that clearly identifies the operation.",
+          "example": "July 4th Celebration Laser Show - Central Park"
+        },
+        {
+          "id": "1d_date_prepared",
+          "label": "1d. Date Prepared",
+          "type": "date",
+          "required": true,
+          "help_text": "Date the form is being completed, NOT the event date."
+        }
+      ]
+    },
+    {
+      "id": "section_2",
+      "title": "Section 2: Dates and Times",
+      "description": "Schedule of laser operations",
+      "fields": [
+        {
+          "id": "2a_testing",
+          "label": "2a. Testing and Alignment",
+          "type": "datetime_range",
+          "required": true,
+          "help_text": "Include setup, alignment, and testing time. Add buffer for contingencies.",
+          "example": "2026-07-04, 18:00-19:30 EDT"
+        },
+        {
+          "id": "2b_operation",
+          "label": "2b. Operation",
+          "type": "datetime_range",
+          "required": true,
+          "help_text": "Actual show times. Be specific about time zone.",
+          "example": "2026-07-04, 21:00-23:00 EDT"
+        }
+      ]
+    },
+    {
+      "id": "section_6",
+      "title": "Section 6: Control Measures",
+      "description": "Safety systems and procedures",
+      "fields": [
+        {
+          "id": "6_control_measures",
+          "label": "Brief Description of Control Measures",
+          "type": "textarea",
+          "required": true,
+          "help_text": "Describe methods to protect airspace: observers, electronic systems, physical barriers.",
+          "templates": [
+            {
+              "name": "Safety Observers",
+              "text": "Safety observers will be positioned at [locations] with continuous radio contact to the laser operator. Observers are trained in aircraft identification and emergency shutdown procedures."
+            },
+            {
+              "name": "Electronic Protection",
+              "text": "Electronic protection system compliant with SAE AS6029B will monitor airspace using [radar/camera description]. System automatically terminates beams when aircraft detected."
+            },
+            {
+              "name": "Physical Termination",
+              "text": "All laser beams terminate on physical structures [describe buildings/screens] that are inaccessible to aircraft. Beam paths verified clear of navigable airspace."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_11",
+      "title": "Section 11: Geographic Location",
+      "description": "Precise location of laser operation",
+      "fields": [
+        {
+          "id": "11a_elevation",
+          "label": "11a. Site Elevation",
+          "unit": "feet MSL",
+          "type": "number",
+          "required": true,
+          "help_text": "Use USGS topographic maps or GPS. Enter in feet mean sea level."
+        },
+        {
+          "id": "11b_laser_height",
+          "label": "11b. Laser Height Above Site",
+          "unit": "feet AGL",
+          "type": "number",
+          "required": true,
+          "help_text": "Height from ground to laser aperture. Include any stage/structure height."
+        },
+        {
+          "id": "11c_total_elevation",
+          "label": "11c. Overall Laser Elevation",
+          "unit": "feet MSL",
+          "type": "calculated",
+          "formula": "${11a_elevation} + ${11b_laser_height}",
+          "help_text": "Automatically calculated from 11a + 11b"
+        },
+        {
+          "id": "11d_method",
+          "label": "11d. Information Determined By",
+          "type": "select",
+          "required": true,
+          "options": [
+            {"value": "gps", "label": "GPS"},
+            {"value": "map", "label": "Map (topographic)"},
+            {"value": "other", "label": "Other (specify in Section 10b)"}
+          ]
+        },
+        {
+          "id": "11e_latitude",
+          "label": "11e. Latitude",
+          "type": "coordinate",
+          "format": "DMS",
+          "required": true,
+          "help_text": "Degrees, minutes, seconds. Use GPS or topographic map."
+        },
+        {
+          "id": "11f_longitude",
+          "label": "11f. Longitude",
+          "type": "coordinate",
+          "format": "DMS",
+          "required": true,
+          "help_text": "Degrees, minutes, seconds. Use GPS or topographic map."
+        }
+      ]
+    },
+    {
+      "id": "section_12",
+      "title": "Section 12: Beam Characteristics and Calculations",
+      "description": "Technical laser specifications",
+      "mode_selection": true,
+      "modes": ["Single Pulse", "Continuous Wave", "Repetitively Pulsed"],
+      "fields": [
+        {
+          "id": "12a_laser_type",
+          "label": "Laser Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "CO2",
+            "Copper-vapor",
+            "Diode",
+            "Diode-pumped Solid State (DPSS)",
+            "Fiber",
+            "Nd:YAG",
+            "Nd:YVO4",
+            "Other (specify)"
+          ]
+        },
+        {
+          "id": "12a_hazard_class",
+          "label": "Laser Hazard Class",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Class 2",
+            "Class 3R",
+            "Class 3B",
+            "Class 4"
+          ]
+        },
+        {
+          "id": "12a_power",
+          "label": "Power (CW) / Average Power (Pulsed)",
+          "unit": "W",
+          "type": "number",
+          "required": true,
+          "help_text": "Enter maximum power in watts. For RGB, enter per wavelength."
+        },
+        {
+          "id": "12a_divergence",
+          "label": "Beam Divergence",
+          "unit": "mrad",
+          "type": "number",
+          "required": true,
+          "help_text": "Full angle at 1/e points in milliradians."
+        },
+        {
+          "id": "12a_wavelength",
+          "label": "Wavelength(s)",
+          "unit": "nm",
+          "type": "text",
+          "required": true,
+          "help_text": "Enter all wavelengths. For RGB: list all three."
+        },
+        {
+          "id": "12b_mpe",
+          "label": "12b. MPE Value",
+          "unit": "mW/cm² (CW) or J/cm² (pulsed)",
+          "type": "number",
+          "required": true,
+          "help_text": "Use Table 1 (pulsed) or Table 2 (CW) from Appendix B of AC 70-1B.",
+          "default_visible": 2.6
+        },
+        {
+          "id": "12c_pcp",
+          "label": "12c. Pre-corrected Power (PCP)",
+          "unit": "W",
+          "type": "calculated",
+          "formula": "sum_visible_wavelengths",
+          "help_text": "Sum of all visible wavelengths."
+        },
+        {
+          "id": "12c_vcf",
+          "label": "Visual Correction Factor",
+          "type": "calculated_or_manual",
+          "help_text": "Use Table 3 or calculated value for multi-wavelength.",
+          "default": 1.0
+        },
+        {
+          "id": "12c_vcp",
+          "label": "Visually Corrected Power",
+          "unit": "W",
+          "type": "calculated",
+          "formula": "${12c_pcp} * ${12c_vcf}",
+          "help_text": "PCP × VCF"
+        }
+      ]
+    },
+    {
+      "id": "section_14",
+      "title": "Section 14: Protection Distances",
+      "description": "Calculated safety distances",
+      "fields": [
+        {
+          "id": "14a_nohd",
+          "label": "14a. NOHD (Nominal Ocular Hazard Distance)",
+          "type": "distance_calculation",
+          "help_text": "Distance where beam irradiance falls below MPE.",
+          "columns": ["Slant Range", "Horizontal Distance", "Vertical Distance"]
+        },
+        {
+          "id": "14b_szed",
+          "label": "14b. SZED (Sensitive Zone Exposure Distance)",
+          "type": "distance_calculation",
+          "help_text": "Distance where irradiance falls below 100 µW/cm².",
+          "columns": ["Slant Range", "Horizontal Distance", "Vertical Distance"]
+        },
+        {
+          "id": "14c_czed",
+          "label": "14c. CZED (Critical Zone Exposure Distance)",
+          "type": "distance_calculation",
+          "help_text": "Distance where irradiance falls below 5 µW/cm².",
+          "columns": ["Slant Range", "Horizontal Distance", "Vertical Distance"]
+        },
+        {
+          "id": "14d_lfed",
+          "label": "14d. LFED (Laser-Free Exposure Distance)",
+          "type": "distance_calculation",
+          "help_text": "Distance where irradiance falls below 50 nW/cm².",
+          "columns": ["Slant Range", "Horizontal Distance", "Vertical Distance"]
+        }
+      ]
+    }
+  ],
+  "help_resources": {
+    "faa_service_centers": {
+      "eastern": {
+        "email": "9-ATO-ESA-OSG-Lasers-Searchlights@faa.gov",
+        "address": "1701 Columbia Ave, College Park, GA 30337"
+      },
+      "central": {
+        "email": "9-ASW-Operations-Support-Lasers@faa.gov",
+        "address": "10101 Hillwood Parkway, Fort Worth, TX 76177"
+      },
+      "western_pacific": {
+        "email": "AJV-W2-Laser@faa.gov",
+        "address": "15000 Aviation Blvd, Lawndale, CA 90261"
+      },
+      "alaskan": {
+        "email": "AJV-A2-Laser@faa.gov",
+        "address": "222 W 7th Ave, Anchorage, AK 99513"
+      }
+    },
+    "calculation_examples": [
+      {
+        "name": "25W CW Visible Laser, 1.5 mrad",
+        "inputs": {
+          "power": 25,
+          "divergence": 1.5,
+          "mpe": 2.6,
+          "elevation_min": 15,
+          "elevation_max": 45
+        },
+        "results": {
+          "nohd_slant": 2421,
+          "szed_slant": 38618,
+          "czed_slant": 172622,
+          "lfed_slant": 1726213
+        }
+      }
+    ]
+  },
+  "features": {
+    "auto_calculate": true,
+    "save_draft": true,
+    "export_pdf": true,
+    "validation_checks": true,
+    "coordinate_converter": true,
+    "vcf_calculator_embedded": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "page_num": 6,
+  "source_pdf": "ocular-hazards.pdf",
+  "digestion": {
+    "summary": "FACTORS AFFECTING OCULAR HAZARD SEVERITY\n\n1. WAVELENGTH\n- Determines which eye structure absorbs energy\n- Retinal hazard region (400-1400 nm) most dangerous\n- UV and far-IR limited to surface damage\n\n...",
+    "key_concepts": [
+      "pupil size",
+      "beam divergence",
+      "exposure duration"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "FACTORS AFFECTING OCULAR HAZARD SEVERITY\n\n1. WAVELENGTH\n- Determines which eye structure absorbs energy\n- Retinal hazard region (400-1400 nm) most dangerous\n- UV and far-IR limited to surface damage\n\n2. POWER/ENERGY DENSITY\n- Higher irradiance = more severe injury\n- Above MPE = potential permanent damage\n- Far above MPE = immediate tissue destruction\n\n3. EXPOSURE DURATION\n- Short pulses: Mechanical/photomechanical damage\n- Longer exposures: Thermal or photochemical damage\n- Exposure time affects MPE calculations\n\n4. BEAM CHARACTERISTICS\n- Collimated beam: Maintains hazard over distance\n- Focused beam: Highest intensity at focal point\n- Divergent beam: Hazard decreases with distance\n\n5. PUPIL SIZE\n- Dark-adapted pupil (7 mm): Maximum light entry\n- Light-adapted pupil (2-3 mm): Reduced light entry\n- Night operations more hazardous due to larger pupil\n\n6. EYE MOVEMENT\n- Fixation increases exposure to specific retinal area\n- Saccadic movements may distribute energy\n- Tracking a moving beam increases risk\n",
+    "analogies": [
+      "The eye's focusing capability is like a magnifying glass concentrating sunlight - it amplifies laser power by 100,000x at the retina.",
+      "Laser skin burns are similar to thermal burns but can be more precisely localized."
+    ],
+    "practical_examples": [
+      "Calculate NOHD (Nominal Ocular Hazard Distance) using MPE values before laser operations."
+    ],
+    "safety_implications": [
+      "Always wear appropriate laser eyewear when working with Class 3B or Class 4 lasers.",
+      "Use protective gloves and long sleeves when operating high-power lasers.",
+      "UV laser exposure has cumulative effects similar to sun damage - use full coverage PPE."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.119056"
+}

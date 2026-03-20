@@ -1,0 +1,451 @@
+{
+  "sections": [
+    {
+      "id": "comprehensive_state_matrix",
+      "title": "Comprehensive State Regulatory Matrix",
+      "type": "interactive_matrix",
+      "description": "Complete comparison matrix of all states covered in Course 4",
+      "states": [
+        "illinois",
+        "massachusetts", 
+        "nevada",
+        "new-york",
+        "texas",
+        "washington"
+      ],
+      "matrix_data": {
+        "regulatory_authorities": {
+          "illinois": "Illinois Emergency Management Agency",
+          "massachusetts": "Massachusetts Department of Public Health",
+          "nevada": "Radiation Control Program, Division of Public and Behavioral Health",
+          "new-york": "NYS Department of Labor, Radiological Health Unit",
+          "texas": "Department of State Health Services, Radiation Safety Licensing Branch",
+          "washington": "Department of Health, X-Ray Control / Radiation Protection"
+        },
+        "legal_citations": {
+          "illinois": "32 ILCS Part 315",
+          "massachusetts": "105 CMR 121.000",
+          "nevada": "State Radiation Control Program requirements",
+          "new-york": "12 NYCRR Part 50 (Industrial Code Rule 50)",
+          "texas": "25 TAC 289.301, 289.302",
+          "washington": "WAC 296-62-09005"
+        },
+        "regulatory_tiers": {
+          "comprehensive": ["illinois", "massachusetts", "new-york", "texas"],
+          "notification_only": ["nevada", "washington"]
+        },
+        "inspection_programs": {
+          "conducts_inspections": ["illinois", "massachusetts", "new-york", "texas"],
+          "no_inspections": ["nevada", "washington"]
+        },
+        "training_requirements": {
+          "mandatory_training": ["new-york"],
+          "no_mandatory_training": ["illinois", "massachusetts", "nevada", "texas", "washington"]
+        },
+        "advance_notice_requirements": {
+          "illinois": "10 working days (entertainment)",
+          "massachusetts": "10 working days (temporary use)",
+          "nevada": "Advance notification (general)",
+          "new-york": "As per comprehensive registration",
+          "texas": "As per registration requirements",
+          "washington": "Advance written notification (light shows)"
+        },
+        "special_provisions": {
+          "illinois": "9 LSO qualification areas, 6-month eyewear exams",
+          "massachusetts": "$500 max civil penalty, waiver provisions, 15-day vendor notification",
+          "nevada": "Minimal oversight, notification-based",
+          "new-york": "Class A/Class B certification, multiple training providers",
+          "texas": "ILDA engagement, laser hair removal provisions, IPL regulations",
+          "washington": "Light show specific notification"
+        }
+      }
+    },
+    {
+      "id": "touring_guide",
+      "title": "I'm Touring - What Do I Need?",
+      "type": "interactive_guide",
+      "description": "Interactive decision tree for touring laser show operators",
+      "steps": [
+        {
+          "id": "step1",
+          "question": "What type of operation are you planning?",
+          "options": [
+            {
+              "label": "Multi-city tour across multiple states",
+              "next": "step2_multi"
+            },
+            {
+              "label": "Single event in another state",
+              "next": "step2_single"
+            },
+            {
+              "label": "Permanent installation in new state",
+              "next": "step2_permanent"
+            },
+            {
+              "label": "Mobile service operation",
+              "next": "step2_mobile"
+            }
+          ]
+        },
+        {
+          "id": "step2_multi",
+          "question": "Which states are you touring through?",
+          "sub_type": "state_selector",
+          "available_states": ["illinois", "massachusetts", "nevada", "new-york", "texas", "washington"],
+          "next": "step3_analysis"
+        },
+        {
+          "id": "step2_single",
+          "question": "Which state is your event in?",
+          "sub_type": "state_selector_single",
+          "available_states": ["illinois", "massachusetts", "nevada", "new-york", "texas", "washington"],
+          "next": "step3_single_analysis"
+        },
+        {
+          "id": "step3_analysis",
+          "type": "compliance_analysis",
+          "title": "Your Multi-State Compliance Requirements",
+          "outputs": [
+            "notification_timeline",
+            "registration_requirements",
+            "training_requirements",
+            "inspection_expectations",
+            "documentation_checklist"
+          ]
+        }
+      ],
+      "quick_assessment": {
+        "title": "Quick Compliance Assessment",
+        "questions": [
+          {
+            "id": "qa1",
+            "question": "Do you have a current FDA variance for your laser equipment?",
+            "critical": true,
+            "if_no": "You must obtain FDA variance before operating in ANY state"
+          },
+          {
+            "id": "qa2",
+            "question": "Are you planning to operate in New York?",
+            "if_yes": "Class A or Class B operator certification required"
+          },
+          {
+            "id": "qa3",
+            "question": "Will any shows be outdoors with beams entering airspace?",
+            "if_yes": "FAA determination letter required"
+          },
+          {
+            "id": "qa4",
+            "question": "Are you touring with Class 3B or Class 4 lasers?",
+            "if_yes": "Registration required in IL, MA, NY, TX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "notification_calculator",
+      "title": "Notification Deadline Calculator",
+      "type": "calculator",
+      "description": "Calculate advance notification deadlines for your tour dates",
+      "features": [
+        "multi_state_date_calculation",
+        "working_day_calculator",
+        "business_day_exclusion",
+        "holiday_calendar",
+        "timeline_visualization"
+      ],
+      "state_deadlines": {
+        "illinois": {
+          "advance_notice": 10,
+          "unit": "working_days",
+          "applies_to": "entertainment_laser_shows",
+          "reference": "Section 315.140"
+        },
+        "massachusetts": {
+          "advance_notice": 10,
+          "unit": "working_days",
+          "applies_to": "temporary_laser_use",
+          "reference": "105 CMR 121.022"
+        },
+        "nevada": {
+          "advance_notice": null,
+          "unit": "advance_notification",
+          "applies_to": "all_laser_operations",
+          "note": "Contact Radiation Control Program - specific days not defined"
+        },
+        "new-york": {
+          "advance_notice": null,
+          "unit": "registration_required",
+          "applies_to": "all_operations",
+          "note": "Registration process timeline varies"
+        },
+        "texas": {
+          "advance_notice": null,
+          "unit": "registration_required",
+          "applies_to": "all_operations",
+          "note": "Registration required before operation"
+        },
+        "washington": {
+          "advance_notice": null,
+          "unit": "advance_written_notification",
+          "applies_to": "laser_light_shows",
+          "reference": "WAC 296-62-09005"
+        }
+      }
+    },
+    {
+      "id": "penalty_comparison",
+      "title": "Penalty Structure Comparison",
+      "type": "interactive_comparison",
+      "description": "Compare civil penalties and enforcement mechanisms across states",
+      "states_with_defined_penalties": {
+        "massachusetts": {
+          "max_civil_penalty": "$500 per violation",
+          "willfulness_factor": "Applied whether or not willful",
+          "assessment_factors": [
+            "Willfulness of violation",
+            "Actual and potential danger",
+            "Costs/damage/injury",
+            "Cost of enforcement",
+            "Efforts to prevent/comply/remedy",
+            "Prior compliance history",
+            "Deterrence likelihood",
+            "Financial condition of violator"
+          ],
+          "grounds_for_denial_revocation": [
+            "Failed to submit required information",
+            "Failed to meet registration requirements",
+            "Not suitable/responsible to operate",
+            "Fraud or misrepresentation",
+            "Failed to pay fees or penalties",
+            "Failed to allow inspections",
+            "Criminal conviction",
+            "Prior suspension elsewhere",
+            "Operated after expiration",
+            "Failed to remedy violation",
+            "Falsification of test results",
+            "Endangered public health/safety",
+            "Used laser for other than registered purpose"
+          ]
+        }
+      },
+      "states_with_undefined_penalties": [
+        "illinois",
+        "nevada",
+        "new-york",
+        "texas",
+        "washington"
+      ],
+      "enforcement_continuum": {
+        "least_restrictive": ["nevada", "washington"],
+        "moderate": ["illinois"],
+        "most_restrictive": ["massachusetts", "new-york", "texas"]
+      }
+    },
+    {
+      "id": "checklist_generator",
+      "title": "Compliance Checklist Generator",
+      "type": "generator",
+      "description": "Generate customized compliance checklists based on your operation",
+      "inputs": [
+        "states_of_operation",
+        "operation_type",
+        "laser_classes",
+        "audience_scanning",
+        "outdoor_shows",
+        "tour_duration"
+      ],
+      "output_sections": [
+        {
+          "section": "Federal Requirements (All States)",
+          "items": [
+            "FDA variance current and valid",
+            "Annual reports filed (if applicable)",
+            "Product reports for equipment",
+            "FAA determination letter (outdoor airspace)",
+            "CDRH registration"
+          ]
+        },
+        {
+          "section": "Universal State Requirements",
+          "items": [
+            "LSO designated and qualified",
+            "Safety procedures documented",
+            "Protective eyewear available and inspected",
+            "Warning signage prepared",
+            "Emergency procedures established"
+          ]
+        },
+        {
+          "section": "State-Specific Requirements",
+          "dynamic": true,
+          "based_on": "selected_states"
+        },
+        {
+          "section": "Tour-Specific Requirements",
+          "dynamic": true,
+          "based_on": "operation_type"
+        }
+      ]
+    },
+    {
+      "id": "interstate_best_practices",
+      "title": "Interstate Operations Best Practices",
+      "type": "guidance",
+      "practices": [
+        {
+          "practice": "Start with Most Restrictive State",
+          "description": "If touring multiple states, comply with the most restrictive state's requirements as your baseline",
+          "rationale": "Ensures compliance everywhere, reduces risk"
+        },
+        {
+          "practice": "Centralized Documentation System",
+          "description": "Maintain all state registrations, notifications, and compliance documents in a central accessible location",
+          "rationale": "Quick access during inspections, prevents lost paperwork"
+        },
+        {
+          "practice": "Advance Notification Buffer",
+          "description": "Submit notifications 25% earlier than required minimums",
+          "rationale": "Accounts for processing delays, weekends, holidays"
+        },
+        {
+          "practice": "LSO Qualification Mapping",
+          "description": "Map your LSO's qualifications against all states' requirements",
+          "rationale": "Illinois requires 9 specific areas - ensure coverage"
+        },
+        {
+          "practice": "Vendor Communication Protocol",
+          "description": "If purchasing equipment across state lines, understand vendor notification requirements (MA: 15 days)",
+          "rationale": "Prevents compliance gaps during equipment acquisition"
+        },
+        {
+          "practice": "Inspection Readiness Kit",
+          "description": "Prepare a mobile inspection kit with all required documentation",
+          "items": [
+            "FDA variance",
+            "State registrations",
+            "LSO qualifications",
+            "Equipment inventory",
+            "Training records",
+            "Incident reports",
+            "Calibration records"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scenario_based_learning",
+      "title": "Scenario-Based Learning",
+      "type": "scenarios",
+      "scenarios": [
+        {
+          "id": "scenario1",
+          "title": "The Cross-Country Tour",
+          "context": "You're planning a 10-city tour hitting all six states in this module over 3 months.",
+          "challenge": "Manage varying compliance requirements while maintaining tour schedule.",
+          "key_decisions": [
+            "Which state registrations to obtain first?",
+            "How to manage NY training requirement?",
+            "Notification timeline coordination"
+          ],
+          "solution_highlights": [
+            "Obtain NY Class B certification first (most restrictive training)",
+            "Submit notifications for inspection states (NY, TX) earliest",
+            "Build 2-week buffer into tour schedule for compliance activities"
+          ]
+        },
+        {
+          "id": "scenario2",
+          "title": "The Emergency Replacement",
+          "context": "A laser fails 2 days before a show in Massachusetts. You need to bring in replacement equipment from out of state.",
+          "challenge": "10-day advance notice requirement but show is in 2 days.",
+          "key_decisions": [
+            "Can the show proceed?",
+            "What emergency provisions exist?",
+            "Waiver request process"
+          ],
+          "solution_highlights": [
+            "Contact MA Radiation Control Program immediately",
+            "Reference waiver provision (105 CMR 121.011) for undue hardship",
+            "Provide written documentation supporting emergency",
+            "Demonstrate substantial compliance with spirit of requirement"
+          ]
+        },
+        {
+          "id": "scenario3",
+          "title": "The New Operator",
+          "context": "You're hiring a new laser operator who will work in both notification-only and comprehensive states.",
+          "challenge": "Ensure operator is qualified for all jurisdictions.",
+          "solution_highlights": [
+            "Obtain NY Class B certification (covers most training requirements)",
+            "Document training in all 9 Illinois LSO qualification areas",
+            "Maintain training records per longest retention requirement (IL: 5 years)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knowledge_check",
+      "title": "Module 4.5 Knowledge Check",
+      "type": "assessment",
+      "questions": [
+        {
+          "id": "m4.5-q1",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "question": "Which states require 10 working days advance notice for entertainment laser shows?",
+          "options": [
+            "Illinois and Massachusetts only",
+            "All six states",
+            "Illinois, Massachusetts, and New York only",
+            "Only Massachusetts"
+          ],
+          "correct_answer": 0,
+          "explanation": "Illinois and Massachusetts specifically require 10 working days advance notice. Nevada and Washington require advance notification but don't specify exact days. New York and Texas have comprehensive registration requirements."
+        },
+        {
+          "id": "m4.5-q2",
+          "type": "multiple_choice",
+          "difficulty": "hard",
+          "question": "A touring show needs to comply with the most restrictive requirements across all states. Which state sets the baseline for operator training?",
+          "options": [
+            "Illinois (9 LSO qualification areas)",
+            "Massachusetts ($500 penalty structure)",
+            "New York (Class A/Class B certification)",
+            "Texas (ILDA engagement requirements)"
+          ],
+          "correct_answer": 2,
+          "explanation": "New York's Class A/Class B certification requirement is the most specific training mandate. While Illinois requires 9 qualification areas, New York mandates formal certification from approved providers."
+        },
+        {
+          "id": "m4.5-q3",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "question": "For a multi-state tour including NV, WA, NY, and TX, which two states will conduct routine inspections?",
+          "options": [
+            "Nevada and Washington",
+            "New York and Texas",
+            "Nevada and Texas",
+            "Washington and New York"
+          ],
+          "correct_answer": 1,
+          "explanation": "New York and Texas conduct routine inspections. Nevada and Washington are notification-only states without routine inspection programs."
+        },
+        {
+          "id": "m4.5-q4",
+          "type": "scenario",
+          "difficulty": "hard",
+          "question": "You're planning a show in Boston in 8 days. Massachusetts requires 10 working days notice. What should you do?",
+          "options": [
+            "Cancel the show",
+            "Proceed without notification and hope for no inspection",
+            "Contact MA Radiation Control Program immediately and request waiver consideration",
+            "Notify them after the show"
+          ],
+          "correct_answer": 2,
+          "explanation": "Massachusetts 105 CMR 121.011 allows the Commissioner to waive requirements for undue hardship with substantial compliance and no health/safety jeopardy. Contact them immediately with written documentation."
+        }
+      ]
+    }
+  ]
+}

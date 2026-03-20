@@ -1,0 +1,86 @@
+{
+  "module_id": "3.6",
+  "course_id": "3",
+  "title": "Module 3.6: Protective Eyewear Selection",
+  "description": "Master protective eyewear selection including OD calculations, wavelength compatibility, and visibility trade-offs",
+  "version": "1.0.0",
+  "estimated_duration_minutes": 60,
+  "difficulty": "intermediate",
+  "prerequisites": ["3.4", "3.5"],
+  "learning_objectives": [
+    {
+      "id": "3.6.1",
+      "objective": "Calculate required optical density (OD) for given laser parameters",
+      "blooms_level": "Application",
+      "assessment_method": "OD calculation exercises"
+    },
+    {
+      "id": "3.6.2",
+      "objective": "Select appropriate eyewear based on wavelength, power, and application",
+      "blooms_level": "Application",
+      "assessment_method": "Eyewear selection scenarios"
+    },
+    {
+      "id": "3.6.3",
+      "objective": "Evaluate visibility trade-offs with different OD levels",
+      "blooms_level": "Analysis",
+      "assessment_method": "Visibility comparison exercises"
+    },
+    {
+      "id": "3.6.4",
+      "objective": "Verify eyewear specifications against laser requirements",
+      "blooms_level": "Evaluation",
+      "assessment_method": "Specification verification exercises"
+    }
+  ],
+  "interactive_components": [
+    {
+      "id": "eyewear_selection_wizard",
+      "name": "Eyewear Selection Wizard",
+      "type": "decision_wizard",
+      "file": "components/eyewear_selection_wizard.json"
+    },
+    {
+      "id": "od_calculator",
+      "name": "OD Calculator",
+      "type": "calculation_tool",
+      "file": "components/od_calculator.json"
+    },
+    {
+      "id": "visibility_simulator",
+      "name": "Visibility Simulator",
+      "type": "visual_simulation",
+      "file": "components/visibility_simulator.json"
+    },
+    {
+      "id": "eyewear_spec_database",
+      "name": "Eyewear Specification Database",
+      "type": "reference_tool",
+      "file": "components/eyewear_spec_database.json"
+    }
+  ],
+  "content_files": {
+    "lesson": "content.md",
+    "workbook": "workbook.md"
+  },
+  "assessment": {
+    "quiz_file": "quiz.json",
+    "passing_score": 80,
+    "attempts_allowed": 3
+  },
+  "created_at": "2026-03-19T17:54:00Z",
+  "accessibility": {
+    "wcag_level": "2.1 AA",
+    "screen_reader_compatible": true,
+    "keyboard_navigable": true,
+    "high_contrast_support": true,
+    "reduced_motion_support": true,
+    "features": [
+      "OD calculation with screen reader output",
+      "Color-independent eyewear selection",
+      "Pattern overlays for VLT visualization",
+      "Keyboard-accessible wizard navigation"
+    ]
+  },
+  "updated_at": "2026-03-19T17:54:00Z"
+}

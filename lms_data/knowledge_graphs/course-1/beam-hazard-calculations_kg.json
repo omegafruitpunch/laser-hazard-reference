@@ -1,0 +1,123 @@
+{
+  "document": "beam-hazard-calculations.pdf",
+  "title": "Roberta McHatton Professional Profile",
+  "entities": [
+    {
+      "id": "person_roberta",
+      "type": "Person",
+      "name": "Roberta McHatton",
+      "attributes": {
+        "role": "Owner - Consultant",
+        "since": 1995
+      }
+    },
+    {
+      "id": "org_lss",
+      "type": "Organization",
+      "name": "Laser Safety Services LLC",
+      "attributes": {
+        "location": "Kent, WA",
+        "founded": 1995
+      }
+    },
+    {
+      "id": "org_ansi",
+      "type": "Organization",
+      "name": "ANSI Z136",
+      "attributes": {
+        "type": "Standards Committee"
+      }
+    },
+    {
+      "id": "org_ilda",
+      "type": "Organization",
+      "name": "ILDA",
+      "attributes": {
+        "full_name": "International Laser Display Association"
+      }
+    },
+    {
+      "id": "org_esa",
+      "type": "Organization",
+      "name": "ESA",
+      "attributes": {
+        "full_name": "Event Safety Alliance"
+      }
+    },
+    {
+      "id": "std_z1361",
+      "type": "Standard",
+      "name": "ANSI Z136.1",
+      "attributes": {
+        "topic": "Safe Use of Lasers"
+      }
+    },
+    {
+      "id": "role_lso",
+      "type": "Role",
+      "name": "Laser Safety Officer",
+      "attributes": {
+        "training_hours": 4,
+        "pass_rate": "80%"
+      }
+    },
+    {
+      "id": "agency_faa",
+      "type": "Agency",
+      "name": "FAA",
+      "attributes": {
+        "full_name": "Federal Aviation Administration"
+      }
+    },
+    {
+      "id": "agency_fda",
+      "type": "Agency",
+      "name": "FDA/CDRH",
+      "attributes": {
+        "full_name": "Food and Drug Administration / Center for Devices and Radiological Health"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source": "person_roberta",
+      "relation": "owns",
+      "target": "org_lss"
+    },
+    {
+      "source": "person_roberta",
+      "relation": "member_of",
+      "target": "org_ansi"
+    },
+    {
+      "source": "person_roberta",
+      "relation": "member_of",
+      "target": "org_ilda"
+    },
+    {
+      "source": "person_roberta",
+      "relation": "member_of",
+      "target": "org_esa"
+    },
+    {
+      "source": "org_lss",
+      "relation": "provides",
+      "target": "role_lso"
+    },
+    {
+      "source": "role_lso",
+      "relation": "regulated_by",
+      "target": "std_z1361"
+    },
+    {
+      "source": "org_lss",
+      "relation": "handles_compliance_for",
+      "target": "agency_faa"
+    },
+    {
+      "source": "org_lss",
+      "relation": "handles_compliance_for",
+      "target": "agency_fda"
+    }
+  ]
+}

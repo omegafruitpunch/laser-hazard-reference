@@ -1,0 +1,647 @@
+{
+  "module_id": "course-7-module-7.3",
+  "lessons": [
+    {
+      "lesson_id": "7.3.1",
+      "title": "Understanding Crowd Dynamics",
+      "type": "concept_introduction",
+      "duration_minutes": 5,
+      "content": {
+        "opening_hook": {
+          "type": "case_study",
+          "title": "Hillsborough Disaster: A Study in Crowd Dynamics",
+          "date": "April 15, 1989",
+          "location": "Hillsborough Stadium, Sheffield, England",
+          "summary": "During an FA Cup semi-final match, overcrowding in standing terraces led to a crush that killed 96 people and injured 766. The investigation revealed critical failures in crowd density management, entry control, and emergency response.",
+          "key_factors": [
+            "Pen allocated capacity exceeded by 50%",
+            "No effective crowd density monitoring",
+            "Entry points became bottlenecks",
+            "Emergency response delayed by crowd density",
+            "Barriers designed for crowd control, not safety"
+          ],
+          "lessons_learned": [
+            "Crowd density must be actively monitored and controlled",
+            "Entry rate must match safe dispersal capacity",
+            "Barriers must be designed for crowd pressure, not just control",
+            "Emergency access must be maintained at all times"
+          ]
+        },
+        "crowd_density_fundamentals": {
+          "title": "Crowd Density: The Critical Safety Factor",
+          "definition": "Crowd density is the number of people per unit area, typically expressed as persons per square meter or square foot.",
+          "density_levels": [
+            {
+              "level": "Comfortable",
+              "density": "≤ 1 person per 10 sq ft (0.93 m²)",
+              "density_metric": "≤ 1.1 persons/m²",
+              "description": "Free movement possible, low risk",
+              "visual_indicator": "People can move freely, personal space maintained",
+              "action_required": "Normal monitoring"
+            },
+            {
+              "level": "Dense",
+              "density": "1 person per 7 sq ft (0.65 m²)",
+              "density_metric": "1.5 persons/m²",
+              "description": "Restricted movement, increased monitoring needed",
+              "visual_indicator": "Shoulder-to-shoulder, movement requires effort",
+              "action_required": "Increase monitoring, prepare flow adjustments"
+            },
+            {
+              "level": "Critical",
+              "density": "1 person per 5 sq ft (0.46 m²)",
+              "density_metric": "2.1 persons/m²",
+              "description": "DANGEROUS - Immediate action required",
+              "visual_indicator": "Chest-to-back contact, difficulty breathing",
+              "action_required": "STOP ENTRY - Immediate crowd reduction measures"
+            },
+            {
+              "level": "Crush Threshold",
+              "density": "1 person per 3.5 sq ft (0.33 m²)",
+              "density_metric": "3.0 persons/m²",
+              "description": "CRUSH CONDITION - Stop entry immediately",
+              "visual_indicator": "Severe compression, panic developing",
+              "action_required": "EMERGENCY - Stop event if necessary, full evacuation consideration"
+            }
+          ],
+          "visual_demonstration": {
+            "type": "interactive_density_visualizer",
+            "features": [
+              "Adjustable area dimensions",
+              "Population slider",
+              "Real-time density calculation",
+              "Visual representation of crowd conditions",
+              "Color-coded risk levels",
+              "Comparison to real event densities"
+            ]
+          }
+        },
+        "crowd_behavior_factors": {
+          "title": "Factors Affecting Crowd Behavior",
+          "factors": [
+            {
+              "factor": "Event Type",
+              "impact": "Different events attract different crowd behaviors",
+              "examples": [
+                "General admission concerts: High energy, pushing",
+                "Seated classical: Orderly, calmer",
+                "Sporting events: Competitive energy, rival factions",
+                "Family events: Mixed ages, stroller considerations"
+              ]
+            },
+            {
+              "factor": "Environmental Conditions",
+              "impact": "Physical environment affects crowd mood and movement",
+              "examples": [
+                "Temperature: Heat increases agitation",
+                "Waiting time: Long waits increase frustration",
+                "Visibility: Poor sight lines cause pushing",
+                "Sound levels: Excessive noise increases stress"
+              ]
+            },
+            {
+              "factor": "Crowd Composition",
+              "impact": "Demographics affect crowd dynamics",
+              "considerations": [
+                "Age distribution",
+                "Gender mix",
+                "Group vs. individual attendees",
+                "Alcohol consumption",
+                "Previous event history"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "7.3.2",
+      "title": "Interactive Crowd Density Calculator",
+      "type": "interactive_calculation",
+      "duration_minutes": 8,
+      "content": {
+        "title": "Crowd Density Calculator & Visualizer",
+        "description": "Calculate crowd density in real-time and visualize safety conditions. This tool helps safety coordinators make informed decisions about crowd management.",
+        "calculator_modes": [
+          {
+            "mode": "basic",
+            "name": "Basic Density Calculator",
+            "description": "Simple area and population input",
+            "inputs": [
+              {
+                "field": "area_length",
+                "label": "Area Length",
+                "unit": "ft or m",
+                "default": 100
+              },
+              {
+                "field": "area_width",
+                "label": "Area Width",
+                "unit": "ft or m",
+                "default": 50
+              },
+              {
+                "field": "occupant_count",
+                "label": "Number of People",
+                "type": "number",
+                "default": 500
+              }
+            ],
+            "outputs": [
+              "Total area",
+              "Density (people/sq ft)",
+              "Density (people/m²)",
+              "Safety rating",
+              "Recommended action"
+            ]
+          },
+          {
+            "mode": "advanced",
+            "name": "Advanced Venue Calculator",
+            "description": "Multi-zone venue density with flow analysis",
+            "features": [
+              "Multiple zone configuration",
+              "Entry/exit flow rates",
+              "Bottleneck identification",
+              "Time-based density projection",
+              "Comparison to code capacity"
+            ]
+          },
+          {
+            "mode": "visual_estimation",
+            "name": "Visual Density Estimator",
+            "description": "Practice estimating density from photos",
+            "exercise_type": "image_comparison",
+            "scenarios": [
+              {
+                "scenario_id": "viz-1",
+                "description": "Concert pit area",
+                "actual_density": "1 per 4.5 sq ft",
+                "actual_rating": "Critical"
+              },
+              {
+                "scenario_id": "viz-2",
+                "description": "Seated arena section",
+                "actual_density": "1 per 12 sq ft",
+                "actual_rating": "Comfortable"
+              },
+              {
+                "scenario_id": "viz-3",
+                "description": "Festival main stage",
+                "actual_density": "1 per 6 sq ft",
+                "actual_rating": "Dense"
+              }
+            ]
+          }
+        ],
+        "visualization_components": {
+          "title": "Density Visualization",
+          "heat_map": {
+            "enabled": true,
+            "colors": {
+              "safe": "#4CAF50",
+              "caution": "#FFC107",
+              "warning": "#FF9800",
+              "danger": "#F44336",
+              "critical": "#B71C1C"
+            }
+          },
+          "person_icons": {
+            "spacing": "Density-appropriate",
+            "animation": "Swaying/shuffling at high density"
+          },
+          "measurement_tools": [
+            {
+              "tool": "Area selector",
+              "description": "Draw or select area for calculation"
+            },
+            {
+              "tool": "People counter",
+              "description": "Click to add/remove people in visual area"
+            },
+            {
+              "tool": "Density probe",
+              "description": "Hover to see density at specific points"
+            }
+          ]
+        },
+        "decision_support": {
+          "title": "Automated Decision Support",
+          "triggers": [
+            {
+              "condition": "Density exceeds 1 per 7 sq ft",
+              "alert": "YELLOW - Increased monitoring",
+              "actions": ["Deploy additional stewards", "Prepare flow adjustments", "Notify command post"]
+            },
+            {
+              "condition": "Density exceeds 1 per 5 sq ft",
+              "alert": "RED - Stop Entry Required",
+              "actions": ["Stop entry immediately", "Open additional space", "PA announcement", "Consider event stoppage"]
+            }
+          ]
+        },
+        "historical_comparison": {
+          "title": "Historical Incident Densities",
+          "incidents": [
+            {"event": "Hillsborough", "density": "3.5-4.5/m²", "outcome": "96 fatalities"},
+            {"event": "Love Parade Duisburg", "density": "4-6/m²", "outcome": "21 fatalities"},
+            {"event": "Cambodia Water Festival", "density": "5+/m²", "outcome": "347 fatalities"}
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "7.3.3",
+      "title": "Emergency Egress Planner",
+      "type": "interactive_planning",
+      "duration_minutes": 8,
+      "content": {
+        "title": "Interactive Emergency Egress Planner",
+        "description": "Design and test emergency egress plans for various venue configurations. Ensure safe evacuation for all occupants.",
+        "planner_interface": {
+          "canvas": {
+            "type": "drag_drop_venue_designer",
+            "grid_size": "1 meter squares",
+            "layers": ["Floor plan", "Occupancy zones", "Egress paths", "Exit locations", "Emergency features"]
+          },
+          "available_elements": [
+            {
+              "category": "Structures",
+              "items": ["Stage", "Seating section", "Standing area", "Barrier", "Wall", "Column"]
+            },
+            {
+              "category": "Egress",
+              "items": ["Exit door", "Emergency exit", "Stairway", "Ramp", "Corridor", "Assembly area"]
+            },
+            {
+              "category": "Safety",
+              "items": ["Fire extinguisher", "First aid station", "Emergency light", "Exit sign", "Command post"]
+            }
+          ]
+        },
+        "calculation_engine": {
+          "title": "Egress Calculations",
+          "nfpa_130_based": true,
+          "calculations": [
+            {
+              "name": "Exit Capacity",
+              "formula": "Number of exits × Width × Flow rate",
+              "units": "persons/minute",
+              "standards": {
+                "level_exit": "60 persons/minute per meter of width",
+                "stair_down": "53 persons/minute per meter of width",
+                "stair_up": "40 persons/minute per meter of width"
+              }
+            },
+            {
+              "name": "Evacuation Time",
+              "formula": "Occupant load / Exit capacity",
+              "requirements": [
+                "High hazard: < 3 minutes",
+                "Standard assembly: < 5 minutes",
+                "Sports stadiums: < 8 minutes"
+              ]
+            },
+            {
+              "name": "Travel Distance",
+              "maximums": [
+                {"occupancy": "Unsprinklered", "distance": "200 ft (61m)"},
+                {"occupancy": "Sprinklered", "distance": "250 ft (76m)"}
+              ]
+            }
+          ]
+        },
+        "scenario_templates": [
+          {
+            "template_id": "concert_venue",
+            "name": "General Admission Concert Venue",
+            "starting_configuration": {
+              "dimensions": "100m × 80m",
+              "stage": "Centered on one short end",
+              "occupancy": 5000,
+              "existing_exits": 4
+            },
+            "challenge": "Add barriers for pit area while maintaining egress capacity"
+          },
+          {
+            "template_id": "festival_ground",
+            "name": "Outdoor Festival Ground",
+            "starting_configuration": {
+              "dimensions": "200m × 150m",
+              "stage": "Multiple stages",
+              "occupancy": 15000,
+              "existing_exits": 8
+            },
+            "challenge": "Manage flow between stages with overlapping crowds"
+          },
+          {
+            "template_id": "theater",
+            "name": "Historic Theater Conversion",
+            "starting_configuration": {
+              "dimensions": "50m × 40m",
+              "stage": "Proscenium",
+              "occupancy": 800,
+              "existing_exits": 3,
+              "constraints": "Historic building, limited modification allowed"
+            },
+            "challenge": "Meet egress requirements with limited exit options"
+          }
+        ],
+        "simulation_mode": {
+          "title": "Evacuation Simulation",
+          "description": "Run a real-time simulation of evacuation with your plan",
+          "features": [
+            "Agent-based crowd simulation",
+            "Bottleneck identification",
+            "Queue formation visualization",
+            "Congestion heat maps",
+            "Evacuation time estimation"
+          ],
+          "scenarios": [
+            {
+              "name": "Standard Evacuation",
+              "conditions": "All exits available, calm crowd"
+            },
+            {
+              "name": "Partial Blockage",
+              "conditions": "One exit blocked by incident"
+            },
+            {
+              "name": "Panic Scenario",
+              "conditions": "Crowd moves faster, some pushing"
+            }
+          ]
+        },
+        "validation_rules": [
+          {
+            "rule": "Minimum 2 exits remote from each other",
+            "severity": "CRITICAL"
+          },
+          {
+            "rule": "Exit capacity ≥ Required flow for occupant load",
+            "severity": "CRITICAL"
+          },
+          {
+            "rule": "Travel distance within code maximums",
+            "severity": "CRITICAL"
+          },
+          {
+            "rule": "Accessible egress path for people with disabilities",
+            "severity": "CRITICAL"
+          },
+          {
+            "rule": "Assembly areas at safe distance from venue",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "7.3.4",
+      "title": "Recognizing and Responding to Dangerous Conditions",
+      "type": "branching_scenario",
+      "duration_minutes": 7,
+      "content": {
+        "title": "Crowd Emergency Response Scenarios",
+        "description": "Practice identifying warning signs and making critical decisions during crowd emergencies.",
+        "warning_signs_catalog": {
+          "title": "Warning Signs Reference",
+          "signs": [
+            {
+              "sign": "Crowd Surge",
+              "indicators": [
+                "Waves of movement through crowd",
+                "People losing balance",
+                "Compression at barriers",
+                "Cries of distress",
+                "Items being dropped/trampled"
+              ],
+              "immediate_actions": [
+                "STOP THE EVENT if necessary",
+                "Open additional egress routes",
+                "PA announcement requesting calm",
+                "Deploy all available crowd managers",
+                "Medical teams to standby"
+              ]
+            },
+            {
+              "sign": "Barrier Failure",
+              "indicators": [
+                "Visible barrier movement or flexing",
+                "Barriers leaning from crowd pressure",
+                "Gaps appearing between barrier sections",
+                "Noise from barrier connections"
+              ],
+              "immediate_actions": [
+                "Clear area behind barriers immediately",
+                "Consider event stoppage",
+                "Reinforce barriers if safe to do so",
+                "Redirect crowd flow away from area"
+              ]
+            },
+            {
+              "sign": "Crowd Collapse",
+              "indicators": [
+                "People falling to ground",
+                "Cries for help from within crowd",
+                "Visible distress and panic",
+                "Crowd waves becoming chaotic"
+              ],
+              "immediate_actions": [
+                "IMMEDIATELY stop event",
+                "Initiate emergency extraction",
+                "Call for medical assistance",
+                "Clear space around affected area",
+                "Consider full evacuation"
+              ]
+            }
+          ]
+        },
+        "scenarios": [
+          {
+            "scenario_id": "surge_detection",
+            "title": "Detecting a Crowd Surge",
+            "setup": "You're the Crowd Manager at a general admission concert. The show has been going for 30 minutes. You're monitoring from an elevated position.",
+            "observations": [
+              "The pit area in front of the stage is visibly packed",
+              "You notice a wave-like movement starting from the back of the crowd",
+              "Some people near the front barriers are raising their arms for help",
+              "The house lights show people near the barriers looking distressed"
+            ],
+            "decision_point": "What is your immediate action?",
+            "options": [
+              {
+                "text": "Wait and see if the crowd settles down on its own",
+                "outcome": "DANGEROUS",
+                "feedback": "Crowd surges rarely resolve without intervention. Delay can lead to crush conditions and fatalities. Immediate action is required."
+              },
+              {
+                "text": "Immediately stop the music and make a PA announcement",
+                "outcome": "CORRECT",
+                "feedback": "Correct! Stopping the event and requesting calm through clear PA communication is the appropriate immediate response. Be prepared to open additional space."
+              },
+              {
+                "text": "Send stewards into the crowd to help people",
+                "outcome": "RISKY",
+                "feedback": "Sending people into a surging crowd can add to the problem and put stewards at risk. First stop the source of pressure, then address extraction."
+              }
+            ]
+          },
+          {
+            "scenario_id": "barrier_emergency",
+            "title": "Barrier Emergency Response",
+            "setup": "During a high-energy moment in the show, you observe the stage barrier beginning to lean forward from crowd pressure.",
+            "observations": [
+              "The front barrier is visibly flexing",
+              "Security at the barrier are signaling for help",
+              "The crowd doesn't appear to notice the danger",
+              "The performer is encouraging the crowd to move forward"
+            ],
+            "decision_point": "What is your priority action?",
+            "options": [
+              {
+                "text": "Immediately clear the pit area and consider stopping the event",
+                "outcome": "CORRECT",
+                "feedback": "Correct! Barrier failure can cause multiple injuries. Clearing the area and potentially stopping the event prioritizes safety."
+              },
+              {
+                "text": "Have security push the crowd back from the barrier",
+                "outcome": "INEFFECTIVE",
+                "feedback": "Trying to push a dense crowd back is often ineffective and can exacerbate pressure on the barrier. Professional extraction methods are needed."
+              },
+              {
+                "text": "Signal the performer to ask the crowd to step back",
+                "outcome": "PARTIAL",
+                "feedback": "Performer communication can help, but may not be sufficient. Prepare for more aggressive intervention while attempting communication."
+              }
+            ]
+          },
+          {
+            "scenario_id": "evacuation_decision",
+            "title": "The Evacuation Decision",
+            "setup": "A severe weather warning has been issued. Radar shows a powerful storm with lightning approaching the venue. The show is at its peak, with a highly energized crowd of 10,000.",
+            "conditions": [
+              "Lightning detected within 10 miles",
+              "Storm moving toward venue at 25 mph",
+              "Open-air venue with minimal cover",
+              "Crowd is highly engaged with performance"
+            ],
+            "decision_point": "What is your decision?",
+            "options": [
+              {
+                "text": "Continue the show and monitor the storm closely",
+                "outcome": "DANGEROUS",
+                "feedback": "Lightning within 8 miles requires immediate shelter. Continuing puts thousands at risk of lightning strike."
+              },
+              {
+                "text": "Order immediate full evacuation to designated shelters",
+                "outcome": "APPROPRIATE",
+                "feedback": "Correct! Safety protocol requires evacuation when lightning is within 8 miles. Clear communication and orderly evacuation are essential."
+              },
+              {
+                "text": "Pause the show and make an announcement, wait for conditions to worsen",
+                "outcome": "DELAYED",
+                "feedback": "Delaying evacuation reduces time available for orderly exit. With storm approaching at 25mph, you have limited time to evacuate 10,000 people safely."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "7.3.5",
+      "title": "Staffing and Resource Planning",
+      "type": "interactive_calculation",
+      "duration_minutes": 2,
+      "content": {
+        "title": "Crowd Management Staffing Calculator",
+        "staffing_ratios": [
+          {
+            "venue_type": "Seated venues",
+            "ratio": "1 steward per 250-500 seats",
+            "factors": "Complexity of layout, event type"
+          },
+          {
+            "venue_type": "General admission standing",
+            "ratio": "1 steward per 100-150 patrons",
+            "factors": "Density, proximity to stage"
+          },
+          {
+            "venue_type": "High-risk events",
+            "ratio": "1 steward per 50-75 patrons",
+            "factors": "History of crowd issues, alcohol availability"
+          }
+        ],
+        "calculator": {
+          "inputs": [
+            "Expected attendance",
+            "Venue type",
+            "Event risk level",
+            "Layout complexity"
+          ],
+          "outputs": [
+            "Minimum steward count",
+            "Recommended supervisory structure",
+            "Key position placements"
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "7.3.6",
+      "title": "Knowledge Check",
+      "type": "quiz",
+      "duration_minutes": 2,
+      "content": {
+        "questions": [
+          {
+            "id": "7.3.6-q1",
+            "type": "multiple_choice",
+            "question": "What crowd density is considered critical and requires immediate action?",
+            "options": [
+              "1 person per 10 sq ft",
+              "1 person per 7 sq ft",
+              "1 person per 5 sq ft",
+              "1 person per 15 sq ft"
+            ],
+            "correct_answer": 2,
+            "rationale": "At 1 person per 5 sq ft, crowd density is considered dangerous and requires immediate action to prevent crush conditions."
+          },
+          {
+            "id": "7.3.6-q2",
+            "type": "multiple_choice",
+            "question": "What is the crush threshold density?",
+            "options": [
+              "1 person per 5 sq ft",
+              "1 person per 4 sq ft",
+              "1 person per 3.5 sq ft",
+              "1 person per 2 sq ft"
+            ],
+            "correct_answer": 2,
+            "rationale": "The crush threshold is 1 person per 3.5 sq ft (0.33 m²) - at this density entry must be stopped immediately."
+          },
+          {
+            "id": "7.3.6-q3",
+            "type": "multiple_choice",
+            "question": "What is the first action to take when a crowd surge is detected?",
+            "options": [
+              "Immediately evacuate the entire venue",
+              "Stop the event or performance if necessary",
+              "Call the police",
+              "Turn up the music to calm the crowd"
+            ],
+            "correct_answer": 1,
+            "rationale": "When crowd surge is detected, stopping the event or performance may be necessary to prevent escalation to crush conditions."
+          },
+          {
+            "id": "7.3.6-q4",
+            "type": "true_false",
+            "question": "Stage barriers should be designed to be climbable for better crowd engagement.",
+            "correct_answer": false,
+            "rationale": "Stage barriers should be non-climbable in design to prevent crowd members from climbing over them."
+          }
+        ]
+      }
+    }
+  ]
+}

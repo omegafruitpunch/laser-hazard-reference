@@ -1,0 +1,50 @@
+{
+  "id": "module-6-1",
+  "courseId": "course-6",
+  "title": "FAA Laser Regulations Overview",
+  "description": "Federal Aviation Administration regulations on laser illumination of aircraft.",
+  "order": 1,
+  "duration": 15,
+  "phases": [
+    {
+      "type": "warmup",
+      "title": "Aviation Safety Context",
+      "content": "Outdoor laser operations pose unique risks to aviation. A laser illuminated cockpit can temporarily blind pilots during critical phases of flight. Understanding FAA regulations is essential for any outdoor laser show.",
+      "estimatedMinutes": 2
+    },
+    {
+      "type": "core",
+      "title": "FAA Laser Regulations",
+      "content": "The FAA regulates laser operations that could affect airspace to prevent hazards to aviation.\n\n## Federal Law: 18 USC 39A\n\n### Criminal Offense\n- Knowingly aiming laser pointer at aircraft\n- Federal felony offense\n- Penalties: Up to 5 years imprisonment, fines\n\n### Applies to\n- Aircraft in flight\n- Flight path of aircraft\n- Any laser pointer (not just high-power)\n\n## FAA Order 7400.2\n\n### Laser Free Zones (LFZ)\n- 2,500 feet around runways (standard approach)\n- Beam must not exceed 50 μW/cm²\n- Requires FAA approval for any outdoor operation\n\n### Critical Flight Zones (CFZ)\n- 10 nautical miles around airport\n- 10,000 feet above ground level\n- Beam must not exceed 100 μW/cm²\n\n### Sensitive Flight Zones (SFZ)\n- Extended areas around airports\n- Beam must not exceed 2.5 μW/cm²\n\n## FAA Coordination Process\n\n1. Submit notice to FAA 30+ days before event\n2. FAA conducts hazard analysis\n3. FAA may issue Letter of Non-Objection\n4. File NOTAM before operations",
+      "estimatedMinutes": 8
+    },
+    {
+      "type": "practice",
+      "title": "FAA Scenario Analysis",
+      "content": "Analyze these outdoor show scenarios:\n\n**Scenario 1**: Show 5 miles from airport, beams to 100 feet\n\n**Scenario 2**: Show 1 mile from airport, beams to 500 feet\n\n**Scenario 3**: Show in downtown area with hospital heliport nearby",
+      "estimatedMinutes": 3
+    },
+    {
+      "type": "challenge",
+      "title": "Module Assessment",
+      "quizId": "quiz-6-1",
+      "estimatedMinutes": 2
+    }
+  ],
+  "resources": [
+    {
+      "type": "pdf",
+      "title": "FAA Laser Regulations Guide",
+      "path": "/docs/course-6-outdoor-airspace/faa-regulations.pdf"
+    }
+  ],
+  "keyTakeaways": [
+    "FAA Order 7400.2 governs laser operations near navigable airspace",
+    "Pointing a laser at an aircraft is a federal crime under 18 USC 39A",
+    "FAA defines Critical Flight Zones (CFZ) and Laser Free Zones (LFZ)",
+    "Show operators must coordinate with FAA air traffic control before outdoor shows"
+  ],
+  "nextModule": "module-6-2",
+  "prerequisites": [],
+  "difficulty": "intermediate"
+}

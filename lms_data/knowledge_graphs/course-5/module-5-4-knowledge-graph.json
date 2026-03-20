@@ -1,0 +1,182 @@
+{
+  "moduleId": "c5-m4",
+  "moduleTitle": "Australia & New Zealand Standards",
+  "nodes": [
+    {
+      "id": "ilda-system",
+      "label": "ILDA Country Classification System",
+      "type": "concept",
+      "description": "International Laser Display Association classification system for global regulatory complexity",
+      "connections": ["category-a", "category-b", "category-f", "category-g", "category-x"]
+    },
+    {
+      "id": "category-a",
+      "label": "Category A",
+      "type": "category",
+      "description": "Minimal Regulation - No permits required",
+      "attributes": {
+        "complexity": "Low",
+        "permitRequired": false,
+        "notificationRequired": false,
+        "lsoRequired": false
+      },
+      "connections": ["mexico", "caribbean", "minimal-reg"]
+    },
+    {
+      "id": "category-b",
+      "label": "Category B",
+      "type": "category",
+      "description": "Notification System - Advance notification required",
+      "attributes": {
+        "complexity": "Medium",
+        "permitRequired": false,
+        "notificationRequired": true,
+        "lsoRequired": false
+      },
+      "connections": ["canada", "japan", "switzerland"]
+    },
+    {
+      "id": "category-f",
+      "label": "Category F",
+      "type": "category",
+      "description": "Full Regulatory System - Formal permits required",
+      "attributes": {
+        "complexity": "High",
+        "permitRequired": true,
+        "notificationRequired": true,
+        "lsoRequired": true
+      },
+      "connections": ["usa", "germany", "uk", "australia", "asnzs-4173"]
+    },
+    {
+      "id": "category-g",
+      "label": "Category G",
+      "type": "category",
+      "description": "Government Controlled - State-controlled processes",
+      "attributes": {
+        "complexity": "Very High",
+        "permitRequired": true,
+        "notificationRequired": true,
+        "lsoRequired": true
+      },
+      "connections": ["china", "russia", "singapore", "uae"]
+    },
+    {
+      "id": "category-x",
+      "label": "Category X",
+      "type": "category",
+      "description": "Restricted/Prohibited - Significant restrictions",
+      "attributes": {
+        "complexity": "Very High",
+        "permitRequired": true,
+        "notificationRequired": true,
+        "lsoRequired": true
+      },
+      "connections": ["saudi-outdoor", "india-complex"]
+    },
+    {
+      "id": "asnzs-4173",
+      "label": "AS/NZS 4173",
+      "type": "standard",
+      "description": "Australian/New Zealand Standard for laser safety",
+      "connections": ["scope", "classification", "mpe", "noehd", "engineering", "administrative", "ppe", "medical", "australia-states", "new-zealand"]
+    },
+    {
+      "id": "australia-states",
+      "label": "Australian States/Territories",
+      "type": "jurisdiction",
+      "description": "State-level radiation protection legislation",
+      "connections": ["nsw", "victoria", "queensland", "wa", "sa", "tasmania", "act", "nt"]
+    },
+    {
+      "id": "new-zealand",
+      "label": "New Zealand",
+      "type": "jurisdiction",
+      "description": "Radiation Safety Act 2016 and operator licensing",
+      "connections": ["epa-nz", "operator-license", "source-registration"]
+    },
+    {
+      "id": "nsw",
+      "label": "New South Wales",
+      "type": "state",
+      "regulator": "EPA Radiation Control",
+      "notes": "Sydney entertainment hub"
+    },
+    {
+      "id": "victoria",
+      "label": "Victoria",
+      "type": "state",
+      "regulator": "Department of Health",
+      "notes": "Melbourne venue compliance"
+    },
+    {
+      "id": "epa-nz",
+      "label": "EPA New Zealand",
+      "type": "regulator",
+      "description": "Environmental Protection Authority - Radiation Safety Act 2016"
+    },
+    {
+      "id": "operator-license",
+      "label": "Laser Operator License",
+      "type": "requirement",
+      "description": "Required for laser operation in New Zealand"
+    },
+    {
+      "id": "classification",
+      "label": "Laser Classification",
+      "type": "section",
+      "description": "AS/NZS 4173 Section 2 - Classification system"
+    },
+    {
+      "id": "mpe",
+      "label": "Maximum Permissible Exposure",
+      "type": "section",
+      "description": "AS/NZS 4173 Section 3 - MPE tables and values"
+    },
+    {
+      "id": "noehd",
+      "label": "NOHD",
+      "type": "concept",
+      "description": "Nominal Ocular Hazard Distance calculations"
+    },
+    {
+      "id": "entertainment-specific",
+      "label": "Entertainment-Specific Requirements",
+      "type": "concept",
+      "description": "Additional requirements for laser shows",
+      "connections": ["audience-scanning", "outdoor-shows", "temporary-installations"]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ilda-system",
+      "target": "category-f",
+      "type": "includes",
+      "description": "ILDA system includes Category F countries"
+    },
+    {
+      "source": "asnzs-4173",
+      "target": "category-f",
+      "type": "applies-to",
+      "description": "AS/NZS 4173 applies to Category F countries"
+    },
+    {
+      "source": "asnzs-4173",
+      "target": "australia-states",
+      "type": "governs",
+      "description": "Standard governs state/territory requirements"
+    },
+    {
+      "source": "asnzs-4173",
+      "target": "new-zealand",
+      "type": "governs",
+      "description": "Standard governs New Zealand requirements"
+    },
+    {
+      "source": "australia-states",
+      "target": "new-zealand",
+      "type": "related-to",
+      "description": "Both use AS/NZS 4173 with local variations"
+    }
+  ]
+}

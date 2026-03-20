@@ -1,0 +1,123 @@
+{
+  "module_id": "module-6.3",
+  "course_id": "course-6",
+  "title": "Module 6.3: Outdoor Hazard Calculations (SAE/ANSI)",
+  "description": "Comprehensive guide to calculating NOHD, SZED, CZED, and LFED using SAE/ANSI methodologies with interactive calculation tools and real-world examples.",
+  "version": "1.0.0",
+  "last_updated": "2026-03-19",
+  "estimated_duration_minutes": 90,
+  "learning_objectives": [
+    {
+      "id": "6.3.1",
+      "objective": "Calculate NOHD using Equation 70-1.1 and 70-1.2 for CW and pulsed lasers",
+      "bloom_level": "application",
+      "assessment_method": "calculation_problems"
+    },
+    {
+      "id": "6.3.2",
+      "objective": "Apply Visual Correction Factors for multi-wavelength calculations",
+      "bloom_level": "application",
+      "assessment_method": "calculation_problems"
+    },
+    {
+      "id": "6.3.3",
+      "objective": "Calculate SZED, CZED, and LFED using the fixed multipliers",
+      "bloom_level": "application",
+      "assessment_method": "calculation_problems"
+    },
+    {
+      "id": "6.3.4",
+      "objective": "Convert slant range to horizontal and vertical distances using trigonometry",
+      "bloom_level": "application",
+      "assessment_method": "calculation_problems"
+    },
+    {
+      "id": "6.3.5",
+      "objective": "Apply MPE correction factors (CA, CC) for near-infrared wavelengths",
+      "bloom_level": "application",
+      "assessment_method": "calculation_problems"
+    }
+  ],
+  "prerequisites": [
+    "module-6.2/flight-zones"
+  ],
+  "sections": [
+    {
+      "id": "6.3.1",
+      "title": "MPE Determination",
+      "type": "reference_tables",
+      "duration_minutes": 15,
+      "content_summary": "Using Tables 1 and 2 from FAA AC 70-1B to determine Maximum Permissible Exposure values for various wavelengths and exposure durations."
+    },
+    {
+      "id": "6.3.2",
+      "title": "Safety Distance Calculator",
+      "type": "interactive_calculator",
+      "duration_minutes": 30,
+      "component": "SafetyDistanceCalculator",
+      "content_summary": "Comprehensive calculation tool for NOHD, SZED, CZED, and LFED with step-by-step formula display and validation."
+    },
+    {
+      "id": "6.3.3",
+      "title": "Visual Correction Factors",
+      "type": "interactive_tool",
+      "duration_minutes": 15,
+      "content_summary": "Calculating Pre-corrected Power (PCP), Visual Correction Factor (VCF), and Visually Corrected Power for visible lasers."
+    },
+    {
+      "id": "6.3.4",
+      "title": "Multi-Wavelength Calculations",
+      "type": "advanced_calculation",
+      "duration_minutes": 20,
+      "content_summary": "Calculating combined hazards for RGB and multi-wavelength lasers using Equation 70-1.14."
+    },
+    {
+      "id": "6.3.5",
+      "title": "Real-World Examples",
+      "type": "case_study",
+      "duration_minutes": 10,
+      "content_summary": "Worked examples from FAA AC 70-1B Appendix B and C."
+    }
+  ],
+  "assessments": [
+    {
+      "id": "quiz-6.3",
+      "type": "formative",
+      "title": "Hazard Calculation Quiz",
+      "passing_score": 80,
+      "questions": [
+        {
+          "id": "q1",
+          "type": "calculation",
+          "question": "What is the NOHD slant range for a 40W CW visible laser with 1.5 mrad divergence?",
+          "formula": "NOHD_SR = (32.8 / divergence) × √(1273.2 × Power / MPE)",
+          "parameters": {
+            "divergence": 1.5,
+            "power": 40,
+            "mpe": 2.6
+          },
+          "correct_answer": 3062,
+          "tolerance": 10,
+          "unit": "feet",
+          "explanation": "Using Equation 70-1.2: (32.8 / 1.5) × √(1273.2 × 40 / 2.6) = 21.87 × 140 = 3,062 feet"
+        },
+        {
+          "id": "q2",
+          "type": "multiple_choice",
+          "question": "What is the fixed multiplier to calculate CZED from SZED?",
+          "options": ["2.24", "4.47", "10.0", "44.7"],
+          "correct": 1,
+          "explanation": "The CZED slant range = SZED_SR × 4.47 (from Equation 70-1.4)"
+        },
+        {
+          "id": "q3",
+          "type": "multiple_choice",
+          "question": "What is the Visual Correction Factor (VCF) for 555 nm wavelength?",
+          "options": ["0.5", "0.707", "0.862", "1.0"],
+          "correct": 3,
+          "explanation": "555 nm is at the peak of human photopic vision, so VCF = 1.0"
+        }
+      ]
+    }
+  ]
+}

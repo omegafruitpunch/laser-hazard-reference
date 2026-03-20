@@ -1,0 +1,75 @@
+{
+  "module_id": "course-7-module-2",
+  "title": "Weather Protocols and Decision Triggers",
+  "course": "Course 7: Event Safety",
+  "source_pdf": "weather-protocols.pdf",
+  "learning_objectives": [
+    "Identify weather hazard thresholds for event operations",
+    "Understand alert methods and communication protocols",
+    "Apply appropriate safety measures for different weather conditions",
+    "Execute proper evacuation procedures for severe weather"
+  ],
+  "content": {
+    "introduction": {
+      "title": "Weather Decision Making for Live Events",
+      "text": "Weather protocols establish clear decision triggers and alert methods for protecting personnel, equipment, and audiences during live events. These protocols define specific weather thresholds that trigger escalating responses from production teams."
+    },
+    "sections": [
+      {
+        "section_id": "weather-1",
+        "title": "Weather Decision Trigger Chart",
+        "content": "The Weather Decision Trigger Chart establishes threshold-based alerts for various production groups. Different weather conditions trigger different alert levels: Surface winds exceeding specified MPH or tornado warnings trigger immediate retreat to designated shelters; Winds at specified thresholds trigger show delays with audience advised to seek shelter; Lightning within 8 miles triggers show delays and shelter advisories; Hail within 8 miles requires protective actions; WBGT (Wet Bulb Globe Temperature) exceeding specified thresholds requires heat safety protocols."
+      },
+      {
+        "section_id": "weather-2",
+        "title": "Critical Weather Thresholds - Severe",
+        "content": "SEVERE CONDITIONS: Surface winds in excess of 50 MPH or tornado activity trigger the most serious response: 2 long air horn blasts plus radio communication, with immediate retreat to shelter. For festival operations: show is delayed, audience is advised to seek shelter. Stage operations: open all walls and evacuate. LED screens: land anchor and message system evacuation. Audio/Lights/Spots/FOH/Video/Back Line: all equipment powered off and evacuated to fixed structures."
+      },
+      {
+        "section_id": "weather-3",
+        "title": "High Wind Protocols (40+ MPH)",
+        "content": "WINDS 40 MPH OR GREATER: 1 long air horn blast plus radio communication triggers show delay with audience advised to seek shelter. Stage: land anchor with message system evacuation. LED screens: message system land PA and delays evacuation. Audio: all truss flattened to roof with evacuation. Lights: secure lights, power off, evacuate. Spots/FOH/Video/Back Line: power off and evacuate."
+      },
+      {
+        "section_id": "weather-4",
+        "title": "Lightning Protocols",
+        "content": "LIGHTNING WITHIN 8 MILES: Radio alert from production triggers show delay with audience advised to seek shelter. Stage: take shelter. LED screens: message system take shelter. Audio: power off, take shelter. Lights: secure lights, power off, evacuate. All production areas power off and take shelter. LIGHTNING STORM TRACKING TOWARDS SITE: Radio alert from production to monitor proximity. Stage: increase stage venting. LED screens: land anchor. Audio: all truss flattened to roof. Lights: secure lights, power off, evacuate."
+      },
+      {
+        "section_id": "weather-5",
+        "title": "Progressive Wind Monitoring (20-30 MPH)",
+        "content": "WINDS NEARING 30 MPH: Radio alert from production. Stage: monitor proximity, increase stage venting, land anchor. LED screens: land PA and delays. Audio: all truss flattened to roof. Lights: secure lights, power off, evacuate. Spots/FOH/Video/Back Line: secure gear and monitor conditions, secure and cover gear. WINDS GREATER THAN 20 MPH: Radio alert from production to monitor proximity. Stage: vent stage. LED screens: land. Audio: monitor PA swing. Lights: monitor rig swing. Spots: monitor sway. All areas secure gear and monitor conditions."
+      },
+      {
+        "section_id": "weather-6",
+        "title": "Storm Tracking Protocols",
+        "content": "STORM/LIGHTNING TRACKING TOWARDS SITE WITHIN 20 MILES: Radio alert from production to monitor proximity. Stage and LED screens monitor proximity. Audio/Lights/Spots: motor controllers at ready. FOH/Video/Back Line: prepare to secure, secure and cover gear. RAIN EVENT TRACKING TOWARDS SITE WITHIN 20 MILES: Radio alert from production. Stage and LED screens monitor proximity. Audio/Lights/Spots: secure and cover gear. FOH/Video/Back Line: prepare to secure, secure and cover gear. ALL CLEAR: Radio alert confirms weather is all clear - all areas can restore normal activities."
+      }
+    ],
+    "alert_methods": {
+      "immediate_evacuation": "2 long air horn blasts + radio communication",
+      "show_delay": "1 long air horn blast + radio communication",
+      "radio_alert": "Radio alert from production",
+      "all_clear": "Radio alert - weather is all clear"
+    },
+    "wind_thresholds": {
+      "critical": "50+ MPH or tornado",
+      "severe": "40+ MPH",
+      "caution": "30 MPH nearing",
+      "monitor": "20+ MPH"
+    },
+    "key_takeaways": [
+      "Clear, audible alert methods (air horns + radio) ensure all personnel receive warnings",
+      "Different weather hazards require different production area responses",
+      "Progressive thresholds allow for staged responses rather than immediate full evacuation",
+      "All Clear signals must be clearly communicated before resuming normal operations",
+      "Equipment protection (power off, securing gear) is essential during weather events"
+    ]
+  },
+  "metadata": {
+    "version": "1.0",
+    "extracted_from": "weather-protocols.pdf",
+    "processing_agent": "PDF Elite Processor Agent #18",
+    "extraction_date": "2026-03-19"
+  }
+}

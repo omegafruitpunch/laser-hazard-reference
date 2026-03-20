@@ -1,0 +1,50 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 20,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Variance application and approval",
+      "Alternate means of safety",
+      "Federal agency exemptions",
+      "Exemption from annual reporting"
+    ],
+    "key_terms": [
+      {
+        "term": "Variance",
+        "definition": "Permission to deviate from standard requirements"
+      },
+      {
+        "term": "Alternate but Equal Safety",
+        "definition": "Different approach providing equivalent protection"
+      },
+      {
+        "term": "Federal Agency Exemptions",
+        "definition": "DOD, DOE, NASA, NOAA exemptions for classified products"
+      },
+      {
+        "term": "21 CFR 1002.50",
+        "definition": "Exemption from annual reporting and recordkeeping"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1010.4 - Variance provisions",
+      "21 CFR 1010.5 - Federal agency exemptions",
+      "21 CFR 1002.50 - Reporting exemptions"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Apply for product variances",
+      "Demonstrate alternate safety measures",
+      "Understand federal agency exemptions",
+      "Request reporting exemptions"
+    ],
+    "prerequisites": [
+      "Pages 16-19 content"
+    ],
+    "estimated_study_time_minutes": 25,
+    "content_type": "variance_procedures",
+    "has_tables": false
+  }
+}

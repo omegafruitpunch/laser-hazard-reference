@@ -1,0 +1,66 @@
+{
+  "module_id": "course-5-module-5.2",
+  "course_id": "course-5",
+  "title": "Module 5.2: UK Post-Brexit Regulations",
+  "subtitle": "Navigate UKCA, HSE Guidance & the Safety of Display Lasers Framework",
+  "description": "Master UK laser safety requirements post-Brexit, including the transition from CE to UKCA marking, the Safety of Display Lasers guidance (replacing HS(G)95), and specific requirements for venues, operators, and LSOs. Features interactive UKCA vs CE comparator and venue safety zone visualizer.",
+  "version": "1.0.0",
+  "last_updated": "2026-03-19",
+  "duration_minutes": 16,
+  "difficulty": "intermediate",
+  "learning_objectives": [
+    "Understand post-Brexit changes to UK laser regulations",
+    "Differentiate between CE and UKCA marking requirements",
+    "Apply the Safety of Display Lasers guidance in practice",
+    "Define roles and responsibilities (LSO, Operator, Venue, Supplier)",
+    "Calculate and implement safety zone separations",
+    "Complete proper sign-off and documentation procedures"
+  ],
+  "prerequisites": [
+    "course-5-module-5.1"
+  ],
+  "completion_criteria": {
+    "quiz_pass_score": 80,
+    "interactive_exercises_completed": [
+      "ukca_ce_comparator",
+      "safety_zone_visualizer",
+      "roles_responsibility_matcher"
+    ],
+    "minimum_time_minutes": 13
+  },
+  "badge": {
+    "id": "uk_compliance_specialist",
+    "name": "UK Compliance Specialist",
+    "icon": "🇬🇧",
+    "description": "Mastered UK post-Brexit laser safety regulations"
+  },
+  "keywords": [
+    "UKCA marking",
+    "CE marking",
+    "Safety of Display Lasers",
+    "HS(G)95",
+    "HSE",
+    "CAA CAP 736",
+    "Laser Safety Officer",
+    "safety zones",
+    "separation distances",
+    "Plan Do Check Act"
+  ],
+  "standards_reference": [
+    "Safety of Display Lasers (2016)",
+    "Control of Artificial Optical Radiation at Work Regulations 2010",
+    "Health and Safety at Work etc. Act 1974",
+    "CAA CAP 736",
+    "BS EN 60825-1:2014"
+  ],
+  "research_alignment": {
+    "adult_learning": "Role-based learning with real venue scenarios",
+    "brilliant_patterns": [
+      "Before/After comparison",
+      "Interactive safety zone calculator",
+      "Role-matching exercise",
+      "Progressive case study"
+    ],
+    "retention_strategy": "Contextual learning with venue-specific scenarios"
+  }
+}

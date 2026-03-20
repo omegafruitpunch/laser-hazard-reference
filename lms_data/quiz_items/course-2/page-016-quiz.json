@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 16,
+  "quiz_items": [
+    {
+      "id": "C2-P16-Q1",
+      "type": "scenario",
+      "difficulty": "advanced",
+      "question": "A manufacturer has been producing laser products for 3 years. How long must they maintain distribution records?",
+      "options": [
+        "1 year after distribution",
+        "3 years after distribution",
+        "5 years after distribution",
+        "Permanently"
+      ],
+      "correct_answer": 2,
+      "explanation": "Manufacturers must maintain records including written QC procedures, test results, life testing results, communications about radiation safety, and distribution records for tracing in event of recall - typically for 5 years.",
+      "learning_objective": "Know recordkeeping requirements",
+      "regulatory_reference": "21 CFR 1002.30"
+    },
+    {
+      "id": "C2-P16-Q2",
+      "type": "multiple_select",
+      "difficulty": "intermediate",
+      "question": "What records must manufacturers maintain per 21 CFR 1002.30? (Select all that apply)",
+      "options": [
+        "Written description of quality control procedures",
+        "Results of compliance tests",
+        "Customer satisfaction surveys",
+        "Copies of communications concerning radiation safety"
+      ],
+      "correct_answer": [0, 1, 3],
+      "explanation": "Required records include: written QC procedures, test results, life testing results, written communications about radiation safety (complaints, instructions), and product distribution records.",
+      "learning_objective": "Identify required records",
+      "regulatory_reference": "21 CFR 1002.30"
+    }
+  ]
+}

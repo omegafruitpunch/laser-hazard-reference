@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "description": "Semantic search index for laser safety concepts",
+  "generated_at": "2024-01-01T00:00:00Z",
+  "index_type": "inverted",
+  "terms": {
+    "laser safety officer": ["E00001", "course-1", "course-8"],
+    "LSO": ["E00001", "course-1", "course-8"],
+    "MPE": ["E00006", "course-1", "course-3", "course-5"],
+    "maximum permissible exposure": ["E00006", "course-1", "course-3"],
+    "NOHD": ["E00007", "course-1", "course-6"],
+    "nominal ocular hazard distance": ["E00007", "course-1"],
+    "laser classification": ["course-1", "E00008", "E00009", "E00010", "E00011", "E00012"],
+    "class 1": ["E00008", "course-1"],
+    "class 2": ["E00009", "course-1"],
+    "class 3R": ["E00010", "course-1", "course-5"],
+    "class 3B": ["E00011", "course-1", "course-2"],
+    "class 4": ["E00012", "course-1"],
+    "protective eyewear": ["E00013", "course-1", "course-3"],
+    "laser goggles": ["E00013", "course-1", "course-3"],
+    "optical density": ["E00013", "course-3"],
+    "FDA variance": ["E00014", "course-2"],
+    "21 CFR 1040": ["E00004", "course-2"],
+    "laser notice 50": ["E00015", "course-2"],
+    "retinal damage": ["E00016", "course-1", "course-3"],
+    "eye injury": ["E00016", "course-1", "course-3"],
+    "EU directive": ["E00017", "course-5"],
+    "2006/25/EC": ["E00017", "course-5"],
+    "FAA": ["E00018", "course-6"],
+    "NOTAM": ["E00019", "course-6"],
+    "airspace": ["E00018", "E00019", "course-6"],
+    "ANSI Z136.1": ["E00003", "course-1", "course-8"],
+    "ANSI E1.46": ["E00020", "course-8"],
+    "ESTA": ["E00020", "course-8"],
+    "IEC 60825": ["E00005", "course-3", "course-5"],
+    "hazard distance": ["E00007", "course-1", "course-6"],
+    "beam calculation": ["E00007", "course-1"],
+    "audience scanning": ["E00015", "course-2"],
+    "entertainment laser": ["E00014", "E00015", "E00020", "course-2", "course-8"]
+  },
+  "synonyms": {
+    "LSO": ["laser safety officer", "safety officer"],
+    "MPE": ["maximum permissible exposure", "exposure limit"],
+    "NOHD": ["nominal ocular hazard distance", "hazard distance", "safety distance"],
+    "protective eyewear": ["laser goggles", "safety glasses", "laser glasses"],
+    "retinal damage": ["eye injury", "retinal burn", "vision damage"]
+  },
+  "metadata": {
+    "total_terms": 35,
+    "total_documents": 8,
+    "language": "en"
+  }
+}

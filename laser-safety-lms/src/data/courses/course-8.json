@@ -1,0 +1,41 @@
+{
+  "id": "course-8",
+  "title": "Entertainment Technology Standards",
+  "description": "Comprehensive coverage of ANSI/ESTA standards for entertainment technology including rigging, electrical, and laser-specific performance standards. Deep dive into ANSI Z136 series and ANSI E1.46 entertainment laser standard with certification preparation.",
+  "duration": 75,
+  "difficulty": "advanced",
+  "category": "Standards",
+  "modules": [
+    "module-8-1",
+    "module-8-2",
+    "module-8-3",
+    "module-8-4",
+    "module-8-5"
+  ],
+  "prerequisites": ["course-1", "course-3"],
+  "certifications": ["CLSO", "CMLSO", "Standards Compliance Specialist"],
+  "learningObjectives": [
+    "Navigate the complete ANSI Z136 series and identify applicable standards for any laser application",
+    "Apply ESTA E1.46 entertainment laser standard requirements to show planning and installations",
+    "Implement hierarchy of controls following ANSI Z136.1 requirements",
+    "Develop comprehensive standards compliance documentation for regulatory authorities",
+    "Prepare for CLSO and CMLSO certification examinations",
+    "Maintain compliance matrices and audit documentation",
+    "Coordinate with regulatory authorities and inspection bodies"
+  ],
+  "thumbnail": "/images/courses/course-8.jpg",
+  "icon": "📋",
+  "coverColor": "from-slate-700 to-blue-600",
+  "accentColor": "blue",
+  "standardsCovered": [
+    "ANSI Z136.1",
+    "ANSI Z136.2",
+    "ANSI Z136.3",
+    "ANSI Z136.6",
+    "ANSI Z136.8",
+    "ANSI Z136.10",
+    "ANSI E1.46"
+  ],
+  "createdAt": "2024-01-01T00:00:00Z",
+  "updatedAt": "2024-03-19T00:00:00Z"
+}

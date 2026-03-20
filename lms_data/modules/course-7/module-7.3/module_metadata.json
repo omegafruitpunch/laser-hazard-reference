@@ -1,0 +1,36 @@
+{
+  "module_id": "course-7-module-7.3",
+  "course_id": "course-7",
+  "title": "Module 7.3: Crowd Safety & Management",
+  "subtitle": "Master Crowd Dynamics, Density Management, and Emergency Egress",
+  "description": "Learn to recognize dangerous crowd conditions before they become critical. Master crowd density calculations, flow management, barrier design, and emergency evacuation procedures. Based on industry best practices and lessons learned from historical crowd incidents.",
+  "duration_minutes": 30,
+  "difficulty": "intermediate",
+  "learning_objectives": [
+    "Calculate and monitor crowd density in real-time",
+    "Recognize warning signs of dangerous crowd conditions",
+    "Design effective crowd flow patterns and barrier systems",
+    "Plan and execute emergency crowd evacuations",
+    "Apply appropriate staffing ratios for crowd management",
+    "Respond effectively to crowd surges and crush conditions"
+  ],
+  "prerequisites": ["course-7-module-7.1", "course-7-module-7.2"],
+  "completion_criteria": {
+    "quiz_pass_score": 80,
+    "interactive_exercises_completed": ["crowd_density_calculator", "emergency_egress_planner", "crowd_surge_responder"],
+    "minimum_time_minutes": 24
+  },
+  "badge": {
+    "id": "crowd_safety_expert",
+    "name": "Crowd Safety Expert",
+    "icon": "👥",
+    "description": "Mastered crowd safety and emergency management"
+  },
+  "keywords": ["crowd management", "crowd density", "crowd surge", "evacuation", "barrier design", "flow management", "crush threshold", "stewarding"],
+  "standards_reference": ["ANSI ES1.9", "Event Safety Guide Chapter 9", "NFPA 130"],
+  "research_alignment": {
+    "adult_learning": "Scenario-based learning with real incident analysis",
+    "technical_training": "Competency verification through simulation",
+    "interactive_design": "Visual density calculators and real-time monitoring tools"
+  }
+}

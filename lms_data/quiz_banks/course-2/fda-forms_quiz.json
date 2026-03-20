@@ -1,0 +1,312 @@
+{
+  "quiz_title": "FDA Forms and Product Reporting - Quiz Bank",
+  "document_source": "fda-forms.pdf (FORM FDA 3632)",
+  "course": "Course 2 - FDA Compliance",
+  "total_questions": 20,
+  
+  "questions": [
+    {
+      "id": "c2_q1",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "category": "Regulatory Forms",
+      "question": "What is the OMB control number for FORM FDA 3632 (Guide for Preparing Product Reports for Lasers)?",
+      "options": [
+        "0910-0015",
+        "0910-0025",
+        "0910-0035",
+        "0910-0045"
+      ],
+      "correct_answer": 1,
+      "explanation": "FORM FDA 3632 has OMB control number 0910-0025 with expiration date February 28, 2026.",
+      "cfr_reference": "Form header information"
+    },
+    {
+      "id": "c2_q2",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "category": "Report Timing",
+      "question": "When must a Product Report be submitted to CDRH?",
+      "options": [
+        "Within 30 days after introduction into commerce",
+        "Within 60 days of manufacturing",
+        "Prior to introduction of products into commerce",
+        "Annually by September 1"
+      ],
+      "correct_answer": 2,
+      "explanation": "Product Reports must be submitted prior to introduction of the reported products into commerce, including imported products.",
+      "cfr_reference": "21 CFR 1002.10"
+    },
+    {
+      "id": "c2_q3",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "category": "Report Types",
+      "question": "What type of report is used to report a new model in a previously reported model family?",
+      "options": [
+        "Initial Product Report",
+        "Supplemental Report",
+        "Annual Report",
+        "Abbreviated Report"
+      ],
+      "correct_answer": 1,
+      "explanation": "Supplemental Reports are used to report new models in previously reported model families, modifications, or other changes to previous reports.",
+      "cfr_reference": "21 CFR 1002.11"
+    },
+    {
+      "id": "c2_q4",
+      "type": "multiple_true_false",
+      "difficulty": "hard",
+      "category": "Supplemental Report Triggers",
+      "question": "Which of the following changes require a Supplemental Report? (Select all that apply)",
+      "options": [
+        "Changes affecting actual or potential emission",
+        "Changes decreasing degree of compliance with the performance standard",
+        "Changes resulting in decreased probability of detecting product noncompliance",
+        "Changes to the product color only"
+      ],
+      "correct_answers": [0, 1, 2],
+      "explanation": "Supplemental Reports are required for changes affecting emissions, compliance, or detection probability. Cosmetic changes like color alone do not require supplemental reports.",
+      "cfr_reference": "21 CFR 1002.11"
+    },
+    {
+      "id": "c2_q5",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "category": "Regulatory Authority",
+      "question": "What is the estimated average reporting burden for completing FORM FDA 3632?",
+      "options": [
+        "8 hours per response",
+        "12 hours per response",
+        "24 hours per response",
+        "48 hours per response"
+      ],
+      "correct_answer": 2,
+      "explanation": "The estimated reporting burden is 24 hours per response, including time for reviewing instructions, searching data sources, gathering data, and completing the collection.",
+      "cfr_reference": "Form header information"
+    },
+    {
+      "id": "c2_q6",
+      "type": "true_false",
+      "difficulty": "medium",
+      "category": "Regulatory Authority",
+      "question": "CDRH approves Product Reports and the products being reported.",
+      "correct_answer": false,
+      "explanation": "CDRH does NOT approve Product Reports or the products being reported. It is the manufacturer's responsibility to certify compliance. CDRH may only disapprove testing programs or determine noncompliance after review.",
+      "cfr_reference": "FORM FDA 3632 Foreword"
+    },
+    {
+      "id": "c2_q7",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "category": "Annual Reports",
+      "question": "When are Annual Reports due?",
+      "options": [
+        "January 1 for the previous calendar year",
+        "March 31 for the fiscal year",
+        "September 1 for the 12 months ending June 30",
+        "December 31 for the current calendar year"
+      ],
+      "correct_answer": 2,
+      "explanation": "Annual Reports must be submitted by September 1 for the 12 months ending on June 30 of the same year.",
+      "cfr_reference": "21 CFR 1002.13"
+    },
+    {
+      "id": "c2_q8",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "category": "Labeling Requirements",
+      "question": "Which label is required on ALL laser products regardless of class?",
+      "options": [
+        "Warning logotype",
+        "Certification label",
+        "Aperture label",
+        "Class IV designation label"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Certification label (per 21 CFR 1010.2) and Identification label (per 21 CFR 1010.3) are required on ALL laser products. Warning logotypes and aperture labels are class-dependent.",
+      "cfr_reference": "21 CFR 1010.2, 1010.3"
+    },
+    {
+      "id": "c2_q9",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "category": "Performance Requirements",
+      "question": "Which performance requirement applies to Class IIIb or IV laser systems only?",
+      "options": [
+        "Protective housing",
+        "Safety interlocks",
+        "Remote interlock connector",
+        "Viewing optics safeguards"
+      ],
+      "correct_answer": 2,
+      "explanation": "The remote interlock connector is required only for Class IIIb or IV laser systems. Protective housing, safety interlocks, and viewing optics safeguards apply to all laser products.",
+      "cfr_reference": "21 CFR 1040.10(f)(3)"
+    },
+    {
+      "id": "c2_q10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "category": "Report Structure",
+      "question": "How many parts are in the complete FORM FDA 3632 Product Report?",
+      "options": [
+        "8 parts",
+        "9 parts",
+        "10 parts",
+        "12 parts"
+      ],
+      "correct_answer": 2,
+      "explanation": "FORM FDA 3632 has 10 parts: (1) Manufacturer/Report ID, (2) Product/Model ID, (3) Labeling, (4) Informational Requirements, (5) Product Description, (6) Radiation Levels/Classification, (7) Performance Requirements, (8) Quality Control, (9) Life/Endurance Testing, and (10) Instrumentation/Calibration.",
+      "cfr_reference": "FORM FDA 3632 Table of Contents"
+    },
+    {
+      "id": "c2_q11",
+      "type": "fill_in_blank",
+      "difficulty": "medium",
+      "category": "Contact Information",
+      "question": "What is the contact phone number for questions about FDA laser product reporting?",
+      "correct_answer": "1-800-638-2041",
+      "acceptable_variants": ["800-638-2041", "1-800-638-2041"],
+      "explanation": "The Division of Small Manufacturer's Assistance (DSMA) can be contacted at 1-800-638-2041 for reporting questions.",
+      "cfr_reference": "FORM FDA 3632 submission information"
+    },
+    {
+      "id": "c2_q12",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "category": "Quality Control",
+      "question": "What must certification be based on according to 21 CFR 1010.2(c)?",
+      "options": [
+        "CDRH pre-approval only",
+        "Third-party testing only",
+        "Testing in accordance with the standard OR a program in accordance with good manufacturing practices",
+        "Manufacturer declaration only"
+      ],
+      "correct_answer": 2,
+      "explanation": "Certification must be based on a test in accordance with the standard of each unit OR on a program in accordance with good manufacturing practices.",
+      "cfr_reference": "21 CFR 1010.2(c)"
+    },
+    {
+      "id": "c2_q13",
+      "type": "scenario",
+      "difficulty": "hard",
+      "category": "Compliance Scenarios",
+      "question": "Scenario: A manufacturer modifies a previously reported Class IV laser product to improve its beam attenuator mechanism. The modification reduces the probability of detecting noncompliance during quality control testing. What action is required?",
+      "options": [
+        "No action needed - it's a safety improvement",
+        "Include the change in next Annual Report only",
+        "Submit a Supplemental Report prior to introduction into commerce",
+        "Submit a new Product Report"
+      ],
+      "correct_answer": 2,
+      "explanation": "Changes that result in decreased probability of detecting product noncompliance require a Supplemental Report to be submitted prior to introduction into commerce.",
+      "cfr_reference": "21 CFR 1002.11"
+    },
+    {
+      "id": "c2_q14",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "category": "Report Identification",
+      "question": "What is an 'accession number' in the context of FDA laser product reports?",
+      "options": [
+        "A manufacturing serial number",
+        "A unique identifier assigned by CDRH upon receipt of a report",
+        "The OMB control number",
+        "A model family designation"
+      ],
+      "correct_answer": 1,
+      "explanation": "When a report is received at CDRH, a unique accession number is assigned for future reference. Submitters are informed of this number in a letter of acknowledgment.",
+      "cfr_reference": "FORM FDA 3632 General Instructions"
+    },
+    {
+      "id": "c2_q15",
+      "type": "multiple_true_false",
+      "difficulty": "hard",
+      "category": "Medical Laser Requirements",
+      "question": "For Class III or IV medical laser products intended for in-vivo irradiation of the human body, which requirements apply? (Select all that apply)",
+      "options": [
+        "Means to measure the level of laser radiation intended for irradiation",
+        "Displayed power/energy measured or calculated to within +/- 20%",
+        "Procedures and schedule for recalibration in user instructions",
+        "Emission indicators visible only in dark conditions"
+      ],
+      "correct_answers": [0, 1, 2],
+      "explanation": "Medical lasers must have measurement systems, calibration within +/- 20%, and recalibration procedures in user instructions. There is no requirement for emission indicators to be visible only in dark conditions.",
+      "cfr_reference": "21 CFR 1040.11(a)"
+    },
+    {
+      "id": "c2_q16",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "category": "Demonstration Lasers",
+      "question": "If a demonstration laser product exceeds Class IIIa, what is required prior to introduction into commerce?",
+      "options": [
+        "Standard Product Report only",
+        "Annual Report only",
+        "Approved variance from performance requirements per 1010.4",
+        "No special requirements"
+      ],
+      "correct_answer": 2,
+      "explanation": "If a demonstration laser product's class exceeds Class IIIa, an approved variance from the performance requirements in section 1040.11(c) is necessary prior to introduction into commerce.",
+      "cfr_reference": "21 CFR 1040.11(c) and 1010.4"
+    },
+    {
+      "id": "c2_q17",
+      "type": "true_false",
+      "difficulty": "easy",
+      "category": "Fail-Safe Requirements",
+      "question": "Safety interlocks that prevent access to Class IIIb or IV laser radiation must be 'fail-safe' or redundant.",
+      "correct_answer": true,
+      "explanation": "Safety interlocks preventing access to Class IIIb or IV laser radiation must be fail-safe (preclude removal upon failure) or redundant.",
+      "cfr_reference": "21 CFR 1040.10(f)(2)(iii)"
+    },
+    {
+      "id": "c2_q18",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "category": "Manual Reset",
+      "question": "The manual reset requirement for Class IV laser systems applies to products manufactured after what date?",
+      "options": [
+        "January 1, 1980",
+        "August 20, 1986",
+        "January 1, 1990",
+        "February 27, 1997"
+      ],
+      "correct_answer": 1,
+      "explanation": "The manual reset requirement (to require manual restart following power failure of at least 5 seconds) applies to Class IV laser systems manufactured after August 20, 1986.",
+      "cfr_reference": "21 CFR 1040.10(f)(10)"
+    },
+    {
+      "id": "c2_q19",
+      "type": "scenario",
+      "difficulty": "hard",
+      "category": "Compliance Scenarios",
+      "question": "Scenario: A manufacturer has a product that operates at a level closely approaching a specified emission limit. What is required regarding instrument calibration?",
+      "options": [
+        "Self-certification is sufficient",
+        "Calibration against company standard is acceptable",
+        "High accuracy and traceability to NIST are important",
+        "No calibration documentation needed"
+      ],
+      "correct_answer": 2,
+      "explanation": "When a laser product operates at a level closely approaching a specified limit, high accuracy and traceability to the National Institute of Standards and Technology (NIST) are important.",
+      "cfr_reference": "FORM FDA 3632 Part 10 Note"
+    },
+    {
+      "id": "c2_q20",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "category": "Model Family",
+      "question": "What is a 'Model Family' in FDA laser product reporting?",
+      "options": [
+        "A group of products from the same manufacturer only",
+        "A group of models that are variations of a basic design",
+        "Only Class I products",
+        "Products sold only in the same geographic region"
+      ],
+      "correct_answer": 1,
+      "explanation": "A model family is a group of models that are variations of a basic design. A complete report can be submitted on one model with Supplemental Reports for other models in the family.",
+      "cfr_reference": "FORM FDA 3632 Definitions"
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "course": "Course 7: Event Safety Planning",
+  "module": "Assessment Criteria",
+  "generated_at": "2026-03-19",
+  "assessment_categories": {
+    "venue_assessment": {
+      "title": "Venue Assessment Criteria",
+      "description": "Comprehensive criteria for evaluating event venues",
+      "sections": {
+        "general_characteristics": {
+          "title": "General Venue Characteristics",
+          "criteria": [
+            {
+              "id": "VA-001",
+              "item": "Venue type classification",
+              "options": [
+                "Purpose-built arena/stadium",
+                "Outdoor open space",
+                "Building not designed for assembly",
+                "Temporary structure location",
+                "Mixed indoor/outdoor"
+              ],
+              "assessment_notes": "Each type has different inherent risks and requirements"
+            },
+            {
+              "id": "VA-002",
+              "item": "Capacity and occupant load",
+              "measurement": "Maximum persons venue can safely accommodate",
+              "factors": [
+                "Fixed seating capacity",
+                "General admission floor capacity",
+                "Standing room areas",
+                "ADA compliance requirements"
+              ]
+            },
+            {
+              "id": "VA-003",
+              "item": "Geography and topography",
+              "assessment_points": [
+                "Slopes or grade changes affecting crowd flow",
+                "Natural barriers or hazards",
+                "Underground utilities",
+                "Soil conditions for temporary structures"
+              ]
+            }
+          ]
+        },
+        "means_of_egress": {
+          "title": "Means of Egress Assessment",
+          "description": "Based on NFPA 1, NFPA 101, and NFPA 101B requirements",
+          "criteria": [
+            {
+              "id": "EG-001",
+              "item": "Exit width requirements",
+              "standard": "Minimum width 36 inches (0.914m)",
+              "calculation": "Based on occupant load × egress factor"
+            },
+            {
+              "id": "EG-002",
+              "item": "Exit discharge",
+              "requirement": "Must lead to public way with minimum 10ft width/height",
+              "verification": "Check for obstructions in exit discharge paths"
+            },
+            {
+              "id": "EG-003",
+              "item": "Exit signage",
+              "requirements": [
+                "Minimum 6-inch lettering height",
+                "8-inch height if viewed from >100 feet",
+                "Illuminated whenever people present",
+                "Weatherproof for outdoor events"
+              ]
+            },
+            {
+              "id": "EG-004",
+              "item": "Emergency lighting",
+              "requirement": "Required in all exit paths",
+              "assessment": "Verify backup power and illumination levels"
+            },
+            {
+              "id": "EG-005",
+              "item": "Stairway specifications",
+              "requirements": [
+                "Minimum 36-inch width",
+                "Minimum 80-inch headroom clearance",
+                "Handrails on wide stairways (>6ft)",
+                "Divided into 3ft sections"
+              ]
+            },
+            {
+              "id": "EG-006",
+              "item": "Ramp specifications",
+              "requirements": [
+                "Landings at least 60 inches long",
+                "Maximum egress ramp slope: 1:12 (8%)",
+                "Maximum non-egress ramp slope: 1:8 (12.5%)",
+                "ADA compliance where applicable"
+              ]
+            },
+            {
+              "id": "EG-007",
+              "item": "Door specifications",
+              "requirements": [
+                "Must swing in direction of egress",
+                "Panic hardware for occupied doors",
+                "Self-closing fire doors not propped open",
+                "Vision panels for double-swing doors"
+              ]
+            }
+          ]
+        },
+        "fire_safety": {
+          "title": "Fire Safety Assessment",
+          "criteria": [
+            {
+              "id": "FS-001",
+              "item": "Fire extinguisher placement",
+              "requirements": [
+                "ABC extinguishers for general areas",
+                "Maximum 50 feet travel distance",
+                "Class D extinguishers within 75ft of metal work",
+                "Within 30ft of cooking equipment",
+                "In all tents and membrane structures"
+              ]
+            },
+            {
+              "id": "FS-002",
+              "item": "Fire extinguisher ratings",
+              "examples": [
+                {
+                  "rating": "1-A:10-B:C",
+                  "equivalent": "1.25 gallons water capability on Class A, 10 sq ft Class B"
+                },
+                {
+                  "rating": "2-A:20-B:C",
+                  "use": "Fuel tank vehicles minimum requirement"
+                }
+              ]
+            },
+            {
+              "id": "FS-003",
+              "item": "Tent and membrane structure requirements",
+              "requirements": [
+                "NFPA 701 flame propagation certification",
+                "Fire extinguishers required",
+                "Guy lines minimum 8ft height over egress",
+                "Permit required before erection"
+              ]
+            },
+            {
+              "id": "FS-004",
+              "item": "Fire watch provisions",
+              "description": "Continuous surveillance when required",
+              "triggers": [
+                "Hot work operations",
+                "Reduced fire protection systems",
+                "Special hazards present"
+              ]
+            }
+          ]
+        },
+        "medical_facilities": {
+          "title": "Medical and First Aid Assessment",
+          "criteria": [
+            {
+              "id": "MED-001",
+              "item": "First aid station locations",
+              "requirements": [
+                "Accessible to all event areas",
+                "Clearly identified",
+                "Adequate space for treatment",
+                "Secure storage for supplies"
+              ]
+            },
+            {
+              "id": "MED-002",
+              "item": "Medical personnel requirements",
+              "considerations": [
+                "Event size and capacity",
+                "Audience demographics",
+                "Event duration",
+                "Distance to hospital",
+                "Type of activities"
+              ]
+            },
+            {
+              "id": "MED-003",
+              "item": "Ambulance access",
+              "requirements": [
+                "Dedicated emergency routes",
+                "Loading points identified",
+                "Helipad locations if applicable",
+                "Rendezvous points for emergency services"
+              ]
+            }
+          ]
+        },
+        "communication_systems": {
+          "title": "Communication Systems Assessment",
+          "criteria": [
+            {
+              "id": "COM-001",
+              "item": "Public Address (PA) system",
+              "requirements": [
+                "Adequate coverage for all areas",
+                "Emergency announcement capability",
+                "Backup power source",
+                "Clarity and intelligibility"
+              ]
+            },
+            {
+              "id": "COM-002",
+              "item": "Radio communication",
+              "requirements": [
+                "Sufficient channels for all teams",
+                "Backup communication method",
+                "Standardized terminology",
+                "Radio checks before event"
+              ]
+            },
+            {
+              "id": "COM-003",
+              "item": "Incident Command Post",
+              "requirements": [
+                "Centrally located",
+                "Continuously staffed",
+                "Access for emergency vehicles",
+                "Communication equipment"
+              ]
+            }
+          ]
+        },
+        "structural_safety": {
+          "title": "Structural Safety Assessment",
+          "criteria": [
+            {
+              "id": "STR-001",
+              "item": "Temporary structures",
+              "documentation_required": [
+                "Engineering calculations",
+                "Structural drawings",
+                "Installation plans",
+                "Wind load ratings"
+              ]
+            },
+            {
+              "id": "STR-002",
+              "item": "Stage and platform requirements",
+              "requirements": [
+                "Guardrails where height exceeds threshold",
+                "Load ratings posted",
+                "Non-slip surfaces",
+                "Adequate access/egress"
+              ]
+            },
+            {
+              "id": "STR-003",
+              "item": "Seating structures",
+              "requirements": [
+                "Proper anchoring",
+                "Adequate aisle widths",
+                "Non-combustible materials",
+                "Emergency egress compliance"
+              ]
+            }
+          ]
+        },
+        "weather_preparedness": {
+          "title": "Weather Preparedness Assessment",
+          "description": "Using Weather Decision Trigger Chart methodology",
+          "criteria": [
+            {
+              "id": "WX-001",
+              "item": "Weather monitoring system",
+              "requirements": [
+                "Real-time weather data",
+                "Lightning detection within 8 miles",
+                "Wind speed monitoring",
+                "Temperature monitoring (WBGT)"
+              ]
+            },
+            {
+              "id": "WX-002",
+              "item": "Shelter identification",
+              "requirements": [
+                "Adequate capacity for all attendees",
+                "Clearly marked locations",
+                "Multiple access routes",
+                "Structural integrity for severe weather"
+              ]
+            },
+            {
+              "id": "WX-003",
+              "item": "Decision trigger points",
+              "triggers": [
+                "Surface winds exceeding specified mph",
+                "Tornado warning",
+                "Lightning within 8 miles",
+                "Hail within 8 miles",
+                "WBGT exceeding specified temperature"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "risk_assessment_matrix": {
+      "title": "Risk Assessment Matrix",
+      "description": "For evaluating and prioritizing identified hazards",
+      "probability_levels": [
+        {"level": 1, "rating": "Rare", "description": "May occur only in exceptional circumstances"},
+        {"level": 2, "rating": "Unlikely", "description": "Could occur but not expected"},
+        {"level": 3, "rating": "Possible", "description": "Might occur at some time"},
+        {"level": 4, "rating": "Likely", "description": "Will probably occur in most circumstances"},
+        {"level": 5, "rating": "Almost Certain", "description": "Expected to occur in most circumstances"}
+      ],
+      "severity_levels": [
+        {"level": 1, "rating": "Negligible", "description": "Minor injury/illness, no lost time"},
+        {"level": 2, "rating": "Minor", "description": "Medical treatment required"},
+        {"level": 3, "rating": "Moderate", "description": "Lost time injury, hospitalization"},
+        {"level": 4, "rating": "Major", "description": "Permanent disability, multiple hospitalizations"},
+        {"level": 5, "rating": "Catastrophic", "description": "Death, multiple fatalities"}
+      ],
+      "risk_rating": {
+        "formula": "Risk = Probability × Severity",
+        "action_levels": [
+          {"range": "1-4", "rating": "Low", "action": "Manage with routine procedures"},
+          {"range": "5-9", "rating": "Medium", "action": "Management responsibility, specific monitoring"},
+          {"range": "10-16", "rating": "High", "action": "Senior management attention required"},
+          {"range": "17-25", "rating": "Extreme", "action": "Immediate action, event may need to stop"}
+        ]
+      }
+    },
+    "hazard_categories": {
+      "title": "Hazard Categories for Assessment",
+      "categories": [
+        {
+          "type": "Physical",
+          "examples": [
+            "Moving objects and equipment",
+            "Fluctuating temperatures",
+            "High intensity lighting",
+            "Rolling or pinching objects",
+            "Electrical connections",
+            "Sharp edges"
+          ]
+        },
+        {
+          "type": "Chemical",
+          "examples": [
+            "Harmful dusts",
+            "Flammable liquids",
+            "Compressed gases",
+            "Pyrotechnic materials"
+          ]
+        },
+        {
+          "type": "Biological",
+          "examples": [
+            "Blood or potentially infected materials",
+            "Exposure to infectious diseases"
+          ]
+        },
+        {
+          "type": "Ergonomic",
+          "examples": [
+            "Manual handling injuries",
+            "Repetitive strain",
+            "Poor workstation design"
+          ]
+        },
+        {
+          "type": "Psychosocial",
+          "examples": [
+            "Crowd crush potential",
+            "Workplace violence",
+            "Fatigue-related errors"
+          ]
+        }
+      ]
+    }
+  }
+}

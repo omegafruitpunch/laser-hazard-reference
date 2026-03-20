@@ -1,0 +1,524 @@
+{
+  "sections": [
+    {
+      "id": "regulatory_models_overview",
+      "title": "Regulatory Models Overview",
+      "type": "comparison_overview",
+      "content": {
+        "summary": "The four states in this module represent a spectrum of regulatory approaches. Nevada and Washington follow notification-based models with minimal oversight. New York implements comprehensive regulations with mandatory training certification. Texas combines comprehensive regulation with active industry engagement through ILDA.",
+        "regulatory_tiers": {
+          "notification_only": {
+            "states": ["Nevada", "Washington"],
+            "characteristics": [
+              "Advance notification required",
+              "No routine inspections",
+              "Minimal registration requirements",
+              "Focus on documentation over enforcement"
+            ]
+          },
+          "comprehensive_regulation": {
+            "states": ["New York", "Texas"],
+            "characteristics": [
+              "Mandatory registration",
+              "Routine inspections conducted",
+              "Specific training requirements",
+              "Active enforcement mechanisms"
+            ]
+          }
+        },
+        "visual_hierarchy": {
+          "least_restrictive": "Nevada, Washington (notification only)",
+          "moderate": "Illinois, Massachusetts (comprehensive from previous module)",
+          "most_restrictive": "New York, Texas (comprehensive + inspections/training)"
+        }
+      }
+    },
+    {
+      "id": "nevada_profile",
+      "title": "Nevada: Notification-Based Model",
+      "type": "state_profile",
+      "state": "nevada",
+      "tier": "notification_only",
+      "components": [
+        {
+          "type": "state_regulatory_card",
+          "title": "Nevada Regulatory Overview",
+          "agency": "Radiation Control Program",
+          "division": "Division of Public and Behavioral Health",
+          "contact": {
+            "name": "Karen Beckley",
+            "title": "Manager, Radiation Control Program",
+            "phone": "(775) 687-7550",
+            "fax": "(775) 684-4211",
+            "email": "kbeckley@health.nv.gov",
+            "generic_email": "radiationcontrolprogram@health.nv.gov",
+            "address": "675 Fairview Drive, Suite 218, Carson City, NV 89701"
+          },
+          "website": "http://www.health.nv.gov/BHPS/RHS",
+          "regulatory_tier": "Advance notification only",
+          "inspections": false,
+          "pending_legislation": false
+        },
+        {
+          "type": "requirement_card",
+          "title": "Primary Requirement",
+          "requirement": "Advance notification to the Radiation Control Program",
+          "description": "Contact the Radiation Control Program before installation or use of laser systems.",
+          "key_points": [
+            "No specific registration fee mentioned",
+            "No routine inspections conducted",
+            "No mandatory training requirements",
+            "Focus on notification and documentation"
+          ]
+        },
+        {
+          "type": "interactive_map",
+          "title": "Nevada Compliance Workflow",
+          "steps": [
+            {
+              "order": 1,
+              "action": "Plan laser installation or use",
+              "timeline": "Before operation"
+            },
+            {
+              "order": 2,
+              "action": "Contact Nevada Radiation Control Program",
+              "contact": "(775) 687-7550",
+              "timeline": "Advance notice"
+            },
+            {
+              "order": 3,
+              "action": "Provide required documentation",
+              "timeline": "As requested"
+            },
+            {
+              "order": 4,
+              "action": "Receive guidance on compliance",
+              "timeline": "Before operation begins"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "washington_profile",
+      "title": "Washington: Notification-Based with Light Show Focus",
+      "type": "state_profile",
+      "state": "washington",
+      "tier": "notification_only",
+      "components": [
+        {
+          "type": "state_regulatory_card",
+          "title": "Washington Regulatory Overview",
+          "agency": "Department of Health",
+          "division": "X-Ray Control / Radiation Protection",
+          "contact": {
+            "name": "David B. Jansen",
+            "title": "Director",
+            "phone": "(360) 236-3210",
+            "fax": "(360) 236-2266",
+            "email": "radioiationinfo@doh.wa.gov",
+            "address": "P.O. Box 47827, Olympia, WA 98504-7827"
+          },
+          "website": "http://www.doh.wa.gov/ehp/rp",
+          "regulatory_citation": "WAC 296-62-09005",
+          "regulatory_tier": "Advance notification (light show specific)",
+          "inspections": false,
+          "pending_legislation": false
+        },
+        {
+          "type": "requirement_card",
+          "title": "Washington Light Show Notification",
+          "requirement": "Advance written notification for laser light shows",
+          "regulatory_reference": "Ch. 296-62-09005 WAC",
+          "description": "Washington has specific provisions addressing laser light shows, requiring advance written notification.",
+          "key_points": [
+            "Specific focus on laser light shows",
+            "Advance written notification required",
+            "Contact Radiation Protection office for details",
+            "No routine inspections"
+          ]
+        },
+        {
+          "type": "comparison_note",
+          "title": "Nevada vs. Washington",
+          "note": "Both states operate on notification-only models, but Washington specifically addresses laser light shows in its regulations, while Nevada's notification is more general for all laser operations."
+        }
+      ]
+    },
+    {
+      "id": "new_york_profile",
+      "title": "New York: Comprehensive Regulation with Training",
+      "type": "state_profile",
+      "state": "new-york",
+      "tier": "comprehensive_regulation",
+      "components": [
+        {
+          "type": "state_regulatory_card",
+          "title": "New York Regulatory Overview",
+          "agency": "NYS Department of Labor",
+          "division": "Radiological Health Unit",
+          "contact": {
+            "name": "Kirk Fisher",
+            "title": "Radiophysicist",
+            "phone": "(518) 457-1202",
+            "fax": "(518) 485-8530",
+            "address": "State Campus Building 12 Room 169, Albany, NY 12240"
+          },
+          "website": "https://labor.ny.gov/workerprotection/safetyhealth/DOSHRHU.shtm",
+          "regulatory_citation": "12 NYCRR Part 50 (Industrial Code Rule 50)",
+          "amended_date": "March 2, 1994",
+          "regulatory_tier": "Comprehensive with training",
+          "inspections": true,
+          "pending_legislation": false
+        },
+        {
+          "type": "training_certification_system",
+          "title": "New York Laser Operator Certification System",
+          "description": "New York requires specific training certification for laser operators, with two classes of certificates:",
+          "certificates": [
+            {
+              "class": "Class A",
+              "description": "Low Intensity Lasers",
+              "scope": "Operation of low intensity laser systems",
+              "training_providers": [
+                {
+                  "name": "Tri-Cities Laborers' Training Program",
+                  "contact": "Joseph A. Zappone / Peter Nardolillo",
+                  "location": "666 Wemple Road, Glenmont, NY 12077",
+                  "phone": "(518) 426-0290"
+                },
+                {
+                  "name": "Institute of Design & Construction",
+                  "contact": "John Anselmo",
+                  "location": "141 Willoughby Street, Brooklyn, NY 11201",
+                  "phone": "(718) 855-3661"
+                },
+                {
+                  "name": "NY District Council of Carpenters Labor Technical College",
+                  "contact": "Martin Daly, Director",
+                  "location": "395 Hudson Street, New York, NY 10014",
+                  "phone": "(212) 727-2224"
+                }
+              ]
+            },
+            {
+              "class": "Class B",
+              "description": "Low and High Intensity Lasers",
+              "scope": "Operation of both low and high intensity laser systems",
+              "training_providers": [
+                {
+                  "name": "Rarefied Media Inc.",
+                  "contact": "Norman Ballard",
+                  "location": "337 West 76th Street, New York, NY 10023",
+                  "phone": "(212) 874-1431"
+                },
+                {
+                  "name": "Hudson Valley Community College",
+                  "contact": "Theodore Marotta",
+                  "location": "80 Vandenburgh Ave, Hudson Hall, Troy, NY 12180",
+                  "phone": "(518) 283-1100"
+                },
+                {
+                  "name": "LIA Laser Institute",
+                  "website": "lia.org",
+                  "email": "lia@lia.org",
+                  "phone": "(407) 380-1553"
+                },
+                {
+                  "name": "Laser Safety Services",
+                  "contact": "Roberta McHatton",
+                  "phone": "425-753-5644",
+                  "email": "roberta@lasersafetyservices.com"
+                }
+              ]
+            }
+          ],
+          "unique_feature": "New York is the only state in this batch that specifically requires laser operator training certificates (Class A and Class B)."
+        },
+        {
+          "type": "highlight_card",
+          "title": "New York Key Features",
+          "features": [
+            "Conducts routine inspections of laser facilities",
+            "Mandatory training certification (Class A/Class B)",
+            "Multiple approved training providers",
+            "Industrial Code Rule 50 since 1994",
+            "Comprehensive regulatory framework"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "texas_profile",
+      "title": "Texas: Comprehensive Regulation with Industry Engagement",
+      "type": "state_profile",
+      "state": "texas",
+      "tier": "comprehensive_regulation",
+      "components": [
+        {
+          "type": "state_regulatory_card",
+          "title": "Texas Regulatory Overview",
+          "agency": "Department of State Health Services",
+          "division": "Radiation Safety Licensing Branch",
+          "contact": {
+            "name": "Shannon Dove-Edson",
+            "title": "Program Manager, Laser Registration Program",
+            "phone": "(512) 834-6688",
+            "fax": "(512) 834-6716",
+            "email": "shannon.dove-edson@dshs.state.tx.us",
+            "address": "1100 W. 49th Street, Mail Code 2835, Austin, TX 78756-3189"
+          },
+          "website": "https://www.dshs.texas.gov/radiation/lasers/registration.aspx",
+          "regulatory_citation": "25 TAC 289.301 and 289.302",
+          "regulatory_tier": "Comprehensive with special provisions",
+          "inspections": true,
+          "pending_legislation": false
+        },
+        {
+          "type": "regulation_breakdown",
+          "title": "Texas Administrative Code Sections",
+          "regulations": [
+            {
+              "citation": "25 TAC 289.301",
+              "title": "Registration and Radiation Safety Requirements for Lasers and Intense-Pulsed Light Devices",
+              "scope": "General laser registration and safety requirements"
+            },
+            {
+              "citation": "25 TAC 289.302",
+              "title": "Registration and Radiation Safety Requirements for Laser Hair Removal Devices",
+              "scope": "Specific provisions for laser hair removal"
+            }
+          ]
+        },
+        {
+          "type": "industry_engagement_panel",
+          "title": "ILDA Industry Engagement",
+          "description": "Texas regulations have been shaped by significant industry engagement from the International Laser Display Association (ILDA).",
+          "ilda_highlights": [
+            {
+              "topic": "Laser Light Show Exemptions",
+              "detail": "ILDA commented on potential exemptions or modified requirements for laser light shows"
+            },
+            {
+              "topic": "Out-of-State Operators",
+              "detail": "Requirements for out-of-state operators under review"
+            },
+            {
+              "topic": "FDA Alignment",
+              "detail": "Texas considers piggybacking off FDA variance requirements"
+            },
+            {
+              "topic": "Pulsed vs. CW Lasers",
+              "detail": "ILDA recommended different treatment for continuous wave vs. pulsed lasers"
+            },
+            {
+              "topic": "Power Thresholds",
+              "detail": "Discussion of 50-watt threshold for enhanced regulation"
+            }
+          ],
+          "ilda_contact_info": {
+            "organization": "International Laser Display Association",
+            "executive_director": "Patrick Murphy",
+            "address": "7062 Edgeworth Drive, Orlando, FL 32819",
+            "phone": "(407) 797-7654",
+            "email": "mail@ilda.com",
+            "website": "www.ilda.com"
+          }
+        },
+        {
+          "type": "special_provisions",
+          "title": "Texas Special Provisions",
+          "provisions": [
+            "Laser hair removal device-specific regulations",
+            "Intense-Pulsed Light (IPL) device regulations",
+            "Active industry engagement process",
+            "Consideration of ILDA recommendations for light shows",
+            "Routine inspections conducted"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "four_state_comparison",
+      "title": "Four-State Interactive Comparison",
+      "type": "interactive_section",
+      "components": [
+        {
+          "type": "inspection_comparison_chart",
+          "title": "Inspection Programs by State",
+          "data": [
+            {
+              "state": "Nevada",
+              "inspections": false,
+              "type": "None"
+            },
+            {
+              "state": "Washington",
+              "inspections": false,
+              "type": "None"
+            },
+            {
+              "state": "New York",
+              "inspections": true,
+              "type": "Routine"
+            },
+            {
+              "state": "Texas",
+              "inspections": true,
+              "type": "Routine"
+            }
+          ],
+          "visualization": "checkmark_x_comparison"
+        },
+        {
+          "type": "regulatory_tier_matrix",
+          "title": "Regulatory Tier Classification",
+          "matrix": [
+            {
+              "tier": "Notification Only",
+              "states": ["Nevada", "Washington"],
+              "characteristics": "Minimal oversight, advance notification only"
+            },
+            {
+              "tier": "Comprehensive",
+              "states": ["New York", "Texas"],
+              "characteristics": "Registration, inspections, enforcement"
+            }
+          ]
+        },
+        {
+          "type": "unique_features_table",
+          "title": "Unique Features by State",
+          "features": [
+            {
+              "state": "Nevada",
+              "unique_feature": "Simple notification model through Radiation Control Program",
+              "advantage": "Minimal administrative burden"
+            },
+            {
+              "state": "Washington",
+              "unique_feature": "Specific light show notification requirements",
+              "advantage": "Clear guidance for entertainment industry"
+            },
+            {
+              "state": "New York",
+              "unique_feature": "Class A/Class B training certification system",
+              "advantage": "Standardized operator competency verification"
+            },
+            {
+              "state": "Texas",
+              "unique_feature": "Active ILDA engagement and industry collaboration",
+              "advantage": "Regulations informed by industry expertise"
+            }
+          ]
+        },
+        {
+          "type": "interactive_scenario",
+          "title": "Multi-State Tour Planning Scenario",
+          "scenario": {
+            "title": "West Coast to East Coast Tour",
+            "context": "Your laser show company is planning a tour: Las Vegas (NV), Seattle (WA), New York City (NY), and Austin (TX).",
+            "challenges": [
+              {
+                "challenge": "Different notification requirements",
+                "nevada": "Advance notification to Radiation Control Program",
+                "washington": "Advance written notification (light show specific)",
+                "new_york": "Comprehensive registration plus inspection",
+                "texas": "Registration with DSHS plus inspection"
+              },
+              {
+                "challenge": "Training requirements",
+                "nevada": "None specified",
+                "washington": "None specified",
+                "new_york": "Class A or Class B certificate required",
+                "texas": "None specified at state level"
+              },
+              {
+                "challenge": "Inspection expectations",
+                "nevada": "No routine inspections",
+                "washington": "No routine inspections",
+                "new_york": "Routine inspections conducted",
+                "texas": "Routine inspections conducted"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "knowledge_check",
+      "title": "Module 4.4 Knowledge Check",
+      "type": "assessment",
+      "quiz_pool_ref": "lms_data/quiz_items/course-4/batch_c_quizzes.json",
+      "additional_questions": [
+        {
+          "id": "m4.4-q1",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which two states in this module conduct routine inspections of laser facilities?",
+          "options": [
+            "Nevada and Washington",
+            "New York and Texas",
+            "Nevada and Texas",
+            "Washington and New York"
+          ],
+          "correct_answer": 1,
+          "explanation": "Among the Batch C states, only New York and Texas conduct routine inspections of laser facilities."
+        },
+        {
+          "id": "m4.4-q2",
+          "type": "multiple_choice",
+          "difficulty": "easy",
+          "question": "Which state requires specific laser operator training certificates (Class A and Class B)?",
+          "options": [
+            "Nevada",
+            "New York",
+            "Texas",
+            "Washington"
+          ],
+          "correct_answer": 1,
+          "explanation": "New York is the only state in this batch that specifically requires laser operator training certificates - Class A for low intensity and Class B for low and high intensity lasers."
+        },
+        {
+          "id": "m4.4-q3",
+          "type": "multiple_choice",
+          "difficulty": "medium",
+          "question": "Which organization provided regulatory comments to Texas regarding laser light show regulations?",
+          "options": [
+            "OSHA",
+            "FDA",
+            "ILDA (International Laser Display Association)",
+            "ANSI"
+          ],
+          "correct_answer": 2,
+          "explanation": "ILDA (International Laser Display Association) provided extensive regulatory comments to Texas DSHS regarding laser light show regulations."
+        },
+        {
+          "id": "m4.4-q4",
+          "type": "matching",
+          "difficulty": "medium",
+          "question": "Match each state to its regulatory approach:",
+          "pairs": [
+            {
+              "state": "Nevada",
+              "approach": "Notification only, no inspections"
+            },
+            {
+              "state": "Washington",
+              "approach": "Notification with light show focus"
+            },
+            {
+              "state": "New York",
+              "approach": "Comprehensive with training certification"
+            },
+            {
+              "state": "Texas",
+              "approach": "Comprehensive with industry engagement"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

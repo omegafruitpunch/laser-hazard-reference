@@ -1,0 +1,316 @@
+{
+  "quiz_id": "course-5-international-regulations-quiz",
+  "course_id": "course-5",
+  "course_name": "International Laser Regulations",
+  "title": "International Laser Regulations Assessment",
+  "description": "Comprehensive assessment covering IEC 60825-1, Australian regulations, and international laser show requirements",
+  "total_questions": 20,
+  "passing_score_percent": 80,
+  "time_limit_minutes": 30,
+  "categories": {
+    "IEC_60825_1": {
+      "name": "IEC 60825-1 Fundamentals",
+      "question_count": 8,
+      "weight": 40
+    },
+    "Australia_NZ": {
+      "name": "Australia and New Zealand Regulations",
+      "question_count": 4,
+      "weight": 20
+    },
+    "International_Shows": {
+      "name": "International Laser Shows",
+      "question_count": 4,
+      "weight": 20
+    },
+    "Safety_Standards": {
+      "name": "International Safety Standards",
+      "question_count": 4,
+      "weight": 20
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "IEC_60825_1",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What is the wavelength range covered by IEC 60825-1?",
+      "options": [
+        "180 nm to 700 nm",
+        "400 nm to 1,400 nm",
+        "180 nm to 1 mm",
+        "200 nm to 10,600 nm"
+      ],
+      "correct_answer": 2,
+      "explanation": "IEC 60825-1 is applicable to laser products emitting in the wavelength range 180 nm to 1 mm."
+    },
+    {
+      "id": 2,
+      "category": "IEC_60825_1",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What does AEL stand for in IEC 60825-1?",
+      "options": [
+        "Authorized Emission Level",
+        "Accessible Emission Limit",
+        "Allowed Energy Limit",
+        "Approved Exposure Level"
+      ],
+      "correct_answer": 1,
+      "explanation": "AEL stands for Accessible Emission Limit - the maximum permitted emission for a laser class."
+    },
+    {
+      "id": 3,
+      "category": "IEC_60825_1",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "For extended sources in the default evaluation method (400-1400 nm), what is the angle of acceptance typically limited to?",
+      "options": [
+        "50 mrad",
+        "100 mrad",
+        "150 mrad",
+        "200 mrad"
+      ],
+      "correct_answer": 1,
+      "explanation": "When using the default (simplified) evaluation method for wavelengths ≥ 400 nm and < 1,400 nm, the angle of acceptance may be limited to 100 mrad."
+    },
+    {
+      "id": 4,
+      "category": "IEC_60825_1",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which Class 1 label requirement is unique to products with emission excluded under subclause 4.4?",
+      "options": [
+        "The Class 1 label is prohibited",
+        "The Class 1 label is optional",
+        "The Class 1 label is mandatory",
+        "No special label is required"
+      ],
+      "correct_answer": 2,
+      "explanation": "For products with light emission excluded under 4.4, the Class 1 label is mandatory (whereas it's optional for normal Class 1 products)."
+    },
+    {
+      "id": 5,
+      "category": "IEC_60825_1",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "Light-emitting diodes (LEDs) are included in the scope of IEC 60825-1 Edition 3.0 (2014).",
+      "correct_answer": false,
+      "explanation": "LEDs were removed from the scope of IEC 60825-1:2014 and are now covered by lamp safety standards like IEC 62471."
+    },
+    {
+      "id": 6,
+      "category": "IEC_60825_1",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What does TOTP stand for in pulse laser analysis?",
+      "options": [
+        "Total Output Transmission Power",
+        "Total-On-Time Pulse",
+        "Time-Optimized Temperature Protocol",
+        "Thermal Output Test Procedure"
+      ],
+      "correct_answer": 1,
+      "explanation": "TOTP stands for Total-On-Time Pulse - the sum of all pulse durations within the emission duration or T2."
+    },
+    {
+      "id": 7,
+      "category": "IEC_60825_1",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "At what distance is the radiance measured for the conventional lamp replacement criteria (subclause 4.4)?",
+      "options": [
+        "100 mm",
+        "200 mm",
+        "500 mm",
+        "1,000 mm"
+      ],
+      "correct_answer": 1,
+      "explanation": "Both the radiance and angular subtense of the apparent source are determined at a distance of 200 mm from the closest point of human access."
+    },
+    {
+      "id": 8,
+      "category": "IEC_60825_1",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Which laser class is described as 'safe under reasonably foreseeable conditions'?",
+      "options": [
+        "Class 2",
+        "Class 1",
+        "Class 3R",
+        "Class 3B"
+      ],
+      "correct_answer": 1,
+      "explanation": "Class 1 laser products are safe under reasonably foreseeable conditions of operation."
+    },
+    {
+      "id": 9,
+      "category": "Australia_NZ",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Which three Australian states have specific regulations for Class 3B and Class 4 lasers?",
+      "options": [
+        "New South Wales, Victoria, Queensland",
+        "Western Australia, Queensland, Tasmania",
+        "South Australia, Victoria, Western Australia",
+        "All states have identical regulations"
+      ],
+      "correct_answer": 1,
+      "explanation": "Western Australia, Queensland, and Tasmania are the only states with specific regulations for powerful lasers and IPLs."
+    },
+    {
+      "id": 10,
+      "category": "Australia_NZ",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What Australian/New Zealand standard covers 'Safe use of lasers in health care'?",
+      "options": [
+        "AS/NZS 3000",
+        "AS/NZS 4173:2004",
+        "AS/NZS ISO 9001",
+        "AS/NZS 4801"
+      ],
+      "correct_answer": 1,
+      "explanation": "AS/NZS 4173:2004 is the Australian/New Zealand Standard for safe use of lasers in health care."
+    },
+    {
+      "id": 11,
+      "category": "Australia_NZ",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "AS/NZS 4173:2004 is a legally binding regulation in Australia.",
+      "correct_answer": false,
+      "explanation": "AS/NZS 4173:2004 is a recognized standard but is NOT law or regulation - it provides guidance only."
+    },
+    {
+      "id": 12,
+      "category": "Australia_NZ",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Under which act is laser use governed in Queensland?",
+      "options": [
+        "Radiation Safety Act 1999 (Qld)",
+        "Laser Safety Act 2005",
+        "Work Health and Safety Act 2011",
+        "Radiation Control Act 1990"
+      ],
+      "correct_answer": 0,
+      "explanation": "In Queensland, laser use is governed by the Radiation Safety Act 1999 (Qld) and Radiation Safety Regulations 1999."
+    },
+    {
+      "id": 13,
+      "category": "International_Shows",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What does ILDA stand for?",
+      "options": [
+        "International Laser Display Association",
+        "International Laser Development Authority",
+        "Institute of Laser Display Arts",
+        "International Light Distribution Association"
+      ],
+      "correct_answer": 0,
+      "explanation": "ILDA stands for International Laser Display Association."
+    },
+    {
+      "id": 14,
+      "category": "International_Shows",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Is audience scanning generally allowed in Finland?",
+      "options": [
+        "Yes, without restrictions",
+        "Yes, with basic notification",
+        "No, Finnish regulations prohibit it",
+        "Only for Class 1 lasers"
+      ],
+      "correct_answer": 2,
+      "explanation": "Finnish regulations clearly state that no audience scanning is allowed, though special permits may occasionally be granted within MPE limits."
+    },
+    {
+      "id": 15,
+      "category": "International_Shows",
+      "type": "true_false",
+      "difficulty": "easy",
+      "question": "ILDA members are required to affirm the safety of their laser shows regardless of local laws.",
+      "correct_answer": true,
+      "explanation": "ILDA Members are required to affirm the safety of their laser shows, regardless of any laws or regulations."
+    },
+    {
+      "id": 16,
+      "category": "International_Shows",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What does a Category 'F' classification mean for audience scanning in a country?",
+      "options": [
+        "Fully permitted",
+        "Forbidden",
+        "Situation unclear - may require case-by-case permission",
+        "Federal laws only apply"
+      ],
+      "correct_answer": 2,
+      "explanation": "Category F means the situation is unclear; usually no permission is required but authorities might unexpectedly deny permission case-by-case."
+    },
+    {
+      "id": 17,
+      "category": "Safety_Standards",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What is the status of IEC 60825-1 in terms of safety publications?",
+      "options": [
+        "Basic Safety Publication",
+        "Group Safety Publication",
+        "Technical Specification",
+        "Technical Report"
+      ],
+      "correct_answer": 1,
+      "explanation": "IEC 60825-1 has the status of a Group Safety Publication in accordance with IEC Guide 104."
+    },
+    {
+      "id": 18,
+      "category": "Safety_Standards",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which standard should be consulted for ophthalmic instruments to ensure patient safety?",
+      "options": [
+        "IEC 60601-2-22",
+        "ISO 15004-2",
+        "IEC 62471",
+        "IEC 61010-1"
+      ],
+      "correct_answer": 1,
+      "explanation": "For ophthalmic instruments, ISO 15004-2 should be consulted and its principles applied for laser radiation."
+    },
+    {
+      "id": 19,
+      "category": "Safety_Standards",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Which organization provides guidelines on exposure limits referenced by IEC 60825-1?",
+      "options": [
+        "WHO",
+        "ICNIRP",
+        "IEEE",
+        "ANSI"
+      ],
+      "correct_answer": 1,
+      "explanation": "ICNIRP (International Commission on Non-Ionizing Radiation Protection) provides guidelines on exposure limits."
+    },
+    {
+      "id": 20,
+      "category": "Safety_Standards",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What does MPE stand for in laser safety?",
+      "options": [
+        "Maximum Permissible Exposure",
+        "Minimum Protection Equipment",
+        "Measured Power Emission",
+        "Mandatory Protection Eyewear"
+      ],
+      "correct_answer": 0,
+      "explanation": "MPE stands for Maximum Permissible Exposure - the level of laser radiation to which a person may be exposed without hazardous effects."
+    }
+  ]
+}

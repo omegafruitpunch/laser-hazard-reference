@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 28,
+  "quiz_items": [
+    {
+      "id": "C2-P28-Q1",
+      "type": "scenario",
+      "difficulty": "advanced",
+      "question": "A laser show uses a mirror ball to create effects. When is a scanning safeguard required on the mirror ball?",
+      "options": [
+        "Always required on all mirror balls",
+        "Never required on mirror balls",
+        "Depends on beam peak power and minimum scan pattern size at the mirror ball",
+        "Only if the mirror ball rotates"
+      ],
+      "correct_answer": 2,
+      "explanation": "According to the guide, whether a scanning safeguard is needed on a mirror ball depends on factors such as the beam peak power and the minimum size of the scan pattern at the mirror ball.",
+      "learning_objective": "Apply scanning safeguard analysis",
+      "regulatory_reference": "Appendix B - Scanning Safeguards on Mirror Balls"
+    },
+    {
+      "id": "C2-P28-Q2",
+      "type": "multiple_select",
+      "difficulty": "advanced",
+      "question": "Under what conditions may beam stops be omitted without additional protection? (Select all that apply)",
+      "options": [
+        "Areas occupied only by employees",
+        "Employees educated by laser safety officer",
+        "Control measures implemented per recognized safety standards",
+        "Daytime shows only"
+      ],
+      "correct_answer": [0, 1, 2],
+      "explanation": "Beam stops may be omitted if: (a) areas occupied only by employees, (b) employees educated by LSO about hazards, and (c) control measures posted per recognized safety standards (like ANSI Z136.1).",
+      "learning_objective": "Know beam stop exceptions",
+      "regulatory_reference": "Appendix B - Beam Stops/Overfilling Mirrors"
+    }
+  ]
+}

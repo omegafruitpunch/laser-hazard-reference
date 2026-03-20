@@ -1,0 +1,98 @@
+{
+  "component_id": "standards_hierarchy_visualizer",
+  "name": "ANSI Z136 Series Hierarchy Visualizer",
+  "type": "interactive_diagram",
+  "description": "Interactive visualization of the ANSI Z136 standards family showing relationships and scope",
+  "layout": {
+    "type": "tree",
+    "root": {
+      "id": "z136.1",
+      "name": "ANSI Z136.1",
+      "title": "Safe Use of Lasers",
+      "description": "Foundation standard - applies to all laser applications",
+      "color": "#e94560",
+      "level": 0
+    },
+    "branches": [
+      {
+        "id": "healthcare",
+        "name": "Health Care",
+        "standard": "Z136.3",
+        "title": "Safe Use of Lasers in Health Care",
+        "description": "Hospitals, clinics, medical procedures",
+        "color": "#4CAF50",
+        "connections": ["Z136.1"]
+      },
+      {
+        "id": "research",
+        "name": "Research",
+        "standard": "Z136.8",
+        "title": "R&D and Testing",
+        "description": "University labs, research facilities",
+        "color": "#2196F3",
+        "connections": ["Z136.1"]
+      },
+      {
+        "id": "entertainment",
+        "name": "Entertainment",
+        "standard": "Z136.10",
+        "title": "Safe Use in Entertainment",
+        "description": "Shows, displays, audience exposure",
+        "color": "#9C27B0",
+        "connections": ["Z136.1", "E1.46"]
+      },
+      {
+        "id": "manufacturing",
+        "name": "Manufacturing",
+        "standard": "Z136.9",
+        "title": "Defense Applications",
+        "description": "Military, defense contractors",
+        "color": "#FF9800",
+        "connections": ["Z136.1"]
+      },
+      {
+        "id": "outdoor",
+        "name": "Outdoor",
+        "standard": "Z136.6",
+        "title": "Safe Use Outdoors",
+        "description": "Open air operations, aviation coordination",
+        "color": "#00BCD4",
+        "connections": ["Z136.1"]
+      }
+    ]
+  },
+  "interactions": {
+    "click": {
+      "action": "expand_details",
+      "reveal": ["scope", "key_requirements", "relationship_to_z136.1"]
+    },
+    "hover": {
+      "action": "show_summary",
+      "delay": 500
+    },
+    "drag": {
+      "action": "reposition",
+      "snap_to_grid": true
+    }
+  },
+  "details_panel": {
+    "sections": [
+      {
+        "title": "Scope",
+        "content": "application_areas"
+      },
+      {
+        "title": "Key Requirements",
+        "content": "major_provisions"
+      },
+      {
+        "title": "Relationship to Z136.1",
+        "content": "supplemental_vs_standalone"
+      },
+      {
+        "title": "Certification Relevance",
+        "content": "clso_cmlso_alignment"
+      }
+    ]
+  }
+}

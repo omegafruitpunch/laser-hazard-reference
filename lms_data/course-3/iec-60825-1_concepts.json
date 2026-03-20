@@ -1,0 +1,81 @@
+{
+  "standards": [
+    "IEC 60825-1",
+    "IEC  60825",
+    "IEC  60825-1",
+    "IEC  60825.",
+    "IEC  60825-",
+    "IEC 60825.",
+    "IEC 60825-",
+    "IEC 60825"
+  ],
+  "tables": [
+    "Table 1 – Additivity of effects on eye and skin of radiation of different spectral regions  ......... 25",
+    "Table 2 – Times below which pulse groups are summed ....................................................... 28 ",
+    "Table 3 – Accessible emission limits for Class  1 and Class  1M laser products and ",
+    "Table 4 – Accessible emission limits for Class  1 and Class  1M laser products in the ",
+    "Table 5 – Accessible emission limits for Class  2 and Class  2M laser products  ...................... 36 ",
+    "Table 6 – Accessible emission limits for Class  3R laser products and C6 = 1 ........................ 37 ",
+    "Table 7 – Accessible emission limits for Class  3R laser products in the wavelength ",
+    "Table 8 – Accessible emission limits for Class  3B laser products  .......................................... 39 ",
+    "Table 9 – Correction factors and breakpoints for use in AEL and MPE evaluations  ............... 39 ",
+    "Table 10 – Measurement aperture diameters and measurement distances  for the ",
+    "Table 11 – Reference points for Condition 3  ......................................................................... 42 ",
+    "Table 12 – Limiting angle of acceptance γph ......................................................................... 43 ",
+    "Table 13 – Requirements for safety interlocking  .................................................................... 45 "
+  ],
+  "formulas": [
+    "L =  1,23 mW. The ",
+    "E = 1 mW and AE/AEL = 1 mW/1,23 mW = 0,8. For a vertical two -element  group, ",
+    "L = 1,66 mW",
+    "E = 2 × 1 mW = 2 mW and AE/AEL = 1,2, which is more restrict ive than AE/AEL for only one ",
+    "L = 19,2 mW, the AE  = ",
+    "W = 10 mW and AE/AEL = 0,5. Analysis of all possible groupings shows that the ",
+    "N = 3)  ",
+    "A = 1,23 mW. La LEA applicable = 1 mW, et AE/LEA  = 1 mW/1,23  mW = 0,8. Pour un ",
+    "A  = 1,66 mW",
+    "E = 2 ×  1 mW = 2 mW et AE/LEA  = 1,2, ce ",
+    "A = 19,2 mW, l’AE  = 10 ×  1 mW = 10 mW et AE/LEA  = 0,5. ",
+    "N = 3)  "
+  ],
+  "classifications": [
+    "Class 2",
+    "Class 1",
+    "Class  4",
+    "Class  2",
+    "Class 1C",
+    "Class  1",
+    "Class  1C",
+    "Class  1M",
+    "Class 3B",
+    "Class  3B",
+    "Class  2M",
+    "Class  3R"
+  ],
+  "limits": [
+    "MPE analysis, i.e. for Annex A.  ",
+    "mperature, it is justified not to count pulses with peak powers that ",
+    "MPEs a nd irradiance averaging ....................................................................... 93 ",
+    "MPEs and AELs expressed as radiance  ........................................... 95 ",
+    "MPE evaluations  ............... 39 ",
+    "MPE) for C6 = 1 at the cornea expressed ",
+    "MPE) at the cornea for extended sources  ",
+    "MPE) of Table A.1 ( C6 = 1)  for the ",
+    "MPE) of Table A. 2 (extended sources)  ",
+    "MPE) of the skin to laser radiation  ................... 66 ",
+    "MPEs  ....................... 93 ",
+    "mperatures. Laser radiation may cause temporary visual impairment, such as  ",
+    "MPE (maximum permissible exposure) values provided in Annex  A were developed for ",
+    "MPE values may be applied to ",
+    "MPE values  in Annex  A are not applicable to intentional human exposure to laser "
+  ],
+  "measurements": [
+    "400 nm",
+    "1400 nm",
+    "600 nm",
+    "400  nm",
+    "180  nm",
+    "600  nm",
+    "180 nm"
+  ]
+}

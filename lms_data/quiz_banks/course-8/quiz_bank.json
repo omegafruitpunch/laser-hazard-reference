@@ -1,0 +1,160 @@
+{
+  "quiz_bank": {
+    "id": "course-8-standards-quiz",
+    "title": "Course 8: Entertainment Technology Standards Assessment",
+    "description": "Comprehensive assessment covering ANSI Z136, FDA regulations, and ESTA standards for laser entertainment",
+    "course_id": "course-8",
+    "total_questions": 20,
+    "passing_score": 80,
+    "time_limit_minutes": 30,
+    "categories": {
+      "standards_identification": {
+        "weight": 20,
+        "questions": ["C8-SA-001", "C8-SA-003", "C8-SA-004", "C8-RL-003"]
+      },
+      "regulatory_compliance": {
+        "weight": 35,
+        "questions": ["C8-SA-002", "C8-CD-002", "C8-CD-003", "C8-CD-005", "C8-RL-002", "C8-RL-004"]
+      },
+      "safety_criteria": {
+        "weight": 25,
+        "questions": ["C8-CD-001", "C8-CD-004", "C8-CD-006", "C8-CA-001"]
+      },
+      "application": {
+        "weight": 20,
+        "questions": ["C8-SA-005", "C8-RL-001", "C8-RL-005", "C8-CA-002"]
+      }
+    },
+    "questions": [
+      {
+        "id": "C8-Q001",
+        "type": "multiple_choice",
+        "text": "Which laser class requires an FDA variance for entertainment use?",
+        "options": ["Class I and II only", "Class IIIa only", "Class IIIb and IV", "All laser classes"],
+        "correct": 2,
+        "points": 5
+      },
+      {
+        "id": "C8-Q002",
+        "type": "multiple_choice",
+        "text": "What is the minimum vertical separation for supervised installations?",
+        "options": ["1.5m", "2.5m", "3m", "6m"],
+        "correct": 2,
+        "points": 5
+      },
+      {
+        "id": "C8-Q003",
+        "type": "true_false",
+        "text": "The Laser Safety Officer should have executive responsibility, not just advisory.",
+        "correct": true,
+        "points": 5
+      },
+      {
+        "id": "C8-Q004",
+        "type": "multiple_choice",
+        "text": "How far in advance must FAA be notified for outdoor laser shows?",
+        "options": ["24 hours", "1 week", "2-4 weeks", "3 months"],
+        "correct": 2,
+        "points": 5
+      },
+      {
+        "id": "C8-Q005",
+        "type": "multiple_choice",
+        "text": "Which standard specifically covers intentional audience exposure?",
+        "options": ["ANSI Z136.1", "ANSI Z136.10", "FDA 21 CFR 1040", "IEC 60825-1"],
+        "correct": 1,
+        "points": 5
+      },
+      {
+        "id": "C8-Q006",
+        "type": "multiple_select",
+        "text": "Which are required for FDA variance? (Select all)",
+        "options": [
+          "Class I limits at audience",
+          "ISO certification",
+          "Designated LSO",
+          "Scanning safeguards"
+        ],
+        "correct": [0, 2, 3],
+        "points": 5
+      },
+      {
+        "id": "C8-Q007",
+        "type": "multiple_choice",
+        "text": "What is the eye aversion response time used for MPE calculations?",
+        "options": ["0.1 seconds", "0.25 seconds", "1 second", "10 seconds"],
+        "correct": 1,
+        "points": 5
+      },
+      {
+        "id": "C8-Q008",
+        "type": "multiple_choice",
+        "text": "What is the maximum civil penalty for FDA variance violation?",
+        "options": ["$10,000", "$50,000", "$100,000", "$300,000"],
+        "correct": 3,
+        "points": 5
+      },
+      {
+        "id": "C8-Q009",
+        "type": "true_false",
+        "text": "ESTA standards are developed through an ANSI-accredited consensus process.",
+        "correct": true,
+        "points": 5
+      },
+      {
+        "id": "C8-Q010",
+        "type": "multiple_choice",
+        "text": "Where are MPE values found in ANSI Z136.1?",
+        "options": ["Table 1", "Tables 5a/5b", "Appendix A", "Section 4.2"],
+        "correct": 1,
+        "points": 5
+      },
+      {
+        "id": "C8-Q011",
+        "type": "multiple_choice",
+        "text": "What shutdown speed should scan failure detection achieve?",
+        "options": ["1 second", "100 milliseconds", "A few milliseconds", "0.25 seconds"],
+        "correct": 2,
+        "points": 5
+      },
+      {
+        "id": "C8-Q012",
+        "type": "multiple_choice",
+        "text": "Who must be notified of laser incidents?",
+        "options": ["Local authority only", "FDA only", "Both local and FDA", "No one if no injury"],
+        "correct": 2,
+        "points": 5
+      },
+      {
+        "id": "C8-Q013",
+        "type": "multiple_choice",
+        "text": "What is the horizontal separation distance requirement?",
+        "options": ["1.5m", "2.5m", "3m", "6m"],
+        "correct": 1,
+        "points": 5
+      },
+      {
+        "id": "C8-Q014",
+        "type": "true_false",
+        "text": "Software blanking alone is sufficient as a safety measure.",
+        "correct": false,
+        "points": 5
+      },
+      {
+        "id": "C8-Q015",
+        "type": "multiple_choice",
+        "text": "How far in advance must FDA be notified of shows?",
+        "options": ["1 week", "2 weeks", "1 month", "3 months"],
+        "correct": 2,
+        "points": 5
+      }
+    ],
+    "retake_policy": {
+      "allowed": true,
+      "max_attempts": 3,
+      "cooldown_hours": 24
+    }
+  },
+  "generated_by": "PDF Elite Processor Agent #19",
+  "timestamp": "2026-03-19T15:46:00Z"
+}

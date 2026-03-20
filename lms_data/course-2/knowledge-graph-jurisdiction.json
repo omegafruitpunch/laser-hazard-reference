@@ -1,0 +1,210 @@
+{
+  "graph_id": "jurisdictional-hierarchy-graph",
+  "title": "Laser Safety Regulatory Jurisdiction Knowledge Graph",
+  "description": "Hierarchical relationships between federal, state, and industry bodies governing laser safety",
+  "last_updated": "2026-03-19",
+  "nodes": [
+    {
+      "id": "federal_government",
+      "type": "authority_level",
+      "label": "Federal Government",
+      "description": "Top-level federal regulatory authority"
+    },
+    {
+      "id": "dOL",
+      "type": "agency",
+      "label": "Department of Labor (DOL)",
+      "description": "Federal department overseeing OSHA",
+      "parent": "federal_government"
+    },
+    {
+      "id": "hHS",
+      "type": "agency",
+      "label": "Department of Health and Human Services (HHS)",
+      "description": "Federal department overseeing FDA",
+      "parent": "federal_government"
+    },
+    {
+      "id": "federal_osha",
+      "type": "regulatory_body",
+      "label": "Federal OSHA",
+      "description": "Occupational Safety and Health Administration - federal workplace safety",
+      "enforcement_clause": "General Duty Clause - 29 CFR 1910",
+      "parent": "dOL",
+      "scope": "employers",
+      "key_references": ["ANSI Z136.1-2014", "21 CFR 1040"]
+    },
+    {
+      "id": "state_osha",
+      "type": "regulatory_body",
+      "label": "State OSHA Programs",
+      "description": "State-level occupational safety programs",
+      "parent": "dOL",
+      "scope": "employers",
+      "variability": "May or may not address laser interlocks specifically"
+    },
+    {
+      "id": "fda",
+      "type": "regulatory_body",
+      "label": "FDA",
+      "description": "Food and Drug Administration",
+      "parent": "hHS"
+    },
+    {
+      "id": "cdrh",
+      "type": "center",
+      "label": "CDRH",
+      "description": "Center for Devices and Radiological Health",
+      "full_name": "Center for Devices and Radiological Health",
+      "parent": "fda",
+      "scope": "manufacturers",
+      "regulatory_code": "21 CFR"
+    },
+    {
+      "id": "ansi",
+      "type": "standards_body",
+      "label": "ANSI",
+      "description": "American National Standards Institute - voluntary consensus standards",
+      "scope": "industry_best_practices"
+    },
+    {
+      "id": "ansi_z136_1",
+      "type": "standard",
+      "label": "ANSI Z136.1-2014",
+      "description": "American National Standard for Safe Use of Lasers",
+      "parent": "ansi",
+      "content": "Adopts FLPPS requirements in Section 4.3"
+    },
+    {
+      "id": "cfr_21",
+      "type": "regulatory_code",
+      "label": "21 CFR",
+      "description": "Title 21 Code of Federal Regulations",
+      "parent": "cdrh"
+    },
+    {
+      "id": "cfr_1040_10",
+      "type": "regulation",
+      "label": "21 CFR 1040.10",
+      "description": "Performance standards for laser products (FLPPS)",
+      "parent": "cfr_21",
+      "requirements": ["laser housing interlocks", "remote electrical interlocks", "labeling", "power classification"]
+    },
+    {
+      "id": "cfr_1040_11",
+      "type": "regulation",
+      "label": "21 CFR 1040.11",
+      "description": "Performance standards for specific use laser products",
+      "parent": "cfr_21",
+      "applies_to": ["medical", "survey", "leveling", "alignment", "demonstration"]
+    },
+    {
+      "id": "cfr_1010",
+      "type": "regulation",
+      "label": "21 CFR 1010",
+      "description": "General performance standards, certifications and variances",
+      "parent": "cfr_21"
+    },
+    {
+      "id": "cfr_1000_1005",
+      "type": "regulation",
+      "label": "21 CFR 1000-1005",
+      "description": "Broad scope devices, records, reports, import/export",
+      "parent": "cfr_21"
+    },
+    {
+      "id": "cfr_29_1910",
+      "type": "regulation",
+      "label": "29 CFR 1910",
+      "description": "Occupational Safety and Health Standards (General Duty Clause)",
+      "parent": "federal_osha"
+    },
+    {
+      "id": "manufacturer",
+      "type": "regulated_entity",
+      "label": "Laser Product Manufacturers",
+      "description": "Companies manufacturing laser products for sale",
+      "regulated_by": ["cdrh"]
+    },
+    {
+      "id": "employer",
+      "type": "regulated_entity",
+      "label": "Employers Using Lasers",
+      "description": "Companies using lasers in the workplace",
+      "regulated_by": ["federal_osha", "state_osha"]
+    },
+    {
+      "id": "lso",
+      "type": "role",
+      "label": "Laser Safety Officer",
+      "description": "Responsible for monitoring and enforcing laser safety",
+      "responsibilities": ["monitor compliance", "enforce safety protocols", "ensure interlock configuration"]
+    },
+    {
+      "id": "flpps",
+      "type": "standard_system",
+      "label": "FLPPS",
+      "description": "Federal Laser Product Performance Standards",
+      "full_name": "Federal Laser Product Performance Standards",
+      "source": "21 CFR 1040"
+    }
+  ],
+  "edges": [
+    {"source": "federal_government", "target": "dOL", "type": "oversees"},
+    {"source": "federal_government", "target": "hHS", "type": "oversees"},
+    {"source": "dOL", "target": "federal_osha", "type": "administers"},
+    {"source": "dOL", "target": "state_osha", "type": "administers"},
+    {"source": "hHS", "target": "fda", "type": "administers"},
+    {"source": "fda", "target": "cdrh", "type": "operates"},
+    {"source": "cdrh", "target": "cfr_21", "type": "issues"},
+    {"source": "cfr_21", "target": "cfr_1040_10", "type": "contains"},
+    {"source": "cfr_21", "target": "cfr_1040_11", "type": "contains"},
+    {"source": "cfr_21", "target": "cfr_1010", "type": "contains"},
+    {"source": "cfr_21", "target": "cfr_1000_1005", "type": "contains"},
+    {"source": "federal_osha", "target": "cfr_29_1910", "type": "enforces"},
+    {"source": "federal_osha", "target": "ansi_z136_1", "type": "references"},
+    {"source": "cdrh", "target": "manufacturer", "type": "regulates"},
+    {"source": "federal_osha", "target": "employer", "type": "regulates"},
+    {"source": "state_osha", "target": "employer", "type": "regulates"},
+    {"source": "ansi", "target": "ansi_z136_1", "type": "publishes"},
+    {"source": "ansi_z136_1", "target": "flpps", "type": "adopts"},
+    {"source": "flpps", "target": "cfr_1040_10", "type": "codified_in"},
+    {"source": "employer", "target": "lso", "type": "designates"},
+    {"source": "lso", "target": "employer", "type": "advises"}
+  ],
+  "coordination_matrix": {
+    "description": "Areas requiring coordination between regulatory bodies",
+    "coordination_points": [
+      {
+        "situation": "OSHA inspection finds non-compliance",
+        "primary": "federal_osha",
+        "secondary": ["cdrh"],
+        "action": "OSHA may refer to FDA enforcement codes under 21 CFR 1040"
+      },
+      {
+        "situation": "Facility adopts ANSI Z136.1",
+        "primary": "employer",
+        "secondary": ["federal_osha", "cdrh"],
+        "action": "Effectively adopts FLPPS, satisfying both OSHA best practices and FDA intent"
+      },
+      {
+        "situation": "In-house laser construction",
+        "primary": "employer",
+        "secondary": ["lso", "cdrh"],
+        "action": "LSO must ensure FLPPS compliance despite no manufacturer oversight"
+      },
+      {
+        "situation": "State vs Federal OSHA",
+        "primary": "state_osha",
+        "secondary": ["federal_osha"],
+        "action": "State programs may supplement federal requirements with specific laser rules"
+      }
+    ]
+  },
+  "key_insights": [
+    "FDA regulates manufacturers; OSHA regulates employers",
+    "ANSI provides the bridge between voluntary best practices and enforceable requirements",
+    "The interlock mandate gap exists between manufacturing requirement and end-user use",
+    "State OSHA programs add variability to the regulatory landscape"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "course": "course-1",
+  "document": "safety-controls.pdf",
+  "page_number": 1,
+  "total_pages": 1,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Laser safety training documentation and acknowledgment",
+      "Training curriculum overview for laser safety officers and personnel",
+      "Regulatory compliance record-keeping requirements",
+      "Multi-modal training approach (classroom, articles, on-site evaluation)"
+    ],
+    "key_terms": [
+      {
+        "term": "Laser Safety Training Acknowledgment",
+        "definition": "Formal document confirming receipt and understanding of laser safety training"
+      },
+      {
+        "term": "Laser Safety Officer (LSO)",
+        "definition": "Designated personnel responsible for laser safety program oversight"
+      },
+      {
+        "term": "Biological Hazards",
+        "definition": "Health risks to eyes and skin from laser radiation exposure"
+      },
+      {
+        "term": "Governing Agency Contact Information",
+        "definition": "Federal, State and Local regulatory authority contacts"
+      },
+      {
+        "term": "On-Site Training Observation",
+        "definition": "Practical field evaluation component of laser safety training"
+      }
+    ],
+    "regulatory_references": [
+      "Federal laser safety regulations (implied by reference to governing agencies)",
+      "State and local laser safety regulations",
+      "Record keeping requirements for safety training"
+    ],
+    "difficulty_level": "beginner",
+    "learning_objectives": [
+      "Understand the scope of laser safety training curriculum",
+      "Recognize the importance of documented training acknowledgment",
+      "Identify key topic areas covered in comprehensive laser safety training",
+      "Know the roles and responsibilities of laser safety personnel"
+    ],
+    "prerequisites": [
+      "Basic understanding of laser terminology",
+      "Employment in laser-related workplace"
+    ],
+    "estimated_study_time_minutes": 10,
+    "content_type": "administrative_document",
+    "has_tables": true,
+    "table_count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "course": "course-2",
+  "page_number": 18,
+  "quiz_items": [
+    {
+      "id": "C2-P18-Q1",
+      "type": "fill_in_blank",
+      "difficulty": "intermediate",
+      "question": "Annual Reports must be submitted to CDRH by ______ each year for the year ending the preceding June 30.",
+      "correct_answer": "September 1",
+      "explanation": "Annual Reports summarizing required records must be submitted by September 1 of each year for the year ending the preceding June 30.",
+      "learning_objective": "Know annual report deadline",
+      "regulatory_reference": "21 CFR 1002.13"
+    },
+    {
+      "id": "C2-P18-Q2",
+      "type": "scenario",
+      "difficulty": "advanced",
+      "question": "A manufacturer produces Class I and Class IIIb laser products. Which products require Supplemental Reports for model changes?",
+      "options": [
+        "Both Class I and Class IIIb require Supplemental Reports",
+        "Only Class I requires Supplemental Reports",
+        "Only Class IIIb requires Supplemental Reports",
+        "Neither class requires Supplemental Reports"
+      ],
+      "correct_answer": 2,
+      "explanation": "Class I, IIa, II, and IIIa products do not require Supplemental Reports. Class IIIb and IV products require Supplemental Reports when criteria are met.",
+      "learning_objective": "Distinguish class-based reporting requirements",
+      "regulatory_reference": "21 CFR 1002.10, Laser Notice #41"
+    }
+  ]
+}

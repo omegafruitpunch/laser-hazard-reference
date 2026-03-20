@@ -1,0 +1,26 @@
+{
+  "page_num": 6,
+  "source_pdf": "skin-hazards.pdf",
+  "digestion": {
+    "summary": "FACTORS AFFECTING SKIN HAZARD SEVERITY\n\n1. SKIN PIGMENTATION (FITZPATRICK SCALE):\n\nType I: Always burns, never tans (very fair, red hair)\n- Highest laser injury risk\n- Minimal melanin protection\n\nType...",
+    "key_concepts": [
+      "Fitzpatrick scale",
+      "skin type",
+      "melanin content"
+    ],
+    "difficulty_level": "intermediate",
+    "estimated_study_minutes": 3
+  },
+  "elaboration": {
+    "expanded_explanation": "FACTORS AFFECTING SKIN HAZARD SEVERITY\n\n1. SKIN PIGMENTATION (FITZPATRICK SCALE):\n\nType I: Always burns, never tans (very fair, red hair)\n- Highest laser injury risk\n- Minimal melanin protection\n\nType II: Usually burns, tans minimally (fair)\n- High laser injury risk\n\nType III: Sometimes burns, tans gradually (medium)\n- Moderate risk\n\nType IV: Burns minimally, tans well (olive)\n- Lower risk for visible/IR, higher for wavelengths targeting melanin\n\nType V: Rarely burns, tans darkly (brown)\n- Can sustain higher visible/IR exposures\n- Higher melanin absorption affects certain treatments\n\nType VI: Never burns, deeply pigmented (dark brown/black)\n- Highest visible/IR tolerance\n- Greater risk from melanin-specific wavelengths\n\n2. BODY LOCATION:\n- Face and neck: Thinner skin, more vulnerable\n- Palms and soles: Thicker stratum corneum\n- Scalp: Hair provides some protection\n",
+    "analogies": [
+      "Laser skin burns are similar to thermal burns but can be more precisely localized."
+    ],
+    "practical_examples": [],
+    "safety_implications": [
+      "Use protective gloves and long sleeves when operating high-power lasers."
+    ]
+  },
+  "related_concepts": [],
+  "created_at": "2026-03-19T17:25:44.122516"
+}

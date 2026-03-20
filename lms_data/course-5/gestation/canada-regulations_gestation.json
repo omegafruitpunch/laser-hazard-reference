@@ -1,0 +1,370 @@
+{
+  "pdf_name": "canada-regulations.pdf",
+  "module_id": "c5-m3",
+  "module_title": "Canadian Laser Regulations",
+  "total_pages": 20,
+  "processing_timestamp": "2026-03-19T15:46:00Z",
+  "agent": "PDF Elite Processor Agent #13",
+  "regional_requirements": {
+    "description": "Canadian federal and provincial laser safety regulations",
+    "federal_legislation": {
+      "primary_act": "Radiation Emitting Devices Act (REDA)",
+      "citation": "R.S.C., 1985, c. R-1",
+      "administering_body": "Health Canada",
+      "purpose": "Regulate sale and importation of radiation emitting devices including lasers"
+    },
+    "provincial_requirements": {
+      "description": "Provincial Occupational Health and Safety acts apply to laser workplaces",
+      "contact": "Contact provincial regulators for show permits",
+      "alignment": "Canadian standards align closely with ANSI Z136 series"
+    },
+    "entertainment_specific": {
+      "indoor_shows": "No authorization required but MPE limits apply",
+      "mpe_limit": "2.5 mW/cm² maximum permissible exposure",
+      "outdoor_shows": "Transport Canada authorization required",
+      "form_requirement": "Notice of Proposal to Conduct Outdoor Laser Operation(s)",
+      "form_similarity": "Similar to US FAA Advisory Circular 70-1",
+      "submission": "Submit to appropriate Civil Aviation Regional Office",
+      "laser_pointer_laws": "Strict regulations in Montreal, Toronto, Vancouver since June 2018"
+    }
+  },
+  "directive_mapping": {
+    "REDA_structure": {
+      "short_title": "Radiation Emitting Devices Act",
+      "definitions_section": "Section 2 - Defines key terms",
+      "key_definitions": {
+        "radiation": "Energy in the form of electromagnetic waves or acoustical waves",
+        "radiation_emitting_device": "Any device capable of producing and emitting radiation, plus components and accessories",
+        "manufacturer": "Person engaged in manufacturing, modifying, or assembling radiation emitting devices",
+        "distributor": "Person engaged in selling or leasing radiation emitting devices",
+        "inspector": "Individual designated under Section 7",
+        "analyst": "Individual designated under Section 11"
+      }
+    },
+    "prohibitions": {
+      "sale_lease_import": {
+        "section": 4,
+        "prohibition": "No sale, lease, or import of non-compliant devices",
+        "conditions": [
+          "Must comply with prescribed standards",
+          "Must not create risk of genetic or personal injury, impairment of health, or death",
+          "Must perform according to claimed characteristics",
+          "Must accomplish claimed purpose",
+          "Must not emit unnecessary radiation"
+        ]
+      },
+      "deception": {
+        "section": 5,
+        "prohibition": "False, misleading, or deceptive labeling, packaging, or advertising"
+      },
+      "notification": {
+        "section": 6,
+        "requirement": "Manufacturers/importers must notify Minister of non-compliance or defects",
+        "timing": "Forthwith upon awareness"
+      }
+    },
+    "enforcement": {
+      "inspectors": {
+        "section": 7,
+        "authority": "Minister may designate inspectors",
+        "certificate": "Must produce certificate of designation when required"
+      },
+      "powers": {
+        "section": 8,
+        "entry": "May enter premises at reasonable time",
+        "examination": "Examine and remove devices for further examination",
+        "packages": "Open and examine packages",
+        "records": "Examine and copy books, reports, test data, records",
+        "dwelling_house": "Warrant required for dwelling-house entry"
+      },
+      "obstruction": {
+        "section": 9,
+        "prohibition": "No obstruction, hindrance, or false statements to inspectors"
+      },
+      "seizure": {
+        "section": 10,
+        "authority": "Inspector may seize devices if contravention believed"
+      }
+    },
+    "analysts": {
+      "section": 11,
+      "designation": "Minister may designate qualified analysts",
+      "analysis": "Inspectors may submit devices for analysis",
+      "certificates": "Analysts may issue certificates or reports of results"
+    },
+    "disposition": {
+      "consent": {
+        "section": 12,
+        "provision": "Minister may dispose of device with owner's consent"
+      },
+      "forfeiture": {
+        "section": "12.1",
+        "unclaimed_devices": "Forfeited to Crown if unclaimed within 60 days",
+        "proceedings": "Forfeiture does not apply if proceedings instituted"
+      },
+      "unlawful_imports": {
+        "section": "12.2",
+        "inspector_discretion": "May allow owner to remove, consent to forfeiture, or take measures"
+      }
+    },
+    "regulations": {
+      "section": 13,
+      "governor_in_council_powers": [
+        "Prescribe classes of radiation emitting devices",
+        "Prescribe standards for design, construction, and functioning",
+        "Exempt devices from provisions",
+        "Respect labelling, packaging, and advertising",
+        "Prescribe label information and manner of display",
+        "Require record keeping",
+        "Prescribe notification content and method",
+        "Respect inspector and analyst powers, duties, functions",
+        "Respect seizure, detention, forfeiture, disposition",
+        "Respect costs",
+        "Implement international agreements",
+        "Generally carry out purposes and provisions"
+      ]
+    },
+    "interim_orders": {
+      "section": "13.1",
+      "authority": "Minister may make interim orders for significant risk",
+      "duration": "14 days unless approved by Governor in Council",
+      "max_duration": "One year or shorter specified period",
+      "tabling": "Must be tabled in Parliament within 15 days"
+    },
+    "offences": {
+      "section_4_to_6": {
+        "section": 14,
+        "summary_conviction": "Fine up to $5,000",
+        "indictment": "Fine up to $10,000"
+      },
+      "other_provisions": {
+        "section": 14,
+        "summary_conviction": "Fine up to $1,000 or imprisonment up to 6 months or both",
+        "indictment": "Fine up to $3,000 or imprisonment up to 1 year or both"
+      },
+      "employee_agent": {
+        "section": 15,
+        "provision": "Employer liable for employee/agent offences unless due diligence exercised"
+      }
+    },
+    "forfeiture_on_conviction": {
+      "section": 16,
+      "provision": "Device may be forfeited on conviction"
+    }
+  },
+  "compliance_procedures": {
+    "manufacturers": {
+      "requirements": [
+        "Comply with prescribed standards (Section 13(1)(b))",
+        "Ensure devices do not create health/safety risks",
+        "Maintain records as required",
+        "Notify Minister of non-compliance or defects forthwith",
+        "Cooperate with inspectors and analysts"
+      ],
+      "documentation": [
+        "Performance characteristics documentation",
+        "Test data and records",
+        "Shipping bills and bills of lading"
+      ]
+    },
+    "importers": {
+      "requirements": [
+        "Ensure imported devices comply with Canadian standards",
+        "Notify Minister of non-compliance or defects",
+        "Cooperate with inspection and seizure procedures"
+      ],
+      "unlawful_imports": [
+        "Inspector may require removal from Canada",
+        "Consent to forfeiture",
+        "Take corrective measures"
+      ]
+    },
+    "entertainment_operators": {
+      "indoor_shows": {
+        "authorization": "Not required for indoor shows",
+        "requirement": "Must maintain MPE below 2.5 mW/cm²",
+        "measurement": "Irradiance measurements recommended"
+      },
+      "outdoor_shows": {
+        "authorization": "Transport Canada approval required",
+        "form": "Notice of Proposal to Conduct Outdoor Laser Operation(s)",
+        "submission": "Civil Aviation Regional Office",
+        "similarity": "Similar to FAA AC 70-1",
+        "airspace_consideration": "Even terminated beams require authorization"
+      },
+      "documentation_recommended": [
+        "Risk assessment",
+        "Method statement",
+        "MPE calculations",
+        "Show description",
+        "Safety measures documentation",
+        "Operator qualifications"
+      ]
+    },
+    "inspection_response": {
+      "when_inspector_arrives": [
+        "Request to see certificate of designation",
+        "Provide reasonable assistance",
+        "Furnish requested information",
+        "Do not obstruct or hinder"
+      ],
+      "inspector_powers": [
+        "Enter premises at reasonable time",
+        "Examine devices",
+        "Remove devices for examination",
+        "Open packages",
+        "Examine and copy records",
+        "Seize devices if contravention suspected"
+      ]
+    }
+  },
+  "page_analyses": [
+    {
+      "page": 1,
+      "section": "Short Title",
+      "content": "Act may be cited as Radiation Emitting Devices Act",
+      "key_provisions": ["Citation: R.S.C., 1985, c. R-1"]
+    },
+    {
+      "page": 2,
+      "section": "Definitions (Part 1)",
+      "content": "Definitions of analyst, distributor, inspector, label, lease, manufacturer",
+      "key_definitions": ["Manufacturer includes modifiers and assemblers"]
+    },
+    {
+      "page": 3,
+      "section": "Definitions (Part 2) and Restriction",
+      "content": "Definitions continued; devices not covered by Act",
+      "exclusions": [
+        "Nuclear energy production devices",
+        "Motor vehicles under Motor Vehicle Safety Act"
+      ]
+    },
+    {
+      "page": 4,
+      "section": "Prohibitions - Sale and Deception",
+      "content": "Section 4-5: Prohibitions on sale, lease, import, and false labeling",
+      "key_prohibitions": [
+        "Non-compliant devices cannot be sold/leased/imported",
+        "No false or misleading advertising"
+      ]
+    },
+    {
+      "page": 5,
+      "section": "Notification Requirements",
+      "content": "Section 6: Notification of non-compliance or defects",
+      "timing": "Forthwith upon awareness"
+    },
+    {
+      "page": 6,
+      "section": "Inspectors - Designation and Powers",
+      "content": "Sections 7-8: Inspector designation, certificates, powers",
+      "key_powers": ["Entry", "Examination", "Removal", "Record inspection"]
+    },
+    {
+      "page": 7,
+      "section": "Inspector Powers Continued",
+      "content": "Section 8 continued: Warrants for dwelling-houses, assistance, detention",
+      "special_protection": "Warrant required for dwelling-house entry"
+    },
+    {
+      "page": 8,
+      "section": "Obstruction and Seizure",
+      "content": "Sections 9-10: Obstruction prohibition, seizure authority",
+      "prohibitions": ["No obstruction", "No false statements", "No interference with detained devices"]
+    },
+    {
+      "page": 9,
+      "section": "Analysts",
+      "content": "Section 11: Analyst designation and analysis authority",
+      "key_provision": "Analysts may issue certificates of analysis"
+    },
+    {
+      "page": 10,
+      "section": "Disposition with Consent",
+      "content": "Section 12: Disposition of devices with owner consent",
+      "provision": "Minister may dispose of device with owner consent"
+    },
+    {
+      "page": 11,
+      "section": "Forfeiture and Unlawful Imports",
+      "content": "Sections 12.1-12.2: Forfeiture provisions, unlawful import procedures",
+      "timing": "60 days for claims"
+    },
+    {
+      "page": 12,
+      "section": "Costs and Recovery",
+      "content": "Sections 12.3-12.4: Cost recovery, certificates of default",
+      "limitation": "5 years to commence proceedings"
+    },
+    {
+      "page": 13,
+      "section": "Regulations",
+      "content": "Section 13: Governor in Council regulation-making powers",
+      "scope": "Broad authority for standards, labelling, records, enforcement"
+    },
+    {
+      "page": 14,
+      "section": "Regulations Continued",
+      "content": "Section 13 continued: Specific regulation powers listed"
+    },
+    {
+      "page": 15,
+      "section": "Regulations - Publication and Exceptions",
+      "content": "Section 13(2)-(3): Publication requirements, exceptions",
+      "process": "Regulations published in Canada Gazette with opportunity for representations"
+    },
+    {
+      "page": 16,
+      "section": "Interim Orders",
+      "content": "Section 13.1: Interim order authority for significant risks",
+      "duration": "14 days to 1 year depending on approval"
+    },
+    {
+      "page": 17,
+      "section": "Interim Orders Continued",
+      "content": "Section 13.1 continued: Tabling requirements",
+      "requirement": "Must table in Parliament within 15 days"
+    },
+    {
+      "page": 18,
+      "section": "Offences and Punishment",
+      "content": "Section 14: Penalties for contraventions",
+      "penalties": {
+        "sections_4_to_6": "$5,000 summary, $10,000 indictment",
+        "other_provisions": "$1,000/6 months summary, $3,000/1 year indictment"
+      }
+    },
+    {
+      "page": 19,
+      "section": "Offences Continued and Forfeiture",
+      "content": "Sections 15-16: Employee/agent liability, forfeiture on conviction",
+      "defence": "Due diligence defence for employer liability"
+    },
+    {
+      "page": 20,
+      "section": "Document End",
+      "content": "Date modified: 2020-06-26"
+    }
+  ],
+  "extracted_entities": {
+    "regulatory_bodies": [
+      {"name": "Health Canada", "role": "Administering body for REDA", "minister": "Minister of Health"},
+      {"name": "Transport Canada", "role": "Outdoor laser operation authorization"},
+      {"name": "Civil Aviation Regional Offices", "role": "Receive outdoor laser proposals"}
+    ],
+    "key_personnel": {
+      "inspectors": "Designated under Section 7, have entry and examination powers",
+      "analysts": "Designated under Section 11, conduct technical analysis",
+      "manufacturers": "Must comply with standards and notify of defects",
+      "distributors": "Subject to inspection and record requirements"
+    },
+    "related_legislation": [
+      "Nuclear Safety and Control Act",
+      "Motor Vehicle Safety Act",
+      "Criminal Code",
+      "Fisheries Act (by reference)",
+      "Provincial Occupational Health and Safety Acts"
+    ]
+  }
+}

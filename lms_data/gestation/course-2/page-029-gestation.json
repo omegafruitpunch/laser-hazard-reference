@@ -1,0 +1,50 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 29,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Set-up safety control measures",
+      "ANSI Z136.1 compliance",
+      "Low beam power procedures",
+      "Personnel clearance protocols"
+    ],
+    "key_terms": [
+      {
+        "term": "Set-up Safety Control Measures",
+        "definition": "Procedures during installation, alignment, and testing"
+      },
+      {
+        "term": "ANSI Z136.1",
+        "definition": "American National Standard for Safe Use of Lasers"
+      },
+      {
+        "term": "Low Beam Power",
+        "definition": "Minimum power for alignment procedures"
+      },
+      {
+        "term": "Projection Area",
+        "definition": "Region where laser beams are present"
+      }
+    ],
+    "regulatory_references": [
+      "Variance condition for set-up safety",
+      "ANSI Z136.1 (referenced standard)"
+    ],
+    "difficulty_level": "intermediate",
+    "learning_objectives": [
+      "Implement ANSI Z136.1 control measures",
+      "Establish safe set-up procedures",
+      "Clear personnel from projection areas",
+      "Plan for minimal production interruption"
+    ],
+    "prerequisites": [
+      "All previous pages",
+      "Familiarity with ANSI standards"
+    ],
+    "estimated_study_time_minutes": 20,
+    "content_type": "safety_procedures",
+    "has_tables": false
+  }
+}

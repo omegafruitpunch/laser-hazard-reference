@@ -1,0 +1,180 @@
+{
+  "course": "Course 3: Bio-Hazards",
+  "title": "Measurement Parameters and Conditions",
+  "source_pdfs": ["iec-60825-1.pdf", "mpe-tables.pdf"],
+  "measurement_conditions": {
+    "title": "IEC 60825-1 Measurement Conditions",
+    "reference_point": "Clause 3 definitions and Table 10",
+    "conditions": [
+      {
+        "condition": "Condition 1",
+        "description": "Evaluation of point sources and small sources",
+        "aperture": "7 mm diameter (for eye)",
+        "distance": "Typically 100 mm or greater",
+        "application": "Intrabean viewing, small apparent sources"
+      },
+      {
+        "condition": "Condition 2",
+        "description": "Evaluation of extended sources",
+        "aperture": "7 mm diameter with field stop",
+        "distance": "Depends on application",
+        "application": "Extended source viewing"
+      },
+      {
+        "condition": "Condition 3",
+        "description": "Evaluation with specific reference points",
+        "reference_points": [
+          "Point of closest human access",
+          "Aperture of protective housing",
+          "Specific evaluation distances"
+        ]
+      }
+    ]
+  },
+  "measurement_apertures": {
+    "title": "Standard Measurement Apertures",
+    "eye_exposure": {
+      "standard_aperture": "7 mm diameter",
+      "rationale": "Represents dilated pupil under dark-adapted conditions",
+      "application": "All ocular MPE and AEL evaluations"
+    },
+    "skin_exposure": {
+      "standard_aperture": "Varies by wavelength",
+      "application": "Skin MPE evaluations"
+    },
+    "table_10_reference": {
+      "source": "IEC 60825-1 Table 10",
+      "content": "Measurement aperture diameters and distances for each class"
+    }
+  },
+  "time_bases": {
+    "title": "Exposure Duration Time Bases",
+    "standard_durations": [
+      {
+        "duration": "0.25 s",
+        "name": "Aversion Response Time",
+        "basis": "Blink reflex and head movement for bright visible light",
+        "application": "Class 2 and 2M lasers (400-700 nm)"
+      },
+      {
+        "duration": "100 s",
+        "name": "Intentional viewing limit",
+        "application": "Class 1 evaluations in some wavelength ranges"
+      },
+      {
+        "duration": "10 s",
+        "name": "Standard evaluation time",
+        "application": "Many extended source evaluations"
+      },
+      {
+        "duration": "30000 s",
+        "name": "8-hour workday",
+        "application": "Occupational exposure limits"
+      },
+      {
+        "duration": "T1",
+        "name": "Photochemical injury transition",
+        "application": "400-600 nm range transition from thermal to photochemical limits"
+      },
+      {
+        "duration": "T2",
+        "name": "Extended source thermal transition",
+        "basis": "Function of angular subtense α",
+        "range": "10-100 seconds"
+      }
+    ]
+  },
+  "angular_parameters": {
+    "title": "Angular Measurement Parameters",
+    "parameters": [
+      {
+        "symbol": "α",
+        "name": "Angular Subtense of Apparent Source",
+        "measurement": "Average of dimensions: (αx + αy) / 2",
+        "unit": "milliradians (mrad)",
+        "determination": "From source size and measurement distance"
+      },
+      {
+        "symbol": "γ",
+        "name": "Angle of Acceptance",
+        "definition": "Field of view for radiance measurement",
+        "limits": {
+          "default": "100 mrad for wavelengths ≥ 400 nm and < 1400 nm",
+          "exception_400_600": "Not limited for durations > 100 s",
+          "class_3b": "Not limited"
+        }
+      },
+      {
+        "symbol": "αmin",
+        "name": "Limiting Angular Subtense",
+        "value": "1.5 mrad",
+        "significance": "Transition point between small and extended source"
+      },
+      {
+        "symbol": "αmax",
+        "name": "Maximum Angular Subtense",
+        "value": "100 mrad",
+        "time_dependence": "αmax(t) varies with exposure duration for t < 0.25 s"
+      }
+    ]
+  },
+  "measurement_instruments": {
+    "title": "Required Measurement Equipment",
+    "power_energy_meters": {
+      "description": "Calibrated radiometers for laser power/energy",
+      "requirements": [
+        "Calibration traceable to national standards",
+        "Wavelength-specific calibration",
+        "Aperture size appropriate for measurement condition"
+      ]
+    },
+    "beam_analyzers": {
+      "description": "For measuring beam profile and divergence",
+      "applications": [
+        "Beam diameter measurement",
+        "Divergence calculation",
+        "Spatial profile analysis"
+      ]
+    },
+    "spectrometers": {
+      "description": "For wavelength determination",
+      "requirements": "Resolution appropriate for laser linewidth"
+    }
+  },
+  "measurement_procedures": {
+    "title": "Standard Measurement Procedures",
+    "accessible_emission": {
+      "steps": [
+        "Position measurement aperture at specified distance",
+        "Align laser beam with aperture center",
+        "Measure total power/energy through aperture",
+        "For extended sources: scan field stop over source image",
+        "Record maximum reading obtained"
+      ]
+    },
+    "angular_subtense": {
+      "steps": [
+        "Determine source size (physical or apparent)",
+        "Measure distance from source to measurement point",
+        "Calculate α = source_size / distance",
+        "For non-circular sources: calculate average of dimensions"
+      ]
+    },
+    "extended_source_analysis": {
+      "steps": [
+        "Image source through 7 mm aperture",
+        "Vary field stop position and size",
+        "Measure partial accessible emission for each grouping",
+        "Calculate AE/AEL ratio for each configuration",
+        "Identify grouping with maximum ratio"
+      ]
+    }
+  },
+  "environmental_conditions": {
+    "title": "Standard Environmental Conditions",
+    "temperature": "Typically 20-25°C",
+    "humidity": "Non-condensing",
+    "ambient_light": "Controlled to prevent interference",
+    "stability": "Vibration-free for precise measurements"
+  }
+}

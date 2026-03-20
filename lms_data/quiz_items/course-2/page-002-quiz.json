@@ -1,0 +1,38 @@
+{
+  "course": "course-2",
+  "page_number": 2,
+  "quiz_items": [
+    {
+      "id": "C2-P2-Q1",
+      "type": "multiple_choice",
+      "difficulty": "beginner",
+      "question": "What is the HHS Publication number for the FDA Compliance Guide for Laser Products?",
+      "options": [
+        "FDA 76-8036",
+        "FDA 86-8260",
+        "FDA 90-602",
+        "HHS 2023-00922"
+      ],
+      "correct_answer": 1,
+      "explanation": "The document is identified as HHS Publication FDA 86-8260, dated June 1992 with address corrections in August 2008.",
+      "learning_objective": "Identify official FDA guidance documents",
+      "regulatory_reference": "HHS Publication FDA 86-8260"
+    },
+    {
+      "id": "C2-P2-Q2",
+      "type": "multiple_choice",
+      "difficulty": "beginner",
+      "question": "Which FDA Center is responsible for the Compliance Guide for Laser Products?",
+      "options": [
+        "Center for Drug Evaluation and Research (CDER)",
+        "Center for Biologics Evaluation and Research (CBER)",
+        "Center for Devices and Radiological Health (CDRH)",
+        "Center for Food Safety and Applied Nutrition (CFSAN)"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Center for Devices and Radiological Health (CDRH) is responsible for regulating laser products and publishing the Compliance Guide.",
+      "learning_objective": "Identify regulatory authority",
+      "regulatory_reference": "21 CFR Chapter I, Subchapter J"
+    }
+  ]
+}

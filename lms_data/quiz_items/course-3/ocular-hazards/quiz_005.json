@@ -1,0 +1,20 @@
+{
+  "id": "ocular-hazards_q005",
+  "type": "matching",
+  "question": "Match the UV band with its primary ocular effect:",
+  "pairs": [
+    {
+      "item": "UV-C (100-280 nm)",
+      "match": "Corneal absorption - photokeratitis"
+    },
+    {
+      "item": "UV-B (280-315 nm)",
+      "match": "Primarily corneal absorption"
+    },
+    {
+      "item": "UV-A (315-400 nm)",
+      "match": "Partially transmits to lens"
+    }
+  ],
+  "explanation": "UV-C is completely absorbed by the cornea. UV-B is mostly absorbed by the cornea. UV-A partially transmits and can contribute to cataract formation."
+}

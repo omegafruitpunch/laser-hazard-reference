@@ -1,0 +1,286 @@
+{
+  "course_id": "6",
+  "course_title": "Course 6: Outdoor Laser Safety & Airspace",
+  "course_code": "C6-OUTDOOR-AIRSPACE",
+  "part": 2,
+  "description": "Comprehensive training for outdoor laser operations, FAA regulations, airspace safety, and emergency protocols. Features interactive simulations with official FAA aesthetic.",
+  "version": "2.0.0",
+  "last_updated": "2026-03-19",
+  "design_system": "FAA Official Aesthetic",
+  "styling": {
+    "primary_color": "#002868",
+    "accent_color": "#b8860b",
+    "warning_colors": {
+      "danger": "#dc2626",
+      "warning": "#f59e0b",
+      "caution": "#eab308",
+      "success": "#16a34a"
+    },
+    "flight_zones": {
+      "lfz": "#dc2626",
+      "cfz": "#f97316",
+      "sfz": "#eab308",
+      "nfz": "#16a34a"
+    }
+  },
+  "modules": [
+    {
+      "module_id": "6.1",
+      "title": "Module 6.1: FAA Regulations for Laser Operations",
+      "path": "module-6.1",
+      "description": "Interactive FAA Form 7140-1 simulator and review timeline with official aviation styling",
+      "duration_minutes": 60,
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "learning_objectives": [
+        "Complete FAA Form 7140-1 accurately for outdoor laser operations",
+        "Navigate the FAA review process timeline",
+        "Explain FAA regulatory authority under 49 U.S.C. § 40103",
+        "Apply 18 USC 39A criminal provisions"
+      ],
+      "interactive_components": [
+        {
+          "id": "notam_filing_simulator",
+          "name": "NOTAM Filing Simulator",
+          "type": "form_simulator",
+          "file": "components/NOTAMFilingSimulator.tsx",
+          "description": "Step-by-step Form 7140-1 walkthrough with field validation"
+        },
+        {
+          "id": "faa_review_timeline",
+          "name": "FAA Review Timeline",
+          "type": "timeline_visualizer",
+          "file": "components/FAAReviewTimeline.tsx",
+          "description": "Visual timeline of FAA review process with determination outcomes"
+        }
+      ],
+      "key_topics": [
+        "FAA Form 7140-1 completion",
+        "Letter of Determination (LOD)",
+        "30-day advance filing requirement",
+        "FAA Service Centers"
+      ]
+    },
+    {
+      "module_id": "6.2",
+      "title": "Module 6.2: Flight Zones & Safety Distances",
+      "path": "module-6.2",
+      "description": "Interactive airspace diagram with flight zone visualizer and exposure limits",
+      "duration_minutes": 65,
+      "difficulty": "intermediate",
+      "prerequisites": ["6.1"],
+      "learning_objectives": [
+        "Differentiate between LFZ, CFZ, SFZ, and NFZ classifications",
+        "Apply exposure thresholds to determine hazard distances",
+        "Explain three types of visual interference (distraction, glare, flashblindness)",
+        "Analyze flight phase vulnerabilities"
+      ],
+      "interactive_components": [
+        {
+          "id": "flight_zone_visualizer",
+          "name": "Flight Zone Visualizer",
+          "type": "airspace_map",
+          "file": "components/FlightZoneVisualizer.tsx",
+          "description": "Interactive airspace diagram with 4 zones and layer controls"
+        }
+      ],
+      "key_topics": [
+        "Laser Free Zone (LFZ): 50 nW/cm²",
+        "Critical Flight Zone (CFZ): 5 µW/cm²",
+        "Sensitive Flight Zone (SFZ): 100 µW/cm²",
+        "Normal Flight Zone (NFZ): MPE limits"
+      ]
+    },
+    {
+      "module_id": "6.3",
+      "title": "Module 6.3: Outdoor Hazard Calculations (SAE/ANSI)",
+      "path": "module-6.3",
+      "description": "Comprehensive safety distance calculator with all FAA AC 70-1B equations",
+      "duration_minutes": 70,
+      "difficulty": "advanced",
+      "prerequisites": ["6.1", "6.2"],
+      "learning_objectives": [
+        "Calculate NOHD for CW and pulsed lasers",
+        "Apply Visual Correction Factors (VCF)",
+        "Calculate SZED, CZED, and LFED",
+        "Convert slant range to horizontal/vertical distances",
+        "Apply MPE correction factors for near-IR"
+      ],
+      "interactive_components": [
+        {
+          "id": "safety_distance_calculator",
+          "name": "Safety Distance Calculator",
+          "type": "calculation_tool",
+          "file": "components/SafetyDistanceCalculator.tsx",
+          "description": "NOHD, SZED, CZED, LFED calculator with real-time results"
+        }
+      ],
+      "key_topics": [
+        "Equation 70-1.1: NOHD (single pulse)",
+        "Equation 70-1.2: NOHD (CW/high PRF)",
+        "Equations 70-1.3 to 70-1.5: SZED, CZED, LFED",
+        "Visual Correction Factor tables",
+        "CA correction factor for near-IR"
+      ]
+    },
+    {
+      "module_id": "6.4",
+      "title": "Module 6.4: Securing Outdoor Laser Shows",
+      "path": "module-6.4",
+      "description": "Pre-show security, weather protocols, observer placement, and emergency procedures",
+      "duration_minutes": 75,
+      "difficulty": "advanced",
+      "prerequisites": ["6.1", "6.2", "6.3"],
+      "learning_objectives": [
+        "Execute a complete pre-show security checklist",
+        "Make weather-related go/no-go decisions",
+        "Implement proper observer positioning protocols",
+        "Respond appropriately to unexpected events during shows"
+      ],
+      "interactive_components": [
+        {
+          "id": "show_security_checklist",
+          "name": "Show Security Checklist",
+          "type": "interactive_checklist",
+          "file": "components/show_security_checklist.json"
+        },
+        {
+          "id": "weather_decision_tree",
+          "name": "Weather Protocol Decision Tree",
+          "type": "decision_tree",
+          "file": "components/weather_decision_tree.json"
+        },
+        {
+          "id": "showtime_scenario",
+          "name": "Showtime Emergency Scenario",
+          "type": "scenario_simulator",
+          "file": "components/showtime_scenario.json"
+        }
+      ],
+      "key_topics": [
+        "Pre-show security checklist (T-24, T-4, T-1)",
+        "Weather monitoring requirements",
+        "Observer positioning and communication",
+        "Emergency shutdown procedures"
+      ]
+    },
+    {
+      "module_id": "6.5",
+      "title": "Module 6.5: International Outdoor Standards",
+      "path": "module-6.5",
+      "description": "Comparative analysis of international standards (FAA, EASA, CAA UK, ICAO)",
+      "duration_minutes": 70,
+      "difficulty": "advanced",
+      "prerequisites": ["6.1", "6.2", "6.3"],
+      "learning_objectives": [
+        "Compare FAA AC 70-1B with international standards",
+        "Calculate SAE measurement zones using proper formulas",
+        "Identify country-specific requirements",
+        "Apply visual correction factors for different wavelengths"
+      ],
+      "interactive_components": [
+        {
+          "id": "international_comparison",
+          "name": "International Standards Comparison",
+          "type": "comparison_table",
+          "file": "components/international_comparison.json"
+        },
+        {
+          "id": "power_measurement_visualizer",
+          "name": "SAE Power Measurement Visualizer",
+          "type": "interactive_calculator",
+          "file": "components/power_measurement_visualizer.json"
+        }
+      ],
+      "key_topics": [
+        "FAA AC 70-1B (United States)",
+        "EASA SIB 2014-16 (European Union)",
+        "CAA UK CAP 736 (United Kingdom)",
+        "ICAO Annex 14 / Doc 9817 (International)"
+      ]
+    },
+    {
+      "module_id": "6.6",
+      "title": "Module 6.6: NOTAM Procedures & Emergency Protocols",
+      "path": "module-6.6",
+      "description": "Complete guide to NOTAM procedures, emergency response, and multi-agency coordination",
+      "duration_minutes": 80,
+      "difficulty": "advanced",
+      "prerequisites": ["6.4", "6.5"],
+      "learning_objectives": [
+        "Complete FAA Form 7140-1 accurately",
+        "Interpret and issue proper NOTAMs",
+        "Execute emergency shutdown procedures during aircraft incursion",
+        "Coordinate with ATC and law enforcement during incidents"
+      ],
+      "interactive_components": [
+        {
+          "id": "form_7140_walkthrough",
+          "name": "FAA Form 7140-1 Interactive Walkthrough",
+          "type": "form_guide",
+          "file": "components/form_7140_walkthrough.json"
+        },
+        {
+          "id": "emergency_response_simulator",
+          "name": "Emergency Response Simulator",
+          "type": "scenario_simulator",
+          "file": "components/emergency_response_simulator.json"
+        }
+      ],
+      "key_topics": [
+        "NOTAM filing timeline (T-30 to T-0)",
+        "Emergency shutdown sequence",
+        "ATC coordination procedures",
+        "Post-incident documentation"
+      ]
+    }
+  ],
+  "total_modules": 6,
+  "total_duration_minutes": 420,
+  "certification_eligible": true,
+  "required_passing_score": 85,
+  "regulatory_references": [
+    {
+      "citation": "FAA AC 70-1B",
+      "title": "Outdoor Laser Operations",
+      "date": "February 14, 2022",
+      "url": "https://www.faa.gov/air_traffic/publications/circ_ac/70-1B.pdf"
+    },
+    {
+      "citation": "FAA AC 70-2A",
+      "title": "Reporting of Laser Illumination of Aircraft",
+      "url": "https://www.faa.gov/air_traffic/publications/circ_ac/70-2A.pdf"
+    },
+    {
+      "citation": "18 USC 39A",
+      "title": "Aiming a laser pointer at an aircraft"
+    },
+    {
+      "citation": "49 U.S.C. § 40103",
+      "title": "Sovereignty and Use of Airspace"
+    },
+    {
+      "citation": "SAE ARP5293A",
+      "title": "Safety Considerations for Airspace Lasers"
+    },
+    {
+      "citation": "ANSI Z136.1",
+      "title": "Safe Use of Lasers"
+    }
+  ],
+  "design_features": [
+    "FAA Blue (#002868) primary branding",
+    "Aviation warning colors (Red/Amber/Yellow/Green)",
+    "Flight zone color coding (LFZ Red, CFZ Orange, SFZ Yellow, NFZ Green)",
+    "Weather visualization with meteorological icons",
+    "Map-based airspace visualizations",
+    "Emergency/action-oriented UI elements",
+    "Aircraft and navigation icons throughout",
+    "Zone diagram styling with radar/map aesthetics"
+  ],
+  "created_at": "2026-03-19T15:40:00Z",
+  "updated_at": "2026-03-19T22:00:00Z",
+  "status": "polished",
+  "author": "UI/UX Agent - Course 6 Aviation Polish",
+  "version_notes": "Applied FAA official aesthetic with blue/white styling, aviation warning colors, weather icons, map visualizations, and zone diagram styling"
+}

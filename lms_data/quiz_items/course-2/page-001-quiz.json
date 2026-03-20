@@ -1,0 +1,54 @@
+{
+  "course": "course-2",
+  "page_number": 1,
+  "quiz_items": [
+    {
+      "id": "C2-P1-Q1",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "When did the FDA's January 2023 final rule amending radiological health regulations become effective?",
+      "options": [
+        "January 20, 2023",
+        "February 21, 2023",
+        "March 1, 2023",
+        "August 2, 1976"
+      ],
+      "correct_answer": 1,
+      "explanation": "The final rule entitled 'Radiological Health Regulations; Amendments to Records and Reports for Radiation Emitting Electronic Products' was issued January 20, 2023, and went into effect on February 21, 2023.",
+      "learning_objective": "Know current regulatory effective dates",
+      "regulatory_reference": "88 FR 3638 (January 20, 2023), effective February 21, 2023"
+    },
+    {
+      "id": "C2-P1-Q2",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which Laser Notice provides guidance on conformance with IEC 60825-1 Ed. 3 and IEC 60601-2-22 Ed. 3.1?",
+      "options": [
+        "Laser Notice 41",
+        "Laser Notice 42",
+        "Laser Notice 50",
+        "Laser Notice 56"
+      ],
+      "correct_answer": 3,
+      "explanation": "Laser Notice No. 56 titled 'Laser Products - Conformance with IEC 60825-1 Ed. 3 and IEC 60601-2-22 Ed. 3.1' provides guidance for Industry and FDA Staff.",
+      "learning_objective": "Identify relevant FDA guidance documents",
+      "regulatory_reference": "Laser Notice No. 56"
+    },
+    {
+      "id": "C2-P1-Q3",
+      "type": "multiple_select",
+      "difficulty": "advanced",
+      "question": "What changes did the January 2023 final rule make to reporting requirements? (Select all that apply)",
+      "options": [
+        "Added new annual report requirements for all laser products",
+        "Removed or reduced some annual reports and test record requirements",
+        "Codified Laser Notice 41 policies (Low Power Laser Reporting Exemption)",
+        "Codified Laser Notice 42 policies (Compliance for manufacturers incorporating Class I products)"
+      ],
+      "correct_answer": [1, 2, 3],
+      "explanation": "The 2023 final rule amended requirements by removing or reducing unnecessary or duplicative annual reports and test records. It also codified long-standing policies from Laser Notice 41 (Low Power Laser Reporting Exemption) and Laser Notice 42 (Clarification for manufacturers incorporating certified Class I laser products).",
+      "learning_objective": "Understand recent regulatory changes",
+      "regulatory_reference": "21 CFR 1002.1, 88 FR 3638"
+    }
+  ]
+}

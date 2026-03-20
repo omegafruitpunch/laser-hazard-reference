@@ -1,0 +1,440 @@
+{
+  "graph_id": "course-5-international-knowledge-graph",
+  "course_id": "course-5",
+  "course_name": "International Laser Regulations",
+  "version": "1.0",
+  "last_updated": "2026-03-19",
+  "nodes": [
+    {
+      "id": "iec_60825_1",
+      "type": "standard",
+      "label": "IEC 60825-1",
+      "properties": {
+        "title": "Safety of laser products - Part 1: Equipment classification and requirements",
+        "edition": "3.0",
+        "year": 2014,
+        "status": "Group Safety Publication",
+        "wavelength_range": "180 nm to 1 mm",
+        "languages": ["English", "French"]
+      }
+    },
+    {
+      "id": "accessible_emission",
+      "type": "concept",
+      "label": "Accessible Emission (AE)",
+      "properties": {
+        "definition": "Level of radiation determined at a position with specified aperture stops",
+        "purpose": "Compared against AEL for classification",
+        "unit_power": "Watts",
+        "unit_energy": "Joules"
+      }
+    },
+    {
+      "id": "ael",
+      "type": "concept",
+      "label": "Accessible Emission Limit (AEL)",
+      "properties": {
+        "definition": "Maximum permitted emission for a laser class",
+        "purpose": "Classification threshold",
+        "applies_to": ["Class 1", "Class 1M", "Class 2", "Class 2M", "Class 3R", "Class 3B", "Class 4"]
+      }
+    },
+    {
+      "id": "class_1",
+      "type": "laser_class",
+      "label": "Class 1",
+      "properties": {
+        "description": "Safe under reasonably foreseeable conditions",
+        "label_requirement": "Optional (mandatory for 4.4 excluded emission)",
+        "ocular_hazard": "None under normal use"
+      }
+    },
+    {
+      "id": "class_1m",
+      "type": "laser_class",
+      "label": "Class 1M",
+      "properties": {
+        "description": "Safe except when viewed with magnifying optics",
+        "warning": "Do not view directly with optical instruments",
+        "condition": "Safe for naked eye, hazardous with optics"
+      }
+    },
+    {
+      "id": "class_2",
+      "type": "laser_class",
+      "label": "Class 2",
+      "properties": {
+        "description": "Visible lasers, eye protection by blink reflex",
+        "wavelength": "400-700 nm",
+        "aversion_response": "Adequate protection"
+      }
+    },
+    {
+      "id": "class_3b",
+      "type": "laser_class",
+      "label": "Class 3B",
+      "properties": {
+        "description": "Direct beam viewing hazardous",
+        "diffuse_reflection": "Normally safe for short exposure",
+        "requirements": "Control measures required"
+      }
+    },
+    {
+      "id": "class_4",
+      "type": "laser_class",
+      "label": "Class 4",
+      "properties": {
+        "description": "High power, fire and diffuse reflection hazard",
+        "hazards": ["Eye", "Skin", "Fire", "Diffuse reflection"],
+        "requirements": "All hazard control measures required"
+      }
+    },
+    {
+      "id": "mpe",
+      "type": "concept",
+      "label": "Maximum Permissible Exposure (MPE)",
+      "properties": {
+        "definition": "Level of laser radiation to which a person may be exposed without hazardous effects",
+        "location": "Cornea for eye exposure",
+        "application": "Safety evaluation and hazard analysis"
+      }
+    },
+    {
+      "id": "alpha_max",
+      "type": "parameter",
+      "label": "Angular Subtense (αmax)",
+      "properties": {
+        "definition": "Maximum angular subtense of apparent source",
+        "determination": "50% of peak radiance",
+        "measurement_distance": "200 mm",
+        "unit": "mrad"
+      }
+    },
+    {
+      "id": "c5_correction",
+      "type": "parameter",
+      "label": "C5 Correction Factor",
+      "properties": {
+        "purpose": "Pulse grouping correction factor",
+        "application": "Thermal additivity in pulse trains",
+        "subclause": "4.3 f) 3)"
+      }
+    },
+    {
+      "id": "c6_correction",
+      "type": "parameter",
+      "label": "C6 Correction Factor",
+      "properties": {
+        "purpose": "Extended source correction factor",
+        "application": "Adjusts AEL for large apparent sources",
+        "default_value": 1
+      }
+    },
+    {
+      "id": "totp",
+      "type": "method",
+      "label": "TOTP Method",
+      "properties": {
+        "full_name": "Total-On-Time Pulse",
+        "definition": "Sum of all pulse durations within emission duration or T2",
+        "application": "Pulse train analysis",
+        "limitation": "Not for strongly varying peak powers"
+      }
+    },
+    {
+      "id": "extended_source",
+      "type": "concept",
+      "label": "Extended Source Analysis",
+      "properties": {
+        "default_angle": "100 mrad",
+        "wavelength_range": "400-1400 nm",
+        "evaluation_methods": ["Default (simplified)", "Extended analysis"]
+      }
+    },
+    {
+      "id": "arpansa",
+      "type": "organization",
+      "label": "ARPANSA",
+      "properties": {
+        "full_name": "Australian Radiation Protection and Nuclear Safety Agency",
+        "country": "Australia",
+        "role": "Federal guidance on non-ionizing radiation",
+        "scope": "National guidance, not state regulations"
+      }
+    },
+    {
+      "id": "wa_regulations",
+      "type": "regulation",
+      "label": "Western Australia Laser Regulations",
+      "properties": {
+        "country": "Australia",
+        "regulated_classes": ["Class 3B", "Class 4"],
+        "scope": "All purposes",
+        "status": "State-specific regulation"
+      }
+    },
+    {
+      "id": "qld_regulations",
+      "type": "regulation",
+      "label": "Queensland Radiation Safety Act 1999",
+      "properties": {
+        "country": "Australia",
+        "state": "Queensland",
+        "act": "Radiation Safety Act 1999 (Qld)",
+        "requirements": ["Radiation Safety Plan", "Submission to Health Authority"]
+      }
+    },
+    {
+      "id": "tas_regulations",
+      "type": "regulation",
+      "label": "Tasmania Radiation Protection Act 2005",
+      "properties": {
+        "country": "Australia",
+        "state": "Tasmania",
+        "act": "Radiation Protection Act 2005 and 2006",
+        "license_required": "Class 3B, Class 4, IPLs for medical use",
+        "proposed_expansion": "Cosmetic procedures"
+      }
+    },
+    {
+      "id": "as_nzs_4173",
+      "type": "standard",
+      "label": "AS/NZS 4173:2004",
+      "properties": {
+        "title": "Safe use of lasers in health care",
+        "status": "Guidance only - not law",
+        "countries": ["Australia", "New Zealand"],
+        "requirement": "Personnel should have appropriate training"
+      }
+    },
+    {
+      "id": "ilda",
+      "type": "organization",
+      "label": "ILDA",
+      "properties": {
+        "full_name": "International Laser Display Association",
+        "website": "LasershowSafety.info",
+        "focus": "Laser show safety and standards",
+        "member_requirement": "Affirm show safety in writing"
+      }
+    },
+    {
+      "id": "audience_scanning",
+      "type": "concept",
+      "label": "Audience Scanning",
+      "properties": {
+        "definition": "Directing laser beams into audience areas",
+        "hazard": "Direct eye exposure",
+        "requirement": "Must be within MPE limits",
+        "documentation": "Written safety affirmation required (ILDA)"
+      }
+    },
+    {
+      "id": "finland_regulations",
+      "type": "regulation",
+      "label": "Finland Laser Regulations",
+      "properties": {
+        "country": "Finland",
+        "authority": "Finnish Radiation Authorities",
+        "audience_scanning": "Generally prohibited",
+        "permit_required": true,
+        "special_permits": "May be granted within MPE limits"
+      }
+    },
+    {
+      "id": "icnirp",
+      "type": "organization",
+      "label": "ICNIRP",
+      "properties": {
+        "full_name": "International Commission on Non-Ionizing Radiation Protection",
+        "role": "Exposure limit guidelines",
+        "referenced_by": "IEC 60825-1",
+        "publication": "Health Physics 105 (3): 271-295 (2013)"
+      }
+    },
+    {
+      "id": "iec_62471",
+      "type": "standard",
+      "label": "IEC 62471",
+      "properties": {
+        "title": "Photobiological safety of lamps and lamp systems",
+        "application": "LEDs and lamps",
+        "relationship": "Complements IEC 60825-1",
+        "risk_groups": ["Exempt", "RG1", "RG2", "RG3"]
+      }
+    },
+    {
+      "id": "subclause_4_4",
+      "type": "concept",
+      "label": "Conventional Lamp Replacement (Subclause 4.4)",
+      "properties": {
+        "criterion": "Radiance-based",
+        "exclusion": "Emission excluded from classification",
+        "measurement_distance": "200 mm",
+        "label_requirement": "Class 1 label mandatory"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "iec_60825_1",
+      "target": "ael",
+      "type": "defines",
+      "properties": {"section": "Clause 4"}
+    },
+    {
+      "source": "iec_60825_1",
+      "target": "accessible_emission",
+      "type": "defines",
+      "properties": {"section": "Clause 3"}
+    },
+    {
+      "source": "iec_60825_1",
+      "target": "mpe",
+      "type": "references",
+      "properties": {"annex": "Annex A"}
+    },
+    {
+      "source": "iec_60825_1",
+      "target": "icnirp",
+      "type": "references",
+      "properties": {"basis": "Exposure limits"}
+    },
+    {
+      "source": "accessible_emission",
+      "target": "ael",
+      "type": "compared_to",
+      "properties": {"purpose": "Classification"}
+    },
+    {
+      "source": "class_1",
+      "target": "ael",
+      "type": "has_limit",
+      "properties": {"description": "Class 1 AEL"}
+    },
+    {
+      "source": "class_3b",
+      "target": "ael",
+      "type": "has_limit",
+      "properties": {"description": "Class 3B AEL"}
+    },
+    {
+      "source": "class_4",
+      "target": "ael",
+      "type": "has_limit",
+      "properties": {"description": "Class 4 AEL"}
+    },
+    {
+      "source": "extended_source",
+      "target": "c6_correction",
+      "type": "uses",
+      "properties": {"purpose": "AEL adjustment"}
+    },
+    {
+      "source": "extended_source",
+      "target": "alpha_max",
+      "type": "characterized_by",
+      "properties": {}
+    },
+    {
+      "source": "totp",
+      "target": "c5_correction",
+      "type": "alternative_to",
+      "properties": {"condition": "Uniform pulse trains"}
+    },
+    {
+      "source": "arpansa",
+      "target": "wa_regulations",
+      "type": "complements",
+      "properties": {"note": "Federal vs State"}
+    },
+    {
+      "source": "arpansa",
+      "target": "qld_regulations",
+      "type": "complements",
+      "properties": {"note": "Federal vs State"}
+    },
+    {
+      "source": "as_nzs_4173",
+      "target": "wa_regulations",
+      "type": "informs",
+      "properties": {"status": "Non-binding guidance"}
+    },
+    {
+      "source": "wa_regulations",
+      "target": "class_3b",
+      "type": "regulates",
+      "properties": {}
+    },
+    {
+      "source": "wa_regulations",
+      "target": "class_4",
+      "type": "regulates",
+      "properties": {}
+    },
+    {
+      "source": "ilda",
+      "target": "audience_scanning",
+      "type": "provides_guidance",
+      "properties": {"website": "LasershowSafety.info"}
+    },
+    {
+      "source": "ilda",
+      "target": "mpe",
+      "type": "references",
+      "properties": {"requirement": "Affirm safety within MPE"}
+    },
+    {
+      "source": "finland_regulations",
+      "target": "audience_scanning",
+      "type": "prohibits",
+      "properties": {"exception": "Special permits"}
+    },
+    {
+      "source": "iec_60825_1",
+      "target": "iec_62471",
+      "type": "complements",
+      "properties": {"note": "LEDs covered by 62471"}
+    },
+    {
+      "source": "subclause_4_4",
+      "target": "iec_62471",
+      "type": "references",
+      "properties": {"criterion": "Risk Group classification"}
+    },
+    {
+      "source": "subclause_4_4",
+      "target": "class_1",
+      "type": "requires_label",
+      "properties": {"requirement": "Mandatory label"}
+    },
+    {
+      "source": "mpe",
+      "target": "audience_scanning",
+      "type": "limits",
+      "properties": {"application": "Exposure safety"}
+    }
+  ],
+  "clusters": [
+    {
+      "id": "iec_standards",
+      "label": "IEC Standards",
+      "nodes": ["iec_60825_1", "iec_62471", "ael", "accessible_emission", "mpe", "class_1", "class_1m", "class_2", "class_3b", "class_4"]
+    },
+    {
+      "id": "australian_regulations",
+      "label": "Australian Regulations",
+      "nodes": ["arpansa", "wa_regulations", "qld_regulations", "tas_regulations", "as_nzs_4173"]
+    },
+    {
+      "id": "international_shows",
+      "label": "International Laser Shows",
+      "nodes": ["ilda", "audience_scanning", "finland_regulations"]
+    },
+    {
+      "id": "classification_parameters",
+      "label": "Classification Parameters",
+      "nodes": ["alpha_max", "c5_correction", "c6_correction", "totp", "extended_source", "subclause_4_4"]
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "component_id": "mpe_calculator",
+  "name": "MPE Calculator",
+  "version": "1.0.0",
+  "type": "calculation_tool",
+  "description": "Step-by-step MPE calculation tool with correction factors and validation",
+  "pedagogical_approach": {
+    "concept_first": true,
+    "step_by_step_calculation": true,
+    "immediate_feedback": true,
+    "visual_guidance": true,
+    "error_prevention": true
+  },
+  "input_sections": {
+    "laser_parameters": {
+      "title": "Step 1: Laser Parameters",
+      "description": "Enter the basic laser characteristics",
+      "fields": [
+        {
+          "id": "wavelength",
+          "label": "Wavelength",
+          "type": "slider_with_number",
+          "unit": "nm",
+          "min": 180,
+          "max": 10000,
+          "default": 532,
+          "step": 1,
+          "visual": "spectrum_bar",
+          "help_text": "Select wavelength or enter exact value",
+          "validation": {
+            "required": true,
+            "min": 180,
+            "max": 1000000
+          }
+        },
+        {
+          "id": "exposure_duration",
+          "label": "Exposure Duration",
+          "type": "logarithmic_slider",
+          "unit": "seconds",
+          "range": [-13, 4.5],
+          "default": -0.6,
+          "presets": [
+            {"value": 1e-13, "label": "1 fs", "description": "Femtosecond pulse"},
+            {"value": 1e-9, "label": "1 ns", "description": "Q-switched"},
+            {"value": 1e-6, "label": "1 μs", "description": "Microsecond pulse"},
+            {"value": 1e-3, "label": "1 ms", "description": "Millisecond pulse"},
+            {"value": 0.25, "label": "0.25 s", "description": "Blink reflex"},
+            {"value": 10, "label": "10 s", "description": "Momentary viewing"},
+            {"value": 30000, "label": "8 hr", "description": "Workday exposure"}
+          ],
+          "help_text": "Duration of single exposure event"
+        }
+      ]
+    },
+    "exposure_conditions": {
+      "title": "Step 2: Exposure Conditions",
+      "description": "Specify how the exposure occurs",
+      "fields": [
+        {
+          "id": "exposure_type",
+          "label": "Exposure Geometry",
+          "type": "radio_button",
+          "options": [
+            {
+              "id": "point_source",
+              "label": "Point Source (Intrabeam)",
+              "description": "Direct viewing of laser beam",
+              "help_text": "Most conservative - assumes all energy focused to small retinal spot"
+            },
+            {
+              "id": "extended_source",
+              "label": "Extended Source (Diffuse)",
+              "description": "Viewing scattered/diffuse reflection",
+              "help_text": "Less conservative - energy spread over larger retinal area"
+            }
+          ],
+          "default": "point_source"
+        },
+        {
+          "id": "tissue_type",
+          "label": "Tissue Type",
+          "type": "radio_button",
+          "options": [
+            {
+              "id": "eye",
+              "label": "Eye",
+              "description": "Ocular exposure (more conservative)"
+            },
+            {
+              "id": "skin",
+              "label": "Skin",
+              "description": "Dermal exposure (less conservative)"
+            }
+          ],
+          "default": "eye"
+        }
+      ]
+    },
+    "advanced_options": {
+      "title": "Step 3: Advanced Options (Optional)",
+      "description": "Additional correction factors if applicable",
+      "collapsible": true,
+      "fields": [
+        {
+          "id": "source_size",
+          "label": "Source Angular Size (α)",
+          "type": "number_with_unit",
+          "unit": "mrad",
+          "default": 1.5,
+          "min": 0.001,
+          "max": 100,
+          "help_text": "For extended sources - activates CB factor if >1.5 mrad"
+        },
+        {
+          "id": "pulse_count",
+          "label": "Number of Pulses",
+          "type": "number",
+          "default": 1,
+          "min": 1,
+          "max": 1000000,
+          "help_text": "For repetitive pulse exposure - activates CE factor"
+        }
+      ]
+    }
+  },
+  "calculation_logic": {
+    "wavelength_region_detection": {
+      "regions": [
+        {"id": "uv_c", "range": [180, 280], "name": "UV-C"},
+        {"id": "uv_b", "range": [280, 315], "name": "UV-B"},
+        {"id": "uv_a", "range": [315, 400], "name": "UV-A"},
+        {"id": "visible", "range": [400, 700], "name": "Visible"},
+        {"id": "near_ir", "range": [700, 1400], "name": "Near-IR"},
+        {"id": "mid_ir", "range": [1400, 3000], "name": "Mid-IR"},
+        {"id": "far_ir", "range": [3000, 10000], "name": "Far-IR"}
+      ]
+    },
+    "formula_selection": {
+      "visible_point_source_eye": {
+        "condition": "wavelength >= 400 AND wavelength <= 700 AND exposure_type == 'point_source' AND tissue_type == 'eye'",
+        "formulas": [
+          {
+            "duration_range": [1e-13, 10],
+            "formula": "1.8 * pow(t, 0.75) * 1e-3",
+            "units": "J/cm²",
+            "description": "Radiant exposure for short to medium exposures"
+          },
+          {
+            "duration_range": [10, 100],
+            "formula": "10 * 1e-3",
+            "units": "J/cm²",
+            "description": "Constant radiant exposure for extended viewing"
+          },
+          {
+            "duration_range": [100, 30000],
+            "formula": "1.0",
+            "units": "mW/cm²",
+            "description": "Irradiance limit for long exposures"
+          }
+        ]
+      },
+      "near_ir_point_source_eye": {
+        "condition": "wavelength >= 700 AND wavelength <= 1400 AND exposure_type == 'point_source' AND tissue_type == 'eye'",
+        "correction_factor": "ca",
+        "base_formula": "visible_point_source_eye",
+        "description": "Near-IR uses visible formula with CA correction"
+      },
+      "visible_extended_eye": {
+        "condition": "wavelength >= 400 AND wavelength <= 700 AND exposure_type == 'extended_source' AND tissue_type == 'eye'",
+        "formulas": [
+          {
+            "duration_range": [1e-13, 10],
+            "formula": "10 * 1e-3",
+            "units": "J/cm²",
+            "description": "Extended source allows 5.5× higher MPE"
+          }
+        ]
+      }
+    },
+    "correction_factors": {
+      "ca": {
+        "name": "CA",
+        "description": "Wavelength correction factor for retinal hazard (700-1400 nm)",
+        "applies_to": "700-1400 nm",
+        "calculation": {
+          "type": "piecewise",
+          "ranges": [
+            {
+              "range": [700, 1050],
+              "formula": "pow(10, 0.002 * (wavelength - 700))",
+              "description": "Logarithmic increase from 1.0 to 5.0"
+            },
+            {
+              "range": [1050, 1400],
+              "formula": "5.0",
+              "description": "Constant at maximum value"
+            }
+          ]
+        },
+        "visual": "ca_graph"
+      },
+      "cb": {
+        "name": "CB",
+        "description": "Source size correction factor for extended sources",
+        "applies_when": "alpha > 1.5 mrad",
+        "calculation": {
+          "formula": "min(alpha / 1.5, 100 / 1.5)",
+          "description": "Linear scaling up to maximum"
+        }
+      },
+      "ce": {
+        "name": "CE",
+        "description": "Multiple pulse correction factor",
+        "applies_when": "n > 1",
+        "calculation": {
+          "formula": "pow(n, -0.25)",
+          "description": "Reduces per-pulse limit for multiple exposures"
+        }
+      }
+    }
+  },
+  "output_display": {
+    "primary_result": {
+      "title": "Calculated MPE",
+      "display_type": "large_value_with_units",
+      "decimal_places": 3,
+      "scientific_notation_threshold": 0.001
+    },
+    "calculation_steps": {
+      "title": "Calculation Steps",
+      "display_order": [
+        "wavelength_region",
+        "base_formula_selection",
+        "base_mpe_calculation",
+        "correction_factor_application",
+        "final_result"
+      ]
+    },
+    "visual_indicators": {
+      "safety_gauge": {
+        "type": "gauge_chart",
+        "min": 0,
+        "max": "dynamic",
+        "zones": [
+          {"min": 0, "max": 1, "label": "Below MPE", "color": "#22c55e"},
+          {"min": 1, "max": 10, "label": "Near MPE", "color": "#f59e0b"},
+          {"min": 10, "max": 1000, "label": "Above MPE", "color": "#dc2626"}
+        ]
+      },
+      "wavelength_marker": {
+        "type": "spectrum_bar",
+        "mark_wavelength": true,
+        "show_hazard_region": true
+      }
+    },
+    "reference_tables": {
+      "title": "Reference Values",
+      "tables": [
+        {
+          "name": "Common MPE Values",
+          "show_for_wavelength": "any",
+          "data": [
+            {"duration": "0.25 s", "visible_mpe": "0.64 mJ/cm²", "context": "Blink reflex"},
+            {"duration": "10 s", "visible_mpe": "10 mJ/cm²", "context": "Momentary viewing"},
+            {"duration": "8 hr", "visible_mpe": "1.0 mW/cm²", "context": "Workday exposure"}
+          ]
+        }
+      ]
+    }
+  },
+  "validation": {
+    "input_validation": {
+      "wavelength_range": {
+        "min": 180,
+        "max": 1000000,
+        "error_message": "Wavelength must be between 180 nm and 1 mm"
+      },
+      "exposure_duration": {
+        "min": 1e-15,
+        "max": 86400,
+        "error_message": "Exposure duration must be between 1 femtosecond and 24 hours"
+      }
+    },
+    "calculation_warnings": [
+      {
+        "condition": "wavelength >= 400 AND wavelength <= 1400",
+        "message": "Retinal hazard region - eye MPE is most conservative",
+        "severity": "info"
+      },
+      {
+        "condition": "exposure_duration > 30000",
+        "message": "Long exposure - ensure intermittent exposure pattern is considered",
+        "severity": "warning"
+      }
+    ]
+  },
+  "worked_examples": [
+    {
+      "title": "532 nm, 0.25 second exposure (Green laser, blink reflex)",
+      "inputs": {
+        "wavelength": 532,
+        "exposure_duration": 0.25,
+        "exposure_type": "point_source",
+        "tissue_type": "eye"
+      },
+      "steps": [
+        {
+          "description": "Identify wavelength region",
+          "result": "532 nm = Visible light (green)"
+        },
+        {
+          "description": "Select formula for visible point source",
+          "result": "MPE = 1.8 × t^0.75 × 10^-3 J/cm²"
+        },
+        {
+          "description": "Calculate t^0.75",
+          "calculation": "0.25^0.75 = 0.354",
+          "result": "0.354"
+        },
+        {
+          "description": "Complete calculation",
+          "calculation": "1.8 × 0.354 × 10^-3 = 0.637 × 10^-3",
+          "result": "0.637 mJ/cm²"
+        }
+      ],
+      "final_answer": "0.64 mJ/cm² (rounded)",
+      "context": "This is the MPE for a green laser during the blink reflex time"
+    },
+    {
+      "title": "1064 nm, 10 second exposure (Nd:YAG laser)",
+      "inputs": {
+        "wavelength": 1064,
+        "exposure_duration": 10,
+        "exposure_type": "point_source",
+        "tissue_type": "eye"
+      },
+      "steps": [
+        {
+          "description": "Identify wavelength region",
+          "result": "1064 nm = Near-IR"
+        },
+        {
+          "description": "Find CA correction factor",
+          "result": "CA = 5.0 (for 1050-1400 nm)"
+        },
+        {
+          "description": "Calculate base visible MPE",
+          "calculation": "MPE_visible = 1.8 × 10^0.75 × 10^-3 = 10.1 mJ/cm²",
+          "result": "10.1 mJ/cm²"
+        },
+        {
+          "description": "Apply CA correction",
+          "calculation": "MPE = 5.0 × 10.1 mJ/cm²",
+          "result": "50.5 mJ/cm²"
+        }
+      ],
+      "final_answer": "50 mJ/cm²",
+      "context": "Near-IR allows 5× higher exposure than visible"
+    }
+  ],
+  "practice_mode": {
+    "enabled": true,
+    "exercises": [
+      {
+        "id": "practice_1",
+        "prompt": "Calculate the eye MPE for a 1-second exposure to 800 nm laser",
+        "hints": [
+          "800 nm is in the near-IR range",
+          "Calculate CA first",
+          "Base visible MPE at 1s = 1.8 mJ/cm²"
+        ],
+        "expected_result": "2.84 mJ/cm²",
+        "tolerance": "5%"
+      }
+    ]
+  }
+}

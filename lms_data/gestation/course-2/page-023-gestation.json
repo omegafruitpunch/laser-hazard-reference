@@ -1,0 +1,54 @@
+{
+  "course": "course-2",
+  "document": "fda-regulatory-framework.pdf",
+  "page_number": 23,
+  "total_pages": 29,
+  "gestation_analysis": {
+    "core_concepts": [
+      "Appendix B: Laser Light Show Requirements",
+      "Variance definition and purpose",
+      "Who is covered by a variance",
+      "Non-transferability of variances"
+    ],
+    "key_terms": [
+      {
+        "term": "Variance",
+        "definition": "Formal permission to deviate from Class IIIa demonstration limits"
+      },
+      {
+        "term": "Suitable Means of Safety",
+        "definition": "Conditions specified in variance for radiation protection"
+      },
+      {
+        "term": "Individual Performance Standard",
+        "definition": "Variance conditions plus standard requirements"
+      },
+      {
+        "term": "Projector Manufacturer",
+        "definition": "Entity building/ certifying Class IIIb/IV projectors"
+      },
+      {
+        "term": "Show Manufacturer",
+        "definition": "Entity creating laser light shows/displays"
+      }
+    ],
+    "regulatory_references": [
+      "21 CFR 1010.4 - Variance provisions",
+      "21 CFR 1040.11(c) - Demonstration product limits",
+      "Appendix B - Laser light show guidance"
+    ],
+    "difficulty_level": "advanced",
+    "learning_objectives": [
+      "Understand variance concept for laser shows",
+      "Identify variance holders and coverage",
+      "Apply non-transferability rules",
+      "Know individual performance standard concept"
+    ],
+    "prerequisites": [
+      "Pages 15, 20 content"
+    ],
+    "estimated_study_time_minutes": 30,
+    "content_type": "specialized_guidance",
+    "has_tables": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "filename": "florida.pdf",
+  "state_name": "Florida",
+  "total_pages": 2,
+  "metadata": {
+    "/Creator": "Microsoft Word - SUMMARY.DOC",
+    "/CreationDate": "D:20001030170306",
+    "/Title": "SUMMARY.PDF",
+    "/Author": "FutchJA",
+    "/Producer": "Acrobat PDFWriter 3.03 for Windows NT",
+    "/Keywords": "",
+    "/Subject": ""
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "Pursuant to Chapter 501.122, Florida Statutes, and Chapter 64E-4, Florida Administrative Code, all\nlaser devices, except those exempted below, must be registered by the State of Florida.  This\napplies to both users and manufacturers.\nDEFINITIONS:\nMedium - A substance that can provide gain for laser oscillation.  Common examples are Argon,\nKrypton, Argon-Krypton, Nd-YAG, Helium-Neon, and Dye.\nPulse Duration - The time increment measured between the half-peak power points at the leading\nand trailing edges of a pulse.\nContinuous Wave (CW) - A laser operating with a continuous output for a time period greater than\nor equal to 0.25 seconds. Lasers with outputs shorter than 0.25 seconds are classified as pulsed\nlasers. Some lasers with variable length outputs can fit into both the CW and pulsed categories.\nWave Length - The distance measured between two points on a (periodic) wave which have the\nsame phase, usually measured in nanometers (nm). The visible light spectrum (the colors blue,\ngreen, yellow, orange, and red) corresponds to waves having wavelengths between 400nm and\n700nm.\nPower - The time rate at which energy is given off, usually measured in watts (W). Pulsed lasers\nare not often labeled with their output power.  Instead they are labeled with the output energy of\neach pulse, usually measured in joules (J) or millijoules (mJ).\nCLASS IV LASER DEVICES:  Class IV laser devices or products are those with an output power of\ngreater than or equal to 0.5 watts.  Examples of some class IV laser devices are all types of medical\nlaser surgery devices, advanced laser light show devices, laser cutters and drilling devices and\nlaser welding devices.\nCLASS IIIB LASER DEVICES:  Class IIIB laser devices or products are those with an output of\ngreater than 0.005 watts, but less than 0.5 watts.  Examples of some class IIIB devices are some\nsmall laser light shows, surveying devices, range finders, construction units, and road grading\nequipment.\nDETERMINING CLASS OF LASER DEVICE:\nIf your laser device class is not known you may find the class label on the housing of the laser\ndevice, or inquire from the manufacturer.\nEXEMPT FROM REGISTRATION:\nAll Class I, II, IIA, and IIIA laser products, except for those that allow access to other classes of\nradiation during servicing, are exempted from registration and regulation, provided that the laser\nproduct is maintained as a Class I, II, IIA, or IIIA laser product throughout its useful life.  These\nregulations do not apply to lasers in storage, during shipment or sale, provided such lasers are\ninoperable or not operated.",
+      "images": [],
+      "links": []
+    },
+    {
+      "page_number": 2,
+      "text": "COMPLETING REGISTRATION FORMS:\nThe enclosed form must be filled out completely.  A laser safety officer must be designated, and\nlisted on the registration form.  A laser safety officer (LSO) means any individual, qualified by\ntraining and experience in the evaluation and control of laser hazards, who is designated by the\nregistrant and has the authority and responsibility to establish and administer the laser radiation\nprotection program for a particular facility or a particular mobile laser.\nREGISTRATION OF OUT-OF-STATE LASER RADIATION SOURCES:\nPursuant to Chapter 64E-4.005, Florida Administrative Code requires any person proposing to\nbring any laser device (in classes other than those exempt from registration) into the State, for\ntemporary or permanent use (i.e. entertainment lasers for laser light shows, etc.) must give written\nnotice to the Department of Health, Bureau of Radiation Control a minimum of 20 days prior to such\ndevice being used in the State.\nREGISTRATION OF DEVICES AT SEPARATE LOCATION:\nA separate registration is required for each location with a laser device.  Subsequent registrations\nfor each facility or mobile laser facility are required whenever additional laser devices are installed,\nor whenever previously registered laser devices are disposed of, altered, destroyed or moved to\nnew locations.\nDEADLINES FOR REGISTRATION OF LASER DEVICES AND PRODUCTS:\nRegistration of laser devices and products must be submitted to the department within 30 days after\nacquisition of the laser device or products.\nREGISTRATION FEE:\nNone\nFREQUENCY OF REGISTRATION:\nThis is intended to be a one time only registration; however, if a laser device or product is altered,\nmoved to another location, destroyed or sold, the Department must be notified and the device\nneeds to be registered by the new owner or removed from the registration when destroyed.\nRETURN FORM TO:\nDepartment of Health\nBureau of Radiation Control\nLaser Registration\nBin C21\n4052 Bald Cypress Way\nTallahassee, Florida   32399-1741\nPlease mail both the white and yellow copies of the form to the Department.  When laser\nregistration forms have been processed, the yellow copy will be returned to you for proof of\nregistration.",
+      "images": [],
+      "links": []
+    }
+  ]
+}

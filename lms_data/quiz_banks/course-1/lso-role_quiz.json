@@ -1,0 +1,475 @@
+{
+  "document": "lso-role.pdf",
+  "title": "Safety of Display Lasers - Comprehensive Quiz",
+  "total_questions": 30,
+  "questions": [
+    {
+      "id": "lso_q1",
+      "type": "multiple_choice",
+      "page_ref": 5,
+      "difficulty": "beginner",
+      "question": "What are the four main laser beam hazards listed in the guidance?",
+      "options": [
+        "Eye damage, hearing loss, fire, chemical exposure",
+        "Permanent eye damage, skin burns, source of ignition, distraction/dazzle/glare",
+        "Radiation, heat, electricity, noise",
+        "Cancer, blindness, burns, explosion"
+      ],
+      "correct_answer": 1,
+      "explanation_correct": "Correct. The four main hazards are: permanent eye damage, skin burns, source of ignition, and distraction/dazzle/glare.",
+      "explanation_incorrect": "Incorrect. The four main hazards are permanent eye damage, skin burns, source of ignition, and distraction/dazzle/glare.",
+      "topic": "Hazard Identification"
+    },
+    {
+      "id": "lso_q2",
+      "type": "multiple_choice",
+      "page_ref": 6,
+      "difficulty": "intermediate",
+      "question": "What power range do entertainment industry lasers typically have?",
+      "options": [
+        "1mW to 10mW",
+        "10mW to 100mW",
+        "200mW to 40W+",
+        "100W to 1000W"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. Entertainment lasers typically range from 200mW to 40W+, i.e., Class 3B and 4.",
+      "explanation_incorrect": "Incorrect. Entertainment lasers typically range from 200mW to 40W+ (Class 3B and 4).",
+      "topic": "Laser Classification"
+    },
+    {
+      "id": "lso_q3",
+      "type": "true_false",
+      "page_ref": 6,
+      "difficulty": "intermediate",
+      "question": "Non-visible wavelengths in laser beams (less than 400nm or more than 700nm) are less hazardous than visible wavelengths.",
+      "correct_answer": false,
+      "explanation_correct": "Correct. Non-visible wavelengths are potentially far MORE hazardous because the eye cannot react to wavelengths it cannot see.",
+      "explanation_incorrect": "Incorrect. Non-visible wavelengths are MORE hazardous because the eye cannot react to them.",
+      "topic": "Optical Hazards"
+    },
+    {
+      "id": "lso_q4",
+      "type": "scenario",
+      "page_ref": 7,
+      "difficulty": "advanced",
+      "question": "A laser show designer wants to create audience scanning effects using a Q-switched laser. What should the LSO advise?",
+      "options": [
+        "Proceed with standard safety measures",
+        "Use lower power settings only",
+        "Q-switched lasers should not be used where people may be exposed",
+        "Add extra scanning failure systems"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. Q-switched and pulsed lasers should not be used where exposure of people is intended or likely.",
+      "explanation_incorrect": "Incorrect. The guidance states Q-switched lasers should not be used where people may be exposed.",
+      "topic": "Pulsed Lasers"
+    },
+    {
+      "id": "lso_q5",
+      "type": "multiple_choice",
+      "page_ref": 7,
+      "difficulty": "intermediate",
+      "question": "At what power level do skin burn and fire risks become significant?",
+      "options": [
+        "100mW",
+        "500mW",
+        "1W",
+        "5W"
+      ],
+      "correct_answer": 1,
+      "explanation_correct": "Correct. Skin burn and fire risks become significant above 500mW.",
+      "explanation_incorrect": "Incorrect. Skin burn and fire risks become significant above 500mW.",
+      "topic": "Fire and Skin Hazards"
+    },
+    {
+      "id": "lso_q6",
+      "type": "multiple_choice",
+      "page_ref": 8,
+      "difficulty": "intermediate",
+      "question": "For outdoor displays, which authority must be notified?",
+      "options": [
+        "Local Police",
+        "Fire Department",
+        "Civil Aviation Authority (CAA)",
+        "Environmental Health"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. The CAA (Civil Aviation Authority) must be notified for outdoor laser displays.",
+      "explanation_incorrect": "Incorrect. The Civil Aviation Authority (CAA) must be notified for outdoor displays.",
+      "topic": "Outdoor Displays"
+    },
+    {
+      "id": "lso_q7",
+      "type": "multiple_choice",
+      "page_ref": 9,
+      "difficulty": "intermediate",
+      "question": "What is the difference between an LSO and an LSA?",
+      "options": [
+        "LSO is paid more than LSA",
+        "LSO has executive responsibility; LSA is advisory only",
+        "LSA requires more training than LSO",
+        "There is no difference"
+      ],
+      "correct_answer": 1,
+      "explanation_correct": "Correct. The LSO has executive responsibility, while the LSA (Laser Safety Adviser) is an advisory role without executive mandate.",
+      "explanation_incorrect": "Incorrect. The key difference is that LSO has executive responsibility while LSA is advisory only.",
+      "topic": "Roles and Responsibilities"
+    },
+    {
+      "id": "lso_q8",
+      "type": "multiple_choice",
+      "page_ref": 9,
+      "difficulty": "beginner",
+      "question": "Who is responsible for ensuring laser installation is safe at a venue?",
+      "options": [
+        "Only the laser operator",
+        "Only the client",
+        "Venue management",
+        "Local authorities"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. Venue management is responsible for ensuring installation and operation are safe.",
+      "explanation_incorrect": "Incorrect. Venue management has responsibility for ensuring safe installation and operation.",
+      "topic": "Roles and Responsibilities"
+    },
+    {
+      "id": "lso_q9",
+      "type": "true_false",
+      "page_ref": 10,
+      "difficulty": "intermediate",
+      "question": "Operators should complete daily or weekly alignment checks for temporary installations.",
+      "correct_answer": true,
+      "explanation_correct": "Correct. Operators should maintain logs of daily/weekly alignment checks.",
+      "explanation_incorrect": "Incorrect. The guidance requires operators to complete daily/weekly alignment check logs.",
+      "topic": "Maintenance"
+    },
+    {
+      "id": "lso_q10",
+      "type": "scenario",
+      "page_ref": 11,
+      "difficulty": "advanced",
+      "question": "During a show, an audience member reports a suspected eye injury from laser exposure. What is the FIRST action?",
+      "options": [
+        "Give them eye drops and continue the show",
+        "Treat as medical emergency and take to A&E with laser details",
+        "Ask them to wait until after the show",
+        "Tell them it's probably just temporary dazzle"
+      ],
+      "correct_answer": 1,
+      "explanation_correct": "Correct. Actual eye injuries should be treated as medical emergencies with casualty taken to A&E with laser beam details.",
+      "explanation_incorrect": "Incorrect. Actual eye injuries must be treated as medical emergencies and the casualty taken to A&E.",
+      "topic": "Emergency Procedures"
+    },
+    {
+      "id": "lso_q11",
+      "type": "multiple_choice",
+      "page_ref": 12,
+      "difficulty": "advanced",
+      "question": "What is the most important factor in determining the safety of scanned laser effects?",
+      "options": [
+        "Laser color",
+        "Scanner manufacturer",
+        "Scanning frequency and speed",
+        "Room temperature"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. The speed and frequency that beams pass over the eye is the most important safety factor.",
+      "explanation_incorrect": "Incorrect. Scanning frequency is the key determinant of injury threshold for scanned effects.",
+      "topic": "Scanning Safety"
+    },
+    {
+      "id": "lso_q12",
+      "type": "true_false",
+      "page_ref": 12,
+      "difficulty": "intermediate",
+      "question": "Installations intended to expose audiences may be left unattended if scan-failure systems are in place.",
+      "correct_answer": false,
+      "explanation_correct": "Correct. Audience exposure installations should NEVER be left unattended, even with safety systems.",
+      "explanation_incorrect": "Incorrect. These installations should NEVER be left unattended.",
+      "topic": "Scanning Safety"
+    },
+    {
+      "id": "lso_q13",
+      "type": "multiple_choice",
+      "page_ref": 15,
+      "difficulty": "advanced",
+      "question": "What is the minimum exposure time base for deliberate audience exposure?",
+      "options": [
+        "0.25 seconds",
+        "1 second",
+        "3 seconds",
+        "10 seconds"
+      ],
+      "correct_answer": 3,
+      "explanation_correct": "Correct. For audience exposure, an exposure duration of 10 seconds minimum should be assumed.",
+      "explanation_incorrect": "Incorrect. 10 seconds is the minimum time base for deliberate audience exposure.",
+      "topic": "MPE Calculations"
+    },
+    {
+      "id": "lso_q14",
+      "type": "multiple_choice",
+      "page_ref": 15,
+      "difficulty": "advanced",
+      "question": "For trained employees during setup, what aversion response time can be assumed?",
+      "options": [
+        "0.1 seconds",
+        "0.25 seconds",
+        "0.5 seconds",
+        "1 second"
+      ],
+      "correct_answer": 1,
+      "explanation_correct": "Correct. For trained employees, the eye aversion response time of 0.25 seconds may be used.",
+      "explanation_incorrect": "Incorrect. The aversion response time of 0.25 seconds applies to trained employees.",
+      "topic": "MPE Calculations"
+    },
+    {
+      "id": "lso_q15",
+      "type": "multiple_choice",
+      "page_ref": 16,
+      "difficulty": "intermediate",
+      "question": "What are the minimum separation distances for a SUPERVISED laser installation?",
+      "options": [
+        "1m vertical, 1m lateral",
+        "2m vertical, 2m lateral",
+        "3m vertical, 2.5m lateral",
+        "6m vertical, 5m lateral"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. For supervised installations: 3m vertical and 2.5m lateral separation.",
+      "explanation_incorrect": "Incorrect. Supervised installations require 3m vertical and 2.5m lateral separation.",
+      "topic": "Separation Distances"
+    },
+    {
+      "id": "lso_q16",
+      "type": "multiple_choice",
+      "page_ref": 16,
+      "difficulty": "intermediate",
+      "question": "What is the vertical separation distance for UNSUPERVISED installations?",
+      "options": [
+        "3m",
+        "4m",
+        "6m",
+        "10m"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. For unsupervised installations, the vertical separation should be 6m.",
+      "explanation_incorrect": "Incorrect. Unsupervised installations require 6m vertical separation.",
+      "topic": "Separation Distances"
+    },
+    {
+      "id": "lso_q17",
+      "type": "true_false",
+      "page_ref": 18,
+      "difficulty": "intermediate",
+      "question": "Changes to laser system installation can be made by the operator without consulting the LSO.",
+      "correct_answer": false,
+      "explanation_correct": "Correct. Changes to installation should only be carried out with LSO agreement.",
+      "explanation_incorrect": "Incorrect. Changes require agreement from the LSO.",
+      "topic": "Installation Changes"
+    },
+    {
+      "id": "lso_q18",
+      "type": "multiple_choice",
+      "page_ref": 19,
+      "difficulty": "intermediate",
+      "question": "How often should E-stop controls be tested?",
+      "options": [
+        "Monthly",
+        "Weekly",
+        "Before each performance",
+        "Annually"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. E-stop(s) should ideally be tested before each performance.",
+      "explanation_incorrect": "Incorrect. E-stops should be tested before each performance.",
+      "topic": "Pre-show Checks"
+    },
+    {
+      "id": "lso_q19",
+      "type": "true_false",
+      "page_ref": 19,
+      "difficulty": "intermediate",
+      "question": "After using an E-stop, the laser can be automatically restarted.",
+      "correct_answer": false,
+      "explanation_correct": "Correct. After E-stop use, the laser must be restarted by deliberate action of a trained person.",
+      "explanation_incorrect": "Incorrect. The laser must be deliberately restarted by an operator or trained person.",
+      "topic": "Emergency Systems"
+    },
+    {
+      "id": "lso_q20",
+      "type": "multiple_choice",
+      "page_ref": 22,
+      "difficulty": "advanced",
+      "question": "What is the simplified MPE value for wavelengths 400-700nm?",
+      "options": [
+        "1 W/m2",
+        "10 W/m2 (equivalent to 1 mW/cm2)",
+        "100 W/m2",
+        "1000 W/m2"
+      ],
+      "correct_answer": 1,
+      "explanation_correct": "Correct. The simplified MPE is 10 W/m2 (1 mW/cm2) for 400-700nm.",
+      "explanation_incorrect": "Incorrect. The simplified MPE is 10 W/m2 or 1 mW/cm2 for visible wavelengths.",
+      "topic": "MPE Values"
+    },
+    {
+      "id": "lso_q21",
+      "type": "multiple_choice",
+      "page_ref": 22,
+      "difficulty": "intermediate",
+      "question": "What is the skin MPE value?",
+      "options": [
+        "10 mW/cm2",
+        "100 mW/cm2",
+        "200 mW/cm2",
+        "500 mW/cm2"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. The skin MPE is 200 mW/cm2.",
+      "explanation_incorrect": "Incorrect. The skin MPE value is 200 mW/cm2.",
+      "topic": "MPE Values"
+    },
+    {
+      "id": "lso_q22",
+      "type": "multiple_choice",
+      "page_ref": 28,
+      "difficulty": "intermediate",
+      "question": "What is the Accessible Emission Limit for Class 3B continuous wave lasers?",
+      "options": [
+        "1mW",
+        "5mW",
+        "500mW",
+        "5W"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. Class 3B has an AEL of 500mW for continuous wave lasers.",
+      "explanation_incorrect": "Incorrect. Class 3B AEL is 500mW for continuous wave lasers.",
+      "topic": "Laser Classification"
+    },
+    {
+      "id": "lso_q23",
+      "type": "multiple_choice",
+      "page_ref": 28,
+      "difficulty": "beginner",
+      "question": "Which laser class is described as HIGH POWER with eye, skin and fire hazard?",
+      "options": [
+        "Class 2",
+        "Class 3R",
+        "Class 3B",
+        "Class 4"
+      ],
+      "correct_answer": 3,
+      "explanation_correct": "Correct. Class 4 is HIGH POWER with hazards to eye, skin and fire risk.",
+      "explanation_incorrect": "Incorrect. Class 4 is the high power class with eye, skin and fire hazards.",
+      "topic": "Laser Classification"
+    },
+    {
+      "id": "lso_q24",
+      "type": "true_false",
+      "page_ref": 28,
+      "difficulty": "beginner",
+      "question": "Class 2 lasers are inherently eye-safe.",
+      "correct_answer": false,
+      "explanation_correct": "Correct. Class 2 lasers are NOT inherently safe - protection is provided by the blink reflex (0.25 sec).",
+      "explanation_incorrect": "Incorrect. Class 2 lasers are NOT inherently safe; protection comes from the natural aversion response.",
+      "topic": "Laser Classification"
+    },
+    {
+      "id": "lso_q25",
+      "type": "calculation",
+      "page_ref": 22,
+      "difficulty": "advanced",
+      "question": "Using the MPE table, what is the eye MPE for a 3-second exposure?",
+      "options": [
+        "2.54 mW/cm2",
+        "1.80 mW/cm2",
+        "1.37 mW/cm2",
+        "1.01 mW/cm2"
+      ],
+      "correct_answer": 2,
+      "explanation_correct": "Correct. The eye MPE for 3 seconds is 1.37 mW/cm2.",
+      "explanation_incorrect": "Incorrect. Per the table: 0.25s=2.54, 1s=1.80, 3s=1.37, 10s=1.01 mW/cm2.",
+      "topic": "MPE Calculations"
+    },
+    {
+      "id": "lso_q26",
+      "type": "scenario",
+      "page_ref": 29,
+      "difficulty": "advanced",
+      "question": "In Case Study 1, why was one laser projector disconnected before the show?",
+      "options": [
+        "It was broken",
+        "It had been accidentally moved and couldn't be safely realigned in time",
+        "The power was too high",
+        "The CAA didn't approve it"
+      ],
+      "correct_answer": 1,
+      "explanation_correct": "Correct. The laser had been accidentally moved, and there wasn't time to safely realign it before the show.",
+      "explanation_incorrect": "Incorrect. The laser was moved accidentally and couldn't be safely realigned before the audience arrived.",
+      "topic": "Case Study Analysis"
+    },
+    {
+      "id": "lso_q27",
+      "type": "multiple_choice",
+      "page_ref": 32,
+      "difficulty": "beginner",
+      "question": "According to Case Study 4, what should a mobile DJ do if asked to shine lasers on the dance floor?",
+      "options": [
+        "Do it if the client insists",
+        "Refuse as it may be unsafe",
+        "Only do it for special dances",
+        "Reduce the power first"
+      ],
+      "correct_answer": 1,
+      "explanation_correct": "Correct. The DJ should refuse as it may be unsafe for guests to stare into laser beams.",
+      "explanation_incorrect": "Incorrect. The guidance shows the DJ refused the request due to safety concerns.",
+      "topic": "Case Study Analysis"
+    },
+    {
+      "id": "lso_q28",
+      "type": "multiple_choice",
+      "page_ref": 27,
+      "difficulty": "intermediate",
+      "question": "What does OPSL stand for?",
+      "options": [
+        "Optical Power Safety Level",
+        "Optically Pumped Semiconductor Laser",
+        "Output Power Scanning Limit",
+        "Optical Protection Safety Layer"
+      ],
+      "correct_answer": 1,
+      "explanation_correct": "Correct. OPSL = Optically Pumped Semiconductor Laser.",
+      "explanation_incorrect": "Incorrect. OPSL stands for Optically Pumped Semiconductor Laser.",
+      "topic": "Laser Types"
+    },
+    {
+      "id": "lso_q29",
+      "type": "multiple_choice",
+      "page_ref": 26,
+      "difficulty": "intermediate",
+      "question": "What is the Zero Diffracted Order?",
+      "options": [
+        "The lowest power beam from a diffraction grating",
+        "The reflected beam following the path of a mirror reflection",
+        "A safety system for diffracted beams",
+        "The first beam that exits the laser"
+      ],
+      "correct_answer": 1,
+      "explanation_correct": "Correct. It's the reflected beam from a diffraction grating following the mirror path, typically with highest power.",
+      "explanation_incorrect": "Incorrect. It's the reflected beam following the path a beam would take if the grating were a mirror.",
+      "topic": "Optics Terminology"
+    },
+    {
+      "id": "lso_q30",
+      "type": "true_false",
+      "page_ref": 22,
+      "difficulty": "intermediate",
+      "question": "When performing for children, the MPE level should be reduced by a factor of 10 for wavelengths below 500nm.",
+      "correct_answer": true,
+      "explanation_correct": "Correct. Children's eyes are more sensitive; the MPE should be reduced by 10x for wavelengths below 500nm.",
+      "explanation_incorrect": "Incorrect. The guidance specifically states this reduction for child audiences.",
+      "topic": "Special Populations"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "module_id": "course-3-protective-eyewear",
+  "title": "Laser Protective Eyewear",
+  "description": "Comprehensive guide to laser protective eyewear selection, optical density calculations, and safety requirements based on OSHA Technical Manual and ANSI Z 136.1 standards",
+  "source_document": "OSHA Technical Manual - Laser Hazards",
+  "version": "1.0",
+  "last_updated": "2026-03-19",
+  "sections": [
+    {
+      "section_id": "eyewear_basics",
+      "title": "Fundamentals of Laser Protective Eyewear",
+      "order": 1,
+      "content": {
+        "overview": "Eye-protection devices designed to protect against radiation from a specific laser system shall be used when engineering controls are inadequate to eliminate the possibility of potentially hazardous eye exposure.",
+        "when_required": [
+          "When accessible emission exceeds appropriate MPE levels",
+          "Class IIIB and Class IV laser operations",
+          "During alignment procedures",
+          "When beam path is not completely enclosed",
+          "Service and maintenance activities"
+        ],
+        "regulatory_basis": [
+          "OSHA 29 CFR 1926.102(b)(2) - Construction standard for eye and face protection",
+          "ANSI Z 136.1 (1993) - Safe Use of Lasers",
+          "Federal Laser Product Performance Standard (FLPPS) - 21 CFR Part 1040"
+        ]
+      }
+    },
+    {
+      "section_id": "optical_density",
+      "title": "Optical Density (OD) and Protection Calculations",
+      "order": 2,
+      "content": {
+        "definition": "Optical Density (OD) is a logarithmic function that quantifies the attenuation provided by protective eyewear.",
+        "formula": "OD = log10(H0/MPE)",
+        "variables": {
+          "H0": "Anticipated worst-case exposure (J/cm² or W/cm²)",
+          "MPE": "Maximum Permissible Exposure level expressed in same units as H0"
+        },
+        "calculation_example": {
+          "laser_type": "Argon (CW)",
+          "wavelength": "0.514 μm",
+          "power": "5.0 Watts",
+          "exposure_duration": "600 seconds",
+          "beam_diameter": "7 mm (worst-case pupil size)",
+          "MPE": "16.7 × 10⁻⁶ W/cm²",
+          "worst_case_exposure": "12.99 W/cm²",
+          "OD_calculation": "log10(12.99 / 16.7×10⁻⁶) = OD 5.9",
+          "conservative_OD": "OD 7.1 (using 8-hour occupational exposure)"
+        }
+      }
+    },
+    {
+      "section_id": "od_table",
+      "title": "Optical Density Requirements by Laser Type",
+      "order": 3,
+      "content": {
+        "note": "All OD values determined using MPE criteria of ANSI Z 136.1 (1993). Values are for intrabeam viewing (worst case) only.",
+        "lasers": [
+          {
+            "type": "CO2 (CW)",
+            "wavelength": "10.6 μm",
+            "OD_0.25sec": "---",
+            "OD_10sec": "100.0 × 10⁻³",
+            "OD_8hr": "100.0 × 10⁻³"
+          },
+          {
+            "type": "Nd:YAG (CW)",
+            "wavelength": "1.064 μm",
+            "OD_0.25sec": "---",
+            "OD_10sec": "5.1 × 10⁻³",
+            "OD_8hr": "1.6 × 10⁻³"
+          },
+          {
+            "type": "Nd:YAG (Q-switched)",
+            "wavelength": "1.064 μm",
+            "OD_0.25sec": "---",
+            "OD_10sec": "17.0 × 10⁻⁶",
+            "OD_8hr": "2.3 × 10⁻⁶"
+          },
+          {
+            "type": "HeNe (CW)",
+            "wavelength": "0.633 μm",
+            "OD_0.25sec": "2.5 × 10⁻³",
+            "OD_10sec": "293.0 × 10⁻⁶",
+            "OD_8hr": "17.6 × 10⁻⁶"
+          },
+          {
+            "type": "Argon (CW)",
+            "wavelength": "0.514 μm",
+            "OD_0.25sec": "2.5 × 10⁻³",
+            "OD_10sec": "---",
+            "OD_8hr": "16.7 × 10⁻⁶ / 1.0 × 10⁻⁶"
+          }
+        ],
+        "exposure_times": {
+          "0.25_seconds": "Human aversion time (blink reflex)",
+          "10_seconds": "Worst-case for infrared sources",
+          "600_seconds": "Typical for viewing diffuse reflections during alignment",
+          "30000_seconds": "Full 8-hour occupational exposure"
+        }
+      }
+    },
+    {
+      "section_id": "selection_criteria",
+      "title": "Eyewear Selection Criteria",
+      "order": 4,
+      "content": {
+        "key_requirements": [
+          "Eyewear must protect for the SPECIFIC WAVELENGTH of the laser",
+          "Optical Density must be adequate for the energy/power involved",
+          "All laser eyewear shall be clearly labeled with OD values and wavelengths",
+          "Comfort and visibility for extended wear",
+          "Compatibility with other PPE"
+        ],
+        "labeling_requirements": {
+          "required_info": [
+            "OD values for protection",
+            "Wavelengths for which protection is afforded",
+            "Manufacturer certification"
+          ],
+          "location": "Clearly visible on eyewear frame or lens"
+        },
+        "diffuse_reflection_note": "Viewing Class IV diffuse reflections (such as during alignment tasks) generally require less OD than intrabeam viewing. These should be determined for each specific situation based on laser parameters and viewing distance."
+      }
+    },
+    {
+      "section_id": "control_measures",
+      "title": "Eyewear Requirements by Laser Class",
+      "order": 5,
+      "content": {
+        "class_I_II_IIIA": {
+          "requirement": "Not normally required",
+          "exception": "During service or maintenance of embedded Class IIIB/IV lasers"
+        },
+        "class_IIIB": {
+          "requirement": "Required when MPE is exceeded",
+          "situations": [
+            "Open beam operations",
+            "During alignment procedures",
+            "Service activities"
+          ]
+        },
+        "class_IV": {
+          "requirement": "MANDATORY for all personnel in controlled area",
+          "additional_requirements": [
+            "All personnel entering Class IV area must be adequately trained",
+            "Proper laser protective eye wear must be provided",
+            "Entryway controls must ensure eyewear compliance"
+          ]
+        }
+      }
+    },
+    {
+      "section_id": "limitations",
+      "title": "Important Limitations and Considerations",
+      "order": 6,
+      "content": {
+        "primary_protection": "Engineering controls should serve as primary protection rather than depending solely on employees to use protective eyewear.",
+        "accident_data": "Many accidents have occurred when eye wear was available but not worn.",
+        "common_issues": [
+          "Laser protective eyewear is often dark",
+          "Can be uncomfortable to wear for extended periods",
+          "Limits peripheral and color vision",
+          "May fog in certain environments"
+        ],
+        "best_practices": [
+          "Ensure proper fit for each individual",
+          "Consider prescription inserts for vision-corrected users",
+          "Provide multiple options for different tasks",
+          "Regular training on proper use",
+          "Enforcement of wearing requirements"
+        ]
+      }
+    },
+    {
+      "section_id": "ofcs_eyewear",
+      "title": "Optical Fiber Communication Systems (OFCS) Eyewear",
+      "order": 7,
+      "content": {
+        "scope": "Applies to installation, service, and accidental cable break situations",
+        "requirements": [
+          "Only eye-loupes containing appropriate filters shall be used for examining fiber ends",
+          "Unfiltered optical instruments (microscopes, telescopes) shall not be used to view broken fiber ends",
+          "Infrared image converters or CCTV systems may be used for verification"
+        ],
+        "service_group_considerations": {
+          "SG1": "No eyewear typically required",
+          "SG2": "Protection for visible wavelengths 0.400-0.700 μm",
+          "SG3A": "Not hazardous with unaided eye, filter required for magnifying optics",
+          "SG3B": "Hazardous - appropriate eyewear required"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "course": "course-2",
+  "page_number": 20,
+  "quiz_items": [
+    {
+      "id": "C2-P20-Q1",
+      "type": "multiple_choice",
+      "difficulty": "advanced",
+      "question": "Under what conditions may CDRH grant a variance from laser product standard requirements?",
+      "options": [
+        "Only for federal government agencies",
+        "If there are alternate but at least equal means of safety, or if product cannot perform its function if compliant",
+        "If the manufacturer pays an additional fee",
+        "Variances are no longer granted"
+      ],
+      "correct_answer": 1,
+      "explanation": "A variance may be granted if: (1) alternate but at least equal means of safety exist, or (2) suitable means of safety exist AND product could not perform function if compliant OR requirements are inappropriate.",
+      "learning_objective": "Understand variance criteria",
+      "regulatory_reference": "21 CFR 1010.4"
+    },
+    {
+      "id": "C2-P20-Q2",
+      "type": "true_false",
+      "difficulty": "intermediate",
+      "question": "Federal agencies including DOD, DOE, NASA, and NOAA have blanket exemptions from all laser product standards.",
+      "options": ["True", "False"],
+      "correct_answer": 1,
+      "explanation": "False. Federal agencies have exemptions for certain unique or classified products only, not blanket exemptions. Vendors should inquire through contracting officers whether specific products are covered.",
+      "learning_objective": "Know federal agency provisions",
+      "regulatory_reference": "21 CFR 1010.5"
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "course": "Course 7: Event Safety Planning",
+  "module": "Planning Checklists",
+  "generated_at": "2026-03-19",
+  "source_pdfs": [
+    "event-safety-planning.pdf",
+    "venue-assessment.pdf",
+    "emergency-response.pdf",
+    "weather-protocols.pdf"
+  ],
+  "checklists": {
+    "pre_event_planning": {
+      "title": "Pre-Event Planning Checklist",
+      "description": "Critical items to address before scheduling any live entertainment event",
+      "items": [
+        {
+          "id": "PEP-001",
+          "category": "Authority Coordination",
+          "task": "Confirm event date and time with community public service agencies",
+          "priority": "CRITICAL",
+          "rationale": "Agencies must verify resource availability before event promotion"
+        },
+        {
+          "id": "PEP-002",
+          "category": "Authority Coordination",
+          "task": "Identify lead agency and primary contact",
+          "priority": "HIGH",
+          "rationale": "Prevents confusion in leadership on large events with multiple agencies"
+        },
+        {
+          "id": "PEP-003",
+          "category": "Legal",
+          "task": "Obtain legal and insurance advice",
+          "priority": "CRITICAL",
+          "rationale": "Organizers must understand liability for injuries, acts/omissions, and emergency response costs"
+        },
+        {
+          "id": "PEP-004",
+          "category": "Permits",
+          "task": "Apply for public entertainment permit",
+          "priority": "CRITICAL",
+          "notes": "Permanent venues may have existing permits with specific conditions"
+        },
+        {
+          "id": "PEP-005",
+          "category": "Planning",
+          "task": "Conduct initial risk assessment",
+          "priority": "HIGH",
+          "rationale": "Identifies physical and health hazards before work begins"
+        },
+        {
+          "id": "PEP-006",
+          "category": "Planning",
+          "task": "Create health and safety policy statement",
+          "priority": "HIGH",
+          "elements": [
+            "Organizational diagrams",
+            "Maps and procedures",
+            "Roles and responsibilities",
+            "Contact information"
+          ]
+        },
+        {
+          "id": "PEP-007",
+          "category": "Personnel",
+          "task": "Appoint Safety Coordinator",
+          "priority": "HIGH",
+          "responsibilities": [
+            "Monitor site safety rules",
+            "Select and monitor contractors",
+            "Liaison with authorities",
+            "Check safety method statements",
+            "Verify training and certificates"
+          ]
+        },
+        {
+          "id": "PEP-008",
+          "category": "Planning",
+          "task": "Complete life safety evaluation",
+          "priority": "HIGH",
+          "assessment_areas": [
+            "Nature of events and associated risks",
+            "Access and egress evaluation",
+            "Structural integrity assessment",
+            "Fire safety measures",
+            "Emergency communication systems",
+            "Emergency response capability"
+          ]
+        }
+      ]
+    },
+    "pre_production_phase": {
+      "title": "Pre-Production Phase Checklist",
+      "description": "Operations and production preparation before event begins",
+      "timeline": "Before event load-in begins",
+      "items": [
+        {
+          "id": "PP-001",
+          "category": "Design",
+          "task": "Finalize design development and engineering",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "PP-002",
+          "category": "Vendors",
+          "task": "Complete vendor selection process",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "PP-003",
+          "category": "Safety",
+          "task": "Complete health and safety planning",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "PP-004",
+          "category": "Logistics",
+          "task": "Plan logistics and load-out strategy",
+          "priority": "HIGH"
+        },
+        {
+          "id": "PP-005",
+          "category": "Crowd Management",
+          "task": "Develop crowd management plan",
+          "priority": "CRITICAL",
+          "elements": [
+            "Staffing numbers and types",
+            "Methods of working",
+            "Chains of command",
+            "Organizational charts"
+          ]
+        },
+        {
+          "id": "PP-006",
+          "category": "Signage",
+          "task": "Plan signage and wayfinding",
+          "priority": "HIGH"
+        },
+        {
+          "id": "PP-007",
+          "category": "Waste",
+          "task": "Develop waste management plan",
+          "priority": "MEDIUM"
+        },
+        {
+          "id": "PP-008",
+          "category": "Fire Safety",
+          "task": "Develop fire safety strategy",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "PP-009",
+          "category": "Medical",
+          "task": "Plan first aid and medical response",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "PP-010",
+          "category": "Emergency",
+          "task": "Develop major incident plan",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "PP-011",
+          "category": "Documentation",
+          "task": "Prepare event safety management plan",
+          "priority": "CRITICAL",
+          "components": [
+            "Event safety policy statement",
+            "Event risk assessment",
+            "Basic event details",
+            "Site safety plan",
+            "Crowd management plan",
+            "Transportation management plan",
+            "Emergency action plan (EAP)",
+            "First aid plan"
+          ]
+        }
+      ]
+    },
+    "production_phase_load_in": {
+      "title": "Production Phase - Load-In Checklist",
+      "description": "Operational period when event elements are delivered and installed",
+      "items": [
+        {
+          "id": "LI-001",
+          "category": "Safety",
+          "task": "Post site safety rules at venue entrances",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "LI-002",
+          "category": "Safety",
+          "task": "Communicate safety rules to all contractors upon arrival",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "LI-003",
+          "category": "First Aid",
+          "task": "Ensure first aid facilities available from work start",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "LI-004",
+          "category": "Structures",
+          "task": "Verify structural calculations and drawings approved",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "LI-005",
+          "category": "Fire Safety",
+          "task": "Install fire extinguishers in all required locations",
+          "priority": "CRITICAL",
+          "placement_requirements": [
+            "Within 30 feet of commercial cooking equipment",
+            "Near flammable liquid storage areas",
+            "In construction areas at each stairway",
+            "In all tents and membrane structures",
+            "Maximum 50 feet travel distance"
+          ]
+        },
+        {
+          "id": "LI-006",
+          "category": "Egress",
+          "task": "Mark all fire aisles and egress routes",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "LI-007",
+          "category": "Electrical",
+          "task": "Verify all electrical connections inspected",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "LI-008",
+          "category": "Communication",
+          "task": "Test all communication systems",
+          "priority": "HIGH"
+        },
+        {
+          "id": "LI-009",
+          "category": "PPE",
+          "task": "Verify appropriate PPE available for all workers",
+          "priority": "HIGH"
+        }
+      ]
+    },
+    "production_phase_show": {
+      "title": "Production Phase - Show/Event Checklist",
+      "description": "Operational period during public access and performance",
+      "items": [
+        {
+          "id": "SHOW-001",
+          "category": "Crowd",
+          "task": "Monitor crowd density and flow",
+          "priority": "CRITICAL",
+          "frequency": "Continuous"
+        },
+        {
+          "id": "SHOW-002",
+          "category": "Communication",
+          "task": "Maintain communication with all safety personnel",
+          "priority": "CRITICAL",
+          "frequency": "Continuous"
+        },
+        {
+          "id": "SHOW-003",
+          "category": "Fire Safety",
+          "task": "Conduct fire watch patrols",
+          "priority": "HIGH",
+          "notes": "Continuous surveillance for fire hazards"
+        },
+        {
+          "id": "SHOW-004",
+          "category": "Medical",
+          "task": "Ensure medical personnel and equipment on standby",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "SHOW-005",
+          "category": "Emergency",
+          "task": "Confirm emergency routes clear and accessible",
+          "priority": "CRITICAL",
+          "frequency": "Checked every 30 minutes"
+        },
+        {
+          "id": "SHOW-006",
+          "category": "Weather",
+          "task": "Monitor weather conditions",
+          "priority": "HIGH",
+          "notes": "Use weather decision trigger chart"
+        },
+        {
+          "id": "SHOW-007",
+          "category": "Exit",
+          "task": "Ensure all exit signs illuminated and visible",
+          "priority": "CRITICAL"
+        }
+      ]
+    },
+    "load_out_phase": {
+      "title": "Load-Out Phase Checklist",
+      "description": "Post-event equipment removal and site restoration",
+      "warning": "Load-out period can be dangerous due to haste and fatigue",
+      "items": [
+        {
+          "id": "LO-001",
+          "category": "Safety",
+          "task": "Maintain site safety procedures during load-out",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "LO-002",
+          "category": "Lighting",
+          "task": "Ensure adequate lighting for all work areas",
+          "priority": "CRITICAL"
+        },
+        {
+          "id": "LO-003",
+          "category": "Fatigue",
+          "task": "Monitor worker fatigue levels",
+          "priority": "HIGH"
+        },
+        {
+          "id": "LO-004",
+          "category": "Hydration",
+          "task": "Provide water and hydration stations",
+          "priority": "HIGH"
+        },
+        {
+          "id": "LO-005",
+          "category": "Communication",
+          "task": "Maintain clear communication about removal sequences",
+          "priority": "HIGH"
+        },
+        {
+          "id": "LO-006",
+          "category": "Weather",
+          "task": "Monitor for temperature drops (if applicable)",
+          "priority": "MEDIUM"
+        },
+        {
+          "id": "LO-007",
+          "category": "Documentation",
+          "task": "Document any incidents or near-misses in log book",
+          "priority": "HIGH"
+        }
+      ]
+    },
+    "post_production_phase": {
+      "title": "Post-Production Phase Checklist",
+      "description": "After event completion - review and documentation",
+      "items": [
+        {
+          "id": "POST-001",
+          "category": "Review",
+          "task": "Conduct post-event safety audit",
+          "priority": "HIGH",
+          "participants": [
+            "Law enforcement",
+            "Fire department",
+            "Health authorities",
+            "First aid providers",
+            "Safety coordinator",
+            "Contractors",
+            "Event staff"
+          ]
+        },
+        {
+          "id": "POST-002",
+          "category": "Review",
+          "task": "Review effectiveness of safety management systems",
+          "priority": "HIGH",
+          "timing": "Before memories fade"
+        },
+        {
+          "id": "POST-003",
+          "category": "Documentation",
+          "task": "Store all documents and log books in secure environment",
+          "priority": "CRITICAL",
+          "retention": "Minimum 3-7 years based on local regulations"
+        },
+        {
+          "id": "POST-004",
+          "category": "Learning",
+          "task": "Study documents for lessons learned",
+          "priority": "MEDIUM",
+          "rationale": "Use as starting point for future similar events"
+        }
+      ]
+    }
+  }
+}

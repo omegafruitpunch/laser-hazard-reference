@@ -1,0 +1,13 @@
+{
+  "id": "skin-hazards_q001",
+  "type": "multiple_choice",
+  "question": "Which skin layer contains melanocytes that produce protective melanin?",
+  "options": [
+    "Stratum corneum",
+    "Epidermis",
+    "Dermis",
+    "Subcutaneous tissue"
+  ],
+  "correct": 1,
+  "explanation": "The epidermis contains melanocytes in the basal layer that produce melanin, which absorbs UV and visible light and provides protection against laser radiation."
+}

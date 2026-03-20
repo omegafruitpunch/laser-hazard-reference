@@ -1,0 +1,235 @@
+{
+  "module_id": "module-7.1",
+  "course_id": "course-7",
+  "course_name": "Event Safety",
+  "title": "Event Safety Planning",
+  "subtitle": "Master the Fundamentals of Event Safety Planning and Management",
+  "description": "Learn comprehensive event safety planning from initial concept through post-event review. This module covers hazard assessments, safety policies, regulatory coordination, and the development of effective safety management systems for live entertainment events.",
+  "version": "2.0",
+  "last_updated": "2026-03-19",
+  "polished_by": "UI/UX Agent - Event Safety Edition",
+  "duration_minutes": 25,
+  "difficulty": "intermediate",
+  "prerequisites": [],
+  "next_module": "module-7.2",
+  "ui_theme": {
+    "industry": "event_production",
+    "color_palette": {
+      "primary": "#FF6B00",
+      "primary_dark": "#CC5500",
+      "secondary": "#1A1A2E",
+      "accent": "#FFD700",
+      "warning": "#FF9500",
+      "danger": "#DC2626",
+      "critical": "#991B1B",
+      "success": "#16A34A",
+      "info": "#0891B2",
+      "background": "#0F0F1A",
+      "surface": "#1E1E2E",
+      "text": "#FFFFFF",
+      "text_secondary": "#A1A1AA"
+    },
+    "typography": {
+      "heading_font": "Inter, system-ui, sans-serif",
+      "body_font": "Inter, system-ui, sans-serif",
+      "emergency_font": "Roboto Mono, monospace"
+    },
+    "spacing": {
+      "touch_target_min": "48px",
+      "button_padding": "16px 24px",
+      "card_padding": "20px",
+      "section_gap": "24px"
+    },
+    "border_radius": {
+      "buttons": "8px",
+      "cards": "12px",
+      "alerts": "8px",
+      "inputs": "6px"
+    },
+    "shadows": {
+      "card": "0 4px 6px -1px rgba(0, 0, 0, 0.3)",
+      "alert": "0 0 20px rgba(255, 107, 0, 0.4)",
+      "critical": "0 0 30px rgba(220, 38, 38, 0.6)"
+    },
+    "animations": {
+      "alert_pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      "warning_flash": "flash 1s ease-in-out infinite"
+    }
+  },
+  "learning_objectives": [
+    {
+      "id": "lo-7.1-1",
+      "text": "Develop comprehensive event safety management plans",
+      "icon": "clipboard-check",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.1-2",
+      "text": "Conduct thorough hazard/risk assessments",
+      "icon": "search-alert",
+      "priority": "critical"
+    },
+    {
+      "id": "lo-7.1-3",
+      "text": "Coordinate effectively with public service agencies",
+      "icon": "users",
+      "priority": "high"
+    },
+    {
+      "id": "lo-7.1-4",
+      "text": "Create health and safety policies meeting regulatory requirements",
+      "icon": "file-shield",
+      "priority": "high"
+    },
+    {
+      "id": "lo-7.1-5",
+      "text": "Apply the four phases of event production planning",
+      "icon": "timeline",
+      "priority": "medium"
+    }
+  ],
+  "content_structure": {
+    "warmup": {
+      "title": "Safety Foundation",
+      "duration": 5,
+      "icon": "shield-alert",
+      "activities": [
+        "Indiana State Fair case study",
+        "Four C's of Safety Management",
+        "Life Safety First principles"
+      ]
+    },
+    "core": {
+      "title": "Planning Framework",
+      "duration": 12,
+      "icon": "layout-grid",
+      "activities": [
+        "Interactive Safety Planning Timeline",
+        "Hazard Assessment Walkthrough",
+        "Stakeholder Coordination Scenario"
+      ]
+    },
+    "practice": {
+      "title": "Planning Simulator",
+      "duration": 6,
+      "icon": "play-circle",
+      "activities": [
+        "Virtual venue assessment",
+        "Multi-stakeholder challenge",
+        "Decision tree scenarios"
+      ]
+    },
+    "challenge": {
+      "title": "Command Ready",
+      "duration": 2,
+      "icon": "award",
+      "activities": [
+        "Knowledge verification",
+        "Competency badge award"
+      ]
+    }
+  },
+  "emergency_elements": {
+    "quick_access_checklists": [
+      {
+        "id": "concept-checklist",
+        "title": "Concept Phase Safety",
+        "icon": "clipboard-list",
+        "priority": "critical",
+        "items": [
+          { "task": "Confirm event date with public service agencies", "priority": "CRITICAL", "verification": "Written confirmation" },
+          { "task": "Identify lead agency and primary contact", "priority": "HIGH" },
+          { "task": "Obtain legal and insurance advice", "priority": "CRITICAL" },
+          { "task": "Assess community impact", "priority": "HIGH" }
+        ]
+      },
+      {
+        "id": "loadin-checklist",
+        "title": "Load-In Safety Critical",
+        "icon": "hard-hat",
+        "priority": "critical",
+        "items": [
+          { "task": "Post site safety rules at all entrances", "priority": "CRITICAL" },
+          { "task": "Verify first aid facilities available", "priority": "CRITICAL" },
+          { "task": "Confirm structural calculations approved", "priority": "CRITICAL" },
+          { "task": "Install fire extinguishers (max 50ft travel)", "priority": "CRITICAL" },
+          { "task": "Mark all fire aisles and egress routes", "priority": "CRITICAL" }
+        ]
+      }
+    ],
+    "emergency_buttons": [
+      {
+        "id": "stop-work",
+        "label": "STOP WORK",
+        "color": "danger",
+        "icon": "octagon-x",
+        "action": "immediate_work_stoppage",
+        "confirmation_required": true
+      },
+      {
+        "id": "emergency-contact",
+        "label": "EMERGENCY CONTACTS",
+        "color": "warning",
+        "icon": "phone-call",
+        "action": "show_emergency_contacts"
+      }
+    ]
+  },
+  "interactive_features": [
+    {
+      "id": "safety-timeline",
+      "type": "interactive_timeline",
+      "title": "Event Safety Planning Timeline",
+      "description": "Navigate through the complete event lifecycle",
+      "phases": ["concept", "pre_production", "load_in", "show", "load_out"],
+      "mobile_optimized": true
+    },
+    {
+      "id": "hazard-walkthrough",
+      "type": "interactive_assessment",
+      "title": "Virtual Venue Hazard Assessment",
+      "description": "Walk through a virtual venue and identify hazards",
+      "areas": ["entrance", "stage_front", "backstage"],
+      "mobile_optimized": true
+    },
+    {
+      "id": "coordination-scenario",
+      "type": "branching_scenario",
+      "title": "Stakeholder Coordination Challenge",
+      "description": "Navigate complex multi-stakeholder scenarios",
+      "decision_points": 5,
+      "mobile_optimized": true
+    }
+  ],
+  "mobile_optimizations": {
+    "touch_targets": {
+      "min_size": "48px",
+      "min_spacing": "8px"
+    },
+    "quick_actions": [
+      { "icon": "check-square", "label": "Checklists", "action": "open_checklists" },
+      { "icon": "alert-triangle", "label": "Emergency", "action": "emergency_menu" },
+      { "icon": "bookmark", "label": "Save", "action": "save_progress" }
+    ],
+    "gestures": {
+      "swipe_next": true,
+      "pull_refresh": true,
+      "pinch_zoom": false
+    }
+  },
+  "badge": {
+    "id": "event_safety_planner",
+    "name": "Event Safety Planning Specialist",
+    "icon": "shield-check",
+    "emoji": "🛡️",
+    "color": "#FF6B00",
+    "description": "Mastered event safety planning fundamentals"
+  },
+  "completion_criteria": {
+    "quiz_pass_score": 80,
+    "minimum_time_minutes": 20,
+    "required_exercises": ["safety_planning_timeline", "hazard_assessment_walkthrough", "stakeholder_coordination_scenario"]
+  },
+  "standards_reference": ["Event Safety Guide", "NFPA 101", "FEMA IS-15", "NIMS/ICS"],
+  "source_files": ["module_metadata.json", "lessons.json"]
+}
