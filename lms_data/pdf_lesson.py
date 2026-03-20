@@ -1,9 +1,11 @@
 """
 PDF text extraction and lesson formatting for Laser Safety LMS.
 Extracts text, cleans it, detects links, and structures content for display.
+Falls back to pre-digested JSON/markdown content when available.
 """
 import re
 import os
+import json
 import streamlit as st
 
 
@@ -111,6 +113,140 @@ def clean_text(raw: str) -> str:
     return text.strip()
 
 
+def _find_digest(pdf_path: str) -> dict | None:
+    """Find a pre-digested JSON or markdown file matching this PDF, if any."""
+    if not pdf_path:
+        return None
+    stem = os.path.splitext(os.path.basename(pdf_path))[0]
+    digest_dir = os.path.join(os.path.dirname(__file__), "digested_content")
+    if not os.path.isdir(digest_dir):
+        return None
+    for course_folder in os.listdir(digest_dir):
+        folder = os.path.join(digest_dir, course_folder)
+        if not os.path.isdir(folder):
+            continue
+        for fname in os.listdir(folder):
+            name_stem = fname.replace("_digested", "").replace("_digest", "")
+            name_stem = os.path.splitext(name_stem)[0]
+            if name_stem == stem:
+                full = os.path.join(folder, fname)
+                ext = os.path.splitext(fname)[1]
+                if ext == ".json":
+                    try:
+                        with open(full, encoding="utf-8") as f:
+                            return {"kind": "json", "data": json.load(f)}
+                    except Exception:
+                        pass
+                elif ext == ".md":
+                    try:
+                        with open(full, encoding="utf-8") as f:
+                            return {"kind": "md", "content": f.read()}
+                    except Exception:
+                        pass
+    return None
+
+
+def _render_digest(digest: dict) -> None:
+    """Render pre-digested content (JSON or markdown) in the UI."""
+    if digest["kind"] == "md":
+        st.markdown(digest["content"])
+        return
+
+    data = digest["data"]
+    # Handle course-8-style nested quiz_bank wrapper
+    if "quiz_bank" in data:
+        data = data  # not a lesson digest
+
+    title = data.get("title") or data.get("document", "")
+    source = data.get("source") or data.get("edition", "")
+    if title:
+        st.markdown(f"**{title}**" + (f"  \n*{source}*" if source else ""))
+        st.markdown("")
+
+    # key_concepts_summary block (classification digest style)
+    kcs = data.get("key_concepts_summary")
+    if kcs:
+        crit = kcs.get("critical_values", [])
+        formulas = kcs.get("formula_relationships", [])
+        if crit:
+            with st.expander("📐 Critical Values & Parameters", expanded=True):
+                rows = [(c["parameter"], c["value"], c.get("significance", "")) for c in crit]
+                col1, col2, col3 = st.columns([2, 1, 3])
+                col1.markdown("**Parameter**")
+                col2.markdown("**Value**")
+                col3.markdown("**Significance**")
+                for param, val, sig in rows:
+                    col1.markdown(param)
+                    col2.markdown(f"`{val}`")
+                    col3.markdown(sig)
+        if formulas:
+            with st.expander("🔢 Key Formulas"):
+                for f in formulas:
+                    st.markdown(f"- `{f['formula']}` — {f['description']}")
+
+    # Pages analysis (intro-laser-hazards / classification style)
+    pages_analysis = data.get("pages_analysis", [])
+    if pages_analysis:
+        shown = 0
+        for pg in pages_analysis:
+            summary = pg.get("summary", "")
+            concepts = pg.get("core_concepts", [])
+            terms = pg.get("key_terms", [])
+            objectives = pg.get("learning_objectives", [])
+            section = pg.get("section", "").replace("_", " ").title()
+            if not (summary or concepts):
+                continue
+            label = f"Page {pg['page_num']}" + (f" — {section}" if section else "")
+            expanded = shown < 3
+            with st.expander(label, expanded=expanded):
+                if summary:
+                    st.markdown(summary)
+                if concepts:
+                    st.markdown("**Core Concepts:** " + " · ".join(f"`{c}`" for c in concepts))
+                if terms:
+                    if isinstance(terms, dict):
+                        for term, defn in list(terms.items())[:4]:
+                            st.markdown(f"- **{term}**: {defn}")
+                    else:
+                        st.markdown("**Key Terms:** " + ", ".join(terms[:8]))
+                if objectives:
+                    for obj in objectives[:3]:
+                        st.markdown(f"✓ {obj}")
+            shown += 1
+        return
+
+    # Pages list (beam-hazard / lso-role style)
+    pages = data.get("pages", [])
+    if pages:
+        for pg in pages[:8]:
+            pg_num = pg.get("page_num", "")
+            concepts = pg.get("core_concepts", [])
+            terms = pg.get("key_terms", {})
+            summary = pg.get("summary", "")
+            label = f"Page {pg_num}" if pg_num else "Content"
+            with st.expander(label):
+                if summary:
+                    st.markdown(summary)
+                if concepts:
+                    for c in concepts[:5]:
+                        st.markdown(f"- {c}")
+                if isinstance(terms, dict):
+                    for term, defn in list(terms.items())[:3]:
+                        st.markdown(f"**{term}**: {defn}")
+        return
+
+    # Chapters (lso-role digest style — chapter titles only)
+    chapters = data.get("chapters", [])
+    if chapters:
+        for ch in chapters:
+            title_ch = ch.get("title", f"Chapter {ch.get('chapter', '')}")
+            pages_ref = ch.get("pages", [])
+            label = f"Chapter {ch.get('chapter', '')}: {title_ch}"
+            if pages_ref:
+                label += f" (pp. {pages_ref[0]}–{pages_ref[-1]})"
+            st.markdown(f"**{label}**")
+
+
 def render_lesson(pdf_path: str, key_takeaways: list = None):
     """
     Render the full interactive lesson for a module.
@@ -158,21 +294,30 @@ def render_lesson(pdf_path: str, key_takeaways: list = None):
     links = lesson["links"]
     total_pages = lesson["total_pages"]
 
-    st.caption(f"📄 {total_pages} pages · {lesson['word_count']:,} words")
+    digest = _find_digest(pdf_path)
 
-    # Links section
+    # Tabs: structured digest (if available) + raw source text
+    if digest:
+        tab_structured, tab_source = st.tabs(["📚 Structured Content", "📄 Source Text"])
+        with tab_structured:
+            _render_digest(digest)
+        with tab_source:
+            _render_source_pages(pages, links, total_pages, lesson["word_count"])
+    else:
+        _render_source_pages(pages, links, total_pages, lesson["word_count"])
+
+
+def _render_source_pages(pages, links, total_pages, word_count):
+    """Render raw extracted PDF pages with link section."""
+    st.caption(f"📄 {total_pages} pages · {word_count:,} words")
     if links:
         with st.expander(f"🔗 {len(links)} Reference Link{'s' if len(links) != 1 else ''}", expanded=False):
             for url in links:
                 st.markdown(f"- [{url}]({url})")
-
-    # Determine display mode based on length
     if total_pages <= 10:
-        # Short doc — show all pages expanded
         for p in pages:
             render_page(p)
     else:
-        # Long doc — first page expanded, rest collapsed
         if pages:
             render_page(pages[0])
         for p in pages[1:]:

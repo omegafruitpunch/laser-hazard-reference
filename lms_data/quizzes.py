@@ -1,4 +1,57 @@
-"""Quiz questions for all 8 courses."""
+"""Quiz questions for all 8 courses.
+Includes hand-written questions supplemented by AI-generated quiz banks.
+"""
+import os
+import json
+
+
+def _load_bank_questions(path: str, format: str = "auto") -> list:
+    """Load and convert quiz bank JSON into the standard {q, options, answer, explanation} format."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return []
+
+    # Unwrap nested quiz_bank key
+    if "quiz_bank" in data:
+        data = data["quiz_bank"]
+
+    questions = data.get("questions", [])
+    result = []
+    for q in questions:
+        q_type = q.get("type", "multiple_choice")
+        # Skip multiple_select (can't render cleanly in current engine)
+        if q_type == "multiple_select":
+            continue
+
+        # Field name variations
+        text = q.get("question") or q.get("text") or q.get("q", "")
+        options = q.get("options", [])
+        correct = q.get("correct_answer") if "correct_answer" in q else q.get("correct") if "correct" in q else q.get("correctIndex")
+        expl_right = q.get("explanation_correct") or q.get("explanation", "")
+        expl = expl_right or q.get("explanation_incorrect", "")
+
+        if q_type == "true_false":
+            options = ["True", "False"]
+            correct = 0 if correct is True else 1
+
+        if not text or not options or correct is None:
+            continue
+        result.append({"q": text, "options": options, "answer": int(correct), "explanation": expl})
+    return result
+
+
+def _bank(course_folder: str, filename: str) -> list:
+    """Shortcut to load a quiz bank relative to lms_data/quiz_banks/."""
+    base = os.path.join(os.path.dirname(__file__), "quiz_banks", course_folder, filename)
+    return _load_bank_questions(base)
+
+
+# ── Bank questions (loaded once at import) ────────────────────────────────────
+_c1_extra = _bank("course-1", "lso-role_quiz.json")          # 30 q
+_c5_extra = _bank("course-5", "modules-4-5-6-quiz.json")     # 18 q
+_c8_extra = _bank("course-8", "quiz_bank.json")              # 15 q
 
 QUIZZES = {
     "course-1": [
@@ -240,5 +293,10 @@ QUIZZES = {
          "options": ["All applicable standards and compliance status", "A list of all standards ever published", "Only standards the company has passed inspections for", "International standards only"],
          "answer": 0,
          "explanation": "A Standards Compliance Matrix lists all applicable standards, the company's compliance status for each, and any documented deviations with risk assessments and mitigations."},
+        *_c8_extra,
     ],
 }
+
+# Supplement courses with quiz bank questions
+QUIZZES["course-1"] = QUIZZES["course-1"] + _c1_extra
+QUIZZES["course-5"] = QUIZZES["course-5"] + _c5_extra
