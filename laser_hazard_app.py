@@ -4,6 +4,8 @@ Built from: ANSI/IEC Laser Classification, OSHA Laser Hazards,
             USAF Aerospace Ophthalmology, and Laser Biological Hazards docs.
 Run with: streamlit run laser_hazard_app.py
 """
+import os
+
 import streamlit as st
 import pandas as pd
 
@@ -382,6 +384,75 @@ st.sidebar.warning(
     "⚠️ **For reference only.**\n\nConsult a certified Laser Safety Officer (LSO) "
     "and applicable ANSI/OSHA standards for regulatory compliance."
 )
+
+# ──────────────────────────────────────────────────────────────────────────────
+# NEW INTERACTIVE LMS NAVIGATION
+# ──────────────────────────────────────────────────────────────────────────────
+st.sidebar.divider()
+st.sidebar.markdown("### 🎓 Learning Management System")
+
+# Visual distinction with emoji and custom styling
+st.sidebar.markdown("""
+<div style="
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border: 2px solid #e94560;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 8px 0;
+">
+    <p style="color: #fff; margin: 0; font-size: 0.9rem;">
+        <span style="font-size: 1.2rem;">⚡</span> <strong>NEW: Next.js Interactive LMS</strong>
+    </p>
+    <p style="color: #aaa; margin: 4px 0 0 0; font-size: 0.75rem;">
+        Modern React-based training platform with interactive modules, quizzes, and simulations
+    </p>
+</div>
+""", unsafe_allow_html=True)
+
+# LMS URL configuration - can be set via environment variable or defaults to localhost
+LMS_URL = os.environ.get("LASER_LMS_URL", "http://localhost:3000")
+
+# Quick action buttons for the Next.js LMS
+st.sidebar.link_button(
+    label="🚀 Launch LMS →",
+    url=LMS_URL,
+    type="primary",
+    use_container_width=True,
+    help="Opens the new Next.js-based interactive learning platform in a new tab"
+)
+
+# Add link to the iframe integration page
+if st.sidebar.button("🖼️ Embed View", use_container_width=True, key="sidebar_embed_lms"):
+    st.switch_page("pages/6_Interactive_LMS.py")
+
+st.sidebar.markdown("""
+<div style="margin-top: 8px; display: flex; gap: 8px;">
+    <a href="./1_Courses" target="_self" style="
+        flex: 1;
+        text-align: center;
+        padding: 6px 12px;
+        background: #2d2d3a;
+        color: #888;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        border: 1px solid #444;
+    ">📚 Streamlit LMS</a>
+    <a href="./6_Interactive_LMS" target="_self" style="
+        flex: 1;
+        text-align: center;
+        padding: 6px 12px;
+        background: #2d1f1f;
+        color: #e94560;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        border: 1px solid #e94560;
+    ">🎓 Interactive</a>
+</div>
+""", unsafe_allow_html=True)
+
+st.sidebar.caption("💡 Interactive LMS: 8 courses • Simulations • Knowledge graph • Certificates")
 
 # ──────────────────────────────────────────────────────────────────────────────
 # TABS

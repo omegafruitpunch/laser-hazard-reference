@@ -10,6 +10,22 @@ init_progress()
 
 with st.sidebar:
     st.markdown("## 🔴 Laser Safety LMS")
+    st.divider()
+    
+    # Next.js LMS Navigation
+    st.markdown("### 🎓 Interactive LMS")
+    lms_url = st.session_state.get("lms_url", "http://localhost:3000").rstrip("/")
+    
+    if st.button("🏆 View in Interactive LMS", use_container_width=True, key="cert_lms_main"):
+        st.markdown(f'<script>window.open("{lms_url}/certificate", "_blank");</script>', unsafe_allow_html=True)
+    
+    st.link_button(
+        "🎓 Go to Dashboard →",
+        f"{lms_url}/",
+        use_container_width=True,
+    )
+    
+    st.divider()
 
 st.title("🏆 Certificates")
 
