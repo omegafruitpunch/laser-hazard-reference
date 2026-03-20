@@ -10,6 +10,16 @@ init_progress()
 with st.sidebar:
     st.markdown("## 🔴 Laser Safety LMS")
     st.divider()
+    
+    # Next.js LMS Navigation
+    st.markdown("### 🎓 Interactive LMS")
+    lms_url = st.session_state.get("lms_url", "http://localhost:3000").rstrip("/")
+    course_id = st.session_state.get("quiz_course", "course-1")
+    
+    if st.button("🎯 Practice in Interactive LMS", use_container_width=True, key="quiz_lms_main"):
+        st.markdown(f'<script>window.open("{lms_url}/quiz/{course_id}", "_blank");</script>', unsafe_allow_html=True)
+    
+    st.divider()
     course_options = {c["title"]: c["id"] for c in COURSES}
     preselect = st.session_state.get("quiz_course", COURSES[0]["id"])
     preselect_title = next((c["title"] for c in COURSES if c["id"] == preselect), COURSES[0]["title"])

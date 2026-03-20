@@ -65,10 +65,20 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Controls bar at top
-ctrl_col, course_col = st.columns([1, 3])
+ctrl_col, course_col, lms_col = st.columns([1, 2, 1])
 with ctrl_col:
     if st.button("← Exit Presentation", use_container_width=True):
         st.switch_page("pages/1_Courses.py")
+
+with lms_col:
+    # Next.js LMS link
+    lms_url = st.session_state.get("lms_url", "http://localhost:3000").rstrip("/")
+    course_id = st.session_state.get("selected_course", "course-1")
+    st.link_button(
+        "🎓 Open in LMS →",
+        f"{lms_url}/present/{course_id}",
+        use_container_width=True,
+    )
 
 with course_col:
     course_options = {c["title"]: c["id"] for c in COURSES}
