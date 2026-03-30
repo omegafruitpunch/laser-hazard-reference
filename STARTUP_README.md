@@ -1,188 +1,92 @@
-# Laser Safety Applications - Startup Guide
-
-This directory contains multiple startup scripts to run both the Next.js LMS and Streamlit app together.
+# Laser Safety LMS - Startup Guide
 
 ## Quick Start
 
-### Option 1: Python Script (Recommended - Cross-Platform)
-
-Works on Windows, macOS, and Linux:
+### Option 1: Python (Recommended - Cross-Platform)
 
 ```bash
-# Make executable (Unix/macOS only)
-chmod +x start_apps.py
-
-# Run
-python start_apps.py
-```
-
-Or on Windows:
-```powershell
 python start_apps.py
 ```
 
 ### Option 2: PowerShell (Windows)
 
 ```powershell
-# Run with default settings
 .\start_apps.ps1
 
-# Or with custom ports
-.\start_apps.ps1 -NextJSPort 3001 -StreamlitPort 8502
-
-# Skip dependency check (faster startup)
+# Skip dependency check (faster)
 .\start_apps.ps1 -SkipDependencyCheck
+
+# Custom port
+.\start_apps.ps1 -NextJSPort 3001
 ```
 
-If you get an execution policy error, run:
+If you get an execution policy error:
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-### Option 3: Batch Script (Windows - Simplest)
+### Option 3: Batch Script (Windows)
 
 Double-click `start_apps.bat` or run from Command Prompt:
-
 ```cmd
 start_apps.bat
 ```
 
-### Option 4: Bash Script (Linux/macOS)
+### Option 4: Bash (Linux/macOS)
 
 ```bash
-# Make executable
 chmod +x start_apps.sh
-
-# Run
 ./start_apps.sh
 ```
 
-## What the Scripts Do
+## Manual Startup
 
-1. **Check Prerequisites**
-   - Verify Python is installed
-   - Verify Node.js/npm is installed
-   - Check if ports 3000 and 8501 are available
+```bash
+cd laser-safety-lms
+npm install   # first time only
+npm run dev
+```
 
-2. **Install Dependencies** (if needed)
-   - Run `npm install` in `laser-safety-lms/` directory
-   - Run `pip install -r requirements.txt`
+Open http://localhost:3000
 
-3. **Start Services**
-   - Start Next.js dev server on port 3000
-   - Wait for it to be ready
-   - Start Streamlit app on port 8501
-   - Wait for it to be ready
-
-4. **Provide Access Information**
-   - Display URLs for both applications
-   - Handle graceful shutdown on Ctrl+C
-
-## Application URLs
-
-Once started, access your applications at:
+## Application URL
 
 | Application | URL |
 |-------------|-----|
-| Next.js LMS | http://localhost:3000 |
-| Streamlit App | http://localhost:8501 |
+| Laser Safety LMS | http://localhost:3000 |
 
 ## Troubleshooting
 
-### Port Already in Use
-
-If you see an error about ports being in use:
+### Port 3000 Already in Use
 
 **Windows:**
 ```powershell
-# Find what's using port 3000
 netstat -ano | findstr :3000
-
-# Kill the process (replace PID with actual number)
 taskkill /PID <PID> /F
 ```
 
 **Linux/macOS:**
 ```bash
-# Find what's using port 3000
 lsof -i :3000
-
-# Kill the process
 kill -9 <PID>
 ```
 
-Or use custom ports with the PowerShell script:
-```powershell
-.\start_apps.ps1 -NextJSPort 3001 -StreamlitPort 8502
-```
-
-### Python Not Found
-
-Make sure Python is installed and in your PATH:
-- **Windows:** Install from https://python.org and check "Add Python to PATH"
-- **macOS:** `brew install python3` or install from python.org
-- **Linux:** `sudo apt-get install python3 python3-pip` (Ubuntu/Debian)
-
 ### Node.js Not Found
 
-Install Node.js from https://nodejs.org/
+Install from https://nodejs.org/
 
 ### Permission Denied (Unix/macOS)
 
 ```bash
-chmod +x start_apps.py
-chmod +x start_apps.sh
+chmod +x start_apps.sh start_apps.py
 ```
 
-### Dependencies Fail to Install
+## Stopping
 
-Try manually installing:
+- **Python/Bash:** `Ctrl+C`
+- **Batch:** Close the command window
+- **PowerShell:** Press `Enter`
 
-```bash
-# Python dependencies
-pip install -r requirements.txt
+## Legacy Streamlit App
 
-# npm dependencies
-cd laser-safety-lms
-npm install
-cd ..
-```
-
-## Manual Startup (If Scripts Don't Work)
-
-If the automated scripts don't work for your setup, start the services manually:
-
-**Terminal 1 (Next.js):**
-```bash
-cd laser-safety-lms
-npm run dev
-```
-
-**Terminal 2 (Streamlit):**
-```bash
-python -m streamlit run laser_hazard_app.py --server.port=8501
-```
-
-## Script Comparison
-
-| Script | Platform | Features | Best For |
-|--------|----------|----------|----------|
-| `start_apps.py` | All | Full control, cross-platform, graceful shutdown | Everyone |
-| `start_apps.ps1` | Windows | Custom ports, parameter support | PowerShell users |
-| `start_apps.bat` | Windows | Simple, separate windows | Windows beginners |
-| `start_apps.sh` | Unix/macOS | Simple, clean output | Linux/macOS users |
-
-## Stopping the Applications
-
-- **Python/Bash scripts:** Press `Ctrl+C` in the terminal
-- **Batch script:** Close the command windows or press any key
-- **PowerShell script:** Press `Enter` or close the window
-- **Manual method:** Press `Ctrl+C` in each terminal window
-
-## Support
-
-If you encounter issues:
-1. Check the error messages in the terminal
-2. Verify all prerequisites are installed
-3. Ensure ports 3000 and 8501 are available
-4. Try manual startup to isolate the issue
+The previous Streamlit application has been archived to `legacy/` for reference.
