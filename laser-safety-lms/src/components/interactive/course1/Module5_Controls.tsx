@@ -732,6 +732,236 @@ function EyewearInspection() {
 }
 
 // ============================================================================
+// Section 4b: Types of Laser Safety Goggles
+// ============================================================================
+
+interface GogglesType {
+  id: string;
+  name: string;
+  style: string;
+  description: string;
+  useCase: string;
+  keySpecs: string[];
+  wavelengthRange: string;
+  odRange: string;
+  example: string;
+  limitations: string;
+  color: string;
+}
+
+const gogglesTypes: GogglesType[] = [
+  {
+    id: 'performer',
+    name: 'Performer / Entertainment',
+    style: 'Lightweight spectacle',
+    description:
+      'Designed for performers and audience members interacting with laser beams during live shows. Prioritizes visibility and comfort over maximum protection.',
+    useCase: 'Laser light shows, concerts, live entertainment with RGB laser systems',
+    keySpecs: [
+      'OD 3+ for 180–532 nm (blue & green)',
+      'OD 2–3 for 631–661 nm (red)',
+      '~20% VLT — allows yellow-range light through for stage visibility',
+      'Lightweight for extended wear',
+    ],
+    wavelengthRange: '180–661 nm (RGB)',
+    odRange: 'OD 2–3',
+    example: 'Pangolin Performer ($160) — blocks common RGB diode wavelengths used in full-diode show systems',
+    limitations: 'Does NOT protect against yellow (577 nm), amber (590 nm), or orange (607 nm). Not suitable for RGBY/RGBO systems.',
+    color: 'bg-purple-500',
+  },
+  {
+    id: 'lab',
+    name: 'Lab / Research',
+    style: 'Wraparound with side shields',
+    description:
+      'Full-coverage goggles for laboratory environments. High OD ratings tuned to specific laser wavelengths used in research and scientific applications.',
+    useCase: 'Research labs, university settings, scientific instrumentation, alignment work',
+    keySpecs: [
+      'OD 4–7 depending on wavelength',
+      'Wavelength-specific filter glass or polycarbonate',
+      'Side shields required',
+      'Splash and chemical resistant options available',
+    ],
+    wavelengthRange: 'Wavelength-specific (UV to IR)',
+    odRange: 'OD 4–7',
+    example: 'Thorlabs LG1 series, Kentek laser goggles — matched to Nd:YAG, Argon, HeNe, or diode wavelengths',
+    limitations: 'Must be precisely matched to laser wavelength. Significantly reduced VLT at high OD ratings.',
+    color: 'bg-blue-500',
+  },
+  {
+    id: 'medical',
+    name: 'Medical / Clinical',
+    style: 'Wraparound with foam gasket',
+    description:
+      'Certified eyewear for clinical laser procedures. Required for both the operator and the patient. Covers common surgical laser wavelengths.',
+    useCase: 'Dermatology, ophthalmology, dental, and surgical laser procedures',
+    keySpecs: [
+      'Certified per ANSI Z136.1 and EN 207',
+      'Common wavelengths: 532 nm (KTP), 1064 nm (Nd:YAG), 10,600 nm (CO₂)',
+      'Foam seal for gas/splash protection',
+      'Wide field of view for clinical use',
+    ],
+    wavelengthRange: '532 nm, 810 nm, 1064 nm, 10,600 nm',
+    odRange: 'OD 4–6',
+    example: 'Laservision FG series, Uvex medical laser goggles — procedure-room certified',
+    limitations: 'Procedure-specific. Must be replaced per manufacturer schedule. CO₂ eyewear cannot be used for visible wavelengths.',
+    color: 'bg-green-500',
+  },
+  {
+    id: 'alignment',
+    name: 'Alignment',
+    style: 'Spectacle or low-density wraparound',
+    description:
+      'Low-OD eyewear that provides minimal protection while allowing the operator to see the beam for alignment purposes.',
+    useCase: 'Beam alignment in Class 1–2 systems, optical setup, low-power diagnostics',
+    keySpecs: [
+      'OD 1–2 only',
+      'High VLT to preserve beam visibility',
+      'Not suitable for direct beam exposure',
+      'Often filter-specific (e.g., green-only reduction)',
+    ],
+    wavelengthRange: 'Wavelength-dependent',
+    odRange: 'OD 1–2',
+    example: 'Laser alignment glasses with neutral density filters — used during optical bench setup',
+    limitations: 'Provides minimal protection. Never use for Class 3B or Class 4 direct viewing. Engineering controls must be in place.',
+    color: 'bg-amber-500',
+  },
+  {
+    id: 'fitover',
+    name: 'Fitover',
+    style: 'Over-the-glasses goggle',
+    description:
+      'Designed to be worn over prescription eyeglasses. Provides full side and top coverage while accommodating standard frames underneath.',
+    useCase: 'Personnel who require prescription eyewear in Class 3B/4 laser environments',
+    keySpecs: [
+      'Larger frame accommodates prescription glasses',
+      'Side and top shield coverage',
+      'Available in OD 3–6',
+      'Secure strap or temple fit',
+    ],
+    wavelengthRange: 'Wavelength-specific',
+    odRange: 'OD 3–6',
+    example: 'Kentek fitover series, Laservision fitover goggles — standard in multi-user lab environments',
+    limitations: 'Bulkier and heavier than standard eyewear. May reduce field of view. Prescription lenses beneath do not add protection.',
+    color: 'bg-orange-500',
+  },
+  {
+    id: 'broadband',
+    name: 'Broadband / Multiline',
+    style: 'Full-coverage goggle',
+    description:
+      'Provides protection across a wide wavelength range, suitable for environments where multiple laser wavelengths or unknown wavelengths may be present.',
+    useCase: 'Multi-laser labs, service technicians, environments with mixed or unknown laser sources',
+    keySpecs: [
+      'Covers 400–700 nm or wider (UV to near-IR)',
+      'OD 3–5 across range',
+      'Low VLT (heavily tinted)',
+      'Suitable when wavelength is uncertain',
+    ],
+    wavelengthRange: '400–1100 nm (broadband)',
+    odRange: 'OD 3–5',
+    example: 'Laser safety goggles with broadband absorptive glass — used by field service engineers',
+    limitations: 'Very low VLT makes environment dark. Not a substitute for wavelength-specific goggles when wavelength is known.',
+    color: 'bg-slate-500',
+  },
+];
+
+function GogglesTypesGuide() {
+  const [selected, setSelected] = useState<string>('performer');
+  const active = gogglesTypes.find((g) => g.id === selected)!;
+
+  return (
+    <div className="space-y-4" role="region" aria-label="Types of laser safety goggles">
+      <div className="text-sm text-muted-foreground">
+        Laser safety eyewear comes in several distinct categories. Choosing the right type depends on your
+        application, laser class, and wavelength.
+      </div>
+
+      {/* Type selector */}
+      <div className="flex flex-wrap gap-2" role="tablist" aria-label="Goggle type selector">
+        {gogglesTypes.map((g) => (
+          <button
+            key={g.id}
+            onClick={() => setSelected(g.id)}
+            role="tab"
+            aria-selected={selected === g.id}
+            className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors focus:outline-none focus:ring-2 focus:ring-primary ${
+              selected === g.id
+                ? 'bg-primary text-primary-foreground border-primary'
+                : 'bg-background text-muted-foreground border-border hover:border-primary hover:text-primary'
+            }`}
+          >
+            {g.name}
+          </button>
+        ))}
+      </div>
+
+      {/* Detail card */}
+      <Card className="border-2">
+        <CardHeader className="pb-3">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <CardTitle className="text-base flex items-center gap-2">
+                <span className={`inline-block w-3 h-3 rounded-full ${active.color}`} aria-hidden="true" />
+                {active.name}
+              </CardTitle>
+              <CardDescription className="mt-1">{active.style}</CardDescription>
+            </div>
+            <div className="text-right shrink-0">
+              <div className="text-xs text-muted-foreground">OD Range</div>
+              <div className="text-sm font-bold">{active.odRange}</div>
+            </div>
+          </div>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="text-sm">{active.description}</p>
+
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div>
+              <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Use Case</div>
+              <p className="text-sm">{active.useCase}</p>
+            </div>
+            <div>
+              <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Wavelength Range</div>
+              <p className="text-sm font-mono">{active.wavelengthRange}</p>
+            </div>
+          </div>
+
+          <div>
+            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Key Specifications</div>
+            <ul className="space-y-1">
+              {active.keySpecs.map((spec, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-green-500 mt-0.5 shrink-0" aria-hidden="true" />
+                  {spec}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="p-3 bg-muted/50 rounded-lg">
+            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Real-World Example</div>
+            <p className="text-sm">{active.example}</p>
+          </div>
+
+          <div className="flex items-start gap-2 p-3 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-lg">
+            <AlertTriangle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
+            <div>
+              <div className="text-xs font-semibold text-amber-700 dark:text-amber-300 mb-0.5">Limitations</div>
+              <p className="text-sm text-amber-800 dark:text-amber-200">{active.limitations}</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      <div className="text-xs text-muted-foreground border-t pt-3">
+        All laser safety eyewear must be marked with the wavelength range and OD rating per ANSI Z136.1 / EN 207. Always verify markings before use.
+      </div>
+    </div>
+  );
+}
+
+// ============================================================================
 // Section 5: Control Implementation
 // ============================================================================
 
@@ -1345,6 +1575,20 @@ export default function Module5_Controls() {
                 </CardHeader>
                 <CardContent>
                   <PPEMatrix />
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Eye className="w-5 h-5 text-blue-500" aria-hidden="true" />
+                    Types of Laser Safety Goggles
+                  </CardTitle>
+                  <CardDescription>
+                    Six categories of protective eyewear — each suited to a different laser environment.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <GogglesTypesGuide />
                 </CardContent>
               </Card>
               <div className="grid md:grid-cols-2 gap-4">
